@@ -1,0 +1,15274 @@
+.BANK 10
+.ORG $0000
+
+.SECTION "Bank9" FORCE
+
+L090000:
+    LDA $0301
+    BEQ L090006
+.db $60
+L090006:
+    LDA #0
+    STA $0350
+    JSR $8B74
+    JSR $8CC8
+    JSR $8AF5
+    JSR $87B5
+    JSR $8922
+    JSR $8D25
+    JSR $8125
+    JSR $8D58
+    LDA $0303
+    BEQ L09002B
+.db $4C
+.db $AB
+.db $80
+L09002B:
+    LDA $0302
+    BNE L090047
+    JSR $8606
+    LDA $033C
+    BEQ L09008E
+    LDA $033D
+    BEQ L090094
+    JSR $860A
+    LDA $033C
+    BEQ L09008E
+    BNE L090066
+L090047:
+    JSR $860A
+    LDA $033C
+    BNE L090059
+    LDA #0
+    STA $035D
+    STA $035E
+    BEQ L09008E
+L090059:
+    JSR $8606
+    LDA $033C
+    BEQ L09008E
+    LDA $033D
+    BEQ L090094
+L090066:
+    LDA $0340
+    CMP $0341
+    BEQ L0900A0
+    BCS L09007F
+    LDA #2
+    STA $0350
+    JSR $860A
+    LDA $033C
+    BEQ L09008E
+    BNE L0900A0
+L09007F:
+    LDA #1
+    STA $0350
+    JSR $8606
+    LDA $033D
+    BEQ L090094
+    BNE L0900A0
+L09008E:
+    JSR $8BC8
+    JMP $80A3
+
+L090094:
+    JSR $8D06
+    JSR $8858
+    JSR $8BD3
+    JMP $80A3
+
+L0900A0:
+    JSR $80CC
+    JSR $80AC
+    LDA #1
+    STA $0301
+    RTS 
+
+L0900AC:
+    LDA $0350
+    BEQ L0900BF
+    TAX 
+    DEX 
+    TXA 
+    EOR #1
+    TAX 
+    LDA $033E,X
+    BNE L0900BF
+.db $9D
+.db $3C
+.db $03
+L0900BF:
+    LDA $04AC
+    STA $04AE
+    LDA $04AD
+    STA $04AF
+    RTS 
+
+L0900CC:
+    LDA $05A0
+    BNE L090124
+    LDA $0303
+    BNE L090124
+    LDA $034C
+    LDX $0350
+    CPX #1
+    BNE L0900E4
+    CLC 
+    ADC $034E
+L0900E4:
+    STA $04AB
+    LDA $04AB
+    BNE L0900F3
+    LDA #1
+    STA $030F
+    BNE L090121
+L0900F3:
+    LDA $030B
+    SEC 
+    SBC $033D
+    STA $01
+    LDA $030F
+    STA $00
+    JSR $C6C9
+    LDA $01
+    STA $4F
+    LDA $00
+    STA $4E
+    LDA $030D
+    ASL 
+    STA $50
+    JSR $C6EB
+    LDA $4E
+    STA $030F
+    LDA $51
+    BEQ L090121
+    INC $030F
+L090121:
+    JSR $8858
+L090124:
+    RTS 
+
+L090125:
+    JSR $814D
+    JSR $819E
+    JSR $8238
+    JSR $8420
+    JSR $81B0
+    JSR $835F
+    JSR $825E
+    JSR $83D8
+    JSR $84E2
+    JSR $8526
+    JSR $8564
+    JSR $816D
+    JSR $85BE
+    RTS 
+
+L09014D:
+    LDA #0
+    STA $032F
+    STA $0330
+    TAY 
+L090156:
+    LDA $0328,Y
+    CMP #55
+    BNE L090167
+    LDA #40
+    SBC $031A,Y
+    BCC L090167
+    STA $032F,Y
+L090167:
+    INY 
+    CPY #2
+    BCC L090156
+    RTS 
+
+L09016D:
+    LDA #0
+    STA $0366
+    LDA $0321
+    CMP #34
+    BNE L09019D
+    LDA #0
+    STA $0354
+    STA $0356
+    LDA #1
+    STA $0366
+    LDA $0340
+    CMP $0341
+    BCS L09019D
+.db $AD
+.db $4D
+.db $03
+.db $6D
+.db $4F
+.db $03
+.db $C9
+.db $02
+.db $D0
+.db $05
+.db $A9
+.db $00
+.db $8D
+.db $4F
+.db $03
+L09019D:
+    RTS 
+
+L09019E:
+    LDA $04CD
+    BEQ L0901AF
+    LDA $0320
+    CMP #4
+    BNE L0901AF
+.db $A9
+.db $00
+.db $8D
+.db $CD
+.db $04
+L0901AF:
+    RTS 
+
+L0901B0:
+    LDY #1
+L0901B2:
+    LDA $0314,Y
+    LDX $0320,Y
+    CPX #23
+    BCS L090219
+    ADC $DA54,X
+    STA $036C
+    LDA $0320,Y
+    CMP #23
+    BCS L0901DC
+    JSR $C9AF
+    LDA $0310,Y
+    CLC 
+    ADC $0340,Y
+    STA $036B
+    JSR $C9AF
+    JMP $81EC
+
+L0901DC:
+.db $20
+.db $AF
+.db $C9
+.db $B9
+.db $1A
+.db $03
+.db $18
+.db $79
+.db $2F
+.db $03
+.db $8D
+.db $6B
+.db $03
+.db $20
+.db $AF
+.db $C9
+L0901EC:
+    LDA $036C
+    SEC 
+    SBC $036B
+    BCS L0901F7
+    LDA #0
+L0901F7:
+    CMP #100
+    BCC L0901FD
+    LDA #100
+L0901FD:
+    STA $0342,Y
+    DEY 
+    BPL L0901B2
+    JSR $8207
+    RTS 
+
+L090207:
+    LDY #1
+L090209:
+    LDA $0328,Y
+    CMP #10
+    BNE L090215
+.db $A9
+.db $64
+.db $99
+.db $42
+.db $03
+L090215:
+    DEY 
+    BPL L090209
+    RTS 
+
+L090219:
+    JSR $C9AF
+    LDA $0328,Y
+    CMP #52
+    BNE L090227
+.db $A9
+.db $0A
+.db $D0
+.db $0B
+L090227:
+    LDA $DA54,X
+    SEC 
+    SBC $034A,Y
+    BCS L090232
+    LDA #0
+L090232:
+    JSR $C9AF
+    JMP $81FD
+
+L090238:
+    LDY #1
+L09023A:
+    LDA $0318,Y
+    LDX $0320,Y
+    SEC 
+    SBC $DA24,X
+    BCS L090248
+    LDA #0
+L090248:
+    STA $0340,Y
+    LDA $0328,Y
+    CMP #56
+    BNE L09025A
+.db $A9
+.db $28
+.db $FD
+.db $24
+.db $DA
+.db $99
+.db $40
+.db $03
+L09025A:
+    DEY 
+    BPL L09023A
+    RTS 
+
+L09025E:
+    LDY #1
+    LDA $0312,Y
+    STA $0C
+    LDX $0320,Y
+    CPX #23
+    BCS L0902D8
+    CPX #15
+    BNE L090278
+.db $BD
+.db $B9
+.db $D9
+.db $F0
+.db $03
+.db $4C
+.db $F8
+.db $82
+L090278:
+    JSR $832F
+    BCS L09028A
+.db $A5
+.db $08
+.db $0A
+.db $99
+.db $51
+.db $03
+.db $A5
+.db $0C
+.db $85
+.db $08
+.db $4C
+.db $BA
+.db $82
+L09028A:
+    LDA $0C
+    CLC 
+    ADC $D9B9,X
+    STA $08
+    LDA $D9B9,X
+    STA $0351,Y
+    LDA $DAB4,X
+    BEQ L0902BA
+    JSR $8AC2
+    BCC L0902BA
+    LDA $08
+    CLC 
+    ADC $D9B9,X
+    ADC $D9B9,X
+    STA $08
+    LDA $0351,Y
+    CLC 
+    ADC $D9B9,X
+    ADC $D9B9,X
+    STA $0351,Y
+L0902BA:
+    LDA $08
+    STA $036C
+    JSR $C9AF
+    LDA $0346,Y
+    STA $036B
+    JSR $C9AF
+    LDA $036C
+    SEC 
+    SBC $036B
+    BCS L090309
+    LDA #0
+    BEQ L090309
+L0902D8:
+    LDA $D9B9,X
+    STA $0D
+    LDA $DAB4,X
+    BEQ L0902EF
+    JSR $8AC2
+    BCC L0902EF
+.db $A5
+.db $0D
+.db $0A
+.db $18
+.db $65
+.db $0D
+.db $85
+.db $0D
+L0902EF:
+    LDA $0D
+    STA $0351,Y
+    CLC 
+    ADC $0312,Y
+    STA $0351,Y
+    JSR $C9AF
+    SEC 
+    SBC $0346,Y
+    BCS L090306
+    LDA #0
+L090306:
+    JSR $C9AF
+L090309:
+    STA $16
+    CPY #1
+    BEQ L09031D
+    LDA $04CD
+    BEQ L09031D
+    LDA $16
+    CLC 
+    ADC #5
+    BCS L09031D
+    STA $16
+L09031D:
+    LDA $16
+    CMP #60
+    BCC L090325
+    LDA #60
+L090325:
+    STA $0344,Y
+    DEY 
+    BMI L09032E
+    JMP $8260
+
+L09032E:
+    RTS 
+
+L09032F:
+    CPY #1
+    BEQ L09035D
+    LDA $0306
+    CMP #5
+    BNE L09035D
+.db $AD
+.db $07
+.db $03
+.db $C9
+.db $05
+.db $F0
+.db $10
+.db $C9
+.db $0B
+.db $F0
+.db $0C
+.db $C9
+.db $03
+.db $F0
+.db $08
+.db $C9
+.db $12
+.db $F0
+.db $04
+.db $C9
+.db $11
+.db $D0
+.db $0C
+.db $A5
+.db $0C
+.db $85
+.db $08
+.db $0A
+.db $18
+.db $65
+.db $0C
+.db $85
+.db $0C
+.db $18
+.db $60
+L09035D:
+    SEC 
+    RTS 
+
+L09035F:
+    LDY #1
+L090361:
+    JSR $C9AF
+    LDA $0320,Y
+    CMP #23
+    BCS L09038A
+    CMP #15
+    BEQ L09038A
+    JSR $C9AF
+    LDA $0328,Y
+    JSR $83A7
+    BCS L090384
+    LDA $031C,Y
+    CLC 
+    ADC $F53D,X
+    JMP $83A0
+
+L090384:
+    LDA $031C,Y
+    JMP $83A0
+
+L09038A:
+    JSR $C9AF
+    LDA $0328,Y
+    CMP #53
+    BNE L09039D
+.db $B9
+.db $26
+.db $03
+.db $18
+.db $69
+.db $0D
+.db $4C
+.db $A0
+.db $83
+L09039D:
+    LDA $0326,Y
+    STA $0346,Y
+    DEY 
+    BPL L090361
+    RTS 
+
+L0903A7:
+    LDX #0
+L0903A9:
+    CMP $F538,X
+    BEQ L0903B5
+    INX 
+    CPX #5
+    BCC L0903A9
+    SEC 
+    RTS 
+
+L0903B5:
+    CPX #3
+    BNE L0903D6
+.db $20
+.db $AF
+.db $C9
+.db $B9
+.db $06
+.db $03
+.db $20
+.db $AF
+.db $C9
+.db $C9
+.db $03
+.db $F0
+.db $10
+.db $C9
+.db $05
+.db $F0
+.db $0C
+.db $C9
+.db $0B
+.db $F0
+.db $08
+.db $C9
+.db $11
+.db $F0
+.db $04
+.db $C9
+.db $12
+.db $D0
+.db $DD
+L0903D6:
+    CLC 
+    RTS 
+
+L0903D8:
+    LDY #1
+L0903DA:
+    LDA $0314,Y
+    CLC 
+    ADC $031A,Y
+    CLC 
+    ADC $032F,Y
+    LSR 
+    LDX $0320,Y
+    CLC 
+    ADC $DA84,X
+    LSR 
+    STA $0348,Y
+    DEY 
+    BPL L0903DA
+    LDY #0
+L0903F6:
+    LDA $E8D9,Y
+    CMP #239
+    BEQ L090405
+    CMP $0307
+    BEQ L09040A
+    INY 
+    BPL L0903F6
+L090405:
+    LDA #0
+    STA $0349
+L09040A:
+    LDA $0328
+    CMP #58
+    BNE L09041F
+.db $AD
+.db $0C
+.db $03
+.db $4A
+.db $CD
+.db $0A
+.db $03
+.db $90
+.db $05
+.db $A9
+.db $64
+.db $8D
+.db $48
+.db $03
+L09041F:
+    RTS 
+
+L090420:
+    LDY #1
+L090422:
+    LDA #0
+    STA $000C,Y
+    LDA $0328,Y
+    CMP #56
+    BNE L090432
+.db $A9
+.db $28
+.db $D0
+.db $03
+L090432:
+    LDA $0318,Y
+    STA $000C,Y
+    LDA $031A,Y
+    CLC 
+    ADC $032F,Y
+    CLC 
+    ADC $000C,Y
+    STA $034A,Y
+    DEY 
+    BPL L090422
+    RTS 
+
+L09044A:
+    LDA #0
+    STA $032C
+    STA $032D
+    LDA $031E
+    CLC 
+    ADC $031F
+    STA $0365
+    LDY #1
+L09045E:
+    LDA #0
+    STA $0363,Y
+    LDA $0320,Y
+    CMP #47
+    BNE L090471
+    LDA #1
+    STA $032C,Y
+    BNE L0904CC
+L090471:
+    LDA $0306,Y
+    CMP #15
+    BEQ L09048C
+    CMP #16
+    BEQ L09048C
+    CMP #17
+    BEQ L09048C
+    CMP #18
+    BEQ L09048C
+    CMP #11
+    BEQ L09048C
+    CMP #19
+    BNE L09049A
+L09048C:
+    LDA $0320,Y
+    CMP #23
+    BCC L09049A
+    LDA $0328,Y
+    CMP #57
+    BEQ L0904C3
+L09049A:
+    LDA $0306,Y
+    CMP #20
+    BEQ L0904C3
+    LDX $0320,Y
+    LDA $DAFD,X
+    AND #4
+    BEQ L0904CC
+    CPX #1
+    BEQ L0904C7
+    CPX #22
+    BEQ L0904C3
+    CPX #21
+    BEQ L0904C3
+    CPX #20
+    BEQ L0904C3
+    CPX #24
+    BEQ L0904C7
+    LDA #1
+    BNE L0904C9
+L0904C3:
+    LDA #4
+    BNE L0904C9
+L0904C7:
+    LDA #2
+L0904C9:
+    STA $0363,Y
+L0904CC:
+    DEY 
+    BPL L09045E
+    LDY #1
+L0904D1:
+    LDA $0363,Y
+    CMP $0365
+    BCS L0904DE
+    LDA #1
+    STA $032C,Y
+L0904DE:
+    DEY 
+    BPL L0904D1
+    RTS 
+
+L0904E2:
+    JSR $844A
+    LDY #1
+L0904E7:
+    LDA #0
+    STA $034C,Y
+    STA $034E,Y
+    LDA $0320,Y
+    CMP #47
+    BEQ L090522
+    LDA $0363,Y
+    CMP $0365
+    BCC L090522
+    LDA $0342,Y
+    BEQ L090510
+    JSR $85CC
+    CMP $0342,Y
+    BCS L090510
+    LDA #1
+    STA $034C,Y
+L090510:
+    LDA $0342,Y
+    BEQ L090522
+    JSR $85CC
+    CMP $0342,Y
+    BCS L090522
+    LDA #1
+    STA $034E,Y
+L090522:
+    DEY 
+    BPL L0904E7
+    RTS 
+
+L090526:
+    LDY #1
+L090528:
+    LDA #0
+    STA $0353,Y
+    STA $0355,Y
+    LDA $0348,Y
+    BEQ L090553
+    JSR $85CC
+    CMP $0348,Y
+    BEQ L09053F
+    BCS L090544
+L09053F:
+    LDA #1
+    STA $0353,Y
+L090544:
+    JSR $85CC
+    CMP $0348,Y
+    BEQ L09054E
+    BCS L090553
+L09054E:
+    LDA #1
+    STA $0355,Y
+L090553:
+    DEY 
+    BPL L090528
+    LDA $04CD
+    BEQ L090563
+    LDA #1
+    STA $0353
+    STA $0355
+L090563:
+    RTS 
+
+L090564:
+    LDA $0306
+    CMP #10
+    BEQ L0905BD
+    LDA #0
+    STA $035D
+    LDA $0357
+    BNE L0905BD
+    LDA $031E
+    ORA $031F
+    BNE L0905BD
+    LDA $0320
+    CMP #14
+    BNE L0905BD
+.db $AD
+.db $4C
+.db $03
+.db $F0
+.db $34
+.db $A9
+.db $14
+.db $38
+.db $ED
+.db $1A
+.db $03
+.db $90
+.db $2C
+.db $ED
+.db $2F
+.db $03
+.db $90
+.db $27
+.db $48
+.db $20
+.db $CC
+.db $85
+.db $85
+.db $00
+.db $68
+.db $C5
+.db $00
+.db $90
+.db $1C
+.db $A9
+.db $01
+.db $8D
+.db $5D
+.db $03
+.db $AD
+.db $12
+.db $03
+.db $18
+.db $6D
+.db $51
+.db $03
+.db $38
+.db $ED
+.db $1C
+.db $03
+.db $F0
+.db $02
+.db $10
+.db $05
+.db $A9
+.db $00
+.db $8D
+.db $5D
+.db $03
+.db $8D
+.db $5E
+.db $03
+L0905BD:
+    RTS 
+
+L0905BE:
+    LDA $0303
+    BEQ L0905CB
+.db $A9
+.db $00
+.db $8D
+.db $4C
+.db $03
+.db $8D
+.db $4E
+.db $03
+L0905CB:
+    RTS 
+
+L0905CC:
+    LDA #100
+    JSR $C068
+    RTS 
+
+.db $AD
+.db $A0
+.db $05
+.db $C9
+.db $02
+.db $90
+.db $16
+.db $AD
+.db $02
+.db $20
+.db $29
+.db $40
+.db $D0
+.db $F9
+.db $AD
+.db $02
+.db $20
+.db $29
+.db $40
+.db $F0
+.db $F9
+.db $A9
+.db $00
+.db $8D
+.db $00
+.db $D0
+.db $8D
+.db $00
+.db $E0
+.db $60
+.db $AD
+.db $A0
+.db $05
+.db $F0
+.db $10
+.db $A9
+.db $0E
+.db $8D
+.db $22
+.db $03
+.db $8D
+.db $23
+.db $03
+.db $A9
+.db $00
+.db $8D
+.db $10
+.db $03
+.db $8D
+.db $11
+.db $03
+L090605:
+    RTS 
+
+L090606:
+    LDX #0
+    BEQ L09060C
+    LDX #1
+L09060C:
+    LDA #4
+    STA $0B
+    LDA #176
+    STA $0A
+    LDA #4
+    STA $09
+    LDA #186
+    STA $08
+    LDA $0357,X
+    BNE L090605
+    JSR $877E
+    LDA $0350
+    BNE L09063C
+    CPX #0
+    BNE L090635
+    LDA $035D
+    BEQ L090635
+.db $20
+.db $F5
+.db $86
+L090635:
+    LDA $034C,X
+    BEQ L090687
+    BNE L090641
+L09063C:
+    LDA $034E,X
+    BEQ L090687
+L090641:
+    JSR $870C
+    JSR $C9B6
+    LDA $0373
+    LDY $0350
+    BNE L090655
+    STA $0359,X
+    JMP $8658
+
+L090655:
+    STA $035B,X
+    LDA $033C,X
+    STA $037F
+    SEC 
+    SBC $0373
+    BCS L090666
+    LDA #0
+L090666:
+    LDY $0350
+    BNE L09066E
+    STA $033E,X
+L09066E:
+    STA $033C,X
+    STA $0368
+    LDA $037F
+    SEC 
+    SBC $0368
+    STA $037F
+    JSR $86E1
+    JSR $C9B6
+    JMP $86AA
+
+L090687:
+    LDA $032C,X
+    BEQ L090692
+.db $20
+.db $B6
+.db $C9
+.db $4C
+.db $9B
+.db $86
+L090692:
+    JSR $C9B6
+    JSR $86E1
+    JSR $86C7
+    LDA $0350
+    BNE L0906A6
+    LDA $033C,X
+    STA $033E,X
+L0906A6:
+    JSR $C9B6
+    RTS 
+
+L0906AA:
+    LDA $0320,X
+    CMP #42
+    BNE L0906D7
+.db $BD
+.db $3C
+.db $03
+.db $18
+.db $6D
+.db $7F
+.db $03
+.db $DD
+.db $0C
+.db $03
+.db $90
+.db $03
+.db $BD
+.db $0C
+.db $03
+.db $9D
+.db $3C
+.db $03
+.db $20
+.db $E1
+.db $86
+.db $60
+L0906C7:
+    JSR $C9B6
+    LDA $0320,X
+    CMP #42
+    BNE L0906D4
+.db $20
+.db $E1
+.db $86
+L0906D4:
+    JSR $C9B6
+L0906D7:
+    RTS 
+
+.db $20
+.db $B6
+.db $C9
+.db $20
+.db $E1
+.db $86
+.db $4C
+.db $B6
+.db $C9
+L0906E1:
+    LDA $033C,X
+    LDY $04AC,X
+    CPX #1
+    BEQ L0906EF
+    STA ($0A),Y
+    BNE L0906F1
+L0906EF:
+    STA ($08),Y
+L0906F1:
+    INC $04AC,X
+    RTS 
+
+.db $AD
+.db $3C
+.db $03
+.db $38
+.db $ED
+.db $5E
+.db $03
+.db $B0
+.db $02
+.db $A9
+.db $00
+.db $8D
+.db $5F
+.db $03
+.db $8D
+.db $3C
+.db $03
+.db $20
+.db $E1
+.db $86
+.db $68
+.db $68
+.db $60
+L09070C:
+    CPX #1
+    BNE L090730
+    LDA $0366
+    BEQ L090730
+    JSR $C9B6
+    LDA $033C,X
+    BEQ L090730
+    CMP #1
+    BEQ L09072D
+    SEC 
+    SBC #1
+    STA $0373
+    JSR $C9B6
+    JMP $8762
+
+L09072D:
+.db $20
+.db $B6
+.db $C9
+L090730:
+    LDA $0344,X
+    STA $0373
+    LDA $0373
+    BNE L090740
+    LDA #1
+    STA $0373
+L090740:
+    LDA $0350
+    BEQ L09074C
+    LDA $0355,X
+    BEQ L090762
+    BNE L090751
+L09074C:
+    LDA $0353,X
+    BEQ L090762
+L090751:
+    LDA $0373
+    ASL 
+    CLC 
+    ADC $0373
+    CMP #120
+    BCC L09075F
+    LDA #120
+L09075F:
+    STA $0373
+L090762:
+    LDA $0320,X
+    CMP #42
+    BNE L09077D
+.db $20
+.db $B6
+.db $C9
+.db $AD
+.db $73
+.db $03
+.db $DD
+.db $3C
+.db $03
+.db $90
+.db $06
+.db $BD
+.db $3C
+.db $03
+.db $8D
+.db $73
+.db $03
+.db $20
+.db $B6
+.db $C9
+L09077D:
+    RTS 
+
+L09077E:
+    LDA $032C,X
+    BNE L09079A
+    LDY $0320,X
+    CPY #23
+    BCC L0907B4
+    LDA $033C,X
+    SEC 
+    SBC $D9F4,Y
+    BCC L09079A
+    BEQ L09079A
+    STA $033C,X
+    BCS L0907B1
+L09079A:
+    LDA $0350
+    BNE L0907A6
+    LDA #0
+    STA $034C,X
+    BEQ L0907AB
+L0907A6:
+    LDA #0
+    STA $034E,X
+L0907AB:
+    STA $0350
+    PLA 
+    PLA 
+    RTS 
+
+L0907B1:
+    JSR $86E1
+L0907B4:
+    RTS 
+
+L0907B5:
+    LDX #5
+L0907B7:
+    JSR $8825
+    LDY #0
+    LDA ($04),Y
+    STA ($08),Y
+    DEX 
+    BPL L0907B7
+    LDA $030A
+    STA $033C
+    STA $033E
+    STA $04B0
+    LDA $030B
+    STA $033D
+    STA $033F
+    STA $04BA
+    LDA $0308
+    STA $0331
+    LDA $030E
+    STA $0333
+    LDA #1
+    STA $04AC
+    STA $04AD
+    LDA $030F
+    CMP #100
+    BCC L0907FB
+    LDA #100
+    STA $030F
+L0907FB:
+    LDA #0
+    STA $0357
+    STA $0358
+    STA $0584
+    STA $0360
+    STA $04A9
+    STA $04D4
+    LDA $05A0
+    BEQ L090824
+.db $A9
+.db $00
+.db $8D
+.db $10
+.db $03
+.db $8D
+.db $11
+.db $03
+.db $A9
+.db $0E
+.db $8D
+.db $22
+.db $03
+.db $8D
+.db $23
+.db $03
+L090824:
+    RTS 
+
+L090825:
+    TXA 
+    PHA 
+    ASL 
+    TAX 
+    LDA $8840,X
+    STA $04
+    LDA $8841,X
+    STA $05
+    LDA $884C,X
+    STA $08
+    LDA $884D,X
+    STA $09
+    PLA 
+    TAX 
+    RTS 
+
+; start of data
+.db $12
+.db $03
+.db $14
+.db $03
+.db $18
+.db $03
+.db $1A
+.db $03
+.db $1C
+.db $03
+.db $0C
+.db $03
+.db $34
+.db $03
+.db $35
+.db $03
+.db $37
+.db $03
+.db $38
+.db $03
+.db $39
+.db $03
+.db $32
+.db $03
+; end of data
+L090858:
+    LDA $0324
+    AND #4
+    BNE L090866
+    LDA $0308
+    CMP #20
+    BCC L090867
+L090866:
+    RTS 
+
+L090867:
+    LDA $030E
+    CLC 
+    ADC $030F
+    STA $0333
+    CMP #100
+    BCC L090866
+    INC $0331
+    LDA $0333
+    SEC 
+    SBC #100
+    STA $0333
+    LDA #1
+    STA $036A
+    LDA $0328
+    CMP #55
+    BNE L090892
+    LDA #2
+    STA $036A
+L090892:
+    LDA #0
+    STA $10
+    LDX #5
+L090898:
+    JSR $8825
+    LDA #99
+    JSR $C068
+    CLC 
+    ADC #1
+    STA $4E
+    LDA $0304
+    SEC 
+    SBC #1
+    ASL 
+    TAY 
+    LDA $8DE9,Y
+    STA $06
+    LDA $8DEA,Y
+    STA $07
+    TXA 
+    TAY 
+    LDA $4E
+    CMP ($06),Y
+    BCS L0908DD
+    INC $10
+    LDY #0
+    LDA ($04),Y
+    CLC 
+    ADC $036A
+    CPX #5
+    BEQ L0908D5
+    CMP #40
+    BCC L0908DB
+    LDA #40
+    BNE L0908DB
+L0908D5:
+    CMP #52
+    BCC L0908DB
+    LDA #52
+L0908DB:
+    STA ($08),Y
+L0908DD:
+    DEX 
+    BPL L090898
+    LDA $10
+    BNE L0908F4
+    LDA $030C
+    CLC 
+    ADC $036A
+    CMP #52
+    BCC L0908F1
+.db $A9
+.db $34
+L0908F1:
+    STA $0332
+L0908F4:
+    JSR $88F8
+    RTS 
+
+L0908F8:
+    LDX #0
+    LDA #153
+    STA $04
+    LDA #226
+    STA $05
+    BNE L09090F
+L090904:
+    CMP $0304
+    BEQ L090917
+    LDA #11
+    JSR $C38F
+    INX 
+L09090F:
+    LDY #0
+    LDA ($04),Y
+    BMI L090921
+    BPL L090904
+L090917:
+    LDA $0306
+    CMP #14
+    BEQ L090921
+    INC $6E7A,X
+L090921:
+    RTS 
+
+L090922:
+    LDY #0
+    STY $0303
+    INY 
+L090928:
+    STY $0382
+    LDX $0320,Y
+    JSR $8949
+    LDY $0382
+    DEY 
+    BPL L090928
+    LDA $0303
+    BEQ L090948
+.db $AD
+.db $21
+.db $03
+.db $C9
+.db $17
+.db $90
+.db $05
+.db $A9
+.db $2F
+.db $8D
+.db $21
+.db $03
+L090948:
+    RTS 
+
+L090949:
+    LDA $DB38,X
+    CMP #10
+    BCC L090951
+    RTS 
+
+L090951:
+    JSR $C34C
+; start of data
+.db $3D
+.db $C7
+; end of data
+.db $6C
+.db $89
+.db $68
+.db $89
+.db $36
+.db $8A
+.db $3D
+.db $C7
+.db $3D
+.db $C7
+; start of data
+.db $63
+.db $8A
+; end of data
+.db $8B
+.db $8A
+.db $A7
+.db $8A
+.db $0E
+.db $8A
+.db $A9
+.db $00
+.db $F0
+.db $02
+.db $A9
+.db $01
+.db $85
+.db $10
+.db $AD
+.db $02
+.db $03
+.db $CD
+.db $82
+.db $03
+.db $D0
+.db $D8
+.db $AC
+.db $82
+.db $03
+.db $BE
+.db $20
+.db $03
+.db $B9
+.db $0A
+.db $03
+.db $38
+.db $FD
+.db $F4
+.db $D9
+.db $8D
+.db $3C
+.db $03
+.db $8D
+.db $B1
+.db $04
+.db $B9
+.db $12
+.db $03
+.db $20
+.db $AF
+.db $C9
+.db $18
+.db $79
+.db $0A
+.db $03
+.db $D9
+.db $0C
+.db $03
+.db $90
+.db $03
+.db $B9
+.db $0C
+.db $03
+.db $99
+.db $3C
+.db $03
+.db $8D
+.db $BB
+.db $04
+.db $A5
+.db $10
+.db $F0
+.db $63
+.db $AC
+.db $82
+.db $03
+.db $B9
+.db $1A
+.db $03
+.db $18
+.db $79
+.db $18
+.db $03
+.db $85
+.db $11
+.db $A9
+.db $64
+.db $20
+.db $68
+.db $C0
+.db $C5
+.db $11
+.db $B0
+.db $4E
+.db $BE
+.db $20
+.db $03
+.db $BD
+.db $F4
+.db $D9
+.db $D9
+.db $3C
+.db $03
+.db $B0
+.db $43
+.db $AC
+.db $82
+.db $03
+.db $20
+.db $AF
+.db $C9
+.db $B9
+.db $3C
+.db $03
+.db $D9
+.db $0C
+.db $03
+.db $F0
+.db $35
+.db $20
+.db $AF
+.db $C9
+.db $B9
+.db $3C
+.db $03
+.db $99
+.db $3E
+.db $03
+.db $B9
+.db $3C
+.db $03
+.db $38
+.db $FD
+.db $F4
+.db $D9
+.db $99
+.db $3C
+.db $03
+.db $8D
+.db $B2
+.db $04
+.db $B9
+.db $12
+.db $03
+.db $20
+.db $AF
+.db $C9
+.db $18
+.db $79
+.db $3C
+.db $03
+.db $D9
+.db $0C
+.db $03
+.db $90
+.db $03
+.db $B9
+.db $0C
+.db $03
+.db $99
+.db $3C
+.db $03
+.db $8D
+.db $BC
+.db $04
+.db $AC
+.db $82
+.db $03
+.db $C8
+.db $8C
+.db $50
+.db $03
+.db $EE
+.db $03
+.db $03
+.db $60
+.db $AD
+.db $02
+.db $03
+.db $CD
+.db $82
+.db $03
+.db $D0
+.db $F7
+.db $AC
+.db $82
+.db $03
+.db $BE
+.db $20
+.db $03
+.db $B9
+.db $0A
+.db $03
+.db $38
+.db $FD
+.db $F4
+.db $D9
+.db $8D
+.db $3C
+.db $03
+.db $8D
+.db $B1
+.db $04
+.db $20
+.db $AF
+.db $C9
+.db $B9
+.db $0A
+.db $03
+.db $8D
+.db $BB
+.db $04
+.db $EE
+.db $03
+.db $03
+.db $60
+.db $AD
+.db $02
+.db $03
+.db $CD
+.db $82
+.db $03
+.db $D0
+.db $CF
+.db $AC
+.db $82
+.db $03
+.db $BE
+.db $20
+.db $03
+.db $B9
+.db $0A
+.db $03
+.db $38
+.db $FD
+.db $F4
+.db $D9
+.db $8D
+.db $3C
+.db $03
+.db $8D
+.db $B1
+.db $04
+.db $20
+.db $AF
+.db $C9
+.db $B9
+.db $0A
+.db $03
+.db $8D
+.db $BB
+.db $04
+.db $A9
+.db $01
+.db $8D
+.db $62
+.db $03
+.db $EE
+.db $03
+.db $03
+.db $60
+L090A63:
+    LDY $0382
+    JSR $C9AF
+    LDA $0320,Y
+    CMP #17
+    BEQ L090A8A
+    JSR $844A
+    LDY $0382
+    JSR $C9AF
+    LDA $032C,Y
+    BNE L090A8A
+    LDA $0320,Y
+    CMP #40
+    BCS L090A8A
+    LDA #1
+    STA $0357,Y
+L090A8A:
+    RTS 
+
+.db $20
+.db $4A
+.db $84
+.db $AC
+.db $82
+.db $03
+.db $20
+.db $AF
+.db $C9
+.db $B9
+.db $2C
+.db $03
+.db $D0
+.db $F1
+.db $B9
+.db $20
+.db $03
+.db $C9
+.db $28
+.db $B0
+.db $EA
+.db $B9
+.db $1E
+.db $03
+.db $F0
+.db $E5
+.db $D0
+.db $DE
+.db $20
+.db $4A
+.db $84
+.db $AC
+.db $82
+.db $03
+.db $20
+.db $AF
+.db $C9
+.db $B9
+.db $2C
+.db $03
+.db $D0
+.db $D5
+.db $B9
+.db $20
+.db $03
+.db $C9
+.db $28
+.db $B0
+.db $CE
+.db $C9
+.db $17
+.db $B0
+.db $C5
+.db $90
+.db $C8
+L090AC2:
+    STY $0382
+    STX $0380
+    ASL 
+    TAX 
+    LDA $DAE4,X
+    STA $00
+    LDA $DAE5,X
+    STA $01
+    LDX $0382
+    JSR $C9B6
+    LDY #0
+L090ADC:
+    LDA ($00),Y
+    CMP #255
+    BEQ L090AEA
+    CMP $0306,X
+    BEQ L090AED
+    INY 
+    BPL L090ADC
+L090AEA:
+    CLC 
+    BCC L090AEE
+L090AED:
+    SEC 
+L090AEE:
+    LDX $0380
+    LDY $0382
+    RTS 
+
+L090AF5:
+    LDA $0306
+    CMP #18
+    BNE L090B06
+.db $AD
+.db $20
+.db $03
+.db $D0
+.db $05
+.db $A9
+.db $28
+.db $8D
+.db $20
+.db $03
+L090B06:
+    LDA $0320
+    CMP #40
+    BCC L090B35
+.db $AD
+.db $05
+.db $03
+.db $0A
+.db $90
+.db $3B
+.db $AD
+.db $06
+.db $03
+.db $C9
+.db $13
+.db $D0
+.db $04
+.db $A9
+.db $17
+.db $D0
+.db $14
+.db $AD
+.db $2A
+.db $03
+.db $29
+.db $04
+.db $D0
+.db $0B
+.db $AD
+.db $2A
+.db $03
+.db $29
+.db $80
+.db $D0
+.db $EE
+.db $A9
+.db $2F
+.db $D0
+.db $02
+.db $A9
+.db $2A
+.db $8D
+.db $20
+.db $03
+L090B35:
+    LDA $0302
+    BEQ L090B4E
+    LDA $0306
+    CMP #15
+    BEQ L090B49
+    CMP #16
+    BEQ L090B49
+    CMP #19
+    BNE L090B4E
+L090B49:
+    LDA #23
+    STA $0320
+L090B4E:
+    LDA $0321
+    CMP #40
+    BCC L090B5A
+.db $A9
+.db $1F
+.db $8D
+.db $21
+.db $03
+L090B5A:
+    LDX #1
+L090B5C:
+    LDY $0320,X
+    CPY #23
+    BCC L090B70
+    LDA $D9F4,Y
+    CMP $030A,X
+    BCC L090B70
+    LDA #47
+    STA $0320,X
+L090B70:
+    DEX 
+    BPL L090B5C
+    RTS 
+
+L090B74:
+    LDX $0306
+    DEX 
+    LDA $8F21,X
+    STA $00
+    LDX $0308
+    DEX 
+    LDA $8EF9,X
+    STA $01
+    JSR $C6C9
+    LDA $030F
+    STA $01
+    JSR $C6C9
+    LDA $00
+    STA $4E
+    LDA $01
+    STA $4F
+    LDA #100
+    STA $50
+    JSR $C6EB
+    LDA $4E
+    STA $030F
+    LDA $51
+    BEQ L090BAC
+    INC $030F
+L090BAC:
+    LDA $6E8C
+    BEQ L090BBB
+    ASL $030F
+    BCC L090BBB
+.db $A9
+.db $FF
+.db $8D
+.db $0F
+.db $03
+L090BBB:
+    LDA $030F
+    CMP #100
+    BCC L090BC7
+    LDA #100
+    STA $030F
+L090BC7:
+    RTS 
+
+L090BC8:
+    LDA $0304
+    STA $0E
+    LDA $033C
+    BEQ L090BDE
+.db $60
+L090BD3:
+    LDA $0305
+    STA $0E
+    LDA $033D
+    BEQ L090BDE
+.db $60
+L090BDE:
+    LDA #141
+    STA $6B
+    LDA #241
+    STA $6C
+    LDA #0
+    STA $74B4
+    STA $7446
+    LDY #0
+    LDA ($6B),Y
+    CMP #255
+    BEQ L090C05
+    CMP $0E
+    BNE L090BFD
+    JSR $8C06
+L090BFD:
+    LDA #3
+    JSR $FA7F
+    JMP $8BEE
+
+L090C05:
+    RTS 
+
+L090C06:
+    LDY #1
+    LDA ($6B),Y
+    JSR $C34C
+; start of data
+.db $17
+.db $8C
+.db $51
+.db $8C
+.db $5C
+.db $8C
+.db $AB
+.db $8C
+; end of data
+.db $BB
+.db $8C
+L090C17:
+    LDY #2
+    LDA ($6B),Y
+    BMI L090C36
+    JSR $C39B
+    TAX 
+    CPX #9
+    BCS L090C50
+    LDA $6D93,X
+    CMP #255
+    BEQ L090C50
+    LDA ($6B),Y
+    AND #7
+    STA $6D93,X
+    JMP $8C50
+
+L090C36:
+    AND #127
+    STA $00
+    JSR $C39B
+    TAX 
+    CPX #3
+    BCS L090C50
+    LDA $00
+    AND #7
+    TAY 
+    LDA $6D2C,X
+    ORA $D9B1,Y
+    STA $6D2C,X
+L090C50:
+    RTS 
+
+L090C51:
+    LDY #2
+    LDA ($6B),Y
+    STA $0570
+    JSR $FACC
+    RTS 
+
+L090C5C:
+    LDY #2
+    LDA ($6B),Y
+    ASL 
+    TAY 
+    LDA $F20C,Y
+    STA $10
+    LDA $F20D,Y
+    STA $11
+    LDA #105
+    STA $01
+    LDA #83
+    STA $00
+    LDY #0
+    LDA ($10),Y
+    JSR $F3A3
+    BCS L090CAA
+    LDY #18
+    LDA ($00),Y
+    CMP #255
+    BEQ L090CAA
+    LDY #0
+    LDA ($00),Y
+    LDX $74B4
+    STA $74B5,X
+    LDY #2
+    LDA ($10),Y
+    STA $7446
+    STA $74BE,X
+    INC $74B4
+    LDY #1
+    LDA ($10),Y
+    CMP #255
+    BEQ L090CAA
+.db $8D
+.db $70
+.db $05
+.db $20
+.db $CC
+.db $FA
+L090CAA:
+    RTS 
+
+L090CAB:
+    LDY #2
+    LDA ($6B),Y
+    JSR $C3A0
+    ASL 
+    ASL 
+    ORA $6D92
+    STA $6D92
+    RTS 
+
+.db $A0
+.db $02
+.db $B1
+.db $6B
+.db $8D
+.db $46
+.db $74
+.db $A9
+.db $00
+.db $8D
+.db $B4
+.db $74
+.db $60
+L090CC8:
+    LDA #0
+    STA $03A6
+    LDA $0305
+    BPL L090D05
+    LDA $0307
+    CMP #21
+    BNE L090D05
+    LDA $030B
+    CMP #52
+    BCC L090CF8
+    LDA $36
+    CMP #178
+    BCC L090CEF
+    LDA #0
+    STA $03A8
+    LDA #38
+    BNE L090D02
+L090CEF:
+    LDA #1
+    STA $03A8
+    LDA #19
+    BNE L090D02
+L090CF8:
+    INC $03A6
+    LDA #2
+    STA $03A8
+    LDA #39
+L090D02:
+    STA $0321
+L090D05:
+    RTS 
+
+L090D06:
+    LDA #0
+    STA $03A7
+    LDA $0305
+    BPL L090D24
+    LDA $0307
+    CMP #21
+    BNE L090D24
+    LDA #1
+    STA $03A7
+    LDA $0350
+    BEQ L090D24
+.db $EE
+.db $A7
+.db $03
+L090D24:
+    RTS 
+
+L090D25:
+    LDA $0304
+    CMP #1
+    BNE L090D42
+    LDA $0305
+    CMP #133
+    BNE L090D42
+    LDA $031E
+    ORA $031F
+    BNE L090D42
+    LDA #2
+    STA $0358
+    BNE L090D57
+L090D42:
+    LDA $0305
+    CMP #134
+    BNE L090D57
+    LDA $743D
+    LSR 
+    BCS L090D52
+    LSR 
+    BCC L090D57
+L090D52:
+    LDA #1
+    STA $0357
+L090D57:
+    RTS 
+
+L090D58:
+    LDA $030B
+    CMP #52
+    BCC L090D57
+    LDA $0305
+    CMP #167
+    BNE L090D57
+    LDA $0344
+    STA $03
+    LDA $03
+    ASL 
+    CLC 
+    ADC $03
+    STA $02
+    JSR $8DAB
+    JSR $8DDC
+    BCC L090DAA
+    LDA #0
+    STA $0355
+    STA $04CD
+    JSR $8DAB
+    JSR $8DDC
+    BCC L090DAA
+    LDA #0
+    STA $034E
+    JSR $8DAB
+    JSR $8DDC
+    BCC L090DAA
+    LDA #0
+    STA $0353
+    JSR $8DAB
+    JSR $8DDC
+    BCC L090DAA
+    LDA #0
+    STA $034C
+L090DAA:
+    RTS 
+
+L090DAB:
+    LDA #0
+    STA $00
+    STA $01
+    LDA $034C
+    BEQ L090DC2
+    LDA $03
+    LDY $0353
+    BEQ L090DBF
+    LDA $02
+L090DBF:
+    JSR $C379
+L090DC2:
+    LDA $0341
+    CMP $0340
+    BCS L090DDB
+    LDA $034E
+    BEQ L090DDB
+    LDA $03
+    LDY $0355
+    BEQ L090DD8
+.db $A5
+.db $02
+L090DD8:
+    JSR $C379
+L090DDB:
+    RTS 
+
+L090DDC:
+    LDA $01
+    BNE L090DE7
+    LDA $00
+    CMP $030B
+    BCC L090DE8
+L090DE7:
+    SEC 
+L090DE8:
+    RTS 
+
+; start of data
+.db $2D
+.db $8E
+.db $33
+.db $8E
+.db $39
+.db $8E
+; end of data
+.db $3F
+.db $8E
+; start of data
+.db $45
+.db $8E
+.db $4B
+.db $8E
+.db $51
+.db $8E
+.db $57
+.db $8E
+; end of data
+.db $5D
+.db $8E
+.db $63
+.db $8E
+.db $69
+.db $8E
+.db $6F
+.db $8E
+.db $75
+.db $8E
+.db $7B
+.db $8E
+.db $81
+.db $8E
+.db $87
+.db $8E
+.db $8D
+.db $8E
+.db $93
+.db $8E
+; start of data
+.db $99
+.db $8E
+; end of data
+.db $9F
+.db $8E
+.db $A5
+.db $8E
+.db $AB
+.db $8E
+; start of data
+.db $B1
+.db $8E
+; end of data
+.db $B7
+.db $8E
+; start of data
+.db $BD
+.db $8E
+; end of data
+.db $C3
+.db $8E
+; start of data
+.db $C9
+.db $8E
+.db $CF
+.db $8E
+; end of data
+.db $D5
+.db $8E
+.db $DB
+.db $8E
+.db $E1
+.db $8E
+.db $E7
+.db $8E
+; start of data
+.db $ED
+.db $8E
+.db $F3
+.db $8E
+.db $23
+.db $28
+.db $1E
+.db $14
+.db $1E
+.db $32
+.db $19
+.db $28
+.db $1E
+.db $28
+.db $14
+.db $1E
+.db $05
+.db $05
+.db $05
+.db $00
+.db $05
+.db $14
+; end of data
+.db $0A
+.db $0F
+.db $0F
+.db $0A
+.db $0A
+.db $0A
+; start of data
+.db $0F
+.db $23
+.db $0F
+.db $14
+.db $14
+.db $28
+.db $14
+.db $28
+.db $32
+.db $14
+.db $28
+.db $32
+.db $0A
+.db $28
+.db $0F
+.db $1E
+.db $0A
+.db $1E
+.db $1E
+.db $14
+.db $0A
+.db $0A
+.db $14
+.db $28
+; end of data
+.db $1E
+.db $32
+.db $28
+.db $32
+.db $0A
+.db $14
+.db $14
+.db $14
+.db $14
+.db $14
+.db $14
+.db $28
+.db $14
+.db $14
+.db $14
+.db $14
+.db $14
+.db $28
+.db $28
+.db $0A
+.db $14
+.db $14
+.db $0A
+.db $1E
+.db $28
+.db $14
+.db $0A
+.db $0A
+.db $14
+.db $14
+.db $1E
+.db $1E
+.db $1E
+.db $1E
+.db $0A
+.db $14
+.db $28
+.db $28
+.db $0F
+.db $14
+.db $14
+.db $14
+.db $1E
+.db $0F
+.db $0A
+.db $14
+.db $28
+.db $28
+.db $19
+.db $14
+.db $28
+.db $14
+.db $14
+.db $1E
+.db $14
+.db $23
+.db $19
+.db $0A
+.db $14
+.db $28
+; start of data
+.db $1E
+.db $14
+.db $28
+.db $0A
+.db $1E
+.db $28
+; end of data
+.db $28
+.db $0F
+.db $14
+.db $0A
+.db $0F
+.db $28
+.db $14
+.db $14
+.db $0A
+.db $0A
+.db $1E
+.db $32
+.db $1E
+.db $14
+.db $0A
+.db $0F
+.db $14
+.db $1E
+; start of data
+.db $19
+.db $28
+.db $28
+.db $14
+.db $19
+.db $28
+; end of data
+.db $0F
+.db $19
+.db $0F
+.db $0A
+.db $1E
+.db $32
+; start of data
+.db $1E
+.db $1E
+.db $1E
+.db $1E
+.db $1E
+.db $1E
+; end of data
+.db $14
+.db $0F
+.db $0F
+.db $0A
+.db $0A
+.db $28
+; start of data
+.db $14
+.db $0F
+.db $0F
+.db $0A
+.db $28
+.db $32
+.db $14
+.db $14
+.db $0F
+.db $32
+.db $0F
+.db $28
+; end of data
+.db $32
+.db $1E
+.db $14
+.db $1E
+.db $0A
+.db $1E
+.db $0A
+.db $0F
+.db $0F
+.db $14
+.db $28
+.db $28
+.db $1E
+.db $1E
+.db $28
+.db $14
+.db $14
+.db $1E
+.db $28
+.db $0F
+.db $0A
+.db $0A
+.db $1E
+.db $28
+; start of data
+.db $28
+.db $32
+.db $1E
+.db $32
+.db $32
+.db $1E
+.db $14
+.db $23
+.db $37
+.db $1E
+.db $1E
+.db $28
+.db $0A
+.db $0A
+.db $09
+.db $08
+.db $07
+.db $06
+.db $05
+.db $04
+.db $03
+.db $02
+.db $02
+.db $02
+.db $02
+.db $02
+.db $02
+.db $02
+.db $02
+.db $02
+.db $02
+.db $01
+; end of data
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $06
+.db $05
+; start of data
+.db $06
+.db $03
+; end of data
+.db $01
+; start of data
+.db $08
+.db $01
+.db $07
+.db $04
+; end of data
+.db $02
+; start of data
+.db $05
+; end of data
+.db $07
+.db $04
+; start of data
+.db $0A
+.db $05
+.db $06
+.db $07
+; end of data
+.db $0A
+; start of data
+.db $02
+.db $01
+.db $05
+; end of data
+.db $01
+; start of data
+.db $ED
+.db $8F
+.db $5A
+.db $90
+.db $CB
+.db $90
+.db $40
+.db $91
+.db $B5
+.db $91
+.db $2A
+.db $92
+.db $9F
+.db $92
+.db $14
+.db $93
+.db $89
+.db $93
+.db $FA
+.db $93
+.db $6B
+.db $94
+.db $DC
+.db $94
+.db $49
+.db $95
+.db $AA
+.db $95
+.db $07
+.db $96
+.db $5C
+.db $96
+.db $C9
+.db $96
+.db $2E
+.db $97
+.db $93
+.db $97
+.db $00
+.db $98
+.db $59
+.db $98
+.db $C2
+.db $98
+.db $17
+.db $99
+; end of data
+.db $78
+.db $99
+.db $E1
+.db $99
+.db $01
+.db $A4
+; start of data
+.db $E6
+.db $99
+.db $0F
+.db $9A
+.db $38
+.db $9A
+.db $61
+.db $9A
+.db $86
+.db $9A
+.db $AF
+.db $9A
+.db $D8
+.db $9A
+.db $21
+.db $9B
+.db $4A
+.db $9B
+.db $7B
+.db $9B
+.db $A8
+.db $9B
+.db $D5
+.db $9B
+.db $02
+.db $9C
+.db $37
+.db $9C
+; end of data
+.db $6C
+.db $9C
+.db $9D
+.db $9C
+.db $CA
+.db $9C
+.db $F7
+.db $9C
+.db $24
+.db $9D
+.db $59
+.db $9D
+; start of data
+.db $8E
+.db $9D
+.db $DB
+.db $9D
+.db $28
+.db $9E
+.db $79
+.db $9E
+.db $C6
+.db $9E
+.db $13
+.db $9F
+.db $5C
+.db $9F
+.db $A5
+.db $9F
+; end of data
+.db $EC
+.db $A3
+.db $0B
+.db $A0
+.db $5C
+.db $A0
+.db $AD
+.db $A0
+.db $02
+.db $A1
+.db $4F
+.db $A1
+.db $9C
+.db $A1
+.db $ED
+.db $A1
+.db $3A
+.db $A2
+.db $8B
+.db $A2
+.db $DC
+.db $A2
+.db $29
+.db $A3
+.db $7E
+.db $A3
+.db $D3
+.db $A3
+.db $1A
+.db $A4
+.db $2F
+.db $A4
+.db $44
+.db $A4
+.db $59
+.db $A4
+.db $6E
+.db $A4
+.db $83
+.db $A4
+.db $98
+.db $A4
+; start of data
+.db $AD
+.db $A4
+.db $D6
+.db $A4
+.db $FB
+.db $A4
+.db $20
+.db $A5
+.db $45
+.db $A5
+.db $76
+.db $A5
+.db $A7
+.db $A5
+.db $C8
+.db $A5
+.db $01
+.db $A6
+.db $22
+.db $A6
+.db $43
+.db $A6
+.db $64
+.db $A6
+.db $85
+.db $A6
+.db $A6
+.db $A6
+.db $CF
+.db $A6
+.db $0C
+.db $A7
+.db $1B
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $18
+.db $54
+.db $00
+.db $10
+.db $18
+.db $53
+.db $00
+.db $08
+.db $18
+.db $52
+.db $00
+.db $00
+.db $18
+.db $51
+.db $00
+.db $F8
+.db $10
+.db $44
+.db $00
+.db $10
+.db $10
+.db $43
+.db $00
+.db $08
+.db $10
+.db $42
+.db $00
+.db $00
+.db $10
+.db $41
+.db $00
+.db $F8
+.db $10
+.db $40
+.db $00
+.db $F0
+.db $08
+.db $34
+.db $00
+.db $10
+.db $08
+.db $33
+.db $00
+.db $08
+.db $08
+.db $32
+.db $00
+.db $00
+.db $08
+.db $31
+.db $00
+.db $F8
+.db $08
+.db $30
+.db $00
+.db $F0
+.db $00
+.db $24
+.db $00
+.db $10
+.db $00
+.db $23
+.db $00
+.db $08
+.db $00
+.db $22
+.db $00
+.db $00
+.db $00
+.db $21
+.db $00
+.db $F8
+.db $00
+.db $20
+.db $00
+.db $F0
+.db $F8
+.db $14
+.db $00
+.db $10
+.db $F8
+.db $13
+.db $00
+.db $08
+.db $F8
+.db $12
+.db $00
+.db $00
+.db $F8
+.db $11
+.db $00
+.db $F8
+.db $F0
+.db $03
+.db $00
+.db $08
+.db $F0
+.db $02
+.db $00
+.db $00
+.db $1C
+.db $08
+.db $05
+.db $00
+.db $18
+.db $08
+.db $04
+.db $00
+.db $10
+.db $00
+.db $C1
+.db $00
+.db $00
+.db $08
+.db $0B
+.db $00
+.db $00
+.db $08
+.db $0A
+.db $00
+.db $F8
+.db $18
+.db $2C
+.db $00
+.db $08
+.db $18
+.db $2B
+.db $00
+.db $00
+.db $18
+.db $2A
+.db $00
+.db $F8
+.db $10
+.db $1C
+.db $00
+.db $08
+.db $10
+.db $1B
+.db $00
+.db $00
+.db $10
+.db $1A
+.db $00
+.db $F8
+.db $18
+.db $53
+.db $00
+.db $10
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $10
+.db $44
+.db $00
+.db $10
+.db $10
+.db $40
+.db $00
+.db $F0
+.db $08
+.db $33
+.db $00
+.db $08
+.db $08
+.db $30
+.db $00
+.db $F0
+.db $00
+.db $24
+.db $00
+.db $10
+.db $00
+.db $23
+.db $00
+.db $08
+.db $00
+.db $21
+.db $00
+.db $F8
+.db $00
+.db $20
+.db $00
+.db $F0
+.db $F8
+.db $14
+.db $00
+.db $10
+.db $F8
+.db $13
+.db $00
+.db $08
+.db $F8
+.db $12
+.db $00
+.db $00
+.db $F8
+.db $11
+.db $00
+.db $F8
+.db $F0
+.db $03
+.db $00
+.db $08
+.db $F0
+.db $02
+.db $00
+.db $00
+.db $1D
+.db $FF
+.db $70
+.db $00
+.db $F1
+.db $08
+.db $04
+.db $00
+.db $10
+.db $F7
+.db $60
+.db $00
+.db $F1
+.db $08
+.db $6F
+.db $00
+.db $18
+.db $00
+.db $3F
+.db $00
+.db $00
+.db $F8
+.db $2F
+.db $00
+.db $00
+.db $00
+.db $1F
+.db $00
+.db $F8
+.db $F8
+.db $0F
+.db $00
+.db $F8
+.db $08
+.db $3C
+.db $00
+.db $00
+.db $08
+.db $3B
+.db $00
+.db $F8
+.db $14
+.db $5F
+.db $00
+.db $18
+.db $18
+.db $5D
+.db $00
+.db $0A
+.db $18
+.db $5B
+.db $00
+.db $F8
+.db $18
+.db $5A
+.db $00
+.db $F0
+.db $10
+.db $4E
+.db $00
+.db $10
+.db $10
+.db $4D
+.db $00
+.db $08
+.db $10
+.db $4C
+.db $00
+.db $00
+.db $10
+.db $4B
+.db $00
+.db $F8
+.db $10
+.db $4A
+.db $00
+.db $F0
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $08
+.db $33
+.db $00
+.db $08
+.db $08
+.db $30
+.db $00
+.db $F0
+.db $00
+.db $24
+.db $00
+.db $10
+.db $00
+.db $23
+.db $00
+.db $08
+.db $F8
+.db $14
+.db $00
+.db $10
+.db $F8
+.db $13
+.db $00
+.db $08
+.db $F0
+.db $03
+.db $00
+.db $08
+.db $F0
+.db $02
+.db $00
+.db $00
+.db $1D
+.db $FF
+.db $70
+.db $00
+.db $F1
+.db $08
+.db $04
+.db $00
+.db $10
+.db $F7
+.db $60
+.db $00
+.db $F1
+.db $08
+.db $6F
+.db $00
+.db $18
+.db $10
+.db $3D
+.db $00
+.db $00
+.db $08
+.db $2D
+.db $00
+.db $00
+.db $00
+.db $1D
+.db $00
+.db $00
+.db $F8
+.db $2F
+.db $00
+.db $00
+.db $00
+.db $1F
+.db $00
+.db $F8
+.db $F8
+.db $0F
+.db $00
+.db $F8
+.db $08
+.db $3B
+.db $00
+.db $F8
+.db $14
+.db $5F
+.db $00
+.db $18
+.db $18
+.db $5D
+.db $00
+.db $0A
+.db $18
+.db $5B
+.db $00
+.db $F8
+.db $18
+.db $5A
+.db $00
+.db $F0
+.db $10
+.db $4E
+.db $00
+.db $10
+.db $10
+.db $4D
+.db $00
+.db $08
+.db $10
+.db $4B
+.db $00
+.db $F8
+.db $10
+.db $4A
+.db $00
+.db $F0
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $08
+.db $33
+.db $00
+.db $08
+.db $08
+.db $30
+.db $00
+.db $F0
+.db $00
+.db $24
+.db $00
+.db $10
+.db $00
+.db $23
+.db $00
+.db $08
+.db $F8
+.db $14
+.db $00
+.db $10
+.db $F8
+.db $13
+.db $00
+.db $08
+.db $F0
+.db $03
+.db $00
+.db $08
+.db $F0
+.db $02
+.db $00
+.db $00
+.db $1D
+.db $02
+.db $85
+.db $00
+.db $18
+.db $10
+.db $40
+.db $00
+.db $F0
+.db $08
+.db $80
+.db $00
+.db $F0
+.db $F0
+.db $82
+.db $00
+.db $08
+.db $F0
+.db $81
+.db $00
+.db $00
+.db $08
+.db $84
+.db $00
+.db $10
+.db $18
+.db $A4
+.db $00
+.db $10
+.db $18
+.db $A3
+.db $00
+.db $07
+.db $18
+.db $A1
+.db $00
+.db $F5
+.db $10
+.db $95
+.db $00
+.db $18
+.db $10
+.db $94
+.db $00
+.db $10
+.db $10
+.db $93
+.db $00
+.db $08
+.db $10
+.db $92
+.db $00
+.db $00
+.db $10
+.db $91
+.db $00
+.db $F8
+.db $F8
+.db $64
+.db $00
+.db $10
+.db $00
+.db $73
+.db $00
+.db $08
+.db $00
+.db $72
+.db $00
+.db $00
+.db $00
+.db $71
+.db $00
+.db $F8
+.db $00
+.db $70
+.db $00
+.db $F0
+.db $F8
+.db $63
+.db $00
+.db $08
+.db $F8
+.db $62
+.db $00
+.db $00
+.db $F8
+.db $61
+.db $00
+.db $F8
+.db $F8
+.db $60
+.db $00
+.db $F0
+.db $08
+.db $2D
+.db $00
+.db $00
+.db $08
+.db $3B
+.db $00
+.db $F8
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $08
+.db $33
+.db $00
+.db $08
+.db $00
+.db $24
+.db $00
+.db $10
+.db $1D
+.db $02
+.db $85
+.db $00
+.db $18
+.db $10
+.db $75
+.db $00
+.db $F8
+.db $08
+.db $65
+.db $00
+.db $F8
+.db $10
+.db $40
+.db $00
+.db $F0
+.db $08
+.db $80
+.db $00
+.db $F0
+.db $F0
+.db $82
+.db $00
+.db $08
+.db $F0
+.db $81
+.db $00
+.db $00
+.db $08
+.db $84
+.db $00
+.db $10
+.db $18
+.db $A4
+.db $00
+.db $10
+.db $18
+.db $A3
+.db $00
+.db $07
+.db $18
+.db $A1
+.db $00
+.db $F5
+.db $10
+.db $95
+.db $00
+.db $18
+.db $10
+.db $94
+.db $00
+.db $10
+.db $10
+.db $93
+.db $00
+.db $08
+.db $10
+.db $92
+.db $00
+.db $00
+.db $F8
+.db $64
+.db $00
+.db $10
+.db $00
+.db $73
+.db $00
+.db $08
+.db $00
+.db $72
+.db $00
+.db $00
+.db $00
+.db $71
+.db $00
+.db $F8
+.db $00
+.db $70
+.db $00
+.db $F0
+.db $F8
+.db $63
+.db $00
+.db $08
+.db $F8
+.db $62
+.db $00
+.db $00
+.db $F8
+.db $61
+.db $00
+.db $F8
+.db $F8
+.db $60
+.db $00
+.db $F0
+.db $08
+.db $2D
+.db $00
+.db $00
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $08
+.db $33
+.db $00
+.db $08
+.db $00
+.db $24
+.db $00
+.db $10
+.db $1D
+.db $00
+.db $C3
+.db $00
+.db $0F
+.db $02
+.db $85
+.db $00
+.db $18
+.db $08
+.db $87
+.db $00
+.db $10
+.db $08
+.db $86
+.db $00
+.db $08
+.db $00
+.db $76
+.db $00
+.db $08
+.db $F8
+.db $67
+.db $00
+.db $10
+.db $F8
+.db $66
+.db $00
+.db $08
+.db $10
+.db $75
+.db $00
+.db $F8
+.db $08
+.db $65
+.db $00
+.db $F8
+.db $10
+.db $40
+.db $00
+.db $F0
+.db $08
+.db $80
+.db $00
+.db $F0
+.db $F0
+.db $82
+.db $00
+.db $08
+.db $F0
+.db $81
+.db $00
+.db $00
+.db $18
+.db $A4
+.db $00
+.db $10
+.db $18
+.db $A3
+.db $00
+.db $07
+.db $18
+.db $A1
+.db $00
+.db $F5
+.db $10
+.db $95
+.db $00
+.db $18
+.db $10
+.db $94
+.db $00
+.db $10
+.db $10
+.db $93
+.db $00
+.db $08
+.db $10
+.db $92
+.db $00
+.db $00
+.db $00
+.db $72
+.db $00
+.db $00
+.db $00
+.db $71
+.db $00
+.db $F8
+.db $00
+.db $70
+.db $00
+.db $F0
+.db $F8
+.db $62
+.db $00
+.db $00
+.db $F8
+.db $61
+.db $00
+.db $F8
+.db $F8
+.db $60
+.db $00
+.db $F0
+.db $08
+.db $2D
+.db $00
+.db $00
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $1D
+.db $FF
+.db $70
+.db $00
+.db $F1
+.db $F7
+.db $60
+.db $00
+.db $F1
+.db $00
+.db $C3
+.db $00
+.db $0F
+.db $02
+.db $7D
+.db $00
+.db $18
+.db $0F
+.db $40
+.db $00
+.db $F0
+.db $08
+.db $78
+.db $00
+.db $F0
+.db $F0
+.db $7A
+.db $00
+.db $08
+.db $E8
+.db $6A
+.db $00
+.db $08
+.db $F8
+.db $0F
+.db $00
+.db $F8
+.db $08
+.db $79
+.db $00
+.db $F8
+.db $00
+.db $69
+.db $00
+.db $F8
+.db $18
+.db $9C
+.db $00
+.db $0E
+.db $18
+.db $9B
+.db $00
+.db $08
+.db $18
+.db $9A
+.db $00
+.db $01
+.db $10
+.db $8C
+.db $00
+.db $10
+.db $10
+.db $8B
+.db $00
+.db $08
+.db $10
+.db $8A
+.db $00
+.db $00
+.db $10
+.db $89
+.db $00
+.db $F8
+.db $08
+.db $87
+.db $00
+.db $10
+.db $08
+.db $86
+.db $00
+.db $08
+.db $00
+.db $76
+.db $00
+.db $08
+.db $F8
+.db $67
+.db $00
+.db $10
+.db $F8
+.db $66
+.db $00
+.db $08
+.db $F0
+.db $81
+.db $00
+.db $00
+.db $00
+.db $72
+.db $00
+.db $00
+.db $F8
+.db $62
+.db $00
+.db $00
+.db $08
+.db $2D
+.db $00
+.db $00
+.db $17
+.db $10
+.db $00
+.db $E0
+.db $0F
+.db $00
+.db $00
+.db $E8
+.db $1C
+.db $00
+.db $C3
+.db $00
+.db $10
+.db $06
+.db $B4
+.db $00
+.db $18
+.db $F0
+.db $E5
+.db $00
+.db $08
+.db $F0
+.db $E4
+.db $00
+.db $00
+.db $00
+.db $21
+.db $00
+.db $F8
+.db $00
+.db $20
+.db $00
+.db $F0
+.db $F8
+.db $11
+.db $00
+.db $F8
+.db $00
+.db $C2
+.db $00
+.db $08
+.db $00
+.db $C1
+.db $00
+.db $00
+.db $F8
+.db $B3
+.db $00
+.db $10
+.db $F8
+.db $B2
+.db $00
+.db $08
+.db $F8
+.db $B1
+.db $00
+.db $00
+.db $18
+.db $F2
+.db $00
+.db $08
+.db $18
+.db $F1
+.db $00
+.db $00
+.db $18
+.db $F0
+.db $00
+.db $F8
+.db $10
+.db $E3
+.db $00
+.db $10
+.db $10
+.db $E2
+.db $00
+.db $08
+.db $10
+.db $E1
+.db $00
+.db $00
+.db $10
+.db $E0
+.db $00
+.db $F8
+.db $08
+.db $D3
+.db $00
+.db $10
+.db $08
+.db $D2
+.db $00
+.db $08
+.db $08
+.db $D1
+.db $00
+.db $00
+.db $08
+.db $D0
+.db $00
+.db $F8
+.db $E8
+.db $6A
+.db $00
+.db $08
+.db $08
+.db $78
+.db $00
+.db $F0
+.db $0F
+.db $40
+.db $00
+.db $F0
+.db $17
+.db $10
+.db $00
+.db $E0
+.db $0F
+.db $00
+.db $00
+.db $E8
+.db $1C
+.db $06
+.db $B4
+.db $00
+.db $18
+.db $F8
+.db $12
+.db $00
+.db $00
+.db $F8
+.db $C6
+.db $00
+.db $10
+.db $F8
+.db $C5
+.db $00
+.db $08
+.db $F0
+.db $02
+.db $00
+.db $00
+.db $F0
+.db $B5
+.db $00
+.db $08
+.db $00
+.db $21
+.db $00
+.db $F8
+.db $00
+.db $20
+.db $00
+.db $F0
+.db $F8
+.db $11
+.db $00
+.db $F8
+.db $00
+.db $C3
+.db $00
+.db $10
+.db $00
+.db $C2
+.db $00
+.db $08
+.db $00
+.db $C1
+.db $00
+.db $00
+.db $18
+.db $F2
+.db $00
+.db $08
+.db $18
+.db $F1
+.db $00
+.db $00
+.db $18
+.db $F0
+.db $00
+.db $F8
+.db $10
+.db $E3
+.db $00
+.db $10
+.db $10
+.db $E2
+.db $00
+.db $08
+.db $10
+.db $E1
+.db $00
+.db $00
+.db $10
+.db $E0
+.db $00
+.db $F8
+.db $08
+.db $D3
+.db $00
+.db $10
+.db $08
+.db $D2
+.db $00
+.db $08
+.db $08
+.db $D1
+.db $00
+.db $00
+.db $08
+.db $D0
+.db $00
+.db $F8
+.db $E8
+.db $6A
+.db $00
+.db $08
+.db $08
+.db $78
+.db $00
+.db $F0
+.db $0F
+.db $40
+.db $00
+.db $F0
+.db $17
+.db $10
+.db $00
+.db $E0
+.db $0F
+.db $00
+.db $00
+.db $E8
+.db $1C
+.db $06
+.db $B4
+.db $00
+.db $18
+.db $F8
+.db $12
+.db $00
+.db $00
+.db $F0
+.db $02
+.db $00
+.db $00
+.db $F0
+.db $B5
+.db $00
+.db $08
+.db $00
+.db $24
+.db $00
+.db $10
+.db $00
+.db $23
+.db $00
+.db $08
+.db $F8
+.db $14
+.db $00
+.db $10
+.db $F8
+.db $13
+.db $00
+.db $08
+.db $08
+.db $D5
+.db $00
+.db $10
+.db $08
+.db $D4
+.db $00
+.db $08
+.db $00
+.db $21
+.db $00
+.db $F8
+.db $00
+.db $20
+.db $00
+.db $F0
+.db $F8
+.db $11
+.db $00
+.db $F8
+.db $00
+.db $C1
+.db $00
+.db $00
+.db $18
+.db $F2
+.db $00
+.db $08
+.db $18
+.db $F1
+.db $00
+.db $00
+.db $18
+.db $F0
+.db $00
+.db $F8
+.db $10
+.db $E3
+.db $00
+.db $10
+.db $10
+.db $E2
+.db $00
+.db $08
+.db $10
+.db $E1
+.db $00
+.db $00
+.db $10
+.db $E0
+.db $00
+.db $F8
+.db $08
+.db $D1
+.db $00
+.db $00
+.db $08
+.db $D0
+.db $00
+.db $F8
+.db $E8
+.db $6A
+.db $00
+.db $08
+.db $08
+.db $78
+.db $00
+.db $F0
+.db $0F
+.db $40
+.db $00
+.db $F0
+.db $17
+.db $10
+.db $00
+.db $E0
+.db $0F
+.db $00
+.db $00
+.db $E8
+.db $1B
+.db $06
+.db $B4
+.db $00
+.db $18
+.db $F8
+.db $12
+.db $00
+.db $00
+.db $F0
+.db $03
+.db $00
+.db $08
+.db $F0
+.db $02
+.db $00
+.db $00
+.db $10
+.db $40
+.db $00
+.db $F0
+.db $08
+.db $31
+.db $00
+.db $F8
+.db $08
+.db $30
+.db $00
+.db $F0
+.db $00
+.db $24
+.db $00
+.db $10
+.db $00
+.db $23
+.db $00
+.db $08
+.db $F8
+.db $14
+.db $00
+.db $10
+.db $F8
+.db $13
+.db $00
+.db $08
+.db $08
+.db $D5
+.db $00
+.db $10
+.db $08
+.db $D4
+.db $00
+.db $08
+.db $00
+.db $21
+.db $00
+.db $F8
+.db $00
+.db $20
+.db $00
+.db $F0
+.db $F8
+.db $11
+.db $00
+.db $F8
+.db $00
+.db $C1
+.db $00
+.db $00
+.db $18
+.db $F2
+.db $00
+.db $08
+.db $18
+.db $F1
+.db $00
+.db $00
+.db $18
+.db $F0
+.db $00
+.db $F8
+.db $10
+.db $E3
+.db $00
+.db $10
+.db $10
+.db $E2
+.db $00
+.db $08
+.db $10
+.db $E1
+.db $00
+.db $00
+.db $10
+.db $E0
+.db $00
+.db $F8
+.db $08
+.db $D1
+.db $00
+.db $00
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $18
+.db $F0
+.db $02
+.db $00
+.db $00
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $10
+.db $40
+.db $00
+.db $F0
+.db $08
+.db $30
+.db $00
+.db $F0
+.db $F8
+.db $13
+.db $00
+.db $08
+.db $F0
+.db $03
+.db $00
+.db $08
+.db $00
+.db $24
+.db $00
+.db $10
+.db $F8
+.db $14
+.db $00
+.db $10
+.db $18
+.db $D9
+.db $00
+.db $08
+.db $18
+.db $D8
+.db $00
+.db $00
+.db $10
+.db $CA
+.db $00
+.db $10
+.db $10
+.db $C9
+.db $00
+.db $08
+.db $10
+.db $C8
+.db $00
+.db $00
+.db $10
+.db $C7
+.db $00
+.db $F8
+.db $08
+.db $BA
+.db $00
+.db $10
+.db $08
+.db $B9
+.db $00
+.db $08
+.db $08
+.db $B8
+.db $00
+.db $00
+.db $08
+.db $B7
+.db $00
+.db $F8
+.db $00
+.db $A9
+.db $00
+.db $08
+.db $00
+.db $A8
+.db $00
+.db $00
+.db $00
+.db $A7
+.db $00
+.db $F8
+.db $F8
+.db $98
+.db $00
+.db $00
+.db $F8
+.db $97
+.db $00
+.db $F8
+.db $17
+.db $F8
+.db $F0
+.db $80
+.db $F8
+.db $18
+.db $10
+.db $00
+.db $E0
+.db $F0
+.db $03
+.db $00
+.db $08
+.db $F0
+.db $02
+.db $00
+.db $00
+.db $10
+.db $00
+.db $00
+.db $E8
+.db $10
+.db $40
+.db $00
+.db $F0
+.db $08
+.db $30
+.db $00
+.db $F0
+.db $18
+.db $ED
+.db $00
+.db $05
+.db $18
+.db $EC
+.db $00
+.db $FD
+.db $10
+.db $DD
+.db $00
+.db $08
+.db $10
+.db $DC
+.db $00
+.db $00
+.db $10
+.db $DB
+.db $00
+.db $F8
+.db $08
+.db $CE
+.db $00
+.db $10
+.db $08
+.db $CD
+.db $00
+.db $08
+.db $08
+.db $CC
+.db $00
+.db $00
+.db $08
+.db $CB
+.db $00
+.db $F8
+.db $00
+.db $BE
+.db $00
+.db $10
+.db $00
+.db $BD
+.db $00
+.db $08
+.db $00
+.db $BC
+.db $00
+.db $00
+.db $00
+.db $BB
+.db $00
+.db $F8
+.db $F8
+.db $AE
+.db $00
+.db $10
+.db $F8
+.db $AD
+.db $00
+.db $08
+.db $F8
+.db $AC
+.db $00
+.db $00
+.db $15
+.db $14
+.db $10
+.db $00
+.db $DE
+.db $0C
+.db $00
+.db $00
+.db $E6
+.db $08
+.db $68
+.db $00
+.db $E8
+.db $08
+.db $59
+.db $00
+.db $F0
+.db $00
+.db $08
+.db $00
+.db $F0
+.db $00
+.db $3E
+.db $00
+.db $F8
+.db $F8
+.db $2E
+.db $00
+.db $F8
+.db $F0
+.db $0D
+.db $00
+.db $F8
+.db $F0
+.db $7F
+.db $00
+.db $00
+.db $00
+.db $9F
+.db $00
+.db $08
+.db $00
+.db $9E
+.db $00
+.db $00
+.db $F8
+.db $8F
+.db $00
+.db $08
+.db $F8
+.db $8E
+.db $00
+.db $00
+.db $08
+.db $DE
+.db $00
+.db $00
+.db $08
+.db $EF
+.db $00
+.db $F8
+.db $10
+.db $DA
+.db $00
+.db $00
+.db $10
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $E9
+.db $00
+.db $F0
+.db $18
+.db $E6
+.db $00
+.db $F0
+.db $18
+.db $E8
+.db $00
+.db $08
+.db $18
+.db $E7
+.db $00
+.db $00
+.db $1B
+.db $E8
+.db $6A
+.db $C0
+.db $00
+.db $E0
+.db $CF
+.db $00
+.db $00
+.db $E8
+.db $DF
+.db $00
+.db $F8
+.db $08
+.db $10
+.db $00
+.db $D8
+.db $00
+.db $00
+.db $00
+.db $E0
+.db $00
+.db $40
+.db $00
+.db $E8
+.db $F8
+.db $30
+.db $00
+.db $E8
+.db $F8
+.db $7B
+.db $00
+.db $F0
+.db $F0
+.db $6B
+.db $00
+.db $F0
+.db $F0
+.db $01
+.db $00
+.db $F8
+.db $F8
+.db $B6
+.db $00
+.db $F8
+.db $F0
+.db $7F
+.db $00
+.db $00
+.db $00
+.db $9F
+.db $00
+.db $08
+.db $00
+.db $9E
+.db $00
+.db $00
+.db $00
+.db $9D
+.db $00
+.db $F8
+.db $F8
+.db $8F
+.db $00
+.db $08
+.db $F8
+.db $8E
+.db $00
+.db $00
+.db $00
+.db $6A
+.db $00
+.db $F0
+.db $08
+.db $DE
+.db $00
+.db $00
+.db $08
+.db $EF
+.db $00
+.db $F8
+.db $08
+.db $EE
+.db $00
+.db $F0
+.db $10
+.db $DA
+.db $00
+.db $00
+.db $10
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $E9
+.db $00
+.db $F0
+.db $18
+.db $E6
+.db $00
+.db $F0
+.db $18
+.db $E8
+.db $00
+.db $08
+.db $18
+.db $E7
+.db $00
+.db $00
+.db $19
+.db $EA
+.db $F8
+.db $00
+.db $00
+.db $EA
+.db $AA
+.db $00
+.db $F0
+.db $E9
+.db $90
+.db $00
+.db $D0
+.db $E9
+.db $83
+.db $00
+.db $D8
+.db $EA
+.db $88
+.db $00
+.db $E0
+.db $EA
+.db $99
+.db $00
+.db $E8
+.db $E9
+.db $BF
+.db $00
+.db $08
+.db $00
+.db $6A
+.db $00
+.db $F0
+.db $F0
+.db $A5
+.db $00
+.db $F8
+.db $F8
+.db $B6
+.db $00
+.db $F8
+.db $F0
+.db $7F
+.db $00
+.db $00
+.db $00
+.db $9F
+.db $00
+.db $08
+.db $00
+.db $9E
+.db $00
+.db $00
+.db $00
+.db $9D
+.db $00
+.db $F8
+.db $F8
+.db $8F
+.db $00
+.db $08
+.db $F8
+.db $8E
+.db $00
+.db $00
+.db $08
+.db $DE
+.db $00
+.db $00
+.db $08
+.db $EF
+.db $00
+.db $F8
+.db $08
+.db $EE
+.db $00
+.db $F0
+.db $10
+.db $DA
+.db $00
+.db $00
+.db $10
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $E9
+.db $00
+.db $F0
+.db $18
+.db $E6
+.db $00
+.db $F0
+.db $18
+.db $E8
+.db $00
+.db $08
+.db $18
+.db $E7
+.db $00
+.db $00
+.db $19
+.db $D0
+.db $10
+.db $80
+.db $D8
+.db $D8
+.db $00
+.db $80
+.db $E0
+.db $D8
+.db $40
+.db $80
+.db $E8
+.db $E0
+.db $30
+.db $80
+.db $E8
+.db $E0
+.db $7B
+.db $80
+.db $F0
+.db $E8
+.db $6B
+.db $80
+.db $F0
+.db $F0
+.db $A6
+.db $00
+.db $F8
+.db $E8
+.db $96
+.db $00
+.db $F8
+.db $F8
+.db $B6
+.db $00
+.db $F8
+.db $F0
+.db $7F
+.db $00
+.db $00
+.db $00
+.db $9F
+.db $00
+.db $08
+.db $00
+.db $9E
+.db $00
+.db $00
+.db $00
+.db $9D
+.db $00
+.db $F8
+.db $F8
+.db $8F
+.db $00
+.db $08
+.db $F8
+.db $8E
+.db $00
+.db $00
+.db $00
+.db $6A
+.db $00
+.db $F0
+.db $08
+.db $DE
+.db $00
+.db $00
+.db $08
+.db $EF
+.db $00
+.db $F8
+.db $08
+.db $EE
+.db $00
+.db $F0
+.db $10
+.db $DA
+.db $00
+.db $00
+.db $10
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $E9
+.db $00
+.db $F0
+.db $18
+.db $E6
+.db $00
+.db $F0
+.db $18
+.db $E8
+.db $00
+.db $08
+.db $18
+.db $E7
+.db $00
+.db $00
+.db $1B
+.db $D0
+.db $10
+.db $C0
+.db $10
+.db $D8
+.db $00
+.db $C0
+.db $08
+.db $D8
+.db $40
+.db $C0
+.db $00
+.db $F0
+.db $6A
+.db $00
+.db $E8
+.db $F8
+.db $CF
+.db $C0
+.db $E8
+.db $F0
+.db $DF
+.db $C0
+.db $F0
+.db $E0
+.db $30
+.db $C0
+.db $00
+.db $E0
+.db $7B
+.db $C0
+.db $F8
+.db $E8
+.db $6B
+.db $C0
+.db $F8
+.db $F0
+.db $A6
+.db $00
+.db $F8
+.db $F8
+.db $B6
+.db $00
+.db $F8
+.db $F0
+.db $7F
+.db $00
+.db $00
+.db $00
+.db $9F
+.db $00
+.db $08
+.db $00
+.db $9E
+.db $00
+.db $00
+.db $00
+.db $9D
+.db $00
+.db $F8
+.db $F8
+.db $8F
+.db $00
+.db $08
+.db $F8
+.db $8E
+.db $00
+.db $00
+.db $00
+.db $6A
+.db $00
+.db $F0
+.db $08
+.db $DE
+.db $00
+.db $00
+.db $08
+.db $EF
+.db $00
+.db $F8
+.db $08
+.db $EE
+.db $00
+.db $F0
+.db $10
+.db $DA
+.db $00
+.db $00
+.db $10
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $E9
+.db $00
+.db $F0
+.db $18
+.db $E6
+.db $00
+.db $F0
+.db $18
+.db $E8
+.db $00
+.db $08
+.db $18
+.db $E7
+.db $00
+.db $00
+.db $16
+.db $E8
+.db $6A
+.db $80
+.db $E8
+.db $E0
+.db $CF
+.db $40
+.db $E8
+.db $E8
+.db $DF
+.db $40
+.db $F0
+.db $E8
+.db $96
+.db $00
+.db $F8
+.db $F0
+.db $A6
+.db $00
+.db $F8
+.db $F8
+.db $B6
+.db $00
+.db $F8
+.db $F0
+.db $7F
+.db $00
+.db $00
+.db $00
+.db $9F
+.db $00
+.db $08
+.db $00
+.db $9E
+.db $00
+.db $00
+.db $00
+.db $9D
+.db $00
+.db $F8
+.db $F8
+.db $8F
+.db $00
+.db $08
+.db $F8
+.db $8E
+.db $00
+.db $00
+.db $00
+.db $6A
+.db $00
+.db $F0
+.db $08
+.db $DE
+.db $00
+.db $00
+.db $08
+.db $EF
+.db $00
+.db $F8
+.db $08
+.db $EE
+.db $00
+.db $F0
+.db $10
+.db $DA
+.db $00
+.db $00
+.db $10
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $E9
+.db $00
+.db $F0
+.db $18
+.db $E6
+.db $00
+.db $F0
+.db $18
+.db $E8
+.db $00
+.db $08
+.db $18
+.db $E7
+.db $00
+.db $00
+.db $1A
+.db $EA
+.db $F8
+.db $00
+.db $F0
+.db $E9
+.db $90
+.db $40
+.db $1F
+.db $E9
+.db $BF
+.db $40
+.db $E8
+.db $E9
+.db $83
+.db $40
+.db $18
+.db $EA
+.db $88
+.db $40
+.db $10
+.db $EA
+.db $99
+.db $40
+.db $08
+.db $EA
+.db $AA
+.db $40
+.db $00
+.db $E8
+.db $96
+.db $00
+.db $F8
+.db $F0
+.db $A6
+.db $00
+.db $F8
+.db $F8
+.db $B6
+.db $00
+.db $F8
+.db $F0
+.db $7F
+.db $00
+.db $00
+.db $00
+.db $9F
+.db $00
+.db $08
+.db $00
+.db $9E
+.db $00
+.db $00
+.db $00
+.db $9D
+.db $00
+.db $F8
+.db $F8
+.db $8F
+.db $00
+.db $08
+.db $F8
+.db $8E
+.db $00
+.db $00
+.db $00
+.db $6A
+.db $00
+.db $F0
+.db $08
+.db $DE
+.db $00
+.db $00
+.db $08
+.db $EF
+.db $00
+.db $F8
+.db $08
+.db $EE
+.db $00
+.db $F0
+.db $10
+.db $DA
+.db $00
+.db $00
+.db $10
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $E9
+.db $00
+.db $F0
+.db $18
+.db $E6
+.db $00
+.db $F0
+.db $18
+.db $E8
+.db $00
+.db $08
+.db $18
+.db $E7
+.db $00
+.db $00
+.db $15
+.db $E2
+.db $FB
+.db $00
+.db $F7
+.db $DA
+.db $B0
+.db $00
+.db $F8
+.db $E8
+.db $96
+.db $00
+.db $F8
+.db $F0
+.db $A6
+.db $00
+.db $F8
+.db $F8
+.db $B6
+.db $00
+.db $F8
+.db $F0
+.db $7F
+.db $00
+.db $00
+.db $00
+.db $9F
+.db $00
+.db $08
+.db $00
+.db $9E
+.db $00
+.db $00
+.db $00
+.db $9D
+.db $00
+.db $F8
+.db $F8
+.db $8F
+.db $00
+.db $08
+.db $F8
+.db $8E
+.db $00
+.db $00
+.db $00
+.db $6A
+.db $00
+.db $F0
+.db $08
+.db $DE
+.db $00
+.db $00
+.db $08
+.db $EF
+.db $00
+.db $F8
+.db $08
+.db $EE
+.db $00
+.db $F0
+.db $10
+.db $DA
+.db $00
+.db $00
+.db $10
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $E9
+.db $00
+.db $F0
+.db $18
+.db $E6
+.db $00
+.db $F0
+.db $18
+.db $E8
+.db $00
+.db $08
+.db $18
+.db $E7
+.db $00
+.db $00
+.db $18
+.db $07
+.db $90
+.db $80
+.db $C8
+.db $FF
+.db $0E
+.db $00
+.db $D0
+.db $FF
+.db $1E
+.db $00
+.db $D8
+.db $FF
+.db $6E
+.db $00
+.db $E0
+.db $00
+.db $6A
+.db $00
+.db $F0
+.db $FC
+.db $AF
+.db $00
+.db $E8
+.db $F0
+.db $02
+.db $00
+.db $F8
+.db $F8
+.db $9B
+.db $00
+.db $F0
+.db $F8
+.db $C0
+.db $00
+.db $F8
+.db $F0
+.db $7F
+.db $00
+.db $00
+.db $00
+.db $9F
+.db $00
+.db $08
+.db $00
+.db $9E
+.db $00
+.db $00
+.db $00
+.db $9D
+.db $00
+.db $F8
+.db $F8
+.db $8F
+.db $00
+.db $08
+.db $F8
+.db $8E
+.db $00
+.db $00
+.db $08
+.db $DE
+.db $00
+.db $00
+.db $08
+.db $EF
+.db $00
+.db $F8
+.db $08
+.db $EE
+.db $00
+.db $F0
+.db $10
+.db $DA
+.db $00
+.db $00
+.db $10
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $E9
+.db $00
+.db $F0
+.db $18
+.db $E6
+.db $00
+.db $F0
+.db $18
+.db $E8
+.db $00
+.db $08
+.db $18
+.db $E7
+.db $00
+.db $00
+; end of data
+.db $1A
+.db $F0
+.db $07
+.db $00
+.db $F8
+.db $F0
+.db $06
+.db $00
+.db $F0
+.db $18
+.db $19
+.db $00
+.db $18
+.db $10
+.db $09
+.db $00
+.db $10
+.db $10
+.db $49
+.db $00
+.db $08
+.db $08
+.db $39
+.db $00
+.db $08
+.db $18
+.db $58
+.db $00
+.db $00
+.db $18
+.db $57
+.db $00
+.db $F8
+.db $18
+.db $56
+.db $00
+.db $F0
+.db $18
+.db $55
+.db $00
+.db $E8
+.db $10
+.db $48
+.db $00
+.db $00
+.db $10
+.db $47
+.db $00
+.db $F8
+.db $10
+.db $46
+.db $00
+.db $F0
+.db $10
+.db $45
+.db $00
+.db $E8
+.db $08
+.db $38
+.db $00
+.db $00
+.db $08
+.db $37
+.db $00
+.db $F8
+.db $08
+.db $36
+.db $00
+.db $F0
+.db $08
+.db $35
+.db $00
+.db $E8
+.db $00
+.db $28
+.db $00
+.db $00
+.db $00
+.db $27
+.db $00
+.db $F8
+.db $00
+.db $26
+.db $00
+.db $F0
+.db $00
+.db $25
+.db $00
+.db $E8
+.db $F8
+.db $18
+.db $00
+.db $00
+.db $F8
+.db $17
+.db $00
+.db $F8
+.db $F8
+.db $16
+.db $00
+.db $F0
+.db $F8
+.db $15
+.db $00
+.db $E8
+.db $01
+.db $00
+.db $00
+.db $03
+.db $00
+; start of data
+.db $0A
+.db $00
+.db $80
+.db $00
+.db $00
+.db $00
+.db $81
+.db $00
+.db $08
+.db $08
+.db $90
+.db $00
+.db $00
+.db $08
+.db $91
+.db $00
+.db $08
+.db $10
+.db $20
+.db $00
+.db $F8
+.db $10
+.db $A0
+.db $00
+.db $00
+.db $10
+.db $A1
+.db $00
+.db $08
+.db $18
+.db $30
+.db $00
+.db $F8
+.db $18
+.db $B0
+.db $00
+.db $00
+.db $18
+.db $B1
+.db $00
+.db $08
+.db $0A
+.db $00
+.db $82
+.db $00
+.db $00
+.db $00
+.db $83
+.db $00
+.db $08
+.db $08
+.db $92
+.db $00
+.db $00
+.db $08
+.db $93
+.db $00
+.db $08
+.db $10
+.db $35
+.db $00
+.db $F8
+.db $10
+.db $A2
+.db $00
+.db $00
+.db $10
+.db $A3
+.db $00
+.db $08
+.db $18
+.db $45
+.db $00
+.db $F8
+.db $18
+.db $B2
+.db $00
+.db $00
+.db $18
+.db $B3
+.db $00
+.db $08
+.db $0A
+.db $F8
+.db $74
+.db $00
+.db $00
+.db $00
+.db $82
+.db $00
+.db $F8
+.db $00
+.db $84
+.db $00
+.db $00
+.db $08
+.db $92
+.db $00
+.db $F8
+.db $08
+.db $94
+.db $00
+.db $00
+.db $10
+.db $A4
+.db $00
+.db $F8
+.db $10
+.db $A5
+.db $00
+.db $00
+.db $18
+.db $B4
+.db $00
+.db $F8
+.db $18
+.db $B5
+.db $00
+.db $00
+.db $18
+.db $B6
+.db $00
+.db $08
+.db $09
+.db $F8
+.db $85
+.db $00
+.db $F8
+.db $F8
+.db $86
+.db $00
+.db $00
+.db $00
+.db $87
+.db $00
+.db $F8
+.db $00
+.db $88
+.db $00
+.db $00
+.db $08
+.db $97
+.db $00
+.db $F8
+.db $08
+.db $98
+.db $00
+.db $00
+.db $10
+.db $A6
+.db $00
+.db $F8
+.db $10
+.db $A8
+.db $00
+.db $00
+.db $18
+.db $B4
+.db $00
+.db $F8
+.db $0A
+.db $F8
+.db $85
+.db $00
+.db $F8
+.db $F8
+.db $86
+.db $00
+.db $00
+.db $00
+.db $87
+.db $00
+.db $F8
+.db $00
+.db $88
+.db $00
+.db $00
+.db $08
+.db $97
+.db $00
+.db $F8
+.db $08
+.db $98
+.db $00
+.db $00
+.db $10
+.db $A7
+.db $00
+.db $F8
+.db $10
+.db $A8
+.db $00
+.db $00
+.db $18
+.db $B7
+.db $00
+.db $F0
+.db $18
+.db $B8
+.db $00
+.db $F8
+.db $0A
+.db $F8
+.db $95
+.db $00
+.db $00
+.db $F8
+.db $96
+.db $00
+.db $08
+.db $00
+.db $87
+.db $00
+.db $F8
+.db $00
+.db $89
+.db $00
+.db $00
+.db $08
+.db $97
+.db $00
+.db $F8
+.db $08
+.db $8A
+.db $00
+.db $00
+.db $10
+.db $A7
+.db $00
+.db $F8
+.db $10
+.db $A8
+.db $00
+.db $00
+.db $18
+.db $B7
+.db $00
+.db $F0
+.db $18
+.db $B8
+.db $00
+.db $F8
+.db $12
+.db $F8
+.db $0A
+.db $00
+.db $E7
+.db $F8
+.db $0B
+.db $00
+.db $EF
+.db $F8
+.db $0C
+.db $00
+.db $F7
+.db $F8
+.db $0D
+.db $00
+.db $FF
+.db $00
+.db $1A
+.db $00
+.db $E7
+.db $00
+.db $82
+.db $00
+.db $FF
+.db $00
+.db $83
+.db $00
+.db $07
+.db $08
+.db $19
+.db $00
+.db $E7
+.db $08
+.db $99
+.db $00
+.db $FF
+.db $08
+.db $9A
+.db $00
+.db $07
+.db $10
+.db $29
+.db $00
+.db $E7
+.db $10
+.db $35
+.db $00
+.db $F7
+.db $10
+.db $AA
+.db $00
+.db $FF
+.db $10
+.db $AB
+.db $00
+.db $07
+.db $18
+.db $2A
+.db $00
+.db $EF
+.db $18
+.db $45
+.db $00
+.db $F7
+.db $18
+.db $BA
+.db $00
+.db $FF
+.db $18
+.db $BB
+.db $00
+.db $07
+.db $0A
+.db $00
+.db $82
+.db $00
+.db $00
+.db $00
+.db $83
+.db $00
+.db $08
+.db $08
+.db $99
+.db $00
+.db $00
+.db $08
+.db $9A
+.db $00
+.db $08
+.db $10
+.db $35
+.db $00
+.db $F8
+.db $10
+.db $AA
+.db $00
+.db $00
+.db $10
+.db $AB
+.db $00
+.db $08
+.db $18
+.db $45
+.db $00
+.db $F8
+.db $18
+.db $BA
+.db $00
+.db $00
+.db $18
+.db $BB
+.db $00
+.db $08
+.db $0C
+.db $18
+.db $BB
+.db $00
+.db $08
+.db $08
+.db $00
+.db $00
+.db $F0
+.db $18
+.db $35
+.db $00
+.db $10
+.db $18
+.db $24
+.db $00
+.db $FE
+.db $10
+.db $15
+.db $00
+.db $08
+.db $10
+.db $14
+.db $00
+.db $00
+.db $08
+.db $05
+.db $00
+.db $08
+.db $08
+.db $04
+.db $00
+.db $00
+.db $08
+.db $10
+.db $00
+.db $F8
+.db $08
+.db $13
+.db $00
+.db $10
+.db $00
+.db $02
+.db $00
+.db $08
+.db $00
+.db $01
+.db $00
+.db $00
+.db $0B
+.db $09
+.db $00
+.db $00
+.db $F0
+.db $18
+.db $17
+.db $00
+.db $08
+.db $18
+.db $16
+.db $00
+.db $00
+.db $10
+.db $07
+.db $00
+.db $08
+.db $10
+.db $06
+.db $00
+.db $00
+.db $09
+.db $05
+.db $00
+.db $08
+.db $09
+.db $04
+.db $00
+.db $00
+.db $09
+.db $10
+.db $00
+.db $F8
+.db $09
+.db $13
+.db $00
+.db $10
+.db $01
+.db $02
+.db $00
+.db $08
+.db $01
+.db $01
+.db $00
+.db $00
+.db $0B
+.db $09
+.db $00
+.db $00
+.db $F0
+.db $18
+.db $39
+.db $00
+.db $08
+.db $18
+.db $38
+.db $00
+.db $00
+.db $10
+.db $29
+.db $00
+.db $08
+.db $10
+.db $28
+.db $00
+.db $00
+.db $08
+.db $19
+.db $00
+.db $08
+.db $08
+.db $18
+.db $00
+.db $00
+.db $00
+.db $09
+.db $00
+.db $08
+.db $00
+.db $08
+.db $00
+.db $00
+.db $09
+.db $10
+.db $00
+.db $F8
+.db $09
+.db $13
+.db $00
+.db $10
+.db $0B
+.db $08
+.db $00
+.db $00
+.db $F0
+.db $18
+.db $37
+.db $00
+.db $08
+.db $18
+.db $36
+.db $00
+.db $00
+.db $10
+.db $27
+.db $00
+.db $08
+.db $10
+.db $26
+.db $00
+.db $00
+.db $08
+.db $05
+.db $00
+.db $08
+.db $08
+.db $04
+.db $00
+.db $00
+.db $08
+.db $10
+.db $00
+.db $F8
+.db $08
+.db $13
+.db $00
+.db $10
+.db $00
+.db $02
+.db $00
+.db $08
+.db $00
+.db $01
+.db $00
+.db $00
+.db $0D
+.db $18
+.db $3D
+.db $40
+.db $08
+.db $18
+.db $3C
+.db $40
+.db $10
+.db $08
+.db $00
+.db $00
+.db $F4
+.db $08
+.db $13
+.db $00
+.db $15
+.db $18
+.db $24
+.db $00
+.db $FC
+.db $08
+.db $1D
+.db $00
+.db $10
+.db $08
+.db $1A
+.db $00
+.db $F8
+.db $10
+.db $2C
+.db $00
+.db $08
+.db $10
+.db $2B
+.db $00
+.db $00
+.db $08
+.db $1C
+.db $00
+.db $08
+.db $08
+.db $1B
+.db $00
+.db $00
+.db $00
+.db $0C
+.db $00
+.db $08
+.db $00
+.db $0B
+.db $00
+.db $00
+.db $0D
+.db $02
+.db $00
+.db $00
+.db $E4
+.db $02
+.db $10
+.db $00
+.db $EC
+.db $08
+.db $0A
+.db $00
+.db $F0
+.db $08
+.db $0F
+.db $40
+.db $F8
+.db $08
+.db $0D
+.db $40
+.db $08
+.db $10
+.db $1F
+.db $40
+.db $00
+.db $10
+.db $1E
+.db $40
+.db $08
+.db $18
+.db $3C
+.db $40
+.db $10
+.db $18
+.db $3D
+.db $40
+.db $08
+.db $08
+.db $0E
+.db $40
+.db $00
+.db $18
+.db $24
+.db $00
+.db $FC
+.db $00
+.db $0C
+.db $00
+.db $06
+.db $00
+.db $0B
+.db $00
+.db $FE
+; end of data
+.db $0C
+.db $00
+.db $2E
+.db $40
+.db $08
+.db $00
+.db $2F
+.db $40
+.db $00
+.db $18
+.db $BB
+.db $00
+.db $08
+.db $08
+.db $00
+.db $00
+.db $F0
+.db $18
+.db $35
+.db $00
+.db $10
+.db $18
+.db $24
+.db $00
+.db $FE
+.db $10
+.db $15
+.db $00
+.db $08
+.db $10
+.db $14
+.db $00
+.db $00
+.db $08
+.db $05
+.db $00
+.db $08
+.db $08
+.db $04
+.db $00
+.db $00
+.db $08
+.db $10
+.db $00
+.db $F8
+.db $08
+.db $13
+.db $00
+.db $10
+.db $0B
+.db $01
+.db $2E
+.db $40
+.db $08
+.db $01
+.db $2F
+.db $40
+.db $00
+.db $09
+.db $00
+.db $00
+.db $F0
+.db $18
+.db $17
+.db $00
+.db $08
+.db $18
+.db $16
+.db $00
+.db $00
+.db $10
+.db $07
+.db $00
+.db $08
+.db $10
+.db $06
+.db $00
+.db $00
+.db $09
+.db $05
+.db $00
+.db $08
+.db $09
+.db $04
+.db $00
+.db $00
+.db $09
+.db $10
+.db $00
+.db $F8
+.db $09
+.db $13
+.db $00
+.db $10
+.db $0B
+.db $00
+.db $33
+.db $00
+.db $08
+.db $00
+.db $23
+.db $00
+.db $00
+.db $09
+.db $00
+.db $00
+.db $F0
+.db $18
+.db $39
+.db $00
+.db $08
+.db $18
+.db $38
+.db $00
+.db $00
+.db $10
+.db $29
+.db $00
+.db $08
+.db $10
+.db $28
+.db $00
+.db $00
+.db $08
+.db $19
+.db $00
+.db $08
+.db $08
+.db $18
+.db $00
+.db $00
+.db $09
+.db $10
+.db $00
+.db $F8
+.db $09
+.db $13
+.db $00
+.db $10
+.db $0B
+.db $00
+.db $2E
+.db $40
+.db $08
+.db $00
+.db $2F
+.db $40
+.db $00
+.db $08
+.db $00
+.db $00
+.db $F0
+.db $18
+.db $37
+.db $00
+.db $08
+.db $18
+.db $36
+.db $00
+.db $00
+.db $10
+.db $27
+.db $00
+.db $08
+.db $10
+.db $26
+.db $00
+.db $00
+.db $08
+.db $05
+.db $00
+.db $08
+.db $08
+.db $04
+.db $00
+.db $00
+.db $08
+.db $10
+.db $00
+.db $F8
+.db $08
+.db $13
+.db $00
+.db $10
+.db $0D
+.db $00
+.db $7F
+.db $00
+.db $08
+.db $00
+.db $4F
+.db $00
+.db $00
+.db $18
+.db $3D
+.db $40
+.db $08
+.db $18
+.db $3C
+.db $40
+.db $10
+.db $08
+.db $00
+.db $00
+.db $F4
+.db $08
+.db $13
+.db $00
+.db $15
+.db $18
+.db $24
+.db $00
+.db $FC
+.db $08
+.db $1D
+.db $00
+.db $10
+.db $08
+.db $1A
+.db $00
+.db $F8
+.db $10
+.db $2C
+.db $00
+.db $08
+.db $10
+.db $2B
+.db $00
+.db $00
+.db $08
+.db $1C
+.db $00
+.db $08
+.db $08
+.db $1B
+.db $00
+.db $00
+.db $0D
+.db $00
+.db $7F
+.db $00
+.db $06
+.db $00
+.db $4F
+.db $00
+.db $FE
+.db $02
+.db $00
+.db $00
+.db $E4
+.db $02
+.db $10
+.db $00
+.db $EC
+.db $08
+.db $0A
+.db $00
+.db $F0
+.db $08
+.db $0F
+.db $40
+.db $F8
+.db $08
+.db $0D
+.db $40
+.db $08
+.db $10
+.db $1F
+.db $40
+.db $00
+.db $10
+.db $1E
+.db $40
+.db $08
+.db $18
+.db $3C
+.db $40
+.db $10
+.db $18
+.db $3D
+.db $40
+.db $08
+.db $08
+.db $0E
+.db $40
+.db $00
+.db $18
+.db $24
+.db $00
+.db $FC
+; start of data
+.db $13
+.db $18
+.db $43
+.db $00
+.db $10
+.db $18
+.db $42
+.db $00
+.db $08
+.db $18
+.db $41
+.db $00
+.db $00
+.db $18
+.db $40
+.db $00
+.db $F8
+.db $10
+.db $33
+.db $00
+.db $10
+.db $10
+.db $32
+.db $00
+.db $08
+.db $10
+.db $31
+.db $00
+.db $00
+.db $10
+.db $30
+.db $00
+.db $F8
+.db $08
+.db $23
+.db $00
+.db $10
+.db $08
+.db $22
+.db $00
+.db $08
+.db $08
+.db $21
+.db $00
+.db $00
+.db $08
+.db $20
+.db $00
+.db $F8
+.db $18
+.db $13
+.db $00
+.db $F0
+.db $10
+.db $03
+.db $00
+.db $F0
+.db $00
+.db $12
+.db $00
+.db $08
+.db $00
+.db $11
+.db $00
+.db $00
+.db $00
+.db $10
+.db $00
+.db $F8
+.db $F8
+.db $02
+.db $00
+.db $08
+.db $F8
+.db $01
+.db $00
+.db $00
+.db $13
+.db $08
+.db $08
+.db $00
+.db $10
+.db $18
+.db $17
+.db $00
+.db $10
+.db $18
+.db $16
+.db $00
+.db $08
+.db $18
+.db $15
+.db $00
+.db $00
+.db $18
+.db $14
+.db $00
+.db $F8
+.db $10
+.db $07
+.db $00
+.db $10
+.db $10
+.db $06
+.db $00
+.db $08
+.db $10
+.db $05
+.db $00
+.db $00
+.db $10
+.db $04
+.db $00
+.db $F8
+.db $18
+.db $13
+.db $00
+.db $F0
+.db $10
+.db $03
+.db $00
+.db $F0
+.db $08
+.db $22
+.db $00
+.db $08
+.db $08
+.db $21
+.db $00
+.db $00
+.db $08
+.db $20
+.db $00
+.db $F8
+.db $00
+.db $12
+.db $00
+.db $08
+.db $00
+.db $11
+.db $00
+.db $00
+.db $00
+.db $10
+.db $00
+.db $F8
+.db $F8
+.db $02
+.db $00
+.db $08
+.db $F8
+.db $01
+.db $00
+.db $00
+.db $14
+.db $01
+.db $09
+.db $00
+.db $F0
+.db $08
+.db $1D
+.db $00
+.db $10
+.db $18
+.db $3D
+.db $00
+.db $10
+.db $18
+.db $3C
+.db $00
+.db $08
+.db $18
+.db $3B
+.db $00
+.db $00
+.db $18
+.db $3A
+.db $00
+.db $F8
+.db $10
+.db $2D
+.db $00
+.db $10
+.db $10
+.db $2C
+.db $00
+.db $08
+.db $10
+.db $2B
+.db $00
+.db $00
+.db $10
+.db $2A
+.db $00
+.db $F8
+.db $18
+.db $39
+.db $00
+.db $F0
+.db $08
+.db $1A
+.db $00
+.db $F8
+.db $00
+.db $0B
+.db $00
+.db $00
+.db $00
+.db $0A
+.db $00
+.db $F8
+.db $10
+.db $03
+.db $00
+.db $F0
+.db $08
+.db $22
+.db $00
+.db $08
+.db $08
+.db $21
+.db $00
+.db $00
+.db $00
+.db $12
+.db $00
+.db $08
+.db $F8
+.db $02
+.db $00
+.db $08
+.db $F8
+.db $01
+.db $00
+.db $00
+.db $13
+.db $06
+.db $36
+.db $00
+.db $F0
+.db $04
+.db $56
+.db $00
+.db $10
+.db $18
+.db $13
+.db $00
+.db $EF
+.db $10
+.db $37
+.db $00
+.db $F0
+.db $00
+.db $26
+.db $00
+.db $08
+.db $00
+.db $25
+.db $00
+.db $00
+.db $18
+.db $57
+.db $00
+.db $10
+.db $18
+.db $55
+.db $00
+.db $00
+.db $10
+.db $47
+.db $00
+.db $10
+.db $10
+.db $46
+.db $00
+.db $08
+.db $10
+.db $45
+.db $00
+.db $00
+.db $18
+.db $54
+.db $00
+.db $F8
+.db $10
+.db $44
+.db $00
+.db $F8
+.db $08
+.db $34
+.db $00
+.db $F8
+.db $00
+.db $24
+.db $00
+.db $F8
+.db $08
+.db $22
+.db $00
+.db $08
+.db $08
+.db $21
+.db $00
+.db $00
+.db $F8
+.db $02
+.db $00
+.db $07
+.db $F8
+.db $01
+.db $00
+.db $FF
+.db $13
+.db $08
+.db $53
+.db $00
+.db $10
+.db $08
+.db $52
+.db $00
+.db $08
+.db $18
+.db $73
+.db $00
+.db $10
+.db $18
+.db $72
+.db $00
+.db $08
+.db $18
+.db $71
+.db $00
+.db $00
+.db $10
+.db $63
+.db $00
+.db $10
+.db $10
+.db $62
+.db $00
+.db $08
+.db $10
+.db $61
+.db $00
+.db $00
+.db $10
+.db $60
+.db $00
+.db $F8
+.db $08
+.db $50
+.db $00
+.db $F8
+.db $00
+.db $64
+.db $00
+.db $00
+.db $00
+.db $0A
+.db $00
+.db $F8
+.db $01
+.db $09
+.db $00
+.db $F0
+.db $18
+.db $13
+.db $00
+.db $EF
+.db $10
+.db $37
+.db $00
+.db $F0
+.db $00
+.db $26
+.db $00
+.db $08
+.db $08
+.db $21
+.db $00
+.db $00
+.db $F8
+.db $02
+.db $00
+.db $07
+.db $F8
+.db $01
+.db $00
+.db $FF
+.db $12
+.db $18
+.db $13
+.db $00
+.db $F0
+.db $10
+.db $03
+.db $00
+.db $F0
+.db $08
+.db $20
+.db $00
+.db $F8
+.db $00
+.db $10
+.db $00
+.db $F8
+.db $18
+.db $59
+.db $00
+.db $00
+.db $18
+.db $58
+.db $00
+.db $F8
+.db $10
+.db $49
+.db $00
+.db $00
+.db $10
+.db $48
+.db $00
+.db $F8
+.db $10
+.db $5B
+.db $00
+.db $10
+.db $08
+.db $4B
+.db $00
+.db $08
+.db $08
+.db $23
+.db $00
+.db $10
+.db $18
+.db $5A
+.db $00
+.db $08
+.db $10
+.db $4A
+.db $00
+.db $08
+.db $08
+.db $21
+.db $00
+.db $00
+.db $00
+.db $12
+.db $00
+.db $08
+.db $00
+.db $11
+.db $00
+.db $00
+.db $F8
+.db $02
+.db $00
+.db $08
+.db $F8
+.db $01
+.db $00
+.db $00
+.db $12
+.db $F0
+.db $03
+.db $00
+.db $10
+.db $08
+.db $23
+.db $00
+.db $10
+.db $18
+.db $43
+.db $00
+.db $10
+.db $18
+.db $42
+.db $00
+.db $08
+.db $10
+.db $33
+.db $00
+.db $10
+.db $10
+.db $32
+.db $00
+.db $08
+.db $10
+.db $8B
+.db $00
+.db $00
+.db $10
+.db $8A
+.db $00
+.db $F8
+.db $08
+.db $89
+.db $00
+.db $08
+.db $08
+.db $88
+.db $00
+.db $00
+.db $08
+.db $87
+.db $00
+.db $F8
+.db $00
+.db $86
+.db $00
+.db $08
+.db $00
+.db $85
+.db $00
+.db $00
+.db $00
+.db $84
+.db $00
+.db $F8
+.db $F8
+.db $83
+.db $00
+.db $10
+.db $F8
+.db $82
+.db $00
+.db $08
+.db $F8
+.db $81
+.db $00
+.db $00
+.db $F8
+.db $80
+.db $00
+.db $F8
+.db $13
+.db $08
+.db $4F
+.db $00
+.db $F8
+.db $10
+.db $EE
+.db $00
+.db $F8
+.db $07
+.db $77
+.db $00
+.db $E8
+.db $00
+.db $78
+.db $00
+.db $F0
+.db $00
+.db $79
+.db $00
+.db $F8
+.db $00
+.db $ED
+.db $00
+.db $10
+.db $00
+.db $F0
+.db $00
+.db $08
+.db $F8
+.db $70
+.db $00
+.db $08
+.db $08
+.db $23
+.db $00
+.db $10
+.db $18
+.db $43
+.db $00
+.db $10
+.db $18
+.db $42
+.db $00
+.db $08
+.db $10
+.db $33
+.db $00
+.db $10
+.db $10
+.db $32
+.db $00
+.db $08
+.db $10
+.db $8B
+.db $00
+.db $00
+.db $08
+.db $89
+.db $00
+.db $08
+.db $08
+.db $88
+.db $00
+.db $00
+.db $00
+.db $85
+.db $00
+.db $00
+.db $F8
+.db $81
+.db $00
+.db $00
+.db $F8
+.db $80
+.db $00
+.db $F8
+; end of data
+.db $06
+.db $08
+.db $4F
+.db $00
+.db $F8
+.db $10
+.db $E8
+.db $00
+.db $F8
+.db $07
+.db $77
+.db $00
+.db $E8
+.db $00
+.db $78
+.db $00
+.db $F0
+.db $00
+.db $79
+.db $00
+.db $F8
+.db $00
+.db $97
+.db $00
+.db $10
+.db $14
+.db $18
+.db $80
+.db $00
+.db $E8
+.db $18
+.db $70
+.db $00
+.db $F0
+.db $10
+.db $60
+.db $00
+.db $F0
+.db $10
+.db $90
+.db $00
+.db $F8
+.db $F8
+.db $63
+.db $00
+.db $10
+.db $F8
+.db $62
+.db $00
+.db $08
+.db $F8
+.db $61
+.db $00
+.db $00
+.db $00
+.db $74
+.db $00
+.db $18
+.db $00
+.db $73
+.db $00
+.db $10
+.db $00
+.db $72
+.db $00
+.db $08
+.db $00
+.db $71
+.db $00
+.db $00
+.db $18
+.db $A3
+.db $00
+.db $10
+.db $18
+.db $A2
+.db $00
+.db $08
+.db $18
+.db $A1
+.db $00
+.db $00
+.db $10
+.db $93
+.db $00
+.db $10
+.db $10
+.db $92
+.db $00
+.db $08
+.db $10
+.db $91
+.db $00
+.db $00
+.db $08
+.db $83
+.db $00
+.db $10
+.db $08
+.db $82
+.db $00
+.db $08
+.db $08
+.db $81
+.db $00
+.db $00
+.db $14
+.db $10
+.db $54
+.db $00
+.db $18
+.db $18
+.db $7B
+.db $00
+.db $0F
+.db $18
+.db $79
+.db $00
+.db $00
+.db $10
+.db $6B
+.db $00
+.db $10
+.db $10
+.db $6A
+.db $00
+.db $08
+.db $10
+.db $69
+.db $00
+.db $00
+.db $18
+.db $80
+.db $00
+.db $E8
+.db $18
+.db $70
+.db $00
+.db $F0
+.db $10
+.db $60
+.db $00
+.db $F0
+.db $10
+.db $90
+.db $00
+.db $F8
+.db $F8
+.db $63
+.db $00
+.db $10
+.db $F8
+.db $62
+.db $00
+.db $08
+.db $F8
+.db $61
+.db $00
+.db $00
+.db $00
+.db $74
+.db $00
+.db $18
+.db $00
+.db $73
+.db $00
+.db $10
+.db $00
+.db $72
+.db $00
+.db $08
+.db $00
+.db $71
+.db $00
+.db $00
+.db $08
+.db $83
+.db $00
+.db $10
+.db $08
+.db $82
+.db $00
+.db $08
+.db $08
+.db $81
+.db $00
+.db $00
+.db $15
+.db $10
+.db $55
+.db $00
+.db $18
+.db $18
+.db $9B
+.db $00
+.db $10
+.db $18
+.db $9A
+.db $00
+.db $08
+.db $18
+.db $99
+.db $00
+.db $00
+.db $10
+.db $8B
+.db $00
+.db $10
+.db $10
+.db $8A
+.db $00
+.db $08
+.db $10
+.db $89
+.db $00
+.db $00
+.db $18
+.db $80
+.db $00
+.db $E8
+.db $18
+.db $70
+.db $00
+.db $F0
+.db $10
+.db $60
+.db $00
+.db $F0
+.db $10
+.db $90
+.db $00
+.db $F8
+.db $F8
+.db $63
+.db $00
+.db $10
+.db $F8
+.db $62
+.db $00
+.db $08
+.db $F8
+.db $61
+.db $00
+.db $00
+.db $00
+.db $74
+.db $00
+.db $18
+.db $00
+.db $73
+.db $00
+.db $10
+.db $00
+.db $72
+.db $00
+.db $08
+.db $00
+.db $71
+.db $00
+.db $00
+.db $08
+.db $83
+.db $00
+.db $10
+.db $08
+.db $82
+.db $00
+.db $08
+.db $08
+.db $81
+.db $00
+.db $00
+.db $13
+.db $11
+.db $56
+.db $00
+.db $17
+.db $18
+.db $7E
+.db $00
+.db $08
+.db $10
+.db $6F
+.db $00
+.db $10
+.db $10
+.db $6E
+.db $00
+.db $08
+.db $10
+.db $6D
+.db $00
+.db $00
+.db $09
+.db $CE
+.db $00
+.db $08
+.db $09
+.db $CD
+.db $00
+.db $00
+.db $01
+.db $BF
+.db $00
+.db $10
+.db $01
+.db $BE
+.db $00
+.db $08
+.db $01
+.db $BD
+.db $00
+.db $00
+.db $F9
+.db $AF
+.db $00
+.db $10
+.db $F9
+.db $AE
+.db $00
+.db $08
+.db $F9
+.db $AD
+.db $00
+.db $00
+.db $19
+.db $80
+.db $00
+.db $E8
+.db $19
+.db $70
+.db $00
+.db $F0
+.db $11
+.db $60
+.db $00
+.db $F0
+.db $11
+.db $90
+.db $00
+.db $F8
+.db $01
+.db $74
+.db $00
+.db $18
+.db $09
+.db $83
+.db $00
+.db $10
+.db $13
+.db $11
+.db $56
+.db $00
+.db $17
+.db $10
+.db $6F
+.db $00
+.db $10
+.db $18
+.db $7E
+.db $00
+.db $08
+.db $10
+.db $6E
+.db $00
+.db $08
+.db $10
+.db $6D
+.db $00
+.db $00
+.db $19
+.db $80
+.db $00
+.db $E8
+.db $19
+.db $70
+.db $00
+.db $F0
+.db $11
+.db $60
+.db $00
+.db $F0
+.db $11
+.db $90
+.db $00
+.db $F8
+.db $F9
+.db $63
+.db $00
+.db $10
+.db $F9
+.db $62
+.db $00
+.db $08
+.db $F9
+.db $61
+.db $00
+.db $00
+.db $01
+.db $74
+.db $00
+.db $18
+.db $01
+.db $73
+.db $00
+.db $10
+.db $01
+.db $72
+.db $00
+.db $08
+.db $01
+.db $71
+.db $00
+.db $00
+.db $09
+.db $83
+.db $00
+.db $10
+.db $09
+.db $82
+.db $00
+.db $08
+.db $09
+.db $81
+.db $00
+.db $00
+.db $14
+.db $10
+.db $57
+.db $00
+.db $18
+.db $10
+.db $7F
+.db $00
+.db $10
+.db $18
+.db $9E
+.db $00
+.db $08
+.db $18
+.db $9D
+.db $00
+.db $00
+.db $10
+.db $8E
+.db $00
+.db $08
+.db $10
+.db $8D
+.db $00
+.db $00
+.db $19
+.db $80
+.db $00
+.db $E8
+.db $19
+.db $70
+.db $00
+.db $F0
+.db $11
+.db $60
+.db $00
+.db $F0
+.db $11
+.db $90
+.db $00
+.db $F8
+.db $F9
+.db $63
+.db $00
+.db $10
+.db $F9
+.db $62
+.db $00
+.db $08
+.db $F9
+.db $61
+.db $00
+.db $00
+.db $01
+.db $74
+.db $00
+.db $18
+.db $01
+.db $73
+.db $00
+.db $10
+.db $01
+.db $72
+.db $00
+.db $08
+.db $01
+.db $71
+.db $00
+.db $00
+.db $09
+.db $83
+.db $00
+.db $10
+.db $09
+.db $82
+.db $00
+.db $08
+.db $09
+.db $81
+.db $00
+.db $00
+.db $13
+.db $10
+.db $59
+.db $00
+.db $18
+.db $10
+.db $7F
+.db $00
+.db $10
+.db $18
+.db $9C
+.db $00
+.db $08
+.db $10
+.db $8C
+.db $00
+.db $08
+.db $10
+.db $6D
+.db $00
+.db $00
+.db $19
+.db $80
+.db $00
+.db $E8
+.db $19
+.db $70
+.db $00
+.db $F0
+.db $11
+.db $60
+.db $00
+.db $F0
+.db $11
+.db $90
+.db $00
+.db $F8
+.db $F9
+.db $63
+.db $00
+.db $10
+.db $F9
+.db $62
+.db $00
+.db $08
+.db $F9
+.db $61
+.db $00
+.db $00
+.db $01
+.db $74
+.db $00
+.db $18
+.db $01
+.db $73
+.db $00
+.db $10
+.db $01
+.db $72
+.db $00
+.db $08
+.db $01
+.db $71
+.db $00
+.db $00
+.db $09
+.db $83
+.db $00
+.db $10
+.db $09
+.db $82
+.db $00
+.db $08
+.db $09
+.db $81
+.db $00
+.db $00
+.db $14
+.db $18
+.db $BA
+.db $00
+.db $16
+.db $18
+.db $B9
+.db $00
+.db $0E
+.db $10
+.db $A9
+.db $00
+.db $10
+.db $18
+.db $79
+.db $00
+.db $00
+.db $10
+.db $6A
+.db $00
+.db $08
+.db $10
+.db $69
+.db $00
+.db $00
+.db $18
+.db $80
+.db $00
+.db $E8
+.db $18
+.db $70
+.db $00
+.db $F0
+.db $10
+.db $60
+.db $00
+.db $F0
+.db $10
+.db $90
+.db $00
+.db $F8
+.db $F8
+.db $63
+.db $00
+.db $10
+.db $F8
+.db $62
+.db $00
+.db $08
+.db $F8
+.db $61
+.db $00
+.db $00
+.db $00
+.db $74
+.db $00
+.db $18
+.db $00
+.db $73
+.db $00
+.db $10
+.db $00
+.db $72
+.db $00
+.db $08
+.db $00
+.db $71
+.db $00
+.db $00
+.db $08
+.db $83
+.db $00
+.db $10
+.db $08
+.db $82
+.db $00
+.db $08
+.db $08
+.db $81
+.db $00
+.db $00
+.db $14
+.db $18
+.db $BC
+.db $00
+.db $10
+.db $18
+.db $BB
+.db $00
+.db $08
+.db $10
+.db $AC
+.db $00
+.db $10
+.db $10
+.db $AB
+.db $00
+.db $08
+.db $18
+.db $79
+.db $00
+.db $00
+.db $10
+.db $69
+.db $00
+.db $00
+.db $18
+.db $80
+.db $00
+.db $E8
+.db $18
+.db $70
+.db $00
+.db $F0
+.db $10
+.db $60
+.db $00
+.db $F0
+.db $10
+.db $90
+.db $00
+.db $F8
+.db $F8
+.db $63
+.db $00
+.db $10
+.db $F8
+.db $62
+.db $00
+.db $08
+.db $F8
+.db $61
+.db $00
+.db $00
+.db $00
+.db $74
+.db $00
+.db $18
+.db $00
+.db $73
+.db $00
+.db $10
+.db $00
+.db $72
+.db $00
+.db $08
+.db $00
+.db $71
+.db $00
+.db $00
+.db $08
+.db $83
+.db $00
+.db $10
+.db $08
+.db $82
+.db $00
+.db $08
+.db $08
+.db $81
+.db $00
+.db $00
+.db $13
+.db $16
+.db $80
+.db $00
+.db $EB
+.db $16
+.db $70
+.db $00
+.db $F3
+.db $0E
+.db $60
+.db $00
+.db $F3
+.db $10
+.db $B2
+.db $00
+.db $F8
+.db $FF
+.db $E3
+.db $00
+.db $18
+.db $00
+.db $C2
+.db $00
+.db $10
+.db $10
+.db $E2
+.db $00
+.db $10
+.db $08
+.db $D2
+.db $00
+.db $10
+.db $18
+.db $BC
+.db $00
+.db $10
+.db $18
+.db $BB
+.db $00
+.db $08
+.db $18
+.db $79
+.db $00
+.db $00
+.db $10
+.db $E1
+.db $00
+.db $08
+.db $10
+.db $E0
+.db $00
+.db $00
+.db $08
+.db $D1
+.db $00
+.db $08
+.db $08
+.db $D0
+.db $00
+.db $00
+.db $00
+.db $C1
+.db $00
+.db $08
+.db $00
+.db $C0
+.db $00
+.db $00
+.db $F8
+.db $B1
+.db $00
+.db $08
+.db $F8
+.db $B0
+.db $00
+.db $00
+.db $15
+.db $10
+.db $D3
+.db $00
+.db $F8
+.db $10
+.db $E2
+.db $00
+.db $10
+.db $18
+.db $BC
+.db $00
+.db $10
+.db $18
+.db $BB
+.db $00
+.db $08
+.db $18
+.db $79
+.db $00
+.db $00
+.db $F8
+.db $C8
+.db $00
+.db $20
+.db $F8
+.db $C7
+.db $00
+.db $18
+.db $00
+.db $B7
+.db $00
+.db $18
+.db $08
+.db $C6
+.db $00
+.db $10
+.db $00
+.db $B6
+.db $00
+.db $10
+.db $10
+.db $D5
+.db $00
+.db $08
+.db $10
+.db $D4
+.db $00
+.db $00
+.db $08
+.db $C5
+.db $00
+.db $08
+.db $08
+.db $C4
+.db $00
+.db $00
+.db $00
+.db $B5
+.db $00
+.db $08
+.db $00
+.db $B4
+.db $00
+.db $00
+.db $F8
+.db $F2
+.db $00
+.db $10
+.db $F8
+.db $F1
+.db $00
+.db $08
+.db $F8
+.db $F0
+.db $00
+.db $00
+.db $08
+.db $C3
+.db $00
+.db $F8
+.db $00
+.db $B3
+.db $00
+.db $F8
+.db $15
+.db $00
+.db $DE
+.db $00
+.db $E0
+.db $FF
+.db $DD
+.db $00
+.db $D8
+.db $01
+.db $DF
+.db $00
+.db $E8
+.db $06
+.db $EF
+.db $00
+.db $F0
+.db $18
+.db $ED
+.db $00
+.db $10
+.db $18
+.db $EC
+.db $00
+.db $08
+.db $18
+.db $EB
+.db $00
+.db $00
+.db $18
+.db $EA
+.db $00
+.db $F8
+.db $10
+.db $DC
+.db $00
+.db $08
+.db $10
+.db $DB
+.db $00
+.db $00
+.db $10
+.db $DA
+.db $00
+.db $F8
+.db $F8
+.db $E5
+.db $00
+.db $01
+.db $F8
+.db $E4
+.db $00
+.db $F9
+.db $08
+.db $E9
+.db $00
+.db $10
+.db $08
+.db $E8
+.db $00
+.db $08
+.db $08
+.db $E7
+.db $00
+.db $00
+.db $08
+.db $E6
+.db $00
+.db $F8
+.db $00
+.db $D9
+.db $00
+.db $10
+.db $00
+.db $D8
+.db $00
+.db $08
+.db $00
+.db $D7
+.db $00
+.db $00
+.db $00
+.db $D6
+.db $00
+.db $F8
+.db $06
+.db $00
+.db $8B
+.db $00
+.db $F8
+.db $00
+.db $8C
+.db $00
+.db $00
+.db $00
+.db $8D
+.db $00
+.db $08
+.db $00
+.db $8D
+.db $00
+.db $10
+.db $00
+.db $8D
+.db $00
+.db $18
+.db $00
+.db $8E
+.db $00
+.db $20
+.db $05
+.db $00
+.db $8B
+.db $00
+.db $F8
+.db $00
+.db $8C
+.db $00
+.db $00
+.db $00
+.db $8D
+.db $00
+.db $08
+.db $00
+.db $8D
+.db $00
+.db $10
+.db $00
+.db $7E
+.db $00
+.db $18
+.db $06
+.db $00
+.db $8B
+.db $00
+.db $F8
+.db $00
+.db $8C
+.db $00
+.db $00
+.db $00
+.db $8D
+.db $00
+.db $08
+.db $00
+.db $8D
+.db $00
+.db $10
+.db $00
+.db $8D
+.db $00
+.db $18
+.db $00
+.db $8E
+.db $00
+.db $20
+.db $05
+.db $08
+.db $A8
+.db $40
+.db $08
+.db $00
+.db $98
+.db $40
+.db $08
+.db $00
+.db $A7
+.db $40
+.db $10
+.db $08
+.db $A9
+.db $40
+.db $00
+.db $00
+.db $99
+.db $40
+.db $00
+.db $05
+.db $08
+.db $A8
+.db $40
+.db $08
+.db $00
+.db $98
+.db $40
+.db $08
+.db $00
+.db $A7
+.db $40
+.db $10
+.db $08
+.db $AA
+.db $40
+.db $00
+.db $00
+.db $9A
+.db $40
+.db $00
+.db $05
+.db $08
+.db $A8
+.db $40
+.db $08
+.db $00
+.db $98
+.db $40
+.db $08
+.db $00
+.db $A7
+.db $40
+.db $10
+.db $08
+.db $AB
+.db $40
+.db $00
+.db $00
+.db $9B
+.db $40
+.db $00
+.db $05
+.db $08
+.db $A8
+.db $40
+.db $08
+.db $00
+.db $98
+.db $40
+.db $08
+.db $00
+.db $A7
+.db $40
+.db $10
+.db $08
+.db $AC
+.db $40
+.db $00
+.db $00
+.db $9C
+.db $40
+.db $00
+.db $05
+.db $08
+.db $89
+.db $40
+.db $08
+.db $01
+.db $7A
+.db $40
+.db $10
+.db $00
+.db $7B
+.db $40
+.db $08
+.db $08
+.db $A9
+.db $40
+.db $00
+.db $00
+.db $99
+.db $40
+.db $00
+.db $05
+.db $08
+.db $89
+.db $40
+.db $08
+.db $01
+.db $78
+.db $40
+.db $10
+.db $00
+.db $79
+.db $40
+.db $08
+.db $08
+.db $A9
+.db $40
+.db $00
+.db $00
+.db $99
+.db $40
+.db $00
+.db $05
+.db $08
+.db $89
+.db $40
+.db $08
+.db $00
+.db $A3
+.db $40
+.db $10
+.db $00
+.db $A4
+.db $40
+.db $08
+.db $08
+.db $A9
+.db $40
+.db $00
+.db $00
+.db $99
+.db $40
+.db $00
+; start of data
+.db $0A
+.db $18
+.db $54
+.db $00
+.db $F8
+.db $10
+.db $44
+.db $00
+.db $F8
+.db $18
+.db $71
+.db $00
+.db $08
+.db $18
+.db $70
+.db $00
+.db $00
+.db $10
+.db $61
+.db $00
+.db $08
+.db $10
+.db $60
+.db $00
+.db $00
+.db $08
+.db $51
+.db $00
+.db $08
+.db $08
+.db $50
+.db $00
+.db $00
+.db $00
+.db $41
+.db $00
+.db $08
+.db $00
+.db $40
+.db $00
+.db $00
+.db $09
+.db $F8
+.db $64
+.db $00
+.db $00
+.db $F8
+.db $74
+.db $00
+.db $F8
+.db $18
+.db $76
+.db $00
+.db $0A
+.db $18
+.db $75
+.db $00
+.db $00
+.db $10
+.db $66
+.db $00
+.db $06
+.db $10
+.db $65
+.db $00
+.db $FE
+.db $08
+.db $56
+.db $00
+.db $08
+.db $08
+.db $55
+.db $00
+.db $00
+.db $00
+.db $45
+.db $00
+.db $00
+.db $09
+.db $18
+.db $58
+.db $00
+.db $08
+.db $18
+.db $57
+.db $00
+.db $00
+.db $10
+.db $48
+.db $00
+.db $08
+.db $10
+.db $47
+.db $00
+.db $00
+.db $F9
+.db $64
+.db $00
+.db $00
+.db $F9
+.db $74
+.db $00
+.db $F8
+.db $09
+.db $56
+.db $00
+.db $08
+.db $09
+.db $55
+.db $00
+.db $00
+.db $01
+.db $45
+.db $00
+.db $00
+.db $09
+.db $18
+.db $59
+.db $00
+.db $00
+.db $18
+.db $5A
+.db $00
+.db $08
+.db $10
+.db $4A
+.db $00
+.db $08
+.db $10
+.db $49
+.db $00
+.db $00
+.db $F8
+.db $64
+.db $00
+.db $00
+.db $F8
+.db $74
+.db $00
+.db $F8
+.db $08
+.db $56
+.db $00
+.db $08
+.db $08
+.db $55
+.db $00
+.db $00
+.db $00
+.db $45
+.db $00
+.db $00
+.db $0C
+.db $08
+.db $4C
+.db $00
+.db $10
+.db $F8
+.db $92
+.db $00
+.db $03
+.db $F0
+.db $82
+.db $00
+.db $03
+.db $18
+.db $B0
+.db $00
+.db $FA
+.db $18
+.db $B2
+.db $00
+.db $10
+.db $18
+.db $B1
+.db $00
+.db $08
+.db $10
+.db $A1
+.db $00
+.db $08
+.db $10
+.db $A0
+.db $00
+.db $00
+.db $08
+.db $91
+.db $00
+.db $08
+.db $08
+.db $90
+.db $00
+.db $00
+.db $00
+.db $81
+.db $00
+.db $08
+.db $00
+.db $80
+.db $00
+.db $00
+.db $0C
+.db $00
+.db $54
+.db $00
+.db $00
+.db $F8
+.db $44
+.db $00
+.db $00
+.db $08
+.db $93
+.db $00
+.db $F8
+.db $00
+.db $83
+.db $00
+.db $F8
+.db $08
+.db $84
+.db $00
+.db $00
+.db $08
+.db $94
+.db $00
+.db $08
+.db $18
+.db $85
+.db $00
+.db $0F
+.db $18
+.db $A2
+.db $00
+.db $F8
+.db $18
+.db $B4
+.db $00
+.db $07
+.db $18
+.db $B3
+.db $00
+.db $00
+.db $10
+.db $A4
+.db $00
+.db $07
+.db $10
+.db $A3
+.db $00
+.db $FF
+.db $08
+.db $10
+.db $A4
+.db $00
+.db $07
+.db $18
+.db $5C
+.db $00
+.db $00
+.db $18
+.db $5B
+.db $00
+.db $F8
+.db $10
+.db $4B
+.db $00
+.db $FF
+.db $08
+.db $84
+.db $00
+.db $00
+.db $08
+.db $94
+.db $00
+.db $08
+.db $18
+.db $85
+.db $00
+.db $0F
+.db $18
+.db $B4
+.db $00
+.db $07
+.db $0E
+.db $10
+.db $A4
+.db $00
+.db $07
+.db $00
+.db $6B
+.db $00
+.db $00
+.db $00
+.db $6A
+.db $00
+.db $F8
+.db $08
+.db $7C
+.db $00
+.db $F7
+.db $08
+.db $7B
+.db $00
+.db $EF
+.db $18
+.db $79
+.db $00
+.db $E8
+.db $10
+.db $69
+.db $00
+.db $E8
+.db $18
+.db $5C
+.db $00
+.db $00
+.db $18
+.db $5B
+.db $00
+.db $F8
+.db $10
+.db $4B
+.db $00
+.db $FF
+.db $08
+.db $84
+.db $00
+.db $00
+.db $08
+.db $94
+.db $00
+.db $08
+.db $18
+.db $85
+.db $00
+.db $0F
+.db $18
+.db $B4
+.db $00
+.db $07
+.db $08
+.db $18
+.db $31
+.db $40
+.db $00
+.db $10
+.db $21
+.db $40
+.db $00
+.db $08
+.db $11
+.db $40
+.db $00
+.db $00
+.db $01
+.db $40
+.db $00
+.db $18
+.db $30
+.db $40
+.db $08
+.db $10
+.db $20
+.db $40
+.db $08
+.db $08
+.db $10
+.db $40
+.db $08
+.db $00
+.db $00
+.db $40
+.db $08
+.db $08
+.db $18
+.db $13
+.db $00
+.db $08
+.db $18
+.db $12
+.db $00
+.db $00
+.db $10
+.db $03
+.db $00
+.db $08
+.db $10
+.db $02
+.db $00
+.db $00
+.db $08
+.db $11
+.db $40
+.db $00
+.db $00
+.db $01
+.db $40
+.db $00
+.db $08
+.db $10
+.db $40
+.db $08
+.db $00
+.db $00
+.db $40
+.db $08
+.db $08
+.db $08
+.db $0E
+.db $00
+.db $08
+.db $08
+.db $0D
+.db $00
+.db $00
+.db $00
+.db $08
+.db $00
+.db $00
+.db $00
+.db $09
+.db $00
+.db $08
+.db $18
+.db $15
+.db $00
+.db $08
+.db $18
+.db $14
+.db $00
+.db $00
+.db $10
+.db $05
+.db $00
+.db $08
+.db $10
+.db $04
+.db $00
+.db $00
+.db $08
+.db $08
+.db $27
+.db $00
+.db $00
+.db $00
+.db $08
+.db $00
+.db $00
+.db $08
+.db $19
+.db $00
+.db $08
+.db $00
+.db $09
+.db $00
+.db $08
+.db $18
+.db $17
+.db $00
+.db $0A
+.db $18
+.db $16
+.db $00
+.db $FF
+.db $10
+.db $07
+.db $00
+.db $08
+.db $10
+.db $06
+.db $00
+.db $00
+.db $08
+.db $18
+.db $1C
+.db $00
+.db $08
+.db $18
+.db $1B
+.db $00
+.db $00
+.db $10
+.db $0C
+.db $00
+.db $08
+.db $10
+.db $0B
+.db $00
+.db $00
+.db $08
+.db $11
+.db $40
+.db $00
+.db $00
+.db $01
+.db $40
+.db $00
+.db $08
+.db $10
+.db $40
+.db $08
+.db $00
+.db $00
+.db $40
+.db $08
+.db $0A
+.db $00
+.db $1D
+.db $00
+.db $10
+.db $F8
+.db $0F
+.db $00
+.db $08
+.db $18
+.db $30
+.db $40
+.db $08
+.db $18
+.db $31
+.db $40
+.db $00
+.db $10
+.db $3F
+.db $00
+.db $08
+.db $10
+.db $3E
+.db $00
+.db $00
+.db $08
+.db $2F
+.db $00
+.db $08
+.db $08
+.db $2E
+.db $00
+.db $00
+.db $00
+.db $1F
+.db $00
+.db $08
+.db $00
+.db $1E
+.db $00
+.db $00
+.db $0F
+.db $F8
+.db $2C
+.db $00
+.db $04
+.db $F8
+.db $2B
+.db $00
+.db $FC
+.db $18
+.db $37
+.db $00
+.db $F3
+.db $10
+.db $3A
+.db $00
+.db $EC
+.db $08
+.db $3B
+.db $00
+.db $EC
+.db $00
+.db $3C
+.db $00
+.db $ED
+.db $F8
+.db $2A
+.db $00
+.db $F4
+.db $01
+.db $00
+.db $40
+.db $06
+.db $01
+.db $01
+.db $40
+.db $FE
+.db $18
+.db $49
+.db $00
+.db $07
+.db $18
+.db $48
+.db $00
+.db $FF
+.db $10
+.db $39
+.db $00
+.db $07
+.db $10
+.db $38
+.db $00
+.db $FF
+.db $08
+.db $29
+.db $00
+.db $07
+.db $08
+.db $28
+.db $00
+.db $FF
+.db $08
+.db $01
+.db $00
+.db $40
+.db $06
+.db $01
+.db $01
+.db $40
+.db $FE
+.db $18
+.db $49
+.db $00
+.db $07
+.db $18
+.db $48
+.db $00
+.db $FF
+.db $10
+.db $39
+.db $00
+.db $07
+.db $10
+.db $38
+.db $00
+.db $FF
+.db $08
+.db $29
+.db $00
+.db $07
+.db $08
+.db $28
+.db $00
+.db $FF
+.db $5A
+.db $A7
+.db $74
+.db $A7
+.db $7D
+.db $A7
+; end of data
+.db $89
+.db $A7
+.db $93
+.db $A7
+.db $A1
+.db $A7
+; start of data
+.db $49
+.db $A7
+.db $B5
+.db $A7
+.db $CF
+.db $A7
+.db $D8
+.db $A7
+.db $E7
+.db $A7
+.db $F1
+.db $A7
+.db $FF
+.db $A7
+.db $A3
+.db $A7
+.db $1F
+; end of data
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $1F
+.db $21
+; start of data
+.db $00
+; end of data
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $02
+.db $03
+; start of data
+.db $06
+; end of data
+.db $06
+.db $06
+.db $06
+.db $06
+.db $06
+.db $06
+.db $06
+.db $08
+; start of data
+.db $0A
+.db $0A
+.db $0A
+; end of data
+.db $0A
+.db $0A
+.db $0A
+.db $0A
+.db $0A
+.db $0A
+.db $0A
+.db $0A
+.db $0A
+.db $0F
+.db $0F
+.db $0F
+.db $0F
+.db $0F
+.db $0F
+.db $0F
+.db $0F
+.db $11
+.db $12
+.db $15
+.db $15
+.db $15
+.db $15
+.db $15
+.db $15
+.db $15
+.db $15
+.db $15
+.db $15
+.db $15
+.db $15
+.db $17
+.db $18
+.db $1B
+.db $1C
+.db $23
+.db $23
+.db $23
+.db $23
+.db $23
+.db $23
+.db $23
+.db $23
+; start of data
+.db $23
+; end of data
+.db $23
+.db $23
+.db $23
+.db $23
+.db $23
+.db $23
+.db $23
+.db $20
+.db $22
+; start of data
+.db $01
+; end of data
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $01
+.db $04
+.db $05
+; start of data
+.db $07
+; end of data
+.db $07
+.db $07
+.db $07
+.db $07
+.db $07
+.db $07
+.db $07
+.db $09
+.db $0C
+.db $0C
+.db $0C
+.db $0C
+.db $0C
+.db $0C
+.db $0C
+; start of data
+.db $0C
+; end of data
+.db $0C
+.db $0C
+.db $0C
+.db $0C
+.db $0D
+.db $0E
+.db $0B
+; start of data
+.db $10
+; end of data
+.db $10
+.db $10
+.db $10
+.db $10
+.db $10
+.db $10
+.db $10
+.db $13
+.db $14
+; start of data
+.db $16
+; end of data
+.db $16
+.db $16
+.db $16
+.db $16
+.db $16
+.db $16
+.db $16
+.db $16
+.db $16
+.db $16
+.db $16
+.db $19
+.db $1A
+; start of data
+.db $1E
+; end of data
+.db $1E
+.db $1E
+.db $1E
+.db $1E
+.db $1E
+.db $1E
+.db $1D
+; start of data
+.db $D5
+.db $A8
+.db $06
+.db $A9
+; end of data
+.db $37
+.db $A9
+.db $6A
+.db $A9
+.db $78
+.db $A9
+.db $AB
+.db $A9
+; start of data
+.db $1F
+.db $AA
+.db $36
+.db $AA
+; end of data
+.db $B9
+.db $A9
+.db $D4
+.db $A9
+; start of data
+.db $EF
+.db $A9
+; end of data
+.db $07
+.db $AA
+; start of data
+.db $BD
+.db $A8
+; end of data
+.db $4F
+.db $A8
+.db $4F
+.db $A8
+.db $4D
+.db $AA
+; start of data
+.db $70
+.db $AA
+; end of data
+.db $4F
+.db $A8
+.db $78
+.db $A8
+.db $86
+.db $A8
+.db $AF
+.db $A8
+.db $93
+.db $AA
+; start of data
+.db $BA
+.db $AA
+; end of data
+.db $E1
+.db $AA
+.db $0A
+.db $AB
+.db $1C
+.db $AB
+.db $45
+.db $AB
+.db $63
+.db $AB
+.db $82
+.db $AB
+.db $A1
+.db $AB
+; start of data
+.db $57
+.db $AB
+.db $BA
+.db $AB
+; end of data
+.db $D1
+.db $AB
+.db $E8
+.db $AB
+.db $FA
+.db $AB
+; start of data
+.db $0C
+.db $AC
+; end of data
+.db $28
+.db $BD
+.db $FF
+.db $05
+.db $65
+.db $66
+.db $19
+.db $67
+.db $68
+.db $DE
+.db $FF
+.db $02
+.db $76
+.db $29
+.db $FE
+.db $FF
+.db $03
+.db $10
+.db $11
+.db $12
+.db $1E
+.db $00
+.db $04
+.db $18
+.db $21
+.db $22
+.db $23
+.db $3E
+.db $00
+.db $04
+.db $28
+.db $31
+.db $32
+.db $33
+.db $5E
+.db $00
+.db $04
+.db $40
+.db $41
+.db $42
+.db $43
+.db $0D
+.db $BD
+.db $FF
+.db $05
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $DE
+.db $FF
+.db $02
+.db $FF
+.db $01
+.db $28
+.db $BF
+.db $FF
+.db $05
+.db $69
+.db $67
+.db $0E
+.db $6A
+.db $65
+.db $E1
+.db $FF
+.db $02
+.db $1E
+.db $7A
+.db $00
+.db $00
+.db $03
+.db $5D
+.db $5E
+.db $5F
+.db $1F
+.db $00
+.db $04
+.db $6C
+.db $6D
+.db $6E
+.db $0F
+.db $3F
+.db $00
+.db $04
+.db $7C
+.db $7D
+.db $7E
+.db $1F
+.db $5F
+.db $00
+.db $04
+.db $8C
+.db $8D
+.db $8E
+.db $8F
+.db $0D
+.db $BF
+.db $FF
+.db $05
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $E1
+.db $FF
+.db $02
+.db $4E
+.db $FF
+; start of data
+.db $17
+.db $00
+.db $00
+.db $02
+.db $2E
+.db $2F
+.db $1F
+.db $00
+.db $05
+.db $3A
+.db $3B
+.db $3E
+.db $3F
+.db $6F
+.db $40
+.db $00
+.db $02
+.db $4D
+.db $4E
+.db $60
+.db $00
+.db $02
+.db $5D
+.db $5F
+.db $30
+.db $C0
+.db $FF
+.db $02
+.db $02
+.db $03
+.db $DF
+.db $FF
+.db $04
+.db $11
+.db $12
+.db $13
+.db $14
+.db $FE
+.db $FF
+.db $05
+.db $20
+.db $21
+.db $22
+.db $23
+.db $24
+.db $1E
+.db $00
+.db $05
+.db $30
+.db $31
+.db $32
+.db $33
+.db $34
+.db $3D
+.db $00
+.db $06
+.db $00
+.db $40
+.db $41
+.db $42
+.db $43
+.db $44
+.db $5C
+.db $00
+.db $01
+.db $10
+.db $5F
+.db $00
+.db $04
+.db $51
+.db $52
+.db $53
+.db $54
+.db $30
+.db $C0
+.db $FF
+.db $02
+.db $06
+.db $07
+.db $DF
+.db $FF
+.db $04
+.db $15
+.db $16
+.db $17
+.db $18
+.db $FF
+.db $FF
+.db $05
+.db $25
+.db $26
+.db $27
+.db $28
+.db $29
+.db $1F
+.db $00
+.db $05
+.db $35
+.db $36
+.db $37
+.db $38
+.db $39
+.db $3F
+.db $00
+.db $06
+.db $45
+.db $46
+.db $47
+.db $48
+.db $49
+.db $09
+.db $5F
+.db $00
+.db $04
+.db $55
+.db $56
+.db $57
+.db $58
+.db $65
+.db $00
+.db $01
+.db $19
+; end of data
+.db $32
+.db $9E
+.db $FF
+.db $06
+.db $50
+.db $3A
+.db $5E
+.db $5C
+.db $5C
+.db $4F
+.db $C0
+.db $FF
+.db $02
+.db $6D
+.db $7F
+.db $DF
+.db $FF
+.db $04
+.db $11
+.db $12
+.db $13
+.db $14
+.db $FE
+.db $FF
+.db $05
+.db $20
+.db $21
+.db $22
+.db $23
+.db $24
+.db $1F
+.db $00
+.db $04
+.db $A2
+.db $32
+.db $33
+.db $34
+.db $3F
+.db $00
+.db $04
+.db $41
+.db $42
+.db $43
+.db $44
+.db $5F
+.db $00
+.db $04
+.db $51
+.db $52
+.db $53
+.db $54
+.db $0D
+.db $9E
+.db $FF
+.db $06
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $C0
+.db $FF
+.db $01
+.db $02
+.db $32
+.db $9E
+.db $FF
+.db $06
+.db $A0
+.db $5C
+.db $5C
+.db $D7
+.db $74
+.db $50
+.db $C0
+.db $FF
+.db $02
+.db $EB
+.db $D6
+.db $DF
+.db $FF
+.db $04
+.db $15
+.db $16
+.db $17
+.db $18
+.db $FF
+.db $FF
+.db $05
+.db $25
+.db $26
+.db $27
+.db $28
+.db $29
+.db $1F
+.db $00
+.db $04
+.db $35
+.db $36
+.db $37
+.db $F3
+.db $3F
+.db $00
+.db $04
+.db $45
+.db $46
+.db $47
+.db $48
+.db $5F
+.db $00
+.db $04
+.db $55
+.db $56
+.db $57
+.db $58
+.db $0D
+.db $9E
+.db $FF
+.db $06
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $C1
+.db $FF
+.db $01
+.db $07
+.db $1A
+.db $A0
+.db $FF
+.db $83
+.db $74
+.db $9E
+.db $AE
+.db $00
+.db $00
+.db $02
+.db $BE
+.db $81
+.db $20
+.db $00
+.db $02
+.db $CF
+.db $91
+.db $40
+.db $00
+.db $02
+.db $DF
+.db $A1
+.db $60
+.db $00
+.db $02
+.db $B0
+.db $B1
+.db $1A
+.db $A1
+.db $FF
+.db $83
+.db $CE
+.db $DE
+.db $EE
+.db $00
+.db $00
+.db $02
+.db $8B
+.db $CD
+.db $20
+.db $00
+.db $02
+.db $9B
+.db $DD
+.db $40
+.db $00
+.db $02
+.db $AC
+.db $ED
+.db $60
+.db $00
+.db $02
+.db $BC
+.db $BD
+; start of data
+.db $17
+.db $00
+.db $00
+.db $02
+.db $01
+.db $02
+.db $1E
+.db $00
+.db $05
+.db $00
+.db $10
+.db $11
+.db $12
+.db $13
+.db $40
+.db $00
+.db $02
+.db $21
+.db $22
+.db $60
+.db $00
+.db $02
+.db $31
+.db $32
+; end of data
+.db $17
+.db $00
+.db $00
+.db $02
+.db $30
+.db $20
+.db $1F
+.db $00
+.db $05
+.db $3A
+.db $3B
+.db $3E
+.db $3F
+.db $6F
+.db $40
+.db $00
+.db $02
+.db $4D
+.db $4E
+.db $60
+.db $00
+.db $02
+.db $5D
+.db $5F
+; start of data
+.db $16
+.db $00
+.db $00
+.db $02
+.db $80
+.db $81
+.db $20
+.db $00
+.db $02
+.db $90
+.db $91
+.db $3F
+.db $00
+.db $03
+.db $20
+.db $A0
+.db $A1
+.db $5F
+.db $00
+.db $03
+.db $30
+.db $B0
+.db $B1
+.db $16
+.db $00
+.db $00
+.db $02
+.db $8B
+.db $8C
+.db $20
+.db $00
+.db $02
+.db $9B
+.db $9C
+.db $40
+.db $00
+.db $03
+.db $AC
+.db $AD
+.db $D7
+.db $60
+.db $00
+.db $03
+.db $BC
+.db $BD
+.db $E7
+; end of data
+.db $22
+.db $E0
+.db $FF
+.db $02
+.db $01
+.db $02
+.db $FF
+.db $FF
+.db $03
+.db $10
+.db $11
+.db $12
+.db $1F
+.db $00
+.db $04
+.db $20
+.db $21
+.db $22
+.db $23
+.db $3E
+.db $00
+.db $05
+.db $03
+.db $30
+.db $31
+.db $32
+.db $33
+.db $5E
+.db $00
+.db $05
+.db $13
+.db $40
+.db $41
+.db $42
+.db $43
+; start of data
+.db $22
+.db $E0
+.db $FF
+.db $02
+.db $4D
+.db $4E
+.db $00
+.db $00
+.db $03
+.db $5D
+.db $5E
+.db $5F
+.db $1F
+.db $00
+.db $04
+.db $6C
+.db $6D
+.db $6E
+.db $6F
+.db $3F
+.db $00
+.db $05
+.db $7C
+.db $7D
+.db $7E
+.db $7F
+.db $4C
+.db $5F
+.db $00
+.db $05
+.db $8C
+.db $8D
+.db $8E
+.db $8F
+.db $5C
+; end of data
+.db $26
+.db $E0
+.db $FF
+.db $03
+.db $61
+.db $62
+.db $63
+.db $00
+.db $00
+.db $04
+.db $71
+.db $72
+.db $73
+.db $74
+.db $20
+.db $00
+.db $03
+.db $81
+.db $82
+.db $83
+.db $3E
+.db $00
+.db $05
+.db $60
+.db $90
+.db $91
+.db $92
+.db $93
+.db $5D
+.db $00
+.db $02
+.db $80
+.db $70
+.db $60
+.db $00
+.db $03
+.db $A1
+.db $A2
+.db $A3
+; start of data
+.db $26
+.db $DF
+.db $FF
+.db $03
+.db $65
+.db $66
+.db $67
+.db $FE
+.db $FF
+.db $04
+.db $A8
+.db $75
+.db $76
+.db $77
+.db $1F
+.db $00
+.db $03
+.db $85
+.db $86
+.db $87
+.db $3F
+.db $00
+.db $05
+.db $95
+.db $96
+.db $97
+.db $98
+.db $68
+.db $5F
+.db $00
+.db $03
+.db $A5
+.db $A6
+.db $A7
+.db $63
+.db $00
+.db $02
+.db $78
+.db $88
+; end of data
+.db $28
+.db $BE
+.db $FF
+.db $06
+.db $C9
+.db $CA
+.db $8F
+.db $B8
+.db $B8
+.db $CC
+.db $E0
+.db $FF
+.db $03
+.db $9F
+.db $62
+.db $63
+.db $FF
+.db $FF
+.db $04
+.db $FF
+.db $71
+.db $72
+.db $73
+.db $20
+.db $00
+.db $03
+.db $94
+.db $82
+.db $83
+.db $40
+.db $00
+.db $03
+.db $A4
+.db $92
+.db $93
+.db $60
+.db $00
+.db $03
+.db $A1
+.db $A2
+.db $A3
+.db $11
+.db $BE
+.db $FF
+.db $06
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $E0
+.db $FF
+.db $01
+.db $61
+.db $FF
+.db $FF
+.db $01
+.db $A0
+.db $28
+.db $BF
+.db $FF
+.db $06
+.db $CF
+.db $B8
+.db $B8
+.db $AA
+.db $CB
+.db $C9
+.db $E0
+.db $FF
+.db $03
+.db $65
+.db $66
+.db $EE
+.db $00
+.db $00
+.db $04
+.db $75
+.db $76
+.db $77
+.db $FF
+.db $20
+.db $00
+.db $03
+.db $85
+.db $86
+.db $64
+.db $40
+.db $00
+.db $03
+.db $95
+.db $96
+.db $84
+.db $60
+.db $00
+.db $03
+.db $A5
+.db $A6
+.db $A7
+.db $11
+.db $BF
+.db $FF
+.db $06
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $E2
+.db $FF
+.db $01
+.db $67
+.db $03
+.db $00
+.db $01
+.db $F3
+; start of data
+.db $0B
+.db $FF
+.db $FF
+.db $03
+.db $A7
+.db $98
+.db $99
+.db $20
+.db $00
+.db $02
+.db $A8
+.db $A9
+; end of data
+.db $1E
+.db $DF
+.db $FF
+.db $03
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $FF
+.db $03
+.db $C5
+.db $C6
+.db $C7
+.db $1F
+.db $00
+.db $03
+.db $D5
+.db $D6
+.db $D9
+.db $3F
+.db $00
+.db $03
+.db $E5
+.db $E6
+.db $E7
+.db $5F
+.db $00
+.db $03
+.db $E8
+.db $E9
+.db $EA
+.db $1E
+.db $DF
+.db $FF
+.db $03
+.db $EE
+.db $FF
+.db $F4
+.db $FF
+.db $FF
+.db $03
+.db $8E
+.db $15
+.db $8F
+.db $1F
+.db $00
+.db $03
+.db $9E
+.db $13
+.db $9F
+.db $3F
+.db $00
+.db $03
+.db $AE
+.db $50
+.db $AF
+.db $5F
+.db $00
+.db $03
+.db $FF
+.db $D7
+.db $DA
+.db $18
+.db $00
+.db $00
+.db $03
+.db $CB
+.db $CC
+.db $CD
+.db $20
+.db $00
+.db $03
+.db $DB
+.db $DC
+.db $DD
+.db $40
+.db $00
+.db $03
+.db $EB
+.db $EC
+.db $ED
+.db $60
+.db $00
+.db $03
+.db $C8
+.db $C9
+.db $CA
+; start of data
+.db $16
+.db $00
+.db $00
+.db $02
+.db $40
+.db $41
+.db $20
+.db $00
+.db $02
+.db $50
+.db $51
+.db $3F
+.db $00
+.db $03
+.db $44
+.db $60
+.db $61
+.db $5F
+.db $00
+.db $03
+.db $54
+.db $70
+.db $71
+; end of data
+.db $16
+.db $00
+.db $00
+.db $02
+.db $42
+.db $43
+.db $20
+.db $00
+.db $02
+.db $52
+.db $53
+.db $40
+.db $00
+.db $03
+.db $62
+.db $63
+.db $64
+.db $60
+.db $00
+.db $03
+.db $72
+.db $73
+.db $74
+.db $11
+.db $A0
+.db $FF
+.db $87
+.db $82
+.db $92
+.db $7A
+.db $40
+.db $67
+.db $77
+.db $70
+.db $01
+.db $00
+.db $84
+.db $41
+.db $51
+.db $61
+.db $71
+.db $11
+.db $A1
+.db $FF
+.db $87
+.db $6E
+.db $6D
+.db $6C
+.db $43
+.db $68
+.db $78
+.db $73
+.db $00
+.db $00
+.db $84
+.db $42
+.db $52
+.db $62
+.db $72
+; start of data
+.db $14
+.db $00
+.db $00
+.db $02
+.db $00
+.db $01
+.db $20
+.db $00
+.db $02
+.db $10
+.db $11
+.db $40
+.db $00
+.db $02
+.db $20
+.db $21
+.db $60
+.db $00
+.db $02
+.db $30
+.db $31
+.db $00
+.db $04
+; end of data
+L092C23:
+    LDX $7DA5
+    LDA $7DDD,X
+    AND #127
+    BNE L092C2E
+L092C2D:
+.db $60
+L092C2E:
+    LDA #6
+    STA $7DD9,X
+    STA $7DDB,X
+    LDA #32
+    JSR $E6B8
+    LDX $7DA5
+    LDA $7DDD,X
+    AND #127
+    BEQ L092C2D
+    LDX #0
+    STX $7DC0
+    STX $7DC5
+    INX 
+    STX $7DD4
+    STX $7DE3
+    JSR $C288
+    JSR $C70D
+    LDX $7DA5
+    LDA #0
+    STA $7DE1,X
+    STA $7DDF,X
+    LDA $7DDD,X
+    AND #127
+    TAY 
+    ASL 
+    TAX 
+    LDA $B014,Y
+    JSR $CA48
+    JSR $CA50
+    LDA $BAFD,X
+    STA $00
+    LDA $BAFE,X
+    STA $01
+    LDA #63
+    STA $7D7D
+    LDX #0
+    STX $7D90
+    LDA #16
+    STA $7D7E
+    STA $7D7F
+    LDA #15
+    STA $7D80
+    STA $7D84
+    STA $7D88
+    STA $7D8C
+    LDA #4
+    STA $02
+    LDY #0
+L092CA6:
+    LDA #3
+    STA $03
+L092CAA:
+    LDA ($00),Y
+    STA $7D81,X
+    INY 
+    INX 
+    DEC $03
+    BNE L092CAA
+    INX 
+    DEC $02
+    BNE L092CA6
+    LDA #128
+    STA $28
+L092CBE:
+    RTS 
+
+L092CBF:
+    LDX $7DA5
+    LDA $7DDD,X
+    AND #127
+    BEQ L092CBE
+    LDA $7DD4
+    BEQ L092CBE
+    LDA $7DE3
+    BNE L092CDD
+    LDA $7DC5
+    BNE L092CDD
+    LDA $7DE1,X
+    BNE L092CE2
+L092CDD:
+    LDA #1
+    STA $7DDF,X
+L092CE2:
+    TAY 
+    DEY 
+    TYA 
+    BNE L092CF1
+    LDA $7DDF,X
+    EOR #1
+    STA $7DDF,X
+    LDA #8
+L092CF1:
+    STA $7DE1,X
+    LDA #36
+    STA $0400
+    LDA #174
+    STA $45
+    LDA #79
+    STA $44
+    LDX #0
+    JSR $AD75
+    LDA #174
+    STA $45
+    LDA #115
+    STA $44
+    LDX #3
+    JSR $AD75
+    LDX $7DA5
+    LDA $7DDD,X
+    BPL L092D1F
+    INC $41
+    AND #127
+L092D1F:
+    ASL 
+    TAX 
+    LDA $AE97,X
+    STA $44
+    LDA $AE98,X
+    STA $45
+    LDX #1
+    JSR $AD75
+    JSR $ADCA
+    LDX $7DA5
+    LDA $7DDD,X
+    AND #127
+    ASL 
+    TAX 
+    LDA $AF6B,X
+    STA $44
+    LDA $AF6C,X
+    STA $45
+    LDX #2
+    JSR $AD8A
+    LDX $7DA5
+    LDA $7DD5,X
+    CLC 
+    ADC #24
+    STA $3B
+    LDA $7DD7,X
+    CLC 
+    ADC #8
+    STA $3A
+    LDA #7
+    STA $42
+    LDA #0
+    STA $3C
+    LDA $3D
+    AND #3
+    BNE L092D6F
+    DEC $3D
+L092D6F:
+    JSR $CAB7
+    INC $3D
+    RTS 
+
+L092D75:
+    LDA #36
+    STA $46
+    LDY #0
+L092D7B:
+    LDA ($44),Y
+    STA $0401,X
+    INX 
+    INX 
+    INX 
+    INX 
+    INY 
+    DEC $46
+    BNE L092D7B
+    RTS 
+
+L092D8A:
+    LDA #18
+    STA $46
+    LDY #0
+L092D90:
+    LDA ($44),Y
+    STA $47
+    AND #192
+    STA $0401,X
+    LDA $47
+    AND #48
+    JSR $C39A
+    ORA $0401,X
+    STA $0401,X
+    INX 
+    INX 
+    INX 
+    INX 
+    LDA ($44),Y
+    STA $47
+    AND #12
+    JSR $C3A0
+    STA $0401,X
+    LDA $47
+    AND #3
+    ORA $0401,X
+    STA $0401,X
+    INX 
+    INX 
+    INX 
+    INX 
+    INY 
+    DEC $46
+    BNE L092D90
+    RTS 
+
+L092DCA:
+    LDX $7DA5
+    LDA $7DDF,X
+    BEQ L092E07
+    LDA $7DDD,X
+    AND #127
+    ASL 
+    TAX 
+    LDA $AF01,X
+    STA $44
+    LDA $AF02,X
+    STA $45
+    LDY #0
+    LDA ($44),Y
+    STA $46
+    AND #63
+    ASL 
+    ASL 
+    TAX 
+    INX 
+    INY 
+    LDA ($44),Y
+    STA $0401,X
+    INY 
+    LDA $46
+    BPL L092E07
+    AND #64
+    BNE L092E08
+    INX 
+    INX 
+    INX 
+    INX 
+    LDA ($44),Y
+    STA $0401,X
+L092E07:
+    RTS 
+
+L092E08:
+    TXA 
+    CLC 
+    ADC #24
+    TAX 
+    LDA ($44),Y
+    STA $0401,X
+    RTS 
+
+L092E13:
+    LDX $7DA5
+    LDA $7DDD,X
+    BMI L092E3A
+    CMP #1
+    BNE L092E28
+    LDY $744A
+    BEQ L092E33
+    LDA #36
+    BNE L092E33
+L092E28:
+    CMP #2
+    BNE L092E33
+    LDY $744B
+    BEQ L092E33
+    LDA #37
+L092E33:
+    TAY 
+    LDA $BDBF,Y
+    JMP $AE46
+
+L092E3A:
+    AND #127
+    TAY 
+    CMP #45
+    BCC L092E43
+.db $A0
+.db $00
+L092E43:
+    LDA $BDEB,Y
+    STA $7DDD,X
+    LDA #0
+    STA $7DD4
+    RTS 
+
+; start of data
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $08
+.db $08
+.db $08
+.db $08
+.db $08
+.db $08
+.db $10
+.db $10
+.db $10
+.db $10
+.db $10
+.db $10
+.db $18
+.db $18
+.db $18
+.db $18
+.db $18
+.db $18
+.db $20
+.db $20
+.db $20
+.db $20
+.db $20
+.db $20
+.db $28
+.db $28
+.db $28
+.db $28
+.db $28
+.db $28
+.db $F0
+.db $F8
+.db $00
+.db $08
+.db $10
+.db $18
+.db $F0
+.db $F8
+.db $00
+.db $08
+.db $10
+.db $18
+.db $F0
+.db $F8
+.db $00
+.db $08
+.db $10
+.db $18
+.db $F0
+.db $F8
+.db $00
+.db $08
+.db $10
+.db $18
+.db $F0
+.db $F8
+.db $00
+.db $08
+.db $10
+.db $18
+.db $F0
+.db $F8
+.db $00
+.db $08
+.db $10
+.db $18
+; end of data
+.db $91
+.db $B0
+; start of data
+.db $B5
+.db $B0
+; end of data
+.db $D9
+.db $B0
+; start of data
+.db $FD
+.db $B0
+.db $21
+.db $B1
+.db $45
+.db $B1
+.db $69
+.db $B1
+.db $8D
+.db $B1
+; end of data
+.db $B1
+.db $B1
+.db $D5
+.db $B1
+; start of data
+.db $F9
+.db $B1
+.db $1D
+.db $B2
+; end of data
+.db $41
+.db $B2
+.db $65
+.db $B2
+.db $89
+.db $B2
+.db $AD
+.db $B2
+; start of data
+.db $D1
+.db $B2
+.db $F5
+.db $B2
+; end of data
+.db $19
+.db $B3
+; start of data
+.db $3D
+.db $B3
+.db $61
+.db $B3
+; end of data
+.db $85
+.db $B3
+; start of data
+.db $CD
+.db $B3
+; end of data
+.db $CD
+.db $B3
+; start of data
+.db $F1
+.db $B3
+.db $15
+.db $B4
+.db $39
+.db $B4
+; end of data
+.db $5D
+.db $B4
+.db $81
+.db $B4
+; start of data
+.db $A5
+.db $B4
+; end of data
+.db $C9
+.db $B4
+; start of data
+.db $ED
+.db $B4
+.db $11
+.db $B5
+; end of data
+.db $35
+.db $B5
+; start of data
+.db $59
+.db $B5
+; end of data
+.db $7D
+.db $B5
+; start of data
+.db $A1
+.db $B5
+; end of data
+.db $C5
+.db $B5
+; start of data
+.db $E9
+.db $B5
+; end of data
+.db $0D
+.db $B6
+; start of data
+.db $31
+.db $B6
+.db $55
+.db $B6
+.db $A9
+.db $B3
+.db $79
+.db $B6
+; end of data
+.db $9D
+.db $B6
+.db $C1
+.db $B6
+.db $E5
+.db $B6
+.db $09
+.db $B7
+; start of data
+.db $91
+.db $B0
+; end of data
+.db $6D
+.db $B0
+.db $49
+.db $B0
+.db $2D
+.db $B7
+; start of data
+.db $7D
+.db $B5
+; end of data
+.db $53
+.db $B7
+; start of data
+.db $55
+.db $B7
+; end of data
+.db $57
+.db $B7
+; start of data
+.db $59
+.db $B7
+.db $5C
+.db $B7
+.db $5F
+.db $B7
+.db $62
+.db $B7
+.db $64
+.db $B7
+; end of data
+.db $67
+.db $B7
+.db $6A
+.db $B7
+; start of data
+.db $6C
+.db $B7
+.db $53
+.db $B7
+; end of data
+.db $6F
+.db $B7
+.db $71
+.db $B7
+.db $73
+.db $B7
+.db $76
+.db $B7
+; start of data
+.db $78
+.db $B7
+.db $7B
+.db $B7
+; end of data
+.db $7D
+.db $B7
+; start of data
+.db $7F
+.db $B7
+.db $A6
+.db $B7
+; end of data
+.db $81
+.db $B7
+; start of data
+.db $87
+.db $B7
+; end of data
+.db $87
+.db $B7
+; start of data
+.db $8A
+.db $B7
+.db $8D
+.db $B7
+.db $90
+.db $B7
+; end of data
+.db $93
+.db $B7
+.db $96
+.db $B7
+; start of data
+.db $99
+.db $B7
+; end of data
+.db $9C
+.db $B7
+; start of data
+.db $9F
+.db $B7
+.db $A2
+.db $B7
+; end of data
+.db $A2
+.db $B7
+; start of data
+.db $A2
+.db $B7
+; end of data
+.db $A4
+.db $B7
+; start of data
+.db $A6
+.db $B7
+; end of data
+.db $A8
+.db $B7
+; start of data
+.db $AB
+.db $B7
+; end of data
+.db $AE
+.db $B7
+; start of data
+.db $B1
+.db $B7
+.db $B3
+.db $B7
+.db $84
+.db $B7
+.db $B6
+.db $B7
+; end of data
+.db $B8
+.db $B7
+.db $BA
+.db $B7
+.db $B8
+.db $B7
+.db $BC
+.db $B7
+; start of data
+.db $53
+.db $B7
+; end of data
+.db $51
+.db $B7
+.db $51
+.db $B7
+.db $BE
+.db $B7
+; start of data
+.db $A4
+.db $B7
+; end of data
+.db $E5
+.db $B7
+; start of data
+.db $F7
+.db $B7
+; end of data
+.db $09
+.db $B8
+; start of data
+.db $1B
+.db $B8
+.db $2D
+.db $B8
+.db $3F
+.db $B8
+.db $51
+.db $B8
+.db $63
+.db $B8
+; end of data
+.db $75
+.db $B8
+.db $87
+.db $B8
+; start of data
+.db $99
+.db $B8
+.db $E5
+.db $B7
+; end of data
+.db $AB
+.db $B8
+.db $BD
+.db $B8
+.db $CF
+.db $B8
+.db $E1
+.db $B8
+; start of data
+.db $F3
+.db $B8
+.db $05
+.db $B9
+; end of data
+.db $17
+.db $B9
+; start of data
+.db $29
+.db $B9
+.db $49
+.db $BA
+; end of data
+.db $3B
+.db $B9
+; start of data
+.db $5F
+.db $B9
+; end of data
+.db $5F
+.db $B9
+; start of data
+.db $71
+.db $B9
+.db $83
+.db $B9
+.db $95
+.db $B9
+; end of data
+.db $A7
+.db $B9
+.db $B9
+.db $B9
+; start of data
+.db $CB
+.db $B9
+; end of data
+.db $DD
+.db $B9
+; start of data
+.db $EF
+.db $B9
+.db $01
+.db $BA
+; end of data
+.db $13
+.db $BA
+; start of data
+.db $25
+.db $BA
+; end of data
+.db $37
+.db $BA
+; start of data
+.db $49
+.db $BA
+; end of data
+.db $5B
+.db $BA
+; start of data
+.db $5B
+.db $BA
+; end of data
+.db $6D
+.db $BA
+; start of data
+.db $7F
+.db $BA
+.db $91
+.db $BA
+.db $4D
+.db $B9
+.db $A3
+.db $BA
+; end of data
+.db $C7
+.db $BA
+.db $B5
+.db $BA
+.db $C7
+.db $BA
+.db $D9
+.db $BA
+; start of data
+.db $E5
+.db $B7
+; end of data
+.db $C1
+.db $B7
+.db $D3
+.db $B7
+.db $EB
+.db $BA
+; start of data
+.db $37
+.db $BA
+; end of data
+.db $00
+.db $01
+.db $02
+.db $03
+.db $04
+.db $05
+.db $10
+.db $11
+.db $12
+.db $13
+.db $14
+.db $15
+.db $20
+.db $21
+.db $22
+.db $23
+.db $24
+.db $25
+.db $30
+.db $31
+.db $32
+.db $33
+.db $34
+.db $35
+.db $40
+.db $41
+.db $42
+.db $43
+.db $44
+.db $45
+.db $50
+.db $51
+.db $52
+.db $53
+.db $54
+.db $55
+.db $60
+.db $61
+.db $62
+.db $63
+.db $64
+.db $65
+.db $00
+.db $01
+.db $02
+.db $01
+.db $02
+.db $03
+.db $10
+.db $20
+.db $30
+.db $10
+.db $20
+.db $30
+.db $00
+.db $01
+.db $02
+.db $03
+.db $04
+.db $05
+.db $00
+.db $06
+.db $07
+.db $12
+; start of data
+.db $12
+; end of data
+.db $12
+; start of data
+.db $14
+.db $12
+.db $12
+.db $12
+.db $12
+; end of data
+.db $12
+.db $12
+; start of data
+.db $12
+.db $12
+; end of data
+.db $14
+.db $14
+.db $14
+.db $14
+; start of data
+.db $14
+.db $14
+; end of data
+.db $14
+; start of data
+.db $07
+.db $16
+; end of data
+.db $16
+; start of data
+.db $16
+; end of data
+.db $16
+; start of data
+.db $16
+.db $16
+.db $16
+; end of data
+.db $16
+.db $16
+; start of data
+.db $16
+; end of data
+.db $16
+; start of data
+.db $16
+.db $0B
+; end of data
+.db $0B
+; start of data
+.db $0B
+; end of data
+.db $07
+; start of data
+.db $16
+; end of data
+.db $09
+; start of data
+.db $09
+; end of data
+.db $07
+; start of data
+.db $12
+.db $07
+.db $16
+.db $0F
+; end of data
+.db $0F
+.db $0F
+.db $0F
+.db $0F
+; start of data
+.db $12
+; end of data
+.db $12
+.db $12
+.db $14
+; start of data
+.db $07
+; end of data
+.db $FE
+.db $65
+.db $66
+.db $67
+.db $FE
+.db $FE
+.db $FE
+.db $75
+.db $76
+.db $77
+.db $FE
+.db $FE
+.db $85
+.db $68
+.db $BB
+.db $BC
+.db $89
+.db $78
+.db $95
+.db $CA
+.db $CB
+.db $CC
+.db $99
+.db $9A
+.db $A5
+.db $A6
+.db $A7
+.db $A8
+.db $A9
+.db $AA
+.db $B5
+.db $B6
+.db $B7
+.db $B8
+.db $B9
+.db $BA
+.db $FE
+.db $CE
+.db $66
+.db $CE
+.db $FE
+.db $FE
+.db $FE
+.db $DE
+.db $76
+.db $DE
+.db $FE
+.db $FE
+.db $85
+.db $69
+.db $BB
+.db $BC
+.db $89
+.db $78
+.db $95
+.db $CA
+.db $CB
+.db $CC
+.db $99
+.db $9A
+.db $A5
+.db $A6
+.db $A7
+.db $A8
+.db $A9
+.db $AA
+.db $B5
+.db $B6
+.db $B7
+.db $B8
+.db $B9
+.db $BA
+; start of data
+.db $FE
+.db $00
+.db $01
+.db $02
+.db $03
+.db $04
+.db $FE
+.db $10
+.db $11
+.db $12
+.db $13
+.db $14
+.db $FE
+.db $20
+.db $21
+.db $22
+.db $23
+.db $24
+.db $FE
+.db $30
+.db $31
+.db $32
+.db $33
+.db $34
+.db $FE
+.db $40
+.db $41
+.db $42
+.db $43
+.db $44
+.db $FE
+.db $50
+.db $51
+.db $52
+.db $53
+.db $54
+.db $FE
+.db $FE
+.db $06
+.db $07
+.db $08
+.db $09
+.db $FE
+.db $15
+.db $16
+.db $17
+.db $18
+.db $19
+.db $FE
+.db $25
+.db $26
+.db $27
+.db $28
+.db $29
+.db $FE
+.db $FE
+.db $36
+.db $37
+.db $38
+.db $39
+.db $FE
+.db $FE
+.db $46
+.db $47
+.db $48
+.db $49
+.db $FE
+.db $55
+.db $56
+.db $57
+.db $58
+.db $59
+; end of data
+.db $FE
+.db $60
+.db $61
+.db $62
+.db $63
+.db $64
+.db $FE
+.db $70
+.db $71
+.db $72
+.db $73
+.db $74
+.db $FE
+.db $80
+.db $81
+.db $82
+.db $83
+.db $84
+.db $FE
+.db $90
+.db $91
+.db $92
+.db $93
+.db $94
+.db $FE
+.db $A0
+.db $A1
+.db $A2
+.db $A3
+.db $A4
+.db $FE
+.db $FE
+.db $B1
+.db $B2
+.db $B3
+.db $B4
+; start of data
+.db $FC
+.db $05
+.db $06
+.db $07
+.db $FC
+.db $FC
+.db $FC
+.db $15
+.db $16
+.db $17
+.db $18
+.db $FC
+.db $FC
+.db $25
+.db $26
+.db $27
+.db $28
+.db $FC
+.db $04
+.db $35
+.db $36
+.db $37
+.db $38
+.db $09
+.db $14
+.db $45
+.db $46
+.db $47
+.db $48
+.db $19
+.db $24
+.db $55
+.db $56
+.db $57
+.db $58
+.db $29
+.db $FE
+.db $C0
+.db $C1
+.db $C2
+.db $C3
+.db $FE
+.db $FE
+.db $D0
+.db $D1
+.db $D2
+.db $D3
+.db $FE
+.db $FE
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $FE
+.db $FE
+.db $F0
+.db $4F
+.db $F3
+.db $F4
+.db $FE
+.db $FE
+.db $E6
+.db $E7
+.db $E8
+.db $E9
+.db $FE
+.db $F5
+.db $F6
+.db $F7
+.db $F8
+.db $F9
+.db $FE
+.db $0A
+.db $0B
+.db $0C
+.db $0D
+.db $FE
+.db $FE
+.db $1A
+.db $1B
+.db $1C
+.db $1D
+.db $FE
+.db $FE
+.db $FE
+.db $2B
+.db $2C
+.db $2D
+.db $FE
+.db $0F
+.db $3B
+.db $3C
+.db $3D
+.db $3E
+.db $0E
+.db $4A
+.db $4B
+.db $4C
+.db $4D
+.db $4E
+.db $1E
+.db $5A
+.db $5B
+.db $5C
+.db $5D
+.db $5E
+.db $2E
+.db $FE
+.db $0A
+.db $0B
+.db $0C
+.db $0D
+.db $FE
+.db $FE
+.db $1A
+.db $6A
+.db $6B
+.db $1D
+.db $FE
+.db $FE
+.db $FE
+.db $7A
+.db $7B
+.db $2D
+.db $FE
+.db $0F
+.db $3B
+.db $8A
+.db $8B
+.db $3E
+.db $0E
+.db $4A
+.db $4B
+.db $4C
+.db $4D
+.db $4E
+.db $1E
+.db $5A
+.db $5B
+.db $5C
+.db $5D
+.db $5E
+.db $2E
+.db $FE
+.db $6C
+.db $0B
+.db $0C
+.db $6F
+.db $FE
+.db $FE
+.db $7C
+.db $7D
+.db $7E
+.db $7F
+.db $FE
+.db $FE
+.db $FE
+.db $8C
+.db $8D
+.db $9B
+.db $FE
+.db $0F
+.db $3B
+.db $9C
+.db $9D
+.db $AB
+.db $0E
+.db $4A
+.db $4B
+.db $4C
+.db $4D
+.db $4E
+.db $1E
+.db $5A
+.db $5B
+.db $5C
+.db $5D
+.db $5E
+.db $2E
+; end of data
+.db $FE
+.db $C0
+.db $C1
+.db $C2
+.db $C3
+.db $FE
+.db $FE
+.db $D0
+.db $D1
+.db $E5
+.db $D3
+.db $FE
+.db $FE
+.db $C5
+.db $C6
+.db $C7
+.db $E3
+.db $E4
+.db $FE
+.db $D5
+.db $D6
+.db $D7
+.db $F3
+.db $F4
+.db $FE
+.db $FE
+.db $E6
+.db $E7
+.db $E8
+.db $E9
+.db $FE
+.db $F5
+.db $F6
+.db $F7
+.db $F8
+.db $F9
+.db $FE
+.db $C0
+.db $C1
+.db $C2
+.db $C3
+.db $FE
+.db $FE
+.db $D0
+.db $C8
+.db $C9
+.db $D3
+.db $FE
+.db $FE
+.db $E0
+.db $D8
+.db $D9
+.db $E3
+.db $E4
+.db $FE
+.db $FE
+.db $DA
+.db $DB
+.db $DC
+.db $F4
+.db $FE
+.db $FE
+.db $EA
+.db $EB
+.db $E8
+.db $E9
+.db $FE
+.db $F5
+.db $F6
+.db $F7
+.db $F8
+.db $F9
+; start of data
+.db $FE
+.db $AD
+.db $8E
+.db $8F
+.db $CF
+.db $FE
+.db $FE
+.db $BD
+.db $9E
+.db $9F
+.db $DF
+.db $FE
+.db $FE
+.db $FE
+.db $AE
+.db $AF
+.db $EF
+.db $FE
+.db $0F
+.db $3B
+.db $BE
+.db $BF
+.db $3E
+.db $0E
+.db $4A
+.db $4B
+.db $4C
+.db $4D
+.db $4E
+.db $1E
+.db $5A
+.db $5B
+.db $5C
+.db $5D
+.db $5E
+.db $2E
+.db $FE
+.db $00
+.db $01
+.db $02
+.db $03
+.db $04
+.db $FE
+.db $35
+.db $3A
+.db $CD
+.db $DD
+.db $14
+.db $FE
+.db $20
+.db $21
+.db $22
+.db $23
+.db $24
+.db $FE
+.db $30
+.db $31
+.db $32
+.db $33
+.db $34
+.db $FE
+.db $40
+.db $41
+.db $42
+.db $43
+.db $44
+.db $FE
+.db $50
+.db $51
+.db $52
+.db $53
+.db $54
+; end of data
+.db $FE
+.db $54
+.db $00
+.db $01
+.db $02
+.db $FE
+.db $FE
+.db $DA
+.db $10
+.db $11
+.db $12
+.db $23
+.db $34
+.db $DB
+.db $20
+.db $21
+.db $22
+.db $23
+.db $FE
+.db $ED
+.db $30
+.db $31
+.db $32
+.db $33
+.db $03
+.db $FD
+.db $40
+.db $41
+.db $42
+.db $43
+.db $FE
+.db $FE
+.db $50
+.db $51
+.db $52
+.db $53
+.db $FE
+.db $60
+.db $61
+.db $62
+.db $63
+.db $FE
+.db $FE
+.db $70
+.db $71
+.db $72
+.db $73
+.db $A5
+.db $FE
+.db $80
+.db $81
+.db $82
+.db $83
+.db $B5
+.db $FE
+.db $90
+.db $91
+.db $92
+.db $93
+.db $67
+.db $FE
+.db $A0
+.db $A1
+.db $A2
+.db $A3
+.db $A4
+.db $FE
+.db $B0
+.db $B1
+.db $B2
+.db $B3
+.db $B4
+.db $FE
+.db $E6
+.db $E7
+.db $E8
+.db $E9
+.db $FE
+.db $FE
+.db $F7
+.db $F8
+.db $F9
+.db $FA
+.db $FB
+.db $C0
+.db $C1
+.db $C2
+.db $C3
+.db $C4
+.db $C5
+.db $D0
+.db $D1
+.db $D2
+.db $D3
+.db $D4
+.db $D5
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $E5
+.db $F0
+.db $98
+.db $F3
+.db $F4
+.db $F5
+.db $F6
+.db $FE
+.db $64
+.db $65
+.db $66
+.db $88
+.db $FE
+.db $94
+.db $74
+.db $75
+.db $76
+.db $77
+.db $FE
+.db $FE
+.db $84
+.db $85
+.db $86
+.db $87
+.db $FE
+.db $FE
+.db $FE
+.db $95
+.db $96
+.db $97
+.db $FE
+.db $FE
+.db $A6
+.db $A7
+.db $A8
+.db $A9
+.db $89
+.db $FE
+.db $B6
+.db $B7
+.db $B8
+.db $B9
+.db $99
+; start of data
+.db $FF
+.db $39
+.db $0D
+.db $0C
+.db $0B
+.db $C9
+.db $FF
+.db $49
+.db $1D
+.db $1C
+.db $1B
+.db $1A
+.db $FF
+.db $59
+.db $2D
+.db $2C
+.db $2B
+.db $2A
+.db $FF
+.db $FF
+.db $3D
+.db $3C
+.db $3B
+.db $3A
+.db $FF
+.db $FF
+.db $4D
+.db $4C
+.db $4B
+.db $4A
+.db $FF
+.db $FF
+.db $5D
+.db $5C
+.db $5B
+.db $5A
+.db $FE
+.db $69
+.db $6A
+.db $6B
+.db $6C
+.db $6D
+.db $FE
+.db $79
+.db $7A
+.db $7B
+.db $7C
+.db $7D
+.db $FE
+.db $8B
+.db $8C
+.db $8D
+.db $8E
+.db $8F
+.db $FE
+.db $9B
+.db $9C
+.db $9D
+.db $9E
+.db $9F
+.db $FE
+.db $FE
+.db $68
+.db $CD
+.db $CE
+.db $CF
+.db $FE
+.db $FE
+.db $78
+.db $DD
+.db $DE
+.db $DF
+; end of data
+.db $FE
+.db $C6
+.db $61
+.db $62
+.db $C7
+.db $C8
+.db $FE
+.db $AB
+.db $AC
+.db $AD
+.db $AE
+.db $AF
+.db $FE
+.db $BB
+.db $BC
+.db $BD
+.db $BE
+.db $BF
+.db $FE
+.db $FE
+.db $D6
+.db $D7
+.db $D8
+.db $D9
+.db $FE
+.db $A0
+.db $A1
+.db $A2
+.db $A3
+.db $A4
+.db $FE
+.db $B0
+.db $B1
+.db $B2
+.db $B3
+.db $B4
+; start of data
+.db $EF
+.db $95
+.db $96
+.db $97
+.db $98
+.db $38
+.db $EF
+.db $A5
+.db $A6
+.db $A7
+.db $A8
+.db $38
+.db $AA
+.db $B6
+.db $B7
+.db $B8
+.db $B9
+.db $BA
+.db $C5
+.db $C6
+.db $C7
+.db $C8
+.db $C9
+.db $CA
+.db $D6
+.db $D7
+.db $D8
+.db $D9
+.db $DA
+.db $DB
+.db $E6
+.db $E7
+.db $E8
+.db $E9
+.db $EA
+.db $EB
+.db $C0
+.db $02
+.db $03
+.db $04
+.db $11
+.db $C0
+.db $C0
+.db $6E
+.db $6F
+.db $14
+.db $15
+.db $C0
+.db $C0
+.db $7E
+.db $7F
+.db $78
+.db $79
+.db $C0
+.db $C0
+.db $32
+.db $33
+.db $34
+.db $35
+.db $C0
+.db $C0
+.db $41
+.db $31
+.db $43
+.db $44
+.db $45
+.db $C0
+.db $51
+.db $52
+.db $53
+.db $54
+.db $55
+; end of data
+.db $C0
+.db $C0
+.db $DB
+.db $DC
+.db $DD
+.db $C0
+.db $C0
+.db $C0
+.db $EB
+.db $EC
+.db $ED
+.db $C0
+.db $C0
+.db $C0
+.db $D7
+.db $D8
+.db $D9
+.db $DA
+.db $D6
+.db $E6
+.db $E7
+.db $E8
+.db $E9
+.db $EA
+.db $D0
+.db $D1
+.db $D2
+.db $D3
+.db $D4
+.db $D5
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $E5
+; start of data
+.db $C2
+.db $06
+.db $07
+.db $08
+.db $C2
+.db $C2
+.db $C2
+.db $16
+.db $17
+.db $18
+.db $C2
+.db $C2
+.db $C2
+.db $26
+.db $27
+.db $28
+.db $29
+.db $2A
+.db $C2
+.db $36
+.db $37
+.db $38
+.db $39
+.db $3A
+.db $C2
+.db $C2
+.db $0A
+.db $0B
+.db $0C
+.db $0D
+.db $C2
+.db $19
+.db $1A
+.db $1B
+.db $1C
+.db $1D
+.db $C2
+.db $06
+.db $07
+.db $08
+.db $C2
+.db $C2
+.db $C2
+.db $16
+.db $17
+.db $18
+.db $C2
+.db $C2
+.db $C2
+.db $2B
+.db $0E
+.db $0F
+.db $29
+.db $2A
+.db $C2
+.db $3B
+.db $1E
+.db $1F
+.db $39
+.db $3A
+.db $C2
+.db $C2
+.db $2E
+.db $2F
+.db $0C
+.db $0D
+.db $C2
+.db $19
+.db $1A
+.db $1B
+.db $1C
+.db $1D
+.db $C1
+.db $C1
+.db $61
+.db $62
+.db $63
+.db $64
+.db $C1
+.db $70
+.db $71
+.db $72
+.db $73
+.db $74
+.db $C1
+.db $80
+.db $81
+.db $82
+.db $83
+.db $84
+.db $C1
+.db $90
+.db $91
+.db $92
+.db $93
+.db $94
+.db $20
+.db $A0
+.db $A1
+.db $A2
+.db $A3
+.db $A4
+.db $30
+.db $B0
+.db $B1
+.db $B2
+.db $B3
+.db $B4
+.db $C1
+.db $C1
+.db $61
+.db $62
+.db $63
+.db $64
+.db $C1
+.db $70
+.db $71
+.db $72
+.db $73
+.db $74
+.db $C1
+.db $66
+.db $46
+.db $47
+.db $83
+.db $84
+.db $C1
+.db $90
+.db $56
+.db $57
+.db $93
+.db $94
+.db $20
+.db $A0
+.db $A1
+.db $67
+.db $A3
+.db $A4
+.db $30
+.db $B0
+.db $B1
+.db $B2
+.db $B3
+.db $B4
+.db $C2
+.db $85
+.db $86
+.db $87
+.db $88
+.db $C2
+.db $C2
+.db $95
+.db $96
+.db $97
+.db $98
+.db $C2
+.db $C2
+.db $C2
+.db $A6
+.db $A7
+.db $A8
+.db $C2
+.db $C2
+.db $5F
+.db $B6
+.db $B7
+.db $B8
+.db $C2
+.db $B5
+.db $C5
+.db $C6
+.db $C7
+.db $C8
+.db $A5
+.db $F8
+.db $F9
+.db $FA
+.db $FB
+.db $4E
+.db $4F
+; end of data
+.db $C2
+.db $8E
+.db $8F
+.db $9F
+.db $AF
+.db $C2
+.db $89
+.db $8A
+.db $8B
+.db $8C
+.db $8D
+.db $C2
+.db $99
+.db $9A
+.db $9B
+.db $9C
+.db $9D
+.db $9E
+.db $A9
+.db $AA
+.db $AB
+.db $AC
+.db $AD
+.db $AE
+.db $B9
+.db $BA
+.db $BB
+.db $BC
+.db $BD
+.db $BE
+.db $C9
+.db $CA
+.db $CB
+.db $CC
+.db $CD
+.db $CE
+.db $C2
+.db $8E
+.db $8F
+.db $9F
+.db $AF
+.db $C2
+.db $89
+.db $8A
+.db $F0
+.db $C4
+.db $8D
+.db $C2
+.db $99
+.db $01
+.db $05
+.db $09
+.db $9D
+.db $9E
+.db $A9
+.db $AA
+.db $FC
+.db $AC
+.db $AD
+.db $AE
+.db $B9
+.db $BA
+.db $BB
+.db $BC
+.db $BD
+.db $BE
+.db $C9
+.db $CA
+.db $CB
+.db $CC
+.db $CD
+.db $CE
+; start of data
+.db $C0
+.db $C0
+.db $DB
+.db $DC
+.db $DD
+.db $C0
+.db $C0
+.db $C0
+.db $EB
+.db $69
+.db $ED
+.db $C0
+.db $C0
+.db $C0
+.db $D7
+.db $2C
+.db $3F
+.db $DA
+.db $D6
+.db $E6
+.db $3E
+.db $3C
+.db $E9
+.db $EA
+.db $D0
+.db $D1
+.db $D2
+.db $D3
+.db $D4
+.db $D5
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $E5
+; end of data
+.db $C0
+.db $C0
+.db $00
+.db $21
+.db $DD
+.db $C0
+.db $C0
+.db $C0
+.db $10
+.db $5E
+.db $ED
+.db $C0
+.db $C0
+.db $C0
+.db $D7
+.db $7B
+.db $D9
+.db $DA
+.db $D6
+.db $E6
+.db $E7
+.db $E8
+.db $E9
+.db $EA
+.db $D0
+.db $D1
+.db $D2
+.db $D3
+.db $D4
+.db $D5
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $E5
+; start of data
+.db $C0
+.db $C0
+.db $00
+.db $21
+.db $DD
+.db $C0
+.db $C0
+.db $C0
+.db $10
+.db $EC
+.db $ED
+.db $C0
+.db $C0
+.db $C0
+.db $D7
+.db $2C
+.db $3F
+.db $DA
+.db $D6
+.db $E6
+.db $3E
+.db $3C
+.db $E9
+.db $EA
+.db $D0
+.db $D1
+.db $D2
+.db $D3
+.db $D4
+.db $D5
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $E5
+.db $91
+.db $91
+.db $8F
+.db $8E
+.db $8D
+.db $91
+.db $91
+.db $5F
+.db $9F
+.db $9E
+.db $9D
+.db $F0
+.db $91
+.db $B9
+.db $B8
+.db $B7
+.db $B6
+.db $B5
+.db $91
+.db $91
+.db $C8
+.db $C7
+.db $C6
+.db $C5
+.db $91
+.db $91
+.db $F4
+.db $D7
+.db $D6
+.db $D5
+.db $91
+.db $91
+.db $E8
+.db $E7
+.db $E6
+.db $E5
+; end of data
+.db $91
+.db $91
+.db $4F
+.db $8E
+.db $8D
+.db $91
+.db $91
+.db $4E
+.db $4D
+.db $9E
+.db $9D
+.db $F0
+.db $91
+.db $5E
+.db $5D
+.db $5C
+.db $9B
+.db $45
+.db $91
+.db $91
+.db $C8
+.db $C7
+.db $C6
+.db $55
+.db $91
+.db $91
+.db $F4
+.db $D7
+.db $F3
+.db $91
+.db $91
+.db $91
+.db $E8
+.db $E7
+.db $E6
+.db $E5
+; start of data
+.db $91
+.db $91
+.db $8F
+.db $8E
+.db $8D
+.db $91
+.db $91
+.db $5F
+.db $9F
+.db $9E
+.db $9D
+.db $F0
+.db $91
+.db $B9
+.db $14
+.db $0D
+.db $07
+.db $04
+.db $91
+.db $91
+.db $C8
+.db $C7
+.db $C6
+.db $38
+.db $91
+.db $91
+.db $F4
+.db $D7
+.db $F3
+.db $91
+.db $91
+.db $91
+.db $E8
+.db $E7
+.db $E6
+.db $E5
+.db $EF
+.db $1B
+.db $1C
+.db $0C
+.db $0D
+.db $EF
+.db $EF
+.db $93
+.db $94
+.db $99
+.db $9A
+.db $EF
+.db $F4
+.db $9B
+.db $9C
+.db $9D
+.db $9E
+.db $9F
+.db $F3
+.db $AB
+.db $AC
+.db $AD
+.db $AE
+.db $AF
+.db $2E
+.db $BB
+.db $BC
+.db $BD
+.db $BE
+.db $BF
+.db $3E
+.db $CB
+.db $CC
+.db $CD
+.db $CE
+.db $CF
+.db $C0
+.db $02
+.db $03
+.db $04
+.db $11
+.db $C0
+.db $C0
+.db $12
+.db $13
+.db $14
+.db $15
+.db $C0
+.db $C0
+.db $22
+.db $23
+.db $24
+.db $25
+.db $C0
+.db $C0
+.db $32
+.db $33
+.db $34
+.db $35
+.db $C0
+.db $C0
+.db $41
+.db $42
+.db $43
+.db $44
+.db $45
+.db $C0
+.db $51
+.db $52
+.db $53
+.db $54
+.db $55
+; end of data
+.db $F0
+.db $9B
+.db $9C
+.db $9D
+.db $9E
+.db $F0
+.db $F0
+.db $AB
+.db $AC
+.db $AD
+.db $AE
+.db $F0
+.db $F0
+.db $8A
+.db $BC
+.db $BD
+.db $BE
+.db $BF
+.db $F0
+.db $9A
+.db $CC
+.db $CD
+.db $CE
+.db $CF
+.db $9F
+.db $AA
+.db $DC
+.db $DD
+.db $DE
+.db $DF
+.db $AF
+.db $8B
+.db $8C
+.db $ED
+.db $EE
+.db $EF
+; start of data
+.db $F0
+.db $9B
+.db $9C
+.db $9D
+.db $9E
+.db $F0
+.db $F0
+.db $AB
+.db $2F
+.db $3A
+.db $AE
+.db $F0
+.db $F0
+.db $8A
+.db $3D
+.db $3F
+.db $4A
+.db $BF
+.db $F0
+.db $9A
+.db $6A
+.db $6B
+.db $CE
+.db $CF
+.db $9F
+.db $AA
+.db $6F
+.db $8D
+.db $DE
+.db $DF
+.db $AF
+.db $8B
+.db $8C
+.db $ED
+.db $EE
+.db $EF
+; end of data
+.db $EF
+.db $EF
+.db $90
+.db $91
+.db $92
+.db $EF
+.db $EF
+.db $A0
+.db $A1
+.db $A2
+.db $A3
+.db $A4
+.db $EF
+.db $B0
+.db $B1
+.db $B2
+.db $B3
+.db $B4
+.db $EF
+.db $C0
+.db $C1
+.db $C2
+.db $C3
+.db $C4
+.db $D0
+.db $D1
+.db $D2
+.db $D3
+.db $D4
+.db $D5
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $E5
+; start of data
+.db $FE
+.db $65
+.db $66
+.db $67
+.db $FE
+.db $FE
+.db $FE
+.db $75
+.db $76
+.db $77
+.db $FE
+.db $FE
+.db $85
+.db $86
+.db $87
+.db $88
+.db $89
+.db $78
+.db $95
+.db $96
+.db $97
+.db $98
+.db $99
+.db $9A
+.db $A5
+.db $A6
+.db $A7
+.db $A8
+.db $A9
+.db $AA
+.db $B5
+.db $B6
+.db $B7
+.db $B8
+.db $B9
+.db $BA
+.db $EF
+.db $EF
+.db $90
+.db $91
+.db $92
+.db $EF
+.db $EF
+.db $A0
+.db $A1
+.db $A2
+.db $A3
+.db $A4
+.db $EF
+.db $B0
+.db $DC
+.db $DD
+.db $DE
+.db $B4
+.db $EF
+.db $C0
+.db $C1
+.db $EC
+.db $C3
+.db $C4
+.db $D0
+.db $D1
+.db $D2
+.db $D3
+.db $D4
+.db $D5
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $E5
+.db $F3
+.db $B9
+.db $BA
+.db $C9
+.db $CA
+.db $F3
+.db $F3
+.db $AC
+.db $AD
+.db $AE
+.db $AF
+.db $F3
+.db $F3
+.db $BC
+.db $BD
+.db $BE
+.db $BF
+.db $F3
+.db $F3
+.db $CC
+.db $CD
+.db $CE
+.db $CF
+.db $AB
+.db $F3
+.db $DC
+.db $DD
+.db $DE
+.db $DF
+.db $BB
+.db $F3
+.db $EC
+.db $ED
+.db $EE
+.db $EF
+.db $CB
+; end of data
+.db $F3
+.db $3D
+.db $4F
+.db $A4
+.db $A5
+.db $F3
+.db $F3
+.db $5E
+.db $5F
+.db $B4
+.db $B5
+.db $F3
+.db $F3
+.db $F3
+.db $A6
+.db $A7
+.db $A8
+.db $F3
+.db $F3
+.db $CC
+.db $B6
+.db $B7
+.db $B8
+.db $AB
+.db $F3
+.db $DC
+.db $DD
+.db $0C
+.db $DF
+.db $BB
+.db $F3
+.db $EC
+.db $ED
+.db $EE
+.db $EF
+.db $CB
+.db $F3
+.db $C5
+.db $C6
+.db $C7
+.db $C8
+.db $F3
+.db $F3
+.db $A0
+.db $A1
+.db $A2
+.db $A3
+.db $F3
+.db $F3
+.db $B0
+.db $B1
+.db $B2
+.db $B3
+.db $F3
+.db $C0
+.db $C1
+.db $C2
+.db $C3
+.db $C4
+.db $F3
+.db $D0
+.db $D1
+.db $D2
+.db $D3
+.db $D4
+.db $D5
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $E5
+.db $F3
+.db $3D
+.db $57
+.db $59
+.db $A5
+.db $F3
+.db $F3
+.db $5E
+.db $33
+.db $40
+.db $B5
+.db $F3
+.db $F3
+.db $F3
+.db $52
+.db $50
+.db $A8
+.db $F3
+.db $F3
+.db $CC
+.db $B6
+.db $B7
+.db $B8
+.db $AB
+.db $F3
+.db $DC
+.db $DD
+.db $0C
+.db $DF
+.db $BB
+.db $F3
+.db $EC
+.db $ED
+.db $EE
+.db $EF
+.db $CB
+.db $F3
+.db $C5
+.db $C6
+.db $C7
+.db $C8
+.db $F3
+.db $F3
+.db $D6
+.db $D7
+.db $D8
+.db $A3
+.db $F3
+.db $F3
+.db $E6
+.db $E7
+.db $E8
+.db $E9
+.db $F3
+.db $C0
+.db $C1
+.db $D9
+.db $DA
+.db $DB
+.db $F3
+.db $D0
+.db $D1
+.db $EA
+.db $EB
+.db $D4
+.db $D5
+.db $E0
+.db $E1
+.db $E2
+.db $E3
+.db $E4
+.db $E5
+.db $FF
+.db $1F
+.db $0F
+.db $0E
+.db $08
+.db $C9
+.db $FF
+.db $7F
+.db $7E
+.db $6E
+.db $44
+.db $1A
+.db $FF
+.db $EF
+.db $EE
+.db $AA
+.db $9A
+.db $2A
+.db $FF
+.db $FF
+.db $3D
+.db $3C
+.db $3B
+.db $3A
+.db $FF
+.db $FF
+.db $4D
+.db $4C
+.db $4B
+.db $4A
+.db $FF
+.db $FF
+.db $5D
+.db $5C
+.db $5B
+.db $5A
+.db $14
+.db $79
+; start of data
+.db $14
+.db $45
+.db $1B
+.db $05
+; end of data
+.db $15
+.db $B0
+; start of data
+.db $94
+.db $CA
+.db $CB
+.db $94
+.db $D4
+.db $C4
+.db $94
+.db $1F
+.db $2F
+.db $14
+.db $2A
+.db $94
+.db $6D
+.db $AC
+; end of data
+.db $94
+.db $FA
+.db $FB
+.db $15
+.db $EC
+; start of data
+.db $94
+.db $ED
+.db $EE
+; end of data
+.db $1A
+.db $13
+.db $14
+.db $3F
+.db $D4
+.db $4F
+.db $5F
+.db $15
+.db $3E
+; start of data
+.db $9A
+.db $5E
+.db $4E
+.db $1A
+.db $8A
+; end of data
+.db $14
+.db $2E
+; start of data
+.db $15
+.db $B5
+; end of data
+.db $94
+.db $DE
+.db $DF
+; start of data
+.db $9A
+.db $40
+.db $F5
+.db $9A
+.db $F6
+.db $F7
+.db $D5
+.db $65
+.db $75
+.db $D5
+.db $76
+.db $77
+.db $D5
+.db $2D
+.db $3D
+; end of data
+.db $94
+.db $BF
+.db $CF
+.db $94
+.db $60
+.db $CF
+; start of data
+.db $94
+.db $EE
+.db $EF
+; end of data
+.db $94
+.db $DE
+.db $DF
+; start of data
+.db $94
+.db $EE
+.db $EF
+.db $15
+.db $C9
+.db $14
+.db $DF
+.db $1A
+.db $50
+; end of data
+.db $94
+.db $D0
+.db $D4
+; start of data
+.db $94
+.db $90
+.db $A1
+; end of data
+.db $D4
+.db $2F
+.db $3F
+; start of data
+.db $14
+.db $3F
+.db $D4
+.db $2F
+.db $3F
+.db $14
+.db $AA
+; end of data
+.db $15
+.db $A9
+.db $14
+.db $F0
+.db $15
+.db $F4
+.db $9A
+.db $5E
+.db $4E
+.db $15
+.db $11
+.db $11
+.db $15
+.db $11
+.db $11
+.db $21
+.db $11
+.db $22
+.db $31
+.db $11
+.db $23
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $21
+.db $11
+.db $22
+.db $31
+.db $11
+.db $23
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+; start of data
+.db $12
+.db $00
+.db $22
+.db $12
+.db $11
+.db $22
+.db $12
+.db $11
+.db $22
+.db $12
+.db $11
+.db $22
+.db $12
+.db $23
+.db $23
+.db $13
+.db $33
+.db $33
+.db $00
+.db $33
+.db $33
+.db $02
+.db $22
+.db $23
+.db $02
+.db $22
+.db $21
+.db $00
+.db $11
+.db $11
+.db $00
+.db $11
+.db $11
+.db $00
+.db $00
+.db $00
+; end of data
+.db $01
+.db $22
+.db $21
+.db $01
+.db $11
+.db $11
+.db $01
+.db $00
+.db $11
+.db $01
+.db $11
+.db $13
+.db $01
+.db $31
+.db $33
+.db $00
+.db $33
+.db $33
+; start of data
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $22
+.db $11
+.db $12
+.db $22
+.db $11
+.db $12
+.db $22
+.db $22
+.db $22
+.db $01
+.db $12
+.db $20
+.db $02
+.db $22
+.db $20
+.db $02
+.db $00
+.db $22
+.db $00
+.db $11
+.db $12
+.db $00
+.db $11
+.db $22
+.db $01
+.db $22
+.db $22
+.db $01
+.db $11
+.db $10
+.db $01
+.db $11
+.db $10
+.db $00
+.db $00
+.db $10
+.db $22
+.db $11
+.db $13
+.db $22
+.db $11
+.db $13
+.db $22
+.db $21
+.db $33
+.db $01
+.db $11
+.db $10
+.db $01
+.db $11
+.db $10
+.db $00
+.db $00
+.db $10
+.db $22
+.db $11
+.db $13
+.db $22
+.db $11
+.db $13
+.db $22
+.db $21
+.db $33
+.db $11
+.db $11
+.db $10
+.db $11
+.db $11
+.db $10
+.db $10
+.db $00
+.db $10
+.db $22
+.db $11
+.db $13
+.db $22
+.db $11
+.db $13
+.db $22
+.db $21
+.db $33
+; end of data
+.db $01
+.db $12
+.db $20
+.db $02
+.db $22
+.db $20
+.db $02
+.db $01
+.db $22
+.db $01
+.db $11
+.db $12
+.db $00
+.db $11
+.db $22
+.db $01
+.db $22
+.db $22
+.db $01
+.db $12
+.db $20
+.db $02
+.db $11
+.db $20
+.db $02
+.db $10
+.db $22
+.db $00
+.db $11
+.db $12
+.db $00
+.db $11
+.db $22
+.db $01
+.db $22
+.db $22
+; start of data
+.db $01
+.db $11
+.db $10
+.db $01
+.db $11
+.db $10
+.db $00
+.db $00
+.db $10
+.db $22
+.db $11
+.db $13
+.db $22
+.db $11
+.db $13
+.db $22
+.db $21
+.db $33
+; end of data
+.db $03
+.db $33
+.db $30
+.db $03
+.db $33
+.db $31
+.db $13
+.db $11
+.db $33
+.db $01
+.db $00
+.db $33
+.db $13
+.db $11
+.db $13
+.db $00
+.db $22
+.db $22
+.db $03
+.db $00
+.db $30
+.db $03
+.db $11
+.db $33
+.db $03
+.db $11
+.db $33
+.db $03
+.db $11
+.db $33
+.db $02
+.db $22
+.db $22
+.db $02
+.db $22
+.db $22
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $21
+.db $11
+.db $13
+.db $21
+.db $11
+.db $22
+.db $22
+.db $13
+.db $22
+.db $22
+.db $32
+.db $22
+.db $12
+.db $22
+.db $21
+.db $12
+.db $21
+.db $21
+.db $12
+.db $00
+.db $11
+.db $10
+.db $11
+.db $11
+.db $03
+.db $31
+.db $33
+.db $03
+.db $33
+.db $31
+; start of data
+.db $15
+.db $55
+.db $55
+.db $15
+.db $55
+.db $55
+.db $15
+.db $44
+.db $75
+.db $11
+.db $44
+.db $75
+.db $11
+.db $77
+.db $75
+.db $11
+.db $66
+.db $66
+.db $02
+.db $22
+.db $22
+.db $02
+.db $22
+.db $22
+.db $02
+.db $10
+.db $22
+.db $01
+.db $00
+.db $12
+.db $00
+.db $11
+.db $31
+.db $00
+.db $11
+.db $33
+; end of data
+.db $03
+.db $00
+.db $33
+.db $03
+.db $13
+.db $33
+.db $03
+.db $11
+.db $33
+.db $00
+.db $11
+.db $33
+.db $02
+.db $22
+.db $22
+.db $02
+.db $22
+.db $22
+; start of data
+.db $01
+.db $11
+.db $11
+.db $01
+.db $11
+.db $19
+.db $11
+.db $10
+.db $01
+.db $11
+.db $11
+.db $11
+.db $21
+.db $31
+.db $13
+.db $21
+.db $33
+.db $33
+; end of data
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $22
+.db $31
+.db $32
+.db $22
+.db $22
+.db $22
+.db $22
+.db $22
+.db $22
+; start of data
+.db $12
+.db $21
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $13
+.db $11
+.db $11
+.db $13
+.db $11
+.db $11
+.db $32
+.db $11
+.db $13
+.db $32
+.db $12
+.db $21
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $13
+.db $11
+.db $11
+.db $13
+.db $11
+.db $11
+.db $32
+.db $11
+.db $13
+.db $32
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $12
+.db $33
+.db $33
+.db $00
+.db $33
+.db $33
+.db $32
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $12
+.db $33
+.db $33
+.db $00
+.db $33
+.db $33
+.db $32
+.db $33
+.db $33
+.db $33
+.db $33
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $10
+.db $11
+.db $12
+.db $10
+.db $11
+.db $23
+.db $11
+.db $13
+.db $33
+.db $33
+.db $32
+; end of data
+.db $13
+.db $33
+.db $31
+.db $33
+.db $13
+.db $31
+.db $33
+.db $00
+.db $32
+.db $33
+.db $21
+.db $22
+.db $32
+.db $22
+.db $22
+.db $11
+.db $22
+.db $22
+.db $13
+.db $33
+.db $31
+.db $33
+.db $13
+.db $31
+.db $33
+.db $00
+.db $32
+.db $33
+.db $21
+.db $22
+.db $32
+.db $22
+.db $22
+.db $11
+.db $22
+.db $22
+; start of data
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $22
+.db $31
+.db $32
+.db $22
+.db $22
+.db $22
+.db $22
+.db $22
+.db $22
+; end of data
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $22
+.db $31
+.db $32
+.db $22
+.db $22
+.db $22
+.db $22
+.db $22
+.db $22
+; start of data
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $22
+.db $31
+.db $32
+.db $22
+.db $22
+.db $22
+.db $22
+.db $22
+.db $22
+.db $66
+.db $55
+.db $56
+.db $65
+.db $55
+.db $56
+.db $65
+.db $55
+.db $66
+.db $66
+.db $44
+.db $66
+.db $66
+.db $44
+.db $66
+.db $66
+.db $74
+.db $44
+; end of data
+.db $66
+.db $55
+.db $56
+.db $65
+.db $55
+.db $56
+.db $65
+.db $55
+.db $66
+.db $66
+.db $44
+.db $66
+.db $66
+.db $44
+.db $66
+.db $66
+.db $74
+.db $44
+; start of data
+.db $66
+.db $55
+.db $56
+.db $65
+.db $55
+.db $56
+.db $65
+.db $55
+.db $66
+.db $66
+.db $44
+.db $66
+.db $66
+.db $44
+.db $66
+.db $66
+.db $74
+.db $44
+.db $02
+.db $33
+.db $20
+.db $01
+.db $11
+.db $10
+.db $22
+.db $11
+.db $11
+.db $32
+.db $11
+.db $13
+.db $33
+.db $11
+.db $33
+.db $33
+.db $33
+.db $33
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $12
+.db $33
+.db $31
+.db $12
+.db $11
+.db $22
+.db $10
+.db $20
+.db $02
+.db $12
+.db $21
+.db $11
+.db $12
+.db $11
+.db $21
+.db $12
+.db $11
+.db $12
+.db $12
+.db $11
+.db $12
+.db $22
+.db $11
+.db $22
+.db $22
+.db $22
+.db $33
+; end of data
+.db $00
+.db $11
+.db $10
+.db $01
+.db $11
+.db $11
+.db $01
+.db $22
+.db $11
+.db $01
+.db $22
+.db $11
+.db $11
+.db $22
+.db $21
+.db $11
+.db $12
+.db $11
+; start of data
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $21
+.db $11
+.db $22
+.db $31
+.db $11
+.db $23
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $33
+.db $00
+.db $11
+.db $10
+.db $01
+.db $11
+.db $11
+.db $01
+.db $22
+.db $11
+.db $01
+.db $20
+.db $11
+.db $11
+.db $22
+.db $21
+.db $11
+.db $12
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $10
+.db $00
+.db $11
+.db $11
+.db $11
+.db $22
+.db $02
+.db $22
+.db $22
+.db $02
+.db $22
+.db $21
+; end of data
+.db $03
+.db $11
+.db $30
+.db $03
+.db $11
+.db $30
+.db $03
+.db $11
+.db $30
+.db $22
+.db $11
+.db $30
+.db $22
+.db $11
+.db $22
+.db $22
+.db $22
+.db $22
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $11
+.db $10
+.db $00
+.db $01
+.db $11
+.db $31
+.db $22
+.db $02
+.db $22
+.db $22
+.db $02
+.db $22
+.db $21
+.db $03
+.db $11
+.db $30
+.db $03
+.db $11
+.db $30
+.db $03
+.db $11
+.db $30
+.db $22
+.db $11
+.db $30
+.db $22
+.db $11
+.db $22
+.db $22
+.db $22
+.db $22
+.db $55
+.db $55
+.db $55
+.db $55
+.db $77
+.db $55
+.db $55
+.db $44
+.db $75
+.db $55
+.db $44
+.db $75
+.db $55
+.db $47
+.db $75
+.db $55
+.db $66
+.db $66
+.db $67
+.db $BB
+; start of data
+.db $73
+.db $BB
+; end of data
+.db $7F
+.db $BB
+; start of data
+.db $8B
+.db $BB
+.db $97
+.db $BB
+.db $A3
+.db $BB
+.db $AF
+.db $BB
+.db $BB
+.db $BB
+; end of data
+.db $C7
+.db $BB
+.db $D3
+.db $BB
+; start of data
+.db $DF
+.db $BB
+.db $67
+.db $BB
+; end of data
+.db $EB
+.db $BB
+.db $F7
+.db $BB
+.db $03
+.db $BC
+.db $0F
+.db $BC
+; start of data
+.db $1B
+.db $BC
+.db $27
+.db $BC
+; end of data
+.db $33
+.db $BC
+; start of data
+.db $3F
+.db $BC
+.db $FF
+.db $BC
+; end of data
+.db $4B
+.db $BC
+; start of data
+.db $57
+.db $BC
+; end of data
+.db $63
+.db $BC
+; start of data
+.db $6F
+.db $BC
+.db $7B
+.db $BC
+.db $87
+.db $BC
+; end of data
+.db $93
+.db $BC
+.db $9F
+.db $BC
+; start of data
+.db $AB
+.db $BC
+; end of data
+.db $B7
+.db $BC
+; start of data
+.db $C3
+.db $BC
+.db $CF
+.db $BC
+; end of data
+.db $DB
+.db $BC
+; start of data
+.db $E7
+.db $BC
+; end of data
+.db $F3
+.db $BC
+; start of data
+.db $FF
+.db $BC
+; end of data
+.db $0B
+.db $BD
+; start of data
+.db $17
+.db $BD
+; end of data
+.db $23
+.db $BD
+; start of data
+.db $2F
+.db $BD
+.db $3B
+.db $BD
+.db $47
+.db $BD
+.db $53
+.db $BD
+; end of data
+.db $5F
+.db $BD
+.db $6B
+.db $BD
+.db $77
+.db $BD
+.db $83
+.db $BD
+; start of data
+.db $67
+.db $BB
+; end of data
+.db $8F
+.db $BD
+.db $9B
+.db $BD
+.db $A7
+.db $BD
+; start of data
+.db $B3
+.db $BD
+.db $20
+.db $16
+.db $25
+.db $16
+.db $36
+.db $26
+.db $16
+.db $05
+.db $26
+.db $14
+.db $05
+.db $26
+.db $20
+.db $3C
+.db $27
+.db $16
+.db $36
+.db $27
+.db $37
+.db $36
+.db $27
+.db $37
+.db $15
+.db $27
+; end of data
+.db $20
+.db $36
+.db $27
+.db $11
+.db $36
+.db $27
+.db $11
+.db $21
+.db $27
+.db $25
+.db $16
+.db $27
+; start of data
+.db $20
+.db $36
+.db $27
+.db $10
+.db $36
+.db $18
+.db $10
+.db $14
+.db $04
+.db $15
+.db $03
+.db $23
+.db $20
+.db $36
+.db $26
+.db $16
+.db $36
+.db $26
+.db $16
+.db $06
+.db $26
+.db $15
+.db $05
+.db $26
+.db $20
+.db $36
+.db $27
+.db $1A
+.db $36
+.db $27
+.db $22
+.db $12
+.db $27
+.db $18
+.db $07
+.db $27
+.db $20
+.db $36
+.db $27
+.db $17
+.db $36
+.db $27
+.db $29
+.db $1A
+.db $27
+.db $18
+.db $07
+.db $27
+.db $20
+.db $36
+.db $27
+.db $14
+.db $36
+.db $27
+.db $2B
+.db $1C
+.db $27
+.db $17
+.db $07
+.db $27
+; end of data
+.db $20
+.db $36
+.db $27
+.db $14
+.db $36
+.db $27
+.db $14
+.db $05
+.db $27
+.db $15
+.db $05
+.db $27
+.db $20
+.db $36
+.db $27
+.db $12
+.db $36
+.db $27
+.db $12
+.db $0C
+.db $27
+.db $15
+.db $05
+.db $27
+; start of data
+.db $20
+.db $36
+.db $27
+.db $16
+.db $36
+.db $27
+.db $22
+.db $13
+.db $27
+.db $18
+.db $07
+.db $27
+; end of data
+.db $20
+.db $26
+.db $36
+.db $25
+.db $26
+.db $36
+.db $15
+.db $26
+.db $36
+.db $25
+.db $14
+.db $36
+.db $20
+.db $22
+.db $27
+.db $22
+.db $36
+.db $27
+.db $15
+.db $04
+.db $27
+.db $22
+.db $13
+.db $27
+.db $20
+.db $36
+.db $27
+.db $18
+.db $36
+.db $27
+.db $16
+.db $06
+.db $27
+.db $16
+.db $36
+.db $27
+.db $20
+.db $36
+.db $27
+.db $16
+.db $36
+.db $27
+.db $16
+.db $07
+.db $27
+.db $11
+.db $01
+.db $27
+; start of data
+.db $20
+.db $36
+.db $27
+.db $18
+.db $37
+.db $27
+.db $04
+.db $37
+.db $01
+.db $18
+.db $36
+.db $27
+.db $20
+.db $36
+.db $26
+.db $1A
+.db $36
+.db $26
+.db $1A
+.db $09
+.db $26
+.db $25
+.db $36
+.db $26
+; end of data
+.db $20
+.db $25
+.db $26
+.db $25
+.db $36
+.db $26
+.db $13
+.db $04
+.db $26
+.db $25
+.db $15
+.db $26
+; start of data
+.db $20
+.db $36
+.db $27
+.db $16
+.db $36
+.db $27
+.db $09
+.db $36
+.db $27
+.db $19
+.db $09
+.db $27
+; end of data
+.db $20
+.db $36
+.db $18
+.db $34
+.db $36
+.db $18
+.db $34
+.db $0C
+.db $11
+.db $11
+.db $36
+.db $18
+; start of data
+.db $20
+.db $36
+.db $05
+.db $32
+.db $13
+.db $05
+.db $0A
+.db $1A
+.db $05
+.db $32
+.db $1A
+.db $05
+; end of data
+.db $20
+.db $36
+.db $0A
+.db $38
+.db $19
+.db $0A
+.db $04
+.db $15
+.db $0A
+.db $38
+.db $15
+.db $0A
+; start of data
+.db $20
+.db $29
+.db $18
+.db $25
+.db $29
+.db $18
+.db $1C
+.db $29
+.db $18
+.db $1C
+.db $0B
+.db $18
+.db $20
+.db $23
+.db $14
+.db $21
+.db $23
+.db $14
+.db $1A
+.db $23
+.db $14
+.db $1A
+.db $09
+.db $14
+.db $20
+.db $36
+.db $26
+.db $15
+.db $36
+.db $26
+.db $13
+.db $03
+.db $26
+.db $36
+.db $03
+.db $26
+; end of data
+.db $20
+.db $36
+.db $27
+.db $17
+.db $36
+.db $27
+.db $1B
+.db $36
+.db $27
+.db $17
+.db $06
+.db $27
+.db $20
+.db $36
+.db $17
+.db $08
+.db $36
+.db $17
+.db $14
+.db $36
+.db $17
+.db $08
+.db $0F
+.db $17
+; start of data
+.db $20
+.db $36
+.db $18
+.db $28
+.db $36
+.db $18
+.db $28
+.db $04
+.db $14
+.db $14
+.db $36
+.db $18
+; end of data
+.db $20
+.db $36
+.db $18
+.db $10
+.db $36
+.db $18
+.db $10
+.db $0A
+.db $1A
+.db $1A
+.db $36
+.db $18
+; start of data
+.db $20
+.db $36
+.db $18
+.db $3C
+.db $36
+.db $18
+.db $3C
+.db $06
+.db $16
+.db $16
+.db $36
+.db $18
+.db $20
+.db $36
+.db $27
+.db $30
+.db $2A
+.db $27
+.db $1A
+.db $2A
+.db $27
+.db $12
+.db $21
+.db $27
+; end of data
+.db $20
+.db $36
+.db $27
+.db $30
+.db $21
+.db $27
+.db $12
+.db $21
+.db $27
+.db $16
+.db $25
+.db $27
+; start of data
+.db $20
+.db $36
+.db $27
+.db $30
+.db $16
+.db $27
+.db $06
+.db $16
+.db $27
+.db $25
+.db $35
+.db $27
+; end of data
+.db $20
+.db $23
+.db $18
+.db $10
+.db $36
+.db $18
+.db $10
+.db $33
+.db $18
+.db $10
+.db $33
+.db $23
+; start of data
+.db $20
+.db $1C
+.db $3C
+.db $27
+.db $36
+.db $11
+.db $27
+.db $1C
+.db $3C
+.db $27
+.db $36
+.db $20
+; end of data
+.db $20
+.db $36
+.db $17
+.db $14
+.db $36
+.db $17
+.db $14
+.db $03
+.db $17
+.db $14
+.db $3C
+.db $21
+; start of data
+.db $20
+.db $36
+.db $18
+.db $19
+.db $36
+.db $18
+.db $19
+.db $09
+.db $18
+.db $19
+.db $32
+.db $23
+; end of data
+.db $20
+.db $35
+.db $26
+.db $04
+.db $0F
+.db $26
+.db $04
+.db $35
+.db $26
+.db $28
+.db $14
+.db $26
+; start of data
+.db $20
+.db $36
+.db $27
+.db $27
+.db $36
+.db $18
+.db $27
+.db $16
+.db $18
+.db $27
+.db $16
+.db $06
+.db $20
+.db $36
+.db $26
+.db $16
+.db $06
+.db $26
+.db $16
+.db $36
+.db $26
+.db $28
+.db $14
+.db $26
+.db $20
+.db $36
+.db $01
+.db $32
+.db $12
+.db $01
+.db $04
+.db $14
+.db $01
+.db $32
+.db $14
+.db $01
+.db $20
+.db $36
+.db $27
+.db $38
+.db $36
+.db $27
+.db $15
+.db $1B
+.db $27
+.db $15
+.db $05
+.db $27
+; end of data
+.db $20
+.db $36
+.db $27
+.db $16
+.db $36
+.db $27
+.db $11
+.db $19
+.db $27
+.db $11
+.db $36
+.db $27
+.db $20
+.db $36
+.db $27
+.db $18
+.db $36
+.db $27
+.db $11
+.db $02
+.db $27
+.db $18
+.db $08
+.db $27
+.db $20
+.db $36
+.db $27
+.db $1B
+.db $36
+.db $27
+.db $21
+.db $1C
+.db $27
+.db $1B
+.db $36
+.db $27
+.db $20
+.db $36
+.db $27
+.db $14
+.db $36
+.db $27
+.db $15
+.db $05
+.db $27
+.db $14
+.db $03
+.db $27
+.db $20
+.db $36
+.db $27
+.db $27
+.db $36
+.db $16
+.db $27
+.db $19
+.db $16
+.db $27
+.db $19
+.db $09
+.db $20
+.db $36
+.db $27
+.db $27
+.db $36
+.db $15
+.db $27
+.db $13
+.db $15
+.db $27
+.db $13
+.db $03
+.db $20
+.db $36
+.db $27
+.db $18
+.db $35
+.db $27
+.db $06
+.db $35
+.db $0A
+.db $18
+.db $36
+.db $27
+; start of data
+.db $30
+.db $16
+.db $18
+.db $08
+.db $36
+.db $18
+.db $08
+.db $25
+.db $18
+.db $08
+.db $25
+.db $15
+.db $00
+.db $24
+.db $30
+.db $03
+; end of data
+.db $23
+; start of data
+.db $04
+.db $06
+.db $07
+.db $05
+; end of data
+.db $02
+.db $2D
+.db $2D
+.db $2F
+.db $0C
+.db $0D
+.db $12
+.db $0F
+.db $2E
+.db $0E
+; start of data
+.db $01
+; end of data
+.db $09
+.db $08
+; start of data
+.db $0A
+.db $2B
+; end of data
+.db $14
+; start of data
+.db $29
+; end of data
+.db $1A
+.db $2C
+; start of data
+.db $13
+; end of data
+.db $1B
+; start of data
+.db $11
+; end of data
+.db $21
+; start of data
+.db $20
+.db $22
+.db $10
+; end of data
+.db $00
+; start of data
+.db $14
+.db $0B
+; end of data
+.db $00
+; start of data
+.db $10
+; end of data
+.db $00
+.db $00
+.db $00
+; start of data
+.db $34
+; end of data
+.db $00
+; start of data
+.db $1D
+.db $26
+.db $16
+.db $18
+.db $28
+.db $2A
+; end of data
+.db $29
+; start of data
+.db $1A
+; end of data
+.db $15
+.db $1D
+.db $10
+.db $32
+; start of data
+.db $1F
+; end of data
+.db $27
+; start of data
+.db $19
+; end of data
+.db $17
+.db $1C
+.db $31
+.db $32
+.db $2A
+.db $32
+.db $25
+.db $1A
+.db $32
+.db $00
+.db $1F
+.db $1D
+.db $00
+.db $29
+.db $25
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $1F
+.db $2A
+.db $27
+.db $00
+.db $18
+.db $65
+.db $A2
+.db $06
+.db $21
+.db $C9
+.db $D4
+.db $B5
+.db $CC
+.db $00
+.db $04
+.db $88
+.db $08
+.db $00
+.db $C8
+.db $00
+.db $00
+.db $74
+.db $51
+.db $6E
+.db $E2
+.db $AD
+.db $2F
+.db $51
+.db $99
+.db $00
+.db $00
+.db $00
+.db $20
+.db $00
+.db $04
+.db $00
+.db $00
+.db $7F
+.db $0E
+.db $CA
+.db $AD
+.db $76
+.db $40
+.db $18
+.db $4D
+.db $00
+.db $10
+.db $02
+.db $00
+.db $08
+.db $00
+.db $00
+.db $00
+.db $CD
+.db $3E
+.db $89
+.db $41
+.db $1A
+.db $44
+.db $8B
+.db $AB
+.db $00
+.db $00
+.db $24
+.db $00
+.db $00
+.db $00
+.db $00
+.db $40
+.db $43
+.db $C0
+.db $4D
+.db $82
+.db $01
+.db $94
+.db $00
+.db $44
+.db $04
+.db $00
+.db $10
+.db $00
+.db $00
+.db $00
+.db $02
+.db $00
+.db $3E
+.db $AC
+.db $36
+.db $3E
+.db $93
+.db $93
+.db $03
+.db $5C
+.db $00
+.db $00
+.db $00
+.db $00
+.db $02
+.db $00
+.db $00
+.db $04
+.db $54
+.db $4F
+.db $8C
+.db $89
+.db $25
+.db $61
+.db $5C
+.db $44
+.db $00
+.db $00
+.db $00
+.db $04
+.db $00
+.db $00
+.db $00
+.db $40
+.db $1B
+.db $BF
+.db $92
+.db $DF
+.db $BA
+.db $80
+.db $76
+.db $9C
+.db $08
+.db $00
+.db $10
+.db $00
+.db $00
+.db $00
+.db $10
+.db $00
+.db $01
+.db $06
+.db $C5
+.db $45
+.db $98
+.db $04
+.db $16
+.db $5D
+.db $00
+.db $00
+.db $00
+.db $30
+.db $80
+.db $80
+.db $00
+.db $00
+.db $93
+.db $15
+.db $36
+.db $C4
+.db $4F
+.db $07
+.db $55
+.db $2C
+.db $00
+.db $00
+.db $01
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $86
+.db $0F
+.db $05
+.db $01
+.db $1C
+.db $20
+.db $55
+.db $50
+.db $00
+.db $11
+.db $00
+.db $80
+.db $00
+.db $00
+.db $00
+.db $00
+.db $5A
+.db $35
+.db $B7
+.db $0A
+.db $69
+.db $A3
+.db $8D
+.db $01
+.db $00
+.db $30
+.db $04
+.db $02
+.db $00
+.db $02
+.db $00
+.db $50
+.db $49
+.db $92
+.db $19
+.db $98
+.db $98
+.db $21
+.db $95
+.db $81
+.db $10
+.db $00
+.db $00
+.db $08
+.db $00
+.db $00
+.db $00
+.db $00
+.db $44
+.db $A1
+.db $2A
+.db $A1
+.db $AE
+.db $10
+.db $20
+.db $C7
+.db $42
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $70
+.db $8D
+.db $44
+.db $00
+.db $4C
+.db $06
+.db $A0
+.db $40
+.db $00
+.db $00
+.db $02
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $68
+.db $D9
+.db $01
+.db $9C
+.db $9D
+.db $25
+.db $65
+.db $A8
+.db $00
+.db $01
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $25
+.db $96
+.db $07
+.db $94
+.db $15
+.db $75
+.db $05
+.db $14
+.db $40
+.db $00
+.db $00
+.db $00
+.db $01
+.db $00
+.db $00
+.db $00
+.db $9D
+.db $65
+.db $96
+.db $D9
+.db $A5
+.db $2E
+.db $A0
+.db $F7
+.db $20
+.db $40
+.db $24
+.db $01
+.db $00
+.db $00
+.db $00
+.db $00
+.db $0B
+.db $74
+.db $AD
+.db $CE
+.db $13
+.db $68
+.db $11
+.db $84
+.db $00
+.db $01
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $08
+.db $D8
+.db $9F
+.db $0B
+.db $38
+.db $53
+.db $D2
+.db $F9
+.db $65
+.db $00
+.db $80
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $DE
+.db $40
+.db $D5
+.db $76
+.db $15
+.db $74
+.db $C5
+.db $69
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $27
+.db $6A
+.db $D0
+.db $0F
+.db $A8
+.db $09
+.db $12
+.db $F4
+.db $18
+.db $00
+.db $80
+.db $00
+.db $00
+.db $00
+.db $00
+.db $80
+.db $3D
+.db $22
+.db $5F
+.db $11
+.db $68
+.db $21
+.db $04
+.db $14
+.db $00
+.db $00
+.db $00
+.db $00
+.db $24
+.db $00
+.db $00
+.db $00
+.db $22
+.db $01
+.db $77
+.db $51
+.db $37
+.db $83
+.db $D8
+.db $DD
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $00
+.db $04
+.db $08
+.db $23
+.db $0A
+.db $78
+.db $43
+.db $60
+.db $39
+.db $41
+.db $05
+; start of data
+.db $00
+.db $80
+.db $74
+.db $8B
+.db $BF
+.db $AC
+.db $23
+.db $AC
+.db $3B
+.db $AC
+.db $13
+.db $AE
+; end of data
+.db $85
+.db $5E
+.db $10
+.db $40
+.db $00
+.db $30
+.db $00
+.db $00
+.db $10
+.db $00
+.db $00
+.db $00
+.db $11
+.db $BC
+.db $31
+.db $85
+.db $8D
+.db $1C
+.db $06
+.db $CF
+.db $04
+.db $00
+.db $00
+.db $00
+.db $00
+.db $10
+.db $00
+.db $00
+.db $05
+.db $C8
+.db $52
+.db $0F
+.db $40
+.db $9C
+.db $20
+.db $8B
+; start of data
+.db $37
+.db $8F
+.db $6B
+.db $8F
+.db $7B
+.db $8F
+.db $93
+.db $8F
+; end of data
+.db $A5
+.db $8F
+.db $BF
+.db $8F
+; start of data
+.db $CD
+.db $8F
+.db $21
+.db $AC
+; end of data
+.db $21
+.db $AC
+.db $00
+.db $80
+.db $80
+.db $00
+.db $00
+.db $00
+.db $33
+.db $2E
+.db $A1
+.db $00
+.db $66
+.db $F2
+.db $01
+.db $C2
+.db $00
+.db $BD
+.db $80
+.db $40
+.db $00
+.db $00
+.db $00
+.db $01
+.db $04
+.db $FF
+; start of data
+.db $07
+.db $A8
+.db $2D
+.db $A7
+.db $3B
+.db $A7
+; end of data
+
+.ENDS

@@ -1,0 +1,117 @@
+.MEMORYMAP
+    DEFAULTSLOT 1
+    SLOTSIZE $0010
+    SLOT 0 $0000
+    SLOTSIZE $4000
+    SLOT 1 $C000
+    SLOTSIZE $2000
+    SLOT 2 $0000
+    SLOTSIZE $800
+    SLOT 3 $0000
+.ENDME
+
+.ROMBANKMAP
+    BANKSTOTAL 33
+    BANKSIZE $0010
+    BANKS 1
+    BANKSIZE $4000
+    BANKS 16
+    BANKSIZE $2000
+    BANKS 16
+.ENDRO
+
+.BANK 0 SLOT 0
+.ORG $0000
+
+.SECTION "Header" FORCE
+
+.db "NES", $1A
+.db $10
+.db $10
+.db $A2 $00 $00 $00 $00 $00 $00 $00 $00 $00
+
+.ENDS
+
+.RAMSECTION "RAM" SLOT 3
+.ENDS
+
+.INCLUDE "bank000.asm"
+.INCLUDE "bank001.asm"
+.INCLUDE "bank002.asm"
+.INCLUDE "bank003.asm"
+.INCLUDE "bank004.asm"
+.INCLUDE "bank005.asm"
+.INCLUDE "bank006.asm"
+.INCLUDE "bank007.asm"
+.INCLUDE "bank008.asm"
+.INCLUDE "bank009.asm"
+.INCLUDE "bank010.asm"
+.INCLUDE "bank011.asm"
+.INCLUDE "bank012.asm"
+.INCLUDE "bank013.asm"
+.INCLUDE "bank014.asm"
+.INCLUDE "bank015.asm"
+
+.BANK 17 SLOT 2
+.ORG $0000
+.INCBIN "bank000.chr"
+
+.BANK 18 SLOT 2
+.ORG $0000
+.INCBIN "bank001.chr"
+
+.BANK 19 SLOT 2
+.ORG $0000
+.INCBIN "bank002.chr"
+
+.BANK 20 SLOT 2
+.ORG $0000
+.INCBIN "bank003.chr"
+
+.BANK 21 SLOT 2
+.ORG $0000
+.INCBIN "bank004.chr"
+
+.BANK 22 SLOT 2
+.ORG $0000
+.INCBIN "bank005.chr"
+
+.BANK 23 SLOT 2
+.ORG $0000
+.INCBIN "bank006.chr"
+
+.BANK 24 SLOT 2
+.ORG $0000
+.INCBIN "bank007.chr"
+
+.BANK 25 SLOT 2
+.ORG $0000
+.INCBIN "bank008.chr"
+
+.BANK 26 SLOT 2
+.ORG $0000
+.INCBIN "bank009.chr"
+
+.BANK 27 SLOT 2
+.ORG $0000
+.INCBIN "bank010.chr"
+
+.BANK 28 SLOT 2
+.ORG $0000
+.INCBIN "bank011.chr"
+
+.BANK 29 SLOT 2
+.ORG $0000
+.INCBIN "bank012.chr"
+
+.BANK 30 SLOT 2
+.ORG $0000
+.INCBIN "bank013.chr"
+
+.BANK 31 SLOT 2
+.ORG $0000
+.INCBIN "bank014.chr"
+
+.BANK 32 SLOT 2
+.ORG $0000
+.INCBIN "bank015.chr"
