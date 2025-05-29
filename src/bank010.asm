@@ -873,9 +873,9 @@
 .db $00
 .db $00
 ; end of data
-L0A032E:
+L0A832E:
     LDA $7DAC
-    JSR $C34C
+    JSR L0FC34C.w
 .db $3D
 .db $C7
 ; start of data
@@ -920,7 +920,7 @@ L0A032E:
 .db $C0
 .db $8A
 ; end of data
-L0A035C:
+L0A835C:
     LDA $5F
     STA $05A6
     LDX $7DA5
@@ -957,9 +957,9 @@ L0A035C:
     STA $7DB5
     LDA $7DA9
     STA $7DAA,X
-    JSR $C39A
+    JSR L0FC39A.w
     STA $7DA7
-    JSR $86E5
+    JSR L0A86E5.w
     LDA $06
     STA $00
     LDA $07
@@ -969,21 +969,21 @@ L0A035C:
     LDA #0
     STA $03
     LDA #255
-    JSR $C225
-    JSR $E6DA
+    JSR L0FC225.w
+    JSR L0FE6DA.w
     INC $7DAC
     RTS 
 
-L0A03E9:
-    JSR $86D7
+L0A83E9:
+    JSR L0A86D7.w
     LDY #0
-    JSR $E6C4
+    JSR L0FE6C4.w
     CMP #229
-    BEQ L0A03FC
+    BEQ L0A83FC
     LDA #4
     STA $7DAC
-    BNE L0A042C
-L0A03FC:
+    BNE L0A842C
+L0A83FC:
 .db $C8
 .db $20
 .db $C4
@@ -1032,47 +1032,47 @@ L0A03FC:
 .db $EE
 .db $AC
 .db $7D
-L0A042C:
+L0A842C:
     RTS 
 
-L0A042D:
+L0A842D:
     LDA $05D8
-    BNE L0A045C
-    JSR $86D7
+    BNE L0A845C
+    JSR L0A86D7.w
     LDY #0
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $7DCE
     INY 
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $7DCF
     INY 
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $7DD0
     INY 
-    JSR $E6C4
+    JSR L0FE6C4.w
     SEC 
     SBC #1
     STA $7DD1
     INY 
     STY $7DB0
-    JMP $848F
+    JMP L0A848F.w
 
-L0A045C:
-    JSR $86D7
+L0A845C:
+    JSR L0A86D7.w
     LDY #0
-    JSR $E6C4
+    JSR L0FE6C4.w
     CMP #232
-    BEQ L0A0476
+    BEQ L0A8476
     LDA $78F8
     SEC 
     SBC $69
     CMP #8
-    BCC L0A0476
+    BCC L0A8476
     LDA #32
-    BNE L0A0478
-L0A0476:
+    BNE L0A8478
+L0A8476:
     LDA #128
-L0A0478:
+L0A8478:
     STA $7DCF
     LDA #32
     STA $7DCE
@@ -1082,31 +1082,32 @@ L0A0478:
     STA $7DD1
     LDY #0
     STY $7DB0
-    JSR $86A9
+L0A848F:
+    JSR L0A86A9.w
     LDA #31
-    JSR $E6B8
+    JSR L0FE6B8.w
     INC $7DAC
     RTS 
 
-L0A049B:
-    JSR $E684
+L0A849B:
+    JSR L0FE684.w
     LDA $058F
     STA $7DD2
     INC $7DAC
     RTS 
 
-L0A04A8:
+L0A84A8:
     LDA $7DC0
-    BNE L0A04B0
-    JSR $8A76
-L0A04B0:
-    JSR $86D7
+    BNE L0A84B0
+    JSR L0A8A76.w
+L0A84B0:
+    JSR L0A86D7.w
     LDY #0
-    JSR $E6C4
+    JSR L0FE6C4.w
     CMP #232
-    BEQ L0A04D0
+    BEQ L0A84D0
     LDA $7DC0
-    BNE L0A050A
+    BNE L0A850A
     LDA #0
     STA $7DC0
     STA $7DC5
@@ -1114,39 +1115,39 @@ L0A04B0:
     INC $7DAC
     RTS 
 
-L0A04D0:
+L0A84D0:
     INY 
     LDX $7DA5
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $7DD5,X
     INY 
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $7DD7,X
     INY 
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $7DDD,X
     INY 
     STY $7DB0
-    JSR $86A9
+    JSR L0A86A9.w
     LDA #5
     STA $4A
     LDA #9
-    JSR $CA94
+    JSR L0FCA94.w
     LDX $7DA5
     LDA $7DD5,X
     CMP #128
-    BCS L0A050A
+    BCS L0A850A
     LDA $7DDD,X
     ORA #128
     STA $7DDD,X
-L0A050A:
+L0A850A:
     LDA $7DDD,X
     AND #127
-    BNE L0A0518
+    BNE L0A8518
     LDA #7
     STA $7DAC
-    BNE L0A052B
-L0A0518:
+    BNE L0A852B
+L0A8518:
     LDA #1
     STA $DF
     STA $7DD4
@@ -1154,33 +1155,33 @@ L0A0518:
     LDA #3
     STA $4A
     LDA #9
-    JSR $CA94
-L0A052B:
+    JSR L0FCA94.w
+L0A852B:
     LDA #0
     STA $7DC0
     STA $7DC5
     INC $7DAC
     RTS 
 
-L0A0537:
-    JSR $E684
+L0A8537:
+    JSR L0FE684.w
     INC $7DAC
     RTS 
 
-L0A053E:
-    JSR $8A76
+L0A853E:
+    JSR L0A8A76.w
     LDA $7DCF
     STA $00
     LDA $7DCE
     CLC 
     ADC #8
     STA $01
-    JSR $C517
+    JSR L0FC517.w
     LDA $04
     STA $00
     LDA $05
     STA $01
-    JSR $C81C
+    JSR L0FC81C.w
     LDA $00
     STA $7DCC
     LDA $01
@@ -1188,13 +1189,13 @@ L0A053E:
     INC $7DAC
     RTS 
 
-L0A056A:
-    JSR $8A76
+L0A856A:
+    JSR L0A8A76.w
     LDA #0
     STA $7DB0
     STA $7DBD
-    JSR $86D7
-    JSR $86E5
+    JSR L0A86D7.w
+    JSR L0A86E5.w
     LDY #0
     LDA #255
     STA ($06),Y
@@ -1202,12 +1203,12 @@ L0A056A:
     STA ($06),Y
     INY 
     STY $7DB1
-L0A0588:
+L0A8588:
     LDY $7DB0
-    JSR $E6C4
+    JSR L0FE6C4.w
     LDA $7EE7
     CMP #234
-    BNE L0A05A5
+    BNE L0A85A5
     LDY #0
     LDA #158
     STA ($06),Y
@@ -1215,88 +1216,88 @@ L0A0588:
     LDA #171
     STA ($06),Y
     INC $7DB0
-    BNE L0A0588
-L0A05A5:
+    BNE L0A8588
+L0A85A5:
     CMP #224
-    BNE L0A05B1
+    BNE L0A85B1
     INC $7DC7
     INC $7DB0
-    BNE L0A0588
-L0A05B1:
+    BNE L0A8588
+L0A85B1:
     CMP #233
-    BNE L0A05BA
-    JSR $86CB
-    BNE L0A0588
-L0A05BA:
+    BNE L0A85BA
+    JSR L0A86CB.w
+    BNE L0A8588
+L0A85BA:
     CMP #227
-    BNE L0A05C6
+    BNE L0A85C6
     INC $7DB0
     INC $05D9
-    BNE L0A0588
-L0A05C6:
+    BNE L0A8588
+L0A85C6:
     CMP #241
-    BNE L0A05D2
+    BNE L0A85D2
     INC $7DB0
     INC $7DE4
-    BNE L0A0588
-L0A05D2:
+    BNE L0A8588
+L0A85D2:
     CMP #226
-    BNE L0A05DE
+    BNE L0A85DE
     INC $7DC5
     INC $7DB0
-    BNE L0A0588
-L0A05DE:
+    BNE L0A8588
+L0A85DE:
     CMP #225
-    BNE L0A05EF
+    BNE L0A85EF
     INY 
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $7DC6
     INY 
     STY $7DB0
-    BNE L0A0588
-L0A05EF:
+    BNE L0A8588
+L0A85EF:
     CMP #223
-    BNE L0A05F9
-    JSR $86BC
-    JMP $8588
+    BNE L0A85F9
+    JSR L0A86BC.w
+    JMP L0A8588.w
 
-L0A05F9:
+L0A85F9:
     CMP #239
-    BEQ L0A0634
+    BEQ L0A8634
     CMP #231
-    BEQ L0A0639
+    BEQ L0A8639
     CMP #228
-    BEQ L0A063E
+    BEQ L0A863E
     CMP #230
-    BEQ L0A0652
+    BEQ L0A8652
     CMP #238
-    BEQ L0A0655
+    BEQ L0A8655
     CMP #240
-    BEQ L0A065A
+    BEQ L0A865A
     CMP #235
-    BEQ L0A0675
+    BEQ L0A8675
     CMP #237
-    BEQ L0A0678
+    BEQ L0A8678
     CMP #236
-    BNE L0A0620
-    JMP $8701
+    BNE L0A8620
+    JMP L0A8701.w
 
-L0A0620:
+L0A8620:
     LDY $7DB0
-    JSR $E6C4
+    JSR L0FE6C4.w
     LDY $7DB1
     STA ($06),Y
     INC $7DB0
     INC $7DB1
-    JMP $8588
+    JMP L0A8588.w
 
-L0A0634:
+L0A8634:
     INC $7DB8
-    BNE L0A067B
-L0A0639:
+    BNE L0A867B
+L0A8639:
     INC $7DBE
-    BNE L0A067B
-L0A063E:
+    BNE L0A867B
+L0A863E:
 .db $EE
 .db $C1
 .db $7D
@@ -1317,42 +1318,42 @@ L0A063E:
 .db $4C
 .db $78
 .db $86
-L0A0652:
+L0A8652:
     INC $7DC0
-L0A0655:
+L0A8655:
     INC $7DBA
-    BNE L0A067B
-L0A065A:
+    BNE L0A867B
+L0A865A:
     INC $7DB0
     LDY $7DB0
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $7EE9
     INC $7DB0
     LDA #0
     STA $7DAD
     LDA #17
     STA $7DAC
-    BNE L0A0685
-L0A0675:
+    BNE L0A8685
+L0A8675:
 .db $EE
 .db $BB
 .db $7D
-L0A0678:
+L0A8678:
     INC $7DBC
-L0A067B:
+L0A867B:
     INC $7DB0
     LDA #237
     LDY $7DB1
     STA ($06),Y
-L0A0685:
+L0A8685:
     LDX $7DA5
     LDA $7DB0
     CLC 
     ADC $7DC8,X
     STA $7DC8,X
-    BCC L0A0697
+    BCC L0A8697
     INC $7DCA,X
-L0A0697:
+L0A8697:
     LDA #0
     STA $32
     LDA #1
@@ -1362,35 +1363,35 @@ L0A0697:
     INC $7DAC
     RTS 
 
-L0A06A9:
+L0A86A9:
     LDX $7DA5
     LDA $7DB0
     CLC 
     ADC $7DC8,X
     STA $7DC8,X
-    BCC L0A06BB
+    BCC L0A86BB
     INC $7DCA,X
-L0A06BB:
+L0A86BB:
     RTS 
 
-L0A06BC:
+L0A86BC:
     INY 
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $02
     INY 
     STY $7DB0
     LDA $02
-    JMP $F58A
+    JMP L0FF58A.w
 
-L0A06CB:
+L0A86CB:
     INY 
-    JSR $E6C4
+    JSR L0FE6C4.w
     STA $7DB5
     INY 
     STY $7DB0
     RTS 
 
-L0A06D7:
+L0A86D7:
     LDX $7DA5
     LDA $7DC8,X
     STA $7C
@@ -1398,19 +1399,21 @@ L0A06D7:
     STA $7D
     RTS 
 
-L0A06E5:
+L0A86E5:
     LDA $7DAD
     ASL 
     TAY 
-    LDA $86F5,Y
+    LDA L0A86F5.w,Y
     STA $06
-    LDA $86F6,Y
+    LDA L0A86F6.w,Y
     STA $07
-L0A06F4:
+L0A86F4:
     RTS 
 
 ; start of data
+L0A86F5:
 .db $E5
+L0A86F6:
 .db $7D
 .db $05
 .db $7E
@@ -1423,34 +1426,35 @@ L0A06F4:
 ; end of data
 .db $85
 .db $7E
-L0A0701:
+L0A8701:
     INY 
-    JSR $E6C4
+    JSR L0FE6C4.w
     INY 
     STY $7DB0
     ASL 
     TAY 
-    LDA $8734,Y
+    LDA L0A8734.w,Y
     STA $08
     INY 
-    LDA $8734,Y
+    LDA L0A8734.w,Y
     STA $09
     LDY #0
     STY $7DB4
-L0A071B:
+L0A871B:
     LDY $7DB4
     LDA ($08),Y
     CMP #239
-    BEQ L0A0731
+    BEQ L0A8731
     LDY $7DB1
     STA ($06),Y
     INC $7DB1
     INC $7DB4
-    BNE L0A071B
-L0A0731:
-    JMP $8588
+    BNE L0A871B
+L0A8731:
+    JMP L0A8588.w
 
 ; start of data
+L0A8734:
 .db $A5
 .db $7E
 .db $B5
@@ -1460,135 +1464,135 @@ L0A0731:
 ; end of data
 .db $D5
 .db $7E
-L0A073C:
-    JSR $8A76
+L0A873C:
+    JSR L0A8A76.w
     LDA #0
     STA $7DE3
     LDA $1C
     AND #128
-    BNE L0A0757
+    BNE L0A8757
     LDA $33
-    BNE L0A06F4
+    BNE L0A86F4
     LDA #0
     STA $32
     LDA $7DB5
     STA $33
-L0A0757:
-    JSR $86E5
+L0A8757:
+    JSR L0A86E5.w
     LDX #0
     LDY #0
     STY $7DB3
     STY $7DBD
-L0A0764:
+L0A8764:
     LDA ($06),Y
     CMP #15
-    BEQ L0A0779
+    BEQ L0A8779
     CMP #31
-    BEQ L0A0779
+    BEQ L0A8779
     CMP #237
-    BEQ L0A0789
+    BEQ L0A8789
     LDA #255
     INC $7DB3
-    BNE L0A077A
-L0A0779:
+    BNE L0A877A
+L0A8779:
     DEX 
-L0A077A:
+L0A877A:
     STA $0311,X
     INX 
     INY 
     LDA $7DB3
     CMP $7DB2
-    BCC L0A0764
-    BEQ L0A0764
-L0A0789:
+    BCC L0A8764
+    BEQ L0A8764
+L0A8789:
     LDA $7DD0
     SEC 
     SBC $7DB3
-    BEQ L0A079E
-    BCC L0A079E
+    BEQ L0A879E
+    BCC L0A879E
     TAY 
     LDA #255
-L0A0797:
+L0A8797:
     STA $0311,X
     INX 
     DEY 
-    BNE L0A0797
-L0A079E:
+    BNE L0A8797
+L0A879E:
     LDY #0
     STY $7DB3
-L0A07A3:
+L0A87A3:
     LDA ($06),Y
     CMP #15
-    BEQ L0A07B6
+    BEQ L0A87B6
     CMP #31
-    BEQ L0A07B6
+    BEQ L0A87B6
     CMP #237
-    BNE L0A07B9
+    BNE L0A87B9
     INC $7DBD
-    BNE L0A07C9
-L0A07B6:
+    BNE L0A87C9
+L0A87B6:
     INY 
-    BNE L0A07A3
-L0A07B9:
+    BNE L0A87A3
+L0A87B9:
     INC $7DB3
     STA $0311,X
     INX 
     INY 
     LDA $7DB3
     CMP $7DB2
-    BNE L0A07A3
-L0A07C9:
+    BNE L0A87A3
+L0A87C9:
     LDA $7DD0
     SEC 
     SBC $7DB3
-    BEQ L0A07E0
-    BCC L0A07E0
+    BEQ L0A87E0
+    BCC L0A87E0
     TAY 
     LDA #255
-L0A07D7:
+L0A87D7:
     STA $0311,X
     INX 
     DEY 
-    BNE L0A07D7
-    BEQ L0A07E3
-L0A07E0:
+    BNE L0A87D7
+    BEQ L0A87E3
+L0A87E0:
     INC $7DBD
-L0A07E3:
+L0A87E3:
     LDA $7DCC
     STA $00
     LDA $7DCD
     STA $01
     LDX $7DAD
-    BEQ L0A07FB
-L0A07F2:
-    JSR $C81C
-    JSR $C81C
+    BEQ L0A87FB
+L0A87F2:
+    JSR L0FC81C.w
+    JSR L0FC81C.w
     DEX 
-    BNE L0A07F2
-L0A07FB:
+    BNE L0A87F2
+L0A87FB:
     LDX $00
     LDY $01
     LDA $7DD0
     AND #31
     ORA #64
     STA $0310
-    JSR $C842
+    JSR L0FC842.w
     LDA $05D9
-    BNE L0A0816
+    BNE L0A8816
     LDA #32
     STA $06D2
-L0A0816:
+L0A8816:
     LDA $7DBD
-    BEQ L0A081E
+    BEQ L0A881E
     INC $7DAC
-L0A081E:
+L0A881E:
     INC $7DB2
     RTS 
 
-L0A0822:
-    JSR $8A76
+L0A8822:
+    JSR L0A8A76.w
     LDA $7DC4
-    BEQ L0A0838
+    BEQ L0A8838
 .db $A9
 .db $04
 .db $85
@@ -1603,57 +1607,57 @@ L0A0822:
 .db $8D
 .db $C4
 .db $7D
-L0A0838:
+L0A8838:
     LDA $7DB8
-    BEQ L0A0849
+    BEQ L0A8849
     LDA $7DC6
     STA $35
     LDA #14
     STA $7DAC
-    BNE L0A0893
-L0A0849:
+    BNE L0A8893
+L0A8849:
     LDA $7DE4
-    BNE L0A085C
+    BNE L0A885C
     INC $7DAF
     LDA $7DAF
     CMP $7DD1
-    BCC L0A085C
+    BCC L0A885C
     INC $7DBA
-L0A085C:
+L0A885C:
     LDA $7DBB
-    BNE L0A088B
+    BNE L0A888B
     LDA $7DAD
     CMP $7DD1
-    BCS L0A088B
+    BCS L0A888B
     INC $7DAD
     LDA $7DBE
-    BEQ L0A0874
-    JMP $8936
+    BEQ L0A8874
+    JMP L0A8936.w
 
-L0A0874:
+L0A8874:
     LDA $7DBA
-    BEQ L0A087C
-    JMP $8947
+    BEQ L0A887C
+    JMP L0A8947.w
 
-L0A087C:
+L0A887C:
     LDA $7DC1
-    BEQ L0A0884
+    BEQ L0A8884
 .db $20
 .db $F2
 .db $89
-L0A0884:
+L0A8884:
     LDA #9
     STA $7DAC
-    BNE L0A0893
-L0A088B:
+    BNE L0A8893
+L0A888B:
     INC $7DAC
     LDA #0
     STA $7DBB
-L0A0893:
+L0A8893:
     RTS 
 
-L0A0894:
-    JSR $8A76
+L0A8894:
+    JSR L0A8A76.w
     LDX $7DA5
     LDA $7DAD
     STA $7DAE
@@ -1661,112 +1665,113 @@ L0A0894:
     STA $7DB6,X
     LDA #0
     LDY $7EE8
-    BEQ L0A08AF
+    BEQ L0A88AF
     LDA #1
-L0A08AF:
+L0A88AF:
     STA $7DAD
-    JSR $86E5
+    JSR L0A86E5.w
     LDA $06
     STA $02
     LDA $07
     STA $03
     LDA #1
     LDY $7EE8
-    BEQ L0A08C6
+    BEQ L0A88C6
     LDA #2
-L0A08C6:
+L0A88C6:
     STA $7DAD
-    JSR $86E5
+    JSR L0A86E5.w
     LDA $06
     STA $00
     LDA $07
     STA $01
     LDA #160
     LDY $7EE8
-    BEQ L0A08DD
+    BEQ L0A88DD
     LDA #128
-L0A08DD:
+L0A88DD:
     STA $04
     LDA #0
     STA $05
-    JSR $C209
+    JSR L0FC209.w
     LDA $7DAE
     STA $7DAD
-    JSR $86E5
+    JSR L0A86E5.w
     LDY #0
     LDA #237
     STA ($06),Y
     LDA #0
     LDY $7EE8
-    BEQ L0A08FE
+    BEQ L0A88FE
     LDA #1
-L0A08FE:
+L0A88FE:
     STA $7DAD
     INC $7DAC
     RTS 
 
-L0A0905:
-    JSR $8A76
+L0A8905:
+    JSR L0A8A76.w
     LDA $7DD0
     STA $7DB2
-    JSR $8757
+    JSR L0A8757.w
     DEC $7DAC
     INC $7DAD
     LDA $7DAD
     CMP $7DAE
-    BCC L0A0962
-    BEQ L0A0962
+    BCC L0A8962
+    BEQ L0A8962
     LDA $7DAE
     STA $7DAD
     LDA $7DB8
-    BNE L0A0947
+    BNE L0A8947
     LDA $7DBA
-    BNE L0A0947
+    BNE L0A8947
     LDA $7DBE
-    BEQ L0A0942
+    BEQ L0A8942
+L0A8936:
     LDA #1
     STA $7DE3
     INC $7DBF
     LDA #17
-    BNE L0A095A
-L0A0942:
+    BNE L0A895A
+L0A8942:
     LDA $7DBA
-    BEQ L0A0950
-L0A0947:
+    BEQ L0A8950
+L0A8947:
     LDA $7DC6
     STA $35
     LDA #14
-    BNE L0A095A
-L0A0950:
+    BNE L0A895A
+L0A8950:
     LDA $7DC1
-    BEQ L0A0958
+    BEQ L0A8958
 .db $20
 .db $F2
 .db $89
-L0A0958:
+L0A8958:
     LDA #9
-L0A095A:
+L0A895A:
     STA $7DAC
     LDA #0
     STA $7DBC
-L0A0962:
+L0A8962:
     RTS 
 
-L0A0963:
+L0A8963:
     LDA #1
     STA $7DE3
-    JSR $8A76
+    JSR L0A8A76.w
     LDA $7DC6
-    BEQ L0A0976
+    BEQ L0A8976
     LDA $35
-    BNE L0A0962
-    BEQ L0A09B1
-L0A0976:
+    BNE L0A8962
+    BEQ L0A89B1
+L0A8976:
     LDA $36
     AND #16
-    BNE L0A09AD
+    BNE L0A89AD
     LDA $7DB8
-    BNE L0A09AD
+    BNE L0A89AD
     LDA $7DD0
     ASL 
     ASL 
@@ -1776,62 +1781,62 @@ L0A0976:
     LDX $7DAD
     INX 
     LDA $7DCF
-L0A0993:
+L0A8993:
     CLC 
     ADC #16
     DEX 
-    BNE L0A0993
+    BNE L0A8993
     STA $3A
     LDA $3D
     AND #3
-    BEQ L0A09A3
+    BEQ L0A89A3
 .db $E6
 .db $3D
-L0A09A3:
+L0A89A3:
     LDA #10
     STA $0589
     LDA #0
-    JSR $E80F
-L0A09AD:
+    JSR L0FE80F.w
+L0A89AD:
     LDA $1E
-    BEQ L0A09F1
-L0A09B1:
+    BEQ L0A89F1
+L0A89B1:
     LDA $7DB8
-    BEQ L0A09BA
+    BEQ L0A89BA
     LDA #15
-    BNE L0A09E3
-L0A09BA:
+    BNE L0A89E3
+L0A89BA:
     LDA #0
     STA $7DBA
     LDA $7DC0
-    BEQ L0A09C8
+    BEQ L0A89C8
     LDA #16
-    BNE L0A09E3
-L0A09C8:
+    BNE L0A89E3
+L0A89C8:
     LDA $7DC1
-    BEQ L0A09D0
+    BEQ L0A89D0
 .db $20
 .db $F2
 .db $89
-L0A09D0:
+L0A89D0:
     LDA $7DBE
-    BEQ L0A09E1
+    BEQ L0A89E1
     LDA #1
     STA $7DE3
     INC $7DBF
     LDA #17
-    BNE L0A09E3
-L0A09E1:
+    BNE L0A89E3
+L0A89E1:
     LDA #9
-L0A09E3:
+L0A89E3:
     STA $7DAC
     LDY #0
     LDA $7EE8
-    BEQ L0A09EE
+    BEQ L0A89EE
     INY 
-L0A09EE:
+L0A89EE:
     STY $7DAF
-L0A09F1:
+L0A89F1:
     RTS 
 
 .db $AD
@@ -1879,14 +1884,14 @@ L0A09F1:
 .db $A9
 .db $86
 .db $60
-L0A0A1F:
-    JSR $E684
-    JSR $E696
+L0A8A1F:
+    JSR L0FE684.w
+    JSR L0FE696.w
     LDA $058F
-    BNE L0A0A44
+    BNE L0A8A44
     LDA $05A6
-    JSR $CA48
-    JSR $CA50
+    JSR L0FCA48.w
+    JSR L0FCA50.w
     LDA #128
     STA $28
     INC $7DB9
@@ -1894,18 +1899,18 @@ L0A0A1F:
     STA $7DAC
     STA $7DD4
     STA $DF
-L0A0A44:
+L0A8A44:
     RTS 
 
-L0A0A45:
-    JSR $E684
+L0A8A45:
+    JSR L0FE684.w
     LDA $058F
     CMP $7DD2
-    BEQ L0A0A56
-    JSR $E696
-    JMP $8A75
+    BEQ L0A8A56
+    JSR L0FE696.w
+    JMP L0A8A75.w
 
-L0A0A56:
+L0A8A56:
     LDA $7DA5
     TAX 
     EOR #1
@@ -1919,17 +1924,18 @@ L0A0A56:
     STA $DF
     LDA #6
     STA $7DAC
+L0A8A75:
     RTS 
 
-L0A0A76:
+L0A8A76:
     LDA #2
     STA $4A
     LDA #9
-    JMP $CA94
+    JMP L0FCA94.w
 
-L0A0A7F:
-    JSR $8A76
-    JSR $E6DA
+L0A8A7F:
+    JSR L0A8A76.w
+    JSR L0FE6DA.w
     LDA #0
     STA $7DBE
     STA $7DBF
@@ -1939,33 +1945,33 @@ L0A0A7F:
     STA $7DAC
     RTS 
 
-L0A0A99:
-    JSR $8A76
+L0A8A99:
+    JSR L0A8A76.w
     LDA $7DD0
     ASL 
     TAX 
     LDA #255
-L0A0AA3:
+L0A8AA3:
     STA $0311,X
     DEX 
-    BPL L0A0AA3
-    JSR $87E3
+    BPL L0A8AA3
+    JSR L0A87E3.w
     LDA $7DAD
     INC $7DAD
     CMP $7DD1
-    BCC L0A0ABF
+    BCC L0A8ABF
     LDA #0
     STA $7DAD
     INC $7DAC
-L0A0ABF:
+L0A8ABF:
     RTS 
 
-L0A0AC0:
-    JSR $8A76
+L0A8AC0:
+    JSR L0A8A76.w
     LDA #0
     STA $7DAD
     LDA $7EE9
-    BNE L0A0ADB
+    BNE L0A8ADB
 .db $A9
 .db $00
 .db $8D
@@ -1980,30 +1986,30 @@ L0A0AC0:
 .db $AC
 .db $7D
 .db $60
-L0A0ADB:
-    JSR $86E5
+L0A8ADB:
+    JSR L0A86E5.w
     LDA #197
     STA $02
     LDA #126
     STA $03
     LDA $7EE9
     CMP #255
-    BEQ L0A0B08
+    BEQ L0A8B08
     ASL 
     TAX 
-    BCS L0A0AFE
-    LDA $DEA7,X
+    BCS L0A8AFE
+    LDA L0FDEA7.w,X
     STA $02
-    LDA $DEA8,X
+    LDA L0FDEA8.w,X
     STA $03
-    JMP $8B08
+    JMP L0A8B08.w
 
-L0A0AFE:
-    LDA $DFB8,X
+L0A8AFE:
+    LDA L0FDFB8.w,X
     STA $02
-    LDA $DFB9,X
+    LDA L0FDFB9.w,X
     STA $03
-L0A0B08:
+L0A8B08:
     LDY #0
     LDA #255
     STA ($06),Y
@@ -2014,17 +2020,17 @@ L0A0B08:
     LDA #2
     ADC $06
     STA $06
-    BCC L0A0B1E
+    BCC L0A8B1E
 .db $E6
 .db $07
-L0A0B1E:
+L0A8B1E:
     LDY #255
-L0A0B20:
+L0A8B20:
     INY 
     LDA ($02),Y
     STA ($06),Y
     CMP #239
-    BNE L0A0B20
+    BNE L0A8B20
     LDA #188
     STA ($06),Y
     INY 
@@ -2048,45 +2054,45 @@ L0A0B20:
 .db $00
 .db $F0
 ; end of data
-L0A0B49:
-    JSR $8C34
+L0A8B49:
+    JSR L0A8C34.w
     LDA #0
     STA $7918
     STA $8E
     STA $78D2
     LDA $78E1
     CMP #255
-    BNE L0A0B63
+    BNE L0A8B63
     LDA $7441
     SEC 
     SBC #1
-L0A0B63:
+L0A8B63:
     STA $7900
     LDA $78E0
     CMP #255
-    BNE L0A0B73
+    BNE L0A8B73
     LDA $7440
     SEC 
     SBC #1
-L0A0B73:
+L0A8B73:
     STA $78F8
     LDA $7920
     AND #240
     STA $7920
     LDX #1
     LDA #0
-L0A0B82:
+L0A8B82:
     STA $78F0,X
     INX 
     CPX #8
-    BNE L0A0B82
+    BNE L0A8B82
     LDY $7434
     DEY 
     CPY #50
-    BCC L0A0B95
-    JMP $8C33
+    BCC L0A8B95
+    JMP L0A8C33.w
 
-L0A0B95:
+L0A8B95:
     TYA 
     ASL 
     ASL 
@@ -2094,23 +2100,23 @@ L0A0B95:
     LDX $7434
     DEX 
     LDA $6D9C,X
-    BPL L0A0BA4
+    BPL L0A8BA4
     INY 
     INY 
-L0A0BA4:
-    LDA $8C6B,Y
+L0A8BA4:
+    LDA L0A8C6B.w,Y
     STA $04
     INY 
-    LDA $8C6B,Y
+    LDA L0A8C6B.w,Y
     STA $05
     LDY #0
     LDX #1
-L0A0BB3:
+L0A8BB3:
     LDA ($04),Y
     CMP #254
-    BEQ L0A0C10
+    BEQ L0A8C10
     CMP #239
-    BEQ L0A0C16
+    BEQ L0A8C16
     STA $78F8,X
     STA $7908,X
     INY 
@@ -2141,39 +2147,40 @@ L0A0BB3:
     STA $7930,X
     LDA $16
     AND #15
-    BEQ L0A0C05
-    JSR $C3A0
+    BEQ L0A8C05
+    JSR L0FC3A0.w
     STA $7920,X
-L0A0C05:
+L0A8C05:
     INY 
     LDA ($04),Y
     STA $7928,X
     LDA #0
     STA $7918,X
-L0A0C10:
+L0A8C10:
     INY 
     INX 
     CPX #8
-    BNE L0A0BB3
-L0A0C16:
+    BNE L0A8BB3
+L0A8C16:
     LDX $7434
     DEX 
     LDA $6D9C,X
     AND #127
     STA $78D1
     LDX #1
-L0A0C24:
+L0A8C24:
     LSR $78D1
-    BCC L0A0C2E
+    BCC L0A8C2E
     LDA #0
     STA $78F0,X
-L0A0C2E:
+L0A8C2E:
     INX 
     CPX #8
-    BNE L0A0C24
+    BNE L0A8C24
+L0A8C33:
     RTS 
 
-L0A0C34:
+L0A8C34:
     LDA $05B8
     ASL 
     TAX 
@@ -2190,20 +2197,21 @@ L0A0C34:
     TXA 
     ASL 
     TAY 
-    LDA $DEA9,Y
+    LDA L0FDEA9.w,Y
     STA $02
-    LDA $DEAA,Y
+    LDA L0FDEAA.w,Y
     STA $03
     LDY #0
-L0A0C60:
+L0A8C60:
     LDA ($02),Y
     STA $7EC5,Y
     INY 
     CMP #239
-    BNE L0A0C60
+    BNE L0A8C60
     RTS 
 
 ; start of data
+L0A8C6B:
 .db $33
 .db $8D
 ; end of data
@@ -15057,13 +15065,13 @@ L0A0C60:
 .db $BC
 .db $EF
 ; end of data
-L0A3D6F:
+L0ABD6F:
     LDX $0A
     DEX 
     STX $00
     LDA #4
     STA $01
-    JSR $C6C9
+    JSR L0FC6C9.w
     LDA $00
     CLC 
     ADC #143

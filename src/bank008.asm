@@ -4735,6 +4735,7 @@
 .db $1E
 .db $11
 .db $01
+L089241:
 .db $1C
 .db $00
 .db $0E
@@ -4793,7 +4794,9 @@
 .db $00
 .db $00
 .db $00
+L08927B:
 .db $43
+L08927C:
 .db $20
 .db $28
 .db $32
@@ -4819,7 +4822,9 @@
 .db $00
 ; start of data
 .db $00
+L089291:
 .db $A1
+L089292:
 .db $92
 .db $B2
 .db $92
@@ -4827,7 +4832,9 @@
 .db $92
 .db $DC
 .db $92
+L089299:
 .db $AA
+L08929A:
 .db $92
 ; end of data
 .db $BA
@@ -4927,7 +4934,9 @@
 .db $2D
 .db $2F
 .db $26
+L0892F7:
 .db $00
+L0892F8:
 .db $00
 ; end of data
 .db $08
@@ -4977,7 +4986,9 @@
 .db $14
 .db $33
 .db $2C
+L08931F:
 .db $31
+L089320:
 .db $93
 .db $35
 .db $93
@@ -5058,7 +5069,9 @@
 .db $48
 .db $46
 ; end of data
+L08935B:
 .db $14
+L08935C:
 .db $FF
 .db $14
 .db $FF
@@ -5130,6 +5143,7 @@
 .db $40
 .db $FF
 ; end of data
+L08939B:
 .db $31
 .db $32
 ; start of data
@@ -5177,7 +5191,9 @@
 .db $14
 .db $30
 .db $2C
+L0893C2:
 .db $74
+L0893C3:
 .db $94
 ; start of data
 .db $74
@@ -6820,7 +6836,9 @@
 .db $51
 .db $51
 .db $51
+L0899FA:
 .db $12
+L0899FB:
 .db $9A
 .db $18
 .db $9A
@@ -6923,7 +6941,9 @@
 .db $08
 .db $00
 ; end of data
+L089A5A:
 .db $02
+L089A5B:
 .db $9B
 ; start of data
 .db $02
@@ -7663,43 +7683,43 @@
 .db $40
 .db $00
 ; end of data
-L081CF4:
+L089CF4:
     LDA #0
-    JSR $A6F2
-    JSR $A6A3
-    JSR $F2CB
-    JSR $F562
-    JSR $F321
+    JSR L08A6F2.w
+    JSR L08A6A3.w
+    JSR L0FF2CB.w
+    JSR L0FF562.w
+    JSR L0FF321.w
     LDA #0
     STA $0C
-    BEQ L081D20
-L081D0B:
+    BEQ L089D20
+L089D0B:
     LDY #11
-L081D0D:
+L089D0D:
     LDA ($02),Y
     STA ($00),Y
     DEY 
-    BPL L081D0D
+    BPL L089D0D
     LDA #21
-    JSR $C384
+    JSR L0FC384.w
     LDA #12
-    JSR $C379
+    JSR L0FC379.w
     INC $0C
-L081D20:
+L089D20:
     LDY #0
     LDA ($02),Y
-    BNE L081D0B
+    BNE L089D0B
     LDA $0C
     STA $6CF6
     LDA #106
     STA $6CD3
     LDA #248
     STA $6CD2
-    JMP $9EBB
+    JMP L089EBB.w
 
-L081D38:
+L089D38:
     LDA #5
-    JSR $C068
+    JSR L0FC068.w
     ASL 
     ASL 
     ASL 
@@ -7711,48 +7731,48 @@ L081D38:
     CLC 
     ADC $06
     TAX 
-    LDA $92F7,X
+    LDA L0892F7.w,X
     STA $06
-    LDA $92F8,X
-    BEQ L081D92
+    LDA L0892F8.w,X
+    BEQ L089D92
     STA $07
     LDX #0
-L081D5B:
+L089D5B:
     LDA $6CF6,X
-    BEQ L081D67
+    BEQ L089D67
     LDA $6CC0,X
     CMP $07
-    BEQ L081D92
-L081D67:
+    BEQ L089D92
+L089D67:
     INX 
     CPX #2
-    BCC L081D5B
+    BCC L089D5B
     LDA $05BB
     STA $10
     LDA $07
     STA $05BB
     STA $6D0A
-    JSR $9DF9
+    JSR L089DF9.w
     LDX #13
     LDA $00
     STA $6CB0,X
     LDA $01
     STA $6C9E,X
     LDA $06
-    JSR $A095
+    JSR L08A095.w
     LDA $10
     STA $05BB
-L081D92:
+L089D92:
     RTS 
 
-L081D93:
+L089D93:
     LDA #1
     STA $6D13
     LDA $0F
     ASL 
     TAX 
-    LDA $935B,X
-    BPL L081DB8
+    LDA L08935B.w,X
+    BPL L089DB8
 .db $0A
 .db $AA
 .db $BD
@@ -7776,66 +7796,66 @@ L081D93:
 .db $C8
 .db $B1
 .db $10
-L081DB8:
+L089DB8:
     STA $6D14
     LDA $0F
     ASL 
     TAX 
-    LDA $935C,X
+    LDA L08935C.w,X
     STA $6D15
     CMP #255
-    BEQ L081DCC
+    BEQ L089DCC
     INC $6D13
-L081DCC:
+L089DCC:
     LDX $0F
-    LDA $939B,X
+    LDA L08939B.w,X
     STA $05BB
     STA $7434
     STA $6D0A
     LDX #14
     LDA $6D14
-    JSR $A095
+    JSR L08A095.w
     LDA #14
     STA $6D14
     LDX #15
     LDA $6D15
     CMP #255
-    BEQ L081DF8
-    JSR $A095
+    BEQ L089DF8
+    JSR L08A095.w
     LDA #15
     STA $6D15
-L081DF8:
+L089DF8:
     RTS 
 
-L081DF9:
+L089DF9:
     SEC 
     SBC #1
     ASL 
     TAX 
-    LDA $EEF4,X
+    LDA L0FEEF4.w,X
     STA $01
-    LDA $EEF5,X
+    LDA L0FEEF5.w,X
     STA $00
     RTS 
 
-L081E09:
+L089E09:
     LDA #0
     STA $747C
     STA $05BD
-    JSR $9E33
+    JSR L089E33.w
     STA $7435
     INC $05BD
-    JSR $9E33
+    JSR L089E33.w
     STA $7436
     INC $747C
-    JSR $9E33
+    JSR L089E33.w
     STA $7438
     DEC $05BD
-    JSR $9E33
+    JSR L089E33.w
     STA $7437
     RTS 
 
-L081E33:
+L089E33:
     LDA #0
     STA $05C0
     LDY $7434
@@ -7843,30 +7863,31 @@ L081E33:
     TYA 
     ASL 
     TAY 
-    LDA $AB11,Y
+    LDA L08AB11.w,Y
     STA $04
-    LDA $AB12,Y
+    LDA L08AB12.w,Y
     STA $05
     LDA $7434
     CMP #36
-    BNE L081E57
+    BNE L089E57
     LDA $747C
-    BNE L081E66
-    BEQ L081E5F
-L081E57:
+    BNE L089E66
+    BEQ L089E5F
+L089E57:
     LDA $7477
     CMP $747C
-    BNE L081E66
-L081E5F:
+    BNE L089E66
+L089E5F:
     LDA $05BD
     ASL 
-    JMP $9E6D
+    JMP L089E6D.w
 
-L081E66:
+L089E66:
     LDA $05BD
     CLC 
     ADC #2
     ASL 
+L089E6D:
     TAY 
     LDA ($04),Y
     STA $6B
@@ -7877,7 +7898,7 @@ L081E66:
     LDA ($6B),Y
     RTS 
 
-L081E7C:
+L089E7C:
     LDA $05C0
     ASL 
     TAY 
@@ -7895,14 +7916,14 @@ L081E7C:
     RTS 
 
 .db $60
-L081E99:
+L089E99:
     LDX #12
     LDA #0
-L081E9D:
+L089E9D:
     STA $6CF8,X
     STA $6CC2,X
     DEX 
-    BPL L081E9D
+    BPL L089E9D
     LDA #47
     STA $00
     LDA #109
@@ -7912,31 +7933,31 @@ L081E9D:
     LDA #0
     STA $03
     LDA #0
-    JMP $C225
+    JMP L0FC225.w
 
-L081EBB:
-    JSR $9E99
-    JSR $9D38
+L089EBB:
+    JSR L089E99.w
+    JSR L089D38.w
     LDA #0
     STA $05DA
-L081EC6:
+L089EC6:
     LDA $744C
     SEC 
     SBC #1
     ASL 
     TAX 
-    LDA $9291,X
+    LDA L089291.w,X
     STA $00
-    LDA $9292,X
+    LDA L089292.w,X
     STA $01
-    LDA $9299,X
+    LDA L089299.w,X
     STA $02
-    LDA $929A,X
+    LDA L08929A.w,X
     STA $03
     LDY $05DA
     LDA ($00),Y
     CMP #255
-    BEQ L081F09
+    BEQ L089F09
     STA $16
     LDY $05DA
     STY $18
@@ -7944,28 +7965,28 @@ L081EC6:
     STA $05BC
     LDA #255
     STA $05EB
-    JSR $9FE7
+    JSR L089FE7.w
     INC $05DA
     LDA $05DA
     CMP #13
-    BCC L081EC6
-L081F09:
+    BCC L089EC6
+L089F09:
     RTS 
 
-L081F0A:
+L089F0A:
     LDA #255
     STA $05EB
-    JSR $A070
-    BCC L081F15
+    JSR L08A070.w
+    BCC L089F15
 .db $60
-L081F15:
+L089F15:
     LDA $6D2C
     ORA $6D2D
     ORA $6D2E
-    BNE L081F23
-    JMP $9F4A
+    BNE L089F23
+    JMP L089F4A.w
 
-L081F23:
+L089F23:
     LDA $6D2C
     STA $00
     LDA $6D2D
@@ -7976,7 +7997,7 @@ L081F23:
     ROR $02
     ROR $01
     ROR $00
-    BCS L081F44
+    BCS L089F44
 .db $E8
 .db $E0
 .db $02
@@ -7985,49 +8006,49 @@ L081F23:
 .db $4C
 .db $4A
 .db $9F
-L081F44:
+L089F44:
     STX $05EB
-    JMP $9FBC
+    JMP L089FBC.w
 
-L081F4A:
+L089F4A:
     LDA $6D8F
     AND #32
-    BEQ L081F5F
+    BEQ L089F5F
     LDA #1
     STA $7B2D
     LDA #6
     STA $7B2E
     LDY #0
-    BEQ L081F83
-L081F5F:
+    BEQ L089F83
+L089F5F:
     LDX #0
     STX $7B2D
-L081F64:
+L089F64:
     LDA $6D93,X
-    BEQ L081F75
-    BMI L081F75
+    BEQ L089F75
+    BMI L089F75
     LDY $7B2D
     TXA 
     STA $7B2E,Y
     INC $7B2D
-L081F75:
+L089F75:
     INX 
     CPX #9
-    BCC L081F64
+    BCC L089F64
     LDA $7B2D
-    BEQ L081FB6
-    JSR $C068
+    BEQ L089FB6
+    JSR L0FC068.w
     TAY 
-L081F83:
+L089F83:
     LDX $7B2E,Y
-    LDA $F11B,X
+    LDA L0FF11B.w,X
     STA $05BC
     TXA 
     ASL 
     TAY 
-    LDA $931F,Y
+    LDA L08931F.w,Y
     STA $04
-    LDA $9320,Y
+    LDA L089320.w,Y
     STA $05
     LDA $6D93,X
     SEC 
@@ -8038,59 +8059,58 @@ L081F83:
     LDA $36
     STA $37
     LDA #100
-    JSR $C068
+    JSR L0FC068.w
     CMP ($04),Y
-    BCS L081FB6
+    BCS L089FB6
     DEY 
     LDA ($04),Y
     TAX 
-    JMP $9FC6
+    JMP L089FC6.w
 
-L081FB6:
+L089FB6:
     LDA #0
     STA $05BC
     RTS 
 
-L081FBC:
-    LDA $927B,X
+L089FBC:
+    LDA L08927B.w,X
     STA $05BC
-    LDA $927C,X
+    LDA L08927C.w,X
     TAX 
+L089FC6:
     STX $16
     LDY #0
-L081FCA:
+L089FCA:
     LDA $6CF8,Y
-    BEQ L081FD5
+    BEQ L089FD5
     INY 
     CPY #13
-    BCC L081FCA
+    BCC L089FCA
 .db $60
-L081FD5:
+L089FD5:
     STY $18
     LDA $05BC
     LDX #8
-L081FDC:
-    CMP $F11B,X
-    BEQ L081FE4
+L089FDC:
+    CMP L0FF11B.w,X
+    BEQ L089FE4
     DEX 
-    BPL L081FDC
-L081FE4:
-    LDA $F124,X
+    BPL L089FDC
+L089FE4:
+    LDA L0FF124.w,X
+L089FE7:
     STA $05BB
     LDA $18
     CLC 
     ADC #2
     STA $05B8
-    JSR $A07F
+    JSR L08A07F.w
     LDA $05D5
-    BEQ L082027
+    BEQ L08A027
     LDA $05BC
     STA $05BB
-.db $20
-.db $7F ; invalid opcode?
-L082002:
-    LDY #164
-    CLC 
+	JSR $A07F
+    LDY $18
     LDA $04
     STA $6CB0,Y
     STA $0580
@@ -8098,17 +8118,17 @@ L082002:
     STA $6C9E,Y
     STA $0581
     LDA $05EB
-    BMI L08201D
-    JSR $A028
-L08201D:
+    BMI L08A01D
+    JSR L08A028.w
+L08A01D:
     LDA $16
     LDX $18
-    JSR $A095
-    JSR $A587
-L082027:
+    JSR L08A095.w
+    JSR L08A587.w
+L08A027:
     RTS 
 
-L082028:
+L08A028:
     TYA 
     PHA 
     TXA 
@@ -8122,7 +8142,7 @@ L082028:
     AND #7
     TAY 
     LDA $6D2C,X
-    AND $A047,Y
+    AND L08A047.w,Y
     STA $6D2C,X
     PLA 
     TAX 
@@ -8131,6 +8151,7 @@ L082028:
     RTS 
 
 ; start of data
+L08A047:
 .db $FE
 ; end of data
 .db $FD
@@ -8173,20 +8194,20 @@ L082028:
 .db $68
 .db $A8
 .db $60
-L082070:
+L08A070:
     LDY #0
-L082072:
+L08A072:
     LDA $6CF8,Y
-    BEQ L08207D
+    BEQ L08A07D
     INY 
     CPY #15
-    BCC L082072
+    BCC L08A072
 .db $60
-L08207D:
+L08A07D:
     CLC 
     RTS 
 
-L08207F:
+L08A07F:
     LDA $16
     PHA 
     LDA $18
@@ -8194,14 +8215,14 @@ L08207F:
     LDA #4
     STA $4A
     LDA #7
-    JSR $CA94
+    JSR L0FCA94.w
     PLA 
     STA $18
     PLA 
     STA $16
     RTS 
 
-L082095:
+L08A095:
     STX $0E
     STX $05E3
     STA $08
@@ -8214,17 +8235,17 @@ L082095:
     LDA $08
     ASL 
     TAY 
-    LDA $93C2,Y
+    LDA L0893C2.w,Y
     STA $00
-    LDA $93C3,Y
+    LDA L0893C3.w,Y
     STA $01
     TXA 
     ASL 
     TAY 
-    LDA $A27D,Y
+    LDA L08A27D.w,Y
     STA $02
     STA $6CD6,Y
-    LDA $A27E,Y
+    LDA L08A27E.w,Y
     STA $03
     STA $6CD7,Y
     LDA #0
@@ -8235,13 +8256,13 @@ L082095:
     LDA ($00),Y
     STA $0A
     STA $6CF8,X
-L0820E2:
+L08A0E2:
     SEC 
     ROL $05D2
     ROL $05D3
     ROL $05D4
     DEC $0A
-    BNE L0820E2
+    BNE L08A0E2
     LDY #3
     LDA $05D2
     STA ($02),Y
@@ -8252,38 +8273,38 @@ L0820E2:
     LDA $05D4
     STA ($02),Y
     LDA #1
-    JSR $C379
+    JSR L0FC379.w
     LDY #0
     LDA ($00),Y
-    BMI L08211E
+    BMI L08A11E
     ASL 
     TAX 
-    LDA $9A5A,X
+    LDA L089A5A.w,X
     STA $0C
-    LDA $9A5B,X
+    LDA L089A5B.w,X
     STA $0D
     LDA ($0C),Y
     LDX $0E
-L08211E:
+L08A11E:
     STA ($02),Y
     LDA $08
     LDY #1
     STA ($02),Y
     LDY $08
     CPY #60
-    BCS L082130
+    BCS L08A130
     LDA #0
-    BEQ L082133
-L082130:
-    LDA $9241,Y
-L082133:
+    BEQ L08A133
+L08A130:
+    LDA L089241.w,Y
+L08A133:
     LDY #2
     STA ($02),Y
     LDA $0E
     CLC 
     ADC #2
     STA $0E
-    JSR $A738
+    JSR L08A738.w
     LDA $0F
     LDX $05E3
     STA $7A88,X
@@ -8291,18 +8312,18 @@ L082133:
     STA $7A76,X
     RTS 
 
-L08214F:
+L08A14F:
     LDA #1
     STA $7272
     STA $05BD
     STA $747C
     STA $726F
-    JSR $A17A
+    JSR L08A17A.w
     LDA #0
     STA $747C
     RTS 
 
-L082166:
+L08A166:
     LDA #0
     STA $7272
     LDX $6D13
@@ -8311,6 +8332,7 @@ L082166:
     STX $05BD
     INX 
     STX $747C
+L08A17A:
     LDX $05BD
     LDA #0
     STA $743B,X
@@ -8318,9 +8340,9 @@ L082166:
     STA $6D0F
     ASL 
     TAX 
-    LDA $A27D,X
+    LDA L08A27D.w,X
     STA $08
-    LDA $A27E,X
+    LDA L08A27E.w,X
     STA $09
     LDY #3
     LDA ($08),Y
@@ -8335,111 +8357,114 @@ L082166:
     LDA ($08),Y
     ASL 
     TAX 
-    LDA $93C2,X
+    LDA L0893C2.w,X
     STA $7C
-    LDA $93C3,X
+    LDA L0893C3.w,X
     STA $7D
     INC $7C
-    BNE L0821BD
+    BNE L08A1BD
     INC $7D
-L0821BD:
-    JSR $9E33
+L08A1BD:
+    JSR L089E33.w
     STA $7270
     LDA #1
-    JSR $FA7F
+    JSR L0FFA7F.w
     LDA #0
     STA $07
+L08A1CC:
     ROR $05D4
     ROR $05D3
     ROR $05D2
-    BCC L08224F
-    JSR $A2FF
+    BCC L08A24F
+    JSR L08A2FF.w
     LDA $7272
-    BEQ L0821E2
-    JSR $A29D
-L0821E2:
+    BEQ L08A1E2
+    JSR L08A29D.w
+L08A1E2:
     LDA #132
     STA $02
     LDA #116
     STA $03
-    JSR $9E7C
-    JSR $D740
+    JSR L089E7C.w
+    JSR L0FD740.w
     STA $7493
     LDA $7485
     ASL 
     LDY $7484
-    BPL L0821FF
+    BPL L08A1FF
     CLC 
     ADC #1
-L0821FF:
+L08A1FF:
     LDY #0
     STA ($00),Y
     LDA $7272
-    BNE L082214
-    JSR $F2D4
+    BNE L08A214
+    JSR L0FF2D4.w
     LDA #0
-    JSR $F3A3
-    BCS L08224F
-    BCC L08221E
-L082214:
-    JSR $F2CB
+    JSR L0FF3A3.w
+    BCS L08A24F
+    BCC L08A21E
+L08A214:
+    JSR L0FF2CB.w
     LDA #0
-    JSR $F389
-    BCS L08224F
-L08221E:
-    JSR $A2BF
+    JSR L0FF389.w
+    BCS L08A24F
+L08A21E:
+    JSR L08A2BF.w
     LDX $05BD
     LDA $6D13
     CMP #1
-    BNE L08222D
+    BNE L08A22D
     LDX #0
-L08222D:
+L08A22D:
     INC $743B,X
     DEC $7270
-    BNE L08224F
+    BNE L08A24F
     LDA $6D13
     CMP #2
-    BEQ L082271
+    BEQ L08A271
     LDA $05BD
-    BNE L082271
+    BNE L08A271
     INC $05BD
-    JSR $9E33
+    JSR L089E33.w
     STA $7270
     LDA #1
-    JSR $FA7F
-L08224F:
+    JSR L0FFA7F.w
+L08A24F:
     LDY #0
     LDA ($7C),Y
-    BMI L08225B
+    BMI L08A25B
     INC $7C
-    BNE L082266
-    BEQ L082264
-L08225B:
+    BNE L08A266
+    BEQ L08A264
+L08A25B:
     LDA $7C
     CLC 
     ADC #6
     STA $7C
-    BCC L082266
-L082264:
+    BCC L08A266
+L08A264:
     INC $7D
-L082266:
+L08A266:
     INC $07
     LDA $07
     CMP #20
-    BCS L082271
-    JMP $A1CC
+    BCS L08A271
+    JMP L08A1CC.w
 
-L082271:
+L08A271:
     INC $05BD
     DEC $726F
-    BEQ L08227C
-    JMP $A17A
+    BEQ L08A27C
+    JMP L08A17A.w
 
-L08227C:
+L08A27C:
     RTS 
 
 ; start of data
+L08A27D:
 .db $2F
+L08A27E:
 .db $6D
 .db $35
 .db $6D
@@ -8472,25 +8497,27 @@ L08227C:
 .db $89
 .db $6D
 ; end of data
-L08229D:
+L08A29D:
     LDA $7497
     ORA #4
     STA $7497
     LDY #255
     LDA $7484
-L0822AA:
+L08A2AA:
     INY 
-    CMP $A2B7,Y
-    BNE L0822AA
-    LDA $A2BB,Y
+    CMP L08A2B7.w,Y
+    BNE L08A2AA
+    LDA L08A2BB.w,Y
     STA $7484
     RTS 
 
 ; start of data
+L08A2B7:
 .db $8B
 .db $C4
 .db $B7
 .db $B4
+L08A2BB:
 .db $27
 .db $28
 ; end of data
@@ -8498,25 +8525,25 @@ L0822AA:
 ; start of data
 .db $2A
 ; end of data
-L0822BF:
+L08A2BF:
     LDY #20
-L0822C1:
+L08A2C1:
     LDA $7484,Y
     STA ($00),Y
     DEY 
-    BPL L0822C1
+    BPL L08A2C1
     RTS 
 
-L0822CA:
+L08A2CA:
     LDA $00
     ASL 
     TAX 
-    LDA $99FA,X
+    LDA L0899FA.w,X
     STA $0C
-    LDA $99FB,X
+    LDA L0899FB.w,X
     STA $0D
     LDY #0
-    JSR $A319
+    JSR L08A319.w
     LDA $7A
     STA $00
     LDA $7B
@@ -8528,29 +8555,30 @@ L0822CA:
     LDA #22
     STA $4A
     LDA #6
-    JSR $CA94
+    JSR L0FCA94.w
     LDA $00
     STA $7A
     LDA $01
     STA $7B
     RTS 
 
-L0822FF:
+L08A2FF:
     LDA $7C
     STA $0C
     LDA $7D
     STA $0D
     LDY #0
     LDA ($0C),Y
-    BMI L08231B
+    BMI L08A31B
     ASL 
     TAX 
-    LDA $9A5A,X
+    LDA L089A5A.w,X
     STA $0C
-    LDA $9A5B,X
+    LDA L089A5B.w,X
     STA $0D
+L08A319:
     LDA ($0C),Y
-L08231B:
+L08A31B:
     STA $7484
     INY 
     LDA ($0C),Y
@@ -8576,38 +8604,38 @@ L08231B:
     SBC #1
     ASL 
     TAY 
-    LDA $ED04,Y
+    LDA L0FED04.w,Y
     STA $00
-    LDA $ED05,Y
+    LDA L0FED05.w,Y
     STA $01
     LDY #0
-L082356:
+L08A356:
     LDA ($00),Y
     CPY #3
-    BEQ L08235F
+    BEQ L08A35F
     CLC 
     ADC $0B
-L08235F:
-    LDX $A3E2,Y
+L08A35F:
+    LDX L08A3E2.w,Y
     STA $7484,X
     INY 
     CPY #5
-    BNE L082356
+    BNE L08A356
     LDA $7485
     CMP #21
-    BNE L082375
+    BNE L08A375
     LDA ($00),Y
-    BNE L082383
-L082375:
+    BNE L08A383
+L08A375:
     LDA $0B
     ASL 
     CLC 
     ADC $0B
     ADC ($00),Y
     CMP #52
-    BCC L082383
+    BCC L08A383
     LDA #52
-L082383:
+L08A383:
     STA $7492
     STA $7487
     INY 
@@ -8615,45 +8643,46 @@ L082383:
     STA $7488
     LDA $7486
     CMP #1
-    BEQ L0823CC
+    BEQ L08A3CC
     SEC 
     SBC #1
     STA $00
     LDA $7488
     STA $01
-    JSR $C6C9
+    JSR L0FC6C9.w
     LDA $01
     STA $4F
     LDA $00
     STA $4E
     LDA #10
     STA $50
-    JSR $C6EB
+    JSR L0FC6EB.w
     LDA $4E
     CLC 
     ADC $7488
     STA $4E
-    BCC L0823BE
+    BCC L08A3BE
     INC $4F
-L0823BE:
+L08A3BE:
     LDA $4E
     STA $7488
     LDA $4F
-    BEQ L0823CC
+    BEQ L08A3CC
     LDA #255
     STA $7488
-L0823CC:
+L08A3CC:
     LDY $7485
     DEY 
-    LDA $EDD3,Y
+    LDA L0FEDD3.w,Y
     STA $7491
-    LDA $EDEA,Y
+    LDA L0FEDEA.w,Y
     STA $7490
     LDA #0
     STA $7496
     RTS 
 
 ; start of data
+L08A3E2:
 .db $05
 .db $06
 .db $07
@@ -8661,6 +8690,7 @@ L0823CC:
 .db $09
 .db $03
 ; end of data
+L08A3E8:
 .db $23
 .db $22
 ; start of data
@@ -8671,7 +8701,7 @@ L0823CC:
 .db $1E
 ; end of data
 .db $27
-L0823EE:
+L08A3EE:
     LDX $726F
     LDA $743B,X
     STA $7270
@@ -8697,7 +8727,7 @@ L0823EE:
     INY 
     LDA ($6B),Y
     STA $05D4
-    JSR $A4E9
+    JSR L08A4E9.w
     LDA #0
     STA $04
     STA $05
@@ -8709,21 +8739,21 @@ L0823EE:
     LDA #20
     STA $07
     LDX $726F
-    BEQ L08244D
+    BEQ L08A44D
     LDX $743B
     LDY #21
-L082447:
-    JSR $C378
+L08A447:
+    JSR L0FC378.w
     DEX 
-    BNE L082447
-L08244D:
-    JSR $A500
+    BNE L08A447
+L08A44D:
+    JSR L08A500.w
     ROR $05D4
     ROR $05D3
     ROR $05D2
-    BCC L082495
+    BCC L08A495
     LDA $7270
-    BEQ L08248B
+    BEQ L08A48B
     DEC $7270
     LDY #0
     LDA ($00),Y
@@ -8732,18 +8762,18 @@ L08244D:
     LDA ($00),Y
     STA $7496
     LDA #21
-    JSR $C379
+    JSR L0FC379.w
     LDA $7278
     CMP $7484
-    BNE L082485
+    BNE L08A485
     LDA $7496
     CMP #255
-    BNE L08248B
-L082485:
+    BNE L08A48B
+L08A485:
     DEC $7271
     CLC 
-    BCC L082495
-L08248B:
+    BCC L08A495
+L08A48B:
 .db $A5
 .db $0C
 .db $D0
@@ -8754,30 +8784,30 @@ L08248B:
 .db $85
 .db $0C
 .db $38
-L082495:
+L08A495:
     ROR $06
     ROR $05
     ROR $04
     DEC $07
-    BNE L08244D
+    BNE L08A44D
     LDY #4
-L0824A1:
+L08A4A1:
     CLC 
     ROR $06
     ROR $05
     ROR $04
     DEY 
-    BNE L0824A1
+    BNE L08A4A1
     LDA $06
-    JSR $C9F7
+    JSR L0FC9F7.w
     STA $00
     LDA $05
-    JSR $C9F7
+    JSR L0FC9F7.w
     CLC 
     ADC $00
     STA $00
     LDA $04
-    JSR $C9F7
+    JSR L0FC9F7.w
     CLC 
     ADC $00
     STA $00
@@ -8801,66 +8831,66 @@ L0824A1:
     STA $6CF6,X
     RTS 
 
-L0824E9:
+L08A4E9:
     LDY #1
     LDA ($6B),Y
     ASL 
     TAX 
-    LDA $93C2,X
+    LDA L0893C2.w,X
     STA $7C
-    LDA $93C3,X
+    LDA L0893C3.w,X
     STA $7D
     INC $7C
-    BNE L0824FF
+    BNE L08A4FF
 .db $E6
 .db $7D
-L0824FF:
+L08A4FF:
     RTS 
 
-L082500:
+L08A500:
     LDY #0
     LDA ($7C),Y
     STA $7277
-    BMI L082517
+    BMI L08A517
     ASL 
     TAX 
-    LDA $9A5A,X
+    LDA L089A5A.w,X
     STA $7E
-    LDA $9A5B,X
+    LDA L089A5B.w,X
     STA $7F
     LDA ($7E),Y
-L082517:
+L08A517:
     STA $7278
     LDA $7277
-    BMI L082525
+    BMI L08A525
     INC $7C
-    BNE L082530
+    BNE L08A530
 .db $F0
 .db $09
-L082525:
+L08A525:
     LDA $7C
     CLC 
     ADC #6
     STA $7C
-    BCC L082530
+    BCC L08A530
 .db $E6
 .db $7D
-L082530:
+L08A530:
     LDA $7278
     RTS 
 
-L082534:
-    JSR $A53B
-    JSR $A587
+L08A534:
+    JSR L08A53B.w
+    JSR L08A587.w
     RTS 
 
-L08253B:
+L08A53B:
     LDA #0
     STA $0A
-L08253F:
+L08A53F:
     LDX $0A
     LDA $6CF6,X
-    BEQ L08257E
+    BEQ L08A57E
     STA $0B
     LDA #0
     STA $7AAA,X
@@ -8873,39 +8903,40 @@ L08253F:
     LDA $6CD3,X
     STA $01
     LDX $0A
-L082560:
+L08A560:
     LDY #5
-L082562:
+L08A562:
     LDA ($00),Y
     CLC 
     ADC $7AAA,X
     STA $7AAA,X
-    BCC L082570
+    BCC L08A570
     INC $7A98,X
-L082570:
+L08A570:
     INY 
     CPY #10
-    BCC L082562
+    BCC L08A562
     LDA #12
-    JSR $C379
+    JSR L0FC379.w
     DEC $0B
-    BNE L082560
-L08257E:
+    BNE L08A560
+L08A57E:
     INC $0A
     LDA $0A
     CMP #2
-    BCC L08253F
+    BCC L08A53F
     RTS 
 
-L082587:
+L08A587:
     LDA #14
     STA $0A
+L08A58B:
     LDX $0A
     LDA $6CF6,X
-    BNE L082595
-    JMP $A669
+    BNE L08A595
+    JMP L08A669.w
 
-L082595:
+L08A595:
     LDA #0
     STA $7AAA,X
     STA $7A98,X
@@ -8920,15 +8951,15 @@ L082595:
     LDA ($00),Y
     ASL 
     TAX 
-    LDA $93C2,X
+    LDA L0893C2.w,X
     STA $02
-    LDA $93C3,X
+    LDA L0893C3.w,X
     STA $03
     LDY #0
     LDA ($02),Y
     STA $0B
     LDA #1
-    JSR $C384
+    JSR L0FC384.w
     LDY #3
     LDA ($00),Y
     STA $06
@@ -8939,6 +8970,7 @@ L082595:
     LDA ($00),Y
     STA $08
     LDX $0A
+L08A5D8:
     LDA $02
     STA $7C
     LDA $03
@@ -8949,28 +8981,28 @@ L082595:
     ROR $08
     ROR $07
     ROR $06
-    BCC L08264F
+    BCC L08A64F
     LDA $7E
-    BMI L0825FE
+    BMI L08A5FE
     ASL 
     TAX 
-    LDA $9A5A,X
+    LDA L089A5A.w,X
     STA $02
-    LDA $9A5B,X
+    LDA L089A5B.w,X
     STA $03
-L0825FE:
+L08A5FE:
     LDX $0A
     LDY #1
     LDA ($02),Y
     CMP #19
-    BNE L082616
+    BNE L08A616
     LDA $7AAA,X
     CLC 
     ADC #100
     STA $7AAA,X
-    BCC L082616
+    BCC L08A616
     INC $7A98,X
-L082616:
+L08A616:
     LDY #2
     LDA ($02),Y
     SEC 
@@ -8983,50 +9015,50 @@ L082616:
     SBC #1
     ASL 
     TAY 
-    LDA $ED04,Y
+    LDA L0FED04.w,Y
     STA $00
-    LDA $ED05,Y
+    LDA L0FED05.w,Y
     STA $01
     LDY #0
-L082635:
+L08A635:
     LDA ($00),Y
     CPY #3
-    BEQ L08263E
+    BEQ L08A63E
     CLC 
     ADC $09
-L08263E:
+L08A63E:
     CLC 
     ADC $7AAA,X
     STA $7AAA,X
-    BCC L08264A
+    BCC L08A64A
     INC $7A98,X
-L08264A:
+L08A64A:
     INY 
     CPY #5
-    BCC L082635
-L08264F:
+    BCC L08A635
+L08A64F:
     LDA $7C
     STA $02
     LDA $7D
     STA $03
     LDY #6
     LDA $7E
-    BMI L08265F
+    BMI L08A65F
     LDY #1
-L08265F:
-    JSR $C383
+L08A65F:
+    JSR L0FC383.w
     DEC $0B
-    BEQ L082669
-    JMP $A5D8
+    BEQ L08A669
+    JMP L08A5D8.w
 
-L082669:
+L08A669:
     DEC $0A
     LDA $0A
     CMP #2
-    BCC L082674
-    JMP $A58B
+    BCC L08A674
+    JMP L08A58B.w
 
-L082674:
+L08A674:
     RTS 
 
 .db $AE
@@ -9075,7 +9107,7 @@ L082674:
 .db $C0
 .db $6C
 .db $60
-L0826A3:
+L08A6A3:
     LDA #103
     STA $01
     LDA #174
@@ -9085,20 +9117,20 @@ L0826A3:
     LDA #74
     STA $02
     LDA #0
-    JSR $C225
+    JSR L0FC225.w
     LDA #174
     STA $04
     LDA #103
     STA $05
     LDX #0
-    BEQ L0826EC
-L0826C4:
+    BEQ L08A6EC
+L08A6C4:
     SEC 
     SBC #1
     STA $00
     LDA #12
     STA $01
-    JSR $C6C9
+    JSR L0FC6C9.w
     LDA #226
     CLC 
     ADC $00
@@ -9107,48 +9139,50 @@ L0826C4:
     ADC $01
     STA $01
     LDY #11
-L0826DF:
+L08A6DF:
     LDA ($00),Y
     STA ($04),Y
     DEY 
-    BPL L0826DF
+    BPL L08A6DF
     LDA #21
-    JSR $C38F
+    JSR L0FC38F.w
     INX 
-L0826EC:
+L08A6EC:
     LDA $74B5,X
-    BNE L0826C4
+    BNE L08A6C4
     RTS 
 
-L0826F2:
+L08A6F2:
     STA $02
     LDA #0
     LDY #32
-L0826F8:
+L08A6F8:
     STA $74B4,Y
     DEY 
-    BPL L0826F8
+    BPL L08A6F8
     LDA $02
     ASL 
     TAX 
-    LDA $A71E,X
+    LDA L08A71E.w,X
     STA $00
-    LDA $A71F,X
+    LDA L08A71F.w,X
     STA $01
     LDY #0
-L08270E:
+L08A70E:
     LDA ($00),Y
     CMP #255
-    BEQ L08271A
+    BEQ L08A71A
     STA $74B5,Y
     INY 
-    BPL L08270E
-L08271A:
+    BPL L08A70E
+L08A71A:
     STY $74B4
     RTS 
 
 ; start of data
+L08A71E:
 .db $E0
+L08A71F:
 .db $90
 ; end of data
 .db $2C
@@ -9175,7 +9209,7 @@ L08271A:
 .db $17
 .db $18
 .db $FF
-L082738:
+L08A738:
     LDA $0E
     ASL 
     TAX 
@@ -9187,31 +9221,32 @@ L082738:
     LDA ($00),Y
     ASL 
     TAX 
-    LDA $93C2,X
+    LDA L0893C2.w,X
     STA $02
-    LDA $93C3,X
+    LDA L0893C3.w,X
     STA $03
     LDA #1
-    JSR $C384
+    JSR L0FC384.w
     LDY #0
     LDA ($02),Y
-    BMI L08276D
+    BMI L08A76D
     ASL 
     TAX 
-    LDA $9A5A,X
+    LDA L089A5A.w,X
     STA $02
-    LDA $9A5B,X
+    LDA L089A5B.w,X
     STA $03
-L08276D:
+L08A76D:
     LDY #1
     LDA ($02),Y
     TAX 
     DEX 
-    LDA $A779,X
+    LDA L08A779.w,X
     STA $0F
     RTS 
 
 ; start of data
+L08A779:
 .db $37
 .db $32
 .db $32
@@ -9241,34 +9276,35 @@ L08276D:
 .db $32
 .db $33
 ; end of data
-L08278F:
+L08A78F:
     LDA #0
     STA $74DF
     STA $74E0
     STA $05D8
-    JSR $C288
+L08A79A:
+    JSR L0FC288.w
     LDA #3
     STA $3D
-    JSR $AB08
-    JSR $E783
+    JSR L08AB08.w
+    JSR L0FE783.w
     LDA #0
     STA $3D
-    JSR $A7C4
+    JSR L08A7C4.w
     LDA $74DF
-    BMI L0827BE
+    BMI L08A7BE
     INC $36
-    JSR $C336
-    JSR $C70D
-    JMP $A79A
+    JSR L0FC336.w
+    JSR L0FC70D.w
+    JMP L08A79A.w
 
-L0827BE:
+L08A7BE:
     LDA #1
     STA $05D8
     RTS 
 
-L0827C4:
+L08A7C4:
     LDA $74DF
-    JSR $C34C
+    JSR L0FC34C.w
 ; start of data
 .db $E8
 .db $A7
@@ -9314,33 +9350,33 @@ L0827C4:
     INC $74DF
     RTS 
 
-L082804:
+L08A804:
     LDY #1
     LDA ($6B),Y
     CMP #14
-    BEQ L082835
+    BEQ L08A835
     CMP #21
-    BEQ L08284F
+    BEQ L08A84F
     STA $0A
     LDX #0
-L082814:
-    LDA $E3A7,X
-    BMI L082860
+L08A814:
+    LDA L0FE3A7.w,X
+    BMI L08A860
     CMP $0A
-    BEQ L082820
+    BEQ L08A820
     INX 
-    BPL L082814
-L082820:
+    BPL L08A814
+L08A820:
     LDY #2
     LDA ($6B),Y
-    CMP $E3C2,X
-    BCC L082860
-    LDA $E3B5,X
+    CMP L0FE3C2.w,X
+    BCC L08A860
+    LDA L0FE3B5.w,X
     STA $74E2
     INC $74DF
-    JMP $A866
+    JMP L08A866.w
 
-L082835:
+L08A835:
 .db $A0
 .db $02
 .db $B1
@@ -9367,65 +9403,65 @@ L082835:
 .db $4C
 .db $66
 .db $A8
-L08284F:
+L08A84F:
     LDA $744A
-    BNE L082860
+    BNE L08A860
     LDY #2
     LDA ($6B),Y
     CMP #21
-    BCC L082860
+    BCC L08A860
 .db $A9
 .db $17
 .db $D0
 .db $E6
-L082860:
+L08A860:
     LDA #13
     STA $74DF
     RTS 
 
-L082866:
+L08A866:
     LDA #1
     STA $74E0
     RTS 
 
-L08286C:
+L08A86C:
     LDY #0
     LDA ($6B),Y
     SEC 
     SBC #1
     ASL 
     TAX 
-    LDA $DEA9,X
+    LDA L0FDEA9.w,X
     STA $00
-    LDA $DEAA,X
+    LDA L0FDEAA.w,X
     STA $01
     LDY #0
-L082881:
+L08A881:
     LDA ($00),Y
     STA $7EA5,Y
     CMP #239
-    BEQ L08288D
+    BEQ L08A88D
     INY 
-    BPL L082881
-L08288D:
+    BPL L08A881
+L08A88D:
     LDA $74E2
     SEC 
     SBC #1
     ASL 
     TAX 
-    LDA $DB73,X
+    LDA L0FDB73.w,X
     STA $00
-    LDA $DB74,X
+    LDA L0FDB74.w,X
     STA $01
     LDY #0
-L0828A1:
+L08A8A1:
     LDA ($00),Y
     STA $7EB5,Y
     CMP #239
-    BEQ L0828AD
+    BEQ L08A8AD
     INY 
-    BPL L0828A1
-L0828AD:
+    BPL L08A8A1
+L08A8AD:
     LDA #1
     STA $7DA6
     LDA #0
@@ -9437,60 +9473,60 @@ L0828AD:
     INC $74DF
     RTS 
 
-L0828C5:
+L08A8C5:
     LDA #0
     STA $4A
     LDA #10
-    JSR $CA94
+    JSR L0FCA94.w
     LDA $7DBF
-    BEQ L0828DF
+    BEQ L08A8DF
     LDA #12
-    JSR $E6B8
+    JSR L0FE6B8.w
     LDA #0
     STA $2C
     INC $74DF
-L0828DF:
+L08A8DF:
     RTS 
 
-L0828E0:
+L08A8E0:
     LDA #0
     STA $4A
     LDA #10
-    JSR $CA94
+    JSR L0FCA94.w
     LDA $7DBF
-    BEQ L0828F1
+    BEQ L08A8F1
     INC $74DF
-L0828F1:
+L08A8F1:
     RTS 
 
-L0828F2:
-    JSR $E684
+L08A8F2:
+    JSR L0FE684.w
     LDA $05AC
-    BEQ L082914
+    BEQ L08A914
     CMP #2
-    BEQ L082911
-    JSR $E696
+    BEQ L08A911
+    JSR L0FE696.w
     LDA $74E2
     CMP #23
-    BNE L08290D
+    BNE L08A90D
 .db $A9
 .db $01
 .db $8D
 .db $4A
 .db $74
-L08290D:
+L08A90D:
     INC $74DF
     RTS 
 
-L082911:
-    JSR $E696
-L082914:
+L08A911:
+    JSR L0FE696.w
+L08A914:
     LDA #11
     STA $74DF
     RTS 
 
-L08291A:
-    JSR $E684
+L08A91A:
+    JSR L0FE684.w
     LDA #0
     STA $7DA5
     LDA #3
@@ -9498,19 +9534,19 @@ L08291A:
     LDA #177
     STA $7DA9
     LDA #1
-    JSR $C9BD
+    JSR L0FC9BD.w
     INC $74DF
     RTS 
 
-L082935:
-    JSR $E684
+L08A935:
+    JSR L0FE684.w
     LDA #0
     STA $7DA5
     LDA #2
     STA $7DA6
     LDA $74E2
     CMP #23
-    BNE L082950
+    BNE L08A950
 .db $A9
 .db $07
 .db $8D
@@ -9518,37 +9554,38 @@ L082935:
 .db $7D
 .db $D0
 .db $09
-L082950:
+L08A950:
     CMP #10
-    BNE L082959
+    BNE L08A959
 .db $A9
 .db $08
 .db $8D
 .db $A6
 .db $7D
-L082959:
+L08A959:
     LDA #177
     STA $7DA9
     LDA #1
-    JSR $C9BD
+    JSR L0FC9BD.w
     LDA #182
-    JSR $F58A
+    JSR L0FF58A.w
     INC $74DF
     RTS 
 
-L08296C:
-    JSR $AA44
-    JSR $AA39
+L08A96C:
+    JSR L08AA44.w
+    JSR L08AA39.w
     LDA $74E2
     CMP #23
-    BEQ L082980
+    BEQ L08A980
     LDY #1
     STA ($6B),Y
-    JMP $A985
+    JMP L08A985.w
 
-L082980:
+L08A980:
     LDA #1
     STA $744A
+L08A985:
     LDA #1
     LDY #2
     STA ($6B),Y
@@ -9560,21 +9597,21 @@ L082980:
     SBC #1
     ASL 
     TAX 
-    LDA $ED04,X
+    LDA L0FED04.w,X
     STA $00
-    LDA $ED05,X
+    LDA L0FED05.w,X
     STA $01
     LDX #0
     STX $10
-L0829A7:
+L08A9A7:
     TXA 
     TAY 
     LDA ($00),Y
     STA $0A
-    LDY $A3E2,X
+    LDY L08A3E2.w,X
     LDA ($6B),Y
     CMP $0A
-    BCS L0829C4
+    BCS L08A9C4
     LDA $0A
     SEC 
     SBC ($6B),Y
@@ -9582,12 +9619,12 @@ L0829A7:
     LDA $0A
     STA ($6B),Y
     INC $10
-L0829C4:
+L08A9C4:
     INX 
     CPX #6
-    BCC L0829A7
+    BCC L08A9A7
     LDA $10
-    BNE L0829DF
+    BNE L08A9DF
 .db $A0
 .db $03
 .db $B1
@@ -9606,24 +9643,24 @@ L0829C4:
 .db $8D
 .db $B4
 .db $73
-L0829DF:
+L08A9DF:
     LDA $74E2
     CMP #15
-    BEQ L0829FD
+    BEQ L08A9FD
     CMP #11
-    BEQ L0829F2
+    BEQ L08A9F2
     CMP #19
-    BEQ L0829F2
+    BEQ L08A9F2
     CMP #17
-    BNE L082A2D
-L0829F2:
+    BNE L08AA2D
+L08A9F2:
     LDY #10
     LDA ($6B),Y
     ORA #128
     STA ($6B),Y
-    JMP $AA2D
+    JMP L08AA2D.w
 
-L0829FD:
+L08A9FD:
 .db $A9
 .db $99
 .db $85
@@ -9672,36 +9709,37 @@ L0829FD:
 .db $01
 .db $91
 .db $6B
-L082A2D:
+L08AA2D:
     INC $74DF
     INC $74DF
     LDA #0
     STA $73EF
     RTS 
 
-L082A39:
+L08AA39:
     LDX #31
     LDA #0
-L082A3D:
+L08AA3D:
     STA $73AF,X
     DEX 
-    BPL L082A3D
+    BPL L08AA3D
     RTS 
 
-L082A44:
+L08AA44:
     LDA #2
     STA $4A
     LDA #9
-    JMP $CA94
+    JMP L0FCA94.w
 
-L082A4D:
-    JSR $AA44
+L08AA4D:
+    JSR L08AA44.w
+L08AA50:
     LDA $73EF
     CMP #6
-    BCS L082A8B
+    BCS L08AA8B
     TAX 
     LDA $73AF,X
-    BEQ L082A85
+    BEQ L08AA85
     STA $00
     LDA #2
     STA $01
@@ -9709,59 +9747,60 @@ L082A4D:
     STA $09
     LDA #197
     STA $08
-    JSR $C7EA
+    JSR L0FC7EA.w
     LDA #239
     STA $7EC7
     DEC $74DF
     LDX $73EF
-    LDA $A3E8,X
+    LDA L08A3E8.w,X
     STA $7DA6
     INC $73EF
-    JMP $AA93
+    JMP L08AA93.w
 
-L082A85:
+L08AA85:
     INC $73EF
-    JMP $AA50
+    JMP L08AA50.w
 
-L082A8B:
+L08AA8B:
     LDA #6
     STA $7DA6
     INC $74DF
+L08AA93:
     LDA #0
     STA $7DA5
     LDA #177
     STA $7DA9
     LDA #1
-    JSR $C9BD
+    JSR L0FC9BD.w
     RTS 
 
-L082AA3:
+L08AAA3:
     LDA #0
     STA $4A
     LDA #10
-    JSR $CA94
+    JSR L0FCA94.w
     LDA $7DB9
-    BEQ L082AB6
+    BEQ L08AAB6
     LDA #13
     STA $74DF
-L082AB6:
+L08AAB6:
     RTS 
 
-L082AB7:
+L08AAB7:
     LDA $74E0
     CMP #2
-    BEQ L082AF1
+    BEQ L08AAF1
     LDA #12
     CLC 
     ADC $6B
     STA $6B
-    BCC L082AC9
+    BCC L08AAC9
     INC $6C
-L082AC9:
+L08AAC9:
     DEC $74E1
-    BNE L082AF5
+    BNE L08AAF5
     LDA $74E0
-    BNE L082AF1
+    BNE L08AAF1
     LDA #0
     STA $7DA5
     LDA #4
@@ -9773,31 +9812,33 @@ L082AC9:
     LDA #2
     STA $74E0
     INC $74DF
-    BNE L082AFA
-L082AF1:
+    BNE L08AAFA
+L08AAF1:
     LDA #255
-    BNE L082AF7
-L082AF5:
+    BNE L08AAF7
+L08AAF5:
     LDA #1
-L082AF7:
+L08AAF7:
     STA $74DF
-L082AFA:
+L08AAFA:
     LDA #7
     STA $4A
     LDA #13
-    JSR $CA94
+    JSR L0FCA94.w
     LDA #128
     STA $28
     RTS 
 
-L082B08:
+L08AB08:
     LDA #3
     STA $4A
     LDA #13
-    JMP $CA94
+    JMP L0FCA94.w
 
 ; start of data
+L08AB11:
 .db $B1
+L08AB12:
 .db $AB
 .db $E3
 .db $AB

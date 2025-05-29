@@ -8089,41 +8089,42 @@
 .db $30
 .db $31
 ; end of data
-L001F36:
+L009F36:
     LDX #2
+L009F38:
     LDA $03AF,X
-    BNE L001F40
-    JMP $9FC0
+    BNE L009F40
+    JMP L009FC0.w
 
-L001F40:
+L009F40:
     LDA $03B2,X
-    BEQ L001F48
-    JSR $9FC7
-L001F48:
+    BEQ L009F48
+    JSR L009FC7.w
+L009F48:
     DEC $03B5,X
     LDA $03B5,X
-    BNE L001FC0
+    BNE L009FC0
     CPX #2
-    BEQ L001F57
-    JSR $9FD5
-L001F57:
+    BEQ L009F57
+    JSR L009FD5.w
+L009F57:
     LDA $03B8,X
     ASL 
     TAY 
-    LDA $9FF1,Y
+    LDA L009FF1.w,Y
     STA $00
-    LDA $9FF2,Y
+    LDA L009FF2.w,Y
     STA $01
-    LDA $A051,Y
+    LDA L00A051.w,Y
     STA $02
-    LDA $A052,Y
+    LDA L00A052.w,Y
     STA $03
     LDY $03BB,X
     LDA ($02),Y
     CMP #255
-    BEQ L001F84
+    BEQ L009F84
     CMP #254
-    BNE L001F8B
+    BNE L009F8B
 .db $A9
 .db $00
 .db $9D
@@ -8131,15 +8132,15 @@ L001F57:
 .db $03
 .db $F0
 .db $D3
-L001F84:
+L009F84:
     LDA #0
     STA $03AF,X
-    BEQ L001FC0
-L001F8B:
+    BEQ L009FC0
+L009F8B:
     STA $03B5,X
     LDY $03BB,X
     LDA ($00),Y
-    BPL L001FBA
+    BPL L009FBA
 .db $29
 .db $7F
 .db $48
@@ -8177,18 +8178,18 @@ L001F8B:
 .db $4C
 .db $57
 .db $9F
-L001FBA:
+L009FBA:
     STA $03BE,X
     INC $03BB,X
-L001FC0:
+L009FC0:
     DEX 
-    BMI L001FC6
-    JMP $9F38
+    BMI L009FC6
+    JMP L009F38.w
 
-L001FC6:
+L009FC6:
     RTS 
 
-L001FC7:
+L009FC7:
     LDA #1
     STA $03B5,X
     LDA #0
@@ -8196,26 +8197,28 @@ L001FC7:
     STA $03BB,X
     RTS 
 
-L001FD5:
+L009FD5:
     TXA 
     ASL 
     TAY 
-    LDA $E497,Y
+    LDA L0FE497.w,Y
     STA $0A
-    LDA $E498,Y
+    LDA L0FE498.w,Y
     STA $0B
     LDA #255
     LDY #3
-L001FE6:
+L009FE6:
     STA ($0A),Y
     DEY 
-    BPL L001FE6
+    BPL L009FE6
     LDA #0
     STA $0400,X
     RTS 
 
 ; start of data
+L009FF1:
 .db $B1
+L009FF2:
 .db $A0
 ; end of data
 .db $FA
@@ -8327,7 +8330,9 @@ L001FE6:
 .db $8E
 .db $A9
 ; start of data
+L00A051:
 .db $D5
+L00A052:
 .db $A0
 ; end of data
 .db $2D
@@ -10767,52 +10772,54 @@ L001FE6:
 .db $21
 .db $22
 .db $21
-L0029B0:
+L00A9B0:
     LDA $044B
-    BEQ L002A04
+    BEQ L00AA04
     LDX #5
-L0029B7:
+L00A9B7:
     DEC $044C,X
-    BNE L002A01
-L0029BC:
+    BNE L00AA01
+L00A9BC:
     LDA $0452,X
-    BMI L002A01
+    BMI L00AA01
     ASL 
     TAY 
-    LDA $AA05,Y
+    LDA L00AA05.w,Y
     STA $00
-    LDA $AA06,Y
+    LDA L00AA06.w,Y
     STA $01
-    LDA $AA7D,Y
+    LDA L00AA7D.w,Y
     STA $02
-    LDA $AA7E,Y
+    LDA L00AA7E.w,Y
     STA $03
     LDY $0458,X
     LDA ($02),Y
     CMP #255
-    BNE L0029E8
+    BNE L00A9E8
     STA $0452,X
     STA $045E,X
-    BEQ L002A01
-L0029E8:
+    BEQ L00AA01
+L00A9E8:
     CMP #254
-    BNE L0029F3
+    BNE L00A9F3
     LDA #0
     STA $0458,X
-    BEQ L0029BC
-L0029F3:
+    BEQ L00A9BC
+L00A9F3:
     STA $044C,X
     LDY $0458,X
     LDA ($00),Y
     STA $045E,X
     INC $0458,X
-L002A01:
+L00AA01:
     DEX 
-    BPL L0029B7
-L002A04:
+    BPL L00A9B7
+L00AA04:
     RTS 
 
+L00AA05:
 .db $F5
+L00AA06:
 .db $AA
 .db $23
 .db $AB
@@ -10942,7 +10949,9 @@ L002A04:
 .db $BF
 .db $AD
 ; end of data
+L00AA7D:
 .db $0D
+L00AA7E:
 .db $AB
 .db $38
 .db $AB
@@ -11857,49 +11866,49 @@ L002A04:
 .db $02
 .db $02
 .db $FF
-L002DFA:
+L00ADFA:
     LDX #2
-L002DFC:
+L00ADFC:
     LDA $03D3,X
-    BEQ L002E63
+    BEQ L00AE63
     LDA $03D6,X
-    BEQ L002E09
-    JSR $AE67
-L002E09:
+    BEQ L00AE09
+    JSR L00AE67.w
+L00AE09:
     LDA $03D9,X
     ASL 
     TAY 
-    LDA $AE84,Y
+    LDA L00AE84.w,Y
     STA $00
-    LDA $AE85,Y
+    LDA L00AE85.w,Y
     STA $01
     LDY $03DC,X
     LDA ($00),Y
     CMP #255
-    BNE L002E2B
+    BNE L00AE2B
     LDA #0
     STA $03D3,X
     STA $03E9
-    BEQ L002E63
-L002E2B:
+    BEQ L00AE63
+L00AE2B:
     ASL 
     TAY 
-    LDA $B125,Y
+    LDA L00B125.w,Y
     STA $00
-    LDA $B126,Y
+    LDA L00B126.w,Y
     STA $01
     LDA $03DF,X
     ASL 
     TAY 
     LDA ($00),Y
     CMP #128
-    BNE L002E4C
+    BNE L00AE4C
     INC $03DC,X
     LDA #0
     STA $03DF,X
-    BEQ L002E09
-L002E4C:
-    JSR $AE73
+    BEQ L00AE09
+L00AE4C:
+    JSR L00AE73.w
     CLC 
     ADC $03C1,X
     STA $03C1,X
@@ -11909,32 +11918,34 @@ L002E4C:
     ADC $03C4,X
     STA $03C4,X
     INC $03DF,X
-L002E63:
+L00AE63:
     DEX 
-    BPL L002DFC
+    BPL L00ADFC
     RTS 
 
-L002E67:
+L00AE67:
     LDA #0
     STA $03DC,X
     STA $03DF,X
     STA $03D6,X
     RTS 
 
-L002E73:
+L00AE73:
     STY $0382
     LDY $03E2,X
-    BEQ L002E80
+    BEQ L00AE80
     EOR #255
     TAY 
     INY 
     TYA 
-L002E80:
+L00AE80:
     LDY $0382
     RTS 
 
 ; start of data
+L00AE84:
 .db $02
+L00AE85:
 .db $AF
 ; end of data
 .db $0D
@@ -12640,7 +12651,9 @@ L002E80:
 .db $FF
 .db $4D
 .db $FF
+L00B125:
 .db $ED
+L00B126:
 .db $B1
 .db $FC
 .db $B1
@@ -15837,9 +15850,9 @@ L002E80:
 .db $00
 .db $00
 .db $80
-L003D7A:
+L00BD7A:
     LDA $04A6
-    JSR $C34C
+    JSR L0FC34C.w
 ; start of data
 .db $3D
 .db $C7
@@ -15916,7 +15929,7 @@ L003D7A:
 ; end of data
 .db $E4
 .db $BE
-L003DC0:
+L00BDC0:
     LDA #0
     STA $04A6
     RTS 
@@ -16006,10 +16019,10 @@ L003DC0:
 .db $D0
 .db $06
 .db $60
-L003E1B:
+L00BE1B:
     LDA #8
     STA $06D0
-    JMP $BDC0
+    JMP L00BDC0.w
 
 .db $A9
 .db $20
@@ -16038,23 +16051,23 @@ L003E1B:
 .db $A6
 .db $04
 .db $60
-L003E3E:
+L00BE3E:
     LDA #48
     STA $34
     INC $04A6
     LDA $34
-    BNE L003E53
+    BNE L00BE53
     STA $04A6
     LDA #1
     STA $06D3
-    BNE L003E5E
-L003E53:
+    BNE L00BE5E
+L00BE53:
     LDA $36
     AND #7
-    BNE L003E5E
+    BNE L00BE5E
     LDA #8
     STA $06D0
-L003E5E:
+L00BE5E:
     RTS 
 
 .db $A9
@@ -16066,14 +16079,14 @@ L003E5E:
 .db $20
 .db $85
 .db $34
-L003E68:
+L00BE68:
     LDA $34
-    BNE L003E74
+    BNE L00BE74
     LDA #64
     STA $06D1
-    JMP $BDC0
+    JMP L00BDC0.w
 
-L003E74:
+L00BE74:
 .db $60
 .db $A9
 .db $40
@@ -16095,7 +16108,7 @@ L003E74:
 .db $D4
 .db $06
 .db $60
-L003E89:
+L00BE89:
     LDA #96
     STA $34
     LDA #64
@@ -16135,30 +16148,30 @@ L003E89:
 .db $A6
 .db $04
 .db $60
-L003EB6:
+L00BEB6:
     LDA $34
-    BNE L003EC4
+    BNE L00BEC4
     LDA #0
     STA $04A6
     LDA #1
     STA $06D3
-L003EC4:
+L00BEC4:
     RTS 
 
-L003EC5:
+L00BEC5:
     LDA #2
     STA $06D2
     LDA #0
     STA $04A6
     RTS 
 
-L003ED0:
+L00BED0:
     LDA #1
     STA $06D3
     INC $04A6
     RTS 
 
-L003ED9:
+L00BED9:
     LDA #8
     STA $06D0
     LDA #0

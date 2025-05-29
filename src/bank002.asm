@@ -15207,10 +15207,10 @@
 .db $BC
 .db $FF
 ; end of data
-L023B44:
-    JSR $BB5E
+L02BB44:
+    JSR L02BB5E.w
     LDA $8A
-    JSR $C34C
+    JSR L0FC34C.w
 ; start of data
 .db $73
 .db $BB
@@ -15233,7 +15233,7 @@ L023B44:
 .db $26
 .db $BE
 ; end of data
-L023B5E:
+L02BB5E:
     LDA #0
     STA $0200
     STA $0202
@@ -15244,24 +15244,24 @@ L023B5E:
     STA $3D
     RTS 
 
-L023B73:
+L02BB73:
     LDA #26
-    JSR $CA48
-    JSR $CA50
+    JSR L0FCA48.w
+    JSR L0FCA50.w
     LDA #0
-    JSR $CA58
-    JSR $CA60
+    JSR L0FCA58.w
+    JSR L0FCA60.w
     LDA #1
-    JSR $C9BD
+    JSR L0FC9BD.w
     LDA #128
     STA $28
-    JSR $C72D
-    JSR $BB99
+    JSR L0FC72D.w
+    JSR L02BB99.w
     INC $8A
     LDA #13
-    JMP $E6B8
+    JMP L0FE6B8.w
 
-L023B99:
+L02BB99:
     LDA #35
     STA $0781
     LDA #192
@@ -15275,22 +15275,22 @@ L023B99:
     INC $27
     RTS 
 
-L023BB5:
+L02BBB5:
     LDA $0594
-    BEQ L023BC4
-L023BBA:
+    BEQ L02BBC4
+L02BBBA:
     LDA #0
     STA $0594
     LDA #5
     STA $058D
-L023BC4:
-    JSR $E67F
+L02BBC4:
+    JSR L0FE67F.w
     LDA $05AC
-    BEQ L023BBA
+    BEQ L02BBBA
     CMP #1
-    BEQ L023BE0
+    BEQ L02BBE0
     CMP #2
-    BEQ L023BE5
+    BEQ L02BBE5
 .db $C9
 .db $03
 .db $F0
@@ -15303,17 +15303,17 @@ L023BC4:
 .db $05
 .db $F0
 .db $20
-L023BE0:
+L02BBE0:
 .db $A9
 .db $04
 .db $85
 .db $8A
 .db $60
-L023BE5:
+L02BBE5:
     LDA #2
     STA $8A
     LDA #33
-    JMP $E6B8
+    JMP L0FE6B8.w
 
 .db $A9
 .db $05
@@ -15347,9 +15347,9 @@ L023BE5:
 .db $6A
 .db $79
 .db $00
-L023C0E:
-    JSR $BE81
-    JSR $E67F
+L02BC0E:
+    JSR L02BE81.w
+    JSR L0FE67F.w
     LDA #1
     STA $743D
     STA $7434
@@ -15363,11 +15363,11 @@ L023C0E:
     LDA $1C
     AND #48
     CMP #48
-    BEQ L023C3A
+    BEQ L02BC3A
     LDA #0
     STA $6E8C
-    BEQ L023C4F
-L023C3A:
+    BEQ L02BC4F
+L02BC3A:
 .db $A9
 .db $48
 .db $20
@@ -15389,7 +15389,7 @@ L023C3A:
 .db $8C
 .db $8C
 .db $6E
-L023C4F:
+L02BC4F:
     INC $2B
     RTS 
 
@@ -15861,20 +15861,20 @@ L023C4F:
 .db $63
 .db $A4
 .db $67
-L023E26:
+L02BE26:
     LDA #30
     STA $0595
     LDA #35
     STA $79
     LDA #160
     STA $78
-L023E33:
-    JSR $C70D
-    JSR $BE52
+L02BE33:
+    JSR L0FC70D.w
+    JSR L02BE52.w
     DEC $0595
-    JSR $BE52
+    JSR L02BE52.w
     DEC $0595
-    BNE L023E33
+    BNE L02BE33
     LDA #0
     STA $0594
     STA $058F
@@ -15882,16 +15882,16 @@ L023E33:
     STA $059C
     RTS 
 
-L023E52:
+L02BE52:
     LDX $0780
     LDA $79
-    JSR $C4A2
+    JSR L0FC4A2.w
     LDA $78
-    JSR $C4A2
+    JSR L0FC4A2.w
     LDA #96
-    JSR $C4A2
+    JSR L0FC4A2.w
     LDA #255
-    JSR $C4A2
+    JSR L0FC4A2.w
     STX $0780
     LDA #0
     STA $0781,X
@@ -15901,14 +15901,14 @@ L023E52:
     SEC 
     SBC #32
     STA $78
-    BCS L023E80
+    BCS L02BE80
     DEC $79
-L023E80:
+L02BE80:
     RTS 
 
-L023E81:
+L02BE81:
     LDA $0594
-    BEQ L023E9A
+    BEQ L02BE9A
     LDA #0
     STA $058D
     STA $058F
@@ -15918,7 +15918,7 @@ L023E81:
     STA $8A
     PLA 
     PLA 
-L023E9A:
+L02BE9A:
     RTS 
 
 .db $20
@@ -16278,8 +16278,8 @@ L023E9A:
 .db $00
 .db $50
 .db $31
-L023FFA:
-    JMP $BB44
+L02BFFA:
+    JMP L02BB44.w
 
 .db $8F
 .db $19
