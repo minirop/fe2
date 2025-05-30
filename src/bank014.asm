@@ -983,7 +983,6 @@ L0E86AA:
     LDY $F8
     JMP L0E8557.w
 
-; start of data
 L0E86CE:
 .db $00
 L0E86CF:
@@ -1000,17 +999,14 @@ L0E86CF:
 .db $00
 .db $18
 .db $00
-; end of data
 .db $00
 .db $09
-; start of data
 .db $80
 .db $04
 .db $40
 .db $02
 .db $20
 .db $01
-; end of data
 .db $90
 .db $00
 .db $48
@@ -1019,47 +1015,38 @@ L0E86CF:
 .db $04
 .db $00
 .db $02
-; start of data
 .db $00
 .db $01
 .db $80
 .db $00
 .db $40
 .db $00
-; end of data
 .db $20
 .db $00
 .db $C0
 .db $00
 .db $F0
 .db $00
-; start of data
 L0E86F8:
 .db $0F
 L0E86F9:
 .db $FF
-; end of data
 .db $06
 .db $AE
 .db $06
 .db $4E
 .db $05
 .db $F3
-; start of data
 .db $05
 .db $9E
-; end of data
 .db $05
 .db $4D
-; start of data
 .db $05
 .db $01
 .db $04
 .db $B9
-; end of data
 .db $04
 .db $75
-; start of data
 .db $04
 .db $35
 .db $03
@@ -1182,7 +1169,6 @@ L0E86F9:
 .db $22
 .db $00
 .db $20
-; end of data
 .db $00
 .db $1E
 .db $00
@@ -1191,24 +1177,19 @@ L0E86F9:
 .db $1A
 .db $00
 .db $19
-; start of data
 L0E878C:
 .db $92
 .db $87
-; end of data
 .db $97
 .db $87
 .db $9C
 .db $87
-; start of data
 .db $06
 .db $04
 .db $43
 .db $01
 .db $FF
-; end of data
 .db $04
-; start of data
 .db $03
 .db $42
 .db $01
@@ -1217,7 +1198,6 @@ L0E878C:
 .db $02
 .db $01
 .db $FF
-; end of data
 L0E87A0:
     LDA $0645
     CMP #0
@@ -1291,21 +1271,16 @@ L0E881B:
     BEQ L0E8801
 .db $00
 .db $00
-; start of data
 .db $C6
 .db $8C
-; end of data
 .db $D5
 .db $8C
-; start of data
 .db $E2
 .db $8C
-; end of data
 .db $F1
 .db $8C
 .db $FE
 .db $8C
-; start of data
 .db $0A
 .db $8D
 .db $19
@@ -1318,67 +1293,54 @@ L0E881B:
 .db $8E
 .db $E5
 .db $8D
-; end of data
 .db $00
 .db $00
 .db $B8
 .db $8E
-; start of data
 .db $B5
 .db $8D
 .db $C7
 .db $8E
-; end of data
 .db $00
 .db $00
-; start of data
 .db $92
 .db $8E
 .db $8F
 .db $8D
 .db $9E
 .db $8E
-; end of data
 .db $00
 .db $00
-; start of data
 .db $BF
 .db $8D
 .db $AB
 .db $8E
-; end of data
 .db $85
 .db $8E
 .db $00
 .db $00
 .db $A2
 .db $8D
-; start of data
 .db $76
 .db $8E
 .db $4B
 .db $8E
-; end of data
 .db $00
 .db $00
 .db $00
 .db $00
-; start of data
 .db $5A
 .db $8E
 .db $69
 .db $8E
-; end of data
 .db $06
 .db $8E
 .db $2F
 .db $8E
 .db $F9
 .db $8E
-; start of data
 .db $44
 .db $8D
-; end of data
 .db $22
 .db $8E
 .db $53
@@ -1393,26 +1355,22 @@ L0E881B:
 .db $8D
 .db $12
 .db $8F
-; start of data
 .db $80
 .db $8D
 .db $EF
 .db $8D
-; end of data
 .db $F9
 .db $8D
 .db $00
 .db $00
 .db $00
 .db $00
-; start of data
 .db $26
 .db $8D
 .db $35
 .db $8D
 .db $00
 .db $00
-; end of data
 .db $00
 .db $00
 .db $00
@@ -2057,7 +2015,6 @@ L0E8CB5:
 L0E8CC5:
     RTS 
 
-; start of data
 .db $01
 .db $02
 .db $3B
@@ -2065,17 +2022,14 @@ L0E8CC5:
 .db $01
 .db $20
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $03
 .db $EF
 .db $8F
 .db $07
 .db $90
-; end of data
 .db $01
 .db $02
 .db $3F
@@ -2089,7 +2043,6 @@ L0E8CC5:
 .db $02
 .db $1F
 .db $90
-; start of data
 .db $01
 .db $02
 .db $43
@@ -2097,17 +2050,14 @@ L0E8CC5:
 .db $01
 .db $20
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $03
 .db $2F
 .db $90
 .db $3F
 .db $90
-; end of data
 .db $01
 .db $02
 .db $47
@@ -2133,7 +2083,6 @@ L0E8CC5:
 .db $00
 .db $09
 .db $0F
-; start of data
 .db $01
 .db $02
 .db $53
@@ -2141,10 +2090,8 @@ L0E8CC5:
 .db $01
 .db $10
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $03
 .db $F1
@@ -2158,10 +2105,8 @@ L0E8CC5:
 .db $01
 .db $20
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $02
 .db $72
@@ -2173,10 +2118,8 @@ L0E8CC5:
 .db $0B
 .db $04
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $05
 .db $03
 .db $8D
@@ -2190,10 +2133,8 @@ L0E8CC5:
 .db $0B
 .db $04
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $05
 .db $03
 .db $8F
@@ -2207,17 +2148,14 @@ L0E8CC5:
 .db $01
 .db $0C
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $03
 .db $91
 .db $90
 .db $99
 .db $90
-; end of data
 .db $01
 .db $02
 .db $63
@@ -2263,7 +2201,6 @@ L0E8CC5:
 .db $90
 .db $72
 .db $90
-; start of data
 .db $01
 .db $02
 .db $53
@@ -2271,10 +2208,8 @@ L0E8CC5:
 .db $01
 .db $90
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $03
 .db $D9
@@ -2288,24 +2223,19 @@ L0E8CC5:
 .db $8F
 .db $14
 .db $00
-; end of data
 .db $00
 .db $00
 .db $00
-; start of data
 .db $00
 .db $77
 .db $8F
 .db $14
-; end of data
 .db $00
 .db $00
 .db $00
 .db $00
-; start of data
 .db $00
 .db $0C
-; end of data
 .db $03
 .db $0B
 .db $7B
@@ -2324,18 +2254,15 @@ L0E8CC5:
 .db $00
 .db $00
 .db $00
-; start of data
 .db $08
 .db $02
 .db $83
 .db $8F
 .db $40
 .db $00
-; end of data
 .db $00
 .db $00
 .db $00
-; start of data
 .db $00
 .db $02
 .db $02
@@ -2343,11 +2270,9 @@ L0E8CC5:
 .db $8F
 .db $01
 .db $00
-; end of data
 .db $00
 .db $00
 .db $00
-; start of data
 .db $00
 .db $08
 .db $02
@@ -2356,10 +2281,8 @@ L0E8CC5:
 .db $02
 .db $05
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $03
 .db $61
@@ -2373,10 +2296,8 @@ L0E8CC5:
 .db $02
 .db $04
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $02
 .db $6B
@@ -2387,11 +2308,9 @@ L0E8CC5:
 .db $8F
 .db $02
 .db $00
-; end of data
 .db $00
 .db $00
 .db $00
-; start of data
 .db $00
 .db $08
 .db $02
@@ -2399,15 +2318,12 @@ L0E8CC5:
 .db $8F
 .db $02
 .db $00
-; end of data
 .db $00
 .db $00
 .db $00
-; start of data
 .db $00
 .db $02
 .db $02
-; end of data
 .db $D3
 .db $8F
 .db $05
@@ -2434,7 +2350,6 @@ L0E8CC5:
 .db $91
 .db $7F
 .db $91
-; start of data
 .db $08
 .db $02
 .db $A3
@@ -2442,15 +2357,12 @@ L0E8CC5:
 .db $04
 .db $01
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $81
 .db $1A
 .db $92
-; end of data
 .db $08
 .db $02
 .db $A7
@@ -2492,7 +2404,6 @@ L0E8CC5:
 .db $90
 .db $94
 .db $40
-; start of data
 .db $01
 .db $02
 .db $67
@@ -2500,10 +2411,8 @@ L0E8CC5:
 .db $01
 .db $90
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $03
 .db $A6
@@ -2517,10 +2426,8 @@ L0E8CC5:
 .db $05
 .db $84
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $03
 .db $C6
@@ -2534,16 +2441,12 @@ L0E8CC5:
 .db $0A
 .db $81
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $00
 .db $82
 .db $1E
-; end of data
 .db $18
-; start of data
 .db $01
 .db $02
 .db $6F
@@ -2551,17 +2454,14 @@ L0E8CC5:
 .db $05
 .db $84
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $03
 .db $16
 .db $92
 .db $18
 .db $92
-; end of data
 .db $02
 .db $02
 .db $E7
@@ -2575,7 +2475,6 @@ L0E8CC5:
 .db $81
 .db $1B
 .db $92
-; start of data
 .db $02
 .db $02
 .db $DB
@@ -2583,10 +2482,8 @@ L0E8CC5:
 .db $01
 .db $40
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $00
 .db $F9
 .db $39
@@ -2597,10 +2494,8 @@ L0E8CC5:
 .db $01
 .db $9A
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $00
 .db $F9
 .db $37
@@ -2612,15 +2507,12 @@ L0E8CC5:
 .db $01
 .db $90
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $00
 .db $FD
 .db $AA
 .db $B0
-; end of data
 .db $08
 .db $02
 .db $BF
@@ -2636,7 +2528,6 @@ L0E8CC5:
 .db $91
 .db $EE
 .db $91
-; start of data
 .db $0C
 .db $03
 .db $0E
@@ -2645,10 +2536,8 @@ L0E8CC5:
 .db $0C
 .db $01
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $01
 .db $88
@@ -2658,15 +2547,12 @@ L0E8CC5:
 .db $0C
 .db $01
 .db $00
-; end of data
 .db $00
 .db $00
-; start of data
 .db $01
 .db $01
 .db $89
 .db $91
-; end of data
 .db $0C
 .db $03
 .db $0E
@@ -2758,22 +2644,18 @@ L0E8CC5:
 .db $90
 .db $0F
 .db $90
-; start of data
 .db $1F
 .db $7F
 .db $0F
 .db $C0
-; end of data
 .db $1F
 .db $7F
 .db $0F
 .db $C0
-; start of data
 .db $0F
 .db $7F
 .db $0D
 .db $C0
-; end of data
 .db $1F
 .db $7F
 .db $0B
@@ -2782,7 +2664,6 @@ L0E8CC5:
 .db $7F
 .db $0F
 .db $C0
-; start of data
 .db $10
 .db $7F
 .db $0E
@@ -2803,12 +2684,10 @@ L0E8CC5:
 .db $7F
 .db $08
 .db $C0
-; end of data
 .db $1F
 .db $7F
 .db $0F
 .db $C0
-; start of data
 .db $1F
 .db $7F
 .db $0F
@@ -2829,7 +2708,6 @@ L0E8CC5:
 .db $EB
 .db $50
 .db $86
-; end of data
 .db $34
 .db $B7
 .db $E0
@@ -2838,7 +2716,6 @@ L0E8CC5:
 .db $B7
 .db $E3
 .db $05
-; start of data
 .db $94
 .db $A5
 .db $70
@@ -2859,12 +2736,10 @@ L0E8CC5:
 .db $7F
 .db $30
 .db $80
-; end of data
 .db $9C
 .db $83
 .db $20
 .db $C8
-; start of data
 .db $44
 .db $7F
 .db $A0
@@ -2877,7 +2752,6 @@ L0E8CC5:
 .db $7F
 .db $40
 .db $18
-; end of data
 .db $04
 .db $7F
 .db $62
@@ -2898,12 +2772,10 @@ L0E8CC5:
 .db $AC
 .db $90
 .db $40
-; start of data
 .db $9F
 .db $7F
 .db $55
 .db $1A
-; end of data
 .db $00
 .db $7F
 .db $16
@@ -2920,12 +2792,10 @@ L0E8CC5:
 .db $81
 .db $80
 .db $30
-; start of data
 .db $05
 .db $7F
 .db $40
 .db $18
-; end of data
 .db $05
 .db $7F
 .db $BB
@@ -2934,7 +2804,6 @@ L0E8CC5:
 .db $7F
 .db $B0
 .db $28
-; start of data
 .db $7F
 .db $7C
 .db $39
@@ -2947,7 +2816,6 @@ L0E8CC5:
 .db $7C
 .db $37
 .db $B2
-; end of data
 .db $7F
 .db $7F
 .db $3B
@@ -2956,7 +2824,6 @@ L0E8CC5:
 .db $7C
 .db $50
 .db $B3
-; start of data
 .db $AF
 .db $EF
 .db $EF
@@ -2973,7 +2840,6 @@ L0E8CC5:
 .db $FF
 .db $FF
 .db $FF
-; end of data
 .db $FF
 .db $FF
 .db $EE
@@ -2982,7 +2848,6 @@ L0E8CC5:
 .db $76
 .db $54
 .db $32
-; start of data
 .db $E6
 .db $2B
 .db $BA
@@ -2999,7 +2864,6 @@ L0E8CC5:
 .db $22
 .db $22
 .db $22
-; end of data
 .db $21
 .db $11
 .db $11
@@ -3024,7 +2888,6 @@ L0E8CC5:
 .db $21
 .db $11
 .db $11
-; start of data
 .db $FD
 .db $FA
 .db $BD
@@ -3057,7 +2920,6 @@ L0E8CC5:
 .db $11
 .db $11
 .db $11
-; end of data
 .db $65
 .db $43
 .db $22
@@ -3093,7 +2955,6 @@ L0E8CC5:
 .db $EF
 .db $EF
 .db $EE
-; start of data
 .db $FF
 .db $FE
 .db $EE
@@ -3110,7 +2971,6 @@ L0E8CC5:
 .db $33
 .db $22
 .db $22
-; end of data
 .db $33
 .db $22
 .db $22
@@ -3122,7 +2982,6 @@ L0E8CC5:
 .db $22
 .db $22
 .db $22
-; start of data
 .db $48
 .db $B0
 .db $B8
@@ -3133,17 +2992,14 @@ L0E8CC5:
 .db $43
 .db $21
 .db $11
-; end of data
 .db $43
 .db $21
-; start of data
 .db $FE
 .db $DC
 .db $BA
 .db $97
 .db $53
 .db $11
-; end of data
 .db $22
 .db $11
 .db $87
@@ -3202,7 +3058,6 @@ L0E8CC5:
 .db $09
 .db $25
 .db $8B
-; start of data
 .db $FF
 .db $FE
 .db $FF
@@ -3211,7 +3066,6 @@ L0E8CC5:
 .db $DF
 .db $FE
 .db $ED
-; end of data
 .db $EF
 .db $BD
 .db $EF
@@ -3228,7 +3082,6 @@ L0E8CC5:
 .db $EF
 .db $EF
 .db $EE
-; start of data
 .db $FF
 .db $FE
 .db $FF
@@ -3237,7 +3090,6 @@ L0E8CC5:
 .db $DF
 .db $FE
 .db $ED
-; end of data
 .db $EF
 .db $BD
 .db $EF
@@ -3254,7 +3106,6 @@ L0E8CC5:
 .db $EF
 .db $EF
 .db $EE
-; start of data
 .db $55
 .db $66
 .db $55
@@ -3263,7 +3114,6 @@ L0E8CC5:
 .db $77
 .db $77
 .db $77
-; end of data
 .db $88
 .db $88
 .db $88
@@ -3280,7 +3130,6 @@ L0E8CC5:
 .db $EE
 .db $FF
 .db $FF
-; start of data
 .db $FF
 .db $FF
 .db $FF
@@ -3289,7 +3138,6 @@ L0E8CC5:
 .db $FF
 .db $FF
 .db $FF
-; end of data
 .db $FF
 .db $FF
 .db $FF
@@ -3346,7 +3194,6 @@ L0E8CC5:
 .db $53
 .db $21
 .db $10
-; start of data
 .db $80
 .db $B0
 .db $80
@@ -3361,7 +3208,6 @@ L0E8CC5:
 .db $92
 .db $91
 .db $91
-; end of data
 .db $91
 .db $91
 .db $91
@@ -3387,10 +3233,8 @@ L0E8CC5:
 .db $92
 .db $92
 .db $00
-; start of data
 .db $A0
 .db $A9
-; end of data
 .db $04
 .db $84
 .db $84
@@ -3419,7 +3263,6 @@ L0E8CC5:
 .db $00
 .db $4F
 .db $4F
-; start of data
 .db $98
 .db $76
 .db $54
@@ -3428,7 +3271,6 @@ L0E8CC5:
 .db $01
 .db $23
 .db $45
-; end of data
 .db $67
 .db $89
 .db $AB
@@ -3437,7 +3279,6 @@ L0E8CC5:
 .db $FF
 .db $FF
 .db $FF
-; start of data
 .db $CB
 .db $A9
 .db $86
@@ -3446,7 +3287,6 @@ L0E8CC5:
 .db $23
 .db $45
 .db $68
-; end of data
 .db $9A
 .db $BB
 .db $CC
@@ -3455,7 +3295,6 @@ L0E8CC5:
 .db $53
 .db $21
 .db $10
-; start of data
 .db $55
 .db $33
 .db $00
@@ -3464,7 +3303,6 @@ L0E8CC5:
 .db $9E
 .db $90
 .db $9F
-; end of data
 .db $0A
 .db $0A
 .db $0A
@@ -3537,13 +3375,11 @@ L0E8CC5:
 .db $0D
 .db $0F
 .db $09
-; start of data
 .db $F0
 .db $B0
 .db $80
 .db $80
 .db $48
-; end of data
 .db $2E
 .db $1E
 .db $0E
@@ -3740,7 +3576,6 @@ L0E8CC5:
 .db $06
 .db $05
 .db $03
-; start of data
 L0E92DF:
 .db $65
 L0E92E0:
@@ -3749,14 +3584,12 @@ L0E92E0:
 .db $AA
 .db $B7
 .db $BB
-; end of data
 .db $36
 .db $9A
 .db $00
 .db $00
 .db $00
 .db $00
-; start of data
 .db $E6
 .db $B6
 .db $53
@@ -3781,10 +3614,8 @@ L0E92E0:
 .db $9F
 .db $50
 .db $9F
-; end of data
 .db $00
 .db $00
-; start of data
 .db $CF
 .db $95
 .db $4C
@@ -3793,18 +3624,14 @@ L0E92E0:
 .db $A6
 .db $27
 .db $96
-; end of data
 .db $00
 .db $00
-; start of data
 .db $4A
 .db $A2
 .db $8B
 .db $98
-; end of data
 .db $C9
 .db $A6
-; start of data
 .db $A4
 .db $AD
 .db $86
@@ -3817,10 +3644,8 @@ L0E92E0:
 .db $AF
 .db $6D
 .db $BB
-; end of data
 .db $00
 .db $00
-; start of data
 .db $BC
 .db $A4
 .db $3D
@@ -3831,10 +3656,8 @@ L0E92E0:
 .db $B5
 .db $AD
 .db $A6
-; end of data
 .db $41
 .db $A0
-; start of data
 L0E932F:
 .db $00
 .db $01
@@ -3843,35 +3666,25 @@ L0E932F:
 .db $04
 .db $05
 .db $06
-; end of data
 .db $07
-; start of data
 .db $09
-; end of data
 .db $0E
-; start of data
 .db $13
 .db $1D
 .db $27
-; end of data
 .db $31
 .db $3B
 .db $00
-; start of data
 L0E933F:
 .db $00
 .db $01
 .db $02
 .db $03
-; end of data
 .db $04
-; start of data
 .db $05
 .db $06
-; end of data
 .db $09
 .db $27
-; start of data
 L0E9348:
 .db $00
 L0E9349:
@@ -3880,7 +3693,6 @@ L0E9349:
 .db $00
 .db $02
 .db $00
-; end of data
 .db $03
 .db $00
 .db $04
@@ -3935,7 +3747,6 @@ L0E9349:
 .db $FF
 .db $FD
 .db $FF
-; start of data
 .db $FE
 .db $FF
 .db $FF
@@ -4040,7 +3851,6 @@ L0E9349:
 .db $1F
 .db $20
 .db $F8
-; end of data
 .db $00
 .db $01
 .db $02
@@ -4094,7 +3904,6 @@ L0E9349:
 .db $3E
 .db $1B
 .db $F8
-; start of data
 .db $60
 .db $21
 .db $60
@@ -4267,19 +4076,13 @@ L0E9349:
 .db $94
 .db $88
 .db $93
-; end of data
 .db $0C
-; start of data
 .db $79
 .db $18
-; end of data
 .db $07
-; start of data
 .db $04
 .db $02
-; end of data
 .db $01
-; start of data
 .db $FF
 .db $8F
 .db $00
@@ -4288,9 +4091,7 @@ L0E9349:
 .db $94
 .db $88
 .db $93
-; end of data
 .db $07
-; start of data
 .db $76
 .db $15
 .db $04
@@ -4438,7 +4239,6 @@ L0E9349:
 .db $0E
 .db $B1
 .db $FF
-; end of data
 .db $00
 .db $7F
 .db $80
@@ -4451,7 +4251,6 @@ L0E9349:
 .db $05
 .db $B2
 .db $FF
-; start of data
 .db $00
 .db $7F
 .db $80
@@ -4463,9 +4262,7 @@ L0E9349:
 .db $06
 .db $07
 .db $B2
-; end of data
 .db $FF
-; start of data
 .db $00
 .db $7F
 .db $80
@@ -4889,7 +4686,6 @@ L0E95C2:
 .db $FD
 .db $68
 .db $98
-; end of data
 .db $EF
 .db $89
 .db $19
@@ -4940,7 +4736,6 @@ L0E95C2:
 .db $FC
 .db $30
 .db $96
-; start of data
 .db $BE
 .db $00
 .db $C1
@@ -5011,7 +4806,6 @@ L0E95C2:
 .db $FD
 .db $45
 .db $98
-; end of data
 .db $EF
 .db $89
 .db $1D
@@ -5062,7 +4856,6 @@ L0E95C2:
 .db $FC
 .db $5E
 .db $97
-; start of data
 .db $BE
 .db $00
 .db $C2
@@ -5121,7 +4914,6 @@ L0E95C2:
 .db $E2
 .db $0A
 .db $16
-; end of data
 .db $0A
 .db $16
 .db $EF
@@ -5141,7 +4933,6 @@ L0E95C2:
 .db $FC
 .db $D6
 .db $97
-; start of data
 .db $80
 .db $E8
 .db $7F
@@ -5159,7 +4950,6 @@ L0E95C2:
 .db $0D
 .db $0E
 .db $EF
-; end of data
 .db $0D
 .db $0E
 .db $0D
@@ -5177,7 +4967,6 @@ L0E95C2:
 .db $FC
 .db $23
 .db $98
-; start of data
 .db $E3
 .db $89
 .db $1B
@@ -5675,7 +5464,6 @@ L0E95C2:
 .db $25
 .db $EF
 .db $FE
-; end of data
 .db $87
 .db $9A
 .db $3F
@@ -6195,7 +5983,6 @@ L0E95C2:
 .db $25
 .db $23
 .db $FE
-; start of data
 .db $46
 .db $9C
 .db $51
@@ -7072,9 +6859,7 @@ L0E95C2:
 .db $80
 .db $24
 .db $BD
-; end of data
 .db $FF
-; start of data
 .db $BE
 .db $00
 .db $C1
@@ -7161,9 +6946,7 @@ L0E95C2:
 .db $27
 .db $26
 .db $22
-; end of data
 .db $26
-; start of data
 .db $C2
 .db $B6
 .db $95
@@ -7227,13 +7010,10 @@ L0E95C2:
 .db $88
 .db $24
 .db $BD
-; end of data
 .db $FF
-; start of data
 .db $EE
 .db $A0
 .db $4A
-; end of data
 .db $A0
 .db $7E
 .db $A1
@@ -7645,7 +7425,6 @@ L0E95C2:
 .db $FC
 .db $8C
 .db $A1
-; start of data
 .db $81
 .db $27
 .db $82
@@ -7692,7 +7471,6 @@ L0E95C2:
 .db $82
 .db $31
 .db $FE
-; end of data
 .db $88
 .db $33
 .db $35
@@ -7728,7 +7506,6 @@ L0E95C2:
 .db $82
 .db $3A
 .db $FE
-; start of data
 .db $83
 .db $E4
 .db $1B
@@ -8905,15 +8682,12 @@ L0E95C2:
 .db $88
 .db $26
 .db $BD
-; end of data
 .db $FF
-; start of data
 .db $DF
 .db $A6
 .db $D2
 .db $A6
 .db $00
-; end of data
 .db $00
 .db $00
 .db $00
@@ -8944,7 +8718,6 @@ L0E95C2:
 .db $FC
 .db $DF
 .db $A6
-; start of data
 .db $26
 .db $A7
 .db $F5
@@ -10149,7 +9922,6 @@ L0E95C2:
 .db $88
 .db $21
 .db $EF
-; end of data
 .db $C1
 .db $5A
 .db $94
@@ -10173,7 +9945,6 @@ L0E95C2:
 .db $FC
 .db $66
 .db $AB
-; start of data
 .db $BE
 .db $FF
 .db $C0
@@ -10214,7 +9985,6 @@ L0E95C2:
 .db $12
 .db $12
 .db $EF
-; end of data
 .db $C1
 .db $5A
 .db $94
@@ -10243,7 +10013,6 @@ L0E95C2:
 .db $FC
 .db $C7
 .db $AB
-; start of data
 .db $BE
 .db $FF
 .db $C2
@@ -10286,7 +10055,6 @@ L0E95C2:
 .db $23
 .db $23
 .db $EF
-; end of data
 .db $C2
 .db $B6
 .db $95
@@ -10312,7 +10080,6 @@ L0E95C2:
 .db $FC
 .db $0B
 .db $AC
-; start of data
 .db $82
 .db $7F
 .db $88
@@ -10472,7 +10239,6 @@ L0E95C2:
 .db $20
 .db $81
 .db $29
-; end of data
 .db $27
 .db $82
 .db $25
@@ -10485,7 +10251,6 @@ L0E95C2:
 .db $FC
 .db $75
 .db $AC
-; start of data
 .db $BE
 .db $F4
 .db $C0
@@ -10559,7 +10324,6 @@ L0E95C2:
 .db $1D
 .db $1D
 .db $1E
-; end of data
 .db $1E
 .db $EF
 .db $82
@@ -10572,7 +10336,6 @@ L0E95C2:
 .db $FC
 .db $F0
 .db $AC
-; start of data
 .db $BE
 .db $F4
 .db $C2
@@ -10646,7 +10409,6 @@ L0E95C2:
 .db $22
 .db $22
 .db $23
-; end of data
 .db $23
 .db $EF
 .db $82
@@ -10659,7 +10421,6 @@ L0E95C2:
 .db $FC
 .db $45
 .db $AD
-; start of data
 .db $83
 .db $7F
 .db $E3
@@ -10818,12 +10579,10 @@ L0E95C2:
 .db $FD
 .db $07
 .db $9A
-; end of data
 .db $EF
 .db $FC
 .db $B4
 .db $AD
-; start of data
 .db $BE
 .db $FD
 .db $C0
@@ -10952,7 +10711,6 @@ L0E95C2:
 .db $FD
 .db $4F
 .db $AF
-; end of data
 .db $EF
 .db $E5
 .db $1E
@@ -10970,7 +10728,6 @@ L0E95C2:
 .db $FC
 .db $3C
 .db $AE
-; start of data
 .db $BE
 .db $FD
 .db $C2
@@ -11033,7 +10790,6 @@ L0E95C2:
 .db $FD
 .db $1B
 .db $9A
-; end of data
 .db $EF
 .db $E2
 .db $84
@@ -11071,7 +10827,6 @@ L0E95C2:
 .db $FC
 .db $CD
 .db $AE
-; start of data
 .db $83
 .db $7F
 .db $82
@@ -11096,7 +10851,6 @@ L0E95C2:
 .db $81
 .db $0B
 .db $EF
-; end of data
 .db $81
 .db $07
 .db $89
@@ -11111,7 +10865,6 @@ L0E95C2:
 .db $FC
 .db $2B
 .db $AF
-; start of data
 .db $88
 .db $2A
 .db $84
@@ -11150,7 +10903,6 @@ L0E95C2:
 .db $19
 .db $81
 .db $20
-; end of data
 .db $84
 .db $20
 .db $1D
@@ -11161,7 +10913,6 @@ L0E95C2:
 .db $19
 .db $1D
 .db $FE
-; start of data
 .db $40
 .db $B0
 .db $88
@@ -11269,7 +11020,6 @@ L0E95C2:
 .db $94
 .db $83
 .db $7F
-; end of data
 .db $84
 .db $25
 .db $27
@@ -11356,7 +11106,6 @@ L0E95C2:
 .db $FC
 .db $91
 .db $AF
-; start of data
 .db $BE
 .db $FE
 .db $C0
@@ -11453,7 +11202,6 @@ L0E95C2:
 .db $94
 .db $83
 .db $7F
-; end of data
 .db $84
 .db $22
 .db $24
@@ -11553,7 +11301,6 @@ L0E95C2:
 .db $FC
 .db $49
 .db $B0
-; start of data
 .db $BE
 .db $FE
 .db $C2
@@ -11635,7 +11382,6 @@ L0E95C2:
 .db $1E
 .db $23
 .db $EF
-; end of data
 .db $88
 .db $22
 .db $90
@@ -11660,7 +11406,6 @@ L0E95C2:
 .db $FC
 .db $0C
 .db $B1
-; start of data
 .db $83
 .db $7F
 .db $82
@@ -11724,7 +11469,6 @@ L0E95C2:
 .db $82
 .db $0B
 .db $EF
-; end of data
 .db $EF
 .db $88
 .db $0A
@@ -11886,7 +11630,6 @@ L0E95C2:
 .db $20
 .db $25
 .db $FE
-; start of data
 .db $75
 .db $B2
 .db $55
@@ -13491,12 +13234,10 @@ L0E95C2:
 .db $7F
 .db $1B
 .db $1B
-; end of data
 .db $EF
 .db $FC
 .db $04
 .db $B8
-; start of data
 .db $BE
 .db $01
 .db $C0
@@ -13648,12 +13389,10 @@ L0E95C2:
 .db $7F
 .db $16
 .db $16
-; end of data
 .db $EF
 .db $FC
 .db $94
 .db $B8
-; start of data
 .db $BE
 .db $01
 .db $C2
@@ -13717,12 +13456,10 @@ L0E95C2:
 .db $1F
 .db $22
 .db $27
-; end of data
 .db $EF
 .db $FC
 .db $2F
 .db $B9
-; start of data
 .db $83
 .db $0C
 .db $7F
@@ -14252,7 +13989,6 @@ L0E95C2:
 .db $FD
 .db $0E
 .db $9D
-; end of data
 .db $BE
 .db $FB
 .db $FD
@@ -14261,7 +13997,6 @@ L0E95C2:
 .db $FC
 .db $76
 .db $BB
-; start of data
 .db $BE
 .db $F4
 .db $C0
@@ -14277,7 +14012,6 @@ L0E95C2:
 .db $FD
 .db $33
 .db $9D
-; end of data
 .db $BE
 .db $FB
 .db $FD
@@ -14286,7 +14020,6 @@ L0E95C2:
 .db $FC
 .db $8B
 .db $BB
-; start of data
 .db $C2
 .db $AC
 .db $95
@@ -14300,7 +14033,6 @@ L0E95C2:
 .db $FD
 .db $58
 .db $9D
-; end of data
 .db $BE
 .db $FB
 .db $FD
@@ -14309,7 +14041,6 @@ L0E95C2:
 .db $FC
 .db $A2
 .db $BB
-; start of data
 .db $9D
 .db $BC
 .db $C0
@@ -15228,7 +14959,6 @@ L0E95C2:
 .db $1D
 .db $1E
 .db $FE
-; end of data
 .db $57
 .db $00
 .db $30

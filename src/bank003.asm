@@ -18,7 +18,6 @@ L038009:
 L03800C:
     LDA $053F
     JSR L0FC34C.w
-; start of data
 .db $26
 .db $92
 .db $40
@@ -27,22 +26,18 @@ L03800C:
 .db $82
 .db $53
 .db $92
-; end of data
 L03801A:
     LDA $053F
     JSR L0FC34C.w
-; start of data
 .db $40
 .db $80
 .db $5E
 .db $82
 .db $47
 .db $80
-; end of data
 L038026:
     LDA $053F
     JSR L0FC34C.w
-; start of data
 .db $EA
 .db $90
 .db $36
@@ -53,7 +48,6 @@ L038026:
 .db $90
 .db $47
 .db $80
-; end of data
     JSR L0380C2.w
     JSR L038051.w
     INC $053F
@@ -858,18 +852,14 @@ L038589:
     AND #3
     STA $B1
     JSR L0FC34C.w
-; start of data
 .db $9A
 .db $85
 .db $DB
 .db $85
-; end of data
 .db $07
 .db $86
-; start of data
 .db $9A
 .db $85
-; end of data
 L03859A:
     LDA $B2
     AND #128
@@ -1136,7 +1126,6 @@ L038744:
 L038755:
     RTS 
 
-; start of data
 L038756:
 .db $01
 .db $01
@@ -1165,13 +1154,10 @@ L03876C:
 .db $02
 .db $03
 .db $05
-; end of data
 L038770:
 .db $00
 .db $00
-; start of data
 .db $00
-; end of data
 .db $00
 .db $00
 .db $00
@@ -1181,23 +1167,15 @@ L038770:
 .db $01
 .db $01
 .db $02
-; start of data
 .db $02
-; end of data
 .db $01
-; start of data
 .db $03
-; end of data
 .db $03
 .db $00
 .db $00
-; start of data
 .db $03
-; end of data
 .db $02
-; start of data
 .db $01
-; end of data
 .db $00
 L038786:
     TXA 
@@ -1817,18 +1795,14 @@ L038BB2:
 L038BB3:
     LDA $B1
     JSR L0FC34C.w
-; start of data
 .db $F7
 .db $8B
 .db $C0
 .db $8B
-; end of data
 .db $DF
 .db $8B
-; start of data
 .db $0A
 .db $8C
-; end of data
 L038BC0:
     LDA $052E
     CMP #15
@@ -1954,7 +1928,6 @@ L038C74:
     STA ($72),Y
     RTS 
 
-; start of data
 L038C7C:
 .db $00
 L038C7D:
@@ -1975,7 +1948,6 @@ L038C85:
 .db $01
 .db $FF
 .db $00
-; end of data
 L038C8C:
     LDA $0538
     STA $C6
@@ -2526,7 +2498,6 @@ L039029:
     TAX 
     RTS 
 
-; start of data
 L03902E:
 .db $00
 L03902F:
@@ -2537,7 +2508,6 @@ L03902F:
 .db $01
 .db $FF
 .db $00
-; end of data
 L039036:
     JSR L038243.w
     JMP L039084.w
@@ -3059,25 +3029,17 @@ L039253:
 .db $4C
 .db $7E
 .db $92
-; start of data
 L03930B:
 .db $0F
-; end of data
 .db $00
 .db $06
-; start of data
 .db $0E
-; end of data
 .db $01
 .db $0A
-; start of data
 .db $1E
-; end of data
 .db $02
-; start of data
 .db $03
 .db $FF
-; end of data
 L039315:
     LDX #48
 L039317:
@@ -3261,47 +3223,37 @@ L039444:
     BMI L039443
     JMP L039432.w
 
-; start of data
 L039466:
 .db $05
 .db $03
 .db $0B
 .db $11
-; end of data
 .db $00
 .db $00
 .db $01
 .db $01
 .db $01
-; start of data
 .db $10
-; end of data
 .db $12
-; start of data
 .db $12
 L039472:
 .db $06
 .db $04
 .db $01
 .db $02
-; end of data
 .db $00
 .db $00
 .db $01
 .db $01
 .db $01
-; start of data
 .db $00
-; end of data
 .db $00
-; start of data
 .db $00
 L03947E:
 .db $04
 .db $0B
 .db $06
 .db $08
-; end of data
 .db $FF
 .db $FF
 .db $01
@@ -3309,24 +3261,20 @@ L03947E:
 .db $01
 .db $01
 .db $0B
-; start of data
 .db $0B
 L03948A:
 .db $03
 .db $0B
 .db $05
 .db $07
-; end of data
 .db $FF
 .db $FF
 .db $01
 .db $01
 .db $01
-; start of data
 .db $01
 .db $0B
 .db $0B
-; end of data
 L039496:
     LDA $0584
     BNE L03949C
@@ -3674,7 +3622,6 @@ L03965C:
     JSR L0FCA94.w
     RTS 
 
-; start of data
 L03969F:
 .db $FF
 .db $00
@@ -3733,199 +3680,97 @@ L03969F:
 .db $02
 .db $02
 .db $80
-.db $70
-.db $97
-; end of data
-.db $D9
-.db $97
-; start of data
-.db $FE
-.db $97
-.db $F4
-.db $98
-.db $18
-.db $99
-.db $43
-.db $99
-.db $66
-.db $99
-.db $AF
-.db $99
-; end of data
-.db $69
-.db $9A
-; start of data
-.db $A6
-.db $9A
-.db $FB
-.db $9A
-.db $3F
-.db $9B
-; end of data
-.db $A4
-.db $9B
-.db $2D
-.db $9C
-; start of data
-.db $9A
-.db $9C
-; end of data
-.db $C5
-.db $9D
-.db $56
-.db $9F
-.db $E5
-.db $A0
-.db $DF
-.db $A1
-.db $01
-.db $A4
-.db $51
-.db $A4
-.db $91
-.db $A4
-.db $56
-.db $AE
-.db $EF
-.db $A4
-.db $4F
-.db $A5
-.db $01
-.db $A6
-.db $4E
-.db $A6
-.db $CF
-.db $A6
-; start of data
-.db $09
-.db $A7
-; end of data
-.db $97
-.db $A7
-.db $03
-.db $A8
-.db $DB
-.db $A7
-.db $74
-.db $A8
-.db $EC
-.db $A9
-; start of data
-.db $53
-.db $B0
-.db $0F
-.db $B1
-.db $6F
-.db $B1
-; end of data
-.db $E7
-.db $BA
-; start of data
-.db $F2
-.db $B1
-; end of data
-.db $DA
-.db $B3
-; start of data
-.db $46
-.db $B4
-; end of data
-.db $80
-.db $B5
-; start of data
-.db $B0
-.db $B4
-; end of data
-.db $FC
-.db $B4
-; start of data
-.db $E3
-.db $B5
-.db $CF
-.db $B6
-.db $3E
-.db $B7
-.db $C8
-.db $B7
-; end of data
-.db $8E
-.db $99
-.db $D1
-.db $A3
-.db $DC
-.db $A9
-; start of data
-.db $78
-.db $B6
-; end of data
-.db $1F
-.db $B8
-.db $2D
-.db $B8
-.db $52
-.db $B8
-.db $67
-.db $B8
-; start of data
-.db $7A
-.db $B8
-.db $30
-.db $B9
-; end of data
-.db $AD
-.db $B9
-; start of data
-.db $31
-.db $BA
-; end of data
-.db $AB
-.db $BA
-.db $77
-.db $AE
-.db $D4
-.db $AE
-.db $AC
-.db $AF
-; start of data
-.db $1B
-.db $BB
-.db $5F
-.db $BB
-.db $F6
-.db $BB
-.db $41
-.db $BC
-.db $9D
-.db $BC
-; end of data
-.db $31
-.db $BD
-.db $85
-.db $BD
-; start of data
-.db $F5
-.db $BD
-; end of data
-.db $C4
-.db $BC
-.db $02
-.db $BE
-.db $47
-.db $BE
-.db $8F
-.db $BE
-; start of data
+
+DIALOGUES_POINTER:
+.dw L039770
+.dw L0397D9
+.dw L0397FE
+.dw L0398F4
+.dw L039918
+.dw L039943
+.dw L039966
+.dw L0399AF
+.dw L039A69
+.dw L039AA6
+.dw L039AFB
+.dw L039B3F
+.dw L039BA4
+.dw L039C2D
+.dw L039C9A
+.dw L039DC5
+.dw L039F56
+.dw L03A0E5
+.dw L03A1DF
+.dw L03A401
+.dw L03A451
+.dw L03A491
+.dw L03AE56
+.dw L03A4EF
+.dw L03A54F
+.dw L03A601
+.dw L03A64E
+.dw L03A6CF
+.dw L03A709
+.dw L03A797
+.dw L03A803
+.dw L03A7DB
+.dw L03A874
+.dw L03A9EC
+.dw L03B053
+.dw L03B10F
+.dw L03B16F
+.dw L03BAE7
+.dw L03B1F2
+.dw L03B3DA
+.dw L03B446
+.dw L03B580
+.dw L03B4B0
+.dw L03B4FC
+.dw L03B5E3
+.dw L03B6CF
+.dw L03B73E
+.dw L03B7C8
+.dw L03998E
+.dw L03A3D1
+.dw L03A9DC
+.dw L03B678
+.dw L03B81F
+.dw L03B82D
+.dw L03B852
+.dw L03B867
+.dw L03B87A
+.dw L03B930
+.dw L03B9AD
+.dw L03BA31
+.dw L03BAAB
+.dw L03AE77
+.dw L03AED4
+.dw L03AFAC
+.dw L03BB1B
+.dw L03BB5F
+.dw L03BBF6
+.dw L03BC41
+.dw L03BC9D
+.dw L03BD31
+.dw L03BD85
+.dw L03BDF5
+.dw L03BCC4
+.dw L03BE02
+.dw L03BE47
+.dw L03BE8F
+
+L039770:
 .db $E8
 .db $50
 .db $40
 .db $03
 .db $F0
 .db $03
-.db $EA
-.db $30
-.db $5A
-.db $52
-.db $FF
+.db $EA ; SPEECH
+.db $30 ; A
+.db $5A ; LU
+.db $52 ; MU
+.db $FF ; space
 .db $1B
 .db $14
 .db $25
@@ -3934,7 +3779,7 @@ L03969F:
 .db $0B
 .db $27
 .db $02
-.db $EE
+.db $EE ; new line / stop?
 .db $EA
 .db $08
 .db $2F
@@ -3942,17 +3787,17 @@ L03969F:
 .db $0B
 .db $86
 .db $06
-.db $0F
+.db $0F ; tenten
 .db $87
 .db $02
 .db $1A
-.db $FF
+.db $FF ; space
 .db $04
 .db $2D
 .db $29
 .db $10
 .db $0F
-.db $ED
+.db $ED ; new line / continue?
 .db $24
 .db $02
 .db $FF
@@ -3969,7 +3814,7 @@ L03969F:
 .db $01
 .db $0E
 .db $0F
-.db $EE
+.db $EE ; new line / stop
 .db $EA
 .db $10
 .db $0F
@@ -4020,7 +3865,8 @@ L03969F:
 .db $28
 .db $15
 .db $EF
-; end of data
+
+L0397D9:
 .db $EA
 .db $25
 .db $00
@@ -4058,7 +3904,8 @@ L03969F:
 .db $08
 .db $27
 .db $EF
-; start of data
+
+L0397FE:
 .db $E8
 .db $50
 .db $40
@@ -4305,6 +4152,8 @@ L03969F:
 .db $0F
 .db $0C
 .db $EF
+
+L0398F4:
 .db $EA
 .db $1D
 .db $99
@@ -4341,6 +4190,8 @@ L03969F:
 .db $19
 .db $05
 .db $EF
+
+L039918:
 .db $EA
 .db $15
 .db $00
@@ -4384,6 +4235,8 @@ L03969F:
 .db $0D
 .db $0F
 .db $EF
+
+L039943:
 .db $EA
 .db $04
 .db $2B
@@ -4419,6 +4272,8 @@ L03969F:
 .db $2C
 .db $27
 .db $EF
+
+L039966:
 .db $E8
 .db $50
 .db $40
@@ -4459,6 +4314,8 @@ L03969F:
 .db $9D
 .db $9D
 .db $EE
+
+L03998E:
 .db $EA
 .db $04
 .db $20
@@ -4492,6 +4349,8 @@ L03969F:
 .db $10
 .db $0F
 .db $EF
+
+L0399AF:
 .db $E8
 .db $50
 .db $40
@@ -4678,6 +4537,8 @@ L03969F:
 .db $19
 .db $05
 .db $EE
+
+L039A69:
 .db $EA
 .db $00
 .db $29
@@ -4739,6 +4600,8 @@ L03969F:
 .db $09
 .db $02
 .db $EF
+
+L039AA6:
 .db $E8
 .db $50
 .db $40
@@ -4824,6 +4687,8 @@ L03969F:
 .db $0D
 .db $0F
 .db $EF
+
+L039AFB:
 .db $E8
 .db $50
 .db $40
@@ -4892,6 +4757,8 @@ L03969F:
 .db $0E
 .db $02
 .db $EF
+
+L039B3F:
 .db $E8
 .db $50
 .db $40
@@ -4993,7 +4860,8 @@ L03969F:
 .db $28
 .db $15
 .db $EF
-; end of data
+
+L039BA4:
 .db $E8
 .db $50
 .db $40
@@ -5131,6 +4999,8 @@ L03969F:
 .db $87
 .db $02
 .db $EF
+
+L039C2D:
 .db $E8
 .db $50
 .db $40
@@ -5240,7 +5110,8 @@ L03969F:
 .db $2C
 .db $27
 .db $EF
-; start of data
+
+L039C9A:
 .db $E8
 .db $50
 .db $40
@@ -5540,7 +5411,8 @@ L03969F:
 .db $84
 .db $15
 .db $EF
-; end of data
+
+L039DC5:
 .db $E8
 .db $50
 .db $40
@@ -5942,6 +5814,8 @@ L03969F:
 .db $2A
 .db $0A
 .db $EF
+
+L039F56:
 .db $E8
 .db $50
 .db $40
@@ -6341,6 +6215,8 @@ L03969F:
 .db $07
 .db $2B
 .db $EF
+
+L03A0E5:
 .db $E8
 .db $50
 .db $40
@@ -6591,6 +6467,8 @@ L03969F:
 .db $9B
 .db $9B
 .db $EF
+
+L03A1DF:
 .db $E8
 .db $50
 .db $40
@@ -7089,6 +6967,8 @@ L03969F:
 .db $15
 .db $27
 .db $EF
+
+L03A3D1:
 .db $E8
 .db $50
 .db $40
@@ -7137,6 +7017,8 @@ L03969F:
 .db $9B
 .db $9B
 .db $EF
+
+L03A401:
 .db $E8
 .db $50
 .db $40
@@ -7217,6 +7099,8 @@ L03969F:
 .db $87
 .db $02
 .db $EF
+
+L03A451:
 .db $E8
 .db $50
 .db $40
@@ -7281,6 +7165,8 @@ L03969F:
 .db $0A
 .db $01
 .db $EF
+
+L03A491:
 .db $E8
 .db $50
 .db $40
@@ -7375,6 +7261,8 @@ L03969F:
 .db $01
 .db $18
 .db $EF
+
+L03A4EF:
 .db $E8
 .db $50
 .db $40
@@ -7471,6 +7359,8 @@ L03969F:
 .db $0A
 .db $01
 .db $EF
+
+L03A54F:
 .db $EA
 .db $4A
 .db $0F
@@ -7649,6 +7539,8 @@ L03969F:
 .db $15
 .db $96
 .db $EF
+
+L03A601:
 .db $EA
 .db $02
 .db $21
@@ -7726,6 +7618,8 @@ L03969F:
 .db $9B
 .db $9B
 .db $EF
+
+L03A64E:
 .db $E8
 .db $50
 .db $40
@@ -7855,6 +7749,8 @@ L03969F:
 .db $0D
 .db $0F
 .db $EF
+
+L03A6CF:
 .db $E8
 .db $50
 .db $40
@@ -7913,7 +7809,8 @@ L03969F:
 .db $0D
 .db $0F
 .db $EF
-; start of data
+
+L03A709:
 .db $EA
 .db $3B
 .db $0F
@@ -8056,7 +7953,8 @@ L03969F:
 .db $2D
 .db $18
 .db $EF
-; end of data
+
+L03A797:
 .db $E8
 .db $50
 .db $40
@@ -8125,6 +8023,8 @@ L03969F:
 .db $07
 .db $15
 .db $EF
+
+L03A7DB:
 .db $E8
 .db $50
 .db $40
@@ -8165,6 +8065,8 @@ L03969F:
 .db $0B
 .db $10
 .db $EF
+
+L03A803:
 .db $E8
 .db $50
 .db $40
@@ -8278,6 +8180,8 @@ L03969F:
 .db $10
 .db $01
 .db $EF
+
+L03A874:
 .db $E8
 .db $50
 .db $40
@@ -8638,6 +8542,8 @@ L03969F:
 .db $0A
 .db $20
 .db $E6
+
+L03A9DC:
 .db $F0
 .db $03
 .db $EA
@@ -8654,6 +8560,8 @@ L03969F:
 .db $27
 .db $01
 .db $EF
+
+L03A9EC:
 .db $E8
 .db $50
 .db $40
@@ -9784,6 +9692,8 @@ L03969F:
 .db $20
 .db $0C
 .db $EF
+
+L03AE56:
 .db $E8
 .db $50
 .db $40
@@ -9817,6 +9727,8 @@ L03969F:
 .db $9B
 .db $9B
 .db $EF
+
+L03AE77:
 .db $EA
 .db $00
 .db $2F
@@ -9910,6 +9822,8 @@ L03969F:
 .db $28
 .db $18
 .db $EF
+
+L03AED4:
 .db $E8
 .db $50
 .db $40
@@ -10126,6 +10040,8 @@ L03969F:
 .db $2C
 .db $02
 .db $EF
+
+L03AFAC:
 .db $E8
 .db $50
 .db $40
@@ -10293,7 +10209,8 @@ L03969F:
 .db $0F
 .db $27
 .db $EF
-; start of data
+
+L03B053:
 .db $EA
 .db $1B
 .db $05
@@ -10482,6 +10399,8 @@ L03969F:
 .db $87
 .db $02
 .db $EF
+
+L03B10F:
 .db $EA
 .db $06
 .db $10
@@ -10578,6 +10497,8 @@ L03969F:
 .db $20
 .db $0C
 .db $EF
+
+L03B16F:
 .db $E8
 .db $50
 .db $40
@@ -10709,6 +10630,8 @@ L03969F:
 .db $9D
 .db $9D
 .db $EF
+
+L03B1F2:
 .db $E8
 .db $50
 .db $40
@@ -11197,7 +11120,8 @@ L03969F:
 .db $0D
 .db $0F
 .db $EF
-; end of data
+
+L03B3DA:
 .db $E8
 .db $50
 .db $40
@@ -11306,7 +11230,8 @@ L03969F:
 .db $2C
 .db $02
 .db $EF
-; start of data
+
+L03B446:
 .db $E8
 .db $50
 .db $40
@@ -11413,6 +11338,8 @@ L03969F:
 .db $2A
 .db $27
 .db $EF
+
+L03B4B0:
 .db $E8
 .db $50
 .db $40
@@ -11489,7 +11416,8 @@ L03969F:
 .db $20
 .db $0C
 .db $EF
-; end of data
+
+L03B4FC:
 .db $E8
 .db $50
 .db $40
@@ -11622,6 +11550,8 @@ L03969F:
 .db $87
 .db $02
 .db $EF
+
+L03B580:
 .db $E8
 .db $50
 .db $40
@@ -11721,7 +11651,8 @@ L03969F:
 .db $19
 .db $9C
 .db $EF
-; start of data
+
+L03B5E3:
 .db $EA
 .db $14
 .db $12
@@ -11871,6 +11802,8 @@ L03969F:
 .db $9B
 .db $9B
 .db $EF
+
+L03B678:
 .db $EA
 .db $09
 .db $19
@@ -11958,6 +11891,8 @@ L03969F:
 .db $20
 .db $0C
 .db $EF
+
+L03B6CF:
 .db $EA
 .db $00
 .db $00
@@ -12069,6 +12004,8 @@ L03969F:
 .db $9D
 .db $9D
 .db $EF
+
+L03B73E:
 .db $EA
 .db $2F
 .db $9C
@@ -12207,6 +12144,8 @@ L03969F:
 .db $0C
 .db $2A
 .db $EF
+
+L03B7C8:
 .db $EA
 .db $0B
 .db $05
@@ -12294,7 +12233,8 @@ L03969F:
 .db $0D
 .db $2F
 .db $EF
-; end of data
+
+L03B81F:
 .db $EA
 .db $04
 .db $04
@@ -12309,6 +12249,8 @@ L03969F:
 .db $9B
 .db $9B
 .db $EF
+
+L03B82D:
 .db $21
 .db $06
 .db $0F
@@ -12346,6 +12288,8 @@ L03969F:
 .db $05
 .db $9C
 .db $EF
+
+L03B852:
 .db $EA
 .db $14
 .db $0F
@@ -12367,6 +12311,8 @@ L03969F:
 .db $0B
 .db $10
 .db $EF
+
+L03B867:
 .db $EA
 .db $03
 .db $1D
@@ -12386,7 +12332,8 @@ L03969F:
 .db $14
 .db $02
 .db $EF
-; start of data
+
+L03B87A:
 .db $EA
 .db $51
 .db $58
@@ -12569,6 +12516,8 @@ L03969F:
 .db $20
 .db $0C
 .db $EF
+
+L03B930:
 .db $EA
 .db $4A
 .db $0F
@@ -12694,7 +12643,8 @@ L03969F:
 .db $9B
 .db $9B
 .db $EF
-; end of data
+
+L03B9AD:
 .db $EA
 .db $51
 .db $58
@@ -12827,7 +12777,8 @@ L03969F:
 .db $0A
 .db $01
 .db $EF
-; start of data
+
+L03BA31:
 .db $EA
 .db $00
 .db $15
@@ -12950,7 +12901,8 @@ L03969F:
 .db $0F
 .db $0C
 .db $EF
-; end of data
+
+L03BAAB:
 .db $EA
 .db $09
 .db $19
@@ -13011,6 +12963,8 @@ L03969F:
 .db $19
 .db $05
 .db $EF
+
+L03BAE7:
 .db $EA
 .db $5A
 .db $44
@@ -13063,7 +13017,8 @@ L03969F:
 .db $2A
 .db $05
 .db $EF
-; start of data
+
+L03BB1B:
 .db $EA
 .db $2D
 .db $10
@@ -13132,6 +13087,8 @@ L03969F:
 .db $20
 .db $0C
 .db $EF
+
+L03BB5F:
 .db $E8
 .db $50
 .db $40
@@ -13283,6 +13240,8 @@ L03969F:
 .db $9D
 .db $9D
 .db $EF
+
+L03BBF6:
 .db $EA
 .db $09
 .db $19
@@ -13358,6 +13317,8 @@ L03969F:
 .db $9B
 .db $9B
 .db $EF
+
+L03BC41:
 .db $EA
 .db $44
 .db $0F
@@ -13450,6 +13411,8 @@ L03969F:
 .db $0D
 .db $0F
 .db $EF
+
+L03BC9D:
 .db $E8
 .db $50
 .db $40
@@ -13489,7 +13452,8 @@ L03969F:
 .db $0B
 .db $10
 .db $EF
-; end of data
+
+L03BCC4:
 .db $EA
 .db $51
 .db $58
@@ -13599,6 +13563,8 @@ L03969F:
 .db $28
 .db $18
 .db $EF
+
+L03BD31:
 .db $EA
 .db $44
 .db $0F
@@ -13683,6 +13649,8 @@ L03969F:
 .db $87
 .db $02
 .db $EF
+
+L03BD85:
 .db $E8
 .db $50
 .db $40
@@ -13795,7 +13763,8 @@ L03969F:
 .db $0A
 .db $01
 .db $EF
-; start of data
+
+L03BDF5:
 .db $EA
 .db $2D
 .db $3F
@@ -13809,7 +13778,8 @@ L03969F:
 .db $27
 .db $3F
 .db $EF
-; end of data
+
+L03BE02:
 .db $EA
 .db $1A
 .db $0F
@@ -13879,6 +13849,8 @@ L03969F:
 .db $0F
 .db $3F
 .db $EF
+
+L03BE47:
 .db $EA
 .db $02
 .db $2B
@@ -13951,6 +13923,8 @@ L03969F:
 .db $0D
 .db $0F
 .db $EF
+
+L03BE8F:
 .db $EA
 .db $3E
 .db $4C
@@ -13996,6 +13970,7 @@ L03969F:
 .db $2A
 .db $2D
 .db $EF
+
 .db $8D
 .db $11
 .db $2A
@@ -14230,10 +14205,8 @@ L03969F:
 .db $83
 .db $67
 .db $92
-; start of data
 .db $96
 .db $94
-; end of data
 .db $6A
 .db $95
 .db $0C
@@ -14290,10 +14263,8 @@ L03969F:
 .db $4B
 .db $14
 .db $08
-; start of data
 .db $D8
 .db $96
-; end of data
 .db $00
 .db $08
 .db $08
