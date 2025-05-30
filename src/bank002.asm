@@ -15206,7 +15206,7 @@ L02BB5E:
     STA $0201
     LDA #4
     STA $3D
-    RTS 
+    RTS
 
 L02BB73:
     LDA #26
@@ -15237,7 +15237,7 @@ L02BB99:
     LDA #0
     STA $0785
     INC $27
-    RTS 
+    RTS
 
 L02BBB5:
     LDA $0594
@@ -15322,7 +15322,7 @@ L02BC0E:
     LDA #0
     STA $66
     LDY $05AC
-    DEY 
+    DEY
     STY $6D
     LDA $1C
     AND #48
@@ -15355,7 +15355,7 @@ L02BC3A:
 .db $6E
 L02BC4F:
     INC $2B
-    RTS 
+    RTS
 
 .db $A0
 .db $03
@@ -15844,7 +15844,7 @@ L02BE33:
     STA $058F
     STA $8A
     STA $059C
-    RTS 
+    RTS
 
 L02BE52:
     LDX $0780
@@ -15862,13 +15862,13 @@ L02BE52:
     LDA #1
     STA $27
     LDA $78
-    SEC 
+    SEC
     SBC #32
     STA $78
     BCS L02BE80
     DEC $79
 L02BE80:
-    RTS 
+    RTS
 
 L02BE81:
     LDA $0594
@@ -15880,10 +15880,10 @@ L02BE81:
     STA $059C
     LDA #8
     STA $8A
-    PLA 
-    PLA 
+    PLA
+    PLA
 L02BE9A:
-    RTS 
+    RTS
 
 .db $20
 .db $E7

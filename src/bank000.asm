@@ -8013,8 +8013,8 @@ L009F48:
     JSR L009FD5.w
 L009F57:
     LDA $03B8,X
-    ASL 
-    TAY 
+    ASL
+    TAY
     LDA L009FF1.w,Y
     STA $00
     LDA L009FF2.w,Y
@@ -8086,12 +8086,12 @@ L009FBA:
     STA $03BE,X
     INC $03BB,X
 L009FC0:
-    DEX 
+    DEX
     BMI L009FC6
     JMP L009F38.w
 
 L009FC6:
-    RTS 
+    RTS
 
 L009FC7:
     LDA #1
@@ -8099,12 +8099,12 @@ L009FC7:
     LDA #0
     STA $03B2,X
     STA $03BB,X
-    RTS 
+    RTS
 
 L009FD5:
-    TXA 
-    ASL 
-    TAY 
+    TXA
+    ASL
+    TAY
     LDA L0FE497.w,Y
     STA $0A
     LDA L0FE498.w,Y
@@ -8113,11 +8113,11 @@ L009FD5:
     LDY #3
 L009FE6:
     STA ($0A),Y
-    DEY 
+    DEY
     BPL L009FE6
     LDA #0
     STA $0400,X
-    RTS 
+    RTS
 
 L009FF1:
 .db $B1
@@ -10628,8 +10628,8 @@ L00A9B7:
 L00A9BC:
     LDA $0452,X
     BMI L00AA01
-    ASL 
-    TAY 
+    ASL
+    TAY
     LDA L00AA05.w,Y
     STA $00
     LDA L00AA06.w,Y
@@ -10658,10 +10658,10 @@ L00A9F3:
     STA $045E,X
     INC $0458,X
 L00AA01:
-    DEX 
+    DEX
     BPL L00A9B7
 L00AA04:
-    RTS 
+    RTS
 
 L00AA05:
 .db $F5
@@ -11690,8 +11690,8 @@ L00ADFC:
     JSR L00AE67.w
 L00AE09:
     LDA $03D9,X
-    ASL 
-    TAY 
+    ASL
+    TAY
     LDA L00AE84.w,Y
     STA $00
     LDA L00AE85.w,Y
@@ -11705,15 +11705,15 @@ L00AE09:
     STA $03E9
     BEQ L00AE63
 L00AE2B:
-    ASL 
-    TAY 
+    ASL
+    TAY
     LDA L00B125.w,Y
     STA $00
     LDA L00B126.w,Y
     STA $01
     LDA $03DF,X
-    ASL 
-    TAY 
+    ASL
+    TAY
     LDA ($00),Y
     CMP #128
     BNE L00AE4C
@@ -11723,38 +11723,38 @@ L00AE2B:
     BEQ L00AE09
 L00AE4C:
     JSR L00AE73.w
-    CLC 
+    CLC
     ADC $03C1,X
     STA $03C1,X
-    INY 
+    INY
     LDA ($00),Y
-    CLC 
+    CLC
     ADC $03C4,X
     STA $03C4,X
     INC $03DF,X
 L00AE63:
-    DEX 
+    DEX
     BPL L00ADFC
-    RTS 
+    RTS
 
 L00AE67:
     LDA #0
     STA $03DC,X
     STA $03DF,X
     STA $03D6,X
-    RTS 
+    RTS
 
 L00AE73:
     STY $0382
     LDY $03E2,X
     BEQ L00AE80
     EOR #255
-    TAY 
-    INY 
-    TYA 
+    TAY
+    INY
+    TYA
 L00AE80:
     LDY $0382
-    RTS 
+    RTS
 
 L00AE84:
 .db $02
@@ -15660,7 +15660,7 @@ L00BD7A:
 L00BDC0:
     LDA #0
     STA $04A6
-    RTS 
+    RTS
 
 .db $A9
 .db $40
@@ -15796,7 +15796,7 @@ L00BE53:
     LDA #8
     STA $06D0
 L00BE5E:
-    RTS 
+    RTS
 
 .db $A9
 .db $08
@@ -15842,7 +15842,7 @@ L00BE89:
     LDA #64
     STA $06D2
     INC $04A6
-    RTS 
+    RTS
 
 .db $A2
 .db $80
@@ -15884,27 +15884,27 @@ L00BEB6:
     LDA #1
     STA $06D3
 L00BEC4:
-    RTS 
+    RTS
 
 L00BEC5:
     LDA #2
     STA $06D2
     LDA #0
     STA $04A6
-    RTS 
+    RTS
 
 L00BED0:
     LDA #1
     STA $06D3
     INC $04A6
-    RTS 
+    RTS
 
 L00BED9:
     LDA #8
     STA $06D0
     LDA #0
     STA $04A6
-    RTS 
+    RTS
 
 .db $A9
 .db $20
