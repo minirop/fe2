@@ -72,7 +72,7 @@ L0FC068:
     LDA $01
     RTS
 
-L0FC075:
+RESET:
     SEI
     CLD
     LDX #0
@@ -187,7 +187,7 @@ L0FC15D:
     JSR L0FC04E.w
     JMP L0FC144.w
 
-L0FC163:
+NMI:
     PHP
     PHA
     TXA
@@ -371,10 +371,7 @@ L0FC27A:
     RTS
 
 L0FC284:
-.db $20
-.db $24
-.db $28
-.db $2C
+.db $20 $24 $28 $2C
 L0FC288:
     LDY #0
     LDA #244
@@ -637,10 +634,7 @@ L0FC3FC:
     RTS
 
 L0FC403:
-.db $FC
-.db $F3
-.db $CF
-.db $3F
+.db $FC $F3 $CF $3F
 L0FC407:
     LDA $04
     LSR
@@ -1345,6 +1339,7 @@ L0FC733:
     STA $2000
     LDA $D2
     STA $2001
+L0FC73D:
     RTS
 
 L0FC73E:
@@ -13296,11 +13291,9 @@ L0FFC43:
 .db $FF
 .db $10
 .db $1D
-.db $63
-.db $C1
-.db $75
-.db $C0
-.db $75
-.db $C0
+
+.dw NMI
+.dw RESET
+.dw RESET
 
 .ENDS

@@ -24,21 +24,14 @@ L05801A:
     LDA $0320
     CMP #40
     BCC L058037
-.db $C9
-.db $2D
-.db $B0
-.db $0B
-.db $C9
-.db $2A
-.db $F0
-.db $07
-.db $AD
-.db $02
-.db $03
-.db $D0
-.db $02
-.db $F0
-.db $05
+    CMP #45
+    BCS L058037
+    CMP #42
+    BEQ L058037
+    LDA $0302
+    BNE L058037
+    BEQ L05803C
+
 L058037:
     LDA #0
     STA $7443
@@ -57,23 +50,15 @@ L05803C:
     STA $D0
     LDA $7442
     BEQ L058066
-.db $A9
-.db $01
-.db $8D
-.db $D0
-.db $06
-.db $D0
-.db $45
+    LDA #1
+    STA $06D0
+    BNE L0580AB
 L058066:
     LDA $0303
     BEQ L058072
-.db $A9
-.db $04
-.db $8D
-.db $DA
-.db $06
-.db $D0
-.db $39
+    LDA #4
+    STA $06DA
+    BNE L0580AB
 L058072:
     LDA #21
     CMP $0307
@@ -223,10 +208,8 @@ L058180:
     BEQ L058190
     LDX $0307
     BNE L05818E
-.db $A9
-.db $38
-.db $D0
-.db $02
+    LDA #56
+    BNE L058190
 L05818E:
     LDA #32
 L058190:
@@ -284,6 +267,7 @@ L0581F2:
     LDA #1
     TAX
     BNE L058218
+L0581F7:
     LDA #1
     LDX #0
     BEQ L058218
@@ -330,96 +314,54 @@ L05822B:
 L05823A:
     LDA $04C6
     JSR L0FC34C.w
-.db $BE
-.db $82
-.db $40
-.db $9B
-.db $F9
-.db $88
-.db $47
-.db $88
-.db $41
-.db $88
-.db $57
-.db $88
-.db $41
-.db $88
-.db $57
-.db $88
-.db $2D
-.db $88
-.db $38
-.db $88
-.db $F5
-.db $88
-.db $C0
-.db $90
-.db $CA
-.db $82
-.db $E4
-.db $84
-.db $01
-.db $85
-.db $83
-.db $85
-.db $0E
-.db $83
-.db $D8
-.db $83
-.db $FD
-.db $88
-.db $07
-.db $85
-.db $A9
-.db $83
-.db $44
-.db $84
-.db $52
-.db $84
-.db $20
-.db $83
-.db $B4
-.db $84
-.db $01
-.db $85
-.db $F9
-.db $88
-.db $4C
-.db $83
-.db $0E
-.db $83
-.db $53
-.db $86
-.db $97
-.db $86
-.db $33
-.db $87
-.db $3E
-.db $87
-.db $50
-.db $87
-.db $3E
-.db $87
-.db $9A
-.db $82
-.db $A2
-.db $82
-.db $C2
-.db $82
-.db $28
-.db $83
-.db $35
-.db $83
-.db $F7
-.db $81
-.db $A9
-.db $A0
-.db $85
-.db $33
-.db $EE
-.db $C6
-.db $04
-.db $60
+.dw L0582BE
+.dw L059B40
+.dw L0588F9
+.dw L058847
+.dw L058841
+.dw L058857
+.dw L058841
+.dw L058857
+.dw L05882D
+.dw L058838
+.dw L0588F5
+.dw L0590C0
+.dw L0582CA
+.dw L0584E4
+.dw L058501
+.dw L058583
+.dw L05830E
+.dw L0583D8
+.dw L0588FD
+.dw L058507
+.dw L0583A9
+.dw L058444
+.dw L058452
+.dw L058320
+.dw L0584B4
+.dw L058501
+.dw L0588F9
+.dw L05834C
+.dw L05830E
+.dw L058653
+.dw L058697
+.dw L058733
+.dw L05873E
+.dw L058750
+.dw L05873E
+.dw L05829A
+.dw L0582A2
+.dw L0582C2
+.dw L058328
+.dw L058335
+.dw L0581F7
+
+L058292:
+    LDA #160
+    STA $33
+    INC $04C6
+    RTS
+
 L05829A:
     LDA #37
     STA $04C6
@@ -427,34 +369,19 @@ L05829A:
 L0582A1:
     RTS
 
-.db $20
-.db $D4
-.db $E3
-.db $20
-.db $0F
-.db $88
-.db $A9
-.db $00
-.db $8D
-.db $01
-.db $03
-.db $20
-.db $A6
-.db $C9
-.db $A9
-.db $01
-.db $8D
-.db $C7
-.db $04
-.db $8D
-.db $A5
-.db $04
-.db $A9
-.db $00
-.db $8D
-.db $C6
-.db $04
-.db $60
+L0582A2:
+    JSR L0FE3D4.w
+    JSR L05880F.w
+    LDA #0
+    STA $0301
+    JSR L0FC9A6.w
+    LDA #1
+    STA $04C7
+    STA $04A5
+    LDA #0
+    STA $04C6
+    RTS
+
 L0582BE:
     INC $04C6
     RTS
@@ -489,11 +416,8 @@ L0582F1:
     BEQ L058302
     LDA $032E
     BEQ L0582EA
-.db $AD
-.db $3D
-.db $03
-.db $D0
-.db $E8
+    LDA $033D
+    BNE L0582EA
 L058302:
     INC $04C6
 L058305:
@@ -573,8 +497,7 @@ L058364:
     LDA $0324
     AND #4
     BEQ L058389
-.db $A0
-.db $8D
+    LDY #$8D
 L058389:
     STY $7DA6
     LDA #0
@@ -654,9 +577,8 @@ L0583F7:
     LDX $0308
     CPX #19
     BEQ L058433
-.db $18
-.db $69
-.db $64
+    CLC
+    ADC #$64
 L058433:
     STA $04A1
 L058436:
@@ -790,18 +712,11 @@ L058519:
     LDA $0307
     CMP #21
     BNE L05852C
-.db $A9
-.db $01
-.db $8D
-.db $A1
-.db $05
-.db $A9
-.db $00
-.db $8D
-.db $A6
-.db $7D
-.db $D0
-.db $1A
+    LDA #1
+    STA $05A1
+    LDA #0
+    STA $7DA6
+    BNE L058546
 L05852C:
     LDY #0
 L05852E:
@@ -818,6 +733,7 @@ L05853C:
     ADC #49
     STA $7DA6
     JSR L058608.w
+L058546:
     LDA #4
     STA $7DB5
     BNE L058572
@@ -1030,7 +946,7 @@ L0586A2:
 L0586C5:
     LDA L0587BB.w,Y
     STA $00
-    LDA L0587BC.w,Y
+    LDA (L0587BB.w + 1),Y
     STA $01
 L0586CF:
     LDA L0587ED.w,Y
@@ -1056,13 +972,9 @@ L0586E5:
     BMI L05871E
     CMP #3
     BCC L058705
-.db $B1
-.db $02
-.db $91
-.db $04
-.db $4C
-.db $1E
-.db $87
+    LDA ($02),Y
+    STA ($04),Y
+    JMP L05871E.w
 L058705:
     JSR L05861F.w
     LDA #130
@@ -1167,36 +1079,39 @@ L0587A6:
     RTS
 
 L0587BB:
-.db $C7
-L0587BC:
-.db $87
-.db $CB
-.db $87
-.db $CF
-.db $87
-.db $D5
-.db $87
-.db $D8
-.db $87
-.db $E0
-.db $87
+.dw L0587C7
+.dw L0587CB
+.dw L0587CF
+.dw L0587D5
+.dw L0587D8
+.dw L0587E0
+
+L0587C7:
 .db $11
 .db $05
 .db $28
 .db $EF
+
+L0587CB:
 .db $2D
 .db $0A
 .db $0F
 .db $EF
+
+L0587CF:
 .db $0C
 .db $1A
 .db $0F
 .db $25
 .db $0A
 .db $EF
+
+L0587D5:
 .db $02
 .db $2F
 .db $EF
+
+L0587D8:
 .db $0B
 .db $86
 .db $1B
@@ -1205,6 +1120,8 @@ L0587BC:
 .db $87
 .db $07
 .db $EF
+
+L0587E0:
 .db $0A
 .db $01
 .db $10
@@ -1213,11 +1130,14 @@ L0587BC:
 .db $71
 .db $79
 .db $EF
+
+L0587E8:
 .db $20
 .db $29
 .db $87
 .db $07
 .db $EF
+
 L0587ED:
 .db $12
 L0587EE:
@@ -1264,11 +1184,8 @@ L058816:
     STA $E000
     BEQ L05882C
 L058827:
-.db $A9
-.db $00
-.db $8D
-.db $A5
-.db $04
+    LDA #0
+    STA $04A5
 L05882C:
     RTS
 
@@ -1395,8 +1312,10 @@ L0588F4:
 L0588F5:
     LDA #0
     BEQ L0588FF
+L0588F9:
     LDA #1
     BNE L0588FF
+L0588FD:
     LDA #3
 L0588FF:
     LDX $27
