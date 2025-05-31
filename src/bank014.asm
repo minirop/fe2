@@ -905,8 +905,9 @@ L0E862F:
     RTS
 
 L0E8645:
-.db $38
-.db $60
+    SEC
+    RTS
+
 L0E8647:
     LDA #0
     STA $0686

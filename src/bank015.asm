@@ -4,11 +4,8 @@
 .SECTION "Bank15" FORCE
 
 L0FC000:
-.db $A9
-L0FC001:
-    ORA $20
-    RTI
-    DEX
+    LDA #5
+    JSR $CA40.w
     JSR $BFA0.w
     LDA #6
     JMP L0FCA40.w
@@ -34,19 +31,12 @@ L0FC027:
     LDA #6
     JMP L0FCA40.w
 
-.db $A9
-.db $0D
-.db $20
-.db $40
-.db $CA
-.db $20
-.db $00
-.db $80
-.db $A9
-.db $06
-.db $4C
-.db $40
-.db $CA
+L0FC034:
+    LDA #13
+    JSR L0FCA40.w
+    JSR $8000
+    LDA #6
+    JMP L0FCA40.w
 L0FC041:
     LDA #3
     JSR L0FCA40.w
@@ -173,10 +163,8 @@ L0FC09E:
     JSR L0FCA40.w
     LDA $67
     BEQ L0FC13E
-.db $A9
-.db $01
-.db $85
-.db $67
+    LDA #1
+    STA $67
 L0FC13E:
     JSR L0FC77D.w
     JMP L0FC156.w
@@ -284,15 +272,9 @@ L0FC1E3:
     RTS
 
 L0FC1E4:
-.db $18
-.db $19
-.db $15
-.db $19
+.db $18 $19 $15 $19
 L0FC1E8:
-.db $0E
-.db $08
-.db $0E
-.db $08
+.db $0E $08 $0E $08
 L0FC1EC:
     LDA $63
     BEQ L0FC1FA
@@ -358,10 +340,8 @@ L0FC24A:
     LDA #2
     BNE L0FC254
 L0FC24E:
-.db $A9
-.db $03
-.db $D0
-.db $02
+    LDA #3
+    BNE L0FC254
 L0FC252:
     LDA #1
 L0FC254:
