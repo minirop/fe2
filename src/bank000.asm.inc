@@ -1796,7 +1796,7 @@ L009F8B:
     TAX
     LDA L0FE497.w,X
     STA $0A
-    LDA L0FE498.w,X
+    LDA (L0FE497.w + 1),X
     STA $0B
     LDX $0380
     PLA
@@ -1830,7 +1830,7 @@ L009FD5:
     TAY
     LDA L0FE497.w,Y
     STA $0A
-    LDA L0FE498.w,Y
+    LDA (L0FE497.w + 1),Y
     STA $0B
     LDA #255
     LDY #3

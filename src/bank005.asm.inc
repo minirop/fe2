@@ -2806,7 +2806,7 @@ L05908A:
     TAY
     LDA L0FE497.w,Y
     STA $0A
-    LDA L0FE498.w,Y
+    LDA (L0FE497.w + 1),Y
     STA $0B
     LDA #255
     LDY #3
@@ -2856,48 +2856,30 @@ L0590C7:
 L0590D0:
     LDA $03E5
     JSR L0FC34C.w
-.db $9E
-.db $93
-.db $00
-.db $91
-.db $2C
-.db $91
-.db $3E
-.db $91
-.db $C2
-.db $94
-.db $C6
-.db $94
-.db $CB
-.db $93
-.db $E4
-.db $93
-.db $39
-.db $92
-.db $42
-.db $92
-.db $8E
-.db $92
-.db $9B
-.db $92
-.db $AE
-.db $92
-.db $4E
-.db $95
-.db $FD
-.db $93
-.db $EB
-.db $93
-.db $25
-.db $94
-.db $C2
-.db $94
-.db $C6
-.db $94
-.db $EB
-.db $93
-.db $1C
-.db $9D
+
+.dw L05939E
+.dw L059100
+.dw L05912C
+.dw L05913E
+.dw L0594C2
+.dw L0594C6
+.dw L0593CB
+.dw L0593E4
+.dw L059239
+.dw L059242
+.dw L05928E
+.dw L05929B
+.dw L0592AE
+.dw L05954E
+.dw L0593FD
+.dw L0593EB
+.dw L059425
+.dw L0594C2
+.dw L0594C6
+.dw L0593EB
+.dw L059D1C
+
+L059100:
     LDA $0307
     CMP #21
     BNE L05910C
@@ -3147,11 +3129,13 @@ L059190:
 .db $EE
 .db $EC
 .db $00
+
 L059239:
     LDA $0362
     BNE L05926D
     LDX #1
     BNE L059244
+L059242:
     LDX #0
 L059244:
     LDA $030C,X
@@ -3176,35 +3160,20 @@ L05926D:
     INC $03E5
     RTS
 
-.db $AD
-.db $C6
-.db $04
-.db $8D
-.db $A3
-.db $04
-.db $20
-.db $01
-.db $85
-.db $AD
-.db $A3
-.db $04
-.db $CD
-.db $C6
-.db $04
-.db $F0
-.db $08
-.db $A2
-.db $00
-.db $8E
-.db $9D
-.db $04
-.db $EE
-.db $E5
-.db $03
-.db $8D
-.db $C6
-.db $04
-.db $60
+L059271:
+    LDA $04C6
+    STA $04A3
+    JSR L058501.w
+    LDA $04A3
+    CMP $04C6
+    BEQ L05928A
+    LDX #0
+    STX $049D
+    INC $03E5
+L05928A:
+    STA $04C6
+    RTS
+
 L05928E:
     LDX #1
     STX $0499
@@ -3232,12 +3201,10 @@ L0592AE:
     BNE L0592C8
     LDA $032D
     BEQ L0592C5
-.db $A9
-.db $0E
-.db $8D
-.db $E5
-.db $03
-.db $60
+    LDA #14
+    STA $03E5
+    RTS
+
 L0592C5:
     JMP L059372.w
 
@@ -3245,9 +3212,7 @@ L0592C8:
     LDA $0320,Y
     CMP #47
     BNE L0592D2
-.db $4C
-.db $4F
-.db $93
+    JMP L05934F.w
 L0592D2:
     TAX
     LDA L0FD9F4.w,X
@@ -3257,8 +3222,7 @@ L0592D2:
     BNE L05934F
     CMP $0304
     BEQ L059300
-.db $D0
-.db $69
+    BNE L05934F
 L0592E6:
     STA $0385
     INC $0385
@@ -3285,27 +3249,22 @@ L059315:
     LDA $047C
     BEQ L059324
 L05931D:
-.db $AD
-.db $E8
-.db $03
-.db $D0
-.db $2D
-.db $F0
-.db $4E
+    LDA $03E8
+    BNE L05934F
+    BEQ L059372
 L059324:
     LDA L0FDAFD.w,Y
     LSR
     LSR
     LDY $031E,X
     BEQ L059333
-.db $4A
-.db $90
-.db $1E
-.db $B0
-.db $03
+    LSR
+    BCC L05934F
+    BCS L059336
 L059333:
     BCC L05934F
     LSR
+L059336:
     LSR
     BCC L05934F
     BCS L059372
@@ -3315,8 +3274,7 @@ L05933B:
     LDX #12
     CMP #2
     BEQ L059347
-.db $A2
-.db $00
+    LDX #00
 L059347:
     STX $0498
     LDA #5
@@ -3349,28 +3307,15 @@ L059372:
     STA $03F0
     LDA $035D
     BEQ L05939A
-.db $AD
-.db $E8
-.db $03
-.db $D0
-.db $11
-.db $AD
-.db $F3
-.db $03
-.db $C9
-.db $03
-.db $F0
-.db $0A
-.db $AD
-.db $5F
-.db $03
-.db $D0
-.db $05
-.db $A9
-.db $01
-.db $8D
-.db $99
-.db $03
+    LDA $03E8
+    BNE L05939A
+    LDA $03F3
+    CMP #3
+    BEQ L05939A
+    LDA $035F
+    BNE L05939A
+    LDA #1
+    STA $0399
 L05939A:
     INC $03E5
     RTS
@@ -3415,6 +3360,7 @@ L0593E4:
     LDA $7444
     CMP #4
     BEQ L0593F6
+L0593EB:
     LDA $1E
     ASL
     BCS L0593E0
@@ -3422,13 +3368,10 @@ L0593E4:
     BNE L0593E3
     BEQ L0593E0
 L0593F6:
-.db $A5
-.db $1E
-.db $0A
-.db $B0
-.db $E5
-.db $90
-.db $E6
+    LDA $1E
+    ASL
+    BCS L0593E0
+    BCC L0593E3
 L0593FD:
     LDA #0
     STA $33
@@ -3439,13 +3382,9 @@ L0593FD:
     BEQ L059421
     LDA $05A0
     BEQ L059421
-.db $AD
-.db $20
-.db $03
-.db $C9
-.db $2F
-.db $D0
-.db $08
+    LDA $0320
+    CMP #47
+    BNE L059421
 L059419:
     LDX $7444
     LDA L0590B4.w,X
@@ -3458,19 +3397,11 @@ L059425:
     JSR L0590A6.w
     LDA $03A1
     BEQ L05943A
-.db $AE
-.db $E8
-.db $03
-.db $F0
-.db $08
-.db $A2
-.db $00
-.db $8E
-.db $A1
-.db $03
-.db $20
-.db $85
-.db $8D
+    LDX $03E8
+    BEQ L05943A
+    LDX #0
+    STX $03A1
+    JSR L058D85.w
 L05943A:
     INC $03F3
     LDA $03F3
@@ -3512,11 +3443,8 @@ L059488:
     BNE L05949F
     LDA $035D
     BEQ L05949F
-.db $A9
-.db $01
-.db $8D
-.db $99
-.db $03
+    LDA #1
+    STA $0399
 L059497:
     LDA #12
     STA $03E5
@@ -3544,6 +3472,7 @@ L0594C1:
 L0594C2:
     LDX #0
     BEQ L0594E4
+L0594C6:
     LDA $0362
     BNE L0594EC
     LDX #1

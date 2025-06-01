@@ -1941,9 +1941,9 @@ L0A8ADB:
     JMP L0A8B08.w
 
 L0A8AFE:
-    LDA L0FDFB8.w,X
+    LDA (L0FDFBA.w - 2),X
     STA $02
-    LDA (L0FDFB8.w + 1),X
+    LDA (L0FDFBA.w - 1),X
     STA $03
 L0A8B08:
     LDY #0

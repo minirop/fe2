@@ -5339,266 +5339,160 @@ L0FDEA9:
 .dw L0FDFB6
 
 L0FDEFF:
-.db $30
-.db $5A
-.db $52
+.db ENCODE("アルム")
 .db $EF
 
 L0FDF03:
-.db $3D
-.db $59
-.db $35
+.db ENCODE("セリカ")
 .db $EF
 
 L0FDF07:
 .db ENCODE("マイセン")
+.db $EF
 
 L0FDF0C:
-.db $49
-.db $3F
-.db $50
+.db ENCODE("ノーマ")
 .db $EF
 
 L0FDF10:
-.db $5A
-.db $35
+.db ENCODE("ルカ")
 .db $EF
 
 L0FDF13:
-.db $37
-.db $59
-.db $4C
+.db ENCODE("クリフ")
 .db $EF
 
 L0FDF17:
-.db $5C
-.db $4B
-.db $0F
-.db $5F
+.db ENCODE("ロビン")
 .db $EF
 
 L0FDF1C:
-.db $37
-.db $0F
-.db $5B
-.db $31
+.db ENCODE("グレイ")
 .db $EF
 
 L0FDF21:
-.db $37
-.db $5B
-.db $30
+.db ENCODE("クレア")
 .db $EF
 
 L0FDF25:
-.db $37
-.db $5B
-.db $3F
-.db $4D
-.db $0F
+.db ENCODE("クレーベ")
 .db $EF
 
 L0FDF2B:
-.db $4C
-.db $AA
-.db $5A
-.db $3C
+.db ENCODE("フォルス")
 .db $EF
 
 L0FDF30:
-.db $3B
-.db $0F
-.db $8A
-.db $49
-.db $3F
+.db ENCODE("ジュノー")
 .db $EF
 
 L0FDF36:
-.db $53
-.db $31
+.db ENCODE("メイ")
 .db $EF
 
 L0FDF39:
-.db $3B
-.db $5A
-.db $37
+.db ENCODE("シルク")
 .db $EF
 
 L0FDF3D:
-.db $3B
-.db $0F
-.db $A9
-.db $46
-.db $3F
+.db ENCODE("ジェニー")
 .db $EF
 
 L0FDF43:
-.db $4E
-.db $0F
-.db $3F
-.db $31
+.db ENCODE("ボーイ")
 .db $EF
 
 L0FDF48:
-.db $35
-.db $52
-.db $31
+.db ENCODE("カムイ")
 .db $EF
 
 L0FDF4C:
-.db $5B
-.db $34
+.db ENCODE("レオ")
 .db $EF
 
 L0FDF4F:
-.db $4A
-.db $0F
-.db $5A
-.db $4E
-.db $0F
+.db ENCODE("バルボ")
 .db $EF
 
 L0FDF55:
-.db $50
-.db $41
-.db $5A
-.db $40
-.db $0F
+.db ENCODE("マチルダ")
 .db $EF
 
 L0FDF5B:
-.db $4A
-.db $1F
-.db $31
-.db $3E
-.db $5F
+.db ENCODE("パイソン")
 .db $EF
 
 L0FDF61:
-.db $30
-.db $44
-.db $58
-.db $3C
+.db ENCODE("アトラス")
 .db $EF
 
 L0FDF66:
-.db $3B
-.db $0F
-.db $A9
-.db $3B
-.db $3F
+.db ENCODE("ジェシー")
 .db $EF
 
 L0FDF6C:
-.db $4C
-.db $AA
-.db $5A
-.db $3C
+.db ENCODE("フォルス")
 .db $EF
 
 L0FDF71:
-.db $3E
-.db $46
-.db $30
+.db ENCODE("ソニア")
 .db $EF
 
 L0FDF75:
-.db $43
-.db $0F
-.db $A7
-.db $3F
-.db $5F
+.db ENCODE("ディーン")
 .db $EF
 
 L0FDF7B:
-.db $3D
-.db $3F
-.db $4A
-.db $0F
-.db $3F
+.db ENCODE("セーバー")
 .db $EF
 
 L0FDF81:
-.db $59
-.db $8A
-.db $3F
-.db $44
+.db ENCODE("リュート")
 .db $EF
 
 L0FDF86:
-.db $43
-.db $0F
-.db $8A
-.db $3F
-.db $43
+.db ENCODE("デューテ")
 .db $EF
 
 L0FDF8C:
-.db $43
-.db $A7
-.db $3F
-.db $40
+.db ENCODE("ティータ")
 .db $EF
 
 L0FDF91:
-.db $35
-.db $41
-.db $8A
-.db $30
+.db ENCODE("カチュア")
 .db $EF
 
 L0FDF96:
-.db $4A
-.db $1F
-.db $34
-.db $58
+.db ENCODE("パオラ")
 .db $EF
 
 L0FDF9B:
-.db $33
-.db $3C
-.db $44
+.db ENCODE("エスト")
 .db $EF
 
 L0FDF9F:
-.db $3B
-.db $0F
-.db $3F
-.db $37
+.db ENCODE("ジーク")
 .db $EF
 
 L0FDFA4:
-.db $3B
-.db $88
-.db $44
-.db $0F
-.db $3F
+.db ENCODE("シャドー")
 .db $EF
 
 L0FDFAA:
-.db $04
-.db $2F
-.db $15
+.db ENCODE("おんな")
 .db $EF
 
 L0FDFAE:
-.db $04
-.db $14
-.db $09
+.db ENCODE("おとこ")
 .db $EF
 
 L0FDFB2:
-.db $22
-.db $0C
-.db $23
+.db ENCODE("むすめ")
 .db $EF
 
 L0FDFB6:
-.db $4A
-.db $5A
-
-L0FDFB8:
-.dw L0FEF37
+.db ENCODE("ハルク")
+.db $EF
 
 L0FDFBA:
 .dw L0FE06A
@@ -5691,410 +5585,211 @@ L0FDFBA:
 .dw L0FE195
 
 L0FE06A:
-.db $44
-.db $0F
-.db $3D
-.db $0F
-.db $3F
+.db ENCODE("ドゼー")
 .db $EF
 
 L0FE070:
-.db $36
-.db $0F
-.db $3F
-.db $3C
+.db ENCODE("ギース")
 .db $EF
 
 L0FE075:
-.db $44
-.db $0F
-.db $5A
-.db $37
+.db ENCODE("ドルク")
 .db $EF
 
 L0FE07A:
-.db $47
-.db $31
-.db $4A
-.db $0F
-.db $4A
-.db $0F
+.db ENCODE("ヌイババ")
 .db $EF
 
 L0FE081:
-.db $5A
-.db $44
-.db $0F
-.db $5A
-.db $4C
+.db ENCODE("ルドルフ")
 .db $EF
 
 L0FE087:
-.db $3B
-.db $0F
-.db $8A
-.db $40
-.db $0F
+.db ENCODE("ジュダ")
 .db $EF
 
 L0FE08D:
-.db $3E
-.db $46
-.db $30
+.db ENCODE("ソニア")
 .db $EF
 
 L0FE091:
-.db $43
-.db $0F
-.db $A7
-.db $3F
-.db $5F
+.db ENCODE("ディーン")
 .db $EF
 
 L0FE097:
-.db $50
-.db $37
-.db $0F
-.db $45
-.db $52
+.db ENCODE("マグナム")
 .db $EF
 
 L0FE09D:
-.db $3B
-.db $0F
-.db $A9
-.db $5C
-.db $3F
-.db $52
+.db ENCODE("ジェローム")
 .db $EF
 
 L0FE0A4:
-.db $51
-.db $8A
-.db $3F
-.db $58
-.db $3F
+.db ENCODE("ミューラー")
 .db $EF
 
 L0FE0AA:
-.db $4A
-.db $5F
-.db $46
-.db $4A
-.db $0F
-.db $5A
+.db ENCODE("ハンニバル")
 .db $EF
 
 L0FE0B1:
-.db $50
-.db $89
-.db $3D
-.db $45
+.db ENCODE("マッセナ")
 .db $EF
 
 L0FE0B6:
-.db $50
-.db $3F
-.db $58
+.db ENCODE("マーラ")
 .db $EF
 
 L0FE0BA:
-.db $40
-.db $40
-.db $58
+.db ENCODE("タタラ")
 .db $EF
 
 L0FE0BE:
-.db $3B
-.db $0F
-.db $88
-.db $51
-.db $5A
+.db ENCODE("ジャミル")
 .db $EF
 
 L0FE0C4:
-.db $43
-.db $0F
-.db $8A
-.db $3F
-.db $43
+.db ENCODE("デューテ")
 .db $EF
 
 L0FE0CA:
-.db $35
-.db $0F
-.db $3D
-.db $0F
-.db $5A
+.db ENCODE("ガゼル")
 .db $EF
 
 L0FE0D0:
-.db $3A
-.db $0F
-.db $37
-.db $3E
-.db $5F
+.db ENCODE("ザクソン")
 .db $EF
 
 L0FE0D6:
-.db $3C
-.db $5B
-.db $31
-.db $40
-.db $0F
-.db $3F
+.db ENCODE("スレイダー")
 .db $EF
 
 L0FE0DD:
-.db $51
-.db $35
-.db $33
-.db $58
+.db ENCODE("ミカエラ")
 .db $EF
 
 L0FE0E2:
-.db $5C
-.db $3F
-.db $3E
-.db $5F
+.db ENCODE("ローソン")
 .db $EF
 
 L0FE0E7:
-.db $40
-.db $0F
-.db $89
-.db $4A
+.db ENCODE("ダッハ")
 .db $EF
 
 L0FE0EC:
-.db $35
-.db $0F
-.db $89
-.db $4A
+.db ENCODE("ガッハ")
 .db $EF
 
 L0FE0F1:
-.db $4C
-.db $0F
-.db $58
-.db $31
+.db ENCODE("ブライ")
 .db $EF
 
 L0FE0F6:
-.db $3B
-.db $3F
-.db $3A
-.db $0F
-.db $3C
+.db ENCODE("シーザス")
 .db $EF
 
 L0FE0FC:
-.db $59
-.db $38
-.db $0F
-.db $5A
-.db $07
-.db $0F
-.db $2F
+.db ENCODE("リゲルぐん")
 .db $EF
 
 L0FE104:
-.db $32
-.db $AA
-.db $5A
-.db $4C
+.db ENCODE("ウォルフ")
 .db $EF
 
 L0FE109:
-.db $36
-.db $0F
-.db $3F
-.db $3C
-.db $07
-.db $0F
-.db $2F
+.db ENCODE("ギースぐん")
 .db $EF
 
 L0FE111:
-.db $44
-.db $0F
-.db $3D
-.db $0F
-.db $3F
-.db $07
-.db $0F
-.db $2F
+.db ENCODE("ドゼーぐん")
 .db $EF
 
 L0FE11A:
-.db $44
-.db $0F
-.db $5A
-.db $37
-.db $07
-.db $2F
+.db ENCODE("ドルクくん")
 .db $EF
 
 L0FE121:
-.db $20
-.db $14
-.db $0F
-.db $02
-.db $07
-.db $0F
-.db $2F
+.db ENCODE("まどうぐん")
 .db $EF
 
 L0FE129:
-.db $05
-.db $01
-.db $0E
-.db $0F
-.db $07
+.db ENCODE("かいぞく")
 .db $EF
 
 L0FE12F:
-.db $0A
-.db $2F
-.db $0E
-.db $0F
-.db $07
+.db ENCODE("さんぞく")
 .db $EF
 
 L0FE135:
-.db $20
-.db $24
-.db $19
+.db ENCODE("まもの")
 .db $EF
 
 L0FE139:
-.db $44
-.db $0F
-.db $3F
-.db $50
+.db ENCODE("ドーマ")
 .db $EF
 
 L0FE13E:
-.db $35
-.db $0F
-.db $5A
-.db $3B
-.db $30
+.db ENCODE("ガルシア")
 .db $EF
 
 L0FE144:
-.db $4D
-.db $3C
-.db $43
+.db ENCODE("ヘステ")
 .db $EF
 
 L0FE148:
-.db $3A
-.db $31
-.db $3E
-.db $0F
-.db $3F
+.db ENCODE("サイゾー")
 .db $EF
 
 L0FE14E:
-.db $35
-.db $0F
-.db $48
-.db $4C
+.db ENCODE("ガネフ")
 .db $EF
 
 L0FE153:
-.db $20
-.db $0B
-.db $0F
-.db $2F
+.db ENCODE("まじん")
 .db $EF
 
 L0FE158:
-.db $43
-.db $0F
-.db $4B
-.db $0F
-.db $5A
+.db ENCODE("デビル")
 .db $EF
 
 L0FE15E:
-.db $39
-.db $0F
-.db $3F
-.db $5A
-.db $44
-.db $0F
+.db ENCODE("ゴールド")
 .db $EF
 
 L0FE165:
-.db $1A
-.db $07
-.db $29
-.db $86
-.db $02
+.db ENCODE("はくりゅう")
 .db $EF
 
 L0FE16B:
-.db $3A
-.db $3F
-.db $4D
-.db $1F
-.db $5F
-.db $44
+.db ENCODE("サーペント")
 .db $EF
 
 L0FE172:
-.db $45
-.db $3F
-.db $35
-.db $0F
+.db ENCODE("ナーガ")
 .db $EF
 
 L0FE177:
-.db $59
-.db $89
-.db $41
-.db $3F
+.db ENCODE("リッチー")
 .db $EF
 
 L0FE17C:
-.db $4A
-.db $0F
-.db $5A
-.db $5C
-.db $37
-.db $0F
+.db ENCODE("バルログ")
 .db $EF
 
 L0FE183:
-.db $4A
-.db $0F
-.db $43
-.db $0F
-.db $3C
+.db ENCODE("バデス")
 .db $EF
 
 L0FE189:
-.db $38
-.db $5A
-.db $4D
-.db $0F
-.db $3C
+.db ENCODE("ケルベス")
 .db $EF
 
 L0FE18F:
-.db $4D
-.db $0F
-.db $5A
-.db $5B
-.db $3C
+.db ENCODE("ベルレス")
 .db $EF
 
 L0FE195:
-.db $50
-.db $51
-.db $3F
+.db ENCODE("マミー")
 .db $EF
 
 L0FE199:
@@ -6786,7 +6481,7 @@ L0FE462:
     TAX
     LDA L0FE497.w,X
     STA $00
-    LDA L0FE498.w,X
+    LDA (L0FE497.w + 1),X
     STA $01
     LDY #0
     LDA #4
@@ -6795,20 +6490,11 @@ L0FE462:
 L0FE47F:
     LDA ($00),Y
     BMI L0FE491
-.db $85
-.db $3C
-.db $8C
-.db $82
-.db $03
-.db $20
-.db $9B
-.db $E4
-.db $20
-.db $B7
-.db $CA
-.db $AC
-.db $82
-.db $03
+    STA $3C
+    STY $0382
+    JSR L0FE49B.w
+    JSR L0FCAB7.w
+    LDY $0382
 L0FE491:
     INY
     DEC $02
@@ -6817,11 +6503,9 @@ L0FE496:
     RTS
 
 L0FE497:
-.db $F8
-L0FE498:
-.db $03
-.db $FC
-.db $03
+.dw $03F8
+.dw $03FC
+
 L0FE49B:
     LDA $DB
     STA $42
@@ -6896,15 +6580,12 @@ L0FE4E3:
     LDA ($02),Y
     ASL
     BCC L0FE52E
-.db $48
-.db $A5
-.db $09
-.db $18
-.db $69
-.db $01
-.db $85
-.db $09
-.db $68
+    PHA
+    LDA $09
+    CLC
+    ADC #1
+    STA $09
+    PLA
 L0FE52E:
     TAY
     LDA ($08),Y
@@ -9149,8 +8830,6 @@ L0FEEF5:
 .db $08
 .db $0D
 .db $04
-
-L0FEF37:
 .db $0C
 .db $04
 .db $09

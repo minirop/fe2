@@ -15,9 +15,11 @@ def mapper(match):
     jp = match.group(1)
     output = []
     for c in jp:
-        for code in mapping[c]:
-            output.append(f"${code}")
-    output.append("$EF")
+        if c == ' ':
+            output.append("$FF")
+        else:
+            for code in mapping[c]:
+                output.append(f"${code}")
     return " ".join(output)
 
 p = re.compile('ENCODE\\("([^"]+)"\\)')

@@ -3766,74 +3766,18 @@ L039770:
 .db $03
 .db $F0
 .db $03
-.db $EA ; SPEECH
-.db $30 ; A
-.db $5A ; LU
-.db $52 ; MU
-.db $FF ; space
-.db $1B
-.db $14
-.db $25
-.db $0C
-.db $21
-.db $0B
-.db $27
-.db $02
-.db $EE ; new line / stop?
-.db $EA
-.db $08
-.db $2F
-.db $19
-.db $0B
-.db $86
-.db $06
-.db $0F ; tenten
-.db $87
-.db $02
-.db $1A
-.db $FF ; space
-.db $04
-.db $2D
-.db $29
-.db $10
-.db $0F
-.db $ED ; new line / continue?
-.db $24
-.db $02
-.db $FF
-.db $00
-.db $0E
-.db $1B
-.db $0F
-.db $16
-.db $01
-.db $85
-.db $13
-.db $24
-.db $01
-.db $01
-.db $0E
-.db $0F
-.db $EE ; new line / stop
-.db $EA
-.db $10
-.db $0F
-.db $05
-.db $0F
-.db $FF
-.db $22
-.db $28
-.db $19
-.db $0E
-.db $14
-.db $1D
-.db $1A
-.db $FF
-.db $26
-.db $07
-.db $15
-.db $EE
-.db $EA
+.db SPEAK
+.db ENCODE("アルム ひとやすみしよう")
+.db WAIT_CLICK
+.db SPEAK
+.db ENCODE("けんのしゅぎょうは おわりだ")
+.db NEWLINE
+.db ENCODE("もう あそびにいってもいいぞ")
+.db WAIT_CLICK
+.db SPEAK
+.db ENCODE("だが むらのそとへは ゆくな")
+.db WAIT_CLICK
+.db SPEAK
 .db $0A
 .db $01
 .db $06
