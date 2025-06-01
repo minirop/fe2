@@ -20,6 +20,9 @@
     BANKS 16
 .ENDRO
 
+.RAMSECTION "RAM" SLOT 3
+.ENDS
+
 .BANK 0 SLOT 0
 .ORG $0000
 
@@ -30,9 +33,6 @@
 .db $10
 .db $A2 $00 $00 $00 $00 $00 $00 $00 $00 $00
 
-.ENDS
-
-.RAMSECTION "RAM" SLOT 3
 .ENDS
 
 .INCLUDE "bank000.asm"

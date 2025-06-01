@@ -5352,11 +5352,7 @@ L0FDF03:
 .db $EF
 
 L0FDF07:
-.db $50 ; Mycen
-.db $31
-.db $3D
-.db $5F
-.db $EF
+.db ENCODE("マイセン")
 
 L0FDF0C:
 .db $49
@@ -11405,6 +11401,7 @@ L0FFA0D:
     JSR L0FF389.w
     BCS L0FFA0C
     STX $74DE
+L0FFA1A:
     JSR L0FF74B.w
     LDA $6B
     STA $00

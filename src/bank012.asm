@@ -2788,6 +2788,7 @@ L0CAF4A:
     LDX #10
     STX $16
     TXA
+L0CAF4F:
     ASL
     CLC
     ADC #2
@@ -3003,6 +3004,7 @@ L0CB087:
     JSR L0CB1A8.w
     LDA #0
     STA $04
+L0CB098:
     LDA #237
     STA $0451,X
     INX
