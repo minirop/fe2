@@ -1004,11 +1004,7 @@ L009381:
 .db $08
 
 L0093A2:
-.db $01
-.db $00
-.db $FF
-.db $00
-.db $00
+.db $01 $00 $FF $00 $00
 
 .dw L00942A
 .dw L0093E1
@@ -4061,9 +4057,8 @@ L00BD51:
 L00BD7A:
     LDA $04A6
     JSR L0FC34C.w
-.db $3D
-.db $C7
 
+.dw L0FC73D
 .dw L00BDC6
 .dw L00BDCE
 .dw L00BDDE

@@ -649,42 +649,24 @@ L0FC407:
     STA $79
     RTS
 
-.db $86
-.db $00
-.db $84
-.db $01
-.db $A9
-.db $00
-.db $85
-.db $02
-.db $A9
-.db $07
-.db $85
-.db $03
-.db $A0
-.db $01
-.db $84
-.db $27
-.db $88
-.db $B1
-.db $02
-.db $29
-.db $1F
-.db $85
-.db $05
-.db $B1
-.db $02
-.db $20
-.db $99
-.db $C3
-.db $85
-.db $04
-.db $AE
-.db $80
-.db $07
-.db $4C
-.db $74
-.db $C4
+    STX $00
+    STY $01
+    LDA #0
+    STA $02
+    LDA #7
+    STA $03
+    LDY #1
+    STY $27
+    DEY
+    LDA ($02),Y
+    AND #31
+    STA $05
+    LDA ($02),Y
+    JSR L0FC399.w
+    STA $04
+    LDX $0780
+    JMP L0FC474.w
+
 L0FC453:
     STX $00
     STY $01
@@ -8950,7 +8932,7 @@ L0FEE23:
 .db $78
 .db $54
 .db $78
-L0FEE5E:
+L0FEE5E: ; tilemap ptr?
 .db $8F
 L0FEE5F:
 .db $6E
@@ -11433,54 +11415,26 @@ L0FFA0D:
     JSR L0FF608.w
     RTS
 
-.db $20
-.db $CB
-.db $F2
-.db $A9
-.db $00
-.db $20
-.db $89
-.db $F3
-.db $B0
-.db $D3
-.db $8E
-.db $DE
-.db $74
-.db $20
-.db $08
-.db $F6
-.db $20
-.db $AA
-.db $F5
-.db $AD
-.db $DD
-.db $74
-.db $0A
-.db $AA
-.db $AD
-.db $08
-.db $6D
-.db $9D
-.db $D2
-.db $6C
-.db $AD
-.db $09
-.db $6D
-.db $9D
-.db $D3
-.db $6C
-.db $AE
-.db $DD
-.db $74
-.db $AD
-.db $AE
-.db $67
-.db $9D
-.db $D5
-.db $74
-.db $4C
-.db $1A
-.db $FA
+L0FFA2F:
+    JSR L0FF2CB.w
+    LDA #0
+    JSR L0FF389.w
+    BCS L0FFA0C
+    STX $74DE
+    JSR L0FF608.w
+    JSR L0FF5AA.w
+    LDA $74DD
+    ASL
+    TAX
+    LDA $6D08
+    STA $6CD2,X
+    LDA $6D09
+    STA $6CD3,X
+    LDX $74DD
+    LDA $67AE
+    STA $74D5,X
+    JMP L0FFA1A.w
+
 L0FFA5F:
     STA $DC
     LDA $00
