@@ -5,7 +5,6 @@ import os, sys, re
 mapping = {}
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-print(dir_path)
 
 with open(f'{dir_path}/kana.tbl', 'r') as f:
     for line in f:

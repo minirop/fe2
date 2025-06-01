@@ -5288,10 +5288,9 @@ L0FDEA4:
 .db $43
 .db $0F
 .db $A7
+
 L0FDEA7:
-.db $5A
-L0FDEA8:
-.db $EF
+.dW L0FEF5A
 
 ; pointers to names
 L0FDEA9:
@@ -5597,10 +5596,9 @@ L0FDFB2:
 L0FDFB6:
 .db $4A
 .db $5A
+
 L0FDFB8:
-.db $37
-L0FDFB9:
-.db $EF
+.dw L0FEF37
 
 L0FDFBA:
 .dw L0FE06A
@@ -9151,6 +9149,8 @@ L0FEEF5:
 .db $08
 .db $0D
 .db $04
+
+L0FEF37:
 .db $0C
 .db $04
 .db $09
@@ -9186,6 +9186,8 @@ L0FEEF5:
 .db $24
 .db $07
 .db $1F
+
+L0FEF5A:
 .db $0B
 .db $1C
 .db $1B
@@ -11381,10 +11383,8 @@ L0FF9EA:
     LDA ($02),Y
     CMP #255
     BNE L0FF9FD
-.db $A0
-.db $04
-.db $91
-.db $00
+    LDY #4
+    STA ($00),Y
 L0FF9FD:
     LDA #12
     JSR L0FC379.w
@@ -11594,6 +11594,7 @@ L0FFB62:
 .db $42
 .db $43
 .db $FF
+
 L0FFB69:
     LDY #0
 L0FFB6B:
@@ -11664,6 +11665,7 @@ L0FFB8F:
 .db $2D
 .db $01
 .db $FF
+
 L0FFBBA:
 .db $33
 .db $33
@@ -11676,6 +11678,7 @@ L0FFBBA:
 .db $33
 .db $33
 .db $FF
+
 L0FFBC5:
     LDA #0
     STA $3D
@@ -11690,14 +11693,12 @@ L0FFBD3:
     JSR L0FC288.w
     LDA $2B
     JSR L0FC34C.w
-.db $E3
-.db $FB
-.db $ED
-.db $FB
-.db $FA
-.db $FB
-.db $36
-.db $FC
+
+.dw L0FFBE3
+.dw L0FFBED
+.dw L0FFBFA
+.dw L0FFC36
+
 L0FFBE3:
     LDX #5
     STX $4A

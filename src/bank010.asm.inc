@@ -1936,14 +1936,14 @@ L0A8ADB:
     BCS L0A8AFE
     LDA L0FDEA7.w,X
     STA $02
-    LDA L0FDEA8.w,X
+    LDA (L0FDEA7.w + 1),X
     STA $03
     JMP L0A8B08.w
 
 L0A8AFE:
     LDA L0FDFB8.w,X
     STA $02
-    LDA L0FDFB9.w,X
+    LDA (L0FDFB8.w + 1),X
     STA $03
 L0A8B08:
     LDY #0
