@@ -6184,340 +6184,169 @@ L01B89F:
 .dw L01BF49
 .dw L01BF5E
 
-
 L01B920:
-.db $EC $00 $1A $FF $0B $87 $02 $23
-.db $12 $0B $10 $9D $ED $EE $EF
+.db $EC ENCODE("あは しょうめつした!") $ED $EE $EF
 
 L01B92F:
-.db $EC $00 $1A $FF $0B $87 $02 $23
-.db $12 $0B $10 $9D $ED $EC $02 $1A
-.db $FF $EC $01 $19 $08 $01 $08 $2F
-.db $11 $2E $03 $10 $9D $9D $ED $FF
-.db $EE $EF
+.db $EC ENCODE("あは しょうめつした!") $ED $EC ENCODE("うは ") $EC ENCODE("いのけいけんちをえた!!") $ED ENCODE(" ") $EE $EF
 
 L01B951:
-.db $EC $00 $2E $FF $10 $04 $0B $10
-.db $9D $9D $ED $EC $02 $1A $FF $EC
-.db $01 $19 $08 $01 $08 $2F $11 $2E
-.db $03 $10 $9D $9D $ED $FF $EE $EF
+.db $EC ENCODE("あを たおした!!") $ED $EC ENCODE("うは ") $EC ENCODE("いのけいけんちをえた!!") $ED ENCODE(" ") $EE $EF
 
 L01B971:
-.db $EC $03 $05 $01 $4B $89 $44 $9D
-.db $9D $ED $EC $02 $1A $FF $EC $01
-.db $19 $08 $01 $08 $2F $11 $2E $03
-.db $10 $ED $FF $EE $EF
+.db $EC ENCODE("えかいヒット!!") $ED $EC ENCODE("うは ") $EC ENCODE("いのけいけんちをえた") $ED ENCODE(" ") $EE $EF
 
 L01B98E:
-.db $EC $00 $2E $FF $10 $04 $0B $10
-.db $9D $9D $ED $EF
+.db $EC ENCODE("あを たおした!!") $ED $EF
 
 L01B99A:
-.db $EC $02 $1A $ED $5B $4D $0F $5A
-.db $05 $0F $EC $01 $16 $15 $85 $10
-.db $9D $EF
+.db $EC ENCODE("うは") $ED ENCODE("レベルが") $EC ENCODE("いになった!") $EF
 
 L01B9AC:
-.db $EC $00 $05 $0F $FF $EC $01 $00
-.db $05 $0F $85 $10 $9D $EF $EC $02
-.db $1A $FF $10 $04 $2B $10 $9D $9D
-.db $EE $EF
+.db $EC ENCODE("あが ") $EC ENCODE("いあがった!") $EF $EC ENCODE("うは たおれた!!") $EE $EF
 
 L01B9C6:
-.db $EC $00 $1A $FF $EC $01 $2E $24
-.db $85 $13 $01 $10 $9D $9D $ED $EC
-.db $02 $1A $FF $EC $01 $2E $13 $16
-.db $01 $2B $10 $9D $EF
+.db $EC ENCODE("あは ") $EC ENCODE("いをもっていた!!") $ED $EC ENCODE("うは ") $EC ENCODE("いをてにいれた!") $EF
 
 L01B9E3:
-.db $EC $00 $19 $0B $0F $86 $24 $2F
-.db $2E $04 $1E $0F $03 $10 $9D $EF
+.db $EC ENCODE("あのじゅもんをおぼえた!") $EF
 
 L01B9F3:
-.db $EC $02 $1A $FF $EC $01 $19 $08
-.db $01 $08 $2F $11 $2E $03 $10 $ED
-.db $EE $EF
+.db $EC ENCODE("うは ") $EC ENCODE("いのけいけんちをえた") $ED $EE $EF
 
 L01BA05:
-.db $EC $02 $1A $FF $EC $01 $16 $37
-.db $58 $3C $41 $A9 $5F $3B $0F $13
-.db $0F $06 $20 $0C $ED $EF
+.db $EC ENCODE("うは ") $EC ENCODE("いにクラスチェンジできます") $ED $EF
 
 L01BA1B:
-.db $EC $02 $1A $FF $37 $58 $3C $41
-.db $A9 $5F $3B $0F $13 $0F $06 $20
-.db $0C $ED $EF
+.db $EC ENCODE("うは クラスチェンジできます") $ED $EF
 
 L01BA2E:
-.db $EC $00 $1A $FF $EC $01 $2E $24
-.db $85 $13 $01 $10 $9D $9D $ED $EC
-.db $02 $1A $FF $EC $01 $2E $00 $0C
-.db $0F $05 $29 $0B $0F $87 $16 $00
-.db $0C $0F $08 $10 $9D $EE $EF
+.db $EC ENCODE("あは ") $EC ENCODE("いをもっていた!!") $ED $EC ENCODE("うは ") $EC ENCODE("いをあずかりじょにあずけた!") $EE $EF
 
 L01BA55:
-.db $EC $02 $1A $FF $10 $04 $2B $10
-.db $9D $9D $EE $EF $EC $02 $1A $FF
-.db $01 $06 $10 $03 $10 $9D $9D $EE
-.db $EF
+.db $EC ENCODE("うは たおれた!!") $EE $EF $EC ENCODE("うは いきたえた!!") $EE $EF
 
 L01BA6E:
-.db $AB $11 $07 $0B $87 $02 $9D $9D
-.db $ED $24 $02 $0C $09 $0B $10 $0F
-.db $85 $10 $19 $16 $9B $9B $9B $ED
-.db $EB
+.db ENCODE("「ちくしょう!!") $ED ENCODE("もうすこしだったのに···") $ED $EB
 
 L01BA87:
-.db $AB $25 $85 $1A $1F $29 $FF $10
-.db $0F $23 $10 $0F $85 $10 $ED $09
-.db $0F $23 $2F $15 $0A $01 $FF $21
-.db $2F $15 $9B $9B $9B $ED $EB
+.db ENCODE("「やっぱり だめだった") $ED ENCODE("ごめんなさい みんな···") $ED $EB
 
 L01BAA6:
-.db $AB $30 $5A $52 $27 $FF $3D $59
-.db $35 $27 $ED $2D $10 $0B $2E $19
-.db $29 $09 $03 $FF $4A $0F $5B $5F
-.db $3B $30 $2E $10 $19 $22 $9B $9B
-.db $9B $ED $EB
+.db ENCODE("「アルムよ セリカよ") $ED ENCODE("わたしをのりこえ バレンシアをたのむ···") $ED $EB
 
 L01BAC9:
-.db $AB $21 $15 $19 $24 $19 $16 $FF
-.db $51 $58 $19 $05 $09 $0F $05 $0F
-.db $ED $00 $28 $2F $09 $14 $2E $9B
-.db $9B $9B $ED $EA
-
+.db ENCODE("「みなのものに ミラのかごが") $ED ENCODE("あらんことを···") $ED $EA
 L01BAE5:
-.db $AB $0C $20 $2F $FF $30 $5A $52
-.db $9B $9B $9B $ED $EA
+.db ENCODE("「すまん アルム···") $ED $EA
 
 L01BAF2:
-.db $AB $30 $5A $52 $FF $09 $0F $23
-.db $2F $27 $9B $9B $9B $ED $EA
+.db ENCODE("「アルム ごめんよ···") $ED $EA
 
 L01BB01:
-.db $AB $30 $5A $52 $FF $04 $2B $1A
-.db $04 $20 $03 $2E $ED $0B $2F $0B
-.db $0F $13 $2A $0D $0F $9B $9B $9B
-.db $9B $ED $EA
+.db ENCODE("「アルム おれはおまえを") $ED ENCODE("しんじてるぜ····") $ED $EA
 
 L01BB1C:
-.db $AB $00 $3F $00 $ED $25 $85 $1A
-.db $1F $29 $FF $01 $01 $04 $14 $09
-.db $1A $ED $15 $05 $0F $01 $06 $13
-.db $0F $06 $18 $99 $25 $ED $EB
+.db ENCODE("「あーあ") $ED ENCODE("やっぱり いいおとこは") $ED ENCODE("ながいきできねぇや") $ED $EB
 
 L01BB3B:
-.db $AB $21 $2F $15 $9B $9B $9B $ED
-.db $30 $5A $52 $2E $FF $20 $24 $85
-.db $13 $00 $08 $0F $13 $9B $9B $9B
-.db $ED $EA
+.db ENCODE("「みんな···") $ED ENCODE("アルムを まもってあげて···") $ED $EA
 
 L01BB55:
-.db $AB $09 $09 $2C $0A $0F $0B $FF
-.db $15 $05 $1A $0F $16 $ED $10 $04
-.db $2B $2A $2D $08 $16 $1A $9B $9B
-.db $9B $ED $EA
+.db ENCODE("「こころざし なかばに") $ED ENCODE("たおれるわけには···") $ED $EA
 
 L01BB70:
-.db $AB $20 $85 $10 $07 $9D $ED $44
-.db $0F $3B $0F $15 $2F $10 $0F $05
-.db $28 $9B $9B $9B $9B $ED $EB
+.db ENCODE("「まったく!") $ED ENCODE("ドジなんだから····") $ED $EB
 
 L01BB87:
-.db $AB $09 $0F $23 $2F $18 $FF $21
-.db $2F $15 $9B $9B $9B $9B $ED $EA
+.db ENCODE("「ごめんね みんな····") $ED $EA
 
 L01BB97:
-.db $AB $3D $59 $35 $0A $20 $ED $25
-.db $07 $16 $FF $10 $13 $15 $07 $13
-.db $ED $09 $0F $23 $2F $15 $0A $01
-.db $9B $9B $9B $9B $ED $EA
+.db ENCODE("「セリカさま") $ED ENCODE("やくに たてなくて") $ED ENCODE("ごめんなさい····") $ED $EA
 
 L01BBB5:
-.db $AB $10 $0F $96 $3F $ED $20 $85
-.db $10 $07 $FF $50 $47 $38 $10 $0F
-.db $0D $0F $99 $3F $ED $EB
+.db ENCODE("「だぁー") $ED ENCODE("まったく マヌケだぜぇー") $ED $EB
 
 L01BBCB:
-.db $AB $11 $85 $8E $1C $05 $07 $10
-.db $0F $85 $10 $9B $9B $9B $ED $EA
+.db ENCODE("「ちっ,ふかくだった···") $ED $EA
 
 L01BBDB:
-.db $AB $3D $59 $35 $0A $20 $ED $07
-.db $0B $0F $08 $11 $84 $FF $40 $0F
-.db $53 $10 $0F $27 $9D $ED $EA
+.db ENCODE("「セリカさま") $ED ENCODE("くじけちゃ ダメだよ!") $ED $EA
 
 L01BBF2:
-.db $AB $2D $05 $0F $0B $87 $02 $05
-.db $0F $01 $16 $FF $01 $85 $1D $1F
-.db $2F $19 $ED $07 $01 $15 $0B $9B
-.db $9B $9B $ED $EA
+.db ENCODE("「わがしょうがいに いっぺんの") $ED ENCODE("くいなし···") $ED $EA
 
 L01BC0E:
-.db $AB $00 $96 $8E $37 $5B $3F $4D
-.db $0F $ED $00 $15 $10 $14 $FF $01
-.db $85 $0B $87 $16 $ED $1D $01 $2D
-.db $15 $14 $06 $2E $FF $0C $09 $0F
-.db $0B $10 $05 $85 $10 $ED $EA
+.db ENCODE("「あぁ,クレーベ") $ED ENCODE("あなたと いっしょに") $ED ENCODE("へいわなときを すごしたかった") $ED $EA
 
 L01BC35:
-.db $AB $22 $8E $22 $18 $2F $9B $9B
-.db $9B $ED $EA
+.db ENCODE("「む,むねん···") $ED $EA
 
 L01BC40:
-.db $AB $4C $89 $8E $04 $2B $14 $0B
-.db $10 $09 $14 $05 $0F $ED $5B $4D
-.db $0F $5A $05 $0F $FF $1B $07 $05
-.db $85 $10 $27 $02 $10 $0F $0D $0F
-.db $ED $9B $9B $9B $9B $9B $ED $EA
+.db ENCODE("「フッ,おれとしたことが") $ED ENCODE("レベルが ひくかったようだぜ") $ED ENCODE("·····") $ED $EA
 
 L01BC68:
-.db $AB $01 $07 $0A $19 $15 $05 $13
-.db $0F $FF $0B $18 $2A $15 $28 $ED
-.db $1E $2F $24 $02 $9B $9B $9B $ED
-.db $EA
+.db ENCODE("「いくさのなかで しねるなら") $ED ENCODE("ほんもう···") $ED $EA
 
 L01BC81:
-.db $AB $2D $10 $0B $19 $FF $02 $2F
-.db $23 $01 $24 $12 $06 $10 $15 $ED
-.db $9B $9B $9B $9B $ED $EA
+.db ENCODE("「わたしの うんめいもつきたな") $ED ENCODE("····") $ED $EA
 
 L01BC97:
-.db $AB $34 $53 $A9 $28 $9B $9B $9B
-.db $ED $00 $14 $1A $FF $02 $20 $07
-.db $25 $2B $27 $9B $9B $9B $ED $EA
+.db ENCODE("「オメェら···") $ED ENCODE("あとは うまくやれよ···") $ED $EA
 
 L01BCAF:
-.db $AB $08 $85 $8E $15 $2F $13 $09
-.db $85 $10 $01 $9B $9B $9B $ED $EA
+.db ENCODE("「けっ,なんてこったい···") $ED $EA
 
 L01BCBF:
-.db $AB $2D $05 $0F $FF $20 $29 $87
-.db $07 $04 $27 $1A $0F $0C $0F $ED
-.db $09 $2B $24 $20 $10 $FF $0A $10
-.db $0F $23 $9B $9B $9B $05 $ED $EA
+.db ENCODE("「わが まりょくおよばず") $ED ENCODE("これもまた さだめ···か") $ED $EA
 
 L01BCDF:
-.db $AB $55 $40 $0F $3F $ED $20 $10
-.db $0F $FF $0B $16 $10 $07 $15 $01
-.db $27 $3F $ED $EA
+.db ENCODE("「ヤダー") $ED ENCODE("まだ しにたくないよー") $ED $EA
 
 L01BCF3:
-.db $AB $00 $00 $FF $3B $0F $3F $37
-.db $0A $20 $9B $9B $9B $ED $EA
+.db ENCODE("「ああ ジークさま···") $ED $EA
 
 L01BD02:
-.db $AB $00 $96 $8E $05 $03 $29 $10
-.db $05 $85 $10 $ED $1C $2A $0A $14
-.db $FF $30 $35 $48 $31 $30 $1D $9B
-.db $9B $9B $ED $EA
+.db ENCODE("「あぁ,かえりたかった") $ED ENCODE("ふるさと アカネイアへ···") $ED $EA
 
 L01BD1E:
-.db $AB $30 $4D $0F $5A $FF $ED $05
-.db $03 $2B $15 $07 $13 $FF $09 $0F
-.db $23 $2F $18 $ED $EA
+.db ENCODE("「アベル ") $ED ENCODE("かえれなくて ごめんね") $ED $EA
 
 L01BD33:
-.db $AB $04 $18 $03 $0A $20 $FF $09
-.db $0F $23 $2F $15 $0A $01 $9B $9B
-.db $ED $EA
+.db ENCODE("「おねえさま ごめんなさい··") $ED $EA
 
 L01BD45:
-.db $AB $0C $20 $15 $01 $FF $43 $A7
-.db $3F $40 $9B $9B $9B $ED $EA
+.db ENCODE("「すまない ティータ···") $ED $EA
 
 L01BD54:
-.db $AB $07 $85 $9B $9B $9B $FF $50
-.db $31 $3D $5F $23 $9D $ED $5A $44
-.db $0F $5A $4C $19 $09 $0D $05 $0F
-.db $2B $16 $ED $3E $4C $A7 $30 $2E
-.db $FF $02 $2A $12 $24 $29 $05 $ED
-.db $ED $00 $19 $FF $02 $28 $06 $0F
-.db $29 $24 $19 $23 $9D $9D $ED $ED
-.db $E8
+.db ENCODE("「くっ··· マイセンめ!") $ED ENCODE("ルドルフのこせがれに") $ED ENCODE("ソフィアを うるつもりか") $ED $ED ENCODE("あの うらぎりものめ!!") $ED $ED $E8
 
 L01BD8D:
-.db $AB $13 $23 $99 $28 $FF $01 $01
-.db $06 $16 $15 $2A $15 $27 $ED $04
-.db $2B $0A $20 $15 $2F $13 $FF $20
-.db $10 $0F $20 $10 $0F $ED $9B $9B
-.db $9B $9B $07 $0F $1C $85 $ED $ED
-.db $E8
+.db ENCODE("「てめぇら いいきになるなよ") $ED ENCODE("おれさまなんて まだまだ") $ED ENCODE("····ぐふっ") $ED $ED $E8
 
 L01BDB6:
-.db $AB $17 $8E $17 $05 $85 $10 $2D
-.db $9B $9B $9B $ED $ED $E8
+.db ENCODE("「ぬ,ぬかったわ···") $ED $ED $E8
 
 L01BDC4:
-.db $AB $30 $5A $52 $9B $9B $9B $9B
-.db $9B $ED $29 $85 $1A $1F $16 $FF
-.db $15 $85 $10 $15 $9B $9B $9B $ED
-.db $ED $50 $31 $3D $5F $14 $0F $19
-.db $16 $FF $00 $0C $0F $08 $10 $19
-.db $1A $ED $25 $1A $29 $20 $11 $05
-.db $0F $01 $13 $0F $1A $FF $15 $05
-.db $85 $10 $05 $9B $9B $9B $ED $ED
-.db $24 $1A $25 $FF $06 $12 $0F $01
-.db $13 $04 $2C $02 $ED $04 $20 $03
-.db $19 $FF $1E $2F $14 $02 $19 $15
-.db $1A $ED $FF $30 $5A $4A $0F $31
-.db $5F $9B $30 $5A $52 $9B $5A $44
-.db $0F $5A $4C $ED $ED $2D $10 $0B
-.db $19 $FF $9B $9B $9B $ED $10 $10
-.db $0F $1B $14 $29 $19 $9B $9B $9B
-.db $22 $0C $09 $15 $19 $10 $0F $9B
-.db $9B $9B $ED $ED $07 $0F $1C $85
-.db $9B $9B $ED $ED $01 $20 $1A $24
-.db $02 $FF $04 $04 $07 $1A $05 $10
-.db $2B $17 $9B $9B $9B $ED $ED $10
-.db $0F $05 $0F $FF $30 $5A $52 $27
-.db $ED $0A $01 $09 $0F $16 $FF $1B
-.db $14 $12 $10 $0F $08 $FF $10 $19
-.db $21 $05 $0F $00 $2A $ED $ED $51
-.db $58 $2E $1C $02 $0B $0F $10 $FF
-.db $00 $19 $0D $01 $08 $2F $ED $BB
-.db $4C $A6 $5A $3B $34 $5F $BC $13
-.db $0F $ED $44 $0F $3F $50 $2E $9B
-.db $9B $9B $ED $ED $0B $0F $84 $0B
-.db $2F $44 $0F $3F $50 $2E $ED $10
-.db $9B $04 $9B $0C $9B $19 $9B $10
-.db $0F $9B $9B $9B $9B $ED $ED $ED
-.db $E8
+.db ENCODE("「アルム·····") $ED ENCODE("りっぱに なったな···") $ED $ED ENCODE("マイセンどのに あずけたのは") $ED ENCODE("やはりまちがいでは なかったか···") $ED $ED ENCODE("もはや きづいておろう") $ED ENCODE("おまえの ほんとうのなは") $ED ENCODE(" アルバイン·アルム·ルドルフ") $ED $ED ENCODE("わたしの ···") $ED ENCODE("ただひとりの···むすこなのだ···") $ED $ED ENCODE("ぐふっ··") $ED $ED ENCODE("いまはもう おおくはかたれぬ···") $ED $ED ENCODE("だが アルムよ") $ED ENCODE("さいごに ひとつだけ たのみがある") $ED $ED ENCODE("ミラをふうじた あのせいけん") $ED ENCODE("[ファルシオン]で") $ED ENCODE("ドーマを···") $ED $ED ENCODE("じゃしんドーマを") $ED ENCODE("た·お·す·の·だ····") $ED $ED $ED $E8
 
 L01BECD:
-.db $AB $44 $0F $3F $50 $0A $20 $19
-.db $FF $11 $05 $28 $2E $0B $28 $17
-.db $ED $04 $2C $05 $24 $19 $27 $9B
-.db $9B $9B $ED $09 $02 $05 $01 $0C
-.db $2A $05 $0F $FF $27 $01 $2D $9B
-.db $9B $9B $ED $ED $E8
+.db ENCODE("「ドーマさまの ちからをしらぬ") $ED ENCODE("おろかものよ···") $ED ENCODE("こうかいするが よいわ···") $ED $ED $E8
 
 L01BEFA:
-.db $AB $09 $19 $2D $10 $0B $2E $FF
-.db $10 $04 $0C $14 $1A $ED $0A $0C
-.db $05 $0F $10 $0F $15 $9B $9B $9B
-.db $9B $9B $ED $1E $23 $13 $25 $2C
-.db $02 $9B $9B $9B $ED $ED $E8
+.db ENCODE("「このわたしを たおすとは") $ED ENCODE("さすがだな·····") $ED ENCODE("ほめてやろう···") $ED $ED $E8
 
 L01BF21:
-.db $AB $06 $0A $20 $28 $FF $01 $01
-.db $06 $16 $15 $2A $15 $27 $ED $9B
-.db $9B $9B $9B $9B $9B $ED $ED $E8
+.db ENCODE("「きさまら いいきになるなよ") $ED ENCODE("······") $ED $ED $E8
 
 L01BF39:
-.db $AB $0C $20 $15 $01 $FF $43 $A7
-.db $3F $40 $9B $9B $9B $ED $ED $E8
+.db ENCODE("「すまない ティータ···") $ED $ED $E8
 
 L01BF49:
-.db $AB $44 $0F $3F $50 $19 $05 $09
-.db $0F $05 $0F $FF $00 $28 $2F $09
-.db $14 $2E $ED $ED $E8
+.db ENCODE("「ドーマのかごが あらんことを") $ED $ED $E8
 
 L01BF5E:
-.db $AB $00 $96 $FF $2D $10 $0B $1A
-.db $01 $85 $10 $01 $9B $9B $9B $ED
-.db $16 $8E $16 $01 $0A $2F $9B $9B
-.db $9B $ED $ED $E8
+.db ENCODE("「あぁ わたしはいったい···") $ED ENCODE("に,にいさん···") $ED $ED $E8
 
 .db $00
 .db $D2

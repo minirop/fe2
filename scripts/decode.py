@@ -25,7 +25,8 @@ with open(f'{dir_path}/kana.tbl', 'r') as f:
 
 def decode(code):
     c = code.split(' ')
-    output = []
+    output = ["ENCODE(\""]
+    in_string = True
     for cc in c:
         match cc:
             case '0F':
@@ -33,11 +34,25 @@ def decode(code):
             case '1F':
                 output[-1] = maru[output[-1]]
             case 'FF':
+                if not in_string:
+                    in_string = True
+                    output += " ENCODE(\""
                 output += ' '
             case _:
-                output += mapping[cc]
+                if cc in mapping:
+                    if not in_string:
+                        in_string = True
+                        output += " ENCODE(\""
+                    output += mapping[cc]
+                else:
+                    if in_string:
+                        in_string = False
+                        output += "\")"
+                    output += f" ${cc}"
 
-    print ("ENCODE(\"{}\")".format(''.join(output)))
+    if in_string:
+        output += "\")"
+    print (''.join(output))
 
 
 # print: ENCODE("アルム")
