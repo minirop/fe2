@@ -3,1030 +3,265 @@
 
 .SECTION "Bank6" FORCE
 
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $06
-.db $07
-.db $16
-.db $17
-.db $06
-.db $07
-.db $16
-.db $17
-.db $02
-.db $03
-.db $12
-.db $13
-.db $02
-.db $03
-.db $12
-.db $13
-.db $46
-.db $47
-.db $56
-.db $57
-.db $64
-.db $65
-.db $74
-.db $75
-.db $08
-.db $09
-.db $18
-.db $19
-.db $08
-.db $09
-.db $18
-.db $19
-.db $6C
-.db $6D
-.db $7C
-.db $7D
-.db $66
-.db $67
-.db $76
-.db $77
-.db $00
-.db $01
-.db $10
-.db $11
-.db $00
-.db $01
-.db $10
-.db $11
-.db $0A
-.db $0B
-.db $1A
-.db $1B
-.db $0A
-.db $0B
-.db $1A
-.db $1B
-.db $22
-.db $23
-.db $32
-.db $33
-.db $22
-.db $23
-.db $32
-.db $33
-.db $24
-.db $25
-.db $34
-.db $35
-.db $24
-.db $25
-.db $34
-.db $35
-.db $20
-.db $21
-.db $30
-.db $31
-.db $20
-.db $21
-.db $30
-.db $31
-.db $40
-.db $41
-.db $50
-.db $51
-.db $60
-.db $61
-.db $70
-.db $71
-.db $0C
-.db $0D
-.db $1C
-.db $1D
-.db $0C
-.db $0D
-.db $1C
-.db $1D
-.db $0E
-.db $0F
-.db $1E
-.db $1F
-.db $0E
-.db $0F
-.db $1E
-.db $1F
-.db $2A
-.db $2B
-.db $3A
-.db $3B
-.db $2E
-.db $2F
-.db $3E
-.db $3F
-.db $26
-.db $27
-.db $36
-.db $37
-.db $62
-.db $63
-.db $72
-.db $73
-.db $68
-.db $69
-.db $78
-.db $79
-.db $68
-.db $69
-.db $78
-.db $79
-.db $44
-.db $45
-.db $54
-.db $55
-.db $4C
-.db $4D
-.db $5C
-.db $5D
-.db $42
-.db $43
-.db $52
-.db $53
-.db $6A
-.db $6B
-.db $7A
-.db $7B
-.db $28
-.db $29
-.db $38
-.db $39
-.db $4A
-.db $4B
-.db $5A
-.db $5B
-.db $48
-.db $49
-.db $58
-.db $59
-.db $48
-.db $49
-.db $58
-.db $59
-.db $2C
-.db $2D
-.db $3C
-.db $3D
-.db $4E
-.db $4F
-.db $5E
-.db $5F
-.db $04
-.db $05
-.db $14
-.db $15
-.db $04
-.db $05
-.db $14
-.db $15
-.db $C6
-.db $C6
-.db $C6
-.db $C6
-.db $C6
-.db $C6
-.db $D6
-.db $D6
-.db $C5
-.db $C5
-.db $C5
-.db $C5
-.db $80
-.db $80
-.db $90
-.db $90
-.db $BE
-.db $BF
-.db $BE
-.db $BF
-.db $FE
-.db $FE
-.db $A6
-.db $A6
-.db $FE
-.db $A7
-.db $A6
-.db $B7
-.db $A5
-.db $FE
-.db $B5
-.db $A6
-.db $FE
-.db $8D
-.db $8D
-.db $E2
-.db $8E
-.db $FE
-.db $9C
-.db $8E
-.db $9D
-.db $E2
-.db $FE
-.db $9D
-.db $9C
-.db $9E
-.db $9E
-.db $FE
-.db $8C
-.db $E2
-.db $E2
-.db $8C
-.db $9C
-.db $E4
-.db $E4
-.db $9C
-.db $8C
-.db $8B
-.db $8B
-.db $9C
-.db $9B
-.db $9C
-.db $8C
-.db $9B
-.db $8C
-.db $E3
-.db $E2
-.db $E3
-.db $8C
-.db $E2
-.db $E5
-.db $E5
-.db $81
-.db $82
-.db $91
-.db $92
-.db $6E
-.db $7E
-.db $7E
-.db $7E
-.db $7E
-.db $7E
-.db $7E
-.db $6E
-.db $A4
-.db $A4
-.db $7E
-.db $6E
-.db $6E
-.db $7E
-.db $B4
-.db $B4
-.db $A3
-.db $7E
-.db $A3
-.db $7E
-.db $7E
-.db $B3
-.db $7E
-.db $B3
-.db $A3
-.db $7E
-.db $B8
-.db $B4
-.db $7E
-.db $B3
-.db $B4
-.db $B9
-.db $A8
-.db $A4
-.db $A3
-.db $7E
-.db $A4
-.db $A9
-.db $7E
-.db $B3
-.db $7E
-.db $7E
-.db $7E
-.db $7E
-.db $F0
-.db $E0
-.db $F0
-.db $E0
-.db $F0
-.db $F1
-.db $F0
-.db $F1
-.db $F1
-.db $F1
-.db $F1
-.db $F1
-.db $F1
-.db $E0
-.db $F1
-.db $E0
-.db $BA
-.db $BA
-.db $BA
-.db $BA
-.db $A4
-.db $A4
-.db $BA
-.db $BA
-.db $BA
-.db $BA
-.db $B4
-.db $B4
-.db $A3
-.db $BA
-.db $A3
-.db $BA
-.db $BA
-.db $B3
-.db $BA
-.db $B3
-.db $A3
-.db $BA
-.db $B8
-.db $B4
-.db $BA
-.db $B3
-.db $B4
-.db $B9
-.db $A8
-.db $A4
-.db $A3
-.db $BA
-.db $A4
-.db $A9
-.db $BA
-.db $B3
-.db $A3
-.db $B3
-.db $A3
-.db $B3
-.db $A4
-.db $A4
-.db $B4
-.db $B4
-.db $C9
-.db $CA
-.db $D9
-.db $DA
-.db $A5
-.db $FE
-.db $8C
-.db $A5
-.db $FE
-.db $A7
-.db $A7
-.db $9C
-.db $A5
-.db $FE
-.db $8C
-.db $A5
-.db $FE
-.db $A7
-.db $A7
-.db $9C
-.db $B6
-.db $B6
-.db $B6
-.db $B6
-.db $AB
-.db $AB
-.db $B6
-.db $B6
-.db $B6
-.db $B6
-.db $A1
-.db $A1
-.db $B2
-.db $B6
-.db $B2
-.db $B6
-.db $B6
-.db $B0
-.db $B6
-.db $B0
-.db $A2
-.db $B6
-.db $FE
-.db $A2
-.db $B6
-.db $A0
-.db $A0
-.db $FE
-.db $BB
-.db $AC
-.db $AC
-.db $B6
-.db $AA
-.db $BB
-.db $B6
-.db $AA
-.db $AA
-.db $AB
-.db $B6
-.db $B6
-.db $AB
-.db $AC
-.db $B6
-.db $B6
-.db $BB
-.db $AB
-.db $AC
-.db $B6
-.db $AB
-.db $BB
-.db $B6
-.db $AA
-.db $99
-.db $CB
-.db $99
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $89
-.db $CB
-.db $89
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $BD
-.db $BD
-.db $BD
-.db $BD
-.db $06
-.db $07
-.db $16
-.db $17
-.db $06
-.db $07
-.db $16
-.db $17
-.db $02
-.db $03
-.db $12
-.db $13
-.db $02
-.db $03
-.db $12
-.db $13
-.db $46
-.db $47
-.db $56
-.db $57
-.db $64
-.db $65
-.db $74
-.db $75
-.db $08
-.db $09
-.db $18
-.db $19
-.db $08
-.db $09
-.db $18
-.db $19
-.db $6C
-.db $6D
-.db $7C
-.db $7D
-.db $66
-.db $67
-.db $76
-.db $77
-.db $00
-.db $01
-.db $10
-.db $11
-.db $00
-.db $01
-.db $10
-.db $11
-.db $0A
-.db $0B
-.db $1A
-.db $1B
-.db $0A
-.db $0B
-.db $1A
-.db $1B
-.db $22
-.db $23
-.db $32
-.db $33
-.db $22
-.db $23
-.db $32
-.db $33
-.db $24
-.db $25
-.db $34
-.db $35
-.db $24
-.db $25
-.db $34
-.db $35
-.db $20
-.db $21
-.db $30
-.db $31
-.db $20
-.db $21
-.db $30
-.db $31
-.db $40
-.db $41
-.db $50
-.db $51
-.db $60
-.db $61
-.db $70
-.db $71
-.db $0C
-.db $0D
-.db $1C
-.db $1D
-.db $0C
-.db $0D
-.db $1C
-.db $1D
-.db $0E
-.db $0F
-.db $1E
-.db $1F
-.db $0E
-.db $0F
-.db $1E
-.db $1F
-.db $2A
-.db $2B
-.db $3A
-.db $3B
-.db $2E
-.db $2F
-.db $3E
-.db $3F
-.db $26
-.db $27
-.db $36
-.db $37
-.db $62
-.db $63
-.db $72
-.db $73
-.db $68
-.db $69
-.db $78
-.db $79
-.db $68
-.db $69
-.db $78
-.db $79
-.db $44
-.db $45
-.db $54
-.db $55
-.db $4C
-.db $4D
-.db $5C
-.db $5D
-.db $42
-.db $43
-.db $52
-.db $53
-.db $6A
-.db $6B
-.db $7A
-.db $7B
-.db $28
-.db $29
-.db $38
-.db $39
-.db $4A
-.db $4B
-.db $5A
-.db $5B
-.db $48
-.db $49
-.db $58
-.db $59
-.db $48
-.db $49
-.db $58
-.db $59
-.db $2C
-.db $2D
-.db $3C
-.db $3D
-.db $4E
-.db $4F
-.db $5E
-.db $5F
-.db $04
-.db $05
-.db $14
-.db $15
-.db $04
-.db $05
-.db $14
-.db $15
-.db $BD
-.db $8A
-.db $BD
-.db $DF
-.db $A6
-.db $A6
-.db $A6
-.db $A6
-.db $FE
-.db $8D
-.db $8D
-.db $E2
-.db $8E
-.db $FE
-.db $9C
-.db $8E
-.db $9D
-.db $E2
-.db $FE
-.db $9D
-.db $9C
-.db $9E
-.db $9E
-.db $FE
-.db $8C
-.db $E2
-.db $E2
-.db $8C
-.db $9C
-.db $E4
-.db $E4
-.db $9C
-.db $8C
-.db $8B
-.db $8B
-.db $9C
-.db $9B
-.db $9C
-.db $8C
-.db $9B
-.db $8C
-.db $E3
-.db $E2
-.db $E3
-.db $8C
-.db $E2
-.db $E5
-.db $E5
-.db $CE
-.db $CE
-.db $DE
-.db $DE
-.db $CE
-.db $8A
-.db $DE
-.db $CF
-.db $6F
-.db $6F
-.db $7F
-.db $7F
-.db $BD
-.db $DF
-.db $C0
-.db $DF
-.db $8A
-.db $BD
-.db $8A
-.db $C0
-.db $C7
-.db $C7
-.db $C7
-.db $C7
-.db $94
-.db $94
-.db $C0
-.db $C0
-.db $84
-.db $84
-.db $8A
-.db $8A
-.db $94
-.db $94
-.db $C0
-.db $C0
-.db $94
-.db $94
-.db $C0
-.db $FF
-.db $94
-.db $94
-.db $FF
-.db $FF
-.db $94
-.db $94
-.db $FF
-.db $C0
-.db $FE
-.db $FE
-.db $BE
-.db $8A
-.db $FE
-.db $FE
-.db $8A
-.db $8A
-.db $FE
-.db $FE
-.db $8A
-.db $BF
-.db $BE
-.db $8A
-.db $93
-.db $8A
-.db $BE
-.db $8A
-.db $BE
-.db $8A
-.db $8A
-.db $BF
-.db $8A
-.db $BF
-.db $8A
-.db $BF
-.db $8A
-.db $DB
-.db $85
-.db $85
-.db $AE
-.db $AE
-.db $F0
-.db $E0
-.db $F0
-.db $E0
-.db $AD
-.db $AD
-.db $AD
-.db $AD
-.db $BD
-.db $BD
-.db $C0
-.db $C0
-.db $BD
-.db $BD
-.db $E8
-.db $C0
-.db $E9
-.db $EC
-.db $EB
-.db $EA
-.db $9A
-.db $B1
-.db $BC
-.db $C8
-.db $8A
-.db $BD
-.db $8A
-.db $BD
-.db $BD
-.db $BD
-.db $BD
-.db $E8
-.db $BD
-.db $BD
-.db $C0
-.db $BD
-.db $BD
-.db $E9
-.db $BD
-.db $EB
-.db $EC
-.db $C0
-.db $EA
-.db $D0
-.db $BD
-.db $DF
-.db $BD
-.db $DF
-.db $C0
-.db $C0
-.db $D0
-.db $D0
-.db $C0
-.db $BD
-.db $D0
-.db $BD
-.db $BD
-.db $BD
-.db $BD
-.db $BD
-.db $BD
-.db $BD
-.db $C0
-.db $95
-.db $BD
-.db $BD
-.db $95
-.db $C0
-.db $DF
-.db $E1
-.db $DF
-.db $E1
-.db $8A
-.db $8A
-.db $8A
-.db $8A
-.db $FE
-.db $FE
-.db $D5
-.db $FE
-.db $C7
-.db $C7
-.db $D7
-.db $D7
-.db $FE
-.db $FE
-.db $FE
-.db $FE
-.db $CF
-.db $8A
-.db $CF
-.db $8A
-.db $8A
-.db $8A
-.db $CF
-.db $8A
-.db $D5
-.db $C5
-.db $D5
-.db $C5
-.db $D5
-.db $FE
-.db $D5
-.db $FE
-.db $C5
-.db $C5
-.db $D5
-.db $C5
-.db $D5
-.db $D1
-.db $D5
-.db $D1
-.db $83
-.db $83
-.db $83
-.db $83
-.db $FE
-.db $FE
-.db $D5
-.db $D1
-.db $C1
-.db $C1
-.db $C0
-.db $C0
-.db $E1
-.db $DF
-.db $E1
-.db $DF
-.db $C1
-.db $C1
-.db $E1
-.db $E8
-.db $C1
-.db $C1
-.db $C0
-.db $E1
-.db $88
-.db $AD
-.db $EE
-.db $AF
-.db $AD
-.db $AD
-.db $AF
-.db $AD
-.db $AD
-.db $88
-.db $AD
-.db $EE
-.db $F2
-.db $F2
-.db $F2
-.db $F2
-.db $88
-.db $88
-.db $EE
-.db $F2
-.db $88
-.db $88
-.db $F2
-.db $EE
-.db $EE
-.db $AF
-.db $EE
-.db $AF
-.db $AD
-.db $EE
-.db $AD
-.db $EE
-.db $AD
-.db $88
-.db $AD
-.db $F2
-.db $88
-.db $88
-.db $F2
-.db $F2
-.db $88
-.db $88
-.db $F2
-.db $95
-.db $EF
-.db $F2
-.db $EF
-.db $F2
-.db $88
-.db $AF
-.db $F2
-.db $AF
-.db $86
-.db $87
-.db $96
-.db $97
-.db $D6
-.db $D6
-.db $D6
-.db $D6
-.db $A6
-.db $A6
-.db $A6
-.db $A6
-.db $CC
-.db $CD
-.db $DC
-.db $DD
-.db $C9
-.db $CA
-.db $D9
-.db $DA
-.db $D4
-.db $D4
-.db $D4
-.db $D4
-.db $D8
-.db $D4
-.db $D8
-.db $D4
-.db $FE
-.db $C4
-.db $C4
-.db $FE
-.db $D4
-.db $D4
-.db $D8
-.db $D4
-.db $C2
-.db $C3
-.db $D4
-.db $D4
-.db $D4
-.db $D4
-.db $D2
-.db $D3
-.db $C2
-.db $D4
-.db $D2
-.db $D4
-.db $D4
-.db $C3
-.db $D4
-.db $D3
-.db $D4
-.db $D3
-.db $D3
-.db $FE
-.db $D2
-.db $D4
-.db $FE
-.db $D2
-.db $FE
-.db $C2
-.db $C2
-.db $D4
-.db $C3
-.db $FE
-.db $D4
-.db $C3
-.db $98
-.db $8F
-.db $9F
-.db $E6
-.db $E7
-.db $E7
-.db $ED
-.db $ED
+; meta tiles
+; 4 bytes = a 2x2 tile
+.db $FF $FF $FF $FF
+.db $FF $FF $FF $FF
+.db $06 $07 $16 $17
+.db $06 $07 $16 $17
+.db $02 $03 $12 $13
+.db $02 $03 $12 $13
+.db $46 $47 $56 $57
+.db $64 $65 $74 $75
+.db $08 $09 $18 $19
+.db $08 $09 $18 $19
+.db $6C $6D $7C $7D
+.db $66 $67 $76 $77
+.db $00 $01 $10 $11
+.db $00 $01 $10 $11
+.db $0A $0B $1A $1B
+.db $0A $0B $1A $1B
+.db $22 $23 $32 $33
+.db $22 $23 $32 $33
+.db $24 $25 $34 $35
+.db $24 $25 $34 $35
+.db $20 $21 $30 $31
+.db $20 $21 $30 $31
+.db $40 $41 $50 $51
+.db $60 $61 $70 $71
+.db $0C $0D $1C $1D
+.db $0C $0D $1C $1D
+.db $0E $0F $1E $1F
+.db $0E $0F $1E $1F
+.db $2A $2B $3A $3B
+.db $2E $2F $3E $3F
+.db $26 $27 $36 $37
+.db $62 $63 $72 $73
+.db $68 $69 $78 $79
+.db $68 $69 $78 $79
+.db $44 $45 $54 $55
+.db $4C $4D $5C $5D
+.db $42 $43 $52 $53
+.db $6A $6B $7A $7B
+.db $28 $29 $38 $39
+.db $4A $4B $5A $5B
+.db $48 $49 $58 $59
+.db $48 $49 $58 $59
+.db $2C $2D $3C $3D
+.db $4E $4F $5E $5F
+.db $04 $05 $14 $15
+.db $04 $05 $14 $15
+.db $C6 $C6 $C6 $C6
+.db $C6 $C6 $D6 $D6
+.db $C5 $C5 $C5 $C5
+.db $80 $80 $90 $90
+.db $BE $BF $BE $BF
+.db $FE $FE $A6 $A6
+.db $FE $A7 $A6 $B7
+.db $A5 $FE $B5 $A6
+.db $FE $8D $8D $E2
+.db $8E $FE $9C $8E
+.db $9D $E2 $FE $9D
+.db $9C $9E $9E $FE
+.db $8C $E2 $E2 $8C
+.db $9C $E4 $E4 $9C
+.db $8C $8B $8B $9C
+.db $9B $9C $8C $9B
+.db $8C $E3 $E2 $E3
+.db $8C $E2 $E5 $E5
+.db $81 $82 $91 $92
+.db $6E $7E $7E $7E
+.db $7E $7E $7E $6E
+.db $A4 $A4 $7E $6E
+.db $6E $7E $B4 $B4
+.db $A3 $7E $A3 $7E
+.db $7E $B3 $7E $B3
+.db $A3 $7E $B8 $B4
+.db $7E $B3 $B4 $B9
+.db $A8 $A4 $A3 $7E
+.db $A4 $A9 $7E $B3
+.db $7E $7E $7E $7E
+.db $F0 $E0 $F0 $E0
+.db $F0 $F1 $F0 $F1
+.db $F1 $F1 $F1 $F1
+.db $F1 $E0 $F1 $E0
+.db $BA $BA $BA $BA
+.db $A4 $A4 $BA $BA
+.db $BA $BA $B4 $B4
+.db $A3 $BA $A3 $BA
+.db $BA $B3 $BA $B3
+.db $A3 $BA $B8 $B4
+.db $BA $B3 $B4 $B9
+.db $A8 $A4 $A3 $BA
+.db $A4 $A9 $BA $B3
+.db $A3 $B3 $A3 $B3
+.db $A4 $A4 $B4 $B4
+.db $C9 $CA $D9 $DA
+.db $A5 $FE $8C $A5
+.db $FE $A7 $A7 $9C
+.db $A5 $FE $8C $A5
+.db $FE $A7 $A7 $9C
+.db $B6 $B6 $B6 $B6
+.db $AB $AB $B6 $B6
+.db $B6 $B6 $A1 $A1
+.db $B2 $B6 $B2 $B6
+.db $B6 $B0 $B6 $B0
+.db $A2 $B6 $FE $A2
+.db $B6 $A0 $A0 $FE
+.db $BB $AC $AC $B6
+.db $AA $BB $B6 $AA
+.db $AA $AB $B6 $B6
+.db $AB $AC $B6 $B6
+.db $BB $AB $AC $B6
+.db $AB $BB $B6 $AA
+.db $99 $CB $99 $CB
+.db $CB $CB $CB $CB
+.db $CB $89 $CB $89
+.db $FF $FF $FF $FF
+.db $BD $BD $BD $BD
+.db $06 $07 $16 $17
+.db $06 $07 $16 $17
+.db $02 $03 $12 $13
+.db $02 $03 $12 $13
+.db $46 $47 $56 $57
+.db $64 $65 $74 $75
+.db $08 $09 $18 $19
+.db $08 $09 $18 $19
+.db $6C $6D $7C $7D
+.db $66 $67 $76 $77
+.db $00 $01 $10 $11
+.db $00 $01 $10 $11
+.db $0A $0B $1A $1B
+.db $0A $0B $1A $1B
+.db $22 $23 $32 $33
+.db $22 $23 $32 $33
+.db $24 $25 $34 $35
+.db $24 $25 $34 $35
+.db $20 $21 $30 $31
+.db $20 $21 $30 $31
+.db $40 $41 $50 $51
+.db $60 $61 $70 $71
+.db $0C $0D $1C $1D
+.db $0C $0D $1C $1D
+.db $0E $0F $1E $1F
+.db $0E $0F $1E $1F
+.db $2A $2B $3A $3B
+.db $2E $2F $3E $3F
+.db $26 $27 $36 $37
+.db $62 $63 $72 $73
+.db $68 $69 $78 $79
+.db $68 $69 $78 $79
+.db $44 $45 $54 $55
+.db $4C $4D $5C $5D
+.db $42 $43 $52 $53
+.db $6A $6B $7A $7B
+.db $28 $29 $38 $39
+.db $4A $4B $5A $5B
+.db $48 $49 $58 $59
+.db $48 $49 $58 $59
+.db $2C $2D $3C $3D
+.db $4E $4F $5E $5F
+.db $04 $05 $14 $15
+.db $04 $05 $14 $15
+.db $BD $8A $BD $DF
+.db $A6 $A6 $A6 $A6
+.db $FE $8D $8D $E2
+.db $8E $FE $9C $8E
+.db $9D $E2 $FE $9D
+.db $9C $9E $9E $FE
+.db $8C $E2 $E2 $8C
+.db $9C $E4 $E4 $9C
+.db $8C $8B $8B $9C
+.db $9B $9C $8C $9B
+.db $8C $E3 $E2 $E3
+.db $8C $E2 $E5 $E5
+.db $CE $CE $DE $DE
+.db $CE $8A $DE $CF
+.db $6F $6F $7F $7F
+.db $BD $DF $C0 $DF
+.db $8A $BD $8A $C0
+.db $C7 $C7 $C7 $C7
+.db $94 $94 $C0 $C0
+.db $84 $84 $8A $8A
+.db $94 $94 $C0 $C0
+.db $94 $94 $C0 $FF
+.db $94 $94 $FF $FF
+.db $94 $94 $FF $C0
+.db $FE $FE $BE $8A
+.db $FE $FE $8A $8A
+.db $FE $FE $8A $BF
+.db $BE $8A $93 $8A
+.db $BE $8A $BE $8A
+.db $8A $BF $8A $BF
+.db $8A $BF $8A $DB
+.db $85 $85 $AE $AE
+.db $F0 $E0 $F0 $E0
+.db $AD $AD $AD $AD
+.db $BD $BD $C0 $C0
+.db $BD $BD $E8 $C0
+.db $E9 $EC $EB $EA
+.db $9A $B1 $BC $C8
+.db $8A $BD $8A $BD
+.db $BD $BD $BD $E8
+.db $BD $BD $C0 $BD
+.db $BD $E9 $BD $EB
+.db $EC $C0 $EA $D0
+.db $BD $DF $BD $DF
+.db $C0 $C0 $D0 $D0
+.db $C0 $BD $D0 $BD
+.db $BD $BD $BD $BD
+.db $BD $BD $C0 $95
+.db $BD $BD $95 $C0
+.db $DF $E1 $DF $E1
+.db $8A $8A $8A $8A
+.db $FE $FE $D5 $FE
+.db $C7 $C7 $D7 $D7
+.db $FE $FE $FE $FE
+.db $CF $8A $CF $8A
+.db $8A $8A $CF $8A
+.db $D5 $C5 $D5 $C5
+.db $D5 $FE $D5 $FE
+.db $C5 $C5 $D5 $C5
+.db $D5 $D1 $D5 $D1
+.db $83 $83 $83 $83
+.db $FE $FE $D5 $D1
+.db $C1 $C1 $C0 $C0
+.db $E1 $DF $E1 $DF
+.db $C1 $C1 $E1 $E8
+.db $C1 $C1 $C0 $E1
+.db $88 $AD $EE $AF
+.db $AD $AD $AF $AD
+.db $AD $88 $AD $EE
+.db $F2 $F2 $F2 $F2
+.db $88 $88 $EE $F2
+.db $88 $88 $F2 $EE
+.db $EE $AF $EE $AF
+.db $AD $EE $AD $EE
+.db $AD $88 $AD $F2
+.db $88 $88 $F2 $F2
+.db $88 $88 $F2 $95
+.db $EF $F2 $EF $F2
+.db $88 $AF $F2 $AF
+.db $86 $87 $96 $97
+.db $D6 $D6 $D6 $D6
+.db $A6 $A6 $A6 $A6
+.db $CC $CD $DC $DD
+.db $C9 $CA $D9 $DA
+.db $D4 $D4 $D4 $D4
+.db $D8 $D4 $D8 $D4
+.db $FE $C4 $C4 $FE
+.db $D4 $D4 $D8 $D4
+.db $C2 $C3 $D4 $D4
+.db $D4 $D4 $D2 $D3
+.db $C2 $D4 $D2 $D4
+.db $D4 $C3 $D4 $D3
+.db $D4 $D3 $D3 $FE
+.db $D2 $D4 $FE $D2
+.db $FE $C2 $C2 $D4
+.db $C3 $FE $D4 $C3
+.db $98 $8F $9F $E6
+.db $E7 $E7 $ED $ED
+
 .db $00
 .db $00
 .db $00

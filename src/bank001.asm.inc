@@ -4609,6 +4609,7 @@ L01AEA9:
 .db $20
 .db $40
 .db $80
+
 L01AEB1:
     LDA #175
     STA $01
@@ -4623,14 +4624,11 @@ L01AEBC:
     STA $00
     JMP L01AECF.w
 
-.db $A9
-.db $AF
-.db $85
-.db $01
-.db $A9
-.db $5E
-.db $85
-.db $00
+L01AEC7:
+    LDA #175
+    STA $01
+    LDA #94
+    STA $00
 L01AECF:
     LDX $049D
     LDA L01AF43.w,X
@@ -4831,7 +4829,7 @@ L01AFF2:
     BNE L01B00E
     LDA $0362
     BEQ L01B00E
-	LDA #13
+    LDA #13
     STA $0387
     BNE L01B011
 L01B00E:
@@ -5277,20 +5275,17 @@ L01B277:
     INC $0387
     RTS
 
-.db $A0
-.db $00
-.db $B1
-.db $00
-.db $9D
-.db $81
-.db $07
-.db $C8
-.db $E8
-.db $C6
-.db $02
-.db $D0
-.db $F5
-.db $60
+L01B29D:
+    LDY #0
+L01B29F:
+    LDA ($00),Y
+    STA $0781,X
+    INY
+    INX
+    DEC $02
+    BNE L01B29F
+    RTS
+
 .db $A9
 .db $DE
 .db $22
@@ -5322,7 +5317,7 @@ L01B2BB:
 L01B2D4:
     LDA $0362
     BEQ L01B2DA
-	RTS
+    RTS
 
 L01B2DA:
     LDA $030B
@@ -5674,7 +5669,7 @@ L01B55A:
     LDY #1
     BNE L01B560
 L01B55E:
-	LDY #0
+    LDY #0
 L01B560:
     STY $7DC2
 L01B563:
@@ -5839,7 +5834,7 @@ L01B696:
     JMP L01B518.w
 
 L01B6A4:
-	JMP L01B5C3.w
+    JMP L01B5C3.w
 
 L01B6A7:
 .dw $7E8B

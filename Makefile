@@ -4,7 +4,7 @@ ROM=fe2
 
 COBJ=game.obj
 
-all: $(ROM).nes
+all: clean $(ROM).nes
 
 $(COBJ): src/main.s encoding
 	$(AS) -I src -I bin -x -v -o $@ $<
@@ -32,4 +32,5 @@ encoding:
 	@python scripts/preprocess.py src/bank015.asm.inc src/bank015.asm
 
 clean:
+	rm -f src/*.asm
 	rm -f $(ROM).nes $(COBJ)
