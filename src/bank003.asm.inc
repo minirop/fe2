@@ -340,7 +340,7 @@ L038202:
     TAX
     LDA L0FEEB8.w,X
     STA $A1
-    LDA L0FEEB9.w,X
+    LDA (L0FEEB8.w + 1),X
     STA $A2
     PLA
     TAX
@@ -351,14 +351,13 @@ L038211:
     PHA
     CMP #30
     BMI L038219
-.db $A9
-.db $00
+    LDA #0
 L038219:
     ASL
     TAX
     LDA L0FEE5E.w,X
     STA $04
-    LDA L0FEE5F.w,X
+    LDA (L0FEE5E.w + 1),X
     STA $05
     PLA
     TAX
@@ -436,12 +435,9 @@ L03827F:
     LDA $7448
     CMP #255
     BNE L038299
-.db $A5
-.db $B3
-.db $D0
-.db $17
-.db $F0
-.db $2E
+    LDA $B3
+    BNE L0382AE
+    BEQ L0382C7
 L038299:
     LDA #0
     STA $B2
@@ -453,16 +449,11 @@ L038299:
     JSR L03868E.w
     JMP L0382B8.w
 
-.db $A9
-.db $02
-.db $85
-.db $B2
-.db $8E
-.db $83
-.db $05
-.db $20
-.db $8A
-.db $8A
+L0382AE:
+    LDA #2
+    STA $B2
+    STX $0583
+    JSR L038A8A.w
 L0382B8:
     LDA #1
     STA $054D
@@ -852,14 +843,12 @@ L038589:
     AND #3
     STA $B1
     JSR L0FC34C.w
-.db $9A
-.db $85
-.db $DB
-.db $85
-.db $07
-.db $86
-.db $9A
-.db $85
+
+.dw L03859A
+.dw L0385DB
+.dw L038607
+.dw L03859A
+
 L03859A:
     LDA $B2
     AND #128
@@ -923,25 +912,18 @@ L0385FA:
 L038606:
     RTS
 
-.db $20
-.db $4C
-.db $82
-.db $A0
-.db $12
-.db $B1
-.db $02
-.db $C9
-.db $FF
-.db $D0
-.db $07
-.db $A9
-.db $00
-.db $85
-.db $B1
-.db $4C
-.db $D0
-.db $85
-.db $60
+L038607:
+    JSR L03824C.w
+    LDY #18
+    LDA ($02),Y
+    CMP #255
+    BNE L038619
+    LDA #0
+    STA $B1
+    JMP L0385D0.w
+L038619:
+    RTS
+
 L03861A:
     LDY #19
     LDA ($A3),Y
@@ -995,11 +977,8 @@ L038665:
     LDA L0FE1D9.w,Y
     BNE L03867E
 L038676:
-.db $B9
-.db $A1
-.db $E1
-.db $D0
-.db $03
+    LDA L0FE1A1.w,Y
+    BNE L03867E
 L03867B:
     LDA L0FE1D1.w,Y
 L03867E:
@@ -1068,9 +1047,7 @@ L0386EA:
     LDA L038770.w,X
     CMP #3
     BEQ L038711
-.db $4C
-.db $15
-.db $87
+    JMP L038715.w
 L0386FB:
     CPY #20
     BEQ L038707
@@ -1107,13 +1084,10 @@ L038721:
     LDA ($A3),Y
     CMP #56
     BNE L038744
-.db $A9
-.db $05
-.db $18
-.db $65
-.db $C5
-.db $85
-.db $C5
+    LDA #5
+    CLC
+    ADC $C5
+    STA $C5
 L038744:
     LDA #2
     STA $BE
@@ -1292,7 +1266,7 @@ L038843:
     TAX
     LDA L0FEE5E.w,X
     STA $04
-    LDA L0FEE5F.w,X
+    LDA (L0FEE5E.w + 1),X
     STA $05
     LDA ($04),Y
     TAY
@@ -1330,7 +1304,7 @@ L03887C:
     TAY
     LDA L0FDAE4.w,Y
     STA $00
-    LDA L0FDAE5.w,Y
+    LDA (L0FDAE4.w + 1),Y
     STA $01
     LDY #0
 L0388A0:
@@ -1392,8 +1366,7 @@ L0388F7:
 L0388FF:
     CMP #50
     BNE L03890A
-.db $A9
-.db $07
+    LDA #7
 L038905:
     CLC
     ADC $A9
@@ -1515,9 +1488,7 @@ L0389C2:
     LDA L038770.w,X
     CMP #3
     BEQ L0389E7
-.db $4C
-.db $EB
-.db $89
+    JMP L0389EB.w
 L0389D2:
     CPY #20
     BEQ L0389DE
@@ -1586,8 +1557,7 @@ L038A3C:
 L038A44:
     CMP #50
     BNE L038A4F
-.db $A9
-.db $07
+    LDA #7
 L038A4A:
     CLC
     ADC $A9
@@ -1641,10 +1611,8 @@ L038A8A:
     LDA ($A3),Y
     CMP #19
     BNE L038AA1
-.db $A9
-.db $03
-.db $D0
-.db $02
+    LDA #3
+    BNE L038AA3
 L038AA1:
     LDA #0
 L038AA3:
@@ -1795,14 +1763,12 @@ L038BB2:
 L038BB3:
     LDA $B1
     JSR L0FC34C.w
-.db $F7
-.db $8B
-.db $C0
-.db $8B
-.db $DF
-.db $8B
-.db $0A
-.db $8C
+
+.dw L038BF7
+.dw L038BC0
+.dw L038BDF
+.dw L038C0A
+
 L038BC0:
     LDA $052E
     CMP #15
@@ -1821,30 +1787,17 @@ L038BC0:
 L038BDC:
     JMP L038C21.w
 
-.db $AD
-.db $33
-.db $05
-.db $0D
-.db $34
-.db $05
-.db $0D
-.db $35
-.db $05
-.db $0D
-.db $36
-.db $05
-.db $0D
-.db $37
-.db $05
-.db $29
-.db $A0
-.db $C9
-.db $A0
-.db $F0
-.db $29
-.db $4C
-.db $21
-.db $8C
+L038BDF:
+    LDA $0533
+    ORA $0534
+    ORA $0535
+    ORA $0536
+    ORA $0537
+    AND #160
+    CMP #160
+    BEQ L038C1D
+    JMP L038C21.w
+
 L038BF7:
     LDA $0534
     ORA $0535
@@ -1895,7 +1848,7 @@ L038C35:
     CLC
     ADC $C6
     STA $C6
-    LDA L038C7D.w,X
+    LDA (L038C7C.w + 1),X
     CLC
     ADC $C7
     STA $C7
@@ -1929,25 +1882,17 @@ L038C74:
     RTS
 
 L038C7C:
-.db $00
-L038C7D:
-.db $01
-.db $FF
-.db $00
-.db $00
-.db $FF
-.db $01
-.db $00
+.db $00 $01
+.db $FF $00
+.db $00 $FF
+.db $01 $00
+
 L038C84:
-.db $00
-L038C85:
-.db $FF
-.db $01
-.db $00
-.db $00
-.db $01
-.db $FF
-.db $00
+.db $00 $FF
+.db $01 $00
+.db $00 $01
+.db $FF $00
+
 L038C8C:
     LDA $0538
     STA $C6
@@ -1990,7 +1935,7 @@ L038CAF:
     CLC
     ADC $C6
     STA $C6
-    LDA L038C85.w,X
+    LDA (L038C84.w + 1),X
     CLC
     ADC $C7
     STA $C7
@@ -2052,7 +1997,7 @@ L038D33:
     CLC
     ADC $C6
     STA $C6
-    LDA L038C7D.w,X
+    LDA (L038C7C.w + 1),X
     CLC
     ADC $C7
     STA $C7
@@ -2385,7 +2330,7 @@ L038F61:
     TAY
     LDA L0FEE5E.w,Y
     STA $04
-    LDA L0FEE5F.w,Y
+    LDA (L0FEE5E.w + 1),Y
     STA $05
     LDY $B8
     LDA ($04),Y

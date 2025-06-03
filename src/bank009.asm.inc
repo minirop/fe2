@@ -1855,7 +1855,7 @@ L098AC2:
     TAX
     LDA L0FDAE4.w,X
     STA $00
-    LDA L0FDAE5.w,X
+    LDA (L0FDAE4.w + 1),X
     STA $01
     LDX $0382
     JSR L0FC9B6.w

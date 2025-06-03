@@ -7586,7 +7586,7 @@ L089DF9:
     TAX
     LDA L0FEEF4.w,X
     STA $01
-    LDA L0FEEF5.w,X
+    LDA (L0FEEF4.w + 1),X
     STA $00
     RTS
 
@@ -8350,7 +8350,7 @@ L08A31B:
     TAY
     LDA L0FED04.w,Y
     STA $00
-    LDA L0FED05.w,Y
+    LDA (L0FED04.w + 1),Y
     STA $01
     LDY #0
 L08A356:
@@ -8755,7 +8755,7 @@ L08A616:
     TAY
     LDA L0FED04.w,Y
     STA $00
-    LDA L0FED05.w,Y
+    LDA (L0FED04.w + 1),Y
     STA $01
     LDY #0
 L08A635:
@@ -9325,7 +9325,7 @@ L08A985:
     TAX
     LDA L0FED04.w,X
     STA $00
-    LDA L0FED05.w,X
+    LDA (L0FED04.w + 1),X
     STA $01
     LDX #0
     STX $10

@@ -2971,7 +2971,7 @@ L0D9057:
     TAY
     LDA L0FEEF4.w,Y
     STA $6C9C,X
-    LDA L0FEEF5.w,Y
+    LDA (L0FEEF4.w + 1),Y
     STA $6CAE,X
     LDA $6D0B
     STA $05E8
