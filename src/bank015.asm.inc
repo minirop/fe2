@@ -8380,6 +8380,8 @@ L0FEDEA:
 .db $06
 .db $01
 .db $06
+
+L0FEDF3:
 .db $0F
 .db $00
 .db $00
