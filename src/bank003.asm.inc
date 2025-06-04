@@ -18,36 +18,31 @@ L038009:
 L03800C:
     LDA $053F
     JSR L0FC34C.w
-.db $26
-.db $92
-.db $40
-.db $80
-.db $DC
-.db $82
-.db $53
-.db $92
+
+.dw L039226
+.dw L038040
+.dw L0382DC
+.dw L039253
+
 L03801A:
     LDA $053F
     JSR L0FC34C.w
-.db $40
-.db $80
-.db $5E
-.db $82
-.db $47
-.db $80
+
+.dw L038040
+.dw L03825E
+.dw L038047
+
 L038026:
     LDA $053F
     JSR L0FC34C.w
-.db $EA
-.db $90
-.db $36
-.db $80
-.db $43
-.db $83
-.db $F0
-.db $90
-.db $47
-.db $80
+
+.dw L0390EA
+.dw L038036
+.dw L038343
+.dw L0390F0
+.dw L038047
+
+L038036:
     JSR L0380C2.w
     JSR L038051.w
     INC $053F
@@ -315,8 +310,7 @@ L0381E3:
     PHA
     CMP #30
     BMI L0381EB
-.db $A9
-.db $00
+    LDA #0
 L0381EB:
     ASL
     TAX
@@ -333,8 +327,7 @@ L0381FA:
     PHA
     CMP #30
     BMI L038202
-.db $A9
-.db $00
+    LDA #0
 L038202:
     ASL
     TAX

@@ -2105,9 +2105,9 @@ L0FCCE7:
     LDA $7434
     ASL
     TAY
-    LDA $8000,Y
+    LDA L028000,Y
     STA $6E
-    LDA $8001,Y
+    LDA (L028000.w + 1),Y
     STA $6F
     JSR L0FCD44.w
 L0FCD02:
