@@ -8627,6 +8627,8 @@ L0FEEF4: ; unsure how long is the list
 .db $12
 .db $08
 .db $17
+
+L0FEF2A:
 .db $05
 .db $17
 .db $03

@@ -115,7 +115,8 @@
 .dw L008AE0
 .dw L008B27
 
-
+; the first byte is the number of
+; groups of 4 bytes that follow
 L0080DE:
 .db $0A $18 $14 $00 $F8 $10 $04 $00
 .db $F8 $18 $31 $00 $08 $18 $30 $00
@@ -1078,9 +1079,7 @@ L0094AC:
 .db $4B $4C $4D $4A
 
 L0094B0:
-.db $09
-.db $0A
-.db $0B
+.db $09 $0A $0B
 
 .dw L00956D
 .dw L009592
@@ -1176,7 +1175,8 @@ L0094B0:
 .dw L009F0E
 .dw L009F1D
 
-
+; first byte is the number of bytes
+; that follow
 L00956D:
 .db $24 $DE $FF $06 $FF $FF $00 $FF
 .db $FF $FF $FE $FF $05 $FF $FF $10
