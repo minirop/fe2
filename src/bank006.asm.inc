@@ -2031,7 +2031,7 @@ L069137:
     TAX
     LDA L0FE360.w,X
     STA $0E
-    LDA L0FE361.w,X
+    LDA (L0FE360.w + 1),X
     STA $0F
     LDY #0
 L069147:

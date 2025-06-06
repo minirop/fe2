@@ -4400,194 +4400,106 @@ L0FDB73:
 .dw L0FDC27
 
 L0FDBA3:
-.db $45
-.db $31
-.db $44
+.db ENCODE("ナイト")
 .db $EF
 
 L0FDBA7:
-.db $30
-.db $3F
-.db $50
-.db $3F
+.db ENCODE("アーマー")
 .db $EF
 
 L0FDBAC:
-.db $79
-.db $45
-.db $31
-.db $44
+.db ENCODE("Pナイト")
 .db $EF
 
 L0FDBB1:
-.db $4A
-.db $1F
-.db $58
-.db $43
-.db $0F
-.db $A7
-.db $5F
+.db ENCODE("パラディン")
 .db $EF
 
 L0FDBB9:
-.db $6F
-.db $45
-.db $31
-.db $44
+.db ENCODE("Fナイト")
 .db $EF
 
 L0FDBBE:
-.db $3E
-.db $5A
-.db $3B
-.db $0F
-.db $88
-.db $3F
+.db ENCODE("ソルジャー")
 .db $EF
 
 L0FDBC5:
-.db $70
-.db $45
-.db $31
-.db $44
+.db ENCODE("Gナイト")
 .db $EF
 
 L0FDBCA:
-.db $27
-.db $02
-.db $1D
-.db $01
+.db ENCODE("ようへい")
 .db $EF
 
 L0FDBCF:
-.db $08
-.db $2F
-.db $0B
+.db ENCODE("けんし")
 .db $EF
 
 L0FDBD3:
-.db $20
-.db $0D
-.db $2F
-.db $0B
+.db ENCODE("ませんし")
 .db $EF
 
 L0FDBD8:
-.db $0B
-.db $2F
-.db $05
-.db $2F
+.db ENCODE("しんかん")
 .db $EF
 
 L0FDBDD:
-.db $30
-.db $3F
-.db $41
-.db $88
-.db $3F
+.db ENCODE("アーチャー")
 .db $EF
 
 L0FDBE3:
-.db $3C
-.db $45
-.db $31
-.db $4A
-.db $1F
-.db $3F
+.db ENCODE("スナイパー")
 .db $EF
 
 L0FDBEA:
-.db $22
-.db $28
-.db $1B
-.db $0F
-.db $14
+.db ENCODE("むらびと")
 .db $EF
 
 L0FDBF0:
-.db $20
-.db $14
-.db $0F
-.db $02
-.db $0B
+.db ENCODE("まどうし")
 .db $EF
 
 L0FDBF6:
-.db $20
-.db $14
-.db $0F
-.db $02
-.db $0B
+.db ENCODE("まどうし")
 .db $EF
 
 L0FDBFC:
-.db $0D
-.db $01
-.db $0B
-.db $0F
-.db $87
+.db ENCODE("せいじょ")
 .db $EF
 
 L0FDC02:
-.db $3B
-.db $3C
-.db $40
-.db $3F
+.db ENCODE("シスター")
 .db $EF
 
 L0FDC07:
-.db $08
-.db $2F
-.db $0B
-.db $0F
-.db $84
+.db ENCODE("けんじゃ")
 .db $EF
 
 L0FDC0D:
-.db $4E
-.db $0F
-.db $32
-.db $45
-.db $31
-.db $44
+.db ENCODE("ボウナイト")
 .db $EF
 
 L0FDC14:
-.db $0D
-.db $2F
-.db $0B
+.db ENCODE("せんし")
 .db $EF
 
 L0FDC18:
-.db $26
-.db $02
-.db $0B
-.db $84
+.db ENCODE("ゆうしゃ")
 .db $EF
 
 L0FDC1D:
-.db $4A
-.db $0F
-.db $5C
-.db $5F
+.db ENCODE("バロン")
 .db $EF
 
 L0FDC22:
-.db $26
-.db $02
-.db $0B
-.db $84
+.db ENCODE("ゆうしゃ")
 .db $EF
 
 L0FDC27:
-.db $4C
-.db $1F
-.db $59
-.db $5F
-.db $3D
-.db $3C
+.db ENCODE("プリンセス")
 .db $EF
 
+L0FDC2E:
 .dw L0FDBA3
 .dw L0FDBA7
 .dw L0FDC5A
@@ -4612,112 +4524,55 @@ L0FDC27:
 .dw L0FDC1D
 
 L0FDC5A:
-.db $35
-.db $0F
-.db $3F
-.db $39
-.db $0F
-.db $31
-.db $5A
+.db ENCODE("ガーゴイル")
 .db $EF
 
 L0FDC62:
-.db $4A
-.db $31
-.db $45
-.db $31
-.db $44
+.db ENCODE("ハイナイト")
 .db $EF
 
 L0FDC68:
-.db $6D
-.db $3E
-.db $0F
-.db $5F
-.db $4B
-.db $0F
+.db ENCODE("Dゾンビ")
 .db $EF
 
 L0FDC6F:
-.db $3B
-.db $0F
-.db $A9
-.db $48
-.db $58
-.db $5A
+.db ENCODE("ジェネラル")
 .db $EF
 
 L0FDC76:
-.db $06
-.db $87
-.db $02
-.db $0D
-.db $2F
-.db $0B
+.db ENCODE("きょうせんし")
 .db $EF
 
 L0FDC7D:
-.db $3E
-.db $0F
-.db $5F
-.db $4B
-.db $0F
+.db ENCODE("ゾンビ")
 .db $EF
 
 L0FDC83:
-.db $14
-.db $02
-.db $0E
-.db $0F
-.db $07
+.db ENCODE("とうぞく")
 .db $EF
 
 L0FDC89:
-.db $3C
-.db $38
-.db $5A
-.db $44
-.db $5F
+.db ENCODE("スケルトン")
 .db $EF
 
 L0FDC8F:
-.db $27
-.db $02
-.db $0B
-.db $0F
-.db $86
-.db $12
-.db $0B
+.db ENCODE("ようじゅつし")
 .db $EF
 
 L0FDC97:
-.db $20
-.db $0B
-.db $0F
-.db $87
+.db ENCODE("まじょ")
 .db $EF
 
 L0FDC9C:
-.db $4B
-.db $0F
-.db $37
-.db $0F
-.db $5A
+.db ENCODE("ビグル")
 .db $EF
 
 L0FDCA2:
-.db $06
-.db $14
-.db $02
-.db $0B
+.db ENCODE("きとうし")
 .db $EF
 
 L0FDCA7:
-.db $0B
-.db $0F
-.db $84
-.db $0B
-.db $2F
+.db ENCODE("じゃしん")
 .db $EF
 
 L0FDCAD:
@@ -4782,509 +4637,232 @@ L0FDCAD:
 .dw L0FDE12
 
 L0FDD23:
-.db $FF
+.db ENCODE(" ")
 .db $EF
 
 L0FDD25:
-.db $1A
-.db $05
-.db $0F
-.db $18
-.db $19
-.db $25
-.db $29
+.db ENCODE("はがねのやり")
 .db $EF
 
 L0FDD2D:
-.db $06
-.db $0F
-.db $2F
-.db $19
-.db $25
-.db $29
+.db ENCODE("ぎんのやり")
 .db $EF
 
 L0FDD34:
-.db $13
-.db $25
-.db $29
+.db ENCODE("てやり")
 .db $EF
 
 L0FDD38:
-.db $0D
-.db $01
-.db $15
-.db $2A
-.db $25
-.db $29
+.db ENCODE("せいなるやり")
 .db $EF
 
 L0FDD3F:
-.db $45
-.db $31
-.db $44
-.db $36
-.db $58
-.db $3F
+.db ENCODE("ナイトキラー")
 .db $EF
 
 L0FDD46:
-.db $37
-.db $0F
-.db $58
-.db $43
-.db $0F
-.db $A7
-.db $32
-.db $3C
+.db ENCODE("グラディウス")
 .db $EF
 
 L0FDD4F:
-.db $29
-.db $86
-.db $02
-.db $0D
-.db $01
+.db ENCODE("りゅうせい")
 .db $EF
 
 L0FDD55:
-.db $10
-.db $01
-.db $27
-.db $02
+.db ENCODE("たいよう")
 .db $EF
 
 L0FDD5A:
-.db $08
-.db $0F
-.db $85
-.db $09
-.db $02
+.db ENCODE("げっこう")
 .db $EF
 
 L0FDD60:
-.db $1A
-.db $05
-.db $0F
-.db $18
-.db $19
-.db $12
-.db $2A
-.db $06
-.db $0F
+.db ENCODE("はがねのつるぎ")
 .db $EF
 
 L0FDD6A:
-.db $06
-.db $0F
-.db $2F
-.db $19
-.db $12
-.db $2A
-.db $06
-.db $0F
+.db ENCODE("ぎんのつるぎ")
 .db $EF
 
 L0FDD73:
-.db $26
-.db $02
-.db $0B
-.db $84
-.db $19
-.db $08
-.db $2F
+.db ENCODE("ゆうしゃのけん")
 .db $EF
 
 L0FDD7B:
-.db $00
-.db $2F
-.db $09
-.db $07
-.db $19
-.db $08
-.db $2F
+.db ENCODE("あんこくのけん")
 .db $EF
 
 L0FDD83:
-.db $01
-.db $05
-.db $12
-.db $0F
-.db $11
-.db $19
-.db $08
-.db $2F
+.db ENCODE("いかづちのけん")
 .db $EF
 
 L0FDD8C:
-.db $0D
-.db $01
-.db $15
-.db $2A
-.db $12
-.db $2A
-.db $06
-.db $0F
+.db ENCODE("せいなるつるぎ")
 .db $EF
 
 L0FDD95:
-.db $4C
-.db $A6
-.db $5A
-.db $3B
-.db $34
-.db $5F
+.db ENCODE("ファルシオン")
 .db $EF
 
 L0FDD9C:
-.db $04
-.db $02
-.db $08
-.db $19
-.db $12
-.db $2A
-.db $06
-.db $0F
+.db ENCODE("おうけのつるぎ")
 .db $EF
 
 L0FDDA5:
-.db $0B
-.db $87
-.db $07
-.db $0B
-.db $86
+.db ENCODE("しょくしゅ")
 .db $EF
 
 L0FDDAB:
-.db $1A
-.db $05
-.db $0F
-.db $18
-.db $19
-.db $26
-.db $21
+.db ENCODE("はがねのゆみ")
 .db $EF
 
 L0FDDB3:
-.db $0D
-.db $01
-.db $15
-.db $2A
-.db $26
-.db $21
+.db ENCODE("せいなるゆみ")
 .db $EF
 
 L0FDDBA:
-.db $06
-.db $0F
-.db $2F
-.db $19
-.db $26
-.db $21
+.db ENCODE("ぎんのゆみ")
 .db $EF
 
 L0FDDC1:
-.db $05
-.db $2D
-.db $19
-.db $10
-.db $13
+.db ENCODE("かわのたて")
 .db $EF
 
 L0FDDC7:
-.db $1A
-.db $05
-.db $0F
-.db $18
-.db $19
-.db $10
-.db $13
+.db ENCODE("はがねのたて")
 .db $EF
 
 L0FDDCF:
-.db $06
-.db $0F
-.db $2F
-.db $19
-.db $10
-.db $13
+.db ENCODE("ぎんのたて")
 .db $EF
 
 L0FDDD6:
-.db $0D
-.db $01
-.db $15
-.db $2A
-.db $10
-.db $13
+.db ENCODE("せいなるたて")
 .db $EF
 
 L0FDDDD:
-.db $20
-.db $1C
-.db $02
-.db $0B
-.db $0F
-.db $19
-.db $10
-.db $13
+.db ENCODE("まふうじのたて")
 .db $EF
 
 L0FDDE6:
-.db $29
-.db $86
-.db $02
-.db $19
-.db $10
-.db $13
+.db ENCODE("りゅうのたて")
 .db $EF
 
 L0FDDED:
-.db $0D
-.db $01
-.db $15
-.db $2A
-.db $26
-.db $1B
-.db $0F
-.db $2D
+.db ENCODE("せいなるゆびわ")
 .db $EF
 
 L0FDDF6:
-.db $13
-.db $2F
-.db $0B
-.db $19
-.db $26
-.db $1B
-.db $0F
-.db $2D
+.db ENCODE("てんしのゆびわ")
 .db $EF
 
 L0FDDFF:
-.db $1A
-.db $25
-.db $0A
-.db $19
-.db $26
-.db $1B
-.db $0F
-.db $2D
+.db ENCODE("はやさのゆびわ")
 .db $EF
 
 L0FDE08:
-.db $20
-.db $14
-.db $0F
-.db $02
-.db $19
-.db $26
-.db $1B
-.db $0F
-.db $2D
+.db ENCODE("まどうのゆびわ")
 .db $EF
 
 L0FDE12:
-.db $01
-.db $19
-.db $29
-.db $19
-.db $26
-.db $1B
-.db $0F
-.db $2D
+.db ENCODE("いのりのゆびわ")
 .db $EF
 
 L0FDE1B:
-.db $4C
-.db $A6
-.db $31
-.db $30
-.db $3F
+.db ENCODE("ファイアー")
 .db $EF
 
 L0FDE21:
-.db $3A
-.db $5F
-.db $40
-.db $0F
-.db $3F
+.db ENCODE("サンダー")
 .db $EF
 
 L0FDE27:
-.db $58
-.db $31
-.db $45
-.db $5C
-.db $89
-.db $37
+.db ENCODE("ライナロック")
 .db $EF
 
 L0FDE2E:
-.db $33
-.db $5F
-.db $3B
-.db $0F
-.db $A9
-.db $5A
+.db ENCODE("エンジェル")
 .db $EF
 
 L0FDE35:
-.db $33
-.db $37
-.db $3C
-.db $35
-.db $59
-.db $4A
-.db $0F
-.db $3F
+.db ENCODE("エクスカリバー")
 .db $EF
 
 L0FDE3E:
-.db $30
-.db $5C
-.db $3F
+.db ENCODE("アロー")
 .db $EF
 
 L0FDE42:
-.db $34
-.db $3F
-.db $58
+.db ENCODE("オーラ")
 .db $EF
 
 L0FDE46:
-.db $35
-.db $0F
-.db $31
-.db $30
+.db ENCODE("ガイア")
 .db $EF
 
 L0FDE4B:
-.db $44
-.db $0F
-.db $3F
-.db $58
+.db ENCODE("ドーラ")
 .db $EF
 
 L0FDE50:
-.db $3C
-.db $58
-.db $31
-.db $52
+.db ENCODE("スライム")
 .db $EF
 
 L0FDE55:
-.db $43
-.db $0F
-.db $3C
+.db ENCODE("デス")
 .db $EF
 
 L0FDE59:
-.db $53
-.db $43
-.db $0F
-.db $8A
-.db $3F
-.db $3A
+.db ENCODE("メデューサ")
 .db $EF
 
 L0FDE60:
-.db $30
-.db $31
-.db $4B
-.db $0F
-.db $3F
-.db $52
+.db ENCODE("アイビーム")
 .db $EF
 
 L0FDE67:
-.db $30
-.db $31
-.db $4E
-.db $0F
-.db $3F
-.db $5A
+.db ENCODE("アイボール")
 .db $EF
 
 L0FDE6E:
-.db $4E
-.db $0F
-.db $3F
-.db $50
+.db ENCODE("ボーマ")
 .db $EF
 
 L0FDE72:
-.db $4E
-.db $0F
-.db $3F
-.db $3C
+.db ENCODE("ボース")
 .db $EF
 
 L0FDE78:
-.db $53
-.db $3A
-.db $31
-.db $30
+.db ENCODE("メサイア")
 .db $EF
 
 L0FDE7D:
-.db $59
-.db $35
-.db $4A
-.db $0F
-.db $3F
+.db ENCODE("リカバー")
 .db $EF
 
 L0FDE83:
-.db $59
-.db $4C
-.db $0F
-.db $5C
-.db $3F
+.db ENCODE("リブロー")
 .db $EF
 
 L0FDE89:
-.db $59
-.db $3A
-.db $0F
-.db $31
-.db $30
+.db ENCODE("リザイア")
 .db $EF
 
 L0FDE8F:
-.db $5D
-.db $3F
-.db $4C
-.db $1F
+.db ENCODE("ワープ")
 .db $EF
 
 L0FDE94:
-.db $59
-.db $3A
-.db $0F
-.db $3F
-.db $4C
-.db $0F
+.db ENCODE("リザーブ")
 .db $EF
 
 L0FDE9B:
-.db $31
-.db $59
-.db $8A
-.db $3F
-.db $3B
-.db $0F
-.db $8B
-.db $5F
+.db ENCODE("イリュージョン")
 .db $EF
 
 L0FDEA4:
-.db $43
-.db $0F
-.db $A7
-
-L0FDEA7:
-.dW L0FEF5A
+.db ENCODE("ディル")
+.db $EF
 
 ; pointers to names
 L0FDEA9:
@@ -5855,6 +5433,7 @@ L0FE1D1:
 .db $24
 .db $FF
 .db $FF
+
 L0FE1D9:
 .db $17
 .db $18
@@ -5888,6 +5467,7 @@ L0FE1D9:
 .db $25
 .db $25
 .db $25
+
 L0FE1F9:
 .db $28
 .db $28
@@ -5969,6 +5549,7 @@ L0FE1F9:
 .db $FF
 .db $FF
 .db $FF
+
 L0FE249:
 .db $00
 .db $00
@@ -6249,95 +5830,49 @@ L0FE249:
 .db $00
 .db $00
 .db $FF
+
 L0FE360:
-.db $70
-L0FE361:
-.db $E3
-.db $74
-.db $E3
-.db $78
-.db $E3
-.db $7C
-.db $E3
-.db $82
-.db $E3
-.db $89
-.db $E3
-.db $90
-.db $E3
-.db $9D
-.db $E3
-.db $30
-.db $2F
-.db $2E
-.db $FF
-.db $2D
-.db $2C
-.db $2B
-.db $FF
-.db $2A
-.db $29
-.db $25
-.db $FF
-.db $1A
-.db $19
-.db $14
-.db $13
-.db $12
-.db $FF
-.db $18
-.db $16
-.db $15
-.db $14
-.db $13
-.db $12
-.db $FF
-.db $18
-.db $17
-.db $15
-.db $14
-.db $13
-.db $12
-.db $FF
-.db $28
-.db $27
-.db $26
-.db $21
-.db $20
-.db $1F
-.db $1E
-.db $1D
-.db $1C
-.db $1B
-.db $11
-.db $10
-.db $FF
-.db $1D
-.db $1C
-.db $1B
-.db $11
-.db $10
-.db $FF
+.dw L0FE370
+.dw L0FE374
+.dw L0FE378
+.dw L0FE37C
+.dw L0FE382
+.dw L0FE389
+.dw L0FE390
+.dw L0FE39D
+
+L0FE370:
+.db $30 $2F $2E $FF
+
+L0FE374:
+.db $2D $2C $2B $FF
+
+L0FE378:
+.db $2A $29 $25 $FF
+
+L0FE37C:
+.db $1A $19 $14 $13 $12 $FF
+
+L0FE382:
+.db $18 $16 $15 $14 $13 $12 $FF
+
+L0FE389:
+.db $18 $17 $15 $14 $13 $12 $FF
+
+L0FE390:
+.db $28 $27 $26 $21 $20 $1F $1E $1D
+.db $1C $1B $11 $10 $FF
+
+L0FE39D:
+.db $1D $1C $1B $11 $10 $FF
+
 L0FE3A3:
-.db $04
-.db $0B
-.db $15
-.db $FF
+.db $04 $0B $15 $FF
+
 L0FE3A7:
-.db $01
-.db $04
-.db $06
-.db $02
-.db $10
-.db $0C
-.db $08
-.db $0F
-.db $12
-.db $03
-.db $0D
-.db $09
-.db $0A
-.db $FF
+.db $01 $04 $06 $02 $10 $0C $08 $0F
+.db $12 $03 $0D $09 $0A $FF
+
 L0FE3B5:
 .db $04
 .db $07
@@ -6352,6 +5887,7 @@ L0FE3B5:
 .db $14
 .db $0A
 .db $0E
+
 L0FE3C2:
 .db $07
 .db $0A
@@ -6371,6 +5907,7 @@ L0FE3C2:
 .db $0C
 .db $0F
 .db $06
+
 L0FE3D4:
     LDA $04C4
     BEQ L0FE3ED
@@ -6446,6 +5983,7 @@ L0FE436:
 .db $00
 .db $00
 .db $09
+
 L0FE44C:
 .db $03
 .db $01
@@ -6469,6 +6007,7 @@ L0FE44C:
 .db $02
 .db $01
 .db $04
+
 L0FE462:
     CPX #2
     BEQ L0FE496
@@ -6595,8 +6134,7 @@ L0FE52E:
     STA $03
     INC $00
     BNE L0FE544
-.db $E6
-.db $01
+    INC $01
 L0FE544:
     LDA ($00),Y
     CLC
@@ -6716,113 +6254,88 @@ L0FE5FD:
     BNE L0FE5FD
     RTS
 
-.db $29
-.db $E6
-.db $2F
-.db $E6
-.db $33
-.db $E6
-.db $37
-.db $E6
-.db $3C
-.db $E6
-.db $40
-.db $E6
-.db $44
-.db $E6
-.db $48
-.db $E6
-.db $4D
-.db $E6
-.db $51
-.db $E6
-.db $55
-.db $E6
-.db $59
-.db $E6
-.db $5D
-.db $E6
-.db $61
-.db $E6
-.db $67
-.db $E6
-.db $6E
-.db $E6
-.db $0E
-.db $02
-.db $08
-.db $0F
-.db $2F
+L0FE609:
+.dw L0FE629
+.dw L0FE62F
+.dw L0FE633
+.dw L0FE637
+.dw L0FE63C
+.dw L0FE640
+.dw L0FE644
+.dw L0FE648
+.dw L0FE64D
+.dw L0FE651
+.dw L0FE655
+.dw L0FE659
+.dw L0FE65D
+.dw L0FE661
+.dw L0FE667
+.dw L0FE66E
+
+L0FE629:
+.db ENCODE("そうげん")
 .db $EF
-.db $1A
-.db $0B
-.db $28
+
+L0FE62F:
+.db ENCODE("はしら")
 .db $EF
-.db $1A
-.db $25
-.db $0B
+
+L0FE633:
+.db ENCODE("はやし")
 .db $EF
-.db $0A
-.db $1A
-.db $0F
-.db $07
+
+L0FE637:
+.db ENCODE("さばく")
 .db $EF
-.db $25
-.db $FF
-.db $20
+
+L0FE63C:
+.db ENCODE("や ま")
 .db $EF
-.db $1A
-.db $FF
-.db $0B
+
+L0FE640:
+.db ENCODE("は し")
 .db $EF
-.db $20
-.db $FF
-.db $11
+
+L0FE644:
+.db ENCODE("ま ち")
 .db $EF
-.db $14
-.db $29
-.db $13
-.db $0F
+
+L0FE648:
+.db ENCODE("とりで")
 .db $EF
-.db $0B
-.db $FF
-.db $2C
+
+L0FE64D:
+.db ENCODE("し ろ")
 .db $EF
-.db $05
-.db $FF
-.db $2D
+
+L0FE651:
+.db ENCODE("か わ")
 .db $EF
-.db $0E
-.db $FF
-.db $28
+
+L0FE655:
+.db ENCODE("そ ら")
 .db $EF
-.db $02
-.db $FF
-.db $21
+
+L0FE659:
+.db ENCODE("う み")
 .db $EF
-.db $26
-.db $FF
-.db $05
+
+L0FE65D:
+.db ENCODE("ゆ か")
 .db $EF
-.db $05
-.db $01
-.db $10
-.db $0F
-.db $2F
+
+L0FE661:
+.db ENCODE("かいだん")
 .db $EF
-.db $3C
-.db $40
-.db $3B
-.db $0F
-.db $30
-.db $52
+
+L0FE667:
+.db ENCODE("スタジアム")
 .db $EF
-.db $01
-.db $0B
-.db $05
-.db $0F
-.db $06
+
+L0FE66E:
+.db ENCODE("いしがき")
 .db $EF
+
 L0FE674:
     LDA #0
     STA $3D
@@ -6900,8 +6413,7 @@ L0FE6E5:
     LDA $7DA6
     ASL
     BCC L0FE6FE
-.db $E6
-.db $05
+    INC $05
 L0FE6FE:
     CLC
     ADC $04
@@ -7057,11 +6569,8 @@ L0FE809:
     RTS
 
 L0FE80A:
-.db $00
-.db $06
-.db $0C
-.db $12
-.db $18
+.db $00 $06 $0C $12 $18
+
 L0FE80F:
     STA $3C
     LDA $0587
@@ -7179,11 +6688,9 @@ L0FE8CD:
     RTS
 
 L0FE8D9:
-.db $0A
-.db $08
-.db $09
-.db $03
+.db ENCODE("さけこえ")
 .db $EF
+
 L0FE8DE:
 .db $00
 .db $00

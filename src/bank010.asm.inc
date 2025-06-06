@@ -1934,9 +1934,9 @@ L0A8ADB:
     ASL
     TAX
     BCS L0A8AFE
-    LDA L0FDEA7.w,X
+    LDA (L0FDEA9.w - 2),X
     STA $02
-    LDA (L0FDEA7.w + 1),X
+    LDA (L0FDEA9.w - 1),X
     STA $03
     JMP L0A8B08.w
 

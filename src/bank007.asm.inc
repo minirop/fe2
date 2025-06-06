@@ -6834,7 +6834,7 @@ L07A55E:
     TAX
     LDA L0FE360.w,X
     STA $00
-    LDA L0FE361.w,X
+    LDA (L0FE360.w + 1),X
     STA $01
     LDY #0
 L07A56F:
