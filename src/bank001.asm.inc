@@ -1394,6 +1394,7 @@ L01A05C:
 L01A0A1:
 .db $01 $00 $FF $00 $00
 
+L01A0A6:
 .dw L01A0CA
 .dw L01A0CA
 .dw L01A0DA
@@ -1403,6 +1404,8 @@ L01A0A1:
 .dw L01A12B
 .dw L01A13C
 .dw L01A13F
+
+L01A0B8:
 .dw L01A148
 .dw L01A148
 .dw L01A158
@@ -1412,7 +1415,6 @@ L01A0A1:
 .dw L01A1AB
 .dw L01A1BC
 .dw L01A1C0
-
 
 L01A0CA:
 .db $00 $00 $00 $00 $00 $00 $00 $00
@@ -1498,6 +1500,8 @@ L01A1C0:
 .db $3F
 .db $40
 .db $32
+
+L01A1CF:
 .db $53
 .db $A2
 .db $6F
@@ -3759,6 +3763,7 @@ L01A1C0:
 .db $EC
 .db $ED
 .db $EE
+
 L01AAA4:
     LDA $04D5
     STA $7443
@@ -3819,19 +3824,9 @@ L01AB09:
     RTS
 
 L01AB11:
-.db $02
-.db $03
-.db $04
-.db $05
-.db $06
-.db $FF
-.db $07
-.db $08
-.db $09
-.db $FF
-.db $FF
-.db $0E
-.db $EF
+.db $02 $03 $04 $05 $06 $FF $07 $08
+.db $09 $FF $FF $0E $EF
+
 L01AB1E:
     LDX #0
     LDA $047D
@@ -4175,14 +4170,7 @@ L01AE88:
     RTS
 
 L01AEA9:
-.db $01
-.db $02
-.db $04
-.db $08
-.db $10
-.db $20
-.db $40
-.db $80
+.db $01 $02 $04 $08 $10 $20 $40 $80
 
 L01AEB1:
     LDA #175
@@ -4401,18 +4389,13 @@ L01B00E:
 L01B011:
     RTS
 
-L01B012: ; TODO
-.db $AD
-.db $88
-.db $03
-.db $F0
-.db $F7
-.db $A2
-.db $E3
-.db $A0
-.db $B0
-.db $D0
-.db $C5
+L01B012:
+    LDA $0388
+    BEQ L01B00E
+    LDX #227
+    LDY #176
+    BNE L01AFE2
+
 .db $22
 .db $01
 .db $0F
@@ -4624,6 +4607,7 @@ L01B012: ; TODO
 .db $4A
 .db $C2
 .db $00
+
 L01B0F0:
     LDA $0388
     BNE L01B115
@@ -4867,6 +4851,7 @@ L01B29F:
 .db $4B
 .db $22
 .db $82
+
 L01B2BB:
     LDA $0388
     BNE L01B2D4
@@ -4898,6 +4883,8 @@ L01B2EC:
     STY $08
     STX $0781
     STY $0782
+
+L01B2F6:
     LDX #0
     LDA $02
     CMP #53
@@ -5946,30 +5933,20 @@ L01BF5E:
 .db $55
 .db $40
 .db $0F
-.db $A4
-.db $AA
-.db $1E
-.db $AB
-.db $3D
-.db $C7
-.db $DE
-.db $AD
-.db $B1
-.db $AE
-.db $BC
-.db $AE
-.db $6A
-.db $AF
-.db $24
-.db $B4
-.db $F6
-.db $B2
-.db $5A
-.db $B4
-.db $71
-.db $B4
-.db $C7
-.db $AE
+
+.dw L01AAA4
+.dw L01AB1E
+.dw L0FC73D
+.dw L01ADDE
+.dw L01AEB1
+.dw L01AEBC
+.dw L01AF6A
+.dw L01B424
+.dw L01B2F6
+.dw L01B45A
+.dw L01B471
+.dw L01AEC7
+
 .db $15
 .db $20
 .db $D0
@@ -6036,11 +6013,9 @@ L01BF5E:
 .db $FF
 .db $04
 .db $00
-.db $CF
-.db $A1
-.db $A6
-.db $A0
-.db $B8
-.db $A0
+
+.dw L01A1CF
+.dw L01A0A6
+.dw L01A0B8
 
 .ENDS

@@ -2197,10 +2197,9 @@ L02BC00:
     LDA #14
     JMP L0FE6B8.w
 
-.db $13
-.db $76
-.db $6A
-.db $79
+L02BC09:
+.dw $7613
+.dw $796A
 .db $00
 
 L02BC0E:
@@ -2877,9 +2876,9 @@ L02BEF0:
 .db $00
 .db $50
 .db $31
-L02BFFA:
-    JMP L02BB44.w
-
+.db $4C
+.db $44
+.db $BB
 .db $8F
 .db $19
 .db $0B
