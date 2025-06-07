@@ -43,34 +43,34 @@ def decode(code):
             case 'FF':
                 if not in_string:
                     in_string = True
-                    output += " ENCODE(\""
+                    output += ".db ENCODE(\""
                 output += ' '
             case _:
                 if cc in mapping:
                     if not in_string:
                         in_string = True
-                        output += " ENCODE(\""
+                        output += ".db ENCODE(\""
                     output += mapping[cc]
                 else:
                     if in_string:
                         in_string = False
-                        output += "\")"
+                        output += "\")\n"
                     match cc:
                         case 'E6':
-                            output += "\n.db $E6\n.db"
+                            output += ".db $E6\n"
                         case 'E8':
-                            output += " $E8"
+                            output += ".db $E8"
                             in_e8 = True
                         case 'EA':
-                            output += "\n.db SPEAK\n.db"
+                            output += ".db SPEAK\n"
                         case 'ED':
-                            output += "\n.db NEWLINE\n.db"
+                            output += ".db NEWLINE\n"
                         case 'EE':
-                            output += "\n.db WAIT_CLICK\n.db"
+                            output += ".db WAIT_CLICK\n"
                         case 'EF':
-                            output += "\n.db $EF\n"
+                            output += ".db $EF\n"
                         case 'F0':
-                            output += "\n.db $F0\n.db"
+                            output += ".db $F0\n"
                         case _:
                             output += f" ${cc}"
 

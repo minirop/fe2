@@ -5619,6 +5619,7 @@ L04AFE9:
 .db $01
 .db $FF
 .db $00
+
 L04B006:
     LDA #0
     STA $4A
@@ -6021,9 +6022,9 @@ L04B2B5:
     LDA $7A80
     ASL
     TAX
-    LDA L04BDC0.w,X
+    LDA (L04BDC0.w - 2),X
     STA $02
-    LDA (L04BDC0.w + 1),X
+    LDA (L04BDC0.w - 1),X
     STA $03
     LDY #0
     LDA ($02),Y
@@ -6798,66 +6799,79 @@ L04B619:
 .db $EF
 
 L04B67C:
-.db $05 $07 $0B $13 $ED $04 $04 $01
-.db $15 $2A $FF $10 $10 $05 $01 $19
-.db $20 $07 $1A $FF $04 $29 $10 $ED
+.db ENCODE("かくして")
+.db NEWLINE
+.db ENCODE("おおいなる たたかいのまくは おりた")
+.db NEWLINE
 .db $EF
 
 L04B695:
-.db $04 $04 $07 $19 $06 $0F $0D $01
-.db $2E $FF $1A $28 $01 $ED $01 $20
-.db $27 $02 $25 $07 $ED $4A $0F $5B
-.db $5F $3B $30 $16 $FF $1D $01 $2D
-.db $05 $0F $04 $14 $0C $0F $2B $2A
-.db $ED $EF
+.db ENCODE("おおくのぎせいを はらい")
+.db NEWLINE
+.db ENCODE("いまようやく")
+.db NEWLINE
+.db ENCODE("バレンシアに へいわがおとずれる")
+.db NEWLINE
+.db $EF
 
 L04B6BF:
-.db $09 $19 $10 $10 $05 $01 $05 $0F
-.db $ED $01 $85 $10 $01 $FF $15 $2F
-.db $13 $0F $00 $85 $10 $19 $05 $ED
+.db ENCODE("このたたかいが")
+.db NEWLINE
+.db ENCODE("いったい なんであったのか")
+.db NEWLINE
 .db $EF
 
 L04B6D8:
-.db $ED $0E $19 $14 $01 $16 $FF $09
-.db $10 $03 $2A $24 $19 $1A $01 $15
-.db $01 $ED $EF
+.db NEWLINE
+.db ENCODE("そのといに こたえるものはいない")
+.db NEWLINE
+.db $EF
 
 L04B6EB:
-.db $ED $10 $10 $0F $1B $14 $12 $FF
-.db $01 $03 $2A $09 $14 $ED $EF
+.db NEWLINE
+.db ENCODE("ただひとつ いえること")
+.db NEWLINE
+.db $EF
 
 L04B6FA:
-.db $0E $2B $1A $FF $1B $14 $05 $0F
-.db $ED $1C $10 $10 $1B $0F $FF $04
-.db $09 $0F $29 $10 $05 $1C $0F $2A
-.db $14 $06 $ED $EF
+.db ENCODE("それは ひとが")
+.db NEWLINE
+.db ENCODE("ふたたび おごりたかぶるとき")
+.db NEWLINE
+.db $EF
 
 L04B716:
-.db $00 $28 $10 $15 $2A $FF $0D $2F
-.db $28 $2F $19 $1E $19 $04 $05 $0F
-.db $ED $11 $0B $0F $87 $02 $2E $FF
-.db $25 $06 $12 $07 $0B $ED $EF
+.db ENCODE("あらたなる せんらんのほのおが")
+.db NEWLINE
+.db ENCODE("ちじょうを やきつくし")
+.db NEWLINE
+.db $EF
 
 L04B735:
-.db $0C $1D $0F $13 $05 $0F $FF $02
-.db $0B $15 $2D $2B $13 $0B $20 $02
-.db $13 $0F $ED $00 $2C $02 $14 $01
-.db $02 $09 $14 $ED $EF
+.db ENCODE("すべてが うしなわれてしまうで")
+.db NEWLINE
+.db ENCODE("あろうということ")
+.db NEWLINE
+.db $EF
 
 L04B752:
-.db $ED $24 $85 $14 $24 $FF $04 $0E
-.db $2C $0B $07 $FF $21 $16 $07 $01
-.db $24 $19 $ED $ED $EF
+.db NEWLINE
+.db ENCODE("もっとも おそろしく みにくいもの")
+.db NEWLINE
+.db NEWLINE
+.db $EF
 
 L04B767:
-.db $0E $2B $1A $FF $1B $14 $19 $09
-.db $09 $2C $19 $15 $05 $16 $09 $0E
-.db $ED $0E $2F $0A $0F $01 $0C $2A
-.db $19 $05 $24 $FF $0B $2B $15 $01
-.db $ED $EF
+.db ENCODE("それは ひとのこころのなかにこそ")
+.db NEWLINE
+.db ENCODE("そんざいするのかも しれない")
+.db NEWLINE
+.db $EF
 
 L04B789:
-.db $ED $ED $EF
+.db NEWLINE
+.db NEWLINE
+.db $EF
 
 L04B78C:
 .dw L04B67C
@@ -6907,266 +6921,326 @@ L04B7A2:
 .dw L04BD8D
 
 L04B7E2:
-.db $13 $0F $25 $0C $28 $05 $16 $ED
-.db $18 $22 $85 $13 $01 $2A $9B $9B
-.db $9B $EF
+.db ENCODE("でやすらかに")
+.db NEWLINE
+.db ENCODE("ねむっている···")
+.db $EF
 
 L04B7F4:
-.db $0B $2F $0D $01 $4A $0F $5B $5F
-.db $3B $30 $19 $ED $0A $01 $0B $87
-.db $02 $2E $FF $12 $14 $23 $2A $ED
-.db $ED $30 $5A $52 $61 $0D $01 $04
-.db $02 $19 $FF $27 $06 $ED $05 $10
-.db $02 $13 $0F $14 $0B $13 $FF $04
-.db $02 $09 $07 $19 $ED $0A $01 $08
-.db $2F $16 $FF $14 $0F $29 $87 $07
-.db $0B $10 $EF
+.db ENCODE("しんせいバレンシアの")
+.db NEWLINE
+.db ENCODE("さいしょうを つとめる")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("アルム1せいおうの よき")
+.db NEWLINE
+.db ENCODE("かたうでとして おうこくの")
+.db NEWLINE
+.db ENCODE("さいけんに どりょくした")
+.db $EF
 
 L04B837:
-.db $51 $58 $14 $44 $0F $3F $50 $19
-.db $FF $1C $10 $12 $19 $ED $06 $87
-.db $02 $10 $0F $2F $2E $FF $14 $02
-.db $09 $0F $02 $0B $13 $ED $0A $01
-.db $09 $02 $0B $0A $01 $14 $15 $2A
+.db ENCODE("ミラとドーマの ふたつの")
+.db NEWLINE
+.db ENCODE("きょうだんを とうごうして")
+.db NEWLINE
+.db ENCODE("さいこうしさいとなる")
 .db $EF
 
 L04B860:
-.db $04 $02 $09 $07 $06 $0B $10 $0F
-.db $2F $16 $FF $0A $2F $05 $ED $4A
-.db $0F $5B $5F $3B $30 $19 $1C $85
-.db $09 $02 $16 $ED $14 $0F $29 $87
-.db $07 $0C $2A $EF
+.db ENCODE("おうこくきしだんに さんか")
+.db NEWLINE
+.db ENCODE("バレンシアのふっこうに")
+.db NEWLINE
+.db ENCODE("どりょくする")
+.db $EF
 
 L04B884:
-.db $10 $10 $05 $01 $19 $19 $11 $FF
-.db $30 $5A $52 $16 $ED $2D $05 $2B
-.db $2E $12 $08 $0F $2A $ED $ED $0E
-.db $19 $09 $0F $FF $05 $2B $2E $21
-.db $10 $24 $19 $1A $01 $15 $01 $EF
+.db ENCODE("たたかいののち アルムに")
+.db NEWLINE
+.db ENCODE("わかれをつげる")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("そのご かれをみたものはいない")
+.db $EF
 
 L04B8AC:
-.db $5C $4B $0F $5F $14 $FF $37 $5B
-.db $30 $2E $00 $28 $0E $01 $ED $21
-.db $09 $0F $14 $FF $4A $3F $44 $2E
-.db $01 $14 $23 $10 $ED $ED $04 $14
-.db $09 $1A $FF $05 $04 $0B $0F $84
-.db $15 $01 $ED $09 $09 $2C $0A $14
-.db $FF $02 $0E $1C $0F $01 $13 $01
-.db $2A $EF
+.db ENCODE("ロビンと クレアをあらそい")
+.db NEWLINE
+.db ENCODE("みごと ハートをいとめた")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("おとこは かおじゃない")
+.db NEWLINE
+.db ENCODE("こころさと うそぶいている")
+.db $EF
 
 L04B8E6:
-.db $5C $4B $0F $5F $19 $0D $2F $0B
-.db $2E $FF $05 $15 $0B $21 $ED $0A
-.db $08 $16 $04 $1E $0F $2B $2A $FF
-.db $20 $01 $16 $11 $ED $ED $05 $2B
-.db $16 $FF $03 $05 $0F $04 $05 $0F
-.db $24 $14 $0F $2A $19 $1A $ED $01
-.db $12 $19 $09 $14 $05 $9B $9B $9B
+.db ENCODE("ロビンのせんしを かなしみ")
+.db NEWLINE
+.db ENCODE("さけにおぼれる まいにち")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("かれに えがおがもどるのは")
+.db NEWLINE
+.db ENCODE("いつのことか···")
 .db $EF
 
 L04B91F:
-.db $00 $01 $0C $2A $24 $19 $2E $FF
-.db $02 $0B $15 $01 $ED $16 $00 $2D
-.db $15 $01 $14 $1A $FF $0B $29 $12
-.db $12 $ED $1B $14 $29 $FF $10 $1B
-.db $0F $16 $13 $0F $2A $EF
+.db ENCODE("あいするものを うしない")
+.db NEWLINE
+.db ENCODE("にあわないとは しりつつ")
+.db NEWLINE
+.db ENCODE("ひとり たびにでる")
+.db $EF
 
 L04B945:
-.db $37 $0F $5B $31 $19 $0B $12 $09
-.db $0A $16 $FF $20 $08 $ED $25 $22
-.db $15 $07 $FF $01 $85 $0B $87 $16
-.db $15 $2A $ED $ED $AB $00 $3F $00
-.db $FF $30 $5A $52 $ED $FF $0C $06
-.db $10 $0F $85 $10 $19 $16 $15 $96
-.db $9B $9B $9B $EF
+.db ENCODE("グレイのしつこさに まけ")
+.db NEWLINE
+.db ENCODE("やむなく いっしょになる")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("「あーあ アルム")
+.db NEWLINE
+.db ENCODE(" すきだったのになぁ···")
+.db $EF
 
 L04B979:
-.db $AB $37 $0F $5B $31 $85 $13 $1A
-.db $0F $FF $FF $FF $FF $FF $FF $FF
-.db $ED $FF $4E $5F $44 $16 $05 $85
-.db $13 $15 $2F $10 $0F $05 $28 $AC
-.db $ED $ED $1B $14 $29 $0A $06 $16
-.db $0B $2F $10 $0F $37 $0F $5B $31
-.db $2E $ED $02 $28 $2F $13 $0F $01
-.db $2A $EF
+.db ENCODE("「グレイってば       ")
+.db NEWLINE
+.db ENCODE(" ホントにかってなんだから」")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("ひとりさきにしんだグレイを")
+.db NEWLINE
+.db ENCODE("うらんでいる")
+.db $EF
 
 L04B9B3:
-.db $0B $2F $0D $01 $4A $0F $5B $5F
-.db $3B $30 $19 $ED $06 $0B $10 $0F
-.db $2F $2E $FF $20 $05 $0A $2B $2A
-.db $ED $ED $0A $01 $06 $2F $FF $02
-.db $12 $07 $0B $01 $ED $12 $20 $2E
-.db $FF $22 $05 $03 $10 $14 $06 $07
+.db ENCODE("しんせいバレンシアの")
+.db NEWLINE
+.db ENCODE("きしだんを まかされる")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("さいきん うつくしい")
+.db NEWLINE
+.db ENCODE("つまを むかえたときく")
 .db $EF
 
 L04B9E4:
-.db $0B $2F $0D $01 $4A $0F $5B $5F
-.db $3B $30 $19 $ED $06 $0B $10 $0F
-.db $2F $2E $FF $20 $05 $0A $2B $2A
-.db $ED $ED $0B $05 $0B $FF $0E $19
-.db $09 $0F $ED $05 $01 $0E $0F $07
-.db $14 $19 $10 $10 $05 $01 $13 $0F
-.db $ED $01 $19 $11 $2E $FF $04 $14
-.db $0C $EF
+.db ENCODE("しんせいバレンシアの")
+.db NEWLINE
+.db ENCODE("きしだんを まかされる")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("しかし そのご")
+.db NEWLINE
+.db ENCODE("かいぞくとのたたかいで")
+.db NEWLINE
+.db ENCODE("いのちを おとす")
+.db $EF
 
 L04BA1E:
-.db $4E $0F $3F $31 $14 $14 $24 $16
-.db $FF $ED $3E $4C $A7 $30 $19 $06
-.db $87 $02 $05 $01 $13 $0F $ED $1A
-.db $10 $28 $01 $13 $01 $2A $EF
+.db ENCODE("ボーイとともに ")
+.db NEWLINE
+.db ENCODE("ソフィアのきょうかいで")
+.db NEWLINE
+.db ENCODE("はたらいている")
+.db $EF
 
 L04BA3D:
-.db $08 $2F $05 $14 $24 $10 $0F $11
-.db $19 $ED $4E $0F $3F $31 $2E $15
-.db $07 $0B $FF $0C $09 $0B $ED $3B
-.db $8B $89 $37 $2E $02 $08 $13 $01
-.db $2A $EF
+.db ENCODE("けんかともだちの")
+.db NEWLINE
+.db ENCODE("ボーイをなくし すこし")
+.db NEWLINE
+.db ENCODE("ショックをうけている")
+.db $EF
 
 L04BA5F:
-.db $06 $0C $0F $12 $01 $10 $FF $1B
-.db $14 $1B $0F $14 $2E $ED $10 $0C
-.db $08 $2A $10 $23 $16 $ED $59 $38
-.db $0F $5A $16 $22 $05 $02 $EF
+.db ENCODE("きずついた ひとびとを")
+.db NEWLINE
+.db ENCODE("たすけるために")
+.db NEWLINE
+.db ENCODE("リゲルにむかう")
+.db $EF
 
 L04BA7E:
-.db $10 $0F $2B $24 $05 $0F $20 $0A
-.db $05 $14 $FF $04 $24 $02 $ED $00
-.db $01 $13 $14 $FF $09 $01 $16 $04
-.db $11 $10 $14 $01 $02 $ED $ED $0E
-.db $2B $05 $0F $FF $01 $85 $10 $01
-.db $10 $0F $2B $15 $19 $05 $ED $05
-.db $19 $0B $0F $87 $1A $FF $2D $28
-.db $85 $13 $ED $09 $10 $03 $27 $02
-.db $14 $0B $15 $01 $EF
+.db ENCODE("だれもがまさかと おもう")
+.db NEWLINE
+.db ENCODE("あいてと こいにおちたという")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("それが いったいだれなのか")
+.db NEWLINE
+.db ENCODE("かのじょは わらって")
+.db NEWLINE
+.db ENCODE("こたえようとしない")
+.db $EF
 
 L04BAC3:
-.db $00 $01 $05 $2D $28 $0C $0F $ED
-.db $53 $31 $14 $FF $08 $2F $05 $1A
-.db $0F $05 $29 $ED $05 $2B $28 $16
-.db $14 $85 $13 $1A $ED $0E $2B $05
-.db $0F $FF $0B $00 $2D $0D $15 $19
-.db $05 $EF
+.db ENCODE("あいかわらず")
+.db NEWLINE
+.db ENCODE("メイと けんかばかり")
+.db NEWLINE
+.db ENCODE("かれらにとっては")
+.db NEWLINE
+.db ENCODE("それが しあわせなのか")
+.db $EF
 
 L04BAED:
-.db $53 $31 $16 $FF $0A $06 $10 $0F
-.db $10 $2B $ED $1A $0B $0F $23 $13
-.db $FF $ED $0B $0F $1C $0F $2F $19
-.db $09 $09 $2C $16 $FF $06 $12 $0F
-.db $07 $ED $0B $05 $0B $FF $14 $06
-.db $1A $24 $14 $0F $28 $15 $01 $EF
+.db ENCODE("メイに さきだたれ")
+.db NEWLINE
+.db ENCODE("はじめて ")
+.db NEWLINE
+.db ENCODE("じぶんのこころに きづく")
+.db NEWLINE
+.db ENCODE("しかし ときはもどらない")
+.db $EF
 
 L04BB1D:
-.db $3B $0F $A9 $3B $3F $10 $11 $14
-.db $14 $24 $16 $ED $00 $10 $28 $0B
-.db $01 $07 $16 $2E $12 $07 $2C $02
-.db $14 $ED $05 $0F $2F $1A $0F $85
-.db $13 $01 $2A $EF
+.db ENCODE("ジェシーたちとともに")
+.db NEWLINE
+.db ENCODE("あたらしいくにをつくろうと")
+.db NEWLINE
+.db ENCODE("がんばっている")
+.db $EF
 
 L04BB41:
-.db $05 $12 $13 $19 $FF $36 $0F $3F
-.db $3C $19 $29 $87 $02 $11 $16 $ED
-.db $00 $10 $28 $0B $01 $07 $16 $2E
-.db $FF $06 $0C $0F $01 $10 $ED $ED
-.db $19 $11 $16 $FF $05 $2B $1A $ED
-.db $0A $1A $0F $07 $19 $27 $02 $1D
-.db $01 $04 $02 $14 $ED $27 $1A $0F
-.db $2B $2A $27 $02 $16 $15 $2A $EF
+.db ENCODE("かつての ギースのりょうちに")
+.db NEWLINE
+.db ENCODE("あたらしいくにを きずいた")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("のちに かれは")
+.db NEWLINE
+.db ENCODE("さばくのようへいおうと")
+.db NEWLINE
+.db ENCODE("よばれるようになる")
+.db $EF
 
 L04BB81:
-.db $30 $5A $52 $16 $10 $19 $20 $2B
-.db $13 $ED $2D $05 $01 $1D $01 $0B
-.db $10 $11 $16 $ED $10 $10 $05 $01
-.db $05 $10 $2E $FF $04 $0B $03 $13
-.db $01 $2A $EF
+.db ENCODE("アルムにたのまれて")
+.db NEWLINE
+.db ENCODE("わかいへいしたちに")
+.db NEWLINE
+.db ENCODE("たたかいかたを おしえている")
+.db $EF
 
 L04BBA4:
-.db $27 $2C $01 $2E $17 $06 $0F $0C
-.db $13 $13 $ED $37 $5B $3F $4D $0F
-.db $19 $FF $12 $20 $14 $15 $2A $ED
-.db $ED $13 $0F $2F $0D $12 $19 $04
-.db $2F $15 $06 $0B $ED $50 $41 $5A
-.db $40 $0F $ED $ED $0E $19 $15 $1A
-.db $FF $4A $0F $5B $5F $3B $30 $19
-.db $ED $2B $06 $0B $16 $FF $14 $2D
-.db $16 $ED $06 $0A $0F $20 $2B $2A
-.db $13 $0F $00 $2C $02 $EF
+.db ENCODE("よろいをぬぎすてて")
+.db NEWLINE
+.db ENCODE("クレーベの つまとなる")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("でんせつのおんなきし")
+.db NEWLINE
+.db ENCODE("マチルダ")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("そのなは バレンシアの")
+.db NEWLINE
+.db ENCODE("れきしに とわに")
+.db NEWLINE
+.db ENCODE("きざまれるであろう")
+.db $EF
 
 L04BBF2:
-.db $37 $5B $3F $4D $0F $2E $02 $0B
-.db $15 $01 $ED $25 $22 $15 $07 $FF
-.db $06 $0B $10 $0F $2F $2E $ED $1B
-.db $06 $12 $07 $0F $ED $ED $13 $0F
-.db $2F $0D $12 $19 $04 $2F $15 $06
-.db $0B $ED $50 $41 $5A $40 $0F $ED
-.db $ED $0E $19 $15 $1A $FF $4A $0F
-.db $5B $5F $3B $30 $19 $ED $2B $06
-.db $0B $16 $FF $14 $2D $16 $FF $ED
-.db $06 $0A $0F $20 $2B $2A $13 $0F
-.db $00 $2C $02 $EF
+.db ENCODE("クレーベをうしない")
+.db NEWLINE
+.db ENCODE("やむなく きしだんを")
+.db NEWLINE
+.db ENCODE("ひきつぐ")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("でんせつのおんなきし")
+.db NEWLINE
+.db ENCODE("マチルダ")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("そのなは バレンシアの")
+.db NEWLINE
+.db ENCODE("れきしに とわに ")
+.db NEWLINE
+.db ENCODE("きざまれるであろう")
+.db $EF
 
 L04BC46:
-.db $22 $28 $2E $14 $02 $0E $0F $07
-.db $05 $28 $FF $20 $24 $2A $10 $23
-.db $ED $0B $0F $08 $01 $10 $0F $2F
-.db $19 $FF $10 $01 $11 $87 $02 $2E
-.db $ED $12 $14 $23 $13 $01 $2A $EF
+.db ENCODE("むらをとうぞくから まもるため")
+.db NEWLINE
+.db ENCODE("じけいだんの たいちょうを")
+.db NEWLINE
+.db ENCODE("つとめている")
+.db $EF
 
 L04BC6E:
-.db $04 $14 $02 $14 $10 $11 $2E $FF
-.db $0A $05 $0F $0B $10 $0F $0B $ED
-.db $25 $20 $19 $22 $28 $16 $FF $05
-.db $03 $85 $10 $ED $01 $20 $1A $FF
-.db $22 $05 $0B $19 $27 $02 $16 $ED
-.db $06 $09 $29 $2E $0B $13 $01 $2A
-.db $14 $01 $02 $EF
+.db ENCODE("おとうとたちを さがしだし")
+.db NEWLINE
+.db ENCODE("やまのむらに かえった")
+.db NEWLINE
+.db ENCODE("いまは むかしのように")
+.db NEWLINE
+.db ENCODE("きこりをしているという")
+.db $EF
 
 L04BCA2:
-.db $05 $12 $13 $19 $FF $36 $0F $3F
-.db $3C $19 $29 $87 $02 $11 $16 $ED
-.db $00 $10 $28 $0B $01 $07 $16 $2E
-.db $FF $06 $0C $0F $01 $10 $ED $ED
-.db $19 $11 $16 $FF $05 $2B $1A $ED
-.db $0A $1A $0F $07 $19 $27 $02 $1D
-.db $01 $04 $02 $14 $ED $27 $1A $0F
-.db $2B $2A $27 $02 $16 $15 $2A $EF
+.db ENCODE("かつての ギースのりょうちに")
+.db NEWLINE
+.db ENCODE("あたらしいくにを きずいた")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("のちに かれは")
+.db NEWLINE
+.db ENCODE("さばくのようへいおうと")
+.db NEWLINE
+.db ENCODE("よばれるようになる")
+.db $EF
 
 L04BCE2:
-.db $44 $0F $3F $50 $19 $FF $01 $08
-.db $16 $03 $16 $0A $2B $13 $ED $20
-.db $0B $0F $87 $16 $02 $20 $2B $05
-.db $2D $85 $10 $ED $00 $18 $50 $3F
-.db $58 $14 $4D $3C $43 $9B $9B $9B
-.db $ED $ED $63 $16 $2F $19 $22 $0C
-.db $23 $2E $FF $06 $0F $0D $01 $16
-.db $0B $10 $ED $11 $11 $04 $25 $19
-.db $3B $0F $8A $40 $0F $2E $FF $3E
-.db $46 $30 $1A $ED $08 $85 $0B $13
-.db $FF $26 $2A $0E $02 $14 $1A $0B
-.db $15 $01 $EF
+.db ENCODE("ドーマの いけにえにされて")
+.db NEWLINE
+.db ENCODE("まじょにうまれかわった")
+.db NEWLINE
+.db ENCODE("あねマーラとヘステ···")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("3にんのむすめを ぎせいにした")
+.db NEWLINE
+.db ENCODE("ちちおやのジュダを ソニアは")
+.db NEWLINE
+.db ENCODE("けっして ゆるそうとはしない")
+.db $EF
 
 L04BD3D:
-.db $10 $10 $05 $01 $19 $19 $11 $FF
-.db $05 $2B $19 $0C $05 $0F $10 $1A
-.db $ED $26 $02 $0B $84 $19 $08 $2F
-.db $14 $14 $24 $16 $ED $09 $12 $0D
-.db $0F $2F $14 $06 $03 $10 $ED $ED
-.db $02 $2D $0A $13 $0F $1A $FF $00
-.db $28 $10 $15 $10 $10 $05 $01 $2E
-.db $ED $24 $14 $23 $13 $FF $21 $15
-.db $21 $19 $10 $01 $29 $07 $16 $ED
-.db $2D $10 $85 $10 $14 $01 $02 $EF
+.db ENCODE("たたかいののち かれのすがたは")
+.db NEWLINE
+.db ENCODE("ゆうしゃのけんとともに")
+.db NEWLINE
+.db ENCODE("こつぜんときえた")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("うわさでは あらたなたたかいを")
+.db NEWLINE
+.db ENCODE("もとめて みなみのたいりくに")
+.db NEWLINE
+.db ENCODE("わたったという")
+.db $EF
 
 L04BD8D:
-.db $3B $0F $A9 $3B $3F $19 $FF $ED
-.db $04 $02 $09 $07 $08 $2F $0D $12
-.db $16 $ED $0A $2F $05 $0C $2A $ED
-.db $ED $0E $19 $05 $10 $2D $28 $16
-.db $1A $ED $02 $12 $07 $0B $01 $FF
-.db $12 $20 $05 $0F $ED $27 $29 $0E
-.db $85 $13 $01
+.db ENCODE("ジェシーの ")
+.db NEWLINE
+.db ENCODE("おうこくけんせつに")
+.db NEWLINE
+.db ENCODE("さんかする")
+.db NEWLINE
+.db NEWLINE
+.db ENCODE("そのかたわらには")
+.db NEWLINE
+.db ENCODE("うつくしい つまが")
+.db NEWLINE
+.db ENCODE("よりそっている")
+.db $EF
 
 L04BDC0:
-.dw L0FEF2A
 .dw L04BE06
 .dw L04BE08
 .dw L04BE0A
