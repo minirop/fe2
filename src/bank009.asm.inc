@@ -3481,7 +3481,8 @@ L09AC23:
     AND #127
     BNE L09AC2E
 L09AC2D:
-.db $60
+    RTS
+
 L09AC2E:
     LDA #6
     STA $7DD9,X

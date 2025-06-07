@@ -27,14 +27,7 @@ def decode(code):
     c = code.split(' ')
     output = []
     in_string = False
-    in_e8 = False
     for cc in c:
-        if in_e8:
-            if cc != 'EA':
-                output += f" ${cc}"
-                continue
-            else:
-                in_e8 = False
         match cc:
             case '0F':
                 output[-1] = tenten[output[-1]]
@@ -58,9 +51,6 @@ def decode(code):
                     match cc:
                         case 'E6':
                             output += ".db $E6\n"
-                        case 'E8':
-                            output += ".db $E8"
-                            in_e8 = True
                         case 'EA':
                             output += ".db SPEAK\n"
                         case 'ED':

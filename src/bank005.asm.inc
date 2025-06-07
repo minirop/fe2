@@ -1089,31 +1089,31 @@ L0587BB:
 .dw L0587E0
 
 L0587C7:
-.db ENCODE("ちから")
+ENCODE("ちから")
 .db $EF
 
 L0587CB:
-.db ENCODE("わざ")
+ENCODE("わざ")
 .db $EF
 
 L0587CF:
-.db ENCODE("すばやさ")
+ENCODE("すばやさ")
 .db $EF
 
 L0587D5:
-.db ENCODE("うん")
+ENCODE("うん")
 .db $EF
 
 L0587D8:
-.db ENCODE("しゅびりょく")
+ENCODE("しゅびりょく")
 .db $EF
 
 L0587E0:
-.db ENCODE("さいだいHP")
+ENCODE("さいだいHP")
 .db $EF
 
 L0587E8:
-.db ENCODE("まりょく")
+ENCODE("まりょく")
 .db $EF
 
 L0587ED:

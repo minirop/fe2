@@ -3555,1905 +3555,1917 @@ DIALOGUES_POINTER:
 .dw L03BE8F
 
 L039770:
-.db $E8
-.db $50
-.db $40
-.db $03
-.db $F0
-.db $03
-.db SPEAK
-.db ENCODE("アルム ひとやすみしよう")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("けんのしゅぎょうは おわりだ")
-.db NEWLINE
-.db ENCODE("もう あそびにいってもいいぞ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だが むらのそとへは ゆくな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("さいきんは このへんにも")
-.db NEWLINE
-.db ENCODE("さんぞくが うろついてるからな")
-.db $EF
+FACE MYCEN
+NAME MYCEN
+SPEAK
+ENCODE("アルム ひとやすみしよう")
+WAIT_CLICK
+SPEAK
+ENCODE("けんのしゅぎょうは おわりだ")
+NEWLINE
+ENCODE("もう あそびにいってもいいぞ")
+WAIT_CLICK
+SPEAK
+ENCODE("だが むらのそとへは ゆくな")
+WAIT_CLICK
+SPEAK
+ENCODE("さいきんは このへんにも")
+NEWLINE
+ENCODE("さんぞくが うろついてるからな")
+STOP
 
 L0397D9:
-.db SPEAK
-.db ENCODE("やあ アルム")
-.db NEWLINE
-.db ENCODE("いいところにきたな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おまえも このひとのはなしをきけよ")
-.db $EF
+SPEAK
+ENCODE("やあ アルム")
+NEWLINE
+ENCODE("いいところにきたな")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえも このひとのはなしをきけよ")
+STOP
 
 L0397FE:
-.db $E8
-.db $50
-.db $40
-.db $05
-.db $F0
-.db $05
-.db SPEAK
-.db ENCODE("あの あくめいたかい")
-.db NEWLINE
-.db ENCODE("ドゼーしょうぐんが ついに")
-.db NEWLINE
-.db ENCODE("クーデターを おこしたのです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ソフィアのしろは ドゼーぐんに")
-.db NEWLINE
-.db ENCODE("せんりょうされ こくおうも")
-.db NEWLINE
-.db ENCODE("ころされてしまいました")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ドゼーは ざんぎゃくなおとこで")
-.db NEWLINE
-.db ENCODE("まいにち おおくのひとたちが")
-.db NEWLINE
-.db ENCODE("ひどいめに あっている")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ぼくたちは かいほうぐんをつくって")
-.db NEWLINE
-.db ENCODE("ドゼーと たたかっているのですが")
-.db NEWLINE
-.db ENCODE("ざんねんながら うまくいきません")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それで マイセンしょうぐんの")
-.db NEWLINE
-.db ENCODE("おちからを かりに きたのです")
-.db $EF
+FACE LUKAS
+NAME LUKAS
+SPEAK
+ENCODE("あの あくめいたかい")
+NEWLINE
+ENCODE("ドゼーしょうぐんが ついに")
+NEWLINE
+ENCODE("クーデターを おこしたのです")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアのしろは ドゼーぐんに")
+NEWLINE
+ENCODE("せんりょうされ こくおうも")
+NEWLINE
+ENCODE("ころされてしまいました")
+WAIT_CLICK
+SPEAK
+ENCODE("ドゼーは ざんぎゃくなおとこで")
+NEWLINE
+ENCODE("まいにち おおくのひとたちが")
+NEWLINE
+ENCODE("ひどいめに あっている")
+WAIT_CLICK
+SPEAK
+ENCODE("ぼくたちは かいほうぐんをつくって")
+NEWLINE
+ENCODE("ドゼーと たたかっているのですが")
+NEWLINE
+ENCODE("ざんねんながら うまくいきません")
+WAIT_CLICK
+SPEAK
+ENCODE("それで マイセンしょうぐんの")
+NEWLINE
+ENCODE("おちからを かりに きたのです")
+STOP
 
 L0398F4:
-.db SPEAK
-.db ENCODE("へぇー おまえのじいちゃんって")
-.db NEWLINE
-.db ENCODE("むかしは しょうぐんだったのか")
-.db $EF
+SPEAK
+ENCODE("へぇー おまえのじいちゃんって")
+NEWLINE
+ENCODE("むかしは しょうぐんだったのか")
+STOP
 
 L039918:
-.db SPEAK
-.db ENCODE("なあ アルム")
-.db NEWLINE
-.db ENCODE("くにの みんなが こまってるんだ")
-.db NEWLINE
-.db ENCODE("みんなで たすけにいこうぜ")
-.db $EF
+SPEAK
+ENCODE("なあ アルム")
+NEWLINE
+ENCODE("くにの みんなが こまってるんだ")
+NEWLINE
+ENCODE("みんなで たすけにいこうぜ")
+STOP
 
 L039943:
-.db SPEAK
-.db ENCODE("おれたちは ここでまってるから")
-.db NEWLINE
-.db ENCODE("じいちゃんに たのんでみろよ")
-.db $EF
+SPEAK
+ENCODE("おれたちは ここでまってるから")
+NEWLINE
+ENCODE("じいちゃんに たのんでみろよ")
+STOP
 
 L039966:
-.db $E8 $50 $40 $03 $F0 $03
-.db SPEAK
-.db ENCODE("なに かいほうぐんにはいるだと!")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だめだ.ゆるさん!!")
-.db WAIT_CLICK
+FACE MYCEN
+NAME MYCEN
+SPEAK
+ENCODE("なに かいほうぐんにはいるだと!")
+WAIT_CLICK
+SPEAK
+ENCODE("だめだ.ゆるさん!!")
+WAIT_CLICK
 
 L03998E:
-.db SPEAK
-.db ENCODE("おまえは たたかってはならぬ")
-.db NEWLINE
-.db ENCODE("かなしいおもいを するだけだ")
-.db $EF
+SPEAK
+ENCODE("おまえは たたかってはならぬ")
+NEWLINE
+ENCODE("かなしいおもいを するだけだ")
+STOP
 
 L0399AF:
-.db $E8 $50 $40 $05 $F0 $05
-.db SPEAK
-.db ENCODE("だめでしたか··ざんねんです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("マイセンどのも としをとられて")
-.db NEWLINE
-.db ENCODE("おくびょうに なられたのですね")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("かつては ソフィアいちの")
-.db NEWLINE
-.db ENCODE("ゆうしゃとして こくみんから")
-.db NEWLINE
-.db ENCODE("そんけいされていたのに···")
-.db $E6
-.db $E8 $50 $40 $01 $F0 $01
-.db SPEAK
-.db ENCODE("まって じいちゃんのかわりに")
-.db NEWLINE
-.db ENCODE("ぼくが かいほうぐんにはいるよ")
-.db $E6
-.db $F0
-.db ENCODE("か")
-.db SPEAK
-.db ENCODE("えっ! ")
-.db NEWLINE
-.db ENCODE("きみが マイセンしょうぐんの")
-.db NEWLINE
-.db ENCODE("かわりに きてくれるのか")
-.db WAIT_CLICK
+FACE LUKAS
+NAME LUKAS
+SPEAK
+ENCODE("だめでしたか··ざんねんです")
+WAIT_CLICK
+SPEAK
+ENCODE("マイセンどのも としをとられて")
+NEWLINE
+ENCODE("おくびょうに なられたのですね")
+WAIT_CLICK
+SPEAK
+ENCODE("かつては ソフィアいちの")
+NEWLINE
+ENCODE("ゆうしゃとして こくみんから")
+NEWLINE
+ENCODE("そんけいされていたのに···")
+PAGE
+FACE ALM
+NAME ALM
+SPEAK
+ENCODE("まって じいちゃんのかわりに")
+NEWLINE
+ENCODE("ぼくが かいほうぐんにはいるよ")
+PAGE
+NAME LUKAS
+SPEAK
+ENCODE("えっ! ")
+NEWLINE
+ENCODE("きみが マイセンしょうぐんの")
+NEWLINE
+ENCODE("かわりに きてくれるのか")
+WAIT_CLICK
 
 L039A69:
-.db SPEAK
-.db ENCODE("ありがとう.なかまたちも")
-.db NEWLINE
-.db ENCODE("きっと よろこぶよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("じゃあ ぼくといっしょに")
-.db NEWLINE
-.db ENCODE("かいほうぐんのアジトまでいこう")
-.db $EF
+SPEAK
+ENCODE("ありがとう.なかまたちも")
+NEWLINE
+ENCODE("きっと よろこぶよ")
+WAIT_CLICK
+SPEAK
+ENCODE("じゃあ ぼくといっしょに")
+NEWLINE
+ENCODE("かいほうぐんのアジトまでいこう")
+STOP
 
 L039AA6:
-.db $E8 $50 $40 $08 $F0 $08
-.db SPEAK
-.db ENCODE("アルム ぼくもゆくよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("このラムのむらだって")
-.db NEWLINE
-.db ENCODE("いつかは おそわれるはずだろ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それなら さきに")
-.db NEWLINE
-.db ENCODE("そのドゼーとかいうやつを")
-.db NEWLINE
-.db ENCODE("やっつけちまおうぜ")
-.db $EF
+FACE GRAY
+NAME GRAY
+SPEAK
+ENCODE("アルム ぼくもゆくよ")
+WAIT_CLICK
+SPEAK
+ENCODE("このラムのむらだって")
+NEWLINE
+ENCODE("いつかは おそわれるはずだろ")
+WAIT_CLICK
+SPEAK
+ENCODE("それなら さきに")
+NEWLINE
+ENCODE("そのドゼーとかいうやつを")
+NEWLINE
+ENCODE("やっつけちまおうぜ")
+STOP
 
 L039AFB:
-.db $E8 $50 $40 $07 $F0 $07
-.db SPEAK
-.db ENCODE("アルムは おれたちのリーダーだろ")
-.db NEWLINE
-.db ENCODE("もちろん ひとりでゆかせないぜ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("いっしょに ソフィアのしろを")
-.db NEWLINE
-.db ENCODE("とりもどそう")
-.db $EF
+FACE TOBIN
+NAME TOBIN
+SPEAK
+ENCODE("アルムは おれたちのリーダーだろ")
+NEWLINE
+ENCODE("もちろん ひとりでゆかせないぜ")
+WAIT_CLICK
+SPEAK
+ENCODE("いっしょに ソフィアのしろを")
+NEWLINE
+ENCODE("とりもどそう")
+STOP
 
 L039B3F:
-.db $E8 $50 $40 $06 $F0 $06
-.db SPEAK
-.db ENCODE("おれ!?·· どうしょうかな··")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("まぁいいや,いっしょにゆくよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だけど あぶなくなったら")
-.db NEWLINE
-.db ENCODE("たすけてくれよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おれたちは おまえとはちがって")
-.db NEWLINE
-.db ENCODE("まだ うまくたたかえないからな")
-.db $EF
+FACE KLIFF
+NAME KLIFF
+SPEAK
+ENCODE("おれ!?·· どうしょうかな··")
+WAIT_CLICK
+SPEAK
+ENCODE("まぁいいや,いっしょにゆくよ")
+WAIT_CLICK
+SPEAK
+ENCODE("だけど あぶなくなったら")
+NEWLINE
+ENCODE("たすけてくれよ")
+WAIT_CLICK
+SPEAK
+ENCODE("おれたちは おまえとはちがって")
+NEWLINE
+ENCODE("まだ うまくたたかえないからな")
+STOP
 
 L039BA4:
-.db $E8 $50 $40 $09 $F0 $09
-.db SPEAK
-.db ENCODE("ありがとう.たすかりました")
-.db NEWLINE
-.db ENCODE("わたしは ソフィアのきしクレア")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ドゼーのへいしに とらえられて")
-.db NEWLINE
-.db ENCODE("ここに とじこめられてたの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("かいほうぐんのリーダーの")
-.db NEWLINE
-.db ENCODE("クレーベは わたしのあにです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わたしも アジトにかえりますから")
-.db NEWLINE
-.db ENCODE("いっしょに ゆきましょう")
-.db $EF
+FACE CLAIR
+NAME CLAIR
+SPEAK
+ENCODE("ありがとう.たすかりました")
+NEWLINE
+ENCODE("わたしは ソフィアのきしクレア")
+WAIT_CLICK
+SPEAK
+ENCODE("ドゼーのへいしに とらえられて")
+NEWLINE
+ENCODE("ここに とじこめられてたの")
+WAIT_CLICK
+SPEAK
+ENCODE("かいほうぐんのリーダーの")
+NEWLINE
+ENCODE("クレーベは わたしのあにです")
+WAIT_CLICK
+SPEAK
+ENCODE("わたしも アジトにかえりますから")
+NEWLINE
+ENCODE("いっしょに ゆきましょう")
+STOP
 
 L039C2D:
-.db $E8 $50 $40 $14 $F0 $14
-.db SPEAK
-.db ENCODE("ここは かいほうぐんのアジトだ")
-.db NEWLINE
-.db ENCODE("あやしいやつは とおさないぞ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("えっ あたらしいなかまなのか")
-.db NEWLINE
-.db ENCODE("それなら おくのへやにいってくれ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だけど どうくつには まものが")
-.db NEWLINE
-.db ENCODE("でるから きをつけろよ")
-.db $EF
+FACE PYTHON
+NAME PYTHON
+SPEAK
+ENCODE("ここは かいほうぐんのアジトだ")
+NEWLINE
+ENCODE("あやしいやつは とおさないぞ")
+WAIT_CLICK
+SPEAK
+ENCODE("えっ あたらしいなかまなのか")
+NEWLINE
+ENCODE("それなら おくのへやにいってくれ")
+WAIT_CLICK
+SPEAK
+ENCODE("だけど どうくつには まものが")
+NEWLINE
+ENCODE("でるから きをつけろよ")
+STOP
 
 L039C9A:
-.db $E8 $50 $40 $86 $F0 $86
-.db SPEAK
-.db ENCODE("ふふ ソフィアのおうじょか")
-.db NEWLINE
-.db ENCODE("おまえがくるのを まっていたぞ")
+FACE DUMA
+NAME DUMA
+SPEAK
+ENCODE("ふふ ソフィアのおうじょか")
+NEWLINE
+ENCODE("おまえがくるのを まっていたぞ")
 .db $E6
-.db $E8 $50 $40 $02 $F0 $02
-.db SPEAK
-.db ENCODE("あなたは だれ!?")
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("あなたは だれ!?")
 .db $E6
-.db $F0
-.db ENCODE("ゅ")
-.db SPEAK
-.db ENCODE("わしか")
-.db NEWLINE
-.db ENCODE("わしは ドーマさまの")
-.db NEWLINE
-.db ENCODE("だいいちの しもべ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ドーマきょうの さいしちょう")
-.db NEWLINE
-.db ENCODE("ジュダと いうものよ")
+NAME DUMA
+SPEAK
+ENCODE("わしか")
+NEWLINE
+ENCODE("わしは ドーマさまの")
+NEWLINE
+ENCODE("だいいちの しもべ")
+WAIT_CLICK
+SPEAK
+ENCODE("ドーマきょうの さいしちょう")
+NEWLINE
+ENCODE("ジュダと いうものよ")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("それなら おねがいです")
-.db WAIT_CLICK
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("ミラさまを かいほうして!")
-.db NEWLINE
-.db ENCODE("だいちぼしんミラを")
-.db NEWLINE
-.db ENCODE("もとにもどしてください!!")
+NAME CELICA
+SPEAK
+ENCODE("それなら おねがいです")
+WAIT_CLICK
+NAME CELICA
+SPEAK
+ENCODE("ミラさまを かいほうして!")
+NEWLINE
+ENCODE("だいちぼしんミラを")
+NEWLINE
+ENCODE("もとにもどしてください!!")
 .db $E6
-.db $F0
-.db ENCODE("ゅ")
-.db SPEAK
-.db ENCODE("ふふふ···")
-.db NEWLINE
-.db ENCODE("まあ そうあわてるな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わしのもつ この たまをみてみろ")
-.db NEWLINE
-.db ENCODE("どうじゃ なつかしいすがたが")
-.db NEWLINE
-.db ENCODE("みえるじゃろう")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("そうじゃよ アルムだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("やつのもがきくるしむすがたを")
-.db NEWLINE
-.db ENCODE("しばらく ながめているのじゃな")
-.db $EF
+NAME DUMA
+SPEAK
+ENCODE("ふふふ···")
+NEWLINE
+ENCODE("まあ そうあわてるな")
+WAIT_CLICK
+SPEAK
+ENCODE("わしのもつ この たまをみてみろ")
+NEWLINE
+ENCODE("どうじゃ なつかしいすがたが")
+NEWLINE
+ENCODE("みえるじゃろう")
+WAIT_CLICK
+SPEAK
+ENCODE("そうじゃよ アルムだ")
+WAIT_CLICK
+SPEAK
+ENCODE("やつのもがきくるしむすがたを")
+NEWLINE
+ENCODE("しばらく ながめているのじゃな")
+STOP
 
 L039DC5:
-.db $E8 $50 $40 $0C $F0 $0C
-.db SPEAK
-.db ENCODE("ドゼーは きたのたいこくリゲルに")
-.db NEWLINE
-.db ENCODE("えんじょを たのんだそうだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("リゲルのきしだんのつよさは")
-.db NEWLINE
-.db ENCODE("ソフィアとは ひかくにならない")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("もし リゲルおうこくが うごけば")
-.db NEWLINE
-.db ENCODE("おれたちに かちめはないぜ")
+FACE FORSYTH
+NAME FORSYTH
+SPEAK
+ENCODE("ドゼーは きたのたいこくリゲルに")
+NEWLINE
+ENCODE("えんじょを たのんだそうだ")
+WAIT_CLICK
+SPEAK
+ENCODE("リゲルのきしだんのつよさは")
+NEWLINE
+ENCODE("ソフィアとは ひかくにならない")
+WAIT_CLICK
+SPEAK
+ENCODE("もし リゲルおうこくが うごけば")
+NEWLINE
+ENCODE("おれたちに かちめはないぜ")
 .db $E6
-.db $E8 $50 $40 $01 $F0 $01
-.db SPEAK
-.db ENCODE("でも ソフィアとリゲルは")
-.db NEWLINE
-.db ENCODE("[かみがみのめいやく]によって")
-.db NEWLINE
-.db ENCODE("たたかえないはずだろ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ソフィアのしゅごしんである")
-.db NEWLINE
-.db ENCODE("ミラさまが そんなこと")
-.db NEWLINE
-.db ENCODE("ゆるされないはずだ")
+FACE ALM
+NAME ALM
+SPEAK
+ENCODE("でも ソフィアとリゲルは")
+NEWLINE
+ENCODE("[かみがみのめいやく]によって")
+NEWLINE
+ENCODE("たたかえないはずだろ")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアのしゅごしんである")
+NEWLINE
+ENCODE("ミラさまが そんなこと")
+NEWLINE
+ENCODE("ゆるされないはずだ")
 .db $E6
-.db $F0
-.db ENCODE("す")
-.db SPEAK
-.db ENCODE("ところがさ··· うわさじゃ")
-.db NEWLINE
-.db ENCODE("そのミラさまが きえたらしい")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おいおい そんなにおどろくなよ")
-.db NEWLINE
-.db ENCODE("だって さいきん なんかへんだろ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("このところ さくもつはみのらないし")
-.db NEWLINE
-.db ENCODE("へんな まものばかりが でてくる")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だいちをまもる ミラさまのちからが")
-.db NEWLINE
-.db ENCODE("おとろえたとしか かんがえられないよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("まあ このうわさが ほんとかどうか")
-.db NEWLINE
-.db ENCODE("ミラのしんでんにいけば わかるさ")
-.db $EF
+NAME FORSYTH
+SPEAK
+ENCODE("ところがさ··· うわさじゃ")
+NEWLINE
+ENCODE("そのミラさまが きえたらしい")
+WAIT_CLICK
+SPEAK
+ENCODE("おいおい そんなにおどろくなよ")
+NEWLINE
+ENCODE("だって さいきん なんかへんだろ")
+WAIT_CLICK
+SPEAK
+ENCODE("このところ さくもつはみのらないし")
+NEWLINE
+ENCODE("へんな まものばかりが でてくる")
+WAIT_CLICK
+SPEAK
+ENCODE("だいちをまもる ミラさまのちからが")
+NEWLINE
+ENCODE("おとろえたとしか かんがえられないよ")
+WAIT_CLICK
+SPEAK
+ENCODE("まあ このうわさが ほんとかどうか")
+NEWLINE
+ENCODE("ミラのしんでんにいけば わかるさ")
+STOP
 
 L039F56:
-.db $E8 $50 $40 $0B $F0 $0B
-.db SPEAK
-.db ENCODE("やあ きみがアルムか")
-.db NEWLINE
-.db ENCODE("いもうとが おせわになったね")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("さすがは マイセンしょうぐんの")
-.db NEWLINE
-.db ENCODE("まごだけあって ゆうかんだな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("なあ アルム.たのみがあるんだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("きょうからは きみが ぼくたちの")
-.db NEWLINE
-.db ENCODE("リーダーになってくれないだろうか")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ソフィアのおうけが ほろんだいま")
-.db NEWLINE
-.db ENCODE("ぼくたちには たよるものがない")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だから ソフィアおうこくの")
-.db NEWLINE
-.db ENCODE("えいゆうだった マイセンどのに")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("われらの おうになってほしいと")
-.db NEWLINE
-.db ENCODE("おねがいしたのだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だけど しょうぐんは なぜか")
-.db NEWLINE
-.db ENCODE("たちあがろうとは なさらない")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だから かわりに きみが")
-.db NEWLINE
-.db ENCODE("かいほうぐんを ひきいてほしい")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("マイセンどのの ちをひくものが")
-.db NEWLINE
-.db ENCODE("かいほうぐんのリーダーになれば")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("われわれは おもうぞんぶん")
-.db NEWLINE
-.db ENCODE("たたかうことができるんだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("なっアルム.たのむよ")
-.db NEWLINE
-.db ENCODE("どうかソフィアを すくってくれ")
-.db $EF
+FACE CLIVE_B
+NAME CLIVE_B
+SPEAK
+ENCODE("やあ きみがアルムか")
+NEWLINE
+ENCODE("いもうとが おせわになったね")
+WAIT_CLICK
+SPEAK
+ENCODE("さすがは マイセンしょうぐんの")
+NEWLINE
+ENCODE("まごだけあって ゆうかんだな")
+WAIT_CLICK
+SPEAK
+ENCODE("なあ アルム.たのみがあるんだ")
+WAIT_CLICK
+SPEAK
+ENCODE("きょうからは きみが ぼくたちの")
+NEWLINE
+ENCODE("リーダーになってくれないだろうか")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアのおうけが ほろんだいま")
+NEWLINE
+ENCODE("ぼくたちには たよるものがない")
+WAIT_CLICK
+SPEAK
+ENCODE("だから ソフィアおうこくの")
+NEWLINE
+ENCODE("えいゆうだった マイセンどのに")
+WAIT_CLICK
+SPEAK
+ENCODE("われらの おうになってほしいと")
+NEWLINE
+ENCODE("おねがいしたのだ")
+WAIT_CLICK
+SPEAK
+ENCODE("だけど しょうぐんは なぜか")
+NEWLINE
+ENCODE("たちあがろうとは なさらない")
+WAIT_CLICK
+SPEAK
+ENCODE("だから かわりに きみが")
+NEWLINE
+ENCODE("かいほうぐんを ひきいてほしい")
+WAIT_CLICK
+SPEAK
+ENCODE("マイセンどのの ちをひくものが")
+NEWLINE
+ENCODE("かいほうぐんのリーダーになれば")
+WAIT_CLICK
+SPEAK
+ENCODE("われわれは おもうぞんぶん")
+NEWLINE
+ENCODE("たたかうことができるんだ")
+WAIT_CLICK
+SPEAK
+ENCODE("なっアルム.たのむよ")
+NEWLINE
+ENCODE("どうかソフィアを すくってくれ")
+STOP
 
 L03A0E5:
-.db $E8 $50 $40 $03 $F0 $03
-.db SPEAK
-.db ENCODE("アルム,きたか···")
+FACE MYCEN
+NAME MYCEN
+SPEAK
+ENCODE("アルム,きたか···")
 .db $E6
-.db $E8 $50 $40 $01 $F0 $01
-.db SPEAK
-.db ENCODE("あっ じいちゃん!!")
-.db NEWLINE
-.db ENCODE("どうして ソフィアのしろに?")
+FACE ALM
+NAME ALM
+SPEAK
+ENCODE("あっ じいちゃん!!")
+NEWLINE
+ENCODE("どうして ソフィアのしろに?")
 .db $E6
-.db SPEAK
-.db ENCODE("うんめいとは ざんこくなもの")
-.db NEWLINE
-.db ENCODE("わしが どうあがいても")
-.db NEWLINE
-.db ENCODE("さだめは かえられぬ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ならば アルムよ")
-.db NEWLINE
-.db ENCODE("おまえは おまえのしんじる")
-.db NEWLINE
-.db ENCODE("みちをゆくがよい")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("このバレンシアを のろわれた")
-.db NEWLINE
-.db ENCODE("うんめいから ときはなつこと")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それが おまえと ···そして")
-.db NEWLINE
-.db ENCODE("もうすぐ このしろを おとずれる")
-.db NEWLINE
-.db ENCODE("あかいかみのむすめ···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おまえたちふたりに あたえられた")
-.db NEWLINE
-.db ENCODE("うんめいなのかも しれぬな···")
-.db $EF
+SPEAK
+ENCODE("うんめいとは ざんこくなもの")
+NEWLINE
+ENCODE("わしが どうあがいても")
+NEWLINE
+ENCODE("さだめは かえられぬ")
+WAIT_CLICK
+SPEAK
+ENCODE("ならば アルムよ")
+NEWLINE
+ENCODE("おまえは おまえのしんじる")
+NEWLINE
+ENCODE("みちをゆくがよい")
+WAIT_CLICK
+SPEAK
+ENCODE("このバレンシアを のろわれた")
+NEWLINE
+ENCODE("うんめいから ときはなつこと")
+WAIT_CLICK
+SPEAK
+ENCODE("それが おまえと ···そして")
+NEWLINE
+ENCODE("もうすぐ このしろを おとずれる")
+NEWLINE
+ENCODE("あかいかみのむすめ···")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえたちふたりに あたえられた")
+NEWLINE
+ENCODE("うんめいなのかも しれぬな···")
+STOP
 
 L03A1DF:
-.db $E8 $50 $40 $02 $F0 $02
-.db SPEAK
-.db ENCODE("それでは しさいさま")
-.db NEWLINE
-.db ENCODE("いってまいります")
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("それでは しさいさま")
+NEWLINE
+ENCODE("いってまいります")
 .db $E6
-.db $E8 $50 $40 $04 $F0 $04
-.db SPEAK
-.db ENCODE("セリカよ··どうしてもゆくのか")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ミラのしんでんまでの みちは")
-.db NEWLINE
-.db ENCODE("ながい")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ソフィアおうこくも いまや")
-.db NEWLINE
-.db ENCODE("ないらんで あれはてて だれも")
-.db NEWLINE
-.db ENCODE("たびびとを まもってはくれぬ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ギースのかいぞくや まものたちが")
-.db NEWLINE
-.db ENCODE("しゅつぼつして おまえを")
-.db NEWLINE
-.db ENCODE("おそうかもしれぬぞ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("いくら [しんかんせんし]でも")
-.db NEWLINE
-.db ENCODE("おんなのおまえには きけんすぎる")
+FACE NOMA
+NAME NOMA
+SPEAK
+ENCODE("セリカよ··どうしてもゆくのか")
+WAIT_CLICK
+SPEAK
+ENCODE("ミラのしんでんまでの みちは")
+NEWLINE
+ENCODE("ながい")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアおうこくも いまや")
+NEWLINE
+ENCODE("ないらんで あれはてて だれも")
+NEWLINE
+ENCODE("たびびとを まもってはくれぬ")
+WAIT_CLICK
+SPEAK
+ENCODE("ギースのかいぞくや まものたちが")
+NEWLINE
+ENCODE("しゅつぼつして おまえを")
+NEWLINE
+ENCODE("おそうかもしれぬぞ")
+WAIT_CLICK
+SPEAK
+ENCODE("いくら [しんかんせんし]でも")
+NEWLINE
+ENCODE("おんなのおまえには きけんすぎる")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("しかし しさいさま")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("このだいちに みのりがなくなって")
-.db NEWLINE
-.db ENCODE("すでに 3ねん")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ひとびとは うえにくるしみ")
-.db NEWLINE
-.db ENCODE("この しゅうどういんにまで")
-.db NEWLINE
-.db ENCODE("たすけを もとめにきています")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だいちぼしんミラに いったい")
-.db NEWLINE
-.db ENCODE("なにがあったのか.わたしは")
-.db NEWLINE
-.db ENCODE("それを たしかめたいのです")
+NAME CELICA
+SPEAK
+ENCODE("しかし しさいさま")
+WAIT_CLICK
+SPEAK
+ENCODE("このだいちに みのりがなくなって")
+NEWLINE
+ENCODE("すでに 3ねん")
+WAIT_CLICK
+SPEAK
+ENCODE("ひとびとは うえにくるしみ")
+NEWLINE
+ENCODE("この しゅうどういんにまで")
+NEWLINE
+ENCODE("たすけを もとめにきています")
+WAIT_CLICK
+SPEAK
+ENCODE("だいちぼしんミラに いったい")
+NEWLINE
+ENCODE("なにがあったのか.わたしは")
+NEWLINE
+ENCODE("それを たしかめたいのです")
 .db $E6
-.db $F0
-.db ENCODE("お")
-.db SPEAK
-.db ENCODE("そうか···")
-.db NEWLINE
-.db ENCODE("そこまでいうなら やむをえまい")
-.db NEWLINE
-.db ENCODE("だがなセリカよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("マイセンどのが おまえをわしに")
-.db NEWLINE
-.db ENCODE("あずけたわけを しっているな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("いまや ソフィアおうけの ちを")
-.db NEWLINE
-.db ENCODE("ひくものは おまえひとりなのだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おまえは ソフィアおうこくの")
-.db NEWLINE
-.db ENCODE("たみにとって さいごの きぼう")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("けっして むりはするなよ")
-.db $EF
+NAME NOMA
+SPEAK
+ENCODE("そうか···")
+NEWLINE
+ENCODE("そこまでいうなら やむをえまい")
+NEWLINE
+ENCODE("だがなセリカよ")
+WAIT_CLICK
+SPEAK
+ENCODE("マイセンどのが おまえをわしに")
+NEWLINE
+ENCODE("あずけたわけを しっているな")
+WAIT_CLICK
+SPEAK
+ENCODE("いまや ソフィアおうけの ちを")
+NEWLINE
+ENCODE("ひくものは おまえひとりなのだ")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえは ソフィアおうこくの")
+NEWLINE
+ENCODE("たみにとって さいごの きぼう")
+WAIT_CLICK
+SPEAK
+ENCODE("けっして むりはするなよ")
+STOP
 
 L03A3D1:
-.db $E8 $50 $40 $04 $F0 $04
-.db SPEAK
-.db ENCODE("もう なにもいうことはない")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("そなたに ミラの ごかごの")
-.db NEWLINE
-.db ENCODE("あらんことを···")
-.db $EF
+FACE NOMA
+NAME NOMA
+SPEAK
+ENCODE("もう なにもいうことはない")
+WAIT_CLICK
+SPEAK
+ENCODE("そなたに ミラの ごかごの")
+NEWLINE
+ENCODE("あらんことを···")
+STOP
 
 L03A401:
-.db $E8 $50 $40 $0F $F0 $0F
-.db SPEAK
-.db ENCODE("セリカさまが いかれるのなら")
-.db NEWLINE
-.db ENCODE("わたしも まいります")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("すこしぐらいの きずなら")
-.db NEWLINE
-.db ENCODE("わたしのリカバーのじゅもんで")
-.db NEWLINE
-.db ENCODE("なおしてあげましょう")
-.db $EF
+FACE GENNY
+NAME GENNY
+SPEAK
+ENCODE("セリカさまが いかれるのなら")
+NEWLINE
+ENCODE("わたしも まいります")
+WAIT_CLICK
+SPEAK
+ENCODE("すこしぐらいの きずなら")
+NEWLINE
+ENCODE("わたしのリカバーのじゅもんで")
+NEWLINE
+ENCODE("なおしてあげましょう")
+STOP
 
 L03A451:
-.db $E8 $50 $40 $10 $F0 $10
-.db SPEAK
-.db ENCODE("セリカさま.おんなのこばかりじゃ")
-.db NEWLINE
-.db ENCODE("ふあんでしょ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ぼくも いっしょにいきますから")
-.db NEWLINE
-.db ENCODE("あんしんしてください")
-.db $EF
+FACE BOEY
+NAME BOEY
+SPEAK
+ENCODE("セリカさま.おんなのこばかりじゃ")
+NEWLINE
+ENCODE("ふあんでしょ")
+WAIT_CLICK
+SPEAK
+ENCODE("ぼくも いっしょにいきますから")
+NEWLINE
+ENCODE("あんしんしてください")
+STOP
 
 L03A491:
-.db $E8 $50 $40 $0D $F0 $0D
-.db SPEAK
-.db ENCODE("ボーイなんて まだまだこどもよ")
-.db NEWLINE
-.db ENCODE("だって ほのおのまほうしか")
-.db NEWLINE
-.db ENCODE("つかえないもの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("セリカさま.わたしなら")
-.db NEWLINE
-.db ENCODE("いかづちの まほうがつかえます")
-.db NEWLINE
-.db ENCODE("たよりにしてくださいね")
-.db $EF
+FACE MAE
+NAME MAE
+SPEAK
+ENCODE("ボーイなんて まだまだこどもよ")
+NEWLINE
+ENCODE("だって ほのおのまほうしか")
+NEWLINE
+ENCODE("つかえないもの")
+WAIT_CLICK
+SPEAK
+ENCODE("セリカさま.わたしなら")
+NEWLINE
+ENCODE("いかづちの まほうがつかえます")
+NEWLINE
+ENCODE("たよりにしてくださいね")
+STOP
 
 L03A4EF:
-.db $E8 $50 $40 $0E $F0 $0E
-.db SPEAK
-.db ENCODE("わたしは シルク")
-.db NEWLINE
-.db ENCODE("ミラのめがみにつかえる")
-.db NEWLINE
-.db ENCODE("シスターです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("とうぞくたちに とらえられ")
-.db NEWLINE
-.db ENCODE("このほこらへ つれてこられたの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("どうかわたしを ここから")
-.db NEWLINE
-.db ENCODE("つれだしてください")
-.db $EF
+FACE SILQUE
+NAME SILQUE
+SPEAK
+ENCODE("わたしは シルク")
+NEWLINE
+ENCODE("ミラのめがみにつかえる")
+NEWLINE
+ENCODE("シスターです")
+WAIT_CLICK
+SPEAK
+ENCODE("とうぞくたちに とらえられ")
+NEWLINE
+ENCODE("このほこらへ つれてこられたの")
+WAIT_CLICK
+SPEAK
+ENCODE("どうかわたしを ここから")
+NEWLINE
+ENCODE("つれだしてください")
+STOP
 
 L03A54F:
-.db SPEAK
-.db ENCODE("バレンシアにわたりたいなら")
-.db NEWLINE
-.db ENCODE("そのふねにのりな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だが とちゅうのうみには")
-.db NEWLINE
-.db ENCODE("かいぞくどもが わんさかでるぜ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("かいぞくのボスはダッハって")
-.db NEWLINE
-.db ENCODE("いうんだが こいつがひでえやつでよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("さっきも かぞくをころされた")
-.db NEWLINE
-.db ENCODE("おとこたちが かたきうちに")
-.db NEWLINE
-.db ENCODE("でかけていった")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("まぁ かわいそうだが いきては")
-.db NEWLINE
-.db ENCODE("かえってこれないだろうなぁ")
-.db $EF
+SPEAK
+ENCODE("バレンシアにわたりたいなら")
+NEWLINE
+ENCODE("そのふねにのりな")
+WAIT_CLICK
+SPEAK
+ENCODE("だが とちゅうのうみには")
+NEWLINE
+ENCODE("かいぞくどもが わんさかでるぜ")
+WAIT_CLICK
+SPEAK
+ENCODE("かいぞくのボスはダッハって")
+NEWLINE
+ENCODE("いうんだが こいつがひでえやつでよ")
+WAIT_CLICK
+SPEAK
+ENCODE("さっきも かぞくをころされた")
+NEWLINE
+ENCODE("おとこたちが かたきうちに")
+NEWLINE
+ENCODE("でかけていった")
+WAIT_CLICK
+SPEAK
+ENCODE("まぁ かわいそうだが いきては")
+NEWLINE
+ENCODE("かえってこれないだろうなぁ")
+STOP
 
 L03A601:
-.db SPEAK
-.db ENCODE("うみのほこらには")
-.db NEWLINE
-.db ENCODE("ふしぎなちからをもつ つるぎが")
-.db NEWLINE
-.db ENCODE("かくされていると いわれています")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だけど あのしまには")
-.db NEWLINE
-.db ENCODE("おそろしい まものが·····")
-.db $EF
+SPEAK
+ENCODE("うみのほこらには")
+NEWLINE
+ENCODE("ふしぎなちからをもつ つるぎが")
+NEWLINE
+ENCODE("かくされていると いわれています")
+WAIT_CLICK
+SPEAK
+ENCODE("だけど あのしまには")
+NEWLINE
+ENCODE("おそろしい まものが·····")
+STOP
 
 L03A64E:
-.db $E8 $50 $40 $11 $F0 $11
-.db SPEAK
-.db ENCODE("まぁ おれは バルボさんに")
-.db NEWLINE
-.db ENCODE("かねで やとわれただけだから")
-.db NEWLINE
-.db ENCODE("あんたらだって いいぜ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だけど ドラゴンゾンビだけは")
-.db NEWLINE
-.db ENCODE("かんべんしてくれよな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("あれは エンジェルのまほうでも")
-.db NEWLINE
-.db ENCODE("なければ ぜったい たおせないぜ")
-.db $EF
+FACE KAMUI
+NAME KAMUI
+SPEAK
+ENCODE("まぁ おれは バルボさんに")
+NEWLINE
+ENCODE("かねで やとわれただけだから")
+NEWLINE
+ENCODE("あんたらだって いいぜ")
+WAIT_CLICK
+SPEAK
+ENCODE("だけど ドラゴンゾンビだけは")
+NEWLINE
+ENCODE("かんべんしてくれよな")
+WAIT_CLICK
+SPEAK
+ENCODE("あれは エンジェルのまほうでも")
+NEWLINE
+ENCODE("なければ ぜったい たおせないぜ")
+STOP
 
 L03A6CF:
-.db $E8 $50 $40 $15 $F0 $15
-.db SPEAK
-.db ENCODE("バルボのあにきが いくなら")
-.db NEWLINE
-.db ENCODE("おれも いくよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ゆみのうでなら")
-.db NEWLINE
-.db ENCODE("すこしは じしんがあるぜ")
-.db $EF
+FACE LEO
+NAME LEO
+SPEAK
+ENCODE("バルボのあにきが いくなら")
+NEWLINE
+ENCODE("おれも いくよ")
+WAIT_CLICK
+SPEAK
+ENCODE("ゆみのうでなら")
+NEWLINE
+ENCODE("すこしは じしんがあるぜ")
+STOP
 
 L03A709:
-.db SPEAK
-.db ENCODE("ジークしょうぐんは むかしの")
-.db NEWLINE
-.db ENCODE("きおくが ないんだよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ひどいきずをおって ながれてきたのを")
-.db NEWLINE
-.db ENCODE("おしろづきのシスターだった")
-.db NEWLINE
-.db ENCODE("ティータさまが かいほうされたのよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ほら あのとおり 2まいめだから")
-.db NEWLINE
-.db ENCODE("たちまち テイータさま···")
-.db NEWLINE
-.db ENCODE("おっと おしゃべりがすぎるわね")
-.db $EF
+SPEAK
+ENCODE("ジークしょうぐんは むかしの")
+NEWLINE
+ENCODE("きおくが ないんだよ")
+WAIT_CLICK
+SPEAK
+ENCODE("ひどいきずをおって ながれてきたのを")
+NEWLINE
+ENCODE("おしろづきのシスターだった")
+NEWLINE
+ENCODE("ティータさまが かいほうされたのよ")
+WAIT_CLICK
+SPEAK
+ENCODE("ほら あのとおり 2まいめだから")
+NEWLINE
+ENCODE("たちまち テイータさま···")
+NEWLINE
+ENCODE("おっと おしゃべりがすぎるわね")
+STOP
 
 L03A797:
-.db $E8 $50 $40 $12 $F0 $12
-.db SPEAK
-.db ENCODE("すまねぇな たすかったよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ああ あんたには")
-.db NEWLINE
-.db ENCODE("かりができたからな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("どこでも いっしょにいってやるよ")
-.db NEWLINE
-.db ENCODE("よろしくな")
-.db $EF
+FACE VALBAR
+NAME VALBAR
+SPEAK
+ENCODE("すまねぇな たすかったよ")
+WAIT_CLICK
+SPEAK
+ENCODE("ああ あんたには")
+NEWLINE
+ENCODE("かりができたからな")
+WAIT_CLICK
+SPEAK
+ENCODE("どこでも いっしょにいってやるよ")
+NEWLINE
+ENCODE("よろしくな")
+STOP
 
 L03A7DB:
-.db $E8 $50 $40 $20 $F0 $20
-.db SPEAK
-.db ENCODE("わたしたちは はるかひがしの")
-.db NEWLINE
-.db ENCODE("アカネイアたいりくから きました")
-.db $EF
+FACE PALLA
+NAME PALLA
+SPEAK
+ENCODE("わたしたちは はるかひがしの")
+NEWLINE
+ENCODE("アカネイアたいりくから きました")
+STOP
 
 L03A803:
-.db $E8 $50 $40 $1F $F0 $1F
-.db SPEAK
-.db ENCODE("わたしたちの いもうとが")
-.db NEWLINE
-.db ENCODE("かいぞくに さらわれたの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それで かいぞくせんを")
-.db NEWLINE
-.db ENCODE("おいかけたのだけど このふきんで")
-.db NEWLINE
-.db ENCODE("みうしなってしまいました")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ああ はやくたすけだして")
-.db NEWLINE
-.db ENCODE("いっしょに くににかえりたい")
-.db $EF
+FACE CATRIA
+NAME CATRIA
+SPEAK
+ENCODE("わたしたちの いもうとが")
+NEWLINE
+ENCODE("かいぞくに さらわれたの")
+WAIT_CLICK
+SPEAK
+ENCODE("それで かいぞくせんを")
+NEWLINE
+ENCODE("おいかけたのだけど このふきんで")
+NEWLINE
+ENCODE("みうしなってしまいました")
+WAIT_CLICK
+SPEAK
+ENCODE("ああ はやくたすけだして")
+NEWLINE
+ENCODE("いっしょに くににかえりたい")
+STOP
 
 L03A874:
-.db $E8 $50 $40 $03 $F0 $03
-.db SPEAK
-.db ENCODE("セリカ,ひさしぶりだな")
+FACE MYCEN
+NAME MYCEN
+SPEAK
+ENCODE("セリカ,ひさしぶりだな")
 .db $E6
-.db $E8 $50 $40 $02 $F0 $02
-.db SPEAK
-.db ENCODE("お···おじいさま!")
-.db NEWLINE
-.db ENCODE("どうして ここに!!")
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("お···おじいさま!")
+NEWLINE
+ENCODE("どうして ここに!!")
 .db $E6
-.db $F0
-.db ENCODE("え")
-.db SPEAK
-.db ENCODE("ふむ")
-.db NEWLINE
-.db ENCODE("まあ いろいろあっての··")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おまえも よくぶじに ここまできた")
+NAME MYCEN
+SPEAK
+ENCODE("ふむ")
+NEWLINE
+ENCODE("まあ いろいろあっての··")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえも よくぶじに ここまできた")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("はい.いろんなひとに")
-.db NEWLINE
-.db ENCODE("たすけてもらいました")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わたしは かれらといっしょに")
-.db NEWLINE
-.db ENCODE("ミラのしんでんに ゆくつもりです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("しんでんにいって")
-.db NEWLINE
-.db ENCODE("また さくもつがみのるように")
-.db NEWLINE
-.db ENCODE("ミラさまに おねがいしたいのです")
+NAME CELICA
+SPEAK
+ENCODE("はい.いろんなひとに")
+NEWLINE
+ENCODE("たすけてもらいました")
+WAIT_CLICK
+SPEAK
+ENCODE("わたしは かれらといっしょに")
+NEWLINE
+ENCODE("ミラのしんでんに ゆくつもりです")
+WAIT_CLICK
+SPEAK
+ENCODE("しんでんにいって")
+NEWLINE
+ENCODE("また さくもつがみのるように")
+NEWLINE
+ENCODE("ミラさまに おねがいしたいのです")
 .db $E6
-.db $F0
-.db ENCODE("え")
-.db SPEAK
-.db ENCODE("そうか·· やはりな···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("まあ そのまえに そこのかいだんを")
-.db NEWLINE
-.db ENCODE("あがって うえにいってみるとよい")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おまえが いちばんあいたいと")
-.db NEWLINE
-.db ENCODE("ねがっているものが")
-.db NEWLINE
-.db ENCODE("そこにいるはずだ")
+NAME MYCEN
+SPEAK
+ENCODE("そうか·· やはりな···")
+WAIT_CLICK
+SPEAK
+ENCODE("まあ そのまえに そこのかいだんを")
+NEWLINE
+ENCODE("あがって うえにいってみるとよい")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえが いちばんあいたいと")
+NEWLINE
+ENCODE("ねがっているものが")
+NEWLINE
+ENCODE("そこにいるはずだ")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("ま··まさか!")
-.db NEWLINE
-.db ENCODE("··· アルム?")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ソフィアを かいほうした")
-.db NEWLINE
-.db ENCODE("わかい ゆうしゃというのは")
-.db NEWLINE
-.db ENCODE("アルムのことなの,おじいさま")
+NAME CELICA
+SPEAK
+ENCODE("ま··まさか!")
+NEWLINE
+ENCODE("··· アルム?")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアを かいほうした")
+NEWLINE
+ENCODE("わかい ゆうしゃというのは")
+NEWLINE
+ENCODE("アルムのことなの,おじいさま")
 .db $E6
 
 L03A9DC:
-.db $F0
-.db ENCODE("え")
-.db SPEAK
-.db ENCODE("まあ いってみるがよい")
-.db $EF
+NAME MYCEN
+SPEAK
+ENCODE("まあ いってみるがよい")
+STOP
 
 L03A9EC:
-.db $E8 $50 $40 $01 $F0 $01
-.db SPEAK
-.db ENCODE("?··· きみは···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("セ··セリカ? セリカなの!")
+FACE ALM
+NAME ALM
+SPEAK
+ENCODE("?··· きみは···")
+WAIT_CLICK
+SPEAK
+ENCODE("セ··セリカ? セリカなの!")
 .db $E6
-.db $E8 $50 $40 $02 $F0 $02
-.db SPEAK
-.db ENCODE("アルム··")
-.db NEWLINE
-.db ENCODE("やっぱりアルムだったのね")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("よかった.あいたかった···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わたしが むらをでてから")
-.db NEWLINE
-.db ENCODE("もう ずいぶんもあってないもの··")
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("アルム··")
+NEWLINE
+ENCODE("やっぱりアルムだったのね")
+WAIT_CLICK
+SPEAK
+ENCODE("よかった.あいたかった···")
+WAIT_CLICK
+SPEAK
+ENCODE("わたしが むらをでてから")
+NEWLINE
+ENCODE("もう ずいぶんもあってないもの··")
 .db $E6
-.db $F0
-.db ENCODE("い")
-.db SPEAK
-.db ENCODE("そうだよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おれたち ちいさいころから")
-.db NEWLINE
-.db ENCODE("きょうだいみたいに そだって")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("いつも ふたりであそんでいたのに")
-.db NEWLINE
-.db ENCODE("セリカ,とつぜんいなくなるんだもの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("あのときは おれ···")
-.db NEWLINE
-.db ENCODE("ほんきで じいちゃんをうらんだよ")
+NAME ALM
+SPEAK
+ENCODE("そうだよ")
+WAIT_CLICK
+SPEAK
+ENCODE("おれたち ちいさいころから")
+NEWLINE
+ENCODE("きょうだいみたいに そだって")
+WAIT_CLICK
+SPEAK
+ENCODE("いつも ふたりであそんでいたのに")
+NEWLINE
+ENCODE("セリカ,とつぜんいなくなるんだもの")
+WAIT_CLICK
+SPEAK
+ENCODE("あのときは おれ···")
+NEWLINE
+ENCODE("ほんきで じいちゃんをうらんだよ")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("わたしだって かなしかった")
-.db NEWLINE
-.db ENCODE("でも しかたなかったの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おじいさまは わたしにいったわ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("このまま ラムのむらにいたら")
-.db NEWLINE
-.db ENCODE("ドゼーが むらをおそってくる")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("そしたら わたしは つかまって")
-.db NEWLINE
-.db ENCODE("ころされてしまうって···")
+NAME CELICA
+SPEAK
+ENCODE("わたしだって かなしかった")
+NEWLINE
+ENCODE("でも しかたなかったの")
+WAIT_CLICK
+SPEAK
+ENCODE("おじいさまは わたしにいったわ")
+WAIT_CLICK
+SPEAK
+ENCODE("このまま ラムのむらにいたら")
+NEWLINE
+ENCODE("ドゼーが むらをおそってくる")
+WAIT_CLICK
+SPEAK
+ENCODE("そしたら わたしは つかまって")
+NEWLINE
+ENCODE("ころされてしまうって···")
 .db $E6
-.db $F0
-.db ENCODE("い")
-.db SPEAK
-.db ENCODE("なぜ? ")
-.db NEWLINE
-.db ENCODE("なぜドゼーは セリカを")
-.db NEWLINE
-.db ENCODE("ころそうとするんだ")
+NAME ALM
+SPEAK
+ENCODE("なぜ? ")
+NEWLINE
+ENCODE("なぜドゼーは セリカを")
+NEWLINE
+ENCODE("ころそうとするんだ")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("それは···")
-.db NEWLINE
-.db ENCODE("ごめんね.いまは いいたくない")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それよりも アルム")
-.db NEWLINE
-.db ENCODE("おねがいが あるの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("リゲルおうこくとの せんそう")
-.db NEWLINE
-.db ENCODE("なんとか とめられないの")
+NAME CELICA
+SPEAK
+ENCODE("それは···")
+NEWLINE
+ENCODE("ごめんね.いまは いいたくない")
+WAIT_CLICK
+SPEAK
+ENCODE("それよりも アルム")
+NEWLINE
+ENCODE("おねがいが あるの")
+WAIT_CLICK
+SPEAK
+ENCODE("リゲルおうこくとの せんそう")
+NEWLINE
+ENCODE("なんとか とめられないの")
 .db $E6
-.db $F0
-.db ENCODE("い")
-.db SPEAK
-.db ENCODE("それは むりだよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("リゲルの ルドルフこうていは")
-.db NEWLINE
-.db ENCODE("ソフィアがないらんで")
-.db NEWLINE
-.db ENCODE("よわっている すきをついて")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("しんりゃくをはじめたんだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("このままでは ソフィアおうこくは")
-.db NEWLINE
-.db ENCODE("ほろびてしまう")
+NAME ALM
+SPEAK
+ENCODE("それは むりだよ")
+WAIT_CLICK
+SPEAK
+ENCODE("リゲルの ルドルフこうていは")
+NEWLINE
+ENCODE("ソフィアがないらんで")
+NEWLINE
+ENCODE("よわっている すきをついて")
+WAIT_CLICK
+SPEAK
+ENCODE("しんりゃくをはじめたんだ")
+WAIT_CLICK
+SPEAK
+ENCODE("このままでは ソフィアおうこくは")
+NEWLINE
+ENCODE("ほろびてしまう")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("でも リゲルもソフィアも")
-.db NEWLINE
-.db ENCODE("もとはおなじ バレンシアの")
-.db NEWLINE
-.db ENCODE("にんげんでしょ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("くになんか なくっても")
-.db NEWLINE
-.db ENCODE("しあわせに くらせるはずだわ")
+NAME CELICA
+SPEAK
+ENCODE("でも リゲルもソフィアも")
+NEWLINE
+ENCODE("もとはおなじ バレンシアの")
+NEWLINE
+ENCODE("にんげんでしょ")
+WAIT_CLICK
+SPEAK
+ENCODE("くになんか なくっても")
+NEWLINE
+ENCODE("しあわせに くらせるはずだわ")
 .db $E6
-.db $F0
-.db ENCODE("い")
-.db SPEAK
-.db ENCODE("だめだよ.やばんなリゲルのもとでは")
-.db NEWLINE
-.db ENCODE("ソフィアのたみは いきてゆけない")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("リゲルが ドゼーにてをかし")
-.db NEWLINE
-.db ENCODE("ソフィアのだいちを おかすいじょう")
-.db NEWLINE
-.db ENCODE("ぼくらは たたかうしかないんだ")
+NAME ALM
+SPEAK
+ENCODE("だめだよ.やばんなリゲルのもとでは")
+NEWLINE
+ENCODE("ソフィアのたみは いきてゆけない")
+WAIT_CLICK
+SPEAK
+ENCODE("リゲルが ドゼーにてをかし")
+NEWLINE
+ENCODE("ソフィアのだいちを おかすいじょう")
+NEWLINE
+ENCODE("ぼくらは たたかうしかないんだ")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("そう かなしいものね···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わたしには ルドルフこうていが")
-.db NEWLINE
-.db ENCODE("みんながいうほど そんなに")
-.db NEWLINE
-.db ENCODE("あくにんとはおもえない")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("はなしあえば きっとわかるのに··")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それともアルムは みんなから")
-.db NEWLINE
-.db ENCODE("えいゆうに まつりあげられて")
-.db NEWLINE
-.db ENCODE("こくおうにでも なりたいの")
+NAME CELICA
+SPEAK
+ENCODE("そう かなしいものね···")
+WAIT_CLICK
+SPEAK
+ENCODE("わたしには ルドルフこうていが")
+NEWLINE
+ENCODE("みんながいうほど そんなに")
+NEWLINE
+ENCODE("あくにんとはおもえない")
+WAIT_CLICK
+SPEAK
+ENCODE("はなしあえば きっとわかるのに··")
+WAIT_CLICK
+SPEAK
+ENCODE("それともアルムは みんなから")
+NEWLINE
+ENCODE("えいゆうに まつりあげられて")
+NEWLINE
+ENCODE("こくおうにでも なりたいの")
 .db $E6
-.db $F0
-.db ENCODE("い")
-.db SPEAK
-.db ENCODE("そんな!")
-.db NEWLINE
-.db ENCODE("ひどいよ,セリカ")
-.db NEWLINE
-.db ENCODE("ぼくには そんなやしんはない")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ぼくはただ ソフィアのひとたちを")
-.db NEWLINE
-.db ENCODE("まもってあげたいだけなんだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それに ソフィアおうけには")
-.db NEWLINE
-.db ENCODE("ひとりだけ おうじょがいきのこって")
-.db NEWLINE
-.db ENCODE("いるらしいから さがしだすつもりさ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("その おうじょさまが みつかれば")
-.db NEWLINE
-.db ENCODE("ぼくはいつだって むらにかえるよ")
+NAME ALM
+SPEAK
+ENCODE("そんな!")
+NEWLINE
+ENCODE("ひどいよ,セリカ")
+NEWLINE
+ENCODE("ぼくには そんなやしんはない")
+WAIT_CLICK
+SPEAK
+ENCODE("ぼくはただ ソフィアのひとたちを")
+NEWLINE
+ENCODE("まもってあげたいだけなんだ")
+WAIT_CLICK
+SPEAK
+ENCODE("それに ソフィアおうけには")
+NEWLINE
+ENCODE("ひとりだけ おうじょがいきのこって")
+NEWLINE
+ENCODE("いるらしいから さがしだすつもりさ")
+WAIT_CLICK
+SPEAK
+ENCODE("その おうじょさまが みつかれば")
+NEWLINE
+ENCODE("ぼくはいつだって むらにかえるよ")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("ソフィアに おうじょなんかいないわ")
-.db NEWLINE
-.db ENCODE("もう おうけは ほろびたのよ!")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("もういい.わかったわアルム")
-.db NEWLINE
-.db ENCODE("あなたは リゲルにいけばいい")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わたしは なかまたちと")
-.db NEWLINE
-.db ENCODE("ミラしんでんに ゆきます")
-.db $EF
+NAME CELICA
+SPEAK
+ENCODE("ソフィアに おうじょなんかいないわ")
+NEWLINE
+ENCODE("もう おうけは ほろびたのよ!")
+WAIT_CLICK
+SPEAK
+ENCODE("もういい.わかったわアルム")
+NEWLINE
+ENCODE("あなたは リゲルにいけばいい")
+WAIT_CLICK
+SPEAK
+ENCODE("わたしは なかまたちと")
+NEWLINE
+ENCODE("ミラしんでんに ゆきます")
+STOP
 
 L03AE56:
-.db $E8 $50 $40 $01 $F0 $01
-.db SPEAK
-.db ENCODE("セリカ!?")
+FACE ALM
+NAME ALM
+SPEAK
+ENCODE("セリカ!?")
 .db $E6
-.db $E8 $50 $40 $02 $F0 $02
-.db SPEAK
-.db ENCODE("さよなら,アルム····")
-.db $EF
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("さよなら,アルム····")
+STOP
 
 L03AE77:
-.db SPEAK
-.db ENCODE("あんたたち うみのほこらへは")
-.db NEWLINE
-.db ENCODE("ちかづいたら ダメよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("あの こじまには")
-.db NEWLINE
-.db ENCODE("おそろしい ドラゴンゾンビが")
-.db NEWLINE
-.db ENCODE("すみついていて")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ちかづくものを")
-.db NEWLINE
-.db ENCODE("ひとのみに してしまうからね")
-.db $EF
+SPEAK
+ENCODE("あんたたち うみのほこらへは")
+NEWLINE
+ENCODE("ちかづいたら ダメよ")
+WAIT_CLICK
+SPEAK
+ENCODE("あの こじまには")
+NEWLINE
+ENCODE("おそろしい ドラゴンゾンビが")
+NEWLINE
+ENCODE("すみついていて")
+WAIT_CLICK
+SPEAK
+ENCODE("ちかづくものを")
+NEWLINE
+ENCODE("ひとのみに してしまうからね")
+STOP
 
 L03AED4:
-.db $E8 $50 $40 $1B $F0 $1B
-.db SPEAK
-.db ENCODE("うるせーな")
-.db NEWLINE
-.db ENCODE("さけをのんでるじゃまを")
-.db NEWLINE
-.db ENCODE("するんじゃねーよ!")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("はっはっはっ")
-.db NEWLINE
-.db ENCODE("バカいっちゃ いけねーぜ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おまえたちだけで")
-.db NEWLINE
-.db ENCODE("うみをわたれるはずが")
-.db NEWLINE
-.db ENCODE("ないだろ")
+FACE SABER
+NAME SABER
+SPEAK
+ENCODE("うるせーな")
+NEWLINE
+ENCODE("さけをのんでるじゃまを")
+NEWLINE
+ENCODE("するんじゃねーよ!")
+WAIT_CLICK
+SPEAK
+ENCODE("はっはっはっ")
+NEWLINE
+ENCODE("バカいっちゃ いけねーぜ")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえたちだけで")
+NEWLINE
+ENCODE("うみをわたれるはずが")
+NEWLINE
+ENCODE("ないだろ")
 .db $E6
-.db $E8 $50 $40 $02 $F0 $02
-.db SPEAK
-.db ENCODE("だから おねがいしたいの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("あなた ようへいでしょ")
-.db NEWLINE
-.db ENCODE("わたしたちを まもって")
-.db NEWLINE
-.db ENCODE("くれませんか")
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("だから おねがいしたいの")
+WAIT_CLICK
+SPEAK
+ENCODE("あなた ようへいでしょ")
+NEWLINE
+ENCODE("わたしたちを まもって")
+NEWLINE
+ENCODE("くれませんか")
 .db $E6
-.db $F0
-.db ENCODE("ひ")
-.db SPEAK
-.db ENCODE("なに?")
-.db NEWLINE
-.db ENCODE("おれを やといたいっていうのか")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ふむ··")
-.db NEWLINE
-.db ENCODE("それも おもしろいかもしれんな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("よし いいだろう")
-.db NEWLINE
-.db ENCODE("いっしょに いってやろう")
-.db $EF
+NAME SABER
+SPEAK
+ENCODE("なに?")
+NEWLINE
+ENCODE("おれを やといたいっていうのか")
+WAIT_CLICK
+SPEAK
+ENCODE("ふむ··")
+NEWLINE
+ENCODE("それも おもしろいかもしれんな")
+WAIT_CLICK
+SPEAK
+ENCODE("よし いいだろう")
+NEWLINE
+ENCODE("いっしょに いってやろう")
+STOP
 
 L03AFAC:
-.db $E8 $50 $40 $14 $F0 $14
-.db SPEAK
-.db ENCODE("あれ みんないっしょに")
-.db NEWLINE
-.db ENCODE("どこへいくんだ?")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("なに?")
-.db NEWLINE
-.db ENCODE("ついに ソフィアじょうに")
-.db NEWLINE
-.db ENCODE("しんげきするのか")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それなら おれもゆく")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ソフィアかいほうを")
-.db NEWLINE
-.db ENCODE("めざして がんばろうぜ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("しかし ドゼーのぶたいは")
-.db NEWLINE
-.db ENCODE("きょうりょくだからな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("とくに しんえいたいちょうの")
-.db NEWLINE
-.db ENCODE("スレイダーには きをつけないと")
-.db NEWLINE
-.db ENCODE("きけんだよ")
-.db $EF
+FACE PYTHON
+NAME PYTHON
+SPEAK
+ENCODE("あれ みんないっしょに")
+NEWLINE
+ENCODE("どこへいくんだ?")
+WAIT_CLICK
+SPEAK
+ENCODE("なに?")
+NEWLINE
+ENCODE("ついに ソフィアじょうに")
+NEWLINE
+ENCODE("しんげきするのか")
+WAIT_CLICK
+SPEAK
+ENCODE("それなら おれもゆく")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアかいほうを")
+NEWLINE
+ENCODE("めざして がんばろうぜ")
+WAIT_CLICK
+SPEAK
+ENCODE("しかし ドゼーのぶたいは")
+NEWLINE
+ENCODE("きょうりょくだからな")
+WAIT_CLICK
+SPEAK
+ENCODE("とくに しんえいたいちょうの")
+NEWLINE
+ENCODE("スレイダーには きをつけないと")
+NEWLINE
+ENCODE("きけんだよ")
+STOP
 
 L03B053:
-.db SPEAK
-.db ENCODE("ひがしのさばくは とうぞくのおう")
-.db NEWLINE
-.db ENCODE("ギースが しはいしています")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ソフィアをあらしまわっている")
-.db NEWLINE
-.db ENCODE("さんぞくやかいぞくは すべて")
-.db NEWLINE
-.db ENCODE("ギースのぶかなのです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("このむらも なんどもおそわれて")
-.db NEWLINE
-.db ENCODE("すっかり さびれてしまいました")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わかいものは みんなつれさられ")
-.db NEWLINE
-.db ENCODE("どれいとして はたらかされている")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ああ,わたしたちは いったい")
-.db NEWLINE
-.db ENCODE("どうすれば いいのでしょう")
-.db $EF
+SPEAK
+ENCODE("ひがしのさばくは とうぞくのおう")
+NEWLINE
+ENCODE("ギースが しはいしています")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアをあらしまわっている")
+NEWLINE
+ENCODE("さんぞくやかいぞくは すべて")
+NEWLINE
+ENCODE("ギースのぶかなのです")
+WAIT_CLICK
+SPEAK
+ENCODE("このむらも なんどもおそわれて")
+NEWLINE
+ENCODE("すっかり さびれてしまいました")
+WAIT_CLICK
+SPEAK
+ENCODE("わかいものは みんなつれさられ")
+NEWLINE
+ENCODE("どれいとして はたらかされている")
+WAIT_CLICK
+SPEAK
+ENCODE("ああ,わたしたちは いったい")
+NEWLINE
+ENCODE("どうすれば いいのでしょう")
+STOP
 
 L03B10F:
-.db SPEAK
-.db ENCODE("きたにある ほこらのいどは")
-.db NEWLINE
-.db ENCODE("しんだものを いきかえらすことが")
-.db NEWLINE
-.db ENCODE("できるという うわさです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("しかし ドラゴンがすみついていて")
-.db NEWLINE
-.db ENCODE("ちかづくものを くいころすとも")
-.db NEWLINE
-.db ENCODE("いわれています")
-.db $EF
+SPEAK
+ENCODE("きたにある ほこらのいどは")
+NEWLINE
+ENCODE("しんだものを いきかえらすことが")
+NEWLINE
+ENCODE("できるという うわさです")
+WAIT_CLICK
+SPEAK
+ENCODE("しかし ドラゴンがすみついていて")
+NEWLINE
+ENCODE("ちかづくものを くいころすとも")
+NEWLINE
+ENCODE("いわれています")
+STOP
 
 L03B16F:
-.db $E8 $50 $40 $16 $F0 $16
-.db SPEAK
-.db ENCODE("あんたら ギースを")
-.db NEWLINE
-.db ENCODE("やっつけにゆくのか")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("もしそうなら")
-.db NEWLINE
-.db ENCODE("おれも てつだわせてくれ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おれの おとうとやいもうとも")
-.db NEWLINE
-.db ENCODE("みんな ギースにつかまって")
-.db NEWLINE
-.db ENCODE("ゆくえが わからない···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("くそ! ギースのやろう")
-.db NEWLINE
-.db ENCODE("おれのこのてで")
-.db NEWLINE
-.db ENCODE("たたきころしてやる!!")
-.db $EF
+FACE ATLAS
+NAME ATLAS
+SPEAK
+ENCODE("あんたら ギースを")
+NEWLINE
+ENCODE("やっつけにゆくのか")
+WAIT_CLICK
+SPEAK
+ENCODE("もしそうなら")
+NEWLINE
+ENCODE("おれも てつだわせてくれ")
+WAIT_CLICK
+SPEAK
+ENCODE("おれの おとうとやいもうとも")
+NEWLINE
+ENCODE("みんな ギースにつかまって")
+NEWLINE
+ENCODE("ゆくえが わからない···")
+WAIT_CLICK
+SPEAK
+ENCODE("くそ! ギースのやろう")
+NEWLINE
+ENCODE("おれのこのてで")
+NEWLINE
+ENCODE("たたきころしてやる!!")
+STOP
 
 L03B1F2:
-.db $E8 $50 $40 $17 $F0 $17
-.db SPEAK
-.db ENCODE("やぁ,ありがとよ")
-.db NEWLINE
-.db ENCODE("たすかったぜ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おれはジェシーっていう")
-.db NEWLINE
-.db ENCODE("ケチな ようへいさ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ギースのとりでにつかまっていた")
-.db NEWLINE
-.db ENCODE("おんなのこを たすけようとして")
-.db NEWLINE
-.db ENCODE("つかまっちまったんだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("よそのくにからきた かわいいこで")
-.db NEWLINE
-.db ENCODE("ギースは どれいにするつもりだ")
+FACE JESSE
+NAME JESSE
+SPEAK
+ENCODE("やぁ,ありがとよ")
+NEWLINE
+ENCODE("たすかったぜ")
+WAIT_CLICK
+SPEAK
+ENCODE("おれはジェシーっていう")
+NEWLINE
+ENCODE("ケチな ようへいさ")
+WAIT_CLICK
+SPEAK
+ENCODE("ギースのとりでにつかまっていた")
+NEWLINE
+ENCODE("おんなのこを たすけようとして")
+NEWLINE
+ENCODE("つかまっちまったんだ")
+WAIT_CLICK
+SPEAK
+ENCODE("よそのくにからきた かわいいこで")
+NEWLINE
+ENCODE("ギースは どれいにするつもりだ")
 .db $E6
-.db $E8 $50 $40 $02 $F0 $02
-.db SPEAK
-.db ENCODE("きっとエストね··")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ねぇ ジェシー,なんとか")
-.db NEWLINE
-.db ENCODE("たすけるほうほうは ないの")
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("きっとエストね··")
+WAIT_CLICK
+SPEAK
+ENCODE("ねぇ ジェシー,なんとか")
+NEWLINE
+ENCODE("たすけるほうほうは ないの")
 .db $E6
-.db $F0
-.db ENCODE("ぬ")
-.db SPEAK
-.db ENCODE("ムリだよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ギースのぶかには すごいやつが")
-.db NEWLINE
-.db ENCODE("いっぱいいる")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おれたちだけじゃ とてもむりさ")
+NAME JESSE
+SPEAK
+ENCODE("ムリだよ")
+WAIT_CLICK
+SPEAK
+ENCODE("ギースのぶかには すごいやつが")
+NEWLINE
+ENCODE("いっぱいいる")
+WAIT_CLICK
+SPEAK
+ENCODE("おれたちだけじゃ とてもむりさ")
 .db $E6
-.db $F0
-.db ENCODE("う")
-.db SPEAK
-.db ENCODE("でも,なにかほうほうが···")
+NAME CELICA
+SPEAK
+ENCODE("でも,なにかほうほうが···")
 .db $E6
-.db $F0
-.db ENCODE("ぬ")
-.db SPEAK
-.db ENCODE("うーんそうだな···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ギースには")
-.db NEWLINE
-.db ENCODE("ソニアとディーンという")
-.db NEWLINE
-.db ENCODE("ふたりのぶかが いるんだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それぞれ ぶたいをひきいて")
-.db NEWLINE
-.db ENCODE("さばくの きたとみなみを")
-.db NEWLINE
-.db ENCODE("まもっている")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ところが かれらはふたりとも")
-.db NEWLINE
-.db ENCODE("ギースを きらっているらしい")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だが おたがいに けんせいしあって")
-.db NEWLINE
-.db ENCODE("うらぎることが できないらしいんだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だから うまくどちらかをたおせば")
-.db NEWLINE
-.db ENCODE("のこったほうは みかたになるかも")
-.db NEWLINE
-.db ENCODE("しれないぜ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ああ,もちろんおれも てをかすぜ")
-.db $EF
+NAME JESSE
+SPEAK
+ENCODE("うーんそうだな···")
+WAIT_CLICK
+SPEAK
+ENCODE("ギースには")
+NEWLINE
+ENCODE("ソニアとディーンという")
+NEWLINE
+ENCODE("ふたりのぶかが いるんだ")
+WAIT_CLICK
+SPEAK
+ENCODE("それぞれ ぶたいをひきいて")
+NEWLINE
+ENCODE("さばくの きたとみなみを")
+NEWLINE
+ENCODE("まもっている")
+WAIT_CLICK
+SPEAK
+ENCODE("ところが かれらはふたりとも")
+NEWLINE
+ENCODE("ギースを きらっているらしい")
+WAIT_CLICK
+SPEAK
+ENCODE("だが おたがいに けんせいしあって")
+NEWLINE
+ENCODE("うらぎることが できないらしいんだ")
+WAIT_CLICK
+SPEAK
+ENCODE("だから うまくどちらかをたおせば")
+NEWLINE
+ENCODE("のこったほうは みかたになるかも")
+NEWLINE
+ENCODE("しれないぜ")
+WAIT_CLICK
+SPEAK
+ENCODE("ああ,もちろんおれも てをかすぜ")
+STOP
 
 L03B3DA:
-.db $E8 $50 $40 $1A $F0 $1A
-.db SPEAK
-.db ENCODE("なに ギースを やったのか")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("まあ あれだけ わるさをすれば")
-.db NEWLINE
-.db ENCODE("いずれむくいがくると おもっていた")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("うむ···")
-.db NEWLINE
-.db ENCODE("まあ,おまえたちには")
-.db NEWLINE
-.db ENCODE("かりができたからな")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("よかろう,ちからをかしてやろう")
-.db $EF
+FACE DEEN
+NAME DEEN
+SPEAK
+ENCODE("なに ギースを やったのか")
+WAIT_CLICK
+SPEAK
+ENCODE("まあ あれだけ わるさをすれば")
+NEWLINE
+ENCODE("いずれむくいがくると おもっていた")
+WAIT_CLICK
+SPEAK
+ENCODE("うむ···")
+NEWLINE
+ENCODE("まあ,おまえたちには")
+NEWLINE
+ENCODE("かりができたからな")
+WAIT_CLICK
+SPEAK
+ENCODE("よかろう,ちからをかしてやろう")
+STOP
 
 L03B446:
-.db $E8 $50 $40 $19 $F0 $19
-.db SPEAK
-.db ENCODE("なに ギースを やったのかい")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("まあ あれだけ わるさをすれば")
-.db NEWLINE
-.db ENCODE("いずれむくいがくるだろうよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("うむ···")
-.db NEWLINE
-.db ENCODE("まあ,おまえたちには")
-.db NEWLINE
-.db ENCODE("かりができたからね")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わかった")
-.db NEWLINE
-.db ENCODE("ちからをかしてやるよ")
-.db $EF
+FACE SONYA
+NAME SONYA
+SPEAK
+ENCODE("なに ギースを やったのかい")
+WAIT_CLICK
+SPEAK
+ENCODE("まあ あれだけ わるさをすれば")
+NEWLINE
+ENCODE("いずれむくいがくるだろうよ")
+WAIT_CLICK
+SPEAK
+ENCODE("うむ···")
+NEWLINE
+ENCODE("まあ,おまえたちには")
+NEWLINE
+ENCODE("かりができたからね")
+WAIT_CLICK
+SPEAK
+ENCODE("わかった")
+NEWLINE
+ENCODE("ちからをかしてやるよ")
+STOP
 
 L03B4B0:
-.db $E8 $50 $40 $21 $F0 $21
-.db SPEAK
-.db ENCODE("あ·· あなたたちは··")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("えっ ねえさまたちが")
-.db NEWLINE
-.db ENCODE("きているの!")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わー よかった")
-.db NEWLINE
-.db ENCODE("それならわたしも あなたたちと")
-.db NEWLINE
-.db ENCODE("いっしょに ゆきます")
-.db $EF
+FACE EST
+NAME EST
+SPEAK
+ENCODE("あ·· あなたたちは··")
+WAIT_CLICK
+SPEAK
+ENCODE("えっ ねえさまたちが")
+NEWLINE
+ENCODE("きているの!")
+WAIT_CLICK
+SPEAK
+ENCODE("わー よかった")
+NEWLINE
+ENCODE("それならわたしも あなたたちと")
+NEWLINE
+ENCODE("いっしょに ゆきます")
+STOP
 
 L03B4FC:
-.db $E8 $50 $40 $20 $F0 $20
-.db SPEAK
-.db ENCODE("よかった")
-.db NEWLINE
-.db ENCODE("あなたをさがしていたの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("わたしたち ここでまってても")
-.db NEWLINE
-.db ENCODE("しかたないし あなたたちと")
-.db NEWLINE
-.db ENCODE("いっしょに ゆきます")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("あなたのたびも たいへんな")
-.db NEWLINE
-.db ENCODE("ようだし わたしたちだって")
-.db NEWLINE
-.db ENCODE("ちからになれるとおもうわ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ね セリカ")
-.db NEWLINE
-.db ENCODE("いっしょに ゆきましょう")
-.db $EF
+FACE PALLA
+NAME PALLA
+SPEAK
+ENCODE("よかった")
+NEWLINE
+ENCODE("あなたをさがしていたの")
+WAIT_CLICK
+SPEAK
+ENCODE("わたしたち ここでまってても")
+NEWLINE
+ENCODE("しかたないし あなたたちと")
+NEWLINE
+ENCODE("いっしょに ゆきます")
+WAIT_CLICK
+SPEAK
+ENCODE("あなたのたびも たいへんな")
+NEWLINE
+ENCODE("ようだし わたしたちだって")
+NEWLINE
+ENCODE("ちからになれるとおもうわ")
+WAIT_CLICK
+SPEAK
+ENCODE("ね セリカ")
+NEWLINE
+ENCODE("いっしょに ゆきましょう")
+STOP
 
 L03B580:
-.db $E8 $50 $40 $1F $F0 $1F
-.db SPEAK
-.db ENCODE("ああ")
-.db NEWLINE
-.db ENCODE("エストが はやくみつかれば")
-.db NEWLINE
-.db ENCODE("いいのになぁ···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("これは ないしょだけど")
-.db NEWLINE
-.db ENCODE("わたしたち 3にんそろえば")
-.db NEWLINE
-.db ENCODE("すごいわざが つかえるのよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("あれ? なんでしってるの?")
-.db $EF
+FACE CATRIA
+NAME CATRIA
+SPEAK
+ENCODE("ああ")
+NEWLINE
+ENCODE("エストが はやくみつかれば")
+NEWLINE
+ENCODE("いいのになぁ···")
+WAIT_CLICK
+SPEAK
+ENCODE("これは ないしょだけど")
+NEWLINE
+ENCODE("わたしたち 3にんそろえば")
+NEWLINE
+ENCODE("すごいわざが つかえるのよ")
+WAIT_CLICK
+SPEAK
+ENCODE("あれ? なんでしってるの?")
+STOP
 
 L03B5E3:
-.db SPEAK
-.db ENCODE("とつぜん リゲルぐんが")
-.db NEWLINE
-.db ENCODE("おそってきたのです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だいちぼしんミラは リゲルの")
-.db NEWLINE
-.db ENCODE("ルドルフこうていによって")
-.db NEWLINE
-.db ENCODE("ふういんされてしまいました")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だから だいちは あれはてて")
-.db NEWLINE
-.db ENCODE("さくもつは みのらなくなったの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ああ!")
-.db NEWLINE
-.db ENCODE("このままでは ソフィアのたみは")
-.db NEWLINE
-.db ENCODE("みんなうえて しんでしまう···")
-.db $EF
+SPEAK
+ENCODE("とつぜん リゲルぐんが")
+NEWLINE
+ENCODE("おそってきたのです")
+WAIT_CLICK
+SPEAK
+ENCODE("だいちぼしんミラは リゲルの")
+NEWLINE
+ENCODE("ルドルフこうていによって")
+NEWLINE
+ENCODE("ふういんされてしまいました")
+WAIT_CLICK
+SPEAK
+ENCODE("だから だいちは あれはてて")
+NEWLINE
+ENCODE("さくもつは みのらなくなったの")
+WAIT_CLICK
+SPEAK
+ENCODE("ああ!")
+NEWLINE
+ENCODE("このままでは ソフィアのたみは")
+NEWLINE
+ENCODE("みんなうえて しんでしまう···")
+STOP
 
 L03B678:
-.db SPEAK
-.db ENCODE("このしんでんから きたは")
-.db NEWLINE
-.db ENCODE("だいきとうしの ドルクが")
-.db NEWLINE
-.db ENCODE("しはいしているの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ちかづけば あのおとこが")
-.db NEWLINE
-.db ENCODE("やみからよびよせる しりゅうに")
-.db NEWLINE
-.db ENCODE("くいころされてしまいます")
-.db $EF
+SPEAK
+ENCODE("このしんでんから きたは")
+NEWLINE
+ENCODE("だいきとうしの ドルクが")
+NEWLINE
+ENCODE("しはいしているの")
+WAIT_CLICK
+SPEAK
+ENCODE("ちかづけば あのおとこが")
+NEWLINE
+ENCODE("やみからよびよせる しりゅうに")
+NEWLINE
+ENCODE("くいころされてしまいます")
+STOP
 
 L03B6CF:
-.db SPEAK
-.db ENCODE("ああ")
-.db NEWLINE
-.db ENCODE("わしは このすいもんの")
-.db NEWLINE
-.db ENCODE("ばんにんじゃが··")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("なに すいもんを ひらけだと?")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だめだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("このすいもんを ひらけるのは")
-.db NEWLINE
-.db ENCODE("ソフィアおうけの ものだけじゃ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おまえなどの いうことは")
-.db NEWLINE
-.db ENCODE("きけぬぞ!!")
-.db $EF
+SPEAK
+ENCODE("ああ")
+NEWLINE
+ENCODE("わしは このすいもんの")
+NEWLINE
+ENCODE("ばんにんじゃが··")
+WAIT_CLICK
+SPEAK
+ENCODE("なに すいもんを ひらけだと?")
+WAIT_CLICK
+SPEAK
+ENCODE("だめだ")
+WAIT_CLICK
+SPEAK
+ENCODE("このすいもんを ひらけるのは")
+NEWLINE
+ENCODE("ソフィアおうけの ものだけじゃ")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえなどの いうことは")
+NEWLINE
+ENCODE("きけぬぞ!!")
+STOP
 
 L03B73E:
-.db SPEAK
-.db ENCODE("ん? まてよ···")
-.db NEWLINE
-.db ENCODE("あんたの そのかみかざりは!")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("な,なんと···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おお それはまさしく")
-.db NEWLINE
-.db ENCODE("ソフィアおうけの もんしょう")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("では あなたが")
-.db NEWLINE
-.db ENCODE("ゆくえしれずだった")
-.db NEWLINE
-.db ENCODE("アンテーゼおうじょさま!!")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("こ,これは しつれいしました")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ただいま すいもんを")
-.db NEWLINE
-.db ENCODE("あけまする")
-.db $EF
+SPEAK
+ENCODE("ん? まてよ···")
+NEWLINE
+ENCODE("あんたの そのかみかざりは!")
+WAIT_CLICK
+SPEAK
+ENCODE("な,なんと···")
+WAIT_CLICK
+SPEAK
+ENCODE("おお それはまさしく")
+NEWLINE
+ENCODE("ソフィアおうけの もんしょう")
+WAIT_CLICK
+SPEAK
+ENCODE("では あなたが")
+NEWLINE
+ENCODE("ゆくえしれずだった")
+NEWLINE
+ENCODE("アンテーゼおうじょさま!!")
+WAIT_CLICK
+SPEAK
+ENCODE("こ,これは しつれいしました")
+WAIT_CLICK
+SPEAK
+ENCODE("ただいま すいもんを")
+NEWLINE
+ENCODE("あけまする")
+STOP
 
 L03B7C8:
-.db SPEAK
-.db ENCODE("しかし おうじょさま")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ここのすいもんを あけただけでは")
-.db NEWLINE
-.db ENCODE("だめなのです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("みずを ひくためには")
-.db NEWLINE
-.db ENCODE("にしの すいもんも どうじに")
-.db NEWLINE
-.db ENCODE("ひらかなければ なりません")
-.db $EF
+SPEAK
+ENCODE("しかし おうじょさま")
+WAIT_CLICK
+SPEAK
+ENCODE("ここのすいもんを あけただけでは")
+NEWLINE
+ENCODE("だめなのです")
+WAIT_CLICK
+SPEAK
+ENCODE("みずを ひくためには")
+NEWLINE
+ENCODE("にしの すいもんも どうじに")
+NEWLINE
+ENCODE("ひらかなければ なりません")
+STOP
 
 L03B81F:
-.db SPEAK
-.db ENCODE("おお ジークさま···")
-.db $EF
+SPEAK
+ENCODE("おお ジークさま···")
+STOP
 
 L03B82D:
-.db ENCODE("みぎ せいなるたて")
-.db NEWLINE
-.db ENCODE("ひだり ぎんのたて")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("どちらを のぞむか?")
-.db $EF
+ENCODE("みぎ せいなるたて")
+NEWLINE
+ENCODE("ひだり ぎんのたて")
+NEWLINE
+NEWLINE
+ENCODE("どちらを のぞむか?")
+STOP
 
 L03B852:
-.db SPEAK
-.db ENCODE("どうも ありがとうございました")
-.db $EF
+SPEAK
+ENCODE("どうも ありがとうございました")
+STOP
 
 L03B867:
-.db SPEAK
-.db ENCODE("えへ たすけてくれて")
-.db NEWLINE
-.db ENCODE("ありがとう")
-.db $EF
+SPEAK
+ENCODE("えへ たすけてくれて")
+NEWLINE
+ENCODE("ありがとう")
+STOP
 
 L03B87A:
-.db SPEAK
-.db ENCODE("ミラをふうじた つるぎは")
-.db NEWLINE
-.db ENCODE("じゃしんドーマが")
-.db NEWLINE
-.db ENCODE("ルドルフに あたえたもの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ドーマのとうにいけば")
-.db NEWLINE
-.db ENCODE("ミラさまを すくうことが")
-.db NEWLINE
-.db ENCODE("できるかもしれません")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だけど わたしたちには")
-.db NEWLINE
-.db ENCODE("あのおそろしい ぬまやもりを")
-.db NEWLINE
-.db ENCODE("ぬけることなど とてもむりです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("とくに どくぬまはおそろしい")
-.db NEWLINE
-.db ENCODE("まちがってはいると かくじつに")
-.db NEWLINE
-.db ENCODE("ちからが うばわれてゆきます")
-.db $EF
+SPEAK
+ENCODE("ミラをふうじた つるぎは")
+NEWLINE
+ENCODE("じゃしんドーマが")
+NEWLINE
+ENCODE("ルドルフに あたえたもの")
+WAIT_CLICK
+SPEAK
+ENCODE("ドーマのとうにいけば")
+NEWLINE
+ENCODE("ミラさまを すくうことが")
+NEWLINE
+ENCODE("できるかもしれません")
+WAIT_CLICK
+SPEAK
+ENCODE("だけど わたしたちには")
+NEWLINE
+ENCODE("あのおそろしい ぬまやもりを")
+NEWLINE
+ENCODE("ぬけることなど とてもむりです")
+WAIT_CLICK
+SPEAK
+ENCODE("とくに どくぬまはおそろしい")
+NEWLINE
+ENCODE("まちがってはいると かくじつに")
+NEWLINE
+ENCODE("ちからが うばわれてゆきます")
+STOP
 
 L03B930:
-.db SPEAK
-.db ENCODE("バレンシアのたにに みずが")
-.db NEWLINE
-.db ENCODE("あるかぎり しんでんから")
-.db NEWLINE
-.db ENCODE("きたにでることは かないません")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("にしの すいもんを")
-.db NEWLINE
-.db ENCODE("ひらかなければ")
-.db NEWLINE
-.db ENCODE("みずは ひいてはくれないのです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("よびの すいもんなら")
-.db NEWLINE
-.db ENCODE("このしんでんのちかに")
-.db NEWLINE
-.db ENCODE("あるのですが···")
-.db $EF
+SPEAK
+ENCODE("バレンシアのたにに みずが")
+NEWLINE
+ENCODE("あるかぎり しんでんから")
+NEWLINE
+ENCODE("きたにでることは かないません")
+WAIT_CLICK
+SPEAK
+ENCODE("にしの すいもんを")
+NEWLINE
+ENCODE("ひらかなければ")
+NEWLINE
+ENCODE("みずは ひいてはくれないのです")
+WAIT_CLICK
+SPEAK
+ENCODE("よびの すいもんなら")
+NEWLINE
+ENCODE("このしんでんのちかに")
+NEWLINE
+ENCODE("あるのですが···")
+STOP
 
 L03B9AD:
-.db SPEAK
-.db ENCODE("ミラさまが ふういんされたあと")
-.db NEWLINE
-.db ENCODE("ここも たびたび ギースの")
-.db NEWLINE
-.db ENCODE("とうぞくたちに おそわれました")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("いまも ギースのとりでには")
-.db NEWLINE
-.db ENCODE("わたしたちの なかまが")
-.db NEWLINE
-.db ENCODE("とらわれているはずです")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おねがいです")
-.db NEWLINE
-.db ENCODE("どうか とらわれたひとたちを")
-.db NEWLINE
-.db ENCODE("たすけてください")
-.db $EF
+SPEAK
+ENCODE("ミラさまが ふういんされたあと")
+NEWLINE
+ENCODE("ここも たびたび ギースの")
+NEWLINE
+ENCODE("とうぞくたちに おそわれました")
+WAIT_CLICK
+SPEAK
+ENCODE("いまも ギースのとりでには")
+NEWLINE
+ENCODE("わたしたちの なかまが")
+NEWLINE
+ENCODE("とらわれているはずです")
+WAIT_CLICK
+SPEAK
+ENCODE("おねがいです")
+NEWLINE
+ENCODE("どうか とらわれたひとたちを")
+NEWLINE
+ENCODE("たすけてください")
+STOP
 
 L03BA31:
-.db SPEAK
-.db ENCODE("あなたたちのおかげで")
-.db NEWLINE
-.db ENCODE("ぶじに もどることが")
-.db NEWLINE
-.db ENCODE("できました")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("きたに いかれるなら")
-.db NEWLINE
-.db ENCODE("まよいのもりにあるという")
-.db NEWLINE
-.db ENCODE("けんじゃのさとを おとずれなさい")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だいけんじゃのハルクさまなら")
-.db NEWLINE
-.db ENCODE("なにか ちからになって")
-.db NEWLINE
-.db ENCODE("くださるはずです")
-.db $EF
+SPEAK
+ENCODE("あなたたちのおかげで")
+NEWLINE
+ENCODE("ぶじに もどることが")
+NEWLINE
+ENCODE("できました")
+WAIT_CLICK
+SPEAK
+ENCODE("きたに いかれるなら")
+NEWLINE
+ENCODE("まよいのもりにあるという")
+NEWLINE
+ENCODE("けんじゃのさとを おとずれなさい")
+WAIT_CLICK
+SPEAK
+ENCODE("だいけんじゃのハルクさまなら")
+NEWLINE
+ENCODE("なにか ちからになって")
+NEWLINE
+ENCODE("くださるはずです")
+STOP
 
 L03BAAB:
-.db SPEAK
-.db ENCODE("このむらを おとしたぐらいで")
-.db NEWLINE
-.db ENCODE("いいきになるなよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("おまえたちに あの のろわれた")
-.db NEWLINE
-.db ENCODE("りゅうのやまが こせるものか")
-.db $EF
+SPEAK
+ENCODE("このむらを おとしたぐらいで")
+NEWLINE
+ENCODE("いいきになるなよ")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえたちに あの のろわれた")
+NEWLINE
+ENCODE("りゅうのやまが こせるものか")
+STOP
 
 L03BAE7:
-.db SPEAK
-.db ENCODE("ルドルフこうていは えいゆうさ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ソフィアの ブタどもに")
-.db NEWLINE
-.db ENCODE("こうていのよさが わかってたまるか")
-.db $EF
+SPEAK
+ENCODE("ルドルフこうていは えいゆうさ")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアの ブタどもに")
+NEWLINE
+ENCODE("こうていのよさが わかってたまるか")
+STOP
 
 L03BB1B:
-.db SPEAK
-.db ENCODE("わたしのむすめが")
-.db NEWLINE
-.db ENCODE("ガーゴイルにさらわれて")
-.db NEWLINE
-.db ENCODE("にしのほこらに つれていかれた")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("たすけてくれれば")
-.db NEWLINE
-.db ENCODE("わしのたからものを あげます")
-.db $EF
+SPEAK
+ENCODE("わたしのむすめが")
+NEWLINE
+ENCODE("ガーゴイルにさらわれて")
+NEWLINE
+ENCODE("にしのほこらに つれていかれた")
+WAIT_CLICK
+SPEAK
+ENCODE("たすけてくれれば")
+NEWLINE
+ENCODE("わしのたからものを あげます")
+STOP
 
 L03BB5F:
-.db $E8 $50 $40 $1C $F0 $1C
-.db SPEAK
-.db ENCODE("たのむ")
-.db NEWLINE
-.db ENCODE("いもうとを たすけてくれ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("いもうとはようじゅつしのタタラに")
-.db NEWLINE
-.db ENCODE("あやつられて リゲルのすいもんを")
-.db NEWLINE
-.db ENCODE("まもっているのだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("タタラさえ たおせば デューテの")
-.db NEWLINE
-.db ENCODE("まほうは とけるはずなのだが")
-.db NEWLINE
-.db ENCODE("どうすればいいのか わからない")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("たのむ いっしょに")
-.db NEWLINE
-.db ENCODE("たすけにいってくれ!!!")
-.db $EF
+FACE LUTHIER
+NAME LUTHIER
+SPEAK
+ENCODE("たのむ")
+NEWLINE
+ENCODE("いもうとを たすけてくれ")
+WAIT_CLICK
+SPEAK
+ENCODE("いもうとはようじゅつしのタタラに")
+NEWLINE
+ENCODE("あやつられて リゲルのすいもんを")
+NEWLINE
+ENCODE("まもっているのだ")
+WAIT_CLICK
+SPEAK
+ENCODE("タタラさえ たおせば デューテの")
+NEWLINE
+ENCODE("まほうは とけるはずなのだが")
+NEWLINE
+ENCODE("どうすればいいのか わからない")
+WAIT_CLICK
+SPEAK
+ENCODE("たのむ いっしょに")
+NEWLINE
+ENCODE("たすけにいってくれ!!!")
+STOP
 
 L03BBF6:
-.db SPEAK
-.db ENCODE("このさきは りゅうのやまだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("しりゅうに おそわれて")
-.db NEWLINE
-.db ENCODE("あんたら くわれちまうぜ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("もうすこし")
-.db NEWLINE
-.db ENCODE("ようすをみたほうが")
-.db NEWLINE
-.db ENCODE("いいんじゃないかな···")
-.db $EF
+SPEAK
+ENCODE("このさきは りゅうのやまだ")
+WAIT_CLICK
+SPEAK
+ENCODE("しりゅうに おそわれて")
+NEWLINE
+ENCODE("あんたら くわれちまうぜ")
+WAIT_CLICK
+SPEAK
+ENCODE("もうすこし")
+NEWLINE
+ENCODE("ようすをみたほうが")
+NEWLINE
+ENCODE("いいんじゃないかな···")
+STOP
 
 L03BC41:
-.db SPEAK
-.db ENCODE("ドゼーのとりでには")
-.db NEWLINE
-.db ENCODE("かいほうぐんの へいしが")
-.db NEWLINE
-.db ENCODE("とらわれているんだ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("しかし ちかいうちに")
-.db NEWLINE
-.db ENCODE("しょけいされるって")
-.db NEWLINE
-.db ENCODE("うわさがある")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("はやくたすけてやらないと")
-.db NEWLINE
-.db ENCODE("あぶないぜ")
-.db $EF
+SPEAK
+ENCODE("ドゼーのとりでには")
+NEWLINE
+ENCODE("かいほうぐんの へいしが")
+NEWLINE
+ENCODE("とらわれているんだ")
+WAIT_CLICK
+SPEAK
+ENCODE("しかし ちかいうちに")
+NEWLINE
+ENCODE("しょけいされるって")
+NEWLINE
+ENCODE("うわさがある")
+WAIT_CLICK
+SPEAK
+ENCODE("はやくたすけてやらないと")
+NEWLINE
+ENCODE("あぶないぜ")
+STOP
 
 L03BC9D:
-.db $E8 $50 $40 $13 $F0 $13
-.db SPEAK
-.db ENCODE("ありがとう")
-.db NEWLINE
-.db ENCODE("きっと たすけにきてくれると")
-.db NEWLINE
-.db ENCODE("しんじていました")
-.db $EF
+FACE MATHILDA
+NAME MATHILDA
+SPEAK
+ENCODE("ありがとう")
+NEWLINE
+ENCODE("きっと たすけにきてくれると")
+NEWLINE
+ENCODE("しんじていました")
+STOP
 
 L03BCC4:
-.db SPEAK
-.db ENCODE("ミラのしんでんに いくんだって?")
-.db NEWLINE
-.db ENCODE("それは やめたほうがいいよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("あのへんは ギースのとうぞくが")
-.db NEWLINE
-.db ENCODE("うようよしてるし")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("それに がけくずれが おこって")
-.db NEWLINE
-.db ENCODE("みちが ふさがれるって")
-.db NEWLINE
-.db ENCODE("うわさも あるからね")
-.db $EF
+SPEAK
+ENCODE("ミラのしんでんに いくんだって?")
+NEWLINE
+ENCODE("それは やめたほうがいいよ")
+WAIT_CLICK
+SPEAK
+ENCODE("あのへんは ギースのとうぞくが")
+NEWLINE
+ENCODE("うようよしてるし")
+WAIT_CLICK
+SPEAK
+ENCODE("それに がけくずれが おこって")
+NEWLINE
+ENCODE("みちが ふさがれるって")
+NEWLINE
+ENCODE("うわさも あるからね")
+STOP
 
 L03BD31:
-.db SPEAK
-.db ENCODE("ドゼーは いなくなったけど")
-.db NEWLINE
-.db ENCODE("さくもつは みのらないし")
-.db NEWLINE
-.db ENCODE("へんなばけものは でるし···")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("だいちぼしんミラは いったい")
-.db NEWLINE
-.db ENCODE("どうなってしまったんでしょう")
-.db $EF
+SPEAK
+ENCODE("ドゼーは いなくなったけど")
+NEWLINE
+ENCODE("さくもつは みのらないし")
+NEWLINE
+ENCODE("へんなばけものは でるし···")
+WAIT_CLICK
+SPEAK
+ENCODE("だいちぼしんミラは いったい")
+NEWLINE
+ENCODE("どうなってしまったんでしょう")
+STOP
 
 L03BD85:
-.db $E8 $50 $40 $1D $F0 $1D
-.db SPEAK
-.db ENCODE("わたし よくわからないの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("きがついたら たたかいのなかにいて")
-.db NEWLINE
-.db ENCODE("こわくなって にげてきたの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("え,わたし タタラに")
-.db NEWLINE
-.db ENCODE("あやつられていたの")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("そうだったの···")
-.db NEWLINE
-.db ENCODE("めいわくを かけたのですね")
-.db NEWLINE
-.db ENCODE("ごめんなさい")
-.db $EF
+FACE DELTHEA
+NAME DELTHEA
+SPEAK
+ENCODE("わたし よくわからないの")
+WAIT_CLICK
+SPEAK
+ENCODE("きがついたら たたかいのなかにいて")
+NEWLINE
+ENCODE("こわくなって にげてきたの")
+WAIT_CLICK
+SPEAK
+ENCODE("え,わたし タタラに")
+NEWLINE
+ENCODE("あやつられていたの")
+WAIT_CLICK
+SPEAK
+ENCODE("そうだったの···")
+NEWLINE
+ENCODE("めいわくを かけたのですね")
+NEWLINE
+ENCODE("ごめんなさい")
+STOP
 
 L03BDF5:
-.db SPEAK
-.db ENCODE("わーん.こわかったよー")
-.db $EF
+SPEAK
+ENCODE("わーん.こわかったよー")
+STOP
 
 L03BE02:
-.db SPEAK
-.db ENCODE("ばんざーい")
-.db NEWLINE
-.db ENCODE("ソフィアじょうが")
-.db NEWLINE
-.db ENCODE("かいほうされたぞ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("ドゼーしょうぐんが")
-.db NEWLINE
-.db ENCODE("じぶんの りょうちに")
-.db NEWLINE
-.db ENCODE("にげていったぞー")
-.db $EF
+SPEAK
+ENCODE("ばんざーい")
+NEWLINE
+ENCODE("ソフィアじょうが")
+NEWLINE
+ENCODE("かいほうされたぞ")
+WAIT_CLICK
+SPEAK
+ENCODE("ドゼーしょうぐんが")
+NEWLINE
+ENCODE("じぶんの りょうちに")
+NEWLINE
+ENCODE("にげていったぞー")
+STOP
 
 L03BE47:
-.db SPEAK
-.db ENCODE("うれしいけどさ··")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("でも しんぱいだなぁ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("リゲルおうこくが")
-.db NEWLINE
-.db ENCODE("せめこんできたら おれたちきっと")
-.db NEWLINE
-.db ENCODE("みなごろしにされちまうぜ")
-.db $EF
+SPEAK
+ENCODE("うれしいけどさ··")
+WAIT_CLICK
+SPEAK
+ENCODE("でも しんぱいだなぁ")
+WAIT_CLICK
+SPEAK
+ENCODE("リゲルおうこくが")
+NEWLINE
+ENCODE("せめこんできたら おれたちきっと")
+NEWLINE
+ENCODE("みなごろしにされちまうぜ")
+STOP
 
 L03BE8F:
-.db SPEAK
-.db ENCODE("ソフィアに えいゆうが")
-.db NEWLINE
-.db ENCODE("あらわれたのよ")
-.db WAIT_CLICK
-.db SPEAK
-.db ENCODE("これで このくにも")
-.db NEWLINE
-.db ENCODE("やっと すくわれるわ")
-.db $EF
+SPEAK
+ENCODE("ソフィアに えいゆうが")
+NEWLINE
+ENCODE("あらわれたのよ")
+WAIT_CLICK
+SPEAK
+ENCODE("これで このくにも")
+NEWLINE
+ENCODE("やっと すくわれるわ")
+STOP
 
 .db $8D
 .db $11

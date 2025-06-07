@@ -6799,78 +6799,78 @@ L04B619:
 .db $EF
 
 L04B67C:
-.db ENCODE("かくして")
-.db NEWLINE
-.db ENCODE("おおいなる たたかいのまくは おりた")
-.db NEWLINE
+ENCODE("かくして")
+NEWLINE
+ENCODE("おおいなる たたかいのまくは おりた")
+NEWLINE
 .db $EF
 
 L04B695:
-.db ENCODE("おおくのぎせいを はらい")
-.db NEWLINE
-.db ENCODE("いまようやく")
-.db NEWLINE
-.db ENCODE("バレンシアに へいわがおとずれる")
-.db NEWLINE
+ENCODE("おおくのぎせいを はらい")
+NEWLINE
+ENCODE("いまようやく")
+NEWLINE
+ENCODE("バレンシアに へいわがおとずれる")
+NEWLINE
 .db $EF
 
 L04B6BF:
-.db ENCODE("このたたかいが")
-.db NEWLINE
-.db ENCODE("いったい なんであったのか")
-.db NEWLINE
+ENCODE("このたたかいが")
+NEWLINE
+ENCODE("いったい なんであったのか")
+NEWLINE
 .db $EF
 
 L04B6D8:
-.db NEWLINE
-.db ENCODE("そのといに こたえるものはいない")
-.db NEWLINE
+NEWLINE
+ENCODE("そのといに こたえるものはいない")
+NEWLINE
 .db $EF
 
 L04B6EB:
-.db NEWLINE
-.db ENCODE("ただひとつ いえること")
-.db NEWLINE
+NEWLINE
+ENCODE("ただひとつ いえること")
+NEWLINE
 .db $EF
 
 L04B6FA:
-.db ENCODE("それは ひとが")
-.db NEWLINE
-.db ENCODE("ふたたび おごりたかぶるとき")
-.db NEWLINE
+ENCODE("それは ひとが")
+NEWLINE
+ENCODE("ふたたび おごりたかぶるとき")
+NEWLINE
 .db $EF
 
 L04B716:
-.db ENCODE("あらたなる せんらんのほのおが")
-.db NEWLINE
-.db ENCODE("ちじょうを やきつくし")
-.db NEWLINE
+ENCODE("あらたなる せんらんのほのおが")
+NEWLINE
+ENCODE("ちじょうを やきつくし")
+NEWLINE
 .db $EF
 
 L04B735:
-.db ENCODE("すべてが うしなわれてしまうで")
-.db NEWLINE
-.db ENCODE("あろうということ")
-.db NEWLINE
+ENCODE("すべてが うしなわれてしまうで")
+NEWLINE
+ENCODE("あろうということ")
+NEWLINE
 .db $EF
 
 L04B752:
-.db NEWLINE
-.db ENCODE("もっとも おそろしく みにくいもの")
-.db NEWLINE
-.db NEWLINE
+NEWLINE
+ENCODE("もっとも おそろしく みにくいもの")
+NEWLINE
+NEWLINE
 .db $EF
 
 L04B767:
-.db ENCODE("それは ひとのこころのなかにこそ")
-.db NEWLINE
-.db ENCODE("そんざいするのかも しれない")
-.db NEWLINE
+ENCODE("それは ひとのこころのなかにこそ")
+NEWLINE
+ENCODE("そんざいするのかも しれない")
+NEWLINE
 .db $EF
 
 L04B789:
-.db NEWLINE
-.db NEWLINE
+NEWLINE
+NEWLINE
 .db $EF
 
 L04B78C:
@@ -6921,323 +6921,323 @@ L04B7A2:
 .dw L04BD8D
 
 L04B7E2:
-.db ENCODE("でやすらかに")
-.db NEWLINE
-.db ENCODE("ねむっている···")
+ENCODE("でやすらかに")
+NEWLINE
+ENCODE("ねむっている···")
 .db $EF
 
 L04B7F4:
-.db ENCODE("しんせいバレンシアの")
-.db NEWLINE
-.db ENCODE("さいしょうを つとめる")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("アルム1せいおうの よき")
-.db NEWLINE
-.db ENCODE("かたうでとして おうこくの")
-.db NEWLINE
-.db ENCODE("さいけんに どりょくした")
+ENCODE("しんせいバレンシアの")
+NEWLINE
+ENCODE("さいしょうを つとめる")
+NEWLINE
+NEWLINE
+ENCODE("アルム1せいおうの よき")
+NEWLINE
+ENCODE("かたうでとして おうこくの")
+NEWLINE
+ENCODE("さいけんに どりょくした")
 .db $EF
 
 L04B837:
-.db ENCODE("ミラとドーマの ふたつの")
-.db NEWLINE
-.db ENCODE("きょうだんを とうごうして")
-.db NEWLINE
-.db ENCODE("さいこうしさいとなる")
+ENCODE("ミラとドーマの ふたつの")
+NEWLINE
+ENCODE("きょうだんを とうごうして")
+NEWLINE
+ENCODE("さいこうしさいとなる")
 .db $EF
 
 L04B860:
-.db ENCODE("おうこくきしだんに さんか")
-.db NEWLINE
-.db ENCODE("バレンシアのふっこうに")
-.db NEWLINE
-.db ENCODE("どりょくする")
+ENCODE("おうこくきしだんに さんか")
+NEWLINE
+ENCODE("バレンシアのふっこうに")
+NEWLINE
+ENCODE("どりょくする")
 .db $EF
 
 L04B884:
-.db ENCODE("たたかいののち アルムに")
-.db NEWLINE
-.db ENCODE("わかれをつげる")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("そのご かれをみたものはいない")
+ENCODE("たたかいののち アルムに")
+NEWLINE
+ENCODE("わかれをつげる")
+NEWLINE
+NEWLINE
+ENCODE("そのご かれをみたものはいない")
 .db $EF
 
 L04B8AC:
-.db ENCODE("ロビンと クレアをあらそい")
-.db NEWLINE
-.db ENCODE("みごと ハートをいとめた")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("おとこは かおじゃない")
-.db NEWLINE
-.db ENCODE("こころさと うそぶいている")
+ENCODE("ロビンと クレアをあらそい")
+NEWLINE
+ENCODE("みごと ハートをいとめた")
+NEWLINE
+NEWLINE
+ENCODE("おとこは かおじゃない")
+NEWLINE
+ENCODE("こころさと うそぶいている")
 .db $EF
 
 L04B8E6:
-.db ENCODE("ロビンのせんしを かなしみ")
-.db NEWLINE
-.db ENCODE("さけにおぼれる まいにち")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("かれに えがおがもどるのは")
-.db NEWLINE
-.db ENCODE("いつのことか···")
+ENCODE("ロビンのせんしを かなしみ")
+NEWLINE
+ENCODE("さけにおぼれる まいにち")
+NEWLINE
+NEWLINE
+ENCODE("かれに えがおがもどるのは")
+NEWLINE
+ENCODE("いつのことか···")
 .db $EF
 
 L04B91F:
-.db ENCODE("あいするものを うしない")
-.db NEWLINE
-.db ENCODE("にあわないとは しりつつ")
-.db NEWLINE
-.db ENCODE("ひとり たびにでる")
+ENCODE("あいするものを うしない")
+NEWLINE
+ENCODE("にあわないとは しりつつ")
+NEWLINE
+ENCODE("ひとり たびにでる")
 .db $EF
 
 L04B945:
-.db ENCODE("グレイのしつこさに まけ")
-.db NEWLINE
-.db ENCODE("やむなく いっしょになる")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("「あーあ アルム")
-.db NEWLINE
-.db ENCODE(" すきだったのになぁ···")
+ENCODE("グレイのしつこさに まけ")
+NEWLINE
+ENCODE("やむなく いっしょになる")
+NEWLINE
+NEWLINE
+ENCODE("「あーあ アルム")
+NEWLINE
+ENCODE(" すきだったのになぁ···")
 .db $EF
 
 L04B979:
-.db ENCODE("「グレイってば       ")
-.db NEWLINE
-.db ENCODE(" ホントにかってなんだから」")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("ひとりさきにしんだグレイを")
-.db NEWLINE
-.db ENCODE("うらんでいる")
+ENCODE("「グレイってば       ")
+NEWLINE
+ENCODE(" ホントにかってなんだから」")
+NEWLINE
+NEWLINE
+ENCODE("ひとりさきにしんだグレイを")
+NEWLINE
+ENCODE("うらんでいる")
 .db $EF
 
 L04B9B3:
-.db ENCODE("しんせいバレンシアの")
-.db NEWLINE
-.db ENCODE("きしだんを まかされる")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("さいきん うつくしい")
-.db NEWLINE
-.db ENCODE("つまを むかえたときく")
+ENCODE("しんせいバレンシアの")
+NEWLINE
+ENCODE("きしだんを まかされる")
+NEWLINE
+NEWLINE
+ENCODE("さいきん うつくしい")
+NEWLINE
+ENCODE("つまを むかえたときく")
 .db $EF
 
 L04B9E4:
-.db ENCODE("しんせいバレンシアの")
-.db NEWLINE
-.db ENCODE("きしだんを まかされる")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("しかし そのご")
-.db NEWLINE
-.db ENCODE("かいぞくとのたたかいで")
-.db NEWLINE
-.db ENCODE("いのちを おとす")
+ENCODE("しんせいバレンシアの")
+NEWLINE
+ENCODE("きしだんを まかされる")
+NEWLINE
+NEWLINE
+ENCODE("しかし そのご")
+NEWLINE
+ENCODE("かいぞくとのたたかいで")
+NEWLINE
+ENCODE("いのちを おとす")
 .db $EF
 
 L04BA1E:
-.db ENCODE("ボーイとともに ")
-.db NEWLINE
-.db ENCODE("ソフィアのきょうかいで")
-.db NEWLINE
-.db ENCODE("はたらいている")
+ENCODE("ボーイとともに ")
+NEWLINE
+ENCODE("ソフィアのきょうかいで")
+NEWLINE
+ENCODE("はたらいている")
 .db $EF
 
 L04BA3D:
-.db ENCODE("けんかともだちの")
-.db NEWLINE
-.db ENCODE("ボーイをなくし すこし")
-.db NEWLINE
-.db ENCODE("ショックをうけている")
+ENCODE("けんかともだちの")
+NEWLINE
+ENCODE("ボーイをなくし すこし")
+NEWLINE
+ENCODE("ショックをうけている")
 .db $EF
 
 L04BA5F:
-.db ENCODE("きずついた ひとびとを")
-.db NEWLINE
-.db ENCODE("たすけるために")
-.db NEWLINE
-.db ENCODE("リゲルにむかう")
+ENCODE("きずついた ひとびとを")
+NEWLINE
+ENCODE("たすけるために")
+NEWLINE
+ENCODE("リゲルにむかう")
 .db $EF
 
 L04BA7E:
-.db ENCODE("だれもがまさかと おもう")
-.db NEWLINE
-.db ENCODE("あいてと こいにおちたという")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("それが いったいだれなのか")
-.db NEWLINE
-.db ENCODE("かのじょは わらって")
-.db NEWLINE
-.db ENCODE("こたえようとしない")
+ENCODE("だれもがまさかと おもう")
+NEWLINE
+ENCODE("あいてと こいにおちたという")
+NEWLINE
+NEWLINE
+ENCODE("それが いったいだれなのか")
+NEWLINE
+ENCODE("かのじょは わらって")
+NEWLINE
+ENCODE("こたえようとしない")
 .db $EF
 
 L04BAC3:
-.db ENCODE("あいかわらず")
-.db NEWLINE
-.db ENCODE("メイと けんかばかり")
-.db NEWLINE
-.db ENCODE("かれらにとっては")
-.db NEWLINE
-.db ENCODE("それが しあわせなのか")
+ENCODE("あいかわらず")
+NEWLINE
+ENCODE("メイと けんかばかり")
+NEWLINE
+ENCODE("かれらにとっては")
+NEWLINE
+ENCODE("それが しあわせなのか")
 .db $EF
 
 L04BAED:
-.db ENCODE("メイに さきだたれ")
-.db NEWLINE
-.db ENCODE("はじめて ")
-.db NEWLINE
-.db ENCODE("じぶんのこころに きづく")
-.db NEWLINE
-.db ENCODE("しかし ときはもどらない")
+ENCODE("メイに さきだたれ")
+NEWLINE
+ENCODE("はじめて ")
+NEWLINE
+ENCODE("じぶんのこころに きづく")
+NEWLINE
+ENCODE("しかし ときはもどらない")
 .db $EF
 
 L04BB1D:
-.db ENCODE("ジェシーたちとともに")
-.db NEWLINE
-.db ENCODE("あたらしいくにをつくろうと")
-.db NEWLINE
-.db ENCODE("がんばっている")
+ENCODE("ジェシーたちとともに")
+NEWLINE
+ENCODE("あたらしいくにをつくろうと")
+NEWLINE
+ENCODE("がんばっている")
 .db $EF
 
 L04BB41:
-.db ENCODE("かつての ギースのりょうちに")
-.db NEWLINE
-.db ENCODE("あたらしいくにを きずいた")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("のちに かれは")
-.db NEWLINE
-.db ENCODE("さばくのようへいおうと")
-.db NEWLINE
-.db ENCODE("よばれるようになる")
+ENCODE("かつての ギースのりょうちに")
+NEWLINE
+ENCODE("あたらしいくにを きずいた")
+NEWLINE
+NEWLINE
+ENCODE("のちに かれは")
+NEWLINE
+ENCODE("さばくのようへいおうと")
+NEWLINE
+ENCODE("よばれるようになる")
 .db $EF
 
 L04BB81:
-.db ENCODE("アルムにたのまれて")
-.db NEWLINE
-.db ENCODE("わかいへいしたちに")
-.db NEWLINE
-.db ENCODE("たたかいかたを おしえている")
+ENCODE("アルムにたのまれて")
+NEWLINE
+ENCODE("わかいへいしたちに")
+NEWLINE
+ENCODE("たたかいかたを おしえている")
 .db $EF
 
 L04BBA4:
-.db ENCODE("よろいをぬぎすてて")
-.db NEWLINE
-.db ENCODE("クレーベの つまとなる")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("でんせつのおんなきし")
-.db NEWLINE
-.db ENCODE("マチルダ")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("そのなは バレンシアの")
-.db NEWLINE
-.db ENCODE("れきしに とわに")
-.db NEWLINE
-.db ENCODE("きざまれるであろう")
+ENCODE("よろいをぬぎすてて")
+NEWLINE
+ENCODE("クレーベの つまとなる")
+NEWLINE
+NEWLINE
+ENCODE("でんせつのおんなきし")
+NEWLINE
+ENCODE("マチルダ")
+NEWLINE
+NEWLINE
+ENCODE("そのなは バレンシアの")
+NEWLINE
+ENCODE("れきしに とわに")
+NEWLINE
+ENCODE("きざまれるであろう")
 .db $EF
 
 L04BBF2:
-.db ENCODE("クレーベをうしない")
-.db NEWLINE
-.db ENCODE("やむなく きしだんを")
-.db NEWLINE
-.db ENCODE("ひきつぐ")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("でんせつのおんなきし")
-.db NEWLINE
-.db ENCODE("マチルダ")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("そのなは バレンシアの")
-.db NEWLINE
-.db ENCODE("れきしに とわに ")
-.db NEWLINE
-.db ENCODE("きざまれるであろう")
+ENCODE("クレーベをうしない")
+NEWLINE
+ENCODE("やむなく きしだんを")
+NEWLINE
+ENCODE("ひきつぐ")
+NEWLINE
+NEWLINE
+ENCODE("でんせつのおんなきし")
+NEWLINE
+ENCODE("マチルダ")
+NEWLINE
+NEWLINE
+ENCODE("そのなは バレンシアの")
+NEWLINE
+ENCODE("れきしに とわに ")
+NEWLINE
+ENCODE("きざまれるであろう")
 .db $EF
 
 L04BC46:
-.db ENCODE("むらをとうぞくから まもるため")
-.db NEWLINE
-.db ENCODE("じけいだんの たいちょうを")
-.db NEWLINE
-.db ENCODE("つとめている")
+ENCODE("むらをとうぞくから まもるため")
+NEWLINE
+ENCODE("じけいだんの たいちょうを")
+NEWLINE
+ENCODE("つとめている")
 .db $EF
 
 L04BC6E:
-.db ENCODE("おとうとたちを さがしだし")
-.db NEWLINE
-.db ENCODE("やまのむらに かえった")
-.db NEWLINE
-.db ENCODE("いまは むかしのように")
-.db NEWLINE
-.db ENCODE("きこりをしているという")
+ENCODE("おとうとたちを さがしだし")
+NEWLINE
+ENCODE("やまのむらに かえった")
+NEWLINE
+ENCODE("いまは むかしのように")
+NEWLINE
+ENCODE("きこりをしているという")
 .db $EF
 
 L04BCA2:
-.db ENCODE("かつての ギースのりょうちに")
-.db NEWLINE
-.db ENCODE("あたらしいくにを きずいた")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("のちに かれは")
-.db NEWLINE
-.db ENCODE("さばくのようへいおうと")
-.db NEWLINE
-.db ENCODE("よばれるようになる")
+ENCODE("かつての ギースのりょうちに")
+NEWLINE
+ENCODE("あたらしいくにを きずいた")
+NEWLINE
+NEWLINE
+ENCODE("のちに かれは")
+NEWLINE
+ENCODE("さばくのようへいおうと")
+NEWLINE
+ENCODE("よばれるようになる")
 .db $EF
 
 L04BCE2:
-.db ENCODE("ドーマの いけにえにされて")
-.db NEWLINE
-.db ENCODE("まじょにうまれかわった")
-.db NEWLINE
-.db ENCODE("あねマーラとヘステ···")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("3にんのむすめを ぎせいにした")
-.db NEWLINE
-.db ENCODE("ちちおやのジュダを ソニアは")
-.db NEWLINE
-.db ENCODE("けっして ゆるそうとはしない")
+ENCODE("ドーマの いけにえにされて")
+NEWLINE
+ENCODE("まじょにうまれかわった")
+NEWLINE
+ENCODE("あねマーラとヘステ···")
+NEWLINE
+NEWLINE
+ENCODE("3にんのむすめを ぎせいにした")
+NEWLINE
+ENCODE("ちちおやのジュダを ソニアは")
+NEWLINE
+ENCODE("けっして ゆるそうとはしない")
 .db $EF
 
 L04BD3D:
-.db ENCODE("たたかいののち かれのすがたは")
-.db NEWLINE
-.db ENCODE("ゆうしゃのけんとともに")
-.db NEWLINE
-.db ENCODE("こつぜんときえた")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("うわさでは あらたなたたかいを")
-.db NEWLINE
-.db ENCODE("もとめて みなみのたいりくに")
-.db NEWLINE
-.db ENCODE("わたったという")
+ENCODE("たたかいののち かれのすがたは")
+NEWLINE
+ENCODE("ゆうしゃのけんとともに")
+NEWLINE
+ENCODE("こつぜんときえた")
+NEWLINE
+NEWLINE
+ENCODE("うわさでは あらたなたたかいを")
+NEWLINE
+ENCODE("もとめて みなみのたいりくに")
+NEWLINE
+ENCODE("わたったという")
 .db $EF
 
 L04BD8D:
-.db ENCODE("ジェシーの ")
-.db NEWLINE
-.db ENCODE("おうこくけんせつに")
-.db NEWLINE
-.db ENCODE("さんかする")
-.db NEWLINE
-.db NEWLINE
-.db ENCODE("そのかたわらには")
-.db NEWLINE
-.db ENCODE("うつくしい つまが")
-.db NEWLINE
-.db ENCODE("よりそっている")
+ENCODE("ジェシーの ")
+NEWLINE
+ENCODE("おうこくけんせつに")
+NEWLINE
+ENCODE("さんかする")
+NEWLINE
+NEWLINE
+ENCODE("そのかたわらには")
+NEWLINE
+ENCODE("うつくしい つまが")
+NEWLINE
+ENCODE("よりそっている")
 .db $EF
 
 L04BDC0:

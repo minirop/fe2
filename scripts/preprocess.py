@@ -13,7 +13,7 @@ with open(f'{dir_path}/kana.tbl', 'r') as f:
 
 def mapper(match):
     jp = match.group(1)
-    output = []
+    output = [".db"]
     for c in jp:
         if c == ' ':
             output.append("$FF")

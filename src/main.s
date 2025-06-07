@@ -20,6 +20,8 @@
     BANKS 16
 .ENDRO
 
+.INCLUDE "defines.s"
+
 .RAMSECTION "RAM" SLOT 3
 .ENDS
 
@@ -34,10 +36,6 @@
 .db $A2 $00 $00 $00 $00 $00 $00 $00 $00 $00
 
 .ENDS
-
-.DEFINE SPEAK $EA
-.DEFINE NEWLINE $ED
-.DEFINE WAIT_CLICK $EE
 
 .INCLUDE "bank000.asm"
 .INCLUDE "bank001.asm"

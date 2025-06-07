@@ -5732,168 +5732,474 @@ L01B89F:
 .dw L01BF5E
 
 L01B920:
-.db $EC ENCODE("あは しょうめつした!") $ED $EE $EF
+.db $EC
+ENCODE("あは しょうめつした!")
+NEWLINE
+WAIT_CLICK
+STOP
 
 L01B92F:
-.db $EC ENCODE("あは しょうめつした!") $ED $EC ENCODE("うは ") $EC ENCODE("いのけいけんちをえた!!") $ED ENCODE(" ") $EE $EF
+.db $EC
+ENCODE("あは しょうめつした!")
+NEWLINE
+.db $EC
+ENCODE("うは ")
+.db $EC
+ENCODE("いのけいけんちをえた!!")
+NEWLINE
+ENCODE(" ")
+WAIT_CLICK
+STOP
 
 L01B951:
-.db $EC ENCODE("あを たおした!!") $ED $EC ENCODE("うは ") $EC ENCODE("いのけいけんちをえた!!") $ED ENCODE(" ") $EE $EF
+.db $EC
+ENCODE("あを たおした!!")
+NEWLINE
+.db $EC
+ENCODE("うは ")
+.db $EC
+ENCODE("いのけいけんちをえた!!")
+NEWLINE
+ENCODE(" ")
+WAIT_CLICK
+STOP
 
 L01B971:
-.db $EC ENCODE("えかいヒット!!") $ED $EC ENCODE("うは ") $EC ENCODE("いのけいけんちをえた") $ED ENCODE(" ") $EE $EF
+.db $EC
+ENCODE("えかいヒット!!")
+NEWLINE
+.db $EC
+ENCODE("うは ")
+.db $EC
+ENCODE("いのけいけんちをえた")
+NEWLINE
+ENCODE(" ")
+WAIT_CLICK
+STOP
 
 L01B98E:
-.db $EC ENCODE("あを たおした!!") $ED $EF
+.db $EC
+ENCODE("あを たおした!!")
+NEWLINE
+STOP
 
 L01B99A:
-.db $EC ENCODE("うは") $ED ENCODE("レベルが") $EC ENCODE("いになった!") $EF
+.db $EC
+ENCODE("うは")
+NEWLINE
+ENCODE("レベルが")
+.db $EC
+ENCODE("いになった!")
+STOP
 
 L01B9AC:
-.db $EC ENCODE("あが ") $EC ENCODE("いあがった!") $EF $EC ENCODE("うは たおれた!!") $EE $EF
+.db $EC
+ENCODE("あが ")
+.db $EC
+ENCODE("いあがった!")
+STOP
+
+.db $EC
+ENCODE("うは たおれた!!")
+WAIT_CLICK
+STOP
 
 L01B9C6:
-.db $EC ENCODE("あは ") $EC ENCODE("いをもっていた!!") $ED $EC ENCODE("うは ") $EC ENCODE("いをてにいれた!") $EF
+.db $EC
+ENCODE("あは ")
+.db $EC
+ENCODE("いをもっていた!!")
+NEWLINE
+.db $EC
+ENCODE("うは ")
+.db $EC
+ENCODE("いをてにいれた!")
+STOP
 
 L01B9E3:
-.db $EC ENCODE("あのじゅもんをおぼえた!") $EF
+.db $EC
+ENCODE("あのじゅもんをおぼえた!")
+STOP
 
 L01B9F3:
-.db $EC ENCODE("うは ") $EC ENCODE("いのけいけんちをえた") $ED $EE $EF
+.db $EC
+ENCODE("うは ")
+.db $EC
+ENCODE("いのけいけんちをえた")
+NEWLINE
+WAIT_CLICK
+STOP
 
 L01BA05:
-.db $EC ENCODE("うは ") $EC ENCODE("いにクラスチェンジできます") $ED $EF
+.db $EC
+ENCODE("うは ")
+.db $EC
+ENCODE("いにクラスチェンジできます")
+NEWLINE
+STOP
 
 L01BA1B:
-.db $EC ENCODE("うは クラスチェンジできます") $ED $EF
+.db $EC
+ENCODE("うは クラスチェンジできます")
+NEWLINE
+STOP
 
 L01BA2E:
-.db $EC ENCODE("あは ") $EC ENCODE("いをもっていた!!") $ED $EC ENCODE("うは ") $EC ENCODE("いをあずかりじょにあずけた!") $EE $EF
+.db $EC
+ENCODE("あは ")
+.db $EC
+ENCODE("いをもっていた!!")
+NEWLINE
+.db $EC
+ENCODE("うは ")
+.db $EC
+ENCODE("いをあずかりじょにあずけた!")
+WAIT_CLICK
+STOP
 
 L01BA55:
-.db $EC ENCODE("うは たおれた!!") $EE $EF $EC ENCODE("うは いきたえた!!") $EE $EF
+.db $EC
+ENCODE("うは たおれた!!")
+WAIT_CLICK
+STOP
+
+.db $EC
+ENCODE("うは いきたえた!!")
+WAIT_CLICK
+STOP
 
 L01BA6E:
-.db ENCODE("「ちくしょう!!") $ED ENCODE("もうすこしだったのに···") $ED $EB
+ENCODE("「ちくしょう!!")
+NEWLINE
+ENCODE("もうすこしだったのに···")
+NEWLINE
+.db $EB
 
 L01BA87:
-.db ENCODE("「やっぱり だめだった") $ED ENCODE("ごめんなさい みんな···") $ED $EB
+ENCODE("「やっぱり だめだった")
+NEWLINE
+ENCODE("ごめんなさい みんな···")
+NEWLINE
+.db $EB
 
 L01BAA6:
-.db ENCODE("「アルムよ セリカよ") $ED ENCODE("わたしをのりこえ バレンシアをたのむ···") $ED $EB
+ENCODE("「アルムよ セリカよ")
+NEWLINE
+ENCODE("わたしをのりこえ バレンシアをたのむ···")
+NEWLINE
+.db $EB
 
 L01BAC9:
-.db ENCODE("「みなのものに ミラのかごが") $ED ENCODE("あらんことを···") $ED $EA
+ENCODE("「みなのものに ミラのかごが")
+NEWLINE
+ENCODE("あらんことを···")
+NEWLINE
+SPEAK
+
 L01BAE5:
-.db ENCODE("「すまん アルム···") $ED $EA
+ENCODE("「すまん アルム···")
+NEWLINE
+SPEAK
 
 L01BAF2:
-.db ENCODE("「アルム ごめんよ···") $ED $EA
+ENCODE("「アルム ごめんよ···")
+NEWLINE
+SPEAK
 
 L01BB01:
-.db ENCODE("「アルム おれはおまえを") $ED ENCODE("しんじてるぜ····") $ED $EA
+ENCODE("「アルム おれはおまえを")
+NEWLINE
+ENCODE("しんじてるぜ····")
+NEWLINE
+SPEAK
 
 L01BB1C:
-.db ENCODE("「あーあ") $ED ENCODE("やっぱり いいおとこは") $ED ENCODE("ながいきできねぇや") $ED $EB
+ENCODE("「あーあ")
+NEWLINE
+ENCODE("やっぱり いいおとこは")
+NEWLINE
+ENCODE("ながいきできねぇや")
+NEWLINE
+.db $EB
 
 L01BB3B:
-.db ENCODE("「みんな···") $ED ENCODE("アルムを まもってあげて···") $ED $EA
+ENCODE("「みんな···")
+NEWLINE
+ENCODE("アルムを まもってあげて···")
+NEWLINE
+SPEAK
 
 L01BB55:
-.db ENCODE("「こころざし なかばに") $ED ENCODE("たおれるわけには···") $ED $EA
+ENCODE("「こころざし なかばに")
+NEWLINE
+ENCODE("たおれるわけには···")
+NEWLINE
+SPEAK
 
 L01BB70:
-.db ENCODE("「まったく!") $ED ENCODE("ドジなんだから····") $ED $EB
+ENCODE("「まったく!")
+NEWLINE
+ENCODE("ドジなんだから····")
+NEWLINE
+.db $EB
 
 L01BB87:
-.db ENCODE("「ごめんね みんな····") $ED $EA
+ENCODE("「ごめんね みんな····")
+NEWLINE
+SPEAK
 
 L01BB97:
-.db ENCODE("「セリカさま") $ED ENCODE("やくに たてなくて") $ED ENCODE("ごめんなさい····") $ED $EA
+ENCODE("「セリカさま")
+NEWLINE
+ENCODE("やくに たてなくて")
+NEWLINE
+ENCODE("ごめんなさい····")
+NEWLINE
+SPEAK
 
 L01BBB5:
-.db ENCODE("「だぁー") $ED ENCODE("まったく マヌケだぜぇー") $ED $EB
+ENCODE("「だぁー")
+NEWLINE
+ENCODE("まったく マヌケだぜぇー")
+NEWLINE
+.db $EB
 
 L01BBCB:
-.db ENCODE("「ちっ,ふかくだった···") $ED $EA
+ENCODE("「ちっ,ふかくだった···")
+NEWLINE
+SPEAK
 
 L01BBDB:
-.db ENCODE("「セリカさま") $ED ENCODE("くじけちゃ ダメだよ!") $ED $EA
+ENCODE("「セリカさま")
+NEWLINE
+ENCODE("くじけちゃ ダメだよ!")
+NEWLINE
+SPEAK
 
 L01BBF2:
-.db ENCODE("「わがしょうがいに いっぺんの") $ED ENCODE("くいなし···") $ED $EA
+ENCODE("「わがしょうがいに いっぺんの")
+NEWLINE
+ENCODE("くいなし···")
+NEWLINE
+SPEAK
 
 L01BC0E:
-.db ENCODE("「あぁ,クレーベ") $ED ENCODE("あなたと いっしょに") $ED ENCODE("へいわなときを すごしたかった") $ED $EA
+ENCODE("「あぁ,クレーベ")
+NEWLINE
+ENCODE("あなたと いっしょに")
+NEWLINE
+ENCODE("へいわなときを すごしたかった")
+NEWLINE
+SPEAK
 
 L01BC35:
-.db ENCODE("「む,むねん···") $ED $EA
+ENCODE("「む,むねん···")
+NEWLINE
+SPEAK
 
 L01BC40:
-.db ENCODE("「フッ,おれとしたことが") $ED ENCODE("レベルが ひくかったようだぜ") $ED ENCODE("·····") $ED $EA
+ENCODE("「フッ,おれとしたことが")
+NEWLINE
+ENCODE("レベルが ひくかったようだぜ")
+NEWLINE
+ENCODE("·····")
+NEWLINE
+SPEAK
 
 L01BC68:
-.db ENCODE("「いくさのなかで しねるなら") $ED ENCODE("ほんもう···") $ED $EA
+ENCODE("「いくさのなかで しねるなら")
+NEWLINE
+ENCODE("ほんもう···")
+NEWLINE
+SPEAK
 
 L01BC81:
-.db ENCODE("「わたしの うんめいもつきたな") $ED ENCODE("····") $ED $EA
+ENCODE("「わたしの うんめいもつきたな")
+NEWLINE
+ENCODE("····")
+NEWLINE
+SPEAK
 
 L01BC97:
-.db ENCODE("「オメェら···") $ED ENCODE("あとは うまくやれよ···") $ED $EA
+ENCODE("「オメェら···")
+NEWLINE
+ENCODE("あとは うまくやれよ···")
+NEWLINE
+SPEAK
 
 L01BCAF:
-.db ENCODE("「けっ,なんてこったい···") $ED $EA
+ENCODE("「けっ,なんてこったい···")
+NEWLINE
+SPEAK
 
 L01BCBF:
-.db ENCODE("「わが まりょくおよばず") $ED ENCODE("これもまた さだめ···か") $ED $EA
+ENCODE("「わが まりょくおよばず")
+NEWLINE
+ENCODE("これもまた さだめ···か")
+NEWLINE
+SPEAK
 
 L01BCDF:
-.db ENCODE("「ヤダー") $ED ENCODE("まだ しにたくないよー") $ED $EA
+ENCODE("「ヤダー")
+NEWLINE
+ENCODE("まだ しにたくないよー")
+NEWLINE
+SPEAK
 
 L01BCF3:
-.db ENCODE("「ああ ジークさま···") $ED $EA
+ENCODE("「ああ ジークさま···")
+NEWLINE
+SPEAK
 
 L01BD02:
-.db ENCODE("「あぁ,かえりたかった") $ED ENCODE("ふるさと アカネイアへ···") $ED $EA
+ENCODE("「あぁ,かえりたかった")
+NEWLINE
+ENCODE("ふるさと アカネイアへ···")
+NEWLINE
+SPEAK
 
 L01BD1E:
-.db ENCODE("「アベル ") $ED ENCODE("かえれなくて ごめんね") $ED $EA
+ENCODE("「アベル ")
+NEWLINE
+ENCODE("かえれなくて ごめんね")
+NEWLINE
+SPEAK
 
 L01BD33:
-.db ENCODE("「おねえさま ごめんなさい··") $ED $EA
+ENCODE("「おねえさま ごめんなさい··")
+NEWLINE
+SPEAK
 
 L01BD45:
-.db ENCODE("「すまない ティータ···") $ED $EA
+ENCODE("「すまない ティータ···")
+NEWLINE
+SPEAK
 
 L01BD54:
-.db ENCODE("「くっ··· マイセンめ!") $ED ENCODE("ルドルフのこせがれに") $ED ENCODE("ソフィアを うるつもりか") $ED $ED ENCODE("あの うらぎりものめ!!") $ED $ED $E8
+ENCODE("「くっ··· マイセンめ!")
+NEWLINE
+ENCODE("ルドルフのこせがれに")
+NEWLINE
+ENCODE("ソフィアを うるつもりか")
+NEWLINE
+NEWLINE
+ENCODE("あの うらぎりものめ!!")
+NEWLINE
+NEWLINE
+.db $E8
 
 L01BD8D:
-.db ENCODE("「てめぇら いいきになるなよ") $ED ENCODE("おれさまなんて まだまだ") $ED ENCODE("····ぐふっ") $ED $ED $E8
+ENCODE("「てめぇら いいきになるなよ")
+NEWLINE
+ENCODE("おれさまなんて まだまだ")
+NEWLINE
+ENCODE("····ぐふっ")
+NEWLINE
+NEWLINE
+.db $E8
 
 L01BDB6:
-.db ENCODE("「ぬ,ぬかったわ···") $ED $ED $E8
+ENCODE("「ぬ,ぬかったわ···")
+NEWLINE
+NEWLINE
+.db $E8
 
 L01BDC4:
-.db ENCODE("「アルム·····") $ED ENCODE("りっぱに なったな···") $ED $ED ENCODE("マイセンどのに あずけたのは") $ED ENCODE("やはりまちがいでは なかったか···") $ED $ED ENCODE("もはや きづいておろう") $ED ENCODE("おまえの ほんとうのなは") $ED ENCODE(" アルバイン·アルム·ルドルフ") $ED $ED ENCODE("わたしの ···") $ED ENCODE("ただひとりの···むすこなのだ···") $ED $ED ENCODE("ぐふっ··") $ED $ED ENCODE("いまはもう おおくはかたれぬ···") $ED $ED ENCODE("だが アルムよ") $ED ENCODE("さいごに ひとつだけ たのみがある") $ED $ED ENCODE("ミラをふうじた あのせいけん") $ED ENCODE("[ファルシオン]で") $ED ENCODE("ドーマを···") $ED $ED ENCODE("じゃしんドーマを") $ED ENCODE("た·お·す·の·だ····") $ED $ED $ED $E8
+ENCODE("「アルム·····")
+NEWLINE
+ENCODE("りっぱに なったな···")
+NEWLINE
+NEWLINE
+ENCODE("マイセンどのに あずけたのは")
+NEWLINE
+ENCODE("やはりまちがいでは なかったか···")
+NEWLINE
+NEWLINE
+ENCODE("もはや きづいておろう")
+NEWLINE
+ENCODE("おまえの ほんとうのなは")
+NEWLINE
+ENCODE(" アルバイン·アルム·ルドルフ")
+NEWLINE
+NEWLINE
+ENCODE("わたしの ···")
+NEWLINE
+ENCODE("ただひとりの···むすこなのだ···")
+NEWLINE
+NEWLINE
+ENCODE("ぐふっ··")
+NEWLINE
+NEWLINE
+ENCODE("いまはもう おおくはかたれぬ···")
+NEWLINE
+NEWLINE
+ENCODE("だが アルムよ")
+NEWLINE
+ENCODE("さいごに ひとつだけ たのみがある")
+NEWLINE
+NEWLINE
+ENCODE("ミラをふうじた あのせいけん")
+NEWLINE
+ENCODE("[ファルシオン]で")
+NEWLINE
+ENCODE("ドーマを···")
+NEWLINE
+NEWLINE
+ENCODE("じゃしんドーマを")
+NEWLINE
+ENCODE("た·お·す·の·だ····")
+NEWLINE
+NEWLINE
+NEWLINE
+.db $E8
 
 L01BECD:
-.db ENCODE("「ドーマさまの ちからをしらぬ") $ED ENCODE("おろかものよ···") $ED ENCODE("こうかいするが よいわ···") $ED $ED $E8
+ENCODE("「ドーマさまの ちからをしらぬ")
+NEWLINE
+ENCODE("おろかものよ···")
+NEWLINE
+ENCODE("こうかいするが よいわ···")
+NEWLINE
+NEWLINE
+.db $E8
 
 L01BEFA:
-.db ENCODE("「このわたしを たおすとは") $ED ENCODE("さすがだな·····") $ED ENCODE("ほめてやろう···") $ED $ED $E8
+ENCODE("「このわたしを たおすとは")
+NEWLINE
+ENCODE("さすがだな·····")
+NEWLINE
+ENCODE("ほめてやろう···")
+NEWLINE
+NEWLINE
+.db $E8
 
 L01BF21:
-.db ENCODE("「きさまら いいきになるなよ") $ED ENCODE("······") $ED $ED $E8
+ENCODE("「きさまら いいきになるなよ")
+NEWLINE
+ENCODE("······")
+NEWLINE
+NEWLINE
+.db $E8
 
 L01BF39:
-.db ENCODE("「すまない ティータ···") $ED $ED $E8
+ENCODE("「すまない ティータ···")
+NEWLINE
+NEWLINE
+.db $E8
 
 L01BF49:
-.db ENCODE("「ドーマのかごが あらんことを") $ED $ED $E8
+ENCODE("「ドーマのかごが あらんことを")
+NEWLINE
+NEWLINE
+.db $E8
 
 L01BF5E:
-.db ENCODE("「あぁ わたしはいったい···") $ED ENCODE("に,にいさん···") $ED $ED $E8
+ENCODE("「あぁ わたしはいったい···")
+NEWLINE
+ENCODE("に,にいさん···")
+NEWLINE
+NEWLINE
+.db $E8
 
 .db $00
 .db $D2
