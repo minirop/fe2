@@ -5,6 +5,47 @@ import os, sys, re
 mapping = {}
 tenten = {}
 maru = {}
+characters = {
+    '01': 'ALM',
+    '02': 'CELICA',
+    '03': 'MYCEN',
+    '04': 'NOMA',
+    '05': 'LUKAS',
+    '06': 'KLIFF',
+    '07': 'TOBIN',
+    '08': 'GRAY',
+    '09': 'CLAIR',
+    '0A': 'CLIVE',
+    '0B': 'CLIVE_B',
+    '0C': 'FORSYTH',
+    '0D': 'MAE',
+    '0E': 'SILQUE',
+    '0F': 'GENNY',
+    '10': 'BOEY',
+    '11': 'KAMUI',
+    '12': 'VALBAR',
+    '13': 'MATHILDA',
+    '14': 'PYTHON',
+    '15': 'LEO',
+    '16': 'ATLAS',
+    '17': 'JESSE',
+    '18': 'FORSYTH_18',
+    '19': 'SONYA',
+    '1A': 'DEEN',
+    '1B': 'SABER',
+    '1C': 'LUTHIER',
+    '1D': 'DELTHEA',
+    '1E': 'TATIANA',
+    '1F': 'CATRIA',
+    '20': 'PALLA',
+    '21': 'EST',
+    '22': 'ZEKE',
+    '23': 'SHADOW',
+    '24': 'WOMAN',
+    '25': 'BOY',
+    '26': 'GIRL',
+    '86': 'DUMA'
+}
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -27,7 +68,11 @@ def decode(code):
     c = code.split(' ')
     output = []
     in_string = False
+    next_is_face = False
     for cc in c:
+        if next_is_face:
+            output += characters[cc]
+            continue
         match cc:
             case '0F':
                 output[-1] = tenten[output[-1]]
@@ -36,13 +81,13 @@ def decode(code):
             case 'FF':
                 if not in_string:
                     in_string = True
-                    output += ".db ENCODE(\""
+                    output += "ENCODE(\""
                 output += ' '
             case _:
                 if cc in mapping:
                     if not in_string:
                         in_string = True
-                        output += ".db ENCODE(\""
+                        output += "ENCODE(\""
                     output += mapping[cc]
                 else:
                     if in_string:
@@ -52,15 +97,16 @@ def decode(code):
                         case 'E6':
                             output += ".db $E6\n"
                         case 'EA':
-                            output += ".db SPEAK\n"
+                            output += "SPEAK\n"
                         case 'ED':
-                            output += ".db NEWLINE\n"
+                            output += "NEWLINE\n"
                         case 'EE':
-                            output += ".db WAIT_CLICK\n"
+                            output += "WAIT_CLICK\n"
                         case 'EF':
-                            output += ".db $EF\n"
+                            output += "STOP\n"
                         case 'F0':
-                            output += ".db $F0\n"
+                            output += "FACE "
+                            next_is_face = True
                         case _:
                             output += f" ${cc}"
 
@@ -70,4 +116,4 @@ def decode(code):
 
 
 # print: ENCODE("アルム")
-decode('30 5A 52')
+decode('06 0B 19 07 07')

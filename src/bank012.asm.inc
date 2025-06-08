@@ -2143,8 +2143,7 @@ L0CAAE3:
     ADC $0E
     STA $0E
     BCC L0CAB01
-.db $E6
-.db $0F
+    INC $0F
 L0CAB01:
     LDA #16
     STA $33
@@ -3232,6 +3231,7 @@ L0CB203:
 .db $80
 .db $44
 .db $90
+
 L0CB222:
     LDA $7434
     CMP #111
