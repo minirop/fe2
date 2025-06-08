@@ -1283,6 +1283,7 @@
 .db $03
 .db $00
 .db $00
+
 L0D8500:
     LDA $7479
     BEQ L0D853B
@@ -1370,12 +1371,12 @@ L0D85AC:
 L0D85B5:
     LDA $05EF
     JSR L0FC34C.w
-.db $C1
-.db $85
-.db $32
-.db $9A
-.db $8C
-.db $92
+
+.dw L0D85C1
+.dw L0D9A32
+.dw L0D928C
+
+L0D85C1:
     JSR L0FC288.w
     LDA #3
     STA $3D
@@ -1389,16 +1390,13 @@ L0D85B5:
     JSR L0D8B8A.w
     STA $7875
     JSR L0FC34C.w
-.db $3D
-.db $C7
-.db $5B
-.db $87
-.db $BD
-.db $86
-.db $A7
-.db $87
-.db $0F
-.db $87
+
+.dw L0FC73D
+.dw L0D875B
+.dw L0D86BD
+.dw L0D87A7
+.dw L0D870F
+
 L0D85EF:
     LDA $8E
     BNE L0D85F4
@@ -1423,10 +1421,8 @@ L0D860A:
     LDA $D0
     CMP #240
     BCC L0D8618
-.db $29
-.db $EF
-.db $85
-.db $D0
+    AND #239
+    STA $D0
 L0D8618:
     CPY #12
     BEQ L0D8627
@@ -1468,10 +1464,8 @@ L0D8638:
     LDA $D0
     CMP #240
     BCC L0D865E
-.db $A9
-.db $00
-.db $85
-.db $D0
+    LDA #0
+    STA $D0
 L0D865E:
     CPY #12
     BEQ L0D866C
@@ -1780,22 +1774,16 @@ L0D888B:
     LDA L0D8B11.w,X
     AND #15
     JSR L0FC34C.w
-.db $34
-.db $89
-.db $47
-.db $89
-.db $9E
-.db $89
-.db $A1
-.db $89
-.db $BB
-.db $8A
-.db $DA
-.db $8A
-.db $CA
-.db $8A
-.db $37
-.db $89
+
+.dw L0D8934
+.dw L0D8947
+.dw L0D899E
+.dw L0D89A1
+.dw L0D8ABB
+.dw L0D8ADA
+.dw L0D8ACA
+.dw L0D8937
+
 L0D88AA:
     STY $78DB
     LDA #1
@@ -1829,18 +1817,11 @@ L0D88CB:
     CMP $7908,Y
     BNE L0D88E8
 L0D88DC:
-.db $A5
-.db $0B
-.db $D9
-.db $00
-.db $79
-.db $F0
-.db $C7
-.db $D9
-.db $10
-.db $79
-.db $F0
-.db $C2
+    LDA $0B
+    CMP $7900,Y
+    BEQ L0D88AA
+    CMP $7910,Y
+    BEQ L0D88AA
 L0D88E8:
     INY
     CPY #8
@@ -1886,7 +1867,7 @@ L0D8924:
     CLC
     BCC L0D8933
 L0D8932:
-.db $38
+    SEC
 L0D8933:
     RTS
 
@@ -1898,14 +1879,11 @@ L0D8937:
     BEQ L0D8947
     JMP L0D88B6.w
 
-.db $AD
-.db $B8
-.db $05
-.db $D0
-.db $03
-.db $4C
-.db $B6
-.db $88
+L0D893F:
+    LDA $05B8
+    BNE L0D8947
+    JMP L0D88B6.w
+
 L0D8947:
     LDY #0
     STY $78D9
@@ -1933,7 +1911,7 @@ L0D896F:
     TAX
     LDA L0D8D2D.w,X
     STA $78D7
-    LDA L0D8D2E.w,X
+    LDA (L0D8D2D.w + 1),X
     STA $78D8
     JSR L0D8CCB.w
     LDA #13
@@ -1962,6 +1940,7 @@ L0D898C:
 .db $15
 .db $0A
 .db $EF
+
 L0D899E:
     JMP L0D88B6.w
 
@@ -1981,7 +1960,7 @@ L0D89A1:
     LDX #0
     LDA L0D8D2D.w,X
     STA $78D7
-    LDA L0D8D2E.w,X
+    LDA (L0D8D2D.w + 1),X
     STA $78D8
     JSR L0D8CCB.w
     LDA $78D1
@@ -2075,28 +2054,16 @@ L0D8A7C:
     BEQ L0D8A97
     BNE L0D8AAD
 L0D8A97:
-.db $AD
-.db $E7
-.db $78
-.db $C9
-.db $01
-.db $F0
-.db $04
-.db $C9
-.db $02
-.db $D0
-.db $0B
-.db $BD
-.db $00
-.db $6E
-.db $09
-.db $06
-.db $9D
-.db $00
-.db $6E
-.db $20
-.db $59
-.db $8C
+    LDA $78E7
+    CMP #1
+    BEQ L0D8AA2
+    CMP #2
+    BNE L0D8AAD
+L0D8AA2:
+    LDA $6E00,X
+    ORA #6
+    STA $6E00,X
+    JSR L0D8C59.w
 L0D8AAD:
     LDA #30
     STA $7DA6
@@ -2173,6 +2140,7 @@ L0D8B11:
 .db $04
 .db $02
 .db $00
+
 L0D8B29:
     LDA $7920
     AND #15
@@ -2255,10 +2223,8 @@ L0D8BB4:
     RTS
 
 L0D8BB5:
-.db $08
-.db $01
-.db $04
-.db $02
+.db $08 $01 $04 $02
+
 L0D8BB9:
     ASL
     TAX
@@ -2280,6 +2246,7 @@ L0D8BC7:
 .db $00
 .db $00
 .db $FF
+
 L0D8BD1:
     LDA $7440
     SEC
@@ -2339,19 +2306,14 @@ L0D8C11:
     LDA $7930,X
     AND #64
     BEQ L0D8C46
-.db $BD
-.db $20
-.db $79
-.db $29
-.db $0F
-.db $D0
-.db $04
-.db $A9
-.db $00
-.db $F0
-.db $02
+    LDA $7920,X
+    AND #15
+    BNE L0D8C46
+    LDA #0
+    BEQ L0D8C48
 L0D8C46:
     LDA #0
+L0D8C48:
     STA $7C34
     JSR L0FCB44.w
 L0D8C4E:
@@ -2388,9 +2350,7 @@ L0D8C86:
     LDA $7434
     CMP #51
     BCC L0D8C90
-.db $4C
-.db $2C
-.db $8D
+    JMP L0D8D2C.w
 L0D8C90:
     TAX
     DEX
@@ -2418,7 +2378,7 @@ L0D8C90:
     TAX
     LDA L0D8D2D.w,X
     STA $78D7
-    LDA L0D8D2E.w,X
+    LDA (L0D8D2D.w + 1),X
     STA $78D8
     LDY #0
     STY $78D9
@@ -2467,52 +2427,58 @@ L0D8D2C:
     RTS
 
 L0D8D2D:
-.db $52
-L0D8D2E:
-.db $8D
-.db $56
-.db $8D
-.db $43
-.db $8D
-.db $5A
-.db $8D
-.db $58
-.db $8D
-.db $46
-.db $8D
-.db $67
-.db $8D
-.db $69
-.db $8D
-.db $49
-.db $8D
-.db $4C
-.db $8D
-.db $4F
-.db $8D
+.dw L0D8D52
+.dw L0D8D56
+.dw L0D8D43
+.dw L0D8D5A
+.dw L0D8D58
+.dw L0D8D46
+.dw L0D8D67
+.dw L0D8D69
+.dw L0D8D49
+.dw L0D8D4C
+.dw L0D8D4F
+
+L0D8D43:
 .db $1C
 .db $1E
 .db $EF
+
+L0D8D46:
 .db $2A
 .db $2C
 .db $EF
+
+L0D8D49:
 .db $38
 .db $38
 .db $EF
+
+L0D8D4C:
 .db $2A
 .db $E8
 .db $EF
+
+L0D8D4F:
 .db $0A
 .db $0C
 .db $EF
+
+L0D8D52:
 .db $EC
 .db $EF
 .db $EB
 .db $EF
+
+L0D8D56:
 .db $E7
 .db $EF
+
+L0D8D58:
 .db $CF
 .db $EF
+
+L0D8D5A:
 .db $B9
 .db $8A
 .db $A6
@@ -2526,8 +2492,12 @@ L0D8D2E:
 .db $A5
 .db $5F
 .db $EF
+
+L0D8D67:
 .db $5F
 .db $EF
+
+L0D8D69:
 .db $BC
 .db $BC
 .db $BC
@@ -2541,6 +2511,7 @@ L0D8D2E:
 .db $09
 .db $09
 .db $EF
+
 L0D8D76:
     LDY #0
     LDA $78F8
@@ -2707,24 +2678,17 @@ L0D8EA5:
     LDA L0D8B11.w,X
     JSR L0FC39A.w
     JSR L0FC34C.w
-.db $3D
-.db $C7
-.db $7F
-.db $8F
-.db $64
-.db $8F
-.db $D4
-.db $8E
-.db $74
-.db $8F
-.db $D4
-.db $8F
-.db $49
-.db $8F
-.db $87
-.db $8F
-.db $5E
-.db $8F
+
+.dw L0FC73D
+.dw L0D8F7F
+.dw L0D8F64
+.dw L0D8ED4
+.dw L0D8F74
+.dw L0D8FD4
+.dw L0D8F49
+.dw L0D8F87
+.dw L0D8F5E
+
 L0D8ED4:
     LDX $7434
     DEX
@@ -2866,57 +2830,47 @@ L0D8FB6:
 L0D8FD1:
     JMP L0D8ED4.w
 
-.db $A9
-.db $F9
-.db $85
-.db $04
-.db $A9
-.db $8F
-.db $85
-.db $05
-.db $A0
-.db $00
-.db $B1
-.db $04
-.db $C9
-.db $EF
-.db $F0
-.db $12
-.db $CD
-.db $34
-.db $74
-.db $F0
-.db $04
-.db $C8
-.db $C8
-.db $D0
-.db $F1
-.db $C8
-.db $B1
-.db $04
-.db $8D
-.db $EB
-.db $78
-.db $4C
-.db $4A
-.db $B2
-.db $4C
-.db $D4
-.db $8E
+L0D8FD4:
+    LDA #249
+    STA $04
+    LDA #143
+    STA $05
+    LDY #0
+L0D8FDE:
+    LDA ($04),Y
+    CMP #239
+    BEQ L0D8FF6
+    CMP $7434
+    BEQ L0D8FED
+    INY
+    INY
+    BNE L0D8FDE
+L0D8FED:
+    INY
+    LDA ($04),Y
+    STA $78EB
+    JMP L0DB24A.w
+
+L0D8FF6:
+    JMP L0D8ED4.w
+
+L0D8FF9:
 .db $06
 .db $09
 .db $09
 .db $0F
 .db $EF
+
 L0D8FFE:
     LDA $8A
     JSR L0FC34C.w
-.db $09
-.db $90
-.db $79
-.db $91
-.db $18
-.db $90
+
+L0D9003:
+.dw L0D9009
+.dw L0D9179
+.dw L0D9018
+
+L0D9009:
     LDA #4
     STA $05B5
     INC $8A
@@ -3087,6 +3041,7 @@ L0D9158:
 .db $2D
 .db $22
 .db $EF
+
 L0D915D:
 .db $19
 .db $1B
@@ -3116,6 +3071,7 @@ L0D915D:
 .db $7E
 .db $7F
 .db $EF
+
 L0D9179:
     LDA $05B5
     BEQ L0D9187
@@ -3326,6 +3282,7 @@ L0D9225:
 .db $36
 .db $0F
 .db $00
+
 L0D928C:
     JSR L0FC288.w
     LDA #3
@@ -3568,23 +3525,14 @@ L0D943B:
     DEC $78E7
     LDA $78A1
     BEQ L0D9470
-.db $BD
-.db $20
-.db $79
-.db $29
-.db $0F
-.db $F0
-.db $0A
-.db $AA
-.db $CA
-.db $BD
-.db $B5
-.db $8B
-.db $85
-.db $8D
-.db $20
-.db $BB
-.db $D0
+    LDA $7920,X
+    AND #15
+    BEQ L0D9470
+    TAX
+    DEX
+    LDA L0D8BB5.w,X
+    STA $8D
+    JSR L0FD0BB.w
 L0D9470:
     JMP L0D94BE.w
 
@@ -3605,38 +3553,24 @@ L0D9473:
     LDA $78D1
     JSR L0FC39A.w
     JSR L0FC34C.w
-.db $BF
-.db $94
-.db $F8
-.db $94
-.db $0A
-.db $95
-.db $50
-.db $95
-.db $F7
-.db $95
-.db $DE
-.db $95
-.db $EE
-.db $97
-.db $09
-.db $98
-.db $43
-.db $99
-.db $79
-.db $98
-.db $E0
-.db $98
-.db $EE
-.db $97
-.db $8B
-.db $98
-.db $16
-.db $95
-.db $EE
-.db $98
-.db $3B
-.db $99
+
+.dw L0D94BF
+.dw L0D94F8
+.dw L0D950A
+.dw L0D9550
+.dw L0D95F7
+.dw L0D95DE
+.dw L0D97EE
+.dw L0D9809
+.dw L0D9943
+.dw L0D9879
+.dw L0D98E0
+.dw L0D97EE
+.dw L0D988B
+.dw L0D9516
+.dw L0D98EE
+.dw L0D993B
+
 L0D94BE:
     RTS
 
@@ -3682,6 +3616,7 @@ L0D950A:
     STA $78E9
     LDA #2
     BNE L0D9520
+L0D9516:
     LDA #15
     STA $78E8
     STA $78E9
@@ -3699,21 +3634,13 @@ L0D9520:
     DEC $78E7
     LDA $78A1
     BEQ L0D954F
-.db $BD
-.db $20
-.db $79
-.db $29
-.db $0F
-.db $AA
-.db $CA
-.db $BD
-.db $B5
-.db $8B
-.db $85
-.db $8D
-.db $20
-.db $BB
-.db $D0
+    LDA $7920,X
+    AND #15
+    TAX
+    DEX
+    LDA L0D8BB5.w,X
+    STA $8D
+    JSR L0FD0BB.w
 L0D954F:
     RTS
 
@@ -3788,43 +3715,32 @@ L0D95DE:
     LDA ($04),Y
     CMP #255
     BNE L0D95ED
-.db $20
-.db $A3
-.db $85
-.db $4C
-.db $F3
-.db $95
+    JSR L0D85A3.w
+    JMP L0D95F3.w
 L0D95ED:
     STA $78A0
     JSR L0D85AC.w
+L0D95F3:
     INC $78E4
     RTS
 
 L0D95F7:
     LDA $78E7
     JSR L0FC34C.w
-.db $EE
-.db $96
-.db $7B
-.db $97
-.db $D8
-.db $97
-.db $13
-.db $96
-.db $38
-.db $97
-.db $33
-.db $96
-.db $51
-.db $97
-.db $CC
-.db $96
-.db $98
-.db $96
-.db $B4
-.db $96
-.db $5D
-.db $96
+
+.dw L0D96EE
+.dw L0D977B
+.dw L0D97D8
+.dw L0D9613
+.dw L0D9738
+.dw L0D9633
+.dw L0D9751
+.dw L0D96CC
+.dw L0D9698
+.dw L0D96B4
+.dw L0D965D
+
+L0D9613:
     LDX #160
     LDA $D1
     STA $78E2
@@ -4001,8 +3917,7 @@ L0D9756:
     LDY #3
     LDA ($04),Y
     BNE L0D9764
-.db $A9
-.db $00
+    LDA #0
 L0D9764:
     LDX $78D5
     STA $73CF,X
@@ -4075,17 +3990,10 @@ L0D97EE:
     STA $78F0,X
     BEQ L0D9808
 L0D97FD:
-.db $AC
-.db $E4
-.db $78
-.db $B1
-.db $04
-.db $9D
-.db $F0
-.db $78
-.db $EE
-.db $E4
-.db $78
+    LDY $78E4
+    LDA ($04),Y
+    STA $78F0,X
+    INC $78E4
 L0D9808:
     RTS
 
@@ -4163,15 +4071,13 @@ L0D989D:
     CMP $69
     BEQ L0D98B6
     BCC L0D98AC
-.db $A9
-.db $04
-.db $85
-.db $8D
-.db $D0
-.db $04
+    LDA #4
+    STA $8D
+    BNE L0D98B0
 L0D98AC:
     LDA #8
     STA $8D
+L0D98B0:
     JSR L0FD0BB.w
     JMP L0D98CC.w
 
@@ -4179,21 +4085,15 @@ L0D98B6:
     LDA $78D3
     CMP $6A
     BEQ L0D98DF
-.db $90
-.db $06
-.db $A9
-.db $01
-.db $85
-.db $8D
-.db $D0
-.db $04
-.db $A9
-.db $02
-.db $85
-.db $8D
-.db $20
-.db $BB
-.db $D0
+    BCC L0D98C5
+    LDA #1
+    STA $8D
+    BNE L0D98C9
+L0D98C5:
+    LDA #2
+    STA $8D
+L0D98C9:
+    JSR L0FD0BB.w
 L0D98CC:
     JSR L0FC288.w
     JSR L0D8C0C.w
@@ -4363,9 +4263,7 @@ L0D9A09:
     ADC $78D7
     STA $78D7
     BCC L0D9A19
-.db $EE
-.db $D8
-.db $78
+    INC $78D8
 L0D9A19:
     RTS
 
@@ -4393,6 +4291,7 @@ L0D9A19:
 .db $00
 .db $00
 .db $FF
+
 L0D9A32:
     JSR L0FC288.w
     LDA $DF
@@ -4405,166 +4304,89 @@ L0D9A32:
 L0D9A43:
     LDA $DF
     BPL L0D9A56
-.db $A9
-.db $01
-.db $20
-.db $BD
-.db $C9
-.db $20
-.db $10
-.db $91
-.db $20
-.db $B0
-.db $AD
-.db $A9
-.db $00
-.db $85
-.db $DF
+    LDA #1
+    JSR L0FC9BD.w
+    JSR L0D9110.w
+    JSR L0DADB0.w
+    LDA #0
+    STA $DF
 L0D9A56:
     LDA #0
     STA $78A2
     LDA $8A
     JSR L0FC34C.w
-.db $3D
-.db $C7
-.db $EC
-.db $9A
-.db $FB
-.db $9A
-.db $0E
-.db $9B
-.db $1D
-.db $9B
-.db $36
-.db $9B
-.db $F1
-.db $AA
-.db $AE
-.db $9B
-.db $F1
-.db $AA
-.db $D2
-.db $9B
-.db $0F
-.db $9C
-.db $57
-.db $9D
-.db $79
-.db $9D
-.db $57
-.db $9D
-.db $A2
-.db $9D
-.db $2C
-.db $A9
-.db $F1
-.db $AA
-.db $20
-.db $A2
-.db $F3
-.db $A1
-.db $F1
-.db $AA
-.db $0E
-.db $A2
-.db $28
-.db $AB
-.db $B4
-.db $AB
-.db $F1
-.db $AA
-.db $FC
-.db $AB
-.db $72
-.db $A5
-.db $27
-.db $AC
-.db $F1
-.db $AA
-.db $95
-.db $AC
-.db $72
-.db $A5
-.db $14
-.db $A5
-.db $72
-.db $A5
-.db $2B
-.db $A2
-.db $F6
-.db $B2
-.db $18
-.db $B3
-.db $F1
-.db $AA
-.db $72
-.db $A5
-.db $37
-.db $B3
-.db $F1
-.db $AA
-.db $8A
-.db $B3
-.db $18
-.db $B3
-.db $AC
-.db $B3
-.db $F1
-.db $AA
-.db $B6
-.db $B3
-.db $F1
-.db $AA
-.db $72
-.db $A5
-.db $AE
-.db $A6
-.db $04
-.db $AB
-.db $9D
-.db $AE
-.db $7D
-.db $AF
-.db $B3
-.db $AF
-.db $F1
-.db $AA
-.db $C0
-.db $AF
-.db $C4
-.db $AF
-.db $F5
-.db $AF
-.db $F1
-.db $AA
-.db $72
-.db $A5
-.db $4B
-.db $B0
-.db $F1
-.db $AA
-.db $84
-.db $B0
-.db $F1
-.db $AA
-.db $72
-.db $A5
-.db $6F
-.db $A7
-.db $33
-.db $B2
-.db $73
-.db $B2
-.db $9B
-.db $B2
-.db $F1
-.db $AA
-.db $C6
-.db $B2
-.db $DE
-.db $B2
-.db $E5
-.db $B3
+
+.dw L0FC73D
+.dw L0D9AEC
+.dw L0D9AFB
+.dw L0D9B0E
+.dw L0D9B1D
+.dw L0D9B36
+.dw L0DAAF1
+.dw L0D9BAE
+.dw L0DAAF1
+.dw L0D9BD2
+.dw L0D9C0F
+.dw L0D9D57
+.dw L0D9D79
+.dw L0D9D57
+.dw L0D9DA2
+.dw L0DA92C
+.dw L0DAAF1
+.dw L0DA220
+.dw L0DA1F3
+.dw L0DAAF1
+.dw L0DA20E
+.dw L0DAB28
+.dw L0DABB4
+.dw L0DAAF1
+.dw L0DABFC
+.dw L0DA572
+.dw L0DAC27
+.dw L0DAAF1
+.dw L0DAC95
+.dw L0DA572
+.dw L0DA514
+.dw L0DA572
+.dw L0DA22B
+.dw L0DB2F6
+.dw L0DB318
+.dw L0DAAF1
+.dw L0DA572
+.dw L0DB337
+.dw L0DAAF1
+.dw L0DB38A
+.dw L0DB318
+.dw L0DB3AC
+.dw L0DAAF1
+.dw L0DB3B6
+.dw L0DAAF1
+.dw L0DA572
+.dw L0DA6AE
+.dw L0DAB04
+.dw L0DAE9D
+.dw L0DAF7D
+.dw L0DAFB3
+.dw L0DAAF1
+.dw L0DAFC0
+.dw L0DAFC4
+.dw L0DAFF5
+.dw L0DAAF1
+.dw L0DA572
+.dw L0DB04B
+.dw L0DAAF1
+.dw L0DB084
+.dw L0DAAF1
+.dw L0DA572
+.dw L0DA76F
+.dw L0DB233
+.dw L0DB273
+.dw L0DB29B
+.dw L0DAAF1
+.dw L0DB2C6
+.dw L0DB2DE
+.dw L0DB3E5
+
 L0D9AEC:
     LDA #1
     STA $78A2
@@ -4585,21 +4407,15 @@ L0D9AFB:
     INC $8A
     RTS
 
-.db $A9
-.db $01
-.db $8D
-.db $A2
-.db $78
-.db $A9
-.db $00
-.db $8D
-.db $CC
-.db $78
-.db $A9
-.db $08
-.db $85
-.db $8A
-.db $60
+L0D9B0E:
+    LDA #1
+    STA $78A2
+    LDA #0
+    STA $78CC
+    LDA #8
+    STA $8A
+    RTS
+
 L0D9B1D:
     LDA #0
     JSR L0DAE26.w
@@ -4645,63 +4461,30 @@ L0D9B66:
     JMP L0D9BA6.w
 
 L0D9B6D:
-.db $AD
-.db $A4
-.db $7D
-.db $F0
-.db $0B
-.db $A9
-.db $03
-.db $8D
-.db $CC
-.db $78
-.db $A9
-.db $3C
-.db $85
-.db $8A
-.db $D0
-.db $29
-.db $A9
-.db $06
-.db $85
-.db $8A
-.db $A9
-.db $01
-.db $8D
-.db $9C
-.db $05
-.db $AD
-.db $F8
-.db $78
-.db $8D
-.db $E0
-.db $78
-.db $AD
-.db $00
-.db $79
-.db $8D
-.db $E1
-.db $78
-.db $A9
-.db $01
-.db $20
-.db $BD
-.db $C9
-.db $20
-.db $10
-.db $91
-.db $A9
-.db $00
-.db $8D
-.db $D8
-.db $05
-.db $4C
-.db $A6
-.db $9B
-.db $A9
-.db $3C
-.db $85
-.db $8A
+    LDA $7DA4
+    BEQ L0D9B7D
+    LDA #3
+    STA $78CC
+    LDA #60
+    STA $8A
+    BNE L0D9BA6
+L0D9B7D:
+    LDA #6
+    STA $8A
+    LDA #1
+    STA $059C
+    LDA $78F8
+    STA $78E0
+    LDA $7900
+    STA $78E1
+    LDA #1
+    JSR L0FC9BD.w
+    JSR L0D9110.w
+    LDA #0
+    STA $05D8
+    JMP L0D9BA6.w
+    LDA #60
+    STA $8A
 L0D9BA6:
     LDX #0
     LDA #0
@@ -4709,42 +4492,25 @@ L0D9BA6:
 L0D9BAD:
     RTS
 
-.db $20
-.db $92
-.db $91
-.db $A9
-.db $00
-.db $85
-.db $3D
-.db $A5
-.db $8A
-.db $8D
-.db $CB
-.db $78
-.db $A9
-.db $07
-.db $85
-.db $4A
-.db $A9
-.db $07
-.db $20
-.db $94
-.db $CA
-.db $AD
-.db $CB
-.db $78
-.db $85
-.db $8A
-.db $AD
-.db $9C
-.db $05
-.db $D0
-.db $04
-.db $A9
-.db $0F
-.db $85
-.db $8A
-.db $60
+L0D9BAE:
+    JSR L0D9192.w
+    LDA #0
+    STA $3D
+    LDA $8A
+    STA $78CB
+    LDA #7
+    STA $4A
+    LDA #7
+    JSR L0FCA94.w
+    LDA $78CB
+    STA $8A
+    LDA $059C
+    BNE L0D9BD1
+    LDA #15
+    STA $8A
+L0D9BD1:
+    RTS
+
 L0D9BD2:
     JSR L0FC288.w
     JSR L0FE684.w
@@ -4801,22 +4567,19 @@ L0D9C37:
     LDA $058F
     CMP #2
     BEQ L0D9C41
-.db $4C
-.db $D6
-.db $9C
+    JMP L0D9CD6.w
 L0D9C41:
     JSR L0FC288.w
     LDA $78A2
     BEQ L0D9C4D
-.db $A9
-.db $03
-.db $D0
-.db $0A
+    LDA #3
+    BNE L0D9C57
 L0D9C4D:
     LDA #1
     JSR L0FC9BD.w
     JSR L0D9110.w
     LDA #128
+L0D9C57:
     STA $28
     JSR L0FC70D.w
     LDA #30
@@ -4830,102 +4593,60 @@ L0D9C6B:
     LDX $78DD
     CPX #1
     BEQ L0D9C7C
-.db $20
-.db $6C
-.db $F5
-.db $CA
-.db $8E
-.db $DD
-.db $78
+    JSR L0FF56C.w
+    DEX
+    STX $78DD
 L0D9C79:
     JMP L0D9CD6.w
 
 L0D9C7C:
     LDA $78E2
     BEQ L0D9C79
-.db $CE
-.db $E2
-.db $78
-.db $20
-.db $64
-.db $A9
-.db $4C
-.db $D6
-.db $9C
+    DEC $78E2
+    JSR L0DA964.w
+    JMP L0D9CD6.w
 L0D9C8A:
     LDA $78DD
     CLC
     ADC $78E2
     CMP $78DC
     BEQ L0D9C79
-.db $AE
-.db $DD
-.db $78
-.db $E0
-.db $0A
-.db $F0
-.db $27
-.db $20
-.db $6C
-.db $F5
-.db $E8
-.db $8E
-.db $DD
-.db $78
-.db $4C
-.db $D6
-.db $9C
+    LDX $78DD
+    CPX #10
+    BEQ L0D9CC4
+    JSR L0FF56C.w
+    INX
+    STX $78DD
+    JMP L0D9CD6.w
 L0D9CA7:
     LDA $058F
     CMP #2
     BNE L0D9D0D
     LDA $748F
     BEQ L0D9D0D
-.db $AD
-.db $CD
-.db $78
-.db $F0
-.db $06
-.db $CE
-.db $CD
-.db $78
-.db $4C
-.db $E6
-.db $9C
-.db $EE
-.db $CD
-.db $78
-.db $4C
-.db $E6
-.db $9C
-.db $AD
-.db $DD
-.db $78
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $CD
-.db $DC
-.db $78
-.db $F0
-.db $06
-.db $EE
-.db $E2
-.db $78
-.db $20
-.db $64
-.db $A9
+    LDA $78CD
+    BEQ L0D9CBE
+    DEC $78CD
+    JMP L0D9CE6.w
+L0D9CBE:
+    INC $78CD
+    JMP L0D9CE6.w
+L0D9CC4:
+    LDA $78DD
+    CLC
+    ADC $78E2
+    CMP $78DC
+    BEQ L0D9CD6
+    INC $78E2
+    JSR L0DA964.w
 L0D9CD6:
     LDA #0
     STA $78CD
     LDA $058F
     CMP #2
     BEQ L0D9CE6
-.db $E6
-.db $8A
-.db $D0
-.db $2D
+    INC $8A
+    BNE L0D9D13
 L0D9CE6:
     LDA $78DD
     CLC
@@ -4935,29 +4656,18 @@ L0D9CE6:
     JMP L0D9D13.w
 
 L0D9CF6:
-.db $20
-.db $72
-.db $F5
-.db $AD
-.db $8F
-.db $05
-.db $C9
-.db $02
-.db $F0
-.db $04
-.db $E6
-.db $8A
-.db $D0
-.db $28
-.db $A9
-.db $03
-.db $18
-.db $65
-.db $8A
-.db $85
-.db $8A
-.db $D0
-.db $1F
+    JSR L0FF572.w
+    LDA $058F
+    CMP #2
+    BEQ L0D9D04
+    INC $8A
+    BNE L0D9D2C
+L0D9D04:
+    LDA #3
+    CLC
+    ADC $8A
+    STA $8A
+    BNE L0D9D2C
 L0D9D0D:
     LDA $1A
     AND #128
@@ -4971,15 +4681,10 @@ L0D9D13:
     JMP L0D9D2C.w
 
 L0D9D23:
-.db $A9
-.db $02
-.db $85
-.db $4A
-.db $A9
-.db $09
-.db $20
-.db $94
-.db $CA
+    LDA #2
+    STA $4A
+    LDA #9
+    JSR L0FCA94.w
 L0D9D2C:
     RTS
 
@@ -5006,187 +4711,94 @@ L0D9D2D:
     LDA #197
     JMP L0FE80F.w
 
-.db $20
-.db $88
-.db $C2
-.db $20
-.db $84
-.db $E6
-.db $AD
-.db $8F
-.db $05
-.db $C9
-.db $01
-.db $F0
-.db $03
-.db $4C
-.db $96
-.db $E6
-.db $A9
-.db $16
-.db $20
-.db $48
-.db $CA
-.db $20
-.db $50
-.db $CA
-.db $A9
-.db $02
-.db $85
-.db $28
-.db $20
-.db $0D
-.db $C7
-.db $E6
-.db $8A
-.db $60
-.db $20
-.db $88
-.db $C2
-.db $20
-.db $84
-.db $E6
-.db $AD
-.db $8F
-.db $05
-.db $C9
-.db $02
-.db $F0
-.db $05
-.db $A9
-.db $0A
-.db $4C
-.db $26
-.db $AE
-.db $A9
-.db $00
-.db $8D
-.db $CD
-.db $78
-.db $AD
-.db $DD
-.db $78
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $8D
-.db $DE
-.db $78
-.db $20
-.db $9C
-.db $9E
-.db $C6
-.db $8A
-.db $C6
-.db $8A
-.db $60
-.db $20
-.db $88
-.db $C2
-.db $20
-.db $84
-.db $E6
-.db $AD
-.db $8F
-.db $05
-.db $C9
-.db $02
-.db $F0
-.db $3A
-.db $C9
-.db $03
-.db $F0
-.db $4C
-.db $AD
-.db $DD
-.db $78
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $AA
-.db $CA
-.db $BD
-.db $77
-.db $78
-.db $8D
-.db $DD
-.db $7D
-.db $8D
-.db $84
-.db $74
-.db $20
-.db $AB
-.db $F8
-.db $A9
-.db $70
-.db $8D
-.db $D5
-.db $7D
-.db $A9
-.db $30
-.db $8D
-.db $D7
-.db $7D
-.db $A9
-.db $00
-.db $8D
-.db $A5
-.db $7D
-.db $A9
-.db $05
-.db $85
-.db $4A
-.db $A9
-.db $09
-.db $20
-.db $94
-.db $CA
-.db $A9
-.db $03
-.db $85
-.db $4A
-.db $A9
-.db $09
-.db $4C
-.db $94
-.db $CA
-.db $A5
-.db $95
-.db $8D
-.db $DF
-.db $78
-.db $A5
-.db $6A
-.db $85
-.db $95
-.db $A9
-.db $84
-.db $85
-.db $7A
-.db $A9
-.db $74
-.db $85
-.db $7B
-.db $A9
-.db $2F
-.db $4C
-.db $B8
-.db $E6
-.db $AD
-.db $DF
-.db $78
-.db $85
-.db $95
-.db $A5
-.db $8A
-.db $38
-.db $E9
-.db $04
-.db $85
-.db $8A
-.db $60
+L0D9D57:
+    JSR L0FC288.w
+    JSR L0FE684.w
+    LDA $058F
+    CMP #1
+    BEQ L0D9D67
+    JMP L0FE696.w
+L0D9D67:
+    LDA #22
+    JSR L0FCA48.w
+    JSR L0FCA50.w
+    LDA #2
+    STA $28
+    JSR L0FC70D.w
+    INC $8A
+    RTS
+
+L0D9D79:
+    JSR L0FC288.w
+    JSR L0FE684.w
+    LDA $058F
+    CMP #2
+    BEQ L0D9D8B
+    LDA #10
+    JMP L0DAE26.w
+L0D9D8B:
+    LDA #0
+    STA $78CD
+    LDA $78DD
+    CLC
+    ADC $78E2
+    STA $78DE
+    JSR L0D9E9C.w
+    DEC $8A
+    DEC $8A
+    RTS
+
+L0D9DA2:
+    JSR L0FC288.w
+    JSR L0FE684.w
+    LDA $058F
+    CMP #2
+    BEQ L0D9DE9
+    CMP #3
+    BEQ L0D9DFF
+    LDA $78DD
+    CLC
+    ADC $78E2
+    TAX
+    DEX
+    LDA $7877,X
+    STA $7DDD
+    STA $7484
+    JSR L0FF8AB.w
+    LDA #112
+    STA $7DD5
+    LDA #48
+    STA $7DD7
+    LDA #0
+    STA $7DA5
+    LDA #5
+    STA $4A
+    LDA #9
+    JSR L0FCA94.w
+    LDA #3
+    STA $4A
+    LDA #9
+    JMP L0FCA94.w
+L0D9DE9:
+    LDA $95
+    STA $78DF
+    LDA $6A
+    STA $95
+    LDA #132
+    STA $7A
+    LDA #116
+    STA $7B
+    LDA #47
+    JMP L0FE6B8.w
+L0D9DFF:
+    LDA $78DF
+    STA $95
+    LDA $8A
+    SEC
+    SBC #4
+    STA $8A
+    RTS
+
 L0D9E0C:
     LDA $78CD
     BNE L0D9E44
@@ -5199,41 +4811,25 @@ L0D9E0C:
     ADC $78E2
     JMP L0D9E72.w
 
-.db $A9
-.db $01
-.db $8D
-.db $D5
-.db $78
-.db $20
-.db $A0
-.db $C3
-.db $18
-.db $69
-.db $34
-.db $85
-.db $08
-.db $A9
-.db $74
-.db $85
-.db $09
-.db $AD
-.db $D5
-.db $78
-.db $20
-.db $72
-.db $9E
-.db $EE
-.db $D5
-.db $78
-.db $AD
-.db $D5
-.db $78
-.db $C9
-.db $0B
-.db $D0
-.db $E4
+L0D9E23:
+    LDA #1
+    STA $78D5
+L0D9E28:
+    JSR L0FC3A0.w
+    CLC
+    ADC #52
+    STA $08
+    LDA #116
+    STA $09
+    LDA $78D5
+    JSR L0D9E72.w
+    INC $78D5
+    LDA $78D5
+    CMP #11
+    BNE L0D9E28
 L0D9E44:
-.db $60
+    RTS
+
 L0D9E45:
     LDA $74B4
     CMP #3
@@ -6729,12 +6325,8 @@ L0DA6D9:
     JSR L0FF572.w
     LDA $78DE
     BEQ L0DA6EE
-.db $20
-.db $ED
-.db $A7
-.db $4C
-.db $F4
-.db $A6
+    JSR L0DA7ED.w
+    JMP L0DA6F4.w
 L0DA6EE:
     LDA $78DD
     STA $78DE
@@ -6759,268 +6351,131 @@ L0DA705:
 L0DA719:
     RTS
 
-.db $20
-.db $F4
-.db $A5
-.db $A5
-.db $1A
-.db $29
-.db $80
-.db $D0
-.db $0F
-.db $A5
-.db $1A
-.db $29
-.db $40
-.db $F0
-.db $38
-.db $20
-.db $B0
-.db $AD
-.db $A9
-.db $0F
-.db $85
-.db $8A
-.db $D0
-.db $3C
-.db $AD
-.db $DD
-.db $78
-.db $C9
-.db $01
-.db $F0
-.db $28
-.db $20
-.db $72
-.db $F5
-.db $AE
-.db $DD
-.db $78
-.db $CA
-.db $BD
-.db $77
-.db $78
-.db $F0
-.db $1C
-.db $8D
-.db $84
-.db $74
-.db $A9
-.db $00
-.db $9D
-.db $77
-.db $78
-.db $20
-.db $FF
-.db $F8
-.db $AD
-.db $B8
-.db $05
-.db $49
-.db $01
-.db $8D
-.db $DD
-.db $74
-.db $20
-.db $6E
-.db $F9
-.db $20
-.db $F1
-.db $A3
-.db $20
-.db $5D
-.db $A4
-.db $20
-.db $45
-.db $9E
-.db $A9
-.db $03
-.db $85
-.db $3F
-.db $AD
-.db $DD
-.db $78
-.db $20
-.db $3E
-.db $A3
-.db $60
-.db $20
-.db $88
-.db $C2
-.db $A9
-.db $00
-.db $85
-.db $3D
-.db $A5
-.db $1A
-.db $29
-.db $08
-.db $D0
-.db $21
-.db $A5
-.db $1A
-.db $29
-.db $04
-.db $D0
-.db $2F
-.db $A5
-.db $1A
-.db $29
-.db $02
-.db $D0
-.db $40
-.db $A5
-.db $1A
-.db $29
-.db $01
-.db $D0
-.db $49
-.db $A5
-.db $1A
-.db $29
-.db $40
-.db $F0
-.db $55
-.db $20
-.db $B0
-.db $AD
-.db $A9
-.db $0F
-.db $85
-.db $8A
-.db $D0
-.db $4F
-.db $AD
-.db $E2
-.db $78
-.db $38
-.db $E9
-.db $0A
-.db $90
-.db $44
-.db $8D
-.db $E2
-.db $78
-.db $CE
-.db $F0
-.db $05
-.db $20
-.db $5D
-.db $A4
-.db $4C
-.db $E6
-.db $A7
-.db $AD
-.db $E2
-.db $78
-.db $18
-.db $69
-.db $0A
-.db $CD
-.db $DC
-.db $78
-.db $B0
-.db $2D
-.db $8D
-.db $E2
-.db $78
-.db $EE
-.db $F0
-.db $05
-.db $20
-.db $5D
-.db $A4
-.db $4C
-.db $E6
-.db $A7
-.db $CE
-.db $B4
-.db $74
-.db $AD
-.db $B4
-.db $74
-.db $10
-.db $16
-.db $A9
-.db $03
-.db $8D
-.db $B4
-.db $74
-.db $D0
-.db $0F
-.db $EE
-.db $B4
-.db $74
-.db $AD
-.db $B4
-.db $74
-.db $C9
-.db $04
-.db $D0
-.db $05
-.db $A9
-.db $00
-.db $8D
-.db $B4
-.db $74
-.db $20
-.db $F1
-.db $A3
-.db $20
-.db $45
-.db $9E
-.db $60
-.db $AE
-.db $DD
-.db $78
-.db $CA
-.db $BD
-.db $77
-.db $78
-.db $8D
-.db $84
-.db $74
-.db $AC
-.db $DE
-.db $78
-.db $88
-.db $B9
-.db $77
-.db $78
-.db $8D
-.db $9F
-.db $74
-.db $9D
-.db $77
-.db $78
-.db $AD
-.db $84
-.db $74
-.db $99
-.db $77
-.db $78
-.db $20
-.db $C2
-.db $F8
-.db $20
-.db $5D
-.db $A4
-.db $20
-.db $F1
-.db $A3
-.db $A9
-.db $00
-.db $8D
-.db $DE
-.db $78
-.db $20
-.db $88
-.db $C2
-.db $A9
-.db $00
-.db $85
-.db $3D
-.db $60
+L0DA71A:
+    JSR L0DA5F4.w
+    LDA $1A
+    AND #128
+    BNE L0DA732
+    LDA $1A
+    AND #64
+    BEQ L0DA761
+    JSR L0DADB0.w
+    LDA #15
+    STA $8A
+    BNE L0DA76E
+L0DA732:
+    LDA $78DD
+    CMP #1
+    BEQ L0DA761
+    JSR L0FF572.w
+    LDX $78DD
+    DEX
+    LDA $7877,X
+    BEQ L0DA761
+    STA $7484
+    LDA #0
+    STA $7877,X
+    JSR L0FF8FF.w
+    LDA $05B8
+    EOR #1
+    STA $74DD
+    JSR L0FF96E.w
+    JSR L0DA3F1.w
+    JSR L0DA45D.w
+L0DA761:
+    JSR L0D9E45.w
+    LDA #3
+    STA $3F
+    LDA $78DD
+    JSR L0DA33E.w
+L0DA76E:
+    RTS
+
+L0DA76F:
+    JSR L0FC288.w
+    LDA #0
+    STA $3D
+    LDA $1A
+    AND #8
+    BNE L0DA79D
+    LDA $1A
+    AND #4
+    BNE L0DA7B1
+    LDA $1A
+    AND #2
+    BNE L0DA7C8
+    LDA $1A
+    AND #1
+    BNE L0DA7D7
+    LDA $1A
+    AND #64
+    BEQ L0DA7E9
+    JSR L0DADB0.w
+    LDA #15
+    STA $8A
+    BNE L0DA7EC
+L0DA79D:
+    LDA $78E2
+    SEC
+    SBC #10
+    BCC L0DA7E9
+    STA $78E2
+    DEC $05F0
+    JSR L0DA45D.w
+    JMP L0DA7E6.w
+L0DA7B1:
+    LDA $78E2
+    CLC
+    ADC #10
+    CMP $78DC
+    BCS L0DA7E9
+    STA $78E2
+    INC $05F0
+    JSR L0DA45D.w
+    JMP L0DA7E6.w
+L0DA7C8:
+    DEC $74B4
+    LDA $74B4
+    BPL L0DA7E6
+    LDA #3
+    STA $74B4
+    BNE L0DA7E6
+L0DA7D7:
+    INC $74B4
+    LDA $74B4
+    CMP #4
+    BNE L0DA7E6
+    LDA #0
+    STA $74B4
+L0DA7E6:
+    JSR L0DA3F1.w
+L0DA7E9:
+    JSR L0D9E45.w
+L0DA7EC:
+    RTS
+
+L0DA7ED:
+    LDX $78DD
+    DEX
+    LDA $7877,X
+    STA $7484
+    LDY $78DE
+    DEY
+    LDA $7877,Y
+    STA $749F
+    STA $7877,X
+    LDA $7484
+    STA $7877,Y
+    JSR L0FF8C2.w
+    JSR L0DA45D.w
+    JSR L0DA3F1.w
+    LDA #0
+    STA $78DE
+    JSR L0FC288.w
+    LDA #0
+    STA $3D
+    RTS
+
 L0DA820:
     PHA
     STA $78D9
@@ -7030,6 +6485,7 @@ L0DA820:
     STA $0450
     PLA
     JSR L0DA0E6.w
+L0DA833:
     LDX $0450
     LDA #237
     STA $0451,X
@@ -7052,30 +6508,21 @@ L0DA845:
     JSR L0FC70D.w
     RTS
 
-.db $20
-.db $8A
-.db $AD
-.db $A2
-.db $00
-.db $BD
-.db $79
-.db $A8
-.db $C9
-.db $EF
-.db $F0
-.db $06
-.db $9D
-.db $51
-.db $04
-.db $E8
-.db $D0
-.db $F3
-.db $8E
-.db $50
-.db $04
-.db $4C
-.db $33
-.db $A8
+L0DA861:
+    JSR L0DAD8A.w
+    LDX #0
+L0DA866:
+    LDA L0DA879.w,X
+    CMP #239
+    BEQ L0DA873
+    STA $0451,X
+    INX
+    BNE L0DA866
+L0DA873:
+    STX $0450
+    JMP L0DA833.w
+
+L0DA879:
 .db $77
 .db $78
 .db $7B
@@ -7085,6 +6532,7 @@ L0DA845:
 .db $FF
 .db $FF
 .db $EF
+
 L0DA882:
     PHA
     JSR L0DAD8A.w
@@ -7222,403 +6670,204 @@ L0DA958:
 .db $A0
 .db $B0
 .db $C0
-.db $A0
-.db $01
-.db $20
-.db $C2
-.db $AD
-.db $A0
-.db $04
-.db $B1
-.db $74
-.db $18
-.db $69
-.db $08
-.db $85
-.db $00
-.db $C8
-.db $B1
-.db $74
-.db $18
-.db $69
-.db $10
-.db $85
-.db $01
-.db $20
-.db $17
-.db $C5
-.db $A5
-.db $04
-.db $85
-.db $7E
-.db $A5
-.db $05
-.db $85
-.db $7F
-.db $A9
-.db $00
-.db $8D
-.db $50
-.db $04
-.db $A9
-.db $00
-.db $8D
-.db $95
-.db $05
-.db $C9
-.db $0A
-.db $D0
-.db $25
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $CD
-.db $DC
-.db $78
-.db $F0
-.db $0E
-.db $A2
-.db $02
-.db $A9
-.db $FF
-.db $8D
-.db $51
-.db $04
-.db $A9
-.db $F3
-.db $8D
-.db $52
-.db $04
-.db $D0
-.db $1B
-.db $A2
-.db $02
-.db $A9
-.db $FF
-.db $8D
-.db $51
-.db $04
-.db $A9
-.db $9F
-.db $8D
-.db $52
-.db $04
-.db $D0
-.db $0D
-.db $AD
-.db $95
-.db $05
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $18
-.db $69
-.db $01
-.db $20
-.db $BA
-.db $A0
-.db $8E
-.db $50
-.db $04
-.db $A2
-.db $00
-.db $86
-.db $16
-.db $A9
-.db $05
-.db $20
-.db $DC
-.db $AD
-.db $A6
-.db $16
-.db $A9
-.db $ED
-.db $9D
-.db $51
-.db $04
-.db $E8
-.db $A9
-.db $EF
-.db $9D
-.db $51
-.db $04
-.db $A0
-.db $0C
-.db $A9
-.db $FF
-.db $99
-.db $11
-.db $03
-.db $88
-.db $10
-.db $FA
-.db $20
-.db $6C
-.db $AE
-.db $20
-.db $02
-.db $AE
-.db $A6
-.db $7E
-.db $A4
-.db $7F
-.db $A9
-.db $46
-.db $8D
-.db $10
-.db $03
-.db $20
-.db $42
-.db $C8
-.db $20
-.db $0D
-.db $C7
-.db $A5
-.db $7E
-.db $85
-.db $00
-.db $A5
-.db $7F
-.db $85
-.db $01
-.db $20
-.db $1C
-.db $C8
-.db $20
-.db $1C
-.db $C8
-.db $A5
-.db $00
-.db $85
-.db $7E
-.db $A5
-.db $01
-.db $85
-.db $7F
-.db $A9
-.db $00
-.db $8D
-.db $50
-.db $04
-.db $EE
-.db $95
-.db $05
-.db $AD
-.db $95
-.db $05
-.db $C9
-.db $0B
-.db $F0
-.db $03
-.db $4C
-.db $8F
-.db $A9
-.db $60
-.db $A2
-.db $0A
-.db $A9
-.db $00
-.db $9D
-.db $A3
-.db $78
-.db $CA
-.db $10
-.db $FA
-.db $A0
-.db $02
-.db $20
-.db $C2
-.db $AD
-.db $A0
-.db $04
-.db $B1
-.db $74
-.db $18
-.db $69
-.db $08
-.db $85
-.db $00
-.db $C8
-.db $B1
-.db $74
-.db $18
-.db $69
-.db $20
-.db $85
-.db $01
-.db $20
-.db $17
-.db $C5
-.db $A5
-.db $04
-.db $85
-.db $7E
-.db $A5
-.db $05
-.db $85
-.db $7F
-.db $A9
-.db $00
-.db $8D
-.db $50
-.db $04
-.db $A9
-.db $00
-.db $8D
-.db $95
-.db $05
-.db $C9
-.db $09
-.db $D0
-.db $28
-.db $48
-.db $A0
-.db $16
-.db $A9
-.db $FF
-.db $99
-.db $11
-.db $03
-.db $88
-.db $10
-.db $FA
-.db $68
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $CD
-.db $DC
-.db $78
-.db $F0
-.db $0A
-.db $A0
-.db $0E
-.db $A9
-.db $F3
-.db $99
-.db $11
-.db $03
-.db $4C
-.db $B4
-.db $AA
-.db $A0
-.db $0E
-.db $A9
-.db $9F
-.db $99
-.db $11
-.db $03
-.db $D0
-.db $2D
-.db $AD
-.db $95
-.db $05
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $18
-.db $6D
-.db $EE
-.db $78
-.db $8D
-.db $F1
-.db $74
-.db $AA
-.db $BD
-.db $4F
-.db $74
-.db $8D
-.db $8F
-.db $74
-.db $20
-.db $61
-.db $A1
-.db $AE
-.db $95
-.db $05
-.db $AD
-.db $EC
-.db $05
-.db $C9
-.db $06
-.db $90
-.db $03
-.db $38
-.db $E9
-.db $02
-.db $9D
-.db $A3
-.db $78
-.db $A9
-.db $1E
-.db $20
-.db $B8
-.db $E6
-.db $A6
-.db $7E
-.db $A4
-.db $7F
-.db $A9
-.db $4B
-.db $8D
-.db $10
-.db $03
-.db $20
-.db $42
-.db $C8
-.db $20
-.db $0D
-.db $C7
-.db $A5
-.db $7E
-.db $85
-.db $00
-.db $A5
-.db $7F
-.db $85
-.db $01
-.db $20
-.db $1C
-.db $C8
-.db $20
-.db $1C
-.db $C8
-.db $A5
-.db $00
-.db $85
-.db $7E
-.db $A5
-.db $01
-.db $85
-.db $7F
-.db $A9
-.db $00
-.db $8D
-.db $50
-.db $04
-.db $EE
-.db $95
-.db $05
-.db $AD
-.db $95
-.db $05
-.db $CD
-.db $DC
-.db $78
-.db $F0
-.db $07
-.db $C9
-.db $0A
-.db $F0
-.db $03
-.db $4C
-.db $5B
-.db $AA
-.db $60
+
+L0DA964:
+    LDY #1
+    JSR L0DADC2.w
+    LDY #4
+    LDA ($74),Y
+    CLC
+    ADC #8
+    STA $00
+    INY
+    LDA ($74),Y
+    CLC
+    ADC #16
+    STA $01
+    JSR L0FC517.w
+    LDA $04
+    STA $7E
+    LDA $05
+    STA $7F
+    LDA #0
+    STA $0450
+    LDA #0
+    STA $0595
+L0DA98F:
+    CMP #10
+    BNE L0DA9B8
+    CLC
+    ADC $78E2
+    CMP $78DC
+    BEQ L0DA9AA
+    LDX #2
+    LDA #255
+    STA $0451
+    LDA #243
+    STA $0452
+    BNE L0DA9C5
+L0DA9AA:
+    LDX #2
+    LDA #255
+    STA $0451
+    LDA #159
+    STA $0452
+    BNE L0DA9C5
+L0DA9B8:
+    LDA $0595
+    CLC
+    ADC $78E2
+    CLC
+    ADC #1
+    JSR L0DA0BA.w
+L0DA9C5:
+    STX $0450
+    LDX #0
+    STX $16
+    LDA #5
+    JSR L0DADDC.w
+    LDX $16
+    LDA #237
+    STA $0451,X
+    INX
+    LDA #239
+    STA $0451,X
+    LDY #12
+    LDA #255
+L0DA9E2:
+    STA $0311,Y
+    DEY
+    BPL L0DA9E2
+    JSR L0DAE6C.w
+    JSR L0DAE02.w
+    LDX $7E
+    LDY $7F
+    LDA #70
+    STA $0310
+    JSR L0FC842.w
+    JSR L0FC70D.w
+    LDA $7E
+    STA $00
+    LDA $7F
+    STA $01
+    JSR L0FC81C.w
+    JSR L0FC81C.w
+    LDA $00
+    STA $7E
+    LDA $01
+    STA $7F
+    LDA #0
+    STA $0450
+    INC $0595
+    LDA $0595
+    CMP #11
+    BEQ L0DAA25
+    JMP L0DA98F.w
+L0DAA25:
+    RTS
+
+L0DAA26:
+    LDX #10
+    LDA #0
+L0DAA2A:
+    STA $78A3,X
+    DEX
+    BPL L0DAA2A
+    LDY #2
+    JSR L0DADC2.w
+    LDY #4
+    LDA ($74),Y
+    CLC
+    ADC #8
+    STA $00
+    INY
+    LDA ($74),Y
+    CLC
+    ADC #32
+    STA $01
+    JSR L0FC517.w
+    LDA $04
+    STA $7E
+    LDA $05
+    STA $7F
+    LDA #0
+    STA $0450
+    LDA #0
+    STA $0595
+L0DAA5B:
+    CMP #9
+    BNE L0DAA87
+    PHA
+    LDY #22
+    LDA #255
+L0DAA64:
+    STA $0311,Y
+    DEY
+    BPL L0DAA64
+    PLA
+    CLC
+    ADC $78E2
+    CMP $78DC
+    BEQ L0DAA7E
+    LDY #14
+    LDA #243
+    STA $0311,Y
+    JMP L0DAAB4.w
+L0DAA7E:
+    LDY #14
+    LDA #159
+    STA $0311,Y
+    BNE L0DAAB4
+L0DAA87:
+    LDA $0595
+    CLC
+    ADC $78E2
+    CLC
+    ADC $78EE
+    STA $74F1
+    TAX
+    LDA $744F,X
+    STA $748F
+    JSR L0DA161.w
+    LDX $0595
+    LDA $05EC
+    CMP #6
+    BCC L0DAAAC
+    SEC
+    SBC #2
+L0DAAAC:
+    STA $78A3,X
+    LDA #30
+    JSR L0FE6B8.w
+L0DAAB4:
+    LDX $7E
+    LDY $7F
+    LDA #75
+    STA $0310
+    JSR L0FC842.w
+    JSR L0FC70D.w
+    LDA $7E
+    STA $00
+    LDA $7F
+    STA $01
+    JSR L0FC81C.w
+    JSR L0FC81C.w
+    LDA $00
+    STA $7E
+    LDA $01
+    STA $7F
+    LDA #0
+    STA $0450
+    INC $0595
+    LDA $0595
+    CMP $78DC
+    BEQ L0DAAF0
+    CMP #10
+    BEQ L0DAAF0
+    JMP L0DAA5B.w
+L0DAAF0:
+    RTS
+
 L0DAAF1:
     JSR L0D9192.w
     JSR L0FE684.w
@@ -7657,36 +6906,19 @@ L0DAB28:
     BNE L0DAB95
     LDA $6CF7
     BEQ L0DAB61
-.db $AD
-.db $4C
-.db $74
-.db $C9
-.db $03
-.db $90
-.db $1E
-.db $AD
-.db $8C
-.db $6E
-.db $D0
-.db $08
-.db $AD
-.db $C0
-.db $6C
-.db $CD
-.db $C1
-.db $6C
-.db $D0
-.db $11
-.db $AD
-.db $4D
-.db $74
-.db $18
-.db $6D
-.db $4E
-.db $74
-.db $8D
-.db $ED
-.db $78
+    LDA $744C
+    CMP #3
+    BCC L0DAB61
+    LDA $6E8C
+    BNE L0DAB50
+    LDA $6CC0
+    CMP $6CC1
+    BNE L0DAB61
+L0DAB50:
+    LDA $744D
+    CLC
+    ADC $744E
+    STA $78ED
 L0DAB5A:
     LDA #0
     STA $78EE
@@ -7697,12 +6929,8 @@ L0DAB61:
     STA $78ED
     LDA $05B8
     BEQ L0DAB5A
-.db $AD
-.db $4D
-.db $74
-.db $8D
-.db $EE
-.db $78
+    LDA $744D
+    STA $78EE
 L0DAB75:
     LDA $78ED
     BNE L0DAB8B
@@ -7714,376 +6942,194 @@ L0DAB75:
     STA $8A
     BNE L0DABB3
 L0DAB8B:
-.db $A9
-.db $06
-.db $4C
-.db $26
-.db $AE
+    LDA #6
+    JMP L0DAE26.w
 L0DAB90:
     LDA #8
     JMP L0DAE26.w
 
 L0DAB95:
-.db $A9
-.db $00
-.db $8D
-.db $E2
-.db $78
-.db $A9
-.db $01
-.db $8D
-.db $DD
-.db $78
-.db $20
-.db $26
-.db $AA
-.db $A9
-.db $16
-.db $20
-.db $48
-.db $CA
-.db $20
-.db $50
-.db $CA
-.db $A9
-.db $02
-.db $85
-.db $28
-.db $20
-.db $0D
-.db $C7
-.db $E6
-.db $8A
+    LDA #0
+    STA $78E2
+    LDA #1
+    STA $78DD
+    JSR L0DAA26.w
+    LDA #22
+    JSR L0FCA48.w
+    JSR L0FCA50.w
+    LDA #2
+    STA $28
+    JSR L0FC70D.w
+    INC $8A
 L0DABB3:
     RTS
 
-.db $20
-.db $9A
-.db $AC
-.db $A5
-.db $1A
-.db $29
-.db $80
-.db $D0
-.db $10
-.db $A5
-.db $1A
-.db $29
-.db $40
-.db $F0
-.db $27
-.db $20
-.db $B0
-.db $AD
-.db $A9
-.db $10
-.db $85
-.db $8A
-.db $4C
-.db $FB
-.db $AB
-.db $AD
-.db $DD
-.db $78
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $18
-.db $6D
-.db $EE
-.db $78
-.db $8D
-.db $E4
-.db $78
-.db $AA
-.db $CA
-.db $BD
-.db $4F
-.db $74
-.db $8D
-.db $D1
-.db $78
-.db $20
-.db $B0
-.db $AD
-.db $E6
-.db $8A
-.db $D0
-.db $11
-.db $A9
-.db $03
-.db $85
-.db $3F
-.db $AD
-.db $DD
-.db $78
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $20
-.db $05
-.db $A3
-.db $20
-.db $23
-.db $9E
-.db $60
-.db $AD
-.db $D1
-.db $78
-.db $0A
-.db $AA
-.db $BD
-.db $AD
-.db $DC
-.db $85
-.db $02
-.db $BD
-.db $AE
-.db $DC
-.db $85
-.db $03
-.db $A0
-.db $00
-.db $B1
-.db $02
-.db $99
-.db $A5
-.db $7E
-.db $C9
-.db $EF
-.db $F0
-.db $03
-.db $C8
-.db $D0
-.db $F4
-.db $20
-.db $FD
-.db $B1
-.db $A9
-.db $15
-.db $8D
-.db $A6
-.db $7D
-.db $20
-.db $67
-.db $AD
-.db $E6
-.db $8A
-.db $60
-.db $20
-.db $F4
-.db $A5
-.db $20
-.db $45
-.db $9E
-.db $A5
-.db $1A
-.db $29
-.db $80
-.db $D0
-.db $29
-.db $A5
-.db $1A
-.db $29
-.db $40
-.db $D0
-.db $09
-.db $A5
-.db $1A
-.db $29
-.db $0F
-.db $D0
-.db $10
-.db $4C
-.db $8A
-.db $AC
-.db $20
-.db $B0
-.db $AD
-.db $20
-.db $96
-.db $E6
-.db $A9
-.db $10
-.db $85
-.db $8A
-.db $4C
-.db $94
-.db $AC
-.db $AD
-.db $D1
-.db $78
-.db $D0
-.db $36
-.db $20
-.db $B0
-.db $AD
-.db $E6
-.db $8A
-.db $4C
-.db $94
-.db $AC
-.db $AD
-.db $D1
-.db $78
-.db $F0
-.db $F3
-.db $AE
-.db $DD
-.db $78
-.db $CA
-.db $BD
-.db $77
-.db $78
-.db $8D
-.db $84
-.db $74
-.db $20
-.db $AB
-.db $F8
-.db $AD
-.db $8F
-.db $74
-.db $D0
-.db $17
-.db $AD
-.db $D1
-.db $78
-.db $8D
-.db $8F
-.db $74
-.db $A9
-.db $00
-.db $8D
-.db $D1
-.db $78
-.db $20
-.db $94
-.db $F8
-.db $AD
-.db $E4
-.db $78
-.db $20
-.db $31
-.db $AE
-.db $20
-.db $F1
-.db $A3
-.db $A9
-.db $03
-.db $85
-.db $3F
-.db $AD
-.db $DD
-.db $78
-.db $20
-.db $05
-.db $A3
-.db $60
-.db $A9
-.db $15
-.db $85
-.db $8A
-.db $60
-.db $20
-.db $88
-.db $C2
-.db $A9
-.db $00
-.db $85
-.db $3D
-.db $A5
-.db $1E
-.db $29
-.db $04
-.db $D0
-.db $25
-.db $A5
-.db $1E
-.db $29
-.db $08
-.db $F0
-.db $4D
-.db $AE
-.db $DD
-.db $78
-.db $E0
-.db $01
-.db $F0
-.db $0A
-.db $20
-.db $6C
-.db $F5
-.db $CA
-.db $8E
-.db $DD
-.db $78
-.db $4C
-.db $FA
-.db $AC
-.db $AD
-.db $E2
-.db $78
-.db $F0
-.db $F8
-.db $CE
-.db $E2
-.db $78
-.db $20
-.db $26
-.db $AA
-.db $4C
-.db $FA
-.db $AC
-.db $AD
-.db $DD
-.db $78
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $CD
-.db $DC
-.db $78
-.db $F0
-.db $E3
-.db $AE
-.db $DD
-.db $78
-.db $E0
-.db $09
-.db $F0
-.db $0A
-.db $20
-.db $6C
-.db $F5
-.db $E8
-.db $8E
-.db $DD
-.db $78
-.db $4C
-.db $FA
-.db $AC
-.db $A9
-.db $09
-.db $18
-.db $6D
-.db $E2
-.db $78
-.db $CD
-.db $DC
-.db $78
-.db $F0
-.db $06
-.db $EE
-.db $E2
-.db $78
-.db $20
-.db $26
-.db $AA
-.db $60
+L0DABB4:
+    JSR L0DAC9A.w
+    LDA $1A
+    AND #128
+    BNE L0DABCD
+    LDA $1A
+    AND #64
+    BEQ L0DABEA
+    JSR L0DADB0.w
+    LDA #16
+    STA $8A
+    JMP L0DABFB.w
+L0DABCD:
+    LDA $78DD
+    CLC
+    ADC $78E2
+    CLC
+    ADC $78EE
+    STA $78E4
+    TAX
+    DEX
+    LDA $744F,X
+    STA $78D1
+    JSR L0DADB0.w
+    INC $8A
+    BNE L0DABFB
+L0DABEA:
+    LDA #3
+    STA $3F
+    LDA $78DD
+    CLC
+    ADC $78E2
+    JSR L0DA305.w
+    JSR L0D9E23.w
+L0DABFB:
+    RTS
+
+L0DABFC:
+    LDA $78D1
+    ASL
+    TAX
+    LDA L0FDCAD.w,X
+    STA $02
+    LDA (L0FDCAD.w + 1),X
+    STA $03
+    LDY #0
+L0DAC0D:
+    LDA ($02),Y
+    STA $7EA5,Y
+    CMP #239
+    BEQ L0DAC19
+    INY
+    BNE L0DAC0D
+L0DAC19:
+    JSR L0DB1FD.w
+    LDA #21
+    STA $7DA6
+    JSR L0DAD67.w
+    INC $8A
+    RTS
+
+L0DAC27:
+    JSR L0DA5F4.w
+    JSR L0D9E45.w
+    LDA $1A
+    AND #128
+    BNE L0DAC5C
+    LDA $1A
+    AND #64
+    BNE L0DAC42
+    LDA $1A
+    AND #15
+    BNE L0DAC4F
+    JMP L0DAC8A.w
+L0DAC42:
+    JSR L0DADB0.w
+    JSR L0FE696.w
+    LDA #16
+    STA $8A
+    JMP L0DAC94.w
+L0DAC4F:
+    LDA $78D1
+    BNE L0DAC8A
+L0DAC54:
+    JSR L0DADB0.w
+    INC $8A
+    JMP L0DAC94.w
+L0DAC5C:
+    LDA $78D1
+    BEQ L0DAC54
+    LDX $78DD
+    DEX
+    LDA $7877,X
+    STA $7484
+    JSR L0FF8AB.w
+    LDA $748F
+    BNE L0DAC8A
+    LDA $78D1
+    STA $748F
+    LDA #0
+    STA $78D1
+    JSR L0FF894.w
+    LDA $78E4
+    JSR L0DAE31.w
+    JSR L0DA3F1.w
+L0DAC8A:
+    LDA #3
+    STA $3F
+    LDA $78DD
+    JSR L0DA305.w
+L0DAC94:
+    RTS
+
+L0DAC95:
+    LDA #21
+    STA $8A
+    RTS
+
+L0DAC9A:
+    JSR L0FC288.w
+    LDA #0
+    STA $3D
+    LDA $1E
+    AND #4
+    BNE L0DACCC
+    LDA $1E
+    AND #8
+    BEQ L0DACFA
+    LDX $78DD
+    CPX #1
+    BEQ L0DACBE
+    JSR L0FF56C.w
+    DEX
+    STX $78DD
+L0DACBB:
+    JMP L0DACFA.w
+L0DACBE:
+    LDA $78E2
+    BEQ L0DACBB
+    DEC $78E2
+    JSR L0DAA26.w
+    JMP L0DACFA.w
+L0DACCC:
+    LDA $78DD
+    CLC
+    ADC $78E2
+    CMP $78DC
+    BEQ L0DACBB
+    LDX $78DD
+    CPX #9
+    BEQ L0DACE9
+    JSR L0FF56C.w
+    INX
+    STX $78DD
+    JMP L0DACFA.w
+L0DACE9:
+    LDA #9
+    CLC
+    ADC $78E2
+    CMP $78DC
+    BEQ L0DACFA
+    INC $78E2
+    JSR L0DAA26.w
+L0DACFA:
+    RTS
+
 L0DACFB:
     LDX #39
     LDA #0
@@ -8097,12 +7143,11 @@ L0DACFF:
     BEQ L0DAD45
     CMP #3
     BNE L0DAD17
-.db $A9
-.db $01
-.db $D0
-.db $03
+    LDA #1
+    BNE L0DAD1A
 L0DAD17:
     LDA $05B8
+L0DAD1A:
     STA $0A
     TAX
     LDA $6CF6,X
@@ -8126,36 +7171,20 @@ L0DAD32:
     BNE L0DAD32
     BEQ L0DAD63
 L0DAD45:
-.db $AD
-.db $08
-.db $6D
-.db $85
-.db $04
-.db $AD
-.db $09
-.db $6D
-.db $85
-.db $05
-.db $A2
-.db $00
-.db $A0
-.db $00
-.db $B1
-.db $04
-.db $F0
-.db $0C
-.db $9D
-.db $77
-.db $78
-.db $E8
-.db $A0
-.db $0C
-.db $20
-.db $8E
-.db $C3
-.db $4C
-.db $51
-.db $AD
+    LDA $6D08
+    STA $04
+    LDA $6D09
+    STA $05
+    LDX #0
+L0DAD51:
+    LDY #0
+    LDA ($04),Y
+    BEQ L0DAD63
+    STA $7877,X
+    INX
+    LDY #12
+    JSR L0FC38E.w
+    JMP L0DAD51.w
 L0DAD63:
     STX $78DC
     RTS
@@ -8283,65 +7312,41 @@ L0DAE26:
     LDA #12
     JMP L0FCA94.w
 
-.db $85
-.db $10
-.db $C6
-.db $10
-.db $98
-.db $48
-.db $AD
-.db $4D
-.db $74
-.db $18
-.db $6D
-.db $4E
-.db $74
-.db $38
-.db $E5
-.db $10
-.db $85
-.db $11
-.db $A4
-.db $10
-.db $C0
-.db $26
-.db $B0
-.db $0B
-.db $B9
-.db $50
-.db $74
-.db $99
-.db $4F
-.db $74
-.db $C8
-.db $C6
-.db $11
-.db $D0
-.db $F1
-.db $A9
-.db $00
-.db $99
-.db $4F
-.db $74
-.db $A5
-.db $10
-.db $CD
-.db $4D
-.db $74
-.db $90
-.db $06
-.db $CE
-.db $4E
-.db $74
-.db $4C
-.db $69
-.db $AE
-.db $CE
-.db $4D
-.db $74
-.db $68
-.db $A8
-.db $60
+L0DAE31:
+    STA $10
+    DEC $10
+    TYA
+    PHA
+    LDA $744D
+    CLC
+    ADC $744E
+    SEC
+    SBC $10
+    STA $11
+    LDY $10
+L0DAE45:
+    CPY #38
+    BCS L0DAE54
+    LDA $7450,Y
+    STA $744F,Y
+    INY
+    DEC $11
+    BNE L0DAE45
+L0DAE54:
+    LDA #0
+    STA $744F,Y
+    LDA $10
+    CMP $744D
+    BCC L0DAE66
+    DEC $744E
+    JMP L0DAE69.w
+L0DAE66:
+    DEC $744D
+L0DAE69:
+    PLA
+    TAY
+    RTS
+
 L0DAE6C:
     LDA #13
     STA $4A
@@ -8354,37 +7359,22 @@ L0DAE75:
     LDA #12
     JMP L0FCA94.w
 
-.db $AD
-.db $B5
-.db $05
-.db $F0
-.db $09
-.db $A9
-.db $02
-.db $85
-.db $4A
-.db $A9
-.db $04
-.db $4C
-.db $94
-.db $CA
-.db $A9
-.db $00
-.db $8D
-.db $8F
-.db $05
-.db $85
-.db $8A
-.db $8D
-.db $EF
-.db $05
-.db $20
-.db $9A
-.db $D3
-.db $20
-.db $A0
-.db $AD
-.db $60
+L0DAE7E:
+    LDA $05B5
+    BEQ L0DAE8C
+    LDA #2
+    STA $4A
+    LDA #4
+    JMP L0FCA94.w
+L0DAE8C:
+    LDA #0
+    STA $058F
+    STA $8A
+    STA $05EF
+    JSR L0FD39A.w
+    JSR L0DADA0.w
+    RTS
+
 L0DAE9D:
     LDX $78DB
     LDA $7920,X

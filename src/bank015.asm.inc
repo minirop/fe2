@@ -4401,103 +4401,103 @@ L0FDB73:
 
 L0FDBA3:
 ENCODE("ナイト")
-.db $EF
+STOP
 
 L0FDBA7:
 ENCODE("アーマー")
-.db $EF
+STOP
 
 L0FDBAC:
 ENCODE("Pナイト")
-.db $EF
+STOP
 
 L0FDBB1:
 ENCODE("パラディン")
-.db $EF
+STOP
 
 L0FDBB9:
 ENCODE("Fナイト")
-.db $EF
+STOP
 
 L0FDBBE:
 ENCODE("ソルジャー")
-.db $EF
+STOP
 
 L0FDBC5:
 ENCODE("Gナイト")
-.db $EF
+STOP
 
 L0FDBCA:
 ENCODE("ようへい")
-.db $EF
+STOP
 
 L0FDBCF:
 ENCODE("けんし")
-.db $EF
+STOP
 
 L0FDBD3:
 ENCODE("ませんし")
-.db $EF
+STOP
 
 L0FDBD8:
 ENCODE("しんかん")
-.db $EF
+STOP
 
 L0FDBDD:
 ENCODE("アーチャー")
-.db $EF
+STOP
 
 L0FDBE3:
 ENCODE("スナイパー")
-.db $EF
+STOP
 
 L0FDBEA:
 ENCODE("むらびと")
-.db $EF
+STOP
 
 L0FDBF0:
 ENCODE("まどうし")
-.db $EF
+STOP
 
 L0FDBF6:
 ENCODE("まどうし")
-.db $EF
+STOP
 
 L0FDBFC:
 ENCODE("せいじょ")
-.db $EF
+STOP
 
 L0FDC02:
 ENCODE("シスター")
-.db $EF
+STOP
 
 L0FDC07:
 ENCODE("けんじゃ")
-.db $EF
+STOP
 
 L0FDC0D:
 ENCODE("ボウナイト")
-.db $EF
+STOP
 
 L0FDC14:
 ENCODE("せんし")
-.db $EF
+STOP
 
 L0FDC18:
 ENCODE("ゆうしゃ")
-.db $EF
+STOP
 
 L0FDC1D:
 ENCODE("バロン")
-.db $EF
+STOP
 
 L0FDC22:
 ENCODE("ゆうしゃ")
-.db $EF
+STOP
 
 L0FDC27:
 ENCODE("プリンセス")
-.db $EF
+STOP
 
 L0FDC2E:
 .dw L0FDBA3
@@ -4525,55 +4525,55 @@ L0FDC2E:
 
 L0FDC5A:
 ENCODE("ガーゴイル")
-.db $EF
+STOP
 
 L0FDC62:
 ENCODE("ハイナイト")
-.db $EF
+STOP
 
 L0FDC68:
 ENCODE("Dゾンビ")
-.db $EF
+STOP
 
 L0FDC6F:
 ENCODE("ジェネラル")
-.db $EF
+STOP
 
 L0FDC76:
 ENCODE("きょうせんし")
-.db $EF
+STOP
 
 L0FDC7D:
 ENCODE("ゾンビ")
-.db $EF
+STOP
 
 L0FDC83:
 ENCODE("とうぞく")
-.db $EF
+STOP
 
 L0FDC89:
 ENCODE("スケルトン")
-.db $EF
+STOP
 
 L0FDC8F:
 ENCODE("ようじゅつし")
-.db $EF
+STOP
 
 L0FDC97:
 ENCODE("まじょ")
-.db $EF
+STOP
 
 L0FDC9C:
 ENCODE("ビグル")
-.db $EF
+STOP
 
 L0FDCA2:
 ENCODE("きとうし")
-.db $EF
+STOP
 
 L0FDCA7:
 ENCODE("じゃしん")
-.db $EF
+STOP
 
 L0FDCAD:
 .dw L0FDD23
@@ -4638,231 +4638,231 @@ L0FDCAD:
 
 L0FDD23:
 ENCODE(" ")
-.db $EF
+STOP
 
 L0FDD25:
 ENCODE("はがねのやり")
-.db $EF
+STOP
 
 L0FDD2D:
 ENCODE("ぎんのやり")
-.db $EF
+STOP
 
 L0FDD34:
 ENCODE("てやり")
-.db $EF
+STOP
 
 L0FDD38:
 ENCODE("せいなるやり")
-.db $EF
+STOP
 
 L0FDD3F:
 ENCODE("ナイトキラー")
-.db $EF
+STOP
 
 L0FDD46:
 ENCODE("グラディウス")
-.db $EF
+STOP
 
 L0FDD4F:
 ENCODE("りゅうせい")
-.db $EF
+STOP
 
 L0FDD55:
 ENCODE("たいよう")
-.db $EF
+STOP
 
 L0FDD5A:
 ENCODE("げっこう")
-.db $EF
+STOP
 
 L0FDD60:
 ENCODE("はがねのつるぎ")
-.db $EF
+STOP
 
 L0FDD6A:
 ENCODE("ぎんのつるぎ")
-.db $EF
+STOP
 
 L0FDD73:
 ENCODE("ゆうしゃのけん")
-.db $EF
+STOP
 
 L0FDD7B:
 ENCODE("あんこくのけん")
-.db $EF
+STOP
 
 L0FDD83:
 ENCODE("いかづちのけん")
-.db $EF
+STOP
 
 L0FDD8C:
 ENCODE("せいなるつるぎ")
-.db $EF
+STOP
 
 L0FDD95:
 ENCODE("ファルシオン")
-.db $EF
+STOP
 
 L0FDD9C:
 ENCODE("おうけのつるぎ")
-.db $EF
+STOP
 
 L0FDDA5:
 ENCODE("しょくしゅ")
-.db $EF
+STOP
 
 L0FDDAB:
 ENCODE("はがねのゆみ")
-.db $EF
+STOP
 
 L0FDDB3:
 ENCODE("せいなるゆみ")
-.db $EF
+STOP
 
 L0FDDBA:
 ENCODE("ぎんのゆみ")
-.db $EF
+STOP
 
 L0FDDC1:
 ENCODE("かわのたて")
-.db $EF
+STOP
 
 L0FDDC7:
 ENCODE("はがねのたて")
-.db $EF
+STOP
 
 L0FDDCF:
 ENCODE("ぎんのたて")
-.db $EF
+STOP
 
 L0FDDD6:
 ENCODE("せいなるたて")
-.db $EF
+STOP
 
 L0FDDDD:
 ENCODE("まふうじのたて")
-.db $EF
+STOP
 
 L0FDDE6:
 ENCODE("りゅうのたて")
-.db $EF
+STOP
 
 L0FDDED:
 ENCODE("せいなるゆびわ")
-.db $EF
+STOP
 
 L0FDDF6:
 ENCODE("てんしのゆびわ")
-.db $EF
+STOP
 
 L0FDDFF:
 ENCODE("はやさのゆびわ")
-.db $EF
+STOP
 
 L0FDE08:
 ENCODE("まどうのゆびわ")
-.db $EF
+STOP
 
 L0FDE12:
 ENCODE("いのりのゆびわ")
-.db $EF
+STOP
 
 L0FDE1B:
 ENCODE("ファイアー")
-.db $EF
+STOP
 
 L0FDE21:
 ENCODE("サンダー")
-.db $EF
+STOP
 
 L0FDE27:
 ENCODE("ライナロック")
-.db $EF
+STOP
 
 L0FDE2E:
 ENCODE("エンジェル")
-.db $EF
+STOP
 
 L0FDE35:
 ENCODE("エクスカリバー")
-.db $EF
+STOP
 
 L0FDE3E:
 ENCODE("アロー")
-.db $EF
+STOP
 
 L0FDE42:
 ENCODE("オーラ")
-.db $EF
+STOP
 
 L0FDE46:
 ENCODE("ガイア")
-.db $EF
+STOP
 
 L0FDE4B:
 ENCODE("ドーラ")
-.db $EF
+STOP
 
 L0FDE50:
 ENCODE("スライム")
-.db $EF
+STOP
 
 L0FDE55:
 ENCODE("デス")
-.db $EF
+STOP
 
 L0FDE59:
 ENCODE("メデューサ")
-.db $EF
+STOP
 
 L0FDE60:
 ENCODE("アイビーム")
-.db $EF
+STOP
 
 L0FDE67:
 ENCODE("アイボール")
-.db $EF
+STOP
 
 L0FDE6E:
 ENCODE("ボーマ")
-.db $EF
+STOP
 
 L0FDE72:
 ENCODE("ボース")
-.db $EF
+STOP
 
 L0FDE78:
 ENCODE("メサイア")
-.db $EF
+STOP
 
 L0FDE7D:
 ENCODE("リカバー")
-.db $EF
+STOP
 
 L0FDE83:
 ENCODE("リブロー")
-.db $EF
+STOP
 
 L0FDE89:
 ENCODE("リザイア")
-.db $EF
+STOP
 
 L0FDE8F:
 ENCODE("ワープ")
-.db $EF
+STOP
 
 L0FDE94:
 ENCODE("リザーブ")
-.db $EF
+STOP
 
 L0FDE9B:
 ENCODE("イリュージョン")
-.db $EF
+STOP
 
 L0FDEA4:
 ENCODE("ディル")
-.db $EF
+STOP
 
 ; pointers to names
 L0FDEA9:
@@ -4912,159 +4912,159 @@ L0FDEA9:
 
 L0FDEFF:
 ENCODE("アルム")
-.db $EF
+STOP
 
 L0FDF03:
 ENCODE("セリカ")
-.db $EF
+STOP
 
 L0FDF07:
 ENCODE("マイセン")
-.db $EF
+STOP
 
 L0FDF0C:
 ENCODE("ノーマ")
-.db $EF
+STOP
 
 L0FDF10:
 ENCODE("ルカ")
-.db $EF
+STOP
 
 L0FDF13:
 ENCODE("クリフ")
-.db $EF
+STOP
 
 L0FDF17:
 ENCODE("ロビン")
-.db $EF
+STOP
 
 L0FDF1C:
 ENCODE("グレイ")
-.db $EF
+STOP
 
 L0FDF21:
 ENCODE("クレア")
-.db $EF
+STOP
 
 L0FDF25:
 ENCODE("クレーベ")
-.db $EF
+STOP
 
 L0FDF2B:
 ENCODE("フォルス")
-.db $EF
+STOP
 
 L0FDF30:
 ENCODE("ジュノー")
-.db $EF
+STOP
 
 L0FDF36:
 ENCODE("メイ")
-.db $EF
+STOP
 
 L0FDF39:
 ENCODE("シルク")
-.db $EF
+STOP
 
 L0FDF3D:
 ENCODE("ジェニー")
-.db $EF
+STOP
 
 L0FDF43:
 ENCODE("ボーイ")
-.db $EF
+STOP
 
 L0FDF48:
 ENCODE("カムイ")
-.db $EF
+STOP
 
 L0FDF4C:
 ENCODE("レオ")
-.db $EF
+STOP
 
 L0FDF4F:
 ENCODE("バルボ")
-.db $EF
+STOP
 
 L0FDF55:
 ENCODE("マチルダ")
-.db $EF
+STOP
 
 L0FDF5B:
 ENCODE("パイソン")
-.db $EF
+STOP
 
 L0FDF61:
 ENCODE("アトラス")
-.db $EF
+STOP
 
 L0FDF66:
 ENCODE("ジェシー")
-.db $EF
+STOP
 
 L0FDF6C:
 ENCODE("フォルス")
-.db $EF
+STOP
 
 L0FDF71:
 ENCODE("ソニア")
-.db $EF
+STOP
 
 L0FDF75:
 ENCODE("ディーン")
-.db $EF
+STOP
 
 L0FDF7B:
 ENCODE("セーバー")
-.db $EF
+STOP
 
 L0FDF81:
 ENCODE("リュート")
-.db $EF
+STOP
 
 L0FDF86:
 ENCODE("デューテ")
-.db $EF
+STOP
 
 L0FDF8C:
 ENCODE("ティータ")
-.db $EF
+STOP
 
 L0FDF91:
 ENCODE("カチュア")
-.db $EF
+STOP
 
 L0FDF96:
 ENCODE("パオラ")
-.db $EF
+STOP
 
 L0FDF9B:
 ENCODE("エスト")
-.db $EF
+STOP
 
 L0FDF9F:
 ENCODE("ジーク")
-.db $EF
+STOP
 
 L0FDFA4:
 ENCODE("シャドー")
-.db $EF
+STOP
 
 L0FDFAA:
 ENCODE("おんな")
-.db $EF
+STOP
 
 L0FDFAE:
 ENCODE("おとこ")
-.db $EF
+STOP
 
 L0FDFB2:
 ENCODE("むすめ")
-.db $EF
+STOP
 
 L0FDFB6:
 ENCODE("ハルク")
-.db $EF
+STOP
 
 L0FDFBA:
 .dw L0FE06A
@@ -5158,211 +5158,211 @@ L0FDFBA:
 
 L0FE06A:
 ENCODE("ドゼー")
-.db $EF
+STOP
 
 L0FE070:
 ENCODE("ギース")
-.db $EF
+STOP
 
 L0FE075:
 ENCODE("ドルク")
-.db $EF
+STOP
 
 L0FE07A:
 ENCODE("ヌイババ")
-.db $EF
+STOP
 
 L0FE081:
 ENCODE("ルドルフ")
-.db $EF
+STOP
 
 L0FE087:
 ENCODE("ジュダ")
-.db $EF
+STOP
 
 L0FE08D:
 ENCODE("ソニア")
-.db $EF
+STOP
 
 L0FE091:
 ENCODE("ディーン")
-.db $EF
+STOP
 
 L0FE097:
 ENCODE("マグナム")
-.db $EF
+STOP
 
 L0FE09D:
 ENCODE("ジェローム")
-.db $EF
+STOP
 
 L0FE0A4:
 ENCODE("ミューラー")
-.db $EF
+STOP
 
 L0FE0AA:
 ENCODE("ハンニバル")
-.db $EF
+STOP
 
 L0FE0B1:
 ENCODE("マッセナ")
-.db $EF
+STOP
 
 L0FE0B6:
 ENCODE("マーラ")
-.db $EF
+STOP
 
 L0FE0BA:
 ENCODE("タタラ")
-.db $EF
+STOP
 
 L0FE0BE:
 ENCODE("ジャミル")
-.db $EF
+STOP
 
 L0FE0C4:
 ENCODE("デューテ")
-.db $EF
+STOP
 
 L0FE0CA:
 ENCODE("ガゼル")
-.db $EF
+STOP
 
 L0FE0D0:
 ENCODE("ザクソン")
-.db $EF
+STOP
 
 L0FE0D6:
 ENCODE("スレイダー")
-.db $EF
+STOP
 
 L0FE0DD:
 ENCODE("ミカエラ")
-.db $EF
+STOP
 
 L0FE0E2:
 ENCODE("ローソン")
-.db $EF
+STOP
 
 L0FE0E7:
 ENCODE("ダッハ")
-.db $EF
+STOP
 
 L0FE0EC:
 ENCODE("ガッハ")
-.db $EF
+STOP
 
 L0FE0F1:
 ENCODE("ブライ")
-.db $EF
+STOP
 
 L0FE0F6:
 ENCODE("シーザス")
-.db $EF
+STOP
 
 L0FE0FC:
 ENCODE("リゲルぐん")
-.db $EF
+STOP
 
 L0FE104:
 ENCODE("ウォルフ")
-.db $EF
+STOP
 
 L0FE109:
 ENCODE("ギースぐん")
-.db $EF
+STOP
 
 L0FE111:
 ENCODE("ドゼーぐん")
-.db $EF
+STOP
 
 L0FE11A:
 ENCODE("ドルクくん")
-.db $EF
+STOP
 
 L0FE121:
 ENCODE("まどうぐん")
-.db $EF
+STOP
 
 L0FE129:
 ENCODE("かいぞく")
-.db $EF
+STOP
 
 L0FE12F:
 ENCODE("さんぞく")
-.db $EF
+STOP
 
 L0FE135:
 ENCODE("まもの")
-.db $EF
+STOP
 
 L0FE139:
 ENCODE("ドーマ")
-.db $EF
+STOP
 
 L0FE13E:
 ENCODE("ガルシア")
-.db $EF
+STOP
 
 L0FE144:
 ENCODE("ヘステ")
-.db $EF
+STOP
 
 L0FE148:
 ENCODE("サイゾー")
-.db $EF
+STOP
 
 L0FE14E:
 ENCODE("ガネフ")
-.db $EF
+STOP
 
 L0FE153:
 ENCODE("まじん")
-.db $EF
+STOP
 
 L0FE158:
 ENCODE("デビル")
-.db $EF
+STOP
 
 L0FE15E:
 ENCODE("ゴールド")
-.db $EF
+STOP
 
 L0FE165:
 ENCODE("はくりゅう")
-.db $EF
+STOP
 
 L0FE16B:
 ENCODE("サーペント")
-.db $EF
+STOP
 
 L0FE172:
 ENCODE("ナーガ")
-.db $EF
+STOP
 
 L0FE177:
 ENCODE("リッチー")
-.db $EF
+STOP
 
 L0FE17C:
 ENCODE("バルログ")
-.db $EF
+STOP
 
 L0FE183:
 ENCODE("バデス")
-.db $EF
+STOP
 
 L0FE189:
 ENCODE("ケルベス")
-.db $EF
+STOP
 
 L0FE18F:
 ENCODE("ベルレス")
-.db $EF
+STOP
 
 L0FE195:
 ENCODE("マミー")
-.db $EF
+STOP
 
 L0FE199:
 .db $17
@@ -6276,67 +6276,67 @@ L0FE609:
 
 L0FE629:
 ENCODE("そうげん")
-.db $EF
+STOP
 
 L0FE62F:
 ENCODE("はしら")
-.db $EF
+STOP
 
 L0FE633:
 ENCODE("はやし")
-.db $EF
+STOP
 
 L0FE637:
 ENCODE("さばく")
-.db $EF
+STOP
 
 L0FE63C:
 ENCODE("や ま")
-.db $EF
+STOP
 
 L0FE640:
 ENCODE("は し")
-.db $EF
+STOP
 
 L0FE644:
 ENCODE("ま ち")
-.db $EF
+STOP
 
 L0FE648:
 ENCODE("とりで")
-.db $EF
+STOP
 
 L0FE64D:
 ENCODE("し ろ")
-.db $EF
+STOP
 
 L0FE651:
 ENCODE("か わ")
-.db $EF
+STOP
 
 L0FE655:
 ENCODE("そ ら")
-.db $EF
+STOP
 
 L0FE659:
 ENCODE("う み")
-.db $EF
+STOP
 
 L0FE65D:
 ENCODE("ゆ か")
-.db $EF
+STOP
 
 L0FE661:
 ENCODE("かいだん")
-.db $EF
+STOP
 
 L0FE667:
 ENCODE("スタジアム")
-.db $EF
+STOP
 
 L0FE66E:
 ENCODE("いしがき")
-.db $EF
+STOP
 
 L0FE674:
     LDA #0
@@ -6691,7 +6691,7 @@ L0FE8CD:
 
 L0FE8D9:
 ENCODE("さけこえ")
-.db $EF
+STOP
 
 L0FE8DE:
 .db $00
@@ -9272,6 +9272,7 @@ L0FF459:
 .db $12
 .db $13
 .db $EF
+
 L0FF460:
     STA $0B
     TXA
@@ -9296,20 +9297,14 @@ L0FF47D:
     LDA L0FDAFD.w,X
     AND #1
     BEQ L0FF498
-.db $E0
-.db $39
-.db $D0
-.db $04
-.db $A0
-.db $04
-.db $D0
-.db $2E
-.db $E0
-.db $3B
-.db $F0
-.db $51
-.db $D0
-.db $6A
+    CPX #57
+    BNE L0FF492
+    LDY #4
+    BNE L0FF4C0
+L0FF492:
+    CPX #59
+    BEQ L0FF4E7
+    BNE L0FF502
 L0FF498:
     LDA L0FD9F4.w,X
     BPL L0FF4A7
@@ -9331,8 +9326,7 @@ L0FF4AF:
     STY $05EC
     CPY #6
     BCC L0FF4AF
-.db $B0
-.db $42
+    BCS L0FF502
 L0FF4C0:
     CPY #0
     BEQ L0FF4EB
@@ -9476,6 +9470,7 @@ L0FF55E:
 .db $14
 .db $30
 .db $36
+
 L0FF562:
     LDA $00
     STA $02
@@ -9483,7 +9478,9 @@ L0FF562:
     STA $03
     RTS
 
-.db $60
+L0FF56B:
+    RTS
+
 L0FF56C:
     LDA #4
     STA $06D1
@@ -9528,14 +9525,8 @@ L0FF5A1:
     RTS
 
 L0FF5A2:
-.db $01
-.db $02
-.db $04
-.db $08
-.db $10
-.db $20
-.db $40
-.db $80
+.db $01 $02 $04 $08 $10 $20 $40 $80
+
 L0FF5AA:
     LDA #0
     STA $74D4
@@ -9636,224 +9627,113 @@ L0FF643:
     STA $6D09
     RTS
 
-.db $AE
-.db $DD
-.db $74
-.db $AD
-.db $DE
-.db $74
-.db $DD
-.db $F6
-.db $6C
-.db $90
-.db $03
-.db $4C
-.db $49
-.db $F7
-.db $20
-.db $AA
-.db $F5
-.db $AD
-.db $DD
-.db $74
-.db $0A
-.db $AA
-.db $BD
-.db $D2
-.db $6C
-.db $85
-.db $04
-.db $BD
-.db $D3
-.db $6C
-.db $85
-.db $05
-.db $AD
-.db $DE
-.db $74
-.db $85
-.db $00
-.db $A9
-.db $0C
-.db $85
-.db $01
-.db $20
-.db $C9
-.db $C6
-.db $A5
-.db $00
-.db $18
-.db $65
-.db $04
-.db $85
-.db $6B
-.db $A5
-.db $01
-.db $65
-.db $05
-.db $85
-.db $6C
-.db $AE
-.db $DD
-.db $74
-.db $BD
-.db $F6
-.db $6C
-.db $38
-.db $ED
-.db $DE
-.db $74
-.db $85
-.db $00
-.db $A9
-.db $0C
-.db $85
-.db $01
-.db $20
-.db $C9
-.db $C6
-.db $A5
-.db $00
-.db $85
-.db $6E
-.db $A5
-.db $01
-.db $85
-.db $6F
-.db $AE
-.db $DD
-.db $74
-.db $BD
-.db $F6
-.db $6C
-.db $85
-.db $00
-.db $A9
-.db $0C
-.db $85
-.db $01
-.db $20
-.db $C9
-.db $C6
-.db $A5
-.db $00
-.db $18
-.db $65
-.db $04
-.db $85
-.db $7C
-.db $A5
-.db $01
-.db $65
-.db $05
-.db $85
-.db $7D
-.db $20
-.db $21
-.db $F3
-.db $A9
-.db $00
-.db $20
-.db $2A
-.db $F3
-.db $A5
-.db $00
-.db $8D
-.db $31
-.db $74
-.db $38
-.db $E5
-.db $7C
-.db $85
-.db $04
-.db $A5
-.db $01
-.db $8D
-.db $32
-.db $74
-.db $E5
-.db $7D
-.db $85
-.db $05
-.db $A5
-.db $04
-.db $05
-.db $05
-.db $D0
-.db $07
-.db $AD
-.db $DE
-.db $74
-.db $F0
-.db $15
-.db $D0
-.db $2F
-.db $A5
-.db $7C
-.db $85
-.db $00
-.db $A5
-.db $7D
-.db $85
-.db $01
-.db $A5
-.db $6B
-.db $85
-.db $02
-.db $A5
-.db $6C
-.db $85
-.db $03
-.db $20
-.db $09
-.db $C2
-.db $AD
-.db $31
-.db $74
-.db $38
-.db $E5
-.db $6E
-.db $85
-.db $00
-.db $AD
-.db $32
-.db $74
-.db $E5
-.db $6F
-.db $85
-.db $01
-.db $A5
-.db $6E
-.db $85
-.db $02
-.db $A5
-.db $6F
-.db $85
-.db $03
-.db $A9
-.db $00
-.db $20
-.db $25
-.db $C2
-.db $AE
-.db $DD
-.db $74
-.db $AD
-.db $DE
-.db $74
-.db $9D
-.db $F6
-.db $6C
-.db $20
-.db $DB
-.db $F5
-.db $20
-.db $08
-.db $F6
-.db $18
-.db $60
-.db $38
-.db $60
+L0FF671:
+    LDX $74DD
+    LDA $74DE
+    CMP $6CF6,X
+    BCC L0FF67F
+    JMP L0FF749.w
+L0FF67F:
+    JSR L0FF5AA.w
+L0FF682:
+    LDA $74DD
+    ASL
+    TAX
+    LDA $6CD2,X
+    STA $04
+    LDA $6CD3,X
+    STA $05
+    LDA $74DE
+    STA $00
+    LDA #12
+    STA $01
+    JSR L0FC6C9.w
+    LDA $00
+    CLC
+    ADC $04
+    STA $6B
+    LDA $01
+    ADC $05
+    STA $6C
+    LDX $74DD
+    LDA $6CF6,X
+    SEC
+    SBC $74DE
+    STA $00
+    LDA #12
+    STA $01
+    JSR L0FC6C9.w
+    LDA $00
+    STA $6E
+    LDA $01
+    STA $6F
+    LDX $74DD
+    LDA $6CF6,X
+    STA $00
+    LDA #12
+    STA $01
+    JSR L0FC6C9.w
+    LDA $00
+    CLC
+    ADC $04
+    STA $7C
+    LDA $01
+    ADC $05
+    STA $7D
+    JSR L0FF321.w
+    LDA #0
+    JSR L0FF32A.w
+    LDA $00
+    STA $7431
+    SEC
+    SBC $7C
+    STA $04
+    LDA $01
+    STA $7432
+    SBC $7D
+    STA $05
+    LDA $04
+    ORA $05
+    BNE L0FF709
+    LDA $74DE
+    BEQ L0FF71C
+    BNE L0FF738
+L0FF709:
+    LDA $7C
+    STA $00
+    LDA $7D
+    STA $01
+    LDA $6B
+    STA $02
+    LDA $6C
+    STA $03
+    JSR L0FC209.w
+L0FF71C:
+    LDA $7431
+    SEC
+    SBC $6E
+    STA $00
+    LDA $7432
+    SBC $6F
+    STA $01
+    LDA $6E
+    STA $02
+    LDA $6F
+    STA $03
+    LDA #0
+    JSR L0FC225.w
+L0FF738:
+    LDX $74DD
+    LDA $74DE
+    STA $6CF6,X
+    JSR L0FF5DB.w
+    JSR L0FF608.w
+    CLC
+    RTS
+L0FF749:
+    SEC
+    RTS
+
 L0FF74B:
     JSR L0FF5AA.w
     LDA $74DD
@@ -9937,31 +9817,18 @@ L0FF7DF:
     RTS
 
 L0FF7EE:
-.db $38
-.db $60
-.db $20
-.db $AA
-.db $F5
-.db $A9
-.db $00
-.db $8D
-.db $DE
-.db $74
-.db $AE
-.db $DD
-.db $74
-.db $9D
-.db $D5
-.db $74
-.db $9D
-.db $C0
-.db $6C
-.db $20
-.db $82
-.db $F6
-.db $4C
-.db $C7
-.db $F9
+    SEC
+    RTS
+L0FF7F0:
+    JSR L0FF5AA.w
+    LDA #0
+    STA $74DE
+    LDX $74DD
+    STA $74D5,X
+    STA $6CC0,X
+    JSR L0FF682.w
+    JMP L0FF9C7.w
+
 L0FF807:
     LDA #174
     STA $02
@@ -10071,67 +9938,37 @@ L0FF8B8:
 L0FF8C1:
     RTS
 
-.db $20
-.db $AB
-.db $F8
-.db $A5
-.db $00
-.db $85
-.db $7C
-.db $A5
-.db $01
-.db $85
-.db $7D
-.db $20
-.db $21
-.db $F3
-.db $AD
-.db $9F
-.db $74
-.db $20
-.db $2A
-.db $F3
-.db $B0
-.db $26
-.db $A5
-.db $01
-.db $85
-.db $6C
-.db $A5
-.db $00
-.db $85
-.db $6B
-.db $A5
-.db $7C
-.db $85
-.db $02
-.db $A5
-.db $7D
-.db $85
-.db $03
-.db $A9
-.db $0C
-.db $85
-.db $04
-.db $A9
-.db $00
-.db $85
-.db $05
-.db $20
-.db $09
-.db $C2
-.db $A5
-.db $6C
-.db $85
-.db $01
-.db $A5
-.db $6B
-.db $85
-.db $00
-.db $20
-.db $9F
-.db $F8
-.db $60
+L0FF8C2:
+    JSR L0FF8AB.w
+    LDA $00
+    STA $7C
+    LDA $01
+    STA $7D
+    JSR L0FF321.w
+    LDA $749F
+    JSR L0FF32A.w
+    BCS L0FF8FE
+    LDA $01
+    STA $6C
+    LDA $00
+    STA $6B
+    LDA $7C
+    STA $02
+    LDA $7D
+    STA $03
+    LDA #12
+    STA $04
+    LDA #0
+    STA $05
+    JSR L0FC209.w
+    LDA $6C
+    STA $01
+    LDA $6B
+    STA $00
+    JSR L0FF89F.w
+L0FF8FE:
+    RTS
+
 L0FF8FF:
     LDA $7484
     JSR L0FF344.w
@@ -10190,120 +10027,59 @@ L0FF936:
 L0FF96D:
     RTS
 
-.db $20
-.db $21
-.db $F3
-.db $AD
-.db $84
-.db $74
-.db $20
-.db $2A
-.db $F3
-.db $B0
-.db $4D
-.db $A0
-.db $04
-.db $B1
-.db $00
-.db $C9
-.db $FF
-.db $F0
-.db $45
-.db $20
-.db $B6
-.db $F8
-.db $A5
-.db $00
-.db $85
-.db $7C
-.db $A5
-.db $01
-.db $85
-.db $7D
-.db $20
-.db $AA
-.db $F5
-.db $20
-.db $36
-.db $F9
-.db $A5
-.db $6E
-.db $38
-.db $E9
-.db $0C
-.db $85
-.db $00
-.db $A5
-.db $6F
-.db $E9
-.db $00
-.db $85
-.db $01
-.db $A9
-.db $0C
-.db $85
-.db $02
-.db $A9
-.db $00
-.db $85
-.db $03
-.db $20
-.db $25
-.db $C2
-.db $20
-.db $DB
-.db $F5
-.db $A9
-.db $01
-.db $8D
-.db $DE
-.db $74
-.db $20
-.db $4B
-.db $F7
-.db $A5
-.db $6B
-.db $85
-.db $00
-.db $A5
-.db $6C
-.db $85
-.db $01
-.db $20
-.db $9F
-.db $F8
-.db $20
-.db $DB
-.db $F5
-.db $20
-.db $08
-.db $F6
-.db $60
-.db $20
-.db $CB
-.db $F2
-.db $A9
-.db $00
-.db $20
-.db $89
-.db $F3
-.db $B0
-.db $3B
-.db $8E
-.db $DE
-.db $74
-.db $A9
-.db $00
-.db $20
-.db $21
-.db $F3
-.db $A9
-.db $00
-.db $20
-.db $2A
-.db $F3
-.db $B0
-.db $2C
+L0FF96E:
+    JSR L0FF321.w
+    LDA $7484
+    JSR L0FF32A.w
+    BCS L0FF9C6
+    LDY #4
+    LDA ($00),Y
+    CMP #255
+    BEQ L0FF9C6
+    JSR L0FF8B6.w
+    LDA $00
+    STA $7C
+    LDA $01
+    STA $7D
+    JSR L0FF5AA.w
+    JSR L0FF936.w
+    LDA $6E
+    SEC
+    SBC #12
+    STA $00
+    LDA $6F
+    SBC #0
+    STA $01
+    LDA #12
+    STA $02
+    LDA #0
+    STA $03
+    JSR L0FC225.w
+    JSR L0FF5DB.w
+    LDA #1
+    STA $74DE
+    JSR L0FF74B.w
+    LDA $6B
+    STA $00
+    LDA $6C
+    STA $01
+    JSR L0FF89F.w
+    JSR L0FF5DB.w
+    JSR L0FF608.w
+L0FF9C6:
+    RTS
+
+L0FF9C7:
+    JSR L0FF2CB.w
+    LDA #0
+    JSR L0FF389.w
+    BCS L0FFA0C
+    STX $74DE
+    LDA #0
+    JSR L0FF321.w
+    LDA #0
+    JSR L0FF32A.w
+    BCS L0FFA0C
 L0FF9E0:
     LDA #174
     STA $02
@@ -10524,13 +10300,7 @@ L0FFB61:
     RTS
 
 L0FFB62:
-.db $0C
-.db $2A
-.db $1B
-.db $15
-.db $42
-.db $43
-.db $FF
+.db $0C $2A $1B $15 $42 $43 $FF
 
 L0FFB69:
     LDY #0
