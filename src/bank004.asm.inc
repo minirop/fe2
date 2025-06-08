@@ -6803,7 +6803,7 @@ ENCODE("かくして")
 NEWLINE
 ENCODE("おおいなる たたかいのまくは おりた")
 NEWLINE
-.db $EF
+STOP
 
 L04B695:
 ENCODE("おおくのぎせいを はらい")
@@ -6812,66 +6812,66 @@ ENCODE("いまようやく")
 NEWLINE
 ENCODE("バレンシアに へいわがおとずれる")
 NEWLINE
-.db $EF
+STOP
 
 L04B6BF:
 ENCODE("このたたかいが")
 NEWLINE
 ENCODE("いったい なんであったのか")
 NEWLINE
-.db $EF
+STOP
 
 L04B6D8:
 NEWLINE
 ENCODE("そのといに こたえるものはいない")
 NEWLINE
-.db $EF
+STOP
 
 L04B6EB:
 NEWLINE
 ENCODE("ただひとつ いえること")
 NEWLINE
-.db $EF
+STOP
 
 L04B6FA:
 ENCODE("それは ひとが")
 NEWLINE
 ENCODE("ふたたび おごりたかぶるとき")
 NEWLINE
-.db $EF
+STOP
 
 L04B716:
 ENCODE("あらたなる せんらんのほのおが")
 NEWLINE
 ENCODE("ちじょうを やきつくし")
 NEWLINE
-.db $EF
+STOP
 
 L04B735:
 ENCODE("すべてが うしなわれてしまうで")
 NEWLINE
 ENCODE("あろうということ")
 NEWLINE
-.db $EF
+STOP
 
 L04B752:
 NEWLINE
 ENCODE("もっとも おそろしく みにくいもの")
 NEWLINE
 NEWLINE
-.db $EF
+STOP
 
 L04B767:
 ENCODE("それは ひとのこころのなかにこそ")
 NEWLINE
 ENCODE("そんざいするのかも しれない")
 NEWLINE
-.db $EF
+STOP
 
 L04B789:
 NEWLINE
 NEWLINE
-.db $EF
+STOP
 
 L04B78C:
 .dw L04B67C
@@ -6924,7 +6924,7 @@ L04B7E2:
 ENCODE("でやすらかに")
 NEWLINE
 ENCODE("ねむっている···")
-.db $EF
+STOP
 
 L04B7F4:
 ENCODE("しんせいバレンシアの")
@@ -6937,7 +6937,7 @@ NEWLINE
 ENCODE("かたうでとして おうこくの")
 NEWLINE
 ENCODE("さいけんに どりょくした")
-.db $EF
+STOP
 
 L04B837:
 ENCODE("ミラとドーマの ふたつの")
@@ -6945,7 +6945,7 @@ NEWLINE
 ENCODE("きょうだんを とうごうして")
 NEWLINE
 ENCODE("さいこうしさいとなる")
-.db $EF
+STOP
 
 L04B860:
 ENCODE("おうこくきしだんに さんか")
@@ -6953,7 +6953,7 @@ NEWLINE
 ENCODE("バレンシアのふっこうに")
 NEWLINE
 ENCODE("どりょくする")
-.db $EF
+STOP
 
 L04B884:
 ENCODE("たたかいののち アルムに")
@@ -6962,7 +6962,7 @@ ENCODE("わかれをつげる")
 NEWLINE
 NEWLINE
 ENCODE("そのご かれをみたものはいない")
-.db $EF
+STOP
 
 L04B8AC:
 ENCODE("ロビンと クレアをあらそい")
@@ -6973,7 +6973,7 @@ NEWLINE
 ENCODE("おとこは かおじゃない")
 NEWLINE
 ENCODE("こころさと うそぶいている")
-.db $EF
+STOP
 
 L04B8E6:
 ENCODE("ロビンのせんしを かなしみ")
@@ -6984,7 +6984,7 @@ NEWLINE
 ENCODE("かれに えがおがもどるのは")
 NEWLINE
 ENCODE("いつのことか···")
-.db $EF
+STOP
 
 L04B91F:
 ENCODE("あいするものを うしない")
@@ -6992,7 +6992,7 @@ NEWLINE
 ENCODE("にあわないとは しりつつ")
 NEWLINE
 ENCODE("ひとり たびにでる")
-.db $EF
+STOP
 
 L04B945:
 ENCODE("グレイのしつこさに まけ")
@@ -7003,7 +7003,7 @@ NEWLINE
 ENCODE("「あーあ アルム")
 NEWLINE
 ENCODE(" すきだったのになぁ···")
-.db $EF
+STOP
 
 L04B979:
 ENCODE("「グレイってば       ")
@@ -7014,7 +7014,7 @@ NEWLINE
 ENCODE("ひとりさきにしんだグレイを")
 NEWLINE
 ENCODE("うらんでいる")
-.db $EF
+STOP
 
 L04B9B3:
 ENCODE("しんせいバレンシアの")
@@ -7025,7 +7025,7 @@ NEWLINE
 ENCODE("さいきん うつくしい")
 NEWLINE
 ENCODE("つまを むかえたときく")
-.db $EF
+STOP
 
 L04B9E4:
 ENCODE("しんせいバレンシアの")
@@ -7038,7 +7038,7 @@ NEWLINE
 ENCODE("かいぞくとのたたかいで")
 NEWLINE
 ENCODE("いのちを おとす")
-.db $EF
+STOP
 
 L04BA1E:
 ENCODE("ボーイとともに ")
@@ -7046,7 +7046,7 @@ NEWLINE
 ENCODE("ソフィアのきょうかいで")
 NEWLINE
 ENCODE("はたらいている")
-.db $EF
+STOP
 
 L04BA3D:
 ENCODE("けんかともだちの")
@@ -7054,7 +7054,7 @@ NEWLINE
 ENCODE("ボーイをなくし すこし")
 NEWLINE
 ENCODE("ショックをうけている")
-.db $EF
+STOP
 
 L04BA5F:
 ENCODE("きずついた ひとびとを")
@@ -7062,7 +7062,7 @@ NEWLINE
 ENCODE("たすけるために")
 NEWLINE
 ENCODE("リゲルにむかう")
-.db $EF
+STOP
 
 L04BA7E:
 ENCODE("だれもがまさかと おもう")
@@ -7075,7 +7075,7 @@ NEWLINE
 ENCODE("かのじょは わらって")
 NEWLINE
 ENCODE("こたえようとしない")
-.db $EF
+STOP
 
 L04BAC3:
 ENCODE("あいかわらず")
@@ -7085,7 +7085,7 @@ NEWLINE
 ENCODE("かれらにとっては")
 NEWLINE
 ENCODE("それが しあわせなのか")
-.db $EF
+STOP
 
 L04BAED:
 ENCODE("メイに さきだたれ")
@@ -7095,7 +7095,7 @@ NEWLINE
 ENCODE("じぶんのこころに きづく")
 NEWLINE
 ENCODE("しかし ときはもどらない")
-.db $EF
+STOP
 
 L04BB1D:
 ENCODE("ジェシーたちとともに")
@@ -7103,7 +7103,7 @@ NEWLINE
 ENCODE("あたらしいくにをつくろうと")
 NEWLINE
 ENCODE("がんばっている")
-.db $EF
+STOP
 
 L04BB41:
 ENCODE("かつての ギースのりょうちに")
@@ -7116,7 +7116,7 @@ NEWLINE
 ENCODE("さばくのようへいおうと")
 NEWLINE
 ENCODE("よばれるようになる")
-.db $EF
+STOP
 
 L04BB81:
 ENCODE("アルムにたのまれて")
@@ -7124,7 +7124,7 @@ NEWLINE
 ENCODE("わかいへいしたちに")
 NEWLINE
 ENCODE("たたかいかたを おしえている")
-.db $EF
+STOP
 
 L04BBA4:
 ENCODE("よろいをぬぎすてて")
@@ -7142,7 +7142,7 @@ NEWLINE
 ENCODE("れきしに とわに")
 NEWLINE
 ENCODE("きざまれるであろう")
-.db $EF
+STOP
 
 L04BBF2:
 ENCODE("クレーベをうしない")
@@ -7162,7 +7162,7 @@ NEWLINE
 ENCODE("れきしに とわに ")
 NEWLINE
 ENCODE("きざまれるであろう")
-.db $EF
+STOP
 
 L04BC46:
 ENCODE("むらをとうぞくから まもるため")
@@ -7170,7 +7170,7 @@ NEWLINE
 ENCODE("じけいだんの たいちょうを")
 NEWLINE
 ENCODE("つとめている")
-.db $EF
+STOP
 
 L04BC6E:
 ENCODE("おとうとたちを さがしだし")
@@ -7180,7 +7180,7 @@ NEWLINE
 ENCODE("いまは むかしのように")
 NEWLINE
 ENCODE("きこりをしているという")
-.db $EF
+STOP
 
 L04BCA2:
 ENCODE("かつての ギースのりょうちに")
@@ -7193,7 +7193,7 @@ NEWLINE
 ENCODE("さばくのようへいおうと")
 NEWLINE
 ENCODE("よばれるようになる")
-.db $EF
+STOP
 
 L04BCE2:
 ENCODE("ドーマの いけにえにされて")
@@ -7208,7 +7208,7 @@ NEWLINE
 ENCODE("ちちおやのジュダを ソニアは")
 NEWLINE
 ENCODE("けっして ゆるそうとはしない")
-.db $EF
+STOP
 
 L04BD3D:
 ENCODE("たたかいののち かれのすがたは")
@@ -7223,7 +7223,7 @@ NEWLINE
 ENCODE("もとめて みなみのたいりくに")
 NEWLINE
 ENCODE("わたったという")
-.db $EF
+STOP
 
 L04BD8D:
 ENCODE("ジェシーの ")
@@ -7238,7 +7238,7 @@ NEWLINE
 ENCODE("うつくしい つまが")
 NEWLINE
 ENCODE("よりそっている")
-.db $EF
+STOP
 
 L04BDC0:
 .dw L04BE06
@@ -7373,9 +7373,8 @@ L04BE74:
 .db $02 $1F $20 $01 $C0 $29 $2A
 
 L04BE7B: ; end guessed
-.db $00
+.db $00 $2B
 
-.db $2B
 .db $F4
 .db $A1
 .db $40

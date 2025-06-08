@@ -1679,7 +1679,7 @@ L098C5C:
     TAY
     LDA L0FF20C.w,Y
     STA $10
-    LDA L0FF20D.w,Y
+    LDA (L0FF20C.w + 1),Y
     STA $11
     LDA #105
     STA $01
@@ -3173,6 +3173,7 @@ L09A70C:
 .dw L09A7F1
 .dw L09A7FF
 .dw L09A7A3
+
 L09A749:
 .db $1F $1F $1F $1F $1F $1F $1F $1F
 .db $1F $1F $1F $1F $1F $1F $1F $1F

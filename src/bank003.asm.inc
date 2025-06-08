@@ -318,7 +318,7 @@ L0381EB:
     TAX
     LDA L0FEE22.w,X
     STA $72
-    LDA L0FEE23.w,X
+    LDA (L0FEE22.w + 1),X
     STA $73
     PLA
     TAX
@@ -2250,7 +2250,7 @@ L038F03:
     TAX
     LDA L0FEE22.w,X
     STA $72
-    LDA L0FEE23.w,X
+    LDA (L0FEE22.w + 1),X
     STA $73
     PLA
     TAX
@@ -2400,7 +2400,7 @@ L038FE9:
     TAY
     LDA L0FEE22.w,Y
     STA $72
-    LDA L0FEE23.w,Y
+    LDA (L0FEE22.w + 1),Y
     STA $73
     LDY $B8
     LDA ($72),Y
@@ -3810,12 +3810,12 @@ SPEAK
 ENCODE("ふふ ソフィアのおうじょか")
 NEWLINE
 ENCODE("おまえがくるのを まっていたぞ")
-.db $E6
+PAGE
 FACE CELICA
 NAME CELICA
 SPEAK
 ENCODE("あなたは だれ!?")
-.db $E6
+PAGE
 NAME DUMA
 SPEAK
 ENCODE("わしか")
@@ -3828,7 +3828,7 @@ SPEAK
 ENCODE("ドーマきょうの さいしちょう")
 NEWLINE
 ENCODE("ジュダと いうものよ")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("それなら おねがいです")
@@ -3840,7 +3840,7 @@ NEWLINE
 ENCODE("だいちぼしんミラを")
 NEWLINE
 ENCODE("もとにもどしてください!!")
-.db $E6
+PAGE
 NAME DUMA
 SPEAK
 ENCODE("ふふふ···")
@@ -3880,7 +3880,7 @@ SPEAK
 ENCODE("もし リゲルおうこくが うごけば")
 NEWLINE
 ENCODE("おれたちに かちめはないぜ")
-.db $E6
+PAGE
 FACE ALM
 NAME ALM
 SPEAK
@@ -3896,7 +3896,7 @@ NEWLINE
 ENCODE("ミラさまが そんなこと")
 NEWLINE
 ENCODE("ゆるされないはずだ")
-.db $E6
+PAGE
 NAME FORSYTH
 SPEAK
 ENCODE("ところがさ··· うわさじゃ")
@@ -3991,14 +3991,14 @@ FACE MYCEN
 NAME MYCEN
 SPEAK
 ENCODE("アルム,きたか···")
-.db $E6
+PAGE
 FACE ALM
 NAME ALM
 SPEAK
 ENCODE("あっ じいちゃん!!")
 NEWLINE
 ENCODE("どうして ソフィアのしろに?")
-.db $E6
+PAGE
 SPEAK
 ENCODE("うんめいとは ざんこくなもの")
 NEWLINE
@@ -4038,7 +4038,7 @@ SPEAK
 ENCODE("それでは しさいさま")
 NEWLINE
 ENCODE("いってまいります")
-.db $E6
+PAGE
 FACE NOMA
 NAME NOMA
 SPEAK
@@ -4067,7 +4067,7 @@ SPEAK
 ENCODE("いくら [しんかんせんし]でも")
 NEWLINE
 ENCODE("おんなのおまえには きけんすぎる")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("しかし しさいさま")
@@ -4090,7 +4090,7 @@ NEWLINE
 ENCODE("なにがあったのか.わたしは")
 NEWLINE
 ENCODE("それを たしかめたいのです")
-.db $E6
+PAGE
 NAME NOMA
 SPEAK
 ENCODE("そうか···")
@@ -4350,14 +4350,14 @@ FACE MYCEN
 NAME MYCEN
 SPEAK
 ENCODE("セリカ,ひさしぶりだな")
-.db $E6
+PAGE
 FACE CELICA
 NAME CELICA
 SPEAK
 ENCODE("お···おじいさま!")
 NEWLINE
 ENCODE("どうして ここに!!")
-.db $E6
+PAGE
 NAME MYCEN
 SPEAK
 ENCODE("ふむ")
@@ -4366,7 +4366,7 @@ ENCODE("まあ いろいろあっての··")
 WAIT_CLICK
 SPEAK
 ENCODE("おまえも よくぶじに ここまできた")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("はい.いろんなひとに")
@@ -4384,7 +4384,7 @@ NEWLINE
 ENCODE("また さくもつがみのるように")
 NEWLINE
 ENCODE("ミラさまに おねがいしたいのです")
-.db $E6
+PAGE
 NAME MYCEN
 SPEAK
 ENCODE("そうか·· やはりな···")
@@ -4400,7 +4400,7 @@ NEWLINE
 ENCODE("ねがっているものが")
 NEWLINE
 ENCODE("そこにいるはずだ")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("ま··まさか!")
@@ -4413,7 +4413,7 @@ NEWLINE
 ENCODE("わかい ゆうしゃというのは")
 NEWLINE
 ENCODE("アルムのことなの,おじいさま")
-.db $E6
+PAGE
 
 L03A9DC:
 NAME MYCEN
@@ -4429,7 +4429,7 @@ ENCODE("?··· きみは···")
 WAIT_CLICK
 SPEAK
 ENCODE("セ··セリカ? セリカなの!")
-.db $E6
+PAGE
 FACE CELICA
 NAME CELICA
 SPEAK
@@ -4444,7 +4444,7 @@ SPEAK
 ENCODE("わたしが むらをでてから")
 NEWLINE
 ENCODE("もう ずいぶんもあってないもの··")
-.db $E6
+PAGE
 NAME ALM
 SPEAK
 ENCODE("そうだよ")
@@ -4463,7 +4463,7 @@ SPEAK
 ENCODE("あのときは おれ···")
 NEWLINE
 ENCODE("ほんきで じいちゃんをうらんだよ")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("わたしだって かなしかった")
@@ -4482,7 +4482,7 @@ SPEAK
 ENCODE("そしたら わたしは つかまって")
 NEWLINE
 ENCODE("ころされてしまうって···")
-.db $E6
+PAGE
 NAME ALM
 SPEAK
 ENCODE("なぜ? ")
@@ -4490,7 +4490,7 @@ NEWLINE
 ENCODE("なぜドゼーは セリカを")
 NEWLINE
 ENCODE("ころそうとするんだ")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("それは···")
@@ -4506,7 +4506,7 @@ SPEAK
 ENCODE("リゲルおうこくとの せんそう")
 NEWLINE
 ENCODE("なんとか とめられないの")
-.db $E6
+PAGE
 NAME ALM
 SPEAK
 ENCODE("それは むりだよ")
@@ -4525,7 +4525,7 @@ SPEAK
 ENCODE("このままでは ソフィアおうこくは")
 NEWLINE
 ENCODE("ほろびてしまう")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("でも リゲルもソフィアも")
@@ -4538,7 +4538,7 @@ SPEAK
 ENCODE("くになんか なくっても")
 NEWLINE
 ENCODE("しあわせに くらせるはずだわ")
-.db $E6
+PAGE
 NAME ALM
 SPEAK
 ENCODE("だめだよ.やばんなリゲルのもとでは")
@@ -4551,7 +4551,7 @@ NEWLINE
 ENCODE("ソフィアのだいちを おかすいじょう")
 NEWLINE
 ENCODE("ぼくらは たたかうしかないんだ")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("そう かなしいものね···")
@@ -4572,7 +4572,7 @@ NEWLINE
 ENCODE("えいゆうに まつりあげられて")
 NEWLINE
 ENCODE("こくおうにでも なりたいの")
-.db $E6
+PAGE
 NAME ALM
 SPEAK
 ENCODE("そんな!")
@@ -4597,7 +4597,7 @@ SPEAK
 ENCODE("その おうじょさまが みつかれば")
 NEWLINE
 ENCODE("ぼくはいつだって むらにかえるよ")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("ソフィアに おうじょなんかいないわ")
@@ -4620,7 +4620,7 @@ FACE ALM
 NAME ALM
 SPEAK
 ENCODE("セリカ!?")
-.db $E6
+PAGE
 FACE CELICA
 NAME CELICA
 SPEAK
@@ -4667,7 +4667,7 @@ NEWLINE
 ENCODE("うみをわたれるはずが")
 NEWLINE
 ENCODE("ないだろ")
-.db $E6
+PAGE
 FACE CELICA
 NAME CELICA
 SPEAK
@@ -4679,7 +4679,7 @@ NEWLINE
 ENCODE("わたしたちを まもって")
 NEWLINE
 ENCODE("くれませんか")
-.db $E6
+PAGE
 NAME SABER
 SPEAK
 ENCODE("なに?")
@@ -4830,7 +4830,7 @@ SPEAK
 ENCODE("よそのくにからきた かわいいこで")
 NEWLINE
 ENCODE("ギースは どれいにするつもりだ")
-.db $E6
+PAGE
 FACE CELICA
 NAME CELICA
 SPEAK
@@ -4840,7 +4840,7 @@ SPEAK
 ENCODE("ねぇ ジェシー,なんとか")
 NEWLINE
 ENCODE("たすけるほうほうは ないの")
-.db $E6
+PAGE
 NAME JESSE
 SPEAK
 ENCODE("ムリだよ")
@@ -4852,11 +4852,11 @@ ENCODE("いっぱいいる")
 WAIT_CLICK
 SPEAK
 ENCODE("おれたちだけじゃ とてもむりさ")
-.db $E6
+PAGE
 NAME CELICA
 SPEAK
 ENCODE("でも,なにかほうほうが···")
-.db $E6
+PAGE
 NAME JESSE
 SPEAK
 ENCODE("うーんそうだな···")

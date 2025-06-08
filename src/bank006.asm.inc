@@ -262,6 +262,7 @@
 .db $98 $8F $9F $E6
 .db $E7 $E7 $ED $ED
 
+L068400:
 .db $00
 .db $00
 .db $00
@@ -279,6 +280,14 @@
 .db $00
 .db $03
 .db $00
+L068411:
+.db $03
+L068412:
+.db $00
+L068413:
+.db $03
+.db $00
+L068415:
 .db $03
 .db $00
 .db $03
@@ -289,11 +298,9 @@
 .db $00
 .db $03
 .db $00
+L06841F:
 .db $03
-.db $00
-.db $03
-.db $00
-.db $03
+L068420:
 .db $00
 .db $03
 .db $00
@@ -1207,7 +1214,7 @@ L068B48:
     TAY
     LDA L0FF178.w,Y
     STA $00
-    LDA L0FF179.w,Y
+    LDA (L0FF178.w + 1),Y
     STA $01
     LDY #0
     LDX #0
@@ -8374,7 +8381,7 @@ L06BD51:
     TAY
     LDA L0FEE22.w,Y
     STA $72
-    LDA L0FEE23.w,Y
+    LDA (L0FEE22.w + 1),Y
     STA $73
     LDY $C6
     LDA ($72),Y
@@ -8407,7 +8414,7 @@ L06BD9A:
     TAX
     LDA L0FEE22.w,X
     STA $72
-    LDA L0FEE23.w,X
+    LDA (L0FEE22.w + 1),X
     STA $73
     PLA
     TAX

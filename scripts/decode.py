@@ -68,11 +68,7 @@ def decode(code):
     c = code.split(' ')
     output = []
     in_string = False
-    next_is_face = False
     for cc in c:
-        if next_is_face:
-            output += characters[cc]
-            continue
         match cc:
             case '0F':
                 output[-1] = tenten[output[-1]]
@@ -104,9 +100,6 @@ def decode(code):
                             output += "WAIT_CLICK\n"
                         case 'EF':
                             output += "STOP\n"
-                        case 'F0':
-                            output += "FACE "
-                            next_is_face = True
                         case _:
                             output += f" ${cc}"
 

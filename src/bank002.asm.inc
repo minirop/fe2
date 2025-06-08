@@ -1869,6 +1869,8 @@ L02B490:
 .db $04 $30 $31 $07 $30 $04 $31 $0C
 .db $30 $04 $31 $0C $30 $09 $31 $02
 .db $30 $0E $31 $02 $30 $07 $31 $FF
+
+L02B4D8:
 .db $EA $B4 $5F $B5 $CE $B6 $E2 $B6
 .db $B9 $B7 $70 $B8 $53 $B9 $A7 $B9
 .db $AE $BA $0E $0F $00 $00 $FE $24
@@ -2197,7 +2199,7 @@ L02BC00:
     LDA #14
     JMP L0FE6B8.w
 
-L02BC09:
+L02BC09: ; ???
 .dw $7613
 .dw $796A
 .db $00
@@ -2619,8 +2621,9 @@ L02BEF0:
     LDA #10
     JMP L0FCA94.w
 
-.db $FB
-.db $BE
+.dw L02BEFB
+
+L02BEFB:
 .db $3F
 .db $00
 .db $20
@@ -2657,6 +2660,8 @@ L02BEF0:
 .db $20
 .db $20
 .db $00
+
+L02BF1F:
 .db $00
 .db $40
 .db $00
@@ -2786,22 +2791,16 @@ L02BEF0:
 .db $41
 .db $00
 .db $08
-.db $39
-.db $BD
-.db $3D
-.db $C7
-.db $03
-.db $BD
-.db $1F
-.db $BF
-.db $1F
-.db $BF
-.db $1F
-.db $BF
-.db $1F
-.db $BF
-.db $D8
-.db $B4
+
+.dw L02BD39
+.dw L0FC73D
+.dw L02BD03
+.dw L02BF1F
+.dw L02BF1F
+.dw L02BF1F
+.dw L02BF1F
+.dw L02B4D8
+
 .db $70
 .db $00
 .db $68

@@ -1090,31 +1090,31 @@ L0587BB:
 
 L0587C7:
 ENCODE("ちから")
-.db $EF
+STOP
 
 L0587CB:
 ENCODE("わざ")
-.db $EF
+STOP
 
 L0587CF:
 ENCODE("すばやさ")
-.db $EF
+STOP
 
 L0587D5:
 ENCODE("うん")
-.db $EF
+STOP
 
 L0587D8:
 ENCODE("しゅびりょく")
-.db $EF
+STOP
 
 L0587E0:
 ENCODE("さいだいHP")
-.db $EF
+STOP
 
 L0587E8:
 ENCODE("まりょく")
-.db $EF
+STOP
 
 L0587ED:
 .dw $0312
@@ -2132,6 +2132,7 @@ L058E85:
 .db $C9
 .db $CA
 .db $01
+
 L058E98:
 .db $07
 .db $02
@@ -2155,6 +2156,7 @@ L058E98:
 .db $03
 .db $01
 .db $0E
+
 L058EAE:
 .db $07
 .db $02
@@ -2178,6 +2180,7 @@ L058EAE:
 .db $03
 .db $11
 .db $0E
+
 L058EC4:
 .db $31
 .db $32
@@ -2201,6 +2204,7 @@ L058EC4:
 .db $44
 .db $C5
 .db $46
+
 L058EDA:
 .db $47
 .db $48
@@ -4110,11 +4114,13 @@ L059B1C:
 L059B2A:
 .db $0F
 .db $0B
+
 L059B2C:
 .db $03
 .db $07
 .db $0B
 .db $0F
+
 L059B30:
 .db $0F
 .db $30
@@ -4132,6 +4138,7 @@ L059B30:
 .db $30
 .db $22
 .db $11
+
 L059B40:
     LDY #1
 L059B42:
@@ -8315,10 +8322,9 @@ L05BF83:
 .db $2F
 .db $54
 .db $50
-
-L05BFA0:
-    JMP L05819C.w
-
+.db $4C
+.db $9C
+.db $81
 .db $00
 .db $9C
 .db $81

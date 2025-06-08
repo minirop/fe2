@@ -1200,23 +1200,15 @@ ENCODE("なまえ    HP/MAX")
 NEWLINE
 
 L0B898D:
-ENCODE("なまえ     ")
-.db $F2
-ENCODE(" ")
-.db $F0 $F1
-ENCODE(" ")
+ENCODE("なまえ     力 守備 ")
 NEWLINE
 
 L0B899B:
-ENCODE("なまえ    ")
-.db $BF
-ENCODE("さ わざ ")
+ENCODE("なまえ    連さ わざ ")
 NEWLINE
 
 L0B89AA:
-ENCODE("なまえ    うん ")
-.db $DF $F0
-ENCODE(" ")
+ENCODE("なまえ    うん 魔守 ")
 NEWLINE
 
 L0B89B8:
@@ -4469,23 +4461,11 @@ ENCODE("LV EXP  HP ")
 NEWLINE
 
 L0BA185:
-ENCODE(" ")
-.db $F2
-ENCODE(" ")
-.db $F0
-.db $F1
-ENCODE("  ")
-.db $BA
-ENCODE(" ")
-.db $BF
-ENCODE("さ")
+ENCODE(" 力 守備  技 連さ")
 NEWLINE
 
 L0BA191:
-ENCODE("うん ")
-.db $DF
-.db $F0
-ENCODE(" へいしゅ ")
+ENCODE("うん 魔守 へいしゅ ")
 NEWLINE
 
 L0BA19D:
@@ -6726,28 +6706,24 @@ NEWLINE
 .dw L0BB52B
 
 L0BB211:
-ENCODE("ア")
-.db $90
-ENCODE("つお")
-.db $E9
-ENCODE("い")
-.db $E0 $EC
-ENCODE("あ は")
+.db $30 $90 $12 $04
+.db $E9 $01
+.db $E0
+PLACEHOLDER(0)
+ENCODE(" は")
 NEWLINE
-.db $EC
-ENCODE("い をとなえた")
+PLACEHOLDER(1)
+ENCODE(" をとなえた")
 STOP
 
 L0BB226:
-ENCODE("タ")
-.db $90
-ENCODE("とお")
-.db $E9
-ENCODE("い")
-.db $E0 $EC
-ENCODE("あは ")
-.db $EC
-ENCODE("いに")
+.db $40 $90 $14 $04
+.db $E9 $01
+.db $E0
+PLACEHOLDER(0)
+ENCODE("は ")
+PLACEHOLDER(1)
+ENCODE("に")
 NEWLINE
 ENCODE("なることをのぞみますか?")
 NEWLINE
@@ -6759,19 +6735,19 @@ ENCODE("マタい")
 .db $E2
 
 L0BB249:
-.db $EC
-ENCODE("あは")
-.db $EC
-ENCODE("いに")
+PLACEHOLDER(0)
+ENCODE("は")
+PLACEHOLDER(1)
+ENCODE("に")
 NEWLINE
 ENCODE("クラスチェンジした!!!")
 .db $E7
 
 L0BB25E:
-.db $EC
-ENCODE("あは")
-.db $EC
-ENCODE("いに")
+PLACEHOLDER(0)
+ENCODE("は")
+PLACEHOLDER(1)
+ENCODE("に")
 NEWLINE
 ENCODE("クラスチェンジするのを")
 NEWLINE
@@ -6779,11 +6755,8 @@ ENCODE("あきらめた")
 STOP
 
 L0BB278:
-ENCODE("ア")
-.db $90
-ENCODE("とお")
-.db $E9
-ENCODE("い")
+.db $30 $90 $14 $04
+.db $E9 $01
 .db $E0
 ENCODE("しかくをもつものはいないようですね")
 NEWLINE
@@ -6793,9 +6766,8 @@ ENCODE("また おいでなさい")
 STOP
 
 L0BB2AD:
-ENCODE("アWつか")
-.db $E9
-ENCODE("う")
+.db $30 $80 $12 $05
+.db $E9 $02
 .db $E0
 ENCODE("だいちのせいれいよ!")
 NEWLINE
@@ -6804,8 +6776,7 @@ NEWLINE
 ENCODE("てきは メガクェイク")
 NEWLINE
 ENCODE("をとなえた!!")
-.db $E1
-ENCODE("え")
+.db $E1 $03
 STOP
 
 L0BB2E8:
@@ -6813,10 +6784,10 @@ ENCODE(" ")
 STOP
 
 L0BB2EA:
-.db $EC
-ENCODE("あは")
-.db $EC
-ENCODE("いに")
+PLACEHOLDER(0)
+ENCODE("は")
+PLACEHOLDER(1)
+ENCODE("に")
 NEWLINE
 ENCODE("クラスチェンジした!!!")
 NEWLINE
@@ -6824,123 +6795,116 @@ ENCODE("まほうぼうぎょが15あがった")
 .db $E7
 
 L0BB312:
-ENCODE("ア")
-.db $90
-ENCODE("つお")
-.db $E9
-ENCODE("い")
-.db $E0 $EC
-ENCODE("あ は")
-.db $EC
-ENCODE("いに")
+.db $30 $90 $12 $04
+.db $E9 $01
+.db $E0
+PLACEHOLDER(0)
+ENCODE(" は")
+PLACEHOLDER(1)
+ENCODE("に")
 NEWLINE
-.db $EC
-ENCODE("う をわたした")
+PLACEHOLDER(2)
+ENCODE(" をわたした")
 STOP
 
 L0BB32A:
-ENCODE("タ")
-.db $90
-ENCODE("つお")
-.db $E9
-ENCODE("い")
-.db $E0 $EC
-ENCODE("あ は")
-.db $EC
-ENCODE("いから")
+.db $40 $90 $12 $04
+.db $E9 $01
+.db $E0
+PLACEHOLDER(0)
+ENCODE(" は")
+PLACEHOLDER(1)
+ENCODE("から")
 NEWLINE
-.db $EC
-ENCODE("え をうけとった")
+PLACEHOLDER(3)
+ENCODE(" をうけとった")
 STOP
 
 L0BB344:
-ENCODE("タ")
-.db $90
-ENCODE("つお")
-.db $E9
-ENCODE("い")
-.db $E0 $EC
-ENCODE("あと ")
-.db $EC
-ENCODE("いは")
+.db $40 $90 $12 $04
+.db $E9 $01
+.db $E0
+PLACEHOLDER(0)
+ENCODE("と ")
+PLACEHOLDER(1)
+ENCODE("は")
 NEWLINE
-.db $EC
-ENCODE("うと")
+PLACEHOLDER(2)
+ENCODE("と")
 NEWLINE
-.db $EC
-ENCODE("えを こうかんした")
+PLACEHOLDER(3)
+ENCODE("を こうかんした")
 STOP
 
 L0BB362:
-ENCODE("タ")
-.db $90
-ENCODE("つお")
-.db $E9
-ENCODE("い")
-.db $E0 $EC
-ENCODE("あ は")
+.db $40 $90 $12 $04
+.db $E9 $01
+.db $E0
+PLACEHOLDER(0)
+ENCODE(" は")
 NEWLINE
-.db $EC
-ENCODE("い をすてた")
+PLACEHOLDER(1)
+ENCODE(" をすてた")
 STOP
 
 L0BB376:
 ENCODE("たいりょくが")
-.db $EC
-ENCODE("うかいふくした")
+PLACEHOLDER(2)
+ENCODE("かいふくした")
 STOP
 
 L0BB386:
 ENCODE("しゅびりょくが")
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 .db $E7
 
 L0BB397:
 ENCODE("まほうぼうぎょが")
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 STOP
 
 L0BB3AA:
 ENCODE("いどうりょくが")
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 STOP
 
 L0BB3BB:
 ENCODE("ぶきレベルが")
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 STOP
 
 L0BB3CC:
 ENCODE("わざが")
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 .db $E7
 
 L0BB3D9:
 ENCODE("ちからが")
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 .db $E7
+
 L0BB3E6:
 ENCODE("さくてきが")
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 .db $E7
 
 L0BB3F4:
 ENCODE("すばやさが")
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 .db $E7
 
 L0BB403:
 ENCODE("うんが")
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 .db $E7
 
 L0BB40F:
@@ -6949,14 +6913,13 @@ ENCODE("さいだいヒットポイントが")
 ENCODE("ら")
 
 L0BB421:
-.db $EC
-ENCODE("うあがった")
+PLACEHOLDER(2)
+ENCODE("あがった")
 .db $E7
 
 L0BB429:
-ENCODE("アWつえ")
-.db $E9
-ENCODE("う")
+.db $30 $80 $12 $03
+.db $E9 $02
 .db $E0
 ENCODE("ようじゅつしは")
 NEWLINE
@@ -6966,18 +6929,17 @@ ENCODE("う")
 STOP
 
 L0BB447:
-ENCODE("タ")
-.db $90
-ENCODE("つお")
-.db $E0 $E9
-ENCODE("うもちものがいっぱいです")
+.db $40 $90 $12 $04
+.db $E0
+.db $E9 $02
+ENCODE("もちものがいっぱいです")
 NEWLINE
 ENCODE("どうしますか ?")
 .db $E7
 
 L0BB467:
-.db $E1
-ENCODE("うあずかりじょのそうこが")
+.db $E1 $02
+ENCODE("あずかりじょのそうこが")
 NEWLINE
 ENCODE("いっぱいで これいじょうものを")
 NEWLINE
@@ -6985,9 +6947,10 @@ ENCODE("あずけられません")
 WAIT_CLICK
 .db $E4 $B1
 ENCODE("ト")
+
 L0BB498:
-.db $EC
-ENCODE("あ を")
+PLACEHOLDER(0)
+ENCODE(" を")
 NEWLINE
 ENCODE("しょじひんにいれました")
 STOP
@@ -6996,21 +6959,19 @@ L0BB4AA:
 ENCODE("なにかすててください")
 .db $E7
 L0BB4B6:
-.db $EC
-ENCODE("い をすてた")
+PLACEHOLDER(1)
+ENCODE(" をすてた")
 STOP
 
 L0BB4BE:
-.db $EC
-ENCODE("あ をすてた")
+PLACEHOLDER(0)
+ENCODE(" をすてた")
 STOP
 
 L0BB4C6:
-ENCODE("タ")
-.db $90
-ENCODE("つお")
-.db $E9
-ENCODE("いこのセーブ·データをけします")
+.db $40 $90 $12 $04
+.db $E9 $01
+ENCODE("このセーブ·データをけします")
 .db $E7
 
 L0BB4DD:
@@ -7018,19 +6979,15 @@ ENCODE("データをけしました")
 STOP
 
 L0BB4E8:
-ENCODE("タ")
-.db $90
-ENCODE("つお")
-.db $E9
-ENCODE("いデータをうつしました")
+.db $40 $90 $12 $04
+.db $E9 $01
+ENCODE("データをうつしました")
 STOP
 
 L0BB4FA:
-ENCODE("タ")
-.db $90
-ENCODE("つお")
-.db $E9
-ENCODE("えデータエラーがありました!")
+.db $40 $90 $12 $04
+.db $E9 $03
+ENCODE("データエラーがありました!")
 NEWLINE
 ENCODE("ざんねんながら")
 NEWLINE
@@ -7038,9 +6995,8 @@ ENCODE("このきろくは しようできません")
 STOP
 
 L0BB52B:
-ENCODE("アマつお")
-.db $E9
-ENCODE("い")
+.db $30 $50 $12 $04
+.db $E9 $01
 SPEAK
 ENCODE("ゲームをちゅうだんしました")
 NEWLINE
@@ -7576,6 +7532,7 @@ L0BB72F:
 .db $88
 .db $85
 .db $86
+
 L0BB7F5:
 .db $13
 .db $13

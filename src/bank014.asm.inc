@@ -3807,7 +3807,8 @@ L0E9349:
 .db $00
 .db $88
 .db $93
-L0E95C0: ; list of 3 bytes
+
+L0E95C0: ; list of groups of 3 bytes
 .db $00
 .db $0A
 .db $58

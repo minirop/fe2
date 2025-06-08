@@ -3987,6 +3987,7 @@ L0FD9B9:
 .db $00
 .db $00
 .db $00
+
 L0FD9F4:
 .db $00
 .db $00
@@ -4036,6 +4037,7 @@ L0FD9F4:
 .db $0C
 .db $0E
 .db $00
+
 L0FDA24:
 .db $00
 .db $00
@@ -4134,6 +4136,7 @@ L0FDA54:
 .db $00
 .db $00
 .db $00
+
 L0FDA84:
 .db $00
 .db $00
@@ -4312,6 +4315,7 @@ L0FDAFD:
 .db $00
 .db $00
 .db $00
+
 L0FDB38:
 .db $00
 .db $00
@@ -7939,68 +7943,38 @@ L0FEE00:
 .db $05
 .db $0C
 .db $06
+
 L0FEE22:
-.db $B4
-L0FEE23:
-.db $74
-.db $D4
-.db $74
-.db $F4
-.db $74
-.db $14
-.db $75
-.db $34
-.db $75
-.db $54
-.db $75
-.db $74
-.db $75
-.db $94
-.db $75
-.db $B4
-.db $75
-.db $D4
-.db $75
-.db $F4
-.db $75
-.db $14
-.db $76
-.db $34
-.db $76
-.db $54
-.db $76
-.db $74
-.db $76
-.db $94
-.db $76
-.db $B4
-.db $76
-.db $D4
-.db $76
-.db $F4
-.db $76
-.db $14
-.db $77
-.db $34
-.db $77
-.db $54
-.db $77
-.db $74
-.db $77
-.db $94
-.db $77
-.db $B4
-.db $77
-.db $D4
-.db $77
-.db $F4
-.db $77
-.db $14
-.db $78
-.db $34
-.db $78
-.db $54
-.db $78
+.dw $74B4
+.dw $74D4
+.dw $74F4
+.dw $7514
+.dw $7534
+.dw $7554
+.dw $7574
+.dw $7594
+.dw $75B4
+.dw $75D4
+.dw $75F4
+.dw $7614
+.dw $7634
+.dw $7654
+.dw $7674
+.dw $7694
+.dw $76B4
+.dw $76D4
+.dw $76F4
+.dw $7714
+.dw $7734
+.dw $7754
+.dw $7774
+.dw $7794
+.dw $77B4
+.dw $77D4
+.dw $77F4
+.dw $7814
+.dw $7834
+.dw $7854
 
 L0FEE5E: ; tilemap ptr in SRAM?
 .dw $6E8F
@@ -8583,6 +8557,7 @@ L0FF11B:
 .db $4F
 .db $4A
 .db $4D
+
 L0FF124:
 .db $18
 .db $1D
@@ -8593,6 +8568,7 @@ L0FF124:
 .db $24
 .db $2D
 .db $30
+
 L0FF12D:
 .db $81
 .db $82
@@ -8629,6 +8605,7 @@ L0FF12D:
 .db $AB
 .db $D4
 .db $00
+
 L0FF150:
 .db $07
 .db $1D
@@ -8644,6 +8621,7 @@ L0FF150:
 .db $2D
 .db $22
 .db $FF
+
 L0FF15E:
 .db $00
 .db $03
@@ -8658,6 +8636,7 @@ L0FF15E:
 .db $10
 .db $11
 .db $13
+
 L0FF16B:
 .db $00
 .db $01
@@ -8672,29 +8651,30 @@ L0FF16B:
 .db $00
 .db $00
 .db $00
+
+; seems to be only loaded in bank 06
+; hence the following values are
+; L06 labels
 L0FF178:
-.db $7E
-L0FF179:
-.db $F1
-.db $81
-.db $F1
-.db $86
-.db $F1
-.db $13
-.db $84
+.dw L0FF17E
+.dw L0FF181
+.dw L0FF186
+
+L0FF17E:
+.dw L068413
 .db $FF
-.db $20
-.db $84
-.db $1F
-.db $84
+
+L0FF181:
+.dw L068420
+.dw L06841F
 .db $FF
-.db $12
-.db $84
-.db $11
-.db $84
-.db $15
-.db $84
+
+L0FF186:
+.dw L068412
+.dw L068411
+.dw L068415
 .db $FF
+
 .db $0C
 .db $01
 .db $3B
@@ -8822,33 +8802,29 @@ L0FF179:
 .db $00
 .db $36
 .db $FF
+
 L0FF20C:
-.db $16
-L0FF20D:
-.db $F2
-.db $19
-.db $F2
-.db $1C
-.db $F2
-.db $1F
-.db $F2
-.db $22
-.db $F2
-.db $9B
-.db $FF
-.db $01
-.db $93
-.db $FF
-.db $0A
-.db $BE
-.db $FF
-.db $0B
-.db $91
-.db $FF
-.db $0C
-.db $86
-.db $FF
-.db $12
+.dw L0FF216
+.dw L0FF219
+.dw L0FF21C
+.dw L0FF21F
+.dw L0FF222
+
+L0FF216:
+.db $9B $FF $01
+
+L0FF219:
+.db $93 $FF $0A
+
+L0FF21C:
+.db $BE $FF $0B
+
+L0FF21F:
+.db $91 $FF $0C
+
+L0FF222:
+.db $86 $FF $12
+
 .db $BE
 .db $01
 .db $37
@@ -8874,12 +8850,14 @@ L0FF20D:
 .db $02
 .db $0D
 .db $FF
+
 L0FF23E:
 .db $02
 .db $04
 .db $07
 .db $0A
 .db $0A
+
 L0FF243:
 .db $93
 .db $96
@@ -8891,6 +8869,7 @@ L0FF243:
 .db $91
 .db $81
 .db $FF
+
 L0FF24D:
 .db $01
 .db $02
@@ -8901,9 +8880,11 @@ L0FF24D:
 .db $07
 .db $08
 .db $09
+
 L0FF256:
 .db $D8
 .db $FF
+
 L0FF258:
     STA $02
     JMP L0FF262.w
@@ -8995,74 +8976,52 @@ L0FF2D4:
     STA $01
     RTS
 
-.db $A9
-.db $15
-.db $18
-.db $65
-.db $7A
-.db $85
-.db $7A
-.db $90
-.db $02
-.db $E6
-.db $7B
-.db $A0
-.db $00
-.db $B1
-.db $7A
-.db $C9
-.db $00
-.db $F0
-.db $0F
-.db $A0
-.db $12
-.db $B1
-.db $7A
-.db $F0
-.db $E7
-.db $C9
-.db $FF
-.db $F0
-.db $E3
-.db $C9
-.db $F0
-.db $F0
-.db $DF
-.db $18
-.db $60
-.db $A9
-.db $15
-.db $18
-.db $65
-.db $78
-.db $85
-.db $78
-.db $90
-.db $02
-.db $E6
-.db $79
-.db $A0
-.db $00
-.db $B1
-.db $78
-.db $C9
-.db $00
-.db $F0
-.db $0D
-.db $A0
-.db $12
-.db $B1
-.db $78
-.db $C9
-.db $FF
-.db $F0
-.db $04
-.db $C9
-.db $F0
-.db $D0
-.db $E1
-.db $18
-.db $60
+ L0FF2DD:
+    LDA #21
+    CLC
+    ADC $7A
+    STA $7A
+    BCC L0FF2E8
+    INC $7B
+L0FF2E8:
+    LDY #0
+    LDA ($7A),Y
+    CMP #0
+    BEQ L0FF2FF
+    LDY #18
+    LDA ($7A),Y
+    BEQ L0FF2DD
+    CMP #255
+    BEQ L0FF2DD
+    CMP #240
+    BEQ L0FF2DD
+    CLC
+L0FF2FF:
+    RTS
+
+L0FF300:
+    LDA #21
+    CLC
+    ADC $78
+    STA $78
+    BCC L0FF30B
+    INC $79
+L0FF30B:
+    LDY #0
+    LDA ($78),Y
+    CMP #0
+    BEQ L0FF320
+    LDY #18
+    LDA ($78),Y
+    CMP #255
+    BEQ L0FF31F
+    CMP #240
+    BNE L0FF300
+L0FF31F:
+    CLC
+L0FF320:
+    RTS
+
 L0FF321:
     LDA #106
     STA $01
@@ -9122,8 +9081,9 @@ L0FF36F:
 L0FF379:
     DEC $09
     BPL L0FF34A
-.db $38
-.db $60
+    SEC
+    RTS
+
 L0FF37F:
     LDA $09
     STA $74DD
