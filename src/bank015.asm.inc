@@ -4403,103 +4403,103 @@ L0FDB73:
 .dw L0FDC22
 .dw L0FDC27
 
-L0FDBA3:
+L0FDBA3: ; cavalier
 ENCODE("ナイト")
 STOP
 
-L0FDBA7:
+L0FDBA7: ; knight
 ENCODE("アーマー")
 STOP
 
-L0FDBAC:
+L0FDBAC: ; pegasus knight
 ENCODE("Pナイト")
 STOP
 
-L0FDBB1:
+L0FDBB1: ; paladin
 ENCODE("パラディン")
 STOP
 
-L0FDBB9:
+L0FDBB9: ; falcon knight
 ENCODE("Fナイト")
 STOP
 
-L0FDBBE:
+L0FDBBE: ; soldier
 ENCODE("ソルジャー")
 STOP
 
-L0FDBC5:
+L0FDBC5: ; gold knight
 ENCODE("Gナイト")
 STOP
 
-L0FDBCA:
+L0FDBCA: ; mercenary
 ENCODE("ようへい")
 STOP
 
-L0FDBCF:
+L0FDBCF: ; myrmidon
 ENCODE("けんし")
 STOP
 
-L0FDBD3:
+L0FDBD3: ; dread fighter
 ENCODE("ませんし")
 STOP
 
-L0FDBD8:
+L0FDBD8: ; priestess
 ENCODE("しんかん")
 STOP
 
-L0FDBDD:
+L0FDBDD: ; archer
 ENCODE("アーチャー")
 STOP
 
-L0FDBE3:
+L0FDBE3: ; sniper
 ENCODE("スナイパー")
 STOP
 
-L0FDBEA:
+L0FDBEA: ; villager
 ENCODE("むらびと")
 STOP
 
-L0FDBF0:
+L0FDBF0: ; mage (male?)
 ENCODE("まどうし")
 STOP
 
-L0FDBF6:
+L0FDBF6: ; mage (female?)
 ENCODE("まどうし")
 STOP
 
-L0FDBFC:
+L0FDBFC: ; saint
 ENCODE("せいじょ")
 STOP
 
-L0FDC02:
+L0FDC02: ; cleric
 ENCODE("シスター")
 STOP
 
-L0FDC07:
+L0FDC07: ; sage
 ENCODE("けんじゃ")
 STOP
 
-L0FDC0D:
+L0FDC0D: ; bow knight
 ENCODE("ボウナイト")
 STOP
 
-L0FDC14:
+L0FDC14: ; fighter
 ENCODE("せんし")
 STOP
 
-L0FDC18:
+L0FDC18: ; hero
 ENCODE("ゆうしゃ")
 STOP
 
-L0FDC1D:
+L0FDC1D: ; baron
 ENCODE("バロン")
 STOP
 
-L0FDC22:
+L0FDC22: ; hero
 ENCODE("ゆうしゃ")
 STOP
 
-L0FDC27:
+L0FDC27: ; princess
 ENCODE("プリンセス")
 STOP
 
@@ -4527,58 +4527,59 @@ L0FDC2E:
 .dw L0FDCA7
 .dw L0FDC1D
 
-L0FDC5A:
+L0FDC5A: ; gargoyle
 ENCODE("ガーゴイル")
 STOP
 
-L0FDC62:
+L0FDC62: ; high knight
 ENCODE("ハイナイト")
 STOP
 
-L0FDC68:
+L0FDC68: ; necrodragon
 ENCODE("Dゾンビ")
 STOP
 
-L0FDC6F:
+L0FDC6F: ; general
 ENCODE("ジェネラル")
 STOP
 
-L0FDC76:
+L0FDC76: ; berserker
 ENCODE("きょうせんし")
 STOP
 
-L0FDC7D:
+L0FDC7D: ; revenant
 ENCODE("ゾンビ")
 STOP
 
-L0FDC83:
+L0FDC83: ; brigand
 ENCODE("とうぞく")
 STOP
 
-L0FDC89:
+L0FDC89: ; bonewalker
 ENCODE("スケルトン")
 STOP
 
-L0FDC8F:
+L0FDC8F: ; arcanist
 ENCODE("ようじゅつし")
 STOP
 
-L0FDC97:
+L0FDC97: ; witch
 ENCODE("まじょ")
 STOP
 
-L0FDC9C:
+L0FDC9C: ; mogall
 ENCODE("ビグル")
 STOP
 
-L0FDCA2:
+L0FDCA2: ; cantor
 ENCODE("きとうし")
 STOP
 
-L0FDCA7:
+L0FDCA7: ; fell god
 ENCODE("じゃしん")
 STOP
 
+; items names
 L0FDCAD:
 .dw L0FDD23
 .dw L0FDD23
@@ -4644,95 +4645,95 @@ L0FDD23:
 ENCODE(" ")
 STOP
 
-L0FDD25:
+L0FDD25: ; steel lance
 ENCODE("はがねのやり")
 STOP
 
-L0FDD2D:
+L0FDD2D: ; silver lance
 ENCODE("ぎんのやり")
 STOP
 
-L0FDD34:
+L0FDD34: ; javelin
 ENCODE("てやり")
 STOP
 
-L0FDD38:
+L0FDD38: ; blessed lance
 ENCODE("せいなるやり")
 STOP
 
-L0FDD3F:
+L0FDD3F: ; knight killer/Ribersbane
 ENCODE("ナイトキラー")
 STOP
 
-L0FDD46:
+L0FDD46: ; Gradivus
 ENCODE("グラディウス")
 STOP
 
-L0FDD4F:
+L0FDD4F: ; Astra
 ENCODE("りゅうせい")
 STOP
 
-L0FDD55:
+L0FDD55: ; Sol
 ENCODE("たいよう")
 STOP
 
-L0FDD5A:
+L0FDD5A: ; Luna
 ENCODE("げっこう")
 STOP
 
-L0FDD60:
+L0FDD60: ; steel sword
 ENCODE("はがねのつるぎ")
 STOP
 
-L0FDD6A:
+L0FDD6A: ; silver lance
 ENCODE("ぎんのつるぎ")
 STOP
 
-L0FDD73:
+L0FDD73: ; brave sword
 ENCODE("ゆうしゃのけん")
 STOP
 
-L0FDD7B:
+L0FDD7B: ; shadow sword
 ENCODE("あんこくのけん")
 STOP
 
-L0FDD83:
+L0FDD83: ; levin sword
 ENCODE("いかづちのけん")
 STOP
 
-L0FDD8C:
+L0FDD8C: ; blessed sword
 ENCODE("せいなるつるぎ")
 STOP
 
-L0FDD95:
+L0FDD95: ; Falchion
 ENCODE("ファルシオン")
 STOP
 
-L0FDD9C:
+L0FDD9C: ; royal sword
 ENCODE("おうけのつるぎ")
 STOP
 
-L0FDDA5:
+L0FDDA5: ; tentacle
 ENCODE("しょくしゅ")
 STOP
 
-L0FDDAB:
+L0FDDAB: ; steel bow
 ENCODE("はがねのゆみ")
 STOP
 
-L0FDDB3:
+L0FDDB3: ; blessed bow
 ENCODE("せいなるゆみ")
 STOP
 
-L0FDDBA:
+L0FDDBA: ; silver bow
 ENCODE("ぎんのゆみ")
 STOP
 
-L0FDDC1:
+L0FDDC1: ; leather shield
 ENCODE("かわのたて")
 STOP
 
-L0FDDC7:
+L0FDDC7: ; steel shield
 ENCODE("はがねのたて")
 STOP
 
@@ -4740,131 +4741,131 @@ L0FDDCF:
 ENCODE("ぎんのたて")
 STOP
 
-L0FDDD6:
+L0FDDD6: ; silver shield
 ENCODE("せいなるたて")
 STOP
 
-L0FDDDD:
+L0FDDDD: ; hexlock shield
 ENCODE("まふうじのたて")
 STOP
 
-L0FDDE6:
+L0FDDE6: ; dracoshield
 ENCODE("りゅうのたて")
 STOP
 
-L0FDDED:
+L0FDDED: ; blessed ring
 ENCODE("せいなるゆびわ")
 STOP
 
-L0FDDF6:
+L0FDDF6: ; angel ring
 ENCODE("てんしのゆびわ")
 STOP
 
-L0FDDFF:
+L0FDDFF: ; speed ring
 ENCODE("はやさのゆびわ")
 STOP
 
-L0FDE08:
+L0FDE08: ; mage ring
 ENCODE("まどうのゆびわ")
 STOP
 
-L0FDE12:
+L0FDE12: ; player ring
 ENCODE("いのりのゆびわ")
 STOP
 
-L0FDE1B:
+L0FDE1B: ; fire (tome)
 ENCODE("ファイアー")
 STOP
 
-L0FDE21:
+L0FDE21: ; thunder (tome)
 ENCODE("サンダー")
 STOP
 
-L0FDE27:
+L0FDE27: ; ragnarok
 ENCODE("ライナロック")
 STOP
 
-L0FDE2E:
+L0FDE2E: ; seraphim
 ENCODE("エンジェル")
 STOP
 
-L0FDE35:
+L0FDE35: ; excalibur
 ENCODE("エクスカリバー")
 STOP
 
-L0FDE3E:
+L0FDE3E: ; sagittae
 ENCODE("アロー")
 STOP
 
-L0FDE42:
+L0FDE42: ; aura
 ENCODE("オーラ")
 STOP
 
-L0FDE46:
+L0FDE46: ; gaia
 ENCODE("ガイア")
 STOP
 
-L0FDE4B:
+L0FDE4B: ; miasma
 ENCODE("ドーラ")
 STOP
 
-L0FDE50:
+L0FDE50: ; mire
 ENCODE("スライム")
 STOP
 
-L0FDE55:
+L0FDE55: ; death
 ENCODE("デス")
 STOP
 
-L0FDE59:
+L0FDE59: ; medusa
 ENCODE("メデューサ")
 STOP
 
-L0FDE60:
+L0FDE60: ; ocular beam
 ENCODE("アイビーム")
 STOP
 
-L0FDE67:
+L0FDE67: ; oculus
 ENCODE("アイボール")
 STOP
 
-L0FDE6E:
+L0FDE6E: ; ???
 ENCODE("ボーマ")
 STOP
 
-L0FDE72:
+L0FDE72: ; ???
 ENCODE("ボース")
 STOP
 
-L0FDE78:
+L0FDE78: ; conjure
 ENCODE("メサイア")
 STOP
 
-L0FDE7D:
+L0FDE7D: ; recover
 ENCODE("リカバー")
 STOP
 
-L0FDE83:
+L0FDE83: ; physic
 ENCODE("リブロー")
 STOP
 
-L0FDE89:
+L0FDE89: ; nosferatu
 ENCODE("リザイア")
 STOP
 
-L0FDE8F:
+L0FDE8F: ; warp
 ENCODE("ワープ")
 STOP
 
-L0FDE94:
+L0FDE94: ; fortify
 ENCODE("リザーブ")
 STOP
 
-L0FDE9B:
+L0FDE9B: ; invoke
 ENCODE("イリュージョン")
 STOP
 
-L0FDEA4:
+L0FDEA4: ; expel
 ENCODE("ディル")
 STOP
 

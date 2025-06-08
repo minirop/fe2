@@ -1484,416 +1484,148 @@ L08906A:
 .db $F0
 .db $01
 .db $FF
-.db $01
-.db $15
-.db $01
-.db $1C
-.db $00
-.db $0A
-.db $07
-.db $06
-.db $07
-.db $06
-.db $00
-.db $00
-.db $02
-.db $0B
-.db $01
-.db $14
-.db $00
-.db $08
-.db $06
-.db $06
-.db $08
-.db $04
-.db $01
-.db $00
-.db $03
-.db $07
-.db $07
-.db $2C
-.db $00
-.db $16
-.db $0E
-.db $0B
-.db $03
-.db $12
-.db $00
-.db $00
-.db $04
-.db $13
-.db $07
-.db $1C
-.db $00
-.db $0C
-.db $10
-.db $08
-.db $01
-.db $06
-.db $B3
-.db $00
-.db $05
-.db $06
-.db $02
-.db $16
-.db $00
-.db $0A
-.db $04
-.db $04
-.db $02
-.db $06
-.db $00
-.db $00
-.db $06
-.db $0E
-.db $01
-.db $14
-.db $00
-.db $07
-.db $01
-.db $02
-.db $0A
-.db $03
-.db $00
-.db $00
-.db $07
-.db $0E
-.db $02
-.db $16
-.db $00
-.db $07
-.db $02
-.db $06
-.db $04
-.db $03
-.db $00
-.db $00
-.db $08
-.db $0E
-.db $05
-.db $18
-.db $00
-.db $09
-.db $04
-.db $04
-.db $02
-.db $04
-.db $00
-.db $00
-.db $09
-.db $03
-.db $01
-.db $14
-.db $00
-.db $08
-.db $04
-.db $07
-.db $0B
-.db $04
-.db $00
-.db $00
-.db $0A
-.db $01
-.db $06
-.db $1A
-.db $00
-.db $0C
-.db $07
-.db $07
-.db $06
-.db $07
-.db $00
-.db $02
-.db $0A
-.db $01
-.db $06
-.db $1A
-.db $00
-.db $0C
-.db $07
-.db $07
-.db $06
-.db $07
-.db $00
-.db $02
-.db $0C
-.db $06
-.db $04
-.db $1C
-.db $00
-.db $0B
-.db $04
-.db $05
-.db $03
-.db $07
-.db $00
-.db $00
-.db $0D
-.db $10
-.db $01
-.db $14
-.db $00
-.db $09
-.db $01
-.db $07
-.db $05
-.db $02
-.db $03
-.db $00
-.db $0E
-.db $12
-.db $01
-.db $12
-.db $00
-.db $08
-.db $03
-.db $04
-.db $04
-.db $01
-.db $05
-.db $00
-.db $0F
-.db $12
-.db $01
-.db $12
-.db $00
-.db $07
-.db $02
-.db $05
-.db $07
-.db $01
-.db $05
-.db $00
-.db $10
-.db $0F
-.db $01
-.db $16
-.db $00
-.db $08
-.db $02
-.db $04
-.db $09
-.db $04
-.db $01
-.db $00
-.db $11
-.db $08
-.db $03
-.db $18
-.db $00
-.db $0A
-.db $05
-.db $08
-.db $02
-.db $06
-.db $00
-.db $00
-.db $12
-.db $02
-.db $01
-.db $1E
-.db $00
-.db $0E
-.db $05
-.db $02
-.db $01
-.db $0C
-.db $00
-.db $00
-.db $13
-.db $04
-.db $01
-.db $1A
-.db $00
-.db $0C
-.db $0E
-.db $0C
-.db $0D
-.db $07
-.db $00
-.db $00
-.db $14
-.db $0C
-.db $03
-.db $18
-.db $00
-.db $0A
-.db $03
-.db $04
-.db $02
-.db $05
-.db $00
-.db $00
-.db $15
-.db $0C
-.db $04
-.db $17
-.db $00
-.db $0B
-.db $06
-.db $04
-.db $06
-.db $04
-.db $00
-.db $00
-.db $16
-.db $0E
-.db $0A
-.db $1E
-.db $00
-.db $0E
-.db $03
-.db $03
-.db $04
-.db $05
-.db $00
-.db $00
-.db $17
-.db $08
-.db $06
-.db $1C
-.db $00
-.db $0B
-.db $0A
-.db $0C
-.db $09
-.db $05
-.db $00
-.db $00
-.db $18
-.db $04
-.db $05
-.db $20
-.db $00
-.db $0C
-.db $06
-.db $09
-.db $03
-.db $07
-.db $00
-.db $00
-.db $19
-.db $10
-.db $05
-.db $18
-.db $00
-.db $0D
-.db $0B
-.db $0C
-.db $04
-.db $05
-.db $13
-.db $31
-.db $1A
-.db $09
-.db $05
-.db $20
-.db $00
-.db $0D
-.db $11
-.db $11
-.db $06
-.db $09
-.db $00
-.db $0D
-.db $1B
-.db $08
-.db $01
-.db $16
-.db $00
-.db $09
-.db $09
-.db $0A
-.db $06
-.db $04
-.db $00
-.db $00
-.db $1C
-.db $0F
-.db $07
-.db $1C
-.db $00
-.db $0C
-.db $09
-.db $07
-.db $02
-.db $05
-.db $11
-.db $00
-.db $1D
-.db $10
-.db $03
-.db $16
-.db $00
-.db $0B
-.db $08
-.db $0A
-.db $0F
-.db $03
-.db $41
-.db $3A
-.db $1E
-.db $11
-.db $01
-L089241:
-.db $1C
-.db $00
-.db $0E
-.db $0C
-.db $0A
-.db $02
-.db $03
-.db $86
-.db $00
-.db $1F
-.db $03
-.db $05
-.db $18
-.db $00
-.db $0B
-.db $0C
-.db $0C
-.db $0C
-.db $05
-.db $00
-.db $37
-.db $20
-.db $03
-.db $08
-.db $1C
-.db $00
-.db $0C
-.db $09
-.db $0A
-.db $04
-.db $06
-.db $00
-.db $04
-.db $21
-.db $03
-.db $03
-.db $14
-.db $00
-.db $09
-.db $05
-.db $0B
-.db $05
-.db $04
-.db $00
-.db $00
-.db $22
-.db $07
-.db $03
-.db $28
-.db $00
-.db $14
-.db $0D
-.db $0E
-.db $04
-.db $0E
-.db $00
-.db $00
-.db $00
+
+CHARACTERS_STATS:
+; id class level HP zero STR skill speed
+; luck defence mage? unk
+L0890E2:
+.db ALM FIGHTER $01 $1C $00 $0A $07 $06
+.db $07 $06 $00 $00
+
+L0890EE:
+.db CELICA PRIESTESS $01 $14 $00 $08 $06 $06
+.db $08 $04 $01 $00
+
+L0890FA:
+.db MYCEN GOLD_KNIGHT $07 $2C $00 $16 $0E $0B
+.db $03 $12 $00 $00
+
+L089106:
+.db NOMA SAGE $07 $1C $00 $0C $10 $08
+.db $01 $06 $B3 $00
+
+L089112:
+.db LUKAS SOLDIER $02 $16 $00 $0A $04 $04
+.db $02 $06 $00 $00
+
+L08911E:
+.db KLIFF VILLAGER $01 $14 $00 $07 $01 $02
+.db $0A $03 $00 $00
+
+L08912A:
+.db TOBIN VILLAGER $02 $16 $00 $07 $02 $06
+.db $04 $03 $00 $00
+
+L089136:
+.db GRAY VILLAGER $05 $18 $00 $09 $04 $04
+.db $02 $04 $00 $00
+
+L089142:
+.db CLAIR PEGASUS_KNIGHT $01 $14 $00 $08 $04 $07
+.db $0B $04 $00 $00
+
+L08914E:
+.db CLIVE CAVALIER $06 $1A $00 $0C $07 $07
+.db $06 $07 $00 $02
+
+L08915A:
+.db CLIVE CAVALIER $06 $1A $00 $0C $07 $07
+.db $06 $07 $00 $02
+
+L089166:
+.db FORSYTH SOLDIER $04 $1C $00 $0B $04 $05
+.db $03 $07 $00 $00
+
+L089172:
+.db MAE MAGE_F $01 $14 $00 $09 $01 $07
+.db $05 $02 $03 $00
+
+L08917E:
+.db SILQUE CLERIC $01 $12 $00 $08 $03 $04
+.db $04 $01 $05 $00
+
+L08918A:
+.db GENNY CLERIC $01 $12 $00 $07 $02 $05
+.db $07 $01 $05 $00
+
+L089196:
+.db BOEY MAGE_M $01 $16 $00 $08 $02 $04
+.db $09 $04 $01 $00
+
+L0891A2:
+.db KAMUI MERCENARY $03 $18 $00 $0A $05 $08
+.db $02 $06 $00 $00
+
+L0891AE:
+.db VALBAR KNIGHT $01 $1E $00 $0E $05 $02
+.db $01 $0C $00 $00
+
+L0891BA:
+.db MATHILDA PALADIN $01 $1A $00 $0C $0E $0C
+.db $0D $07 $00 $00
+
+L0891C6:
+.db PYTHON ARCHER $03 $18 $00 $0A $03 $04
+.db $02 $05 $00 $00
+
+L0891D2:
+.db LEO ARCHER $04 $17 $00 $0B $06 $04
+.db $06 $04 $00 $00
+
+L0891DE:
+.db ATLAS VILLAGER $0A $1E $00 $0E $03 $03
+.db $04 $05 $00 $00
+
+L0891EA:
+.db JESSE MERCENARY $06 $1C $00 $0B $0A $0C
+.db $09 $05 $00 $00
+
+L0891F6:
+.db FORSYTH_18 PALADIN $05 $20 $00 $0C $06 $09
+.db $03 $07 $00 $00
+
+L089202:
+.db SONYA MAGE_F $05 $18 $00 $0D $0B $0C
+.db $04 $05 $13 $31
+
+L08920E:
+.db DEEN MYRMIDON $05 $20 $00 $0D $11 $11
+.db $06 $09 $00 $0D
+
+L08921A:
+.db SABER MERCENARY $01 $16 $00 $09 $09 $0A
+.db $06 $04 $00 $00
+
+L089226:
+.db LUTHIER MAGE_M $07 $1C $00 $0C $09 $07
+.db $02 $05 $11 $00
+
+L089232:
+.db DELTHEA MAGE_F $03 $16 $00 $0B $08 $0A
+.db $0F $03 $41 $3A
+
+L08923E:
+.db TATIANA SAINT $01 $1C $00 $0E $0C $0A
+.db $02 $03 $86 $00
+
+L08924A:
+.db CATRIA PEGASUS_KNIGHT $05 $18 $00 $0B $0C $0C
+.db $0C $05 $00 $37
+
+L089256:
+.db PALLA PEGASUS_KNIGHT $08 $1C $00 $0C $09 $0A
+.db $04 $06 $00 $04
+
+L089262:
+.db EST PEGASUS_KNIGHT $03 $14 $00 $09 $05 $0B
+.db $05 $04 $00 $00
+
+L08926E:
+.db ZEKE GOLD_KNIGHT $03 $28 $00 $14 $0D $0E
+.db $04 $0E $00 $00
+
+.db $00
+
 L08927B:
 .db $43
 L08927C:
@@ -1918,6 +1650,7 @@ L08927C:
 .db $00
 .db $00
 .db $00
+
 L089291:
 .dw L0892A1
 .dw L0892B2
@@ -3745,7 +3478,7 @@ L08A11E:
     LDA #0
     BEQ L08A133
 L08A130:
-    LDA L089241.w,Y
+    LDA (L08923E.w + 3),Y
 L08A133:
     LDY #2
     STA ($02),Y
@@ -4509,11 +4242,11 @@ L08A6C4:
     LDA #12
     STA $01
     JSR L0FC6C9.w
-    LDA #226
+    LDA #<CHARACTERS_STATS
     CLC
     ADC $00
     STA $00
-    LDA #144
+    LDA #>CHARACTERS_STATS
     ADC $01
     STA $01
     LDY #11

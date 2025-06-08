@@ -3,7 +3,7 @@
 
 .SECTION "Bank2" FORCE
 
-L028000:
+L028000: ; tilemaps
 .dw L0280A2
 .dw L02860B
 .dw L028830

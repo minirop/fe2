@@ -1862,27 +1862,27 @@ L0B8EB2:
 L0B8EC0:
 STOP
 
-L0B8EC1:
+L0B8EC1: ; sword
 ENCODE("つるぎ")
 STOP
 
-L0B8EC6:
+L0B8EC6: ; spear
 ENCODE("やり")
 STOP
 
-L0B8EC9:
+L0B8EC9: ; bow
 ENCODE("ゆみ")
 STOP
 
-L0B8ECC:
+L0B8ECC: ; magic
 ENCODE("まほう")
 STOP
 
-L0B8ED0:
+L0B8ED0: ; axe
 ENCODE("おの")
 STOP
 
-L0B8ED3:
+L0B8ED3: ; sword and bow
 ENCODE("つるぎ·ゆみ")
 STOP
 
