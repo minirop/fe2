@@ -2105,9 +2105,9 @@ L0FCCE7:
     LDA $7434
     ASL
     TAY
-    LDA L028000,Y
+    LDA L_TILEMAPS,Y
     STA $6E
-    LDA (L028000.w + 1),Y
+    LDA (L_TILEMAPS.w + 1),Y
     STA $6F
     JSR L0FCD44.w
 L0FCD02:
@@ -2621,7 +2621,9 @@ L0FD067:
     LDA ($70),Y
 L0FD069:
     TAY
-    LDA $8400,Y
+    ; need to check if other palettes
+    ; are loaded from other banks
+    LDA L_METATILES_PALETTE_ID.w,Y
     AND #3
     ROR
     ROR $02
@@ -8653,27 +8655,27 @@ L0FF16B:
 .db $00
 .db $00
 
-; seems to be only loaded in bank 06
-; hence the following values are
-; L06 labels
 L0FF178:
 .dw L0FF17E
 .dw L0FF181
 .dw L0FF186
 
+; seems to be only loaded from bank 06
+; hence the following values are
+; relative to L_METATILES_PALETTE_ID
 L0FF17E:
-.dw L068413
+.dw L_METATILES_PALETTE_ID + $13
 .db $FF
 
 L0FF181:
-.dw L068420
-.dw L06841F
+.dw L_METATILES_PALETTE_ID + $20
+.dw L_METATILES_PALETTE_ID + $1F
 .db $FF
 
 L0FF186:
-.dw L068412
-.dw L068411
-.dw L068415
+.dw L_METATILES_PALETTE_ID + $12
+.dw L_METATILES_PALETTE_ID + $11
+.dw L_METATILES_PALETTE_ID + $15
 .db $FF
 
 .db $0C
@@ -9226,16 +9228,12 @@ L0FF454:
     RTS
 
 L0FF459:
-.db $0B
-.db $0F
-.db $10
-.db $11
-.db $12
-.db $13
-.db $EF
+ENCODE("じたちつて")
+STOP
 
 L0FF460:
     STA $0B
+L0FF462:
     TXA
     PHA
     TYA

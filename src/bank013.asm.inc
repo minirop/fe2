@@ -3179,12 +3179,9 @@ L0D9224:
     RTS
 
 L0D9225:
-.db $00
-.db $06
-.db $0C
-.db $12
-.db $18
+.db $00 $06 $0C $12 $18
 
+L_PALETTES_13_UNK: ; UI? portraits?
 .dw L0D9230
 .dw L0D9254
 .dw L0D9268

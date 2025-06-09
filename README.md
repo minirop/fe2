@@ -17,3 +17,20 @@ You need to have those tools available in your `PATH`:
 ## Building
 
 Just type `make`.
+
+## What to do?
+
+- Extract the maps into some format (to allow easy modification)
+- Same with the portraits/battlers
+- Understand the data
+	- units placement
+    - items
+    - enemy AI/gather/auto-battle
+    - audio
+    - where are, the unlabelled bytes, used
+- How graphics are used/built
+    - battle sprites
+    - backgrounds (during battles)
+    - UI
+    - the cursor
+- And everything else

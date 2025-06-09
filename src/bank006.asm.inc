@@ -262,7 +262,7 @@
 .db $98 $8F $9F $E6
 .db $E7 $E7 $ED $ED
 
-L068400:
+L_METATILES_PALETTE_ID:
 .db $00
 .db $00
 .db $00
@@ -280,14 +280,6 @@ L068400:
 .db $00
 .db $03
 .db $00
-L068411:
-.db $03
-L068412:
-.db $00
-L068413:
-.db $03
-.db $00
-L068415:
 .db $03
 .db $00
 .db $03
@@ -298,9 +290,11 @@ L068415:
 .db $00
 .db $03
 .db $00
-L06841F:
 .db $03
-L068420:
+.db $00
+.db $03
+.db $00
+.db $03
 .db $00
 .db $03
 .db $00
@@ -4926,9 +4920,9 @@ L06A607:
 .db $02
 .db $02
 .db $02
-.db $4C
-.db $62
-.db $F4
+
+L06A61D:
+    JMP L0FF462.w
 
 L06A620:
     TXA
@@ -8721,54 +8715,35 @@ L06BF53:
 .db $4C
 .db $04
 .db $05
-.db $65
-.db $A6
-.db $1E
-.db $A7
-.db $1D
-.db $A6
-.db $10
-.db $D5
-.db $67
-.db $BA
-.db $0E
-.db $A7
-.db $BF
-.db $D2
-.db $7D
-.db $D6
-.db $EB
-.db $B6
-.db $6D
-.db $AE
-.db $D4
-.db $8F
-.db $F3
-.db $8F
-.db $BA
-.db $D5
-.db $0F
-.db $D6
-.db $C4
-.db $B4
-.db $18
-.db $BA
-.db $00
-.db $85
-.db $D0
-.db $BA
-.db $20
-.db $A6
-.db $56
-.db $A1
-.db $3D
-.db $C7
-.db $D3
-.db $D5
-.db $C5
-.db $8C
-.db $12
-.db $B6
+
+.dw L06A665
+.dw L06A71E
+.dw L06A61D
+.dw L0FD510
+.dw L06BA67
+.dw L06A70E
+.dw L0FD2BF
+.dw L0FD67D
+.dw L06B6EB
+.dw L06AE6D
+.dw L068FD4
+.dw L068FF3
+.dw L0FD5BA
+.dw L0FD60F
+.dw L06B4C4
+.dw L06BA18
+
+L06BFC0:
+.dw L_PALETTES
+
+.dw L06BAD0
+.dw L06A620
+.dw L06A156
+.dw L0FC73D
+.dw L0FD5D3
+.dw L068CC5
+.dw L06B612
+
 .db $20
 .db $00
 .db $30

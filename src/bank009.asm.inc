@@ -3847,7 +3847,7 @@ L09AE46:
 .db $10
 .db $18
 
-L09AE97:
+L09AE97: ; portraits
 .dw L09B091
 .dw L09B0B5
 .dw L09B0D9
@@ -4067,7 +4067,7 @@ L09B0D9:
 .db $FE $A0 $A1 $A2 $A3 $A4 $FE $FE
 .db $B1 $B2 $B3 $B4
 
-L09B0FD:
+L09B0FD: ; portrait Mycen
 .db $FC $05 $06 $07 $FC $FC $FC $15
 .db $16 $17 $18 $FC $FC $25 $26 $27
 .db $28 $FC $04 $35 $36 $37 $38 $09
