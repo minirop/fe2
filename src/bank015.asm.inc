@@ -4505,7 +4505,7 @@ L0FDC27: ; princess
 ENCODE("プリンセス")
 STOP
 
-L0FDC2E:
+L0FDC2E: ; enemy names
 .dw L0FDBA3
 .dw L0FDBA7
 .dw L0FDC5A
@@ -7768,7 +7768,7 @@ L0FECEE:
 .db $00
 .db $00
 
-L0FED04:
+L0FED04: ; enemy stats
 .dw L0FED32
 .dw L0FED39
 .dw L0FED40
@@ -7792,6 +7792,8 @@ L0FED04:
 .dw L0FEDBE
 .dw L0FEDC5
 .dw L0FEDCC
+
+; STR SKL SPD LCK DEF HP unk
 
 L0FED32:
 .db $09 $03 $05 $00 $05 $18 $28

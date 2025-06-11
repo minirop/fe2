@@ -3,6 +3,7 @@
 
 .SECTION "Bank12" FORCE
 
+L0C8000: ; non-combat tilemaps and objects?
 .dw L0C8070
 .dw L0C8070
 .dw L0C8188
@@ -60,7 +61,7 @@
 .dw L0C8070
 .dw L0C8070
 
-
+; tilemap of the villages (doesn't have houses)
 L0C8070:
 .db $0E $17 $00 $00 $D3 $B2 $9F $FE
 .db $16 $D2 $FE $BD $FE $14 $D1 $FE
@@ -98,45 +99,45 @@ L0C8070:
 .db $01 $FE $B5 $D3 $D2 $BD $FE $14
 .db $D0 $FE $9F $D2 $FE $18 $D3 $FF
 
-L0C8188:
+L0C8188: ; right house
 .db $06 $04 $77 $78 $66 $75 $79 $7A
 .db $74 $67 $76 $7B $72 $1A $1A $0B
 .db $73 $72 $28 $28 $19 $73 $6E $6F
 .db $F7 $6E $6F $6C $6D $F8 $6C $6D
 .db $4D $4E $3F $4D $4E
 
-L0C81AD:
+L0C81AD: ; left house
 .db $06 $04 $77 $78 $66 $75 $79 $7A
 .db $74 $67 $76 $7B $72 $1A $1A $0B
 .db $73 $72 $28 $28 $19 $73 $7C $7D
 .db $F7 $7C $7D $7E $7F $F8 $7E $7F
 .db $4D $4E $3F $4D $4E
 
-L0C81D2:
+L0C81D2: ; house shadow
 .db $03 $00 $02 $02 $02 $02
 
-L0C81D8:
+L0C81D8: ; tree
 .db $01 $00 $D0 $D1
 
-L0C81DC:
+L0C81DC: ; column
 .db $01 $00 $CB $CC
 
-L0C81E0:
+L0C81E0: ; double column
 .db $01 $00 $CD $CD
 
-L0C81E4:
+L0C81E4: ; small pool
 .db $03 $03 $3F $3F $3F $3F $3F $A8
 .db $A9 $3F $3F $A6 $A5 $3F $3F $3F
 .db $3F $3F
 
-L0C81F6:
+L0C81F6: ; mouth of truth
 .db $01 $02 $E4 $E5 $E6 $E2 $FD $E3
 
-L0C81FE:
+L0C81FE: ; statue of Mila
 .db $02 $02 $59 $E1 $5A $59 $F9 $5B
 .db $5C $5D $5E
 
-L0C8209:
+L0C8209: ;  room with table and chest
 .db $09 $0B $95 $80 $80 $80 $80 $80
 .db $80 $80 $80 $80 $96 $81 $97 $91
 .db $81 $81 $81 $81 $81 $81 $81 $81
@@ -154,17 +155,17 @@ L0C8209:
 .db $F8 $8A $81 $81 $81 $81 $81 $81
 .db $8B $1F
 
-L0C8283:
+L0C8283: ; small room/cell?
 .db $06 $04 $95 $80 $80 $80 $96 $97
 .db $91 $81 $81 $98 $93 $36 $35 $35
 .db $9D $93 $36 $35 $35 $9D $93 $36
 .db $35 $35 $9D $99 $89 $F1 $88 $9A
 .db $8A $8B $F2 $8A $8B
 
-L0C82A8:
+L0C82A8: ; white door
 .db $01 $00 $F1 $F2
 
-L0C82AC:
+L0C82AC: ; Mila Shrine
 .db $0E $17 $00 $00 $FE $02 $BC $13
 .db $C1 $04 $BC $FE $C4 $FE $04 $C0
 .db $FE $E4 $E5 $E6 $FE $05 $C0 $FE
@@ -201,10 +202,10 @@ L0C82AC:
 .db $04 $C9 $FE $08 $C2 $0D $BC $FE
 .db $C4 $09 $C3 $FE $0B $BC $FF
 
-L0C83C3:
+L0C83C3: ; stone wall shadow
 .db $05 $00 $57 $1F $1F $1F $1F $1F
 
-L0C83CB:
+L0C83CB: ; throne room?
 .db $15 $17 $00 $00 $01 $8C $AC $FE
 .db $05 $9E $02 $A2 $03 $A1 $02 $A2
 .db $05 $9E $FE $AD $BE $2F $FE $02
@@ -266,7 +267,7 @@ L0C83CB:
 .db $02 $FE $04 $81 $FE $02 $FE $0E
 .db $01 $04 $81 $FE $02 $FF
 
-L0C85A9:
+L0C85A9: ; big empty stone room
 .db $0E $17 $00 $00 $01 $8E $87 $86
 .db $87 $86 $87 $86 $87 $86 $FE $02
 .db $87 $FE $86 $87 $86 $87 $86 $87
@@ -295,7 +296,7 @@ L0C85A9:
 .db $02 $01 $0A $81 $FE $1E $FE $0A
 .db $81 $FE $2F $01 $FF
 
-L0C867E:
+L0C867E: ; bent Mila shrine corridor
 .db $0E $0F $00 $00 $FE $0A $BC $FE
 .db $C4 $09 $C3 $FE $0D $BC $FE $C4
 .db $09 $C3 $FE $07 $BC $06 $C1 $FE
@@ -319,7 +320,7 @@ L0C867E:
 .db $FE $C4 $09 $04 $C3 $FE $06 $BC
 .db $FF
 
-L0C8727:
+L0C8727: ; straight Mila shrine corridor
 .db $0E $0F $00 $00 $FE $06 $BC $FE
 .db $C4 $09 $04 $C3 $FE $0C $BC $FE
 .db $C4 $09 $04 $C3 $FE $0C $BC $FE
@@ -344,7 +345,7 @@ L0C8727:
 .db $FE $C4 $09 $04 $C3 $FE $06 $BC
 .db $FF
 
-L0C87D8:
+L0C87D8: ; Duma tower
 .db $1D $1F $00 $00 $01 $D0 $01 $D0
 .db $FE $03 $01 $FE $8A $FE $05 $81
 .db $FE $98 $2D $97 $91 $FE $04 $81
@@ -433,7 +434,7 @@ L0C87D8:
 .db $01 $0E $81 $FE $38 $FE $0E $81
 .db $FE $2F $FE $21 $01 $FF
 
-L0C8A8E:
+L0C8A8E: ; stone room with red carpet
 .db $0E $1F $00 $00 $FE $47 $EF $FE
 .db $95 $FE $05 $80 $FE $83 $2A $82
 .db $FE $05 $80 $FE $96 $FE $11 $EF
@@ -461,7 +462,7 @@ L0C8A8E:
 .db $11 $EF $FE $99 $FE $0D $80 $FE
 .db $9A $FE $0A $EF $FF
 
-L0C8B5B:
+L0C8B5B: ; castle entrance?
 .db $15 $17 $00 $00 $FE $0B $A5 $FE
 .db $5F $FE $0D $A5 $0A $5F $FE $A5
 .db $FE $0B $5F $FE $A5 $FE $0A $80
@@ -505,7 +506,7 @@ L0C8B5B:
 .db $13 $3A $FE $3B $CC $2B $FE $18
 .db $2A $FF
 
-L0C8CA5:
+L0C8CA5: ; harbour town
 .db $0E $17 $00 $00 $FE $04 $A5 $FE
 .db $77 $78 $FE $04 $66 $FE $75 $79
 .db $FE $0D $A5 $03 $3F $FE $7A $74
@@ -540,7 +541,7 @@ L0C8CA5:
 .db $FE $50 $FE $10 $B1 $FE $02 $A5
 .db $FE $17 $01 $FF
 
-L0C8DA9:
+L0C8DA9: ; harbour town 2
 .db $0E $17 $00 $00 $FE $09 $01 $FE
 .db $A6 $FE $0E $A5 $FE $B0 $FE $02
 .db $B1 $FE $50 $FE $13 $B1 $02 $B0
@@ -565,7 +566,7 @@ L0C8DA9:
 .db $A6 $FE $0A $A5 $09 $01 $FE $A6
 .db $FE $0E $A5 $FF
 
-L0C8E5D:
+L0C8E5D: ; throne room with north exits
 .db $15 $17 $00 $00 $D8 $AC $9E $BC
 .db $FE $04 $A2 $07 $A1 $04 $A2 $FE
 .db $AD $2D $3F $D9 $2F $D8 $8A $81
@@ -624,7 +625,7 @@ L0C8E5D:
 .db $09 $A5 $FE $B3 $FE $03 $2A $FE
 .db $B4 $A6 $FE $09 $A5 $FF
 
-L0C9023:
+L0C9023: ; north-left exit in throne room?
 .db $0E $0F $00 $00 $FE $52 $EF $FE
 .db $8E $87 $86 $87 $86 $87 $86 $87
 .db $86 $87 $86 $8F $FE $04 $EF $FE
@@ -642,7 +643,7 @@ L0C9023:
 .db $87 $86 $87 $86 $87 $86 $87 $86
 .db $87 $86 $87 $EF $FF
 
-L0C90A0:
+L0C90A0: ; water shrine border?
 .db $15 $0F $00 $00 $FE $17 $9E $03
 .db $4B $0D $9E $FE $B9 $E0 $BA $FE
 .db $06 $9E $07 $A9 $FE $AA $A9 $6B
@@ -1352,24 +1353,62 @@ L0CA13F:
 .dw L0CA70A
 .dw L0CA70A
 
+; "entities" in a map?
+; RAM address?
+; unknown
+; unknown
+; then a list of "object"?
+; - unknown (often $01, and $EF for "stop")
+; - y position, x position, index in L0C8000
+; not all seem to follow that pattern
 
 L0CA23D:
-.db $17 $0E $06 $01 $01 $00 $03 $03
-.db $01 $00 $0D $02 $01 $02 $08 $04
-.db $01 $02 $12 $04 $01 $0A $0B $05
-.db $01 $0A $0C $05 $EF
+.db $17 $0E $06 $01
+.db $01
+.db $00 $03 $03 ; left house
+.db $01
+.db $00 $0D $02 ; right house
+.db $01
+.db $02 $08 $04 ; shadow left house
+.db $01
+.db $02 $12 $04 ; shadow right house
+.db $01
+.db $0A $0B $05 ; tree
+.db $01
+.db $0A $0C $05 ; tree
+.db $EF
 
 L0CA25A:
-.db $17 $0E $06 $01 $01 $05 $02 $03
-.db $01 $05 $07 $02 $01 $07 $0C $04
-.db $01 $02 $0F $08 $EF
+.db $17 $0E $06 $01
+.db $01
+.db $05 $02 $03
+.db $01
+.db $05 $07 $02
+.db $01
+.db $07 $0C $04
+.db $01
+.db $02 $0F $08
+.db $EF
 
 L0CA26F:
-.db $17 $0E $06 $01 $00 $02 $03 $08
-.db $09 $1C $01 $00 $10 $03 $01 $01
-.db $04 $0E $01 $02 $09 $12 $01 $02
-.db $15 $04 $01 $03 $0B $08 $05 $04
-.db $06 $EB $05 $04 $07 $37 $05 $04
+.db $17 $0E $06 $01
+.db $00
+.db $02
+.db $03
+.db $08 $09 $1C
+.db $01
+.db $00 $10 $03
+.db $01
+.db $01 $04 $0E
+.db $01
+.db $02 $09 $12
+.db $01
+.db $02 $15 $04
+.db $01
+.db $03 $0B $08
+.db $05 $04
+.db $06
+.db $EB $05 $04 $07 $37 $05 $04
 .db $12 $0A $05 $05 $12 $0C $05 $06
 .db $15 $01 $05 $06 $06 $F7 $05 $07
 .db $06 $F8 $EF
@@ -1761,6 +1800,7 @@ L0CA81E:
     LDA $78D6
     JSR L0FC34C.w
 
+L0CA83E:
 .dw L0CA84D
 .dw L0CA8A0
 .dw L0CA8BB
@@ -3042,84 +3082,103 @@ L0CB0AE:
 .dw L0CB17B
 
 L0CB0DE:
-.db $1A $01 $ED
+ENCODE("はい")
+NEWLINE
 
 L0CB0E1:
-.db $01 $01 $03 $ED
+ENCODE("いいえ")
+NEWLINE
 
 L0CB0E5:
-.db $43 $0F $3F $40 $ED
+ENCODE("データ")
+NEWLINE
 
 L0CB0EA:
-.db $1D $2F $0D $01 $ED
+ENCODE("へんせい")
+NEWLINE
 
 L0CB0EF:
-.db $24 $11 $24 $19 $ED
+ENCODE("もちもの")
+NEWLINE
 
 L0CB0F4:
-.db $15 $28 $1B $0F $05 $03 $ED
+ENCODE("ならびかえ")
+NEWLINE
 
 L0CB0FB:
-.db $53 $5F $4A $0F $3F $01 $14 $0F
-.db $02 $ED
+ENCODE("メンバーいどう")
+NEWLINE
 
 L0CB105:
-.db $02 $08 $14 $2A $ED
+ENCODE("うけとる")
+NEWLINE
 
 L0CB10A:
-.db $00 $0C $0F $08 $2A $ED
+ENCODE("あずける")
+NEWLINE
 
 L0CB110:
-.db $09 $02 $05 $2F $ED
+ENCODE("こうかん")
+NEWLINE
 
 L0CB115:
-.db $FF $F3 $ED
+ENCODE(" ▼")
+NEWLINE
 
 L0CB118:
-.db $06 $2C $07 $ED
+ENCODE("きろく")
+NEWLINE
 
 L0CB11C:
-.db $15 $20 $03 $FF $FF $FF $FF $FF
-.db $30 $31 $43 $52 $ED
+ENCODE("なまえ     アイテム")
+NEWLINE
 
 L0CB129:
-.db $FF $FF $0B $87 $0B $0F $1B $2F
-.db $ED
+ENCODE("  しょじひん")
+NEWLINE
 
 L0CB132:
-.db $FF $10 $0F $01 $FF $ED
+ENCODE(" だい ")
+NEWLINE
 
 L0CB138:
-.db $FF $0B $87 $02 $ED
+ENCODE(" しょう")
+NEWLINE
 
 L0CB13D:
-.db $FF $FF $3E $4C $A7 $30 $1D $9D
-.db $ED
+ENCODE("  ソフィアへ!")
+NEWLINE
 
 L0CB146:
-.db $FF $3D $59 $35 $19 $10 $1B $0F
-.db $10 $0F $11 $ED
+ENCODE(" セリカのたびだち")
+NEWLINE
 
 L0CB152:
-.db $FF $05 $01 $1E $02 $0D $2F $0E
-.db $02 $ED
+ENCODE(" かいほうせんそう")
+NEWLINE
 
 L0CB15C:
-.db $FF $05 $15 $0B $21 $19 $10 $0F
-.db $01 $11 $ED
+ENCODE(" かなしみのだいち")
+NEWLINE
 
 L0CB167:
-.db $0A $01 $05 $01 $FF $0E $0B $13
-.db $9B $9B $9B $ED
+ENCODE("さいかい そして···")
+NEWLINE
 
 L0CB173:
-.db $01 $11 $28 $2F $ED
+ENCODE("いちらん")
+NEWLINE
 
 L0CB178:
-.db $FF $ED $ED
+ENCODE(" ")
+NEWLINE
+
+L0CB17A:
+NEWLINE
 
 L0CB17B:
-.db $3D $59 $35 $ED
+ENCODE("セリカ")
+NEWLINE
 
 L0CB17F:
     ASL

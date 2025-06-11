@@ -2080,6 +2080,11 @@ L0893C2:
 .dw L0899F1
 .dw L0899EC
 
+; seems to be enemy count and types.
+; the first byte is the number of enemies
+; followed by an index into L089A5A
+; but some are an entry instead of an index
+; starting with $Bx or $Cx (like in L089482)
 
 L089474:
 .db $05 $0E $0E $0E $0E $0E
@@ -2088,13 +2093,16 @@ L08947A:
 .db $07 $22 $0E $0E $0E $0E $0E $20
 
 L089482:
-.db $0A $BE $0E $03 $00 $C0 $00 $B8
-.db $08 $04 $30 $C0 $00 $0C $0E $0E
-.db $0E $0E $0E $0E $0E
+.db $0A
+.db $BE BRIGAND $03 $00 $C0 $00
+.db $B8 MERCENARY $04 LEATHER_SHIELD $C0 $00
+.db $0C $0E $0E $0E $0E $0E $0E $0E
 
 L089497:
-.db $07 $1A $1A $1A $06 $06 $BC $0C
-.db $01 $14 $80 $00 $06 $06 $06
+.db $07
+.db $1A $1A $1A $06 $06
+.db $BC ARCHER $01 STEEL_BOW $80 $00
+.db $06 $06 $06
 
 L0894A6:
 .db $09 $06 $0C $06 $06 $06 $06 $06
@@ -2119,14 +2127,16 @@ L0894D7:
 .db $0E $0E $0E
 
 L0894EA:
-.db $01 $C3 $13 $01 $00 $80 $21
+.db $01 $C3 CANTOR $01 $00 $80 $21
 
 L0894F1:
-.db $01 $B5 $05 $01 $36 $00 $00
+.db $01 $B5 NECRODRAGON $01 $36 $00 $00
 
 L0894F8:
-.db $0A $B8 $08 $04 $00 $C0 $00 $08
-.db $08 $0C $0C $0E $0E $0E $0E $08
+.db $0A
+.db $B8 MERCENARY $04 $00 $C0 $00
+.db $08 $08 $0C $0C $0E $0E $0E $0E
+.db $08
 
 L089508:
 .db $0F $9C $02 $05 $00 $C0 $00 $10
@@ -2134,38 +2144,48 @@ L089508:
 .db $29 $29 $29 $0F $29
 
 L08951D:
-.db $12 $9E $0E $0A $00 $C0 $00 $4A
-.db $4A $4A $44 $4A $4A $4A $48 $4A
-.db $4A $4A $44 $4A $4A $4A $4A $4A
+.db $12
+.db $9E BRIGAND $0A $00 $C0 $00
+.db $4A $4A $4A $44 $4A $4A $4A $48
+.db $4A $4A $4A $44 $4A $4A $4A $4A
+.db $4A
 
 L089535:
 .db $0A $11 $11 $0B $0B $0B $0B $0B
 .db $0B $0B $0B
 
 L089540:
-.db $10 $9A $0D $03 $14 $80 $00 $20
+.db $10
+.db $9A $0D $03 $14 $80 $00
 .db $20 $20 $20 $20 $20 $20 $20 $20
-.db $1C $1C $1C $1C $23 $23
+.db $20 $1C $1C $1C $1C $23 $23
 
 L089556:
-.db $0A $88 $09 $05 $0D $C0 $00 $44
+.db $0A
+.db $88 MYRMIDON $05 $0D $C0 $00
 .db $44 $44 $44 $44 $44 $44 $44 $44
-
-L089566:
-.db $0A $9D $10 $05 $31 $C0 $04 $10
-.db $10 $10 $10 $10 $10 $10 $10 $10
-
-L089576:
-.db $14 $82 $0A $01 $00 $80 $00 $C3
-.db $13 $03 $00 $80 $11 $BF $0F $05
-.db $00 $80 $22 $21 $21 $09 $23 $23
-.db $BD $0D $05 $00 $80 $00 $23 $1D
-.db $44 $44 $4A $4A $10 $10 $10 $44
 .db $44
 
+L089566:
+.db $0A
+.db $9D WITCH $05 $31 $C0 $04
+.db $10 $10 $10 $10 $10 $10 $10 $10
+.db $10
+
+L089576:
+.db $14
+.db $82 $0A $01 $00 $80 $00
+.db $C3 CANTOR $03 $00 $80 $11
+.db $BF ARCANIST $05 $00 $80 $22
+.db $21 $21 $09 $23 $23
+.db $BD SNIPER $05 $00 $80 $00
+.db $23 $1D $44 $44 $4A $4A $10 $10
+.db $10 $44 $44
+
 L08959F:
-.db $05 $97 $09 $01 $0E $C0 $00 $44
-.db $44 $44 $10
+.db $05
+.db $97 MYRMIDON $01 $0E $C0 $00
+.db $44 $44 $44 $10
 
 L0895AA:
 .db $0A $94 $13 $05 $00 $80 $42 $23
@@ -2643,255 +2663,262 @@ L089A5A:
 .dw L089CE8
 .dw L089CEE
 
+; the field are:
+; unknown
+; class
+; level
+; dropped item when killed?
+; unknown
+; unknown
 
 L089B02:
-.db $B1 $01 $01 $00 $C0 $00
+.db $B1 CAVALIER $01 $00 $C0 $00
 
 L089B08:
-.db $B2 $02 $01 $00 $C0 $00
+.db $B2 KNIGHT $01 $00 $C0 $00
 
 L089B0E:
-.db $B3 $03 $01 $00 $40 $00
+.db $B3 GARGOYLE $01 $00 $40 $00
 
 L089B14:
-.db $B4 $04 $01 $00 $C0 $00
+.db $B4 PALADIN $01 $00 $C0 $00
 
 L089B1A:
-.db $B5 $05 $01 $00 $40 $00
+.db $B5 NECRODRAGON $01 $00 $40 $00
 
 L089B20:
-.db $B6 $06 $01 $00 $C0 $00
+.db $B6 SOLDIER $01 $00 $C0 $00
 
 L089B26:
-.db $B7 $07 $01 $00 $C0 $00
+.db $B7 GOLD_KNIGHT $01 $00 $C0 $00
 
 L089B2C:
-.db $B8 $08 $01 $00 $C0 $00
+.db $B8 MERCENARY $01 $00 $C0 $00
 
 L089B32:
-.db $B9 $09 $01 $00 $C0 $00
+.db $B9 MYRMIDON $01 $00 $C0 $00
 
 L089B38:
-.db $BA $0A $01 $00 $C0 $00
+.db $BA DREAD_FIGHTER $01 $00 $C0 $00
 
 L089B3E:
-.db $BB $0B $01 $00 $40 $00
+.db $BB REVENANT $01 $00 $40 $00
 
 L089B44:
-.db $BC $0C $01 $00 $C0 $00
+.db $BC ARCHER $01 $00 $C0 $00
 
 L089B4A:
-.db $BD $0D $01 $00 $C0 $00
+.db $BD SNIPER $01 $00 $C0 $00
 
 L089B50:
-.db $BE $0E $01 $00 $C0 $00
+.db $BE BRIGAND $01 $00 $C0 $00
 
 L089B56:
-.db $BF $0F $01 $00 $C0 $11
+.db $BF ARCANIST $01 $00 $C0 $11
 
 L089B5C:
-.db $C0 $10 $01 $00 $C0 $01
+.db $C0 WITCH $01 $00 $C0 $01
 
 L089B62:
-.db $C1 $11 $01 $00 $40 $00
+.db $C1 BONEWALKER $01 $00 $40 $00
 
 L089B68:
-.db $C2 $12 $01 $00 $40 $00
+.db $C2 MOGALL $01 $00 $40 $00
 
 L089B6E:
-.db $C4 $14 $01 $00 $C0 $00
+.db $C4 BOW_KNIGHT $01 $00 $C0 $00
 
 L089B74:
-.db $C6 $16 $01 $00 $C0 $00
+.db $C6 BARON $01 $00 $C0 $00
 
 L089B7A:
-.db $B1 $01 $01 $00 $80 $00
+.db $B1 CAVALIER $01 $00 $80 $00
 
 L089B80:
-.db $B2 $02 $01 $00 $80 $00
+.db $B2 KNIGHT $01 $00 $80 $00
 
 L089B86:
-.db $B3 $03 $01 $00 $40 $00
+.db $B3 GARGOYLE $01 $00 $40 $00
 
 L089B8C:
-.db $B4 $04 $01 $00 $80 $00
+.db $B4 PALADIN $01 $00 $80 $00
 
 L089B92:
-.db $B5 $05 $01 $00 $40 $00
+.db $B5 NECRODRAGON $01 $00 $40 $00
 
 L089B98:
-.db $B6 $06 $01 $00 $80 $00
+.db $B6 SOLDIER $01 $00 $80 $00
 
 L089B9E:
-.db $B7 $07 $01 $00 $80 $00
+.db $B7 GOLD_KNIGHT $01 $00 $80 $00
 
 L089BA4:
-.db $B8 $08 $01 $00 $80 $00
+.db $B8 MERCENARY $01 $00 $80 $00
 
 L089BAA:
-.db $B9 $09 $01 $00 $80 $00
+.db $B9 MYRMIDON $01 $00 $80 $00
 
 L089BB0:
-.db $BA $0A $01 $00 $80 $00
+.db $BA DREAD_FIGHTER $01 $00 $80 $00
 
 L089BB6:
-.db $BB $0B $01 $00 $00 $00
+.db $BB REVENANT $01 $00 $00 $00
 
 L089BBC:
-.db $BC $0C $01 $00 $80 $00
+.db $BC ARCHER $01 $00 $80 $00
 
 L089BC2:
-.db $BD $0D $01 $00 $80 $00
+.db $BD SNIPER $01 $00 $80 $00
 
 L089BC8:
-.db $BE $0E $01 $00 $80 $00
+.db $BE BRIGAND $01 $00 $80 $00
 
 L089BCE:
-.db $BF $0F $01 $00 $80 $11
+.db $BF ARCANIST $01 $00 $80 $11
 
 L089BD4:
-.db $C0 $10 $01 $00 $80 $01
+.db $C0 WITCH $01 $00 $80 $01
 
 L089BDA:
-.db $C1 $11 $01 $00 $00 $00
+.db $C1 BONEWALKER $01 $00 $00 $00
 
 L089BE0:
-.db $C2 $12 $01 $00 $00 $00
+.db $C2 MOGALL $01 $00 $00 $00
 
 L089BE6:
-.db $C4 $14 $01 $00 $80 $00
+.db $C4 BOW_KNIGHT $01 $00 $80 $00
 
 L089BEC:
-.db $C6 $16 $01 $00 $80 $00
+.db $C6 BARON $01 $00 $80 $00
 
 L089BF2:
-.db $B1 $01 $01 $00 $40 $00
+.db $B1 CAVALIER $01 $00 $40 $00
 
 L089BF8:
-.db $B2 $02 $01 $00 $40 $00
+.db $B2 KNIGHT $01 $00 $40 $00
 
 L089BFE:
-.db $B3 $03 $01 $00 $40 $00
+.db $B3 GARGOYLE $01 $00 $40 $00
 
 L089C04:
-.db $B4 $04 $01 $00 $40 $00
+.db $B4 PALADIN $01 $00 $40 $00
 
 L089C0A:
-.db $B5 $05 $01 $00 $40 $00
+.db $B5 NECRODRAGON $01 $00 $40 $00
 
 L089C10:
-.db $B6 $06 $01 $00 $40 $00
+.db $B6 SOLDIER $01 $00 $40 $00
 
 L089C16:
-.db $B7 $07 $01 $00 $40 $00
+.db $B7 GOLD_KNIGHT $01 $00 $40 $00
 
 L089C1C:
-.db $B8 $08 $01 $00 $40 $00
+.db $B8 MERCENARY $01 $00 $40 $00
 
 L089C22:
-.db $B9 $09 $01 $00 $40 $00
+.db $B9 MYRMIDON $01 $00 $40 $00
 
 L089C28:
-.db $BA $0A $01 $00 $40 $00
+.db $BA DREAD_FIGHTER $01 $00 $40 $00
 
 L089C2E:
-.db $BB $0B $01 $00 $40 $00
+.db $BB REVENANT $01 $00 $40 $00
 
 L089C34:
-.db $BC $0C $01 $00 $40 $00
+.db $BC ARCHER $01 $00 $40 $00
 
 L089C3A:
-.db $BD $0D $01 $00 $40 $00
+.db $BD SNIPER $01 $00 $40 $00
 
 L089C40:
-.db $BE $0E $01 $00 $40 $00
+.db $BE BRIGAND $01 $00 $40 $00
 
 L089C46:
-.db $BF $0F $01 $00 $40 $11
+.db $BF ARCANIST $01 $00 $40 $11
 
 L089C4C:
-.db $C0 $10 $01 $00 $40 $01
+.db $C0 WITCH $01 $00 $40 $01
 
 L089C52:
-.db $C1 $11 $01 $00 $40 $00
+.db $C1 BONEWALKER $01 $00 $40 $00
 
 L089C58:
-.db $C2 $12 $01 $00 $40 $00
+.db $C2 MOGALL $01 $00 $40 $00
 
 L089C5E:
-.db $C4 $14 $01 $00 $40 $00
+.db $C4 BOW_KNIGHT $01 $00 $40 $00
 
 L089C64:
-.db $C6 $16 $01 $00 $40 $00
+.db $C6 BARON $01 $00 $40 $00
 
 L089C6A:
-.db $B1 $01 $05 $00 $C0 $00
+.db $B1 CAVALIER $05 $00 $C0 $00
 
 L089C70:
-.db $B2 $02 $05 $00 $C0 $00
+.db $B2 KNIGHT $05 $00 $C0 $00
 
 L089C76:
-.db $B3 $03 $05 $00 $40 $00
+.db $B3 GARGOYLE $05 $00 $40 $00
 
 L089C7C:
-.db $B4 $04 $05 $00 $C0 $00
+.db $B4 PALADIN $05 $00 $C0 $00
 
 L089C82:
-.db $B5 $05 $05 $00 $40 $00
+.db $B5 NECRODRAGON $05 $00 $40 $00
 
 L089C88:
-.db $B6 $06 $05 $00 $C0 $00
+.db $B6 SOLDIER $05 $00 $C0 $00
 
 L089C8E:
-.db $B7 $07 $05 $00 $C0 $00
+.db $B7 GOLD_KNIGHT $05 $00 $C0 $00
 
 L089C94:
-.db $B8 $08 $05 $00 $C0 $00
+.db $B8 MERCENARY $05 $00 $C0 $00
 
 L089C9A:
-.db $B9 $09 $05 $00 $C0 $00
+.db $B9 MYRMIDON $05 $00 $C0 $00
 
 L089CA0:
-.db $BA $0A $05 $00 $C0 $00
+.db $BA DREAD_FIGHTER $05 $00 $C0 $00
 
 L089CA6:
-.db $BB $0B $05 $00 $40 $00
+.db $BB REVENANT $05 $00 $40 $00
 
 L089CAC:
-.db $BC $0C $05 $00 $C0 $00
+.db $BC ARCHER $05 $00 $C0 $00
 
 L089CB2:
-.db $BD $0D $05 $00 $C0 $00
+.db $BD SNIPER $05 $00 $C0 $00
 
 L089CB8:
-.db $BE $0E $05 $00 $C0 $00
+.db $BE BRIGAND $05 $00 $C0 $00
 
 L089CBE:
-.db $BF $0F $03 $00 $C0 $12
+.db $BF ARCANIST $03 $00 $C0 $12
 
 L089CC4:
-.db $C0 $10 $05 $00 $C0 $02
+.db $C0 WITCH $05 $00 $C0 $02
 
 L089CCA:
-.db $C1 $11 $05 $00 $40 $00
+.db $C1 BONEWALKER $05 $00 $40 $00
 
 L089CD0:
-.db $C2 $12 $05 $00 $40 $00
+.db $C2 MOGALL $05 $00 $40 $00
 
 L089CD6:
-.db $C4 $14 $05 $00 $C0 $00
+.db $C4 BOW_KNIGHT $05 $00 $C0 $00
 
 L089CDC:
-.db $C6 $16 $05 $00 $C0 $00
+.db $C6 BARON $05 $00 $C0 $00
 
 L089CE2:
-.db $D8 $0B $01 $00 $40 $00
+.db $D8 REVENANT $01 $00 $40 $00
 
 L089CE8:
-.db $D2 $11 $0D $00 $40 $00
+.db $D2 BONEWALKER $0D $00 $40 $00
 
 L089CEE:
-.db $D3 $03 $0D $00 $40 $00
+.db $D3 GARGOYLE $0D $00 $40 $00
 
 L089CF4:
     LDA #0
