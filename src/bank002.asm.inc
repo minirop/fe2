@@ -2792,6 +2792,7 @@ L02BF1F:
 .db $00
 .db $08
 
+L02BFA0:
 .dw L02BD39
 .dw L0FC73D
 .dw L02BD03

@@ -109,4 +109,4 @@ def decode(code):
 
 
 # print: ENCODE("アルム")
-decode('06 0B 19 07 07')
+decode('30 5A 52')

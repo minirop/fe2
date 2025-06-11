@@ -3,6 +3,7 @@
 
 .SECTION "Bank8" FORCE
 
+L088000:
 .dw L0886F8
 .dw L0886FE
 .dw L088706
@@ -228,6 +229,8 @@
 .dw L089056
 .dw L089060
 .dw L08906A
+
+L0881C2:
 .dw L08822B
 .dw L088231
 .dw L088237
@@ -279,7 +282,6 @@
 .dw L0884F6
 .dw L0884FC
 .dw L088228
-
 
 L088228:
 .db $8A $84 $FF
@@ -1196,7 +1198,10 @@ L088C3F:
 .db $00 $80 $00 $F8 $C0 $00 $00 $F0
 .db $00 $F0 $F8 $00 $F0 $00 $00 $F8
 .db $F8 $00 $F8 $00 $00 $00 $F8 $00
-.db $00 $00 $F0 $00 $F8 $F8 $00 $F8
+.db $00 $00 $F0
+
+L088C6A:
+.db $00 $F8 $F8 $00 $F8
 .db $00 $00 $00 $F8 $00 $00 $00 $F0
 .db $40 $F8 $F8 $40 $F8 $00 $40 $00
 .db $F8 $40 $00 $00 $F0 $00 $F8 $F8
@@ -1300,73 +1305,181 @@ L088F4E:
 .db $AF $8D $F4 $F5 $F6 $F7
 
 L088F54:
-.db $BC $8D $64 $65 $66 $67 $3D $C7
-.db $88 $8F $8E $8F $94 $8F $9A $8F
-.db $A0 $8F $A6 $8F $AC $8F $B2 $8F
-.db $B8 $8F $BE $8F $C4 $8F $CA $8F
-.db $D0 $8F $D6 $8F $DC $8F $E2 $8F
-.db $E8 $8F $EE $8F $F4 $8F $FA $8F
-.db $00 $90 $06 $90 $6A $8C $06 $07
-.db $16 $17 $6A $8C $02 $03 $12 $13
-.db $6A $8C $46 $47 $56 $57 $6A $8C
-.db $08 $09 $18 $19 $6A $8C $6C $6D
-.db $7C $7D $6A $8C $00 $01 $10 $11
-.db $6A $8C $0A $0B $1A $1B $6A $8C
-.db $22 $23 $32 $33 $6A $8C $24 $25
-.db $34 $35 $6A $8C $20 $21 $30 $31
-.db $6A $8C $40 $41 $50 $51 $6A $8C
-.db $0C $0D $1C $1D $6A $8C $0E $0F
-.db $1E $1F $6A $8C $2A $2B $3A $3B
-.db $6A $8C $26 $27 $36 $37 $6A $8C
-.db $68 $69 $78 $79 $6A $8C $44 $45
-.db $54 $55 $6A $8C $42 $43 $52 $53
-.db $6A $8C $28 $29 $38 $39 $6A $8C
-.db $48 $49 $58 $59 $6A $8C $2C $2D
-.db $3C $3D $6A $8C $04 $05 $14 $15
+.db $BC $8D $64 $65 $66 $67
+
+L088F5A:
+.dw L0FC73D
+.dw L088F88
+.dw L088F8E
+.dw L088F94
+.dw L088F9A
+.dw L088FA0
+.dw L088FA6
+.dw L088FAC
+.dw L088FB2
+.dw L088FB8
+.dw L088FBE
+.dw L088FC4
+.dw L088FCA
+.dw L088FD0
+.dw L088FD6
+.dw L088FDC
+.dw L088FE2
+.dw L088FE8
+.dw L088FEE
+.dw L088FF4
+.dw L088FFA
+.dw L089000
+.dw L089006
+
+; are the first bytes an address?
+
+L088F88:
+.dw L088C6A
+.db $06 $07 $16 $17
+
+L088F8E:
+.dw L088C6A
+.db $02 $03 $12 $13
+
+L088F94:
+.dw L088C6A
+.db $46 $47 $56 $57
+
+L088F9A:
+.dw L088C6A
+.db $08 $09 $18 $19
+
+L088FA0:
+.dw L088C6A
+.db $6C $6D $7C $7D
+
+L088FA6:
+.dw L088C6A
+.db $00 $01 $10 $11
+
+L088FAC:
+.dw L088C6A
+.db $0A $0B $1A $1B
+
+L088FB2:
+.dw L088C6A
+.db $22 $23 $32 $33
+
+L088FB8:
+.dw L088C6A
+.db $24 $25 $34 $35
+
+L088FBE:
+.dw L088C6A
+.db $20 $21 $30 $31
+
+L088FC4:
+.dw L088C6A
+.db $40 $41 $50 $51
+
+L088FCA:
+.dw L088C6A
+.db $0C $0D $1C $1D
+
+L088FD0:
+.dw L088C6A
+.db $0E $0F $1E $1F
+
+L088FD6:
+.dw L088C6A
+.db $2A $2B $3A $3B
+
+L088FDC:
+.dw L088C6A
+.db $26 $27 $36 $37
+
+L088FE2:
+.dw L088C6A
+.db $68 $69 $78 $79
+
+L088FE8:
+.dw L088C6A
+.db $44 $45 $54 $55
+
+L088FEE:
+.dw L088C6A
+.db $42 $43 $52 $53
+
+L088FF4:
+.dw L088C6A
+.db $28 $29 $38 $39
+
+L088FFA:
+.dw L088C6A
+.db $48 $49 $58 $59
+
+L089000:
+.dw L088C6A
+.db $2C $2D $3C $3D
+
+L089006:
+.dw L088C6A
+.db $04 $05 $14 $15
 
 L08900C:
-.db $6D $90 $48 $59
+.dw L08906D
+.db $48 $59
 
 L089010:
-.db $6A $8C $4A $4B $5A $5B
+.dw L088C6A
+.db $4A $4B $5A $5B
 
 L089016:
-.db $6A $8C $4C $4D $5C $5D $6A $8C
-.db $4E $4F $5E $5F $74 $90 $68 $78
-.db $78 $79
+.dw L088C6A
+.db $4C $4D $5C $5D
+
+.dw L088C6A
+.db $4E $4F $5E $5F
+
+.dw L089074
+.db $68 $78 $78 $79
 
 L089028:
-.db $81 $90 $6A $6B $7A $7A
+.dw L089081
+.db $6A $6B $7A $7A
 
 L08902E:
-.db $6A $8C $6C $6D $7C $7D
+.dw L088C6A
+.db $6C $6D $7C $7D
 
 L089034:
-.db $8E $90 $C2 $C2 $C2 $C2
+.dw L08908E
+.db $C2 $C2 $C2 $C2
 
 L08903A:
-.db $9B $90 $FE $FE $48 $59 $FD $FD
+.dw L08909B
+.db $FE $FE $48 $59 $FD $FD
 
 L089042:
-.db $AE $90 $FE $FE $4A $4B $5A $5B
+.dw L0890AE
+.db $FE $FE $4A $4B $5A $5B
 .db $FD $FD
 
 L08904C:
-.db $AE $90 $FE $FE $4C $4D $5C $5D
+.dw L0890AE
+.db $FE $FE $4C $4D $5C $5D
 .db $FD $FD
 
 L089056:
-.db $AE $90 $FE $FE $6C $6D $7C $7D
+.dw L0890AE
+.db $FE $FE $6C $6D $7C $7D
 .db $FD $FD
 
 L089060:
-.db $C7 $90 $FE $FE $6A $6B $7A $7A
+.dw L0890C7
+.db $FE $FE $6A $6B $7A $7A
 .db $FD $FD
 
 L08906A:
-.db $7D
-.db $90
-.db $FD
+.db $7D $90 $FD
+
+L08906D:
 .db $00
 .db $F9
 .db $F8
@@ -1374,6 +1487,8 @@ L08906A:
 .db $FF
 .db $00
 .db $F0
+
+L089074:
 .db $00
 .db $F8
 .db $F8
@@ -1387,6 +1502,8 @@ L08906A:
 .db $00
 .db $00
 .db $F0
+
+L089081:
 .db $00
 .db $F8
 .db $F8
@@ -1400,6 +1517,8 @@ L08906A:
 .db $00
 .db $00
 .db $F0
+
+L08908E:
 .db $20
 .db $00
 .db $00
@@ -1413,6 +1532,8 @@ L08906A:
 .db $00
 .db $18
 .db $F0
+
+L08909B:
 .db $00
 .db $F9
 .db $F0
@@ -1432,6 +1553,8 @@ L08906A:
 .db $FF
 .db $08
 .db $F0
+
+L0890AE:
 .db $00
 .db $F8
 .db $F0
@@ -1457,6 +1580,8 @@ L08906A:
 .db $00
 .db $08
 .db $F0
+
+L0890C7:
 .db $00
 .db $F8
 .db $F0
@@ -4260,6 +4385,7 @@ L08A6A3:
     STA $04
     LDA #103
     STA $05
+L08A6C0:
     LDX #0
     BEQ L08A6EC
 L08A6C4:
@@ -4292,6 +4418,7 @@ L08A6EC:
 
 L08A6F2:
     STA $02
+L08A6F4:
     LDA #0
     LDY #32
 L08A6F8:
@@ -4664,6 +4791,7 @@ L08A959:
 
 L08A96C:
     JSR L08AA44.w
+L08A96F:
     JSR L08AA39.w
     LDA $74E2
     CMP #23
@@ -6386,60 +6514,38 @@ L08BCEC:
 .db $3D
 .db $5C
 .db $4D
-.db $33
-.db $9E
-.db $7C
-.db $9E
-.db $98
-.db $9E
-.db $66
-.db $A1
-.db $F4
-.db $9C
-.db $0A
-.db $9F
-.db $FF
-.db $A2
-.db $CA
-.db $A2
-.db $75
-.db $A6
-.db $A3
-.db $A6
-.db $F4
-.db $A6
-.db $38
-.db $9D
-.db $34
-.db $A5
-.db $8F
-.db $A7
-.db $93
-.db $9D
-.db $3B
-.db $A5
-.db $3D
-.db $C7
-.db $09
-.db $9E
-.db $EE
-.db $A3
-.db $38
-.db $A7
-.db $BB
-.db $9E
-.db $C0
-.db $A6
-.db $4F
-.db $A1
-.db $6F
-.db $A9
-.db $00
-.db $80
-.db $5A
-.db $8F
-.db $C2
-.db $81
+
+L08BFA0: ; functions
+.dw L089E33
+.dw L089E7C
+.dw L089E98
+.dw L08A166
+.dw L089CF4
+.dw L089F0A
+.dw L08A2FF
+.dw L08A2CA
+.dw L08A675
+.dw L08A6A3
+.dw L08A6F4
+.dw L089D38
+.dw L08A534
+.dw L08A78F
+.dw L089D93
+.dw L08A53B
+.dw L0FC73D
+.dw L089E09
+.dw L08A3EE
+.dw L08A738
+.dw L089EBB
+.dw L08A6C0
+.dw L08A14F
+.dw L08A96F
+
+; lists?
+.dw L088000
+.dw L088F5A
+.dw L0881C2
+
 .db $00
 .db $01
 .db $16

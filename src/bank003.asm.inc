@@ -5695,16 +5695,14 @@ STOP
 .db $3A
 .db $38
 .db $02
-.db $26
-.db $80
-.db $A2
-.db $83
-.db $67
-.db $92
-.db $96
-.db $94
-.db $6A
-.db $95
+
+L03BFA0:
+.dw L038026
+.dw L0383A2
+.dw L039267
+.dw L039496
+.dw L03956A
+
 .db $0C
 .db $04
 .db $41

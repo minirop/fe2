@@ -3323,9 +3323,9 @@ L01B44F:
     RTS
 
 L01B45A:
-    LDA #160
+    LDA #<L01B8A0
     STA $00
-    LDA #184
+    LDA #>L01B8A0
     STA $01
     LDA $7DA6
     ASL
@@ -3899,6 +3899,8 @@ L01B899:
 L01B89F:
     RTS
 
+; messages during battles (exp gained, death quotes, etc.)
+L01B8A0:
 .dw L01B951
 .dw L01B99A
 .dw L01B9AC
@@ -4475,6 +4477,7 @@ NEWLINE
 .db $40
 .db $0F
 
+L01BFA0:
 .dw L01AAA4
 .dw L01AB1E
 .dw L0FC73D

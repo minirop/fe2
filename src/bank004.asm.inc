@@ -7666,24 +7666,18 @@ L04BE7B: ; end guessed
 .db $D0
 .db $4C
 .db $50
-.db $3D
-.db $C7
-.db $3D
-.db $C7
-.db $00
-.db $80
-.db $25
-.db $80
-.db $3D
-.db $C7
-.db $39
-.db $97
-.db $3D
-.db $C7
-.db $3D
-.db $C7
-.db $A7
-.db $A3
+
+L04BFA0:
+.dw L0FC73D
+.dw L0FC73D
+.dw L048000
+.dw L048025
+.dw L0FC73D
+.dw L049739
+.dw L0FC73D
+.dw L0FC73D
+.dw L04A3A7
+
 .db $01
 .db $00
 .db $00

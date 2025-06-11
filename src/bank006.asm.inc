@@ -8716,6 +8716,7 @@ L06BF53:
 .db $04
 .db $05
 
+L06BFA0:
 .dw L06A665
 .dw L06A71E
 .dw L06A61D

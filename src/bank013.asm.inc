@@ -3278,6 +3278,7 @@ L0D9A43:
 L0D9A56:
     LDA #0
     STA $78A2
+L0D9A5B:
     LDA $8A
     JSR L0FC34C.w
 
@@ -8142,22 +8143,17 @@ L0DBF01:
 .db $17
 .db $BD
 .db $44
-.db $00
-.db $85
-.db $B5
-.db $85
-.db $FE
-.db $8F
-.db $0C
-.db $8C
-.db $5B
-.db $9A
-.db $D6
-.db $99
-.db $FB
-.db $AC
-.db $8A
-.db $91
+
+L0DBFA0:
+.dw L0D8500
+.dw L0D85B5
+.dw L0D8FFE
+.dw L0D8C0C
+.dw L0D9A5B
+.dw L0D99D6
+.dw L0DACFB
+.dw L0D918A
+
 .db $00
 .db $00
 .db $00

@@ -5102,14 +5102,13 @@ L0ABD6F:
 .db $12
 .db $A8
 .db $50
-.db $2E
-.db $83
-.db $49
-.db $8B
-.db $34
-.db $8C
-.db $6F
-.db $BD
+
+L0ABFA0:
+.dw L0A832E
+.dw L0A8B49
+.dw L0A8C34
+.dw L0ABD6F
+
 .db $16
 .db $7B
 .db $03

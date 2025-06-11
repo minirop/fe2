@@ -1856,6 +1856,8 @@ L009FF1:
 .dw L00A8B0
 .dw L00A8BF
 .dw L00A8CA
+
+L00A035:
 .dw L00A8D1
 .dw L00A8DA
 .dw L00A8F5
@@ -2435,10 +2437,12 @@ L00A988:
 
 L00A98E:
 .db $1F $30 $31 $32 $33 $34 $21 $22
-.db $21 $20 $21 $22 $21 $29 $2A $2B
-.db $2F $2C $2D $2E $39 $3B $2F $2B
-.db $2A $29 $3A $20 $21 $22 $21 $21
-.db $22 $21
+.db $21 $20 $21 $22 $21 $29
+
+L00A99C:
+.db $2A $2B $2F $2C $2D $2E $39 $3B
+.db $2F $2B $2A $29 $3A $20 $21 $22
+.db $21 $21 $22 $21
 
 L00A9B0:
     LDA $044B
@@ -3923,15 +3927,17 @@ L00BACA:
 .db $FF $FF $FF $FF $FF $FF $FF $FE
 .db $FF $00 $FF $FF $FF $FF $FF $FF
 .db $FF $00 $FF $00 $FF $00 $FF $FF
-.db $FF $00 $FF $00 $FF $00 $FF $01
-.db $FF $00 $FF $01 $FF $01 $FF $01
-.db $FF $01 $FF $01 $FF $01 $FF $02
-.db $FF $01 $FF $02 $FF $02 $FF $02
-.db $FF $02 $FF $02 $FF $02 $FF $03
-.db $FF $02 $FF $03 $FF $03 $FF $03
-.db $FF $03 $FF $03 $FF $03 $FF $04
-.db $FF $03 $FF $04 $FF $04 $FF $04
-.db $80
+.db $FF $00 $FF $00
+
+L00BB0E:
+.db $FF $00 $FF $01 $FF $00 $FF $01
+.db $FF $01 $FF $01 $FF $01 $FF $01
+.db $FF $01 $FF $02 $FF $01 $FF $02
+.db $FF $02 $FF $02 $FF $02 $FF $02
+.db $FF $02 $FF $03 $FF $02 $FF $03
+.db $FF $03 $FF $03 $FF $03 $FF $03
+.db $FF $03 $FF $04 $FF $03 $FF $04
+.db $FF $04 $FF $04 $80
 
 L00BB4B:
 .db $FF $00 $FF $00 $FF $01 $FF $00
@@ -4449,22 +4455,17 @@ L00BEE4:
 .db $71
 .db $45
 .db $08
-.db $36
-.db $9F
-.db $B0
-.db $A9
-.db $FA
-.db $AD
-.db $7A
-.db $BD
-.db $0E
-.db $BB
-.db $35
-.db $A0
-.db $D8
-.db $F2
-.db $9C
-.db $A9
+
+L00BFA0:
+.dw L009F36
+.dw L00A9B0
+.dw L00ADFA
+.dw L00BD7A
+.dw L00BB0E
+.dw L00A035
+.dw L0FF2D8
+.dw L00A99C
+
 .db $06
 .db $08
 .db $00

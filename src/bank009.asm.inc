@@ -3491,6 +3491,8 @@ L09AC2E:
     STA $7DDB,X
     LDA #32
     JSR L0FE6B8.w
+
+L09AC3B:
     LDX $7DA5
     LDA $7DDD,X
     AND #127
@@ -5483,18 +5485,15 @@ L09BDEB:
 .db $39
 .db $41
 .db $05
-.db $00
-.db $80
-.db $74
-.db $8B
-.db $BF
-.db $AC
-.db $23
-.db $AC
-.db $3B
-.db $AC
-.db $13
-.db $AE
+
+L09BFA0:
+.dw L098000
+.dw L098B74
+.dw L09ACBF
+.dw L09AC23
+.dw L09AC3B
+.dw L09AE13
+
 .db $85
 .db $5E
 .db $10

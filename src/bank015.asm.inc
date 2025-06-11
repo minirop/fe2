@@ -415,7 +415,7 @@ L0FC2D2:
     STY $01
     JMP L0FC3E7.w
 
-L0FC2D9:
+L0FC2D9: ; poll inputs
     LDY #1
     STY $4016
     DEY
@@ -3831,7 +3831,6 @@ L0FD874:
 .dw L0FD99C
 .dw L0FD9A6
 .dw L0FD9AE
-
 
 L0FD88C:
 .db $CA $CB $CC $CD $CE $CF $D0 $D1
@@ -8977,6 +8976,7 @@ L0FF2CB:
 L0FF2D4:
     LDA #83
     STA $00
+L0FF2D8:
     LDA #105
     STA $01
     RTS
