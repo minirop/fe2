@@ -1,1 +1,7 @@
 src/*.asm
+maps/*.bin
+maps/*.tiled-session
+maps/*.tiled-project
+*.nes
+*.sym
+game.obj

@@ -34,6 +34,7 @@ encoding:
 maps:
 	@fe2-tiled maps/ram-woods.tmx
 	@fe2-tiled maps/first-battle-of-southern-zofia.tmx
+	@fe2-tiled maps/second-battle-of-southern-zofia.tmx
 
 clean:
 	rm -f src/*.asm
