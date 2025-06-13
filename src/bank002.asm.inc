@@ -86,7 +86,7 @@ L_TILEMAPS:
 .dw L02B490
 .dw L02B490
 
-L0280A2: ;  world map
+L0280A2: ; world map
 .INCBIN "0280A2.bin"
 
 L0284EE:
@@ -239,239 +239,38 @@ L02B4D8: ; duma tower
 .dw L02BAAE
 
 L02B4EA:
-.db $0E $0F $00 $00 $FE $24 $BC $02
-.db $C1 $FE $BC $FE $05 $C1 $07 $BC
-.db $FE $C4 $FE $02 $C7 $FE $FB $FE
-.db $05 $C7 $FE $B8 $FE $06 $BC $FE
-.db $C4 $FE $02 $C0 $FE $38 $FE $05
-.db $C0 $FE $C7 $B8 $FE $02 $C1 $03
-.db $BC $FE $C4 $09 $FE $07 $04 $FE
-.db $C0 $FE $03 $C7 $03 $BC $FE $C4
-.db $09 $FE $08 $04 $03 $C0 $03 $BC
-.db $FE $C4 $09 $FE $0B $04 $03 $BC
-.db $FE $C4 $09 $FE $0B $04 $03 $BC
-.db $FE $C4 $09 $FE $08 $04 $FE $C9
-.db $FE $02 $C2 $03 $BC $FE $C4 $09
-.db $FE $07 $04 $FE $C9 $FE $07 $BC
-.db $08 $C2 $34 $BC $FF
+.INCBIN "02B4EA.bin"
 
 L02B55F:
-.db $15
-.db $17 $00 $00 $FE $18 $D2 $18 $D3
-.db $18 $D2 $FE $B2 $FE $17 $D1 $FE
-.db $BD $FE $0F $01 $FE $D0 $FE $06
-.db $01 $FE $D0 $D1 $FE $0A $01 $FE
-.db $40 $41 $FE $02 $01 $FE $D0 $D1
-.db $FE $06 $01 $FE $D1 $D0 $01 $95
-.db $FE $03 $80 $FE $96 $FE $03 $01
-.db $FE $40 $FE $02 $44 $FE $41 $01
-.db $D1 $FE $07 $01 $FE $D0 $D1 $01
-.db $93 $59 $1B $5B $94 $03 $FE $02
-.db $01 $03 $44 $FE $45 $FE $09 $01
-.db $FE $D1 $D0 $40 $93 $59 $49 $5A
-.db $94 $02 $FE $02 $01 $FE $42 $FE
-.db $03 $44 $FE $41 $FE $02 $01 $FE
-.db $77 $78 $66 $75 $79 $01 $D0 $D1
-.db $46 $93 $5C $5D $5E $94 $02 $FE
-.db $02 $01 $FE $77 $FE $03 $78 $FE
-.db $79 $01 $35 $7A $74 $67 $76 $7B
-.db $37 $D1 $D0 $42 $93 $FE $03 $0E
-.db $FE $94 $02 $FE $02 $01 $FE $7A
-.db $FE $03 $74 $FE $7B $03 $35 $72
-.db $0A $17 $19 $73 $36 $D0 $D1 $01
-.db $93 $14 $12 $14 $94 $02 $01 $40
-.db $70 $14 $12 $14 $71 $02 $35 $72
-.db $0A $3D $0A $73 $36 $D1 $D0 $01
-.db $93 $FE $03 $0E $FE $94 $02 $01
-.db $44 $70 $60 $10 $60 $71 $02 $35
-.db $72 $3C $65 $3C $73 $36 $D0 $D1
-.db $01 $93 $14 $12 $14 $94 $02 $01
-.db $44 $6E $6F $0E $6E $6F $02 $35
-.db $72 $3C $60 $3C $73 $36 $D1 $D0
-.db $01 $99 $83 $10 $82 $9A $02 $01
-.db $42 $6C $6D $10 $6C $6D $02 $35
-.db $72 $0A $3C $0A $73 $36 $D0 $D1
-.db $D0 $8A $85 $38 $84 $8B $02 $FE
-.db $02 $01 $FE $42 $44 $48 $43 $FE
-.db $02 $01 $FE $35 $7C $7D $0A $7C
-.db $7D $36 $D1 $D0 $D1 $FE $0E $01
-.db $FE $35 $7E $7F $0C $7E $7F $36
-.db $D0 $B2 $FE $0F $01 $07 $35 $FE
-.db $D1 $BD $FE $06 $D0 $02 $01 $0F
-.db $D0 $06 $D3 $FE $B2 $FE $02 $01
-.db $FE $B5 $FE $0E $D3 $06 $D2 $FE
-.db $BD $FE $02 $01 $FE $9F $FE $0E
-.db $D2 $06 $D3 $FE $B2 $FE $02 $01
-.db $FE $B5 $FE $0E $D3 $FF
+.INCBIN "02B55F.bin"
 
 L02B6CE:
-.db $0E $17
-.db $00 $00 $FE $60 $BC $18 $C1 $18
-.db $C7 $18 $C0 $30 $04 $18 $C2 $78
-.db $BC $FF
+.INCBIN "02B6CE.bin"
 
 L02B6E2:
-.db $1D $0F $00 $00 $FE $02
-.db $DC $FE $D7 $95 $FE $07 $80 $FE
-.db $96 $D6 $FE $03 $DC $02 $BC $FE
-.db $DB $97 $91 $FE $06 $81 $FE $98
-.db $DA $FE $05 $BC $FE $DB $D8 $2B
-.db $2A $59 $EB $5B $FE $02 $2A $FE
-.db $D9 $DA $FE $05 $BC $FE $DB $D8
-.db $2B $F0 $5C $5D $5E $FE $02 $2A
-.db $FE $D9 $DA $FE $05 $BC $FE $DB
-.db $D8 $2B $FE $06 $2A $FE $D9 $DA
-.db $FE $03 $BC $02 $80 $FE $9A $99
-.db $FE $07 $80 $FE $9A $99 $FE $03
-.db $80 $02 $81 $FE $8B $8A $FE $07
-.db $81 $FE $8B $8A $FE $03 $81 $20
-.db $2A $10 $80 $10 $81 $FE $AD $BC
-.db $AC $AD $BC $AC $AD $BC $AC $AD
-.db $BC $AC $AD $BC $AC $9E $AD $BC
-.db $AC $AD $BC $AC $AD $BC $AC $AD
-.db $BC $AC $AD $BC $AC $BC $8B $2D
-.db $8A $8B $2D $8A $8B $2D $8A $8B
-.db $2D $8A $8B $2D $8A $BC $FE $0F
-.db $2A $FE $BC $FE $0D $2A $FE $F0
-.db $2A $BC $FE $0F $2A $07 $BC $02
-.db $2A $0E $BC $02 $2A $0E $BC $FE
-.db $2D $2A $AC $FE $07 $9E $06 $BC
-.db $FE $2D $2A $8A $FE $07 $81 $06
-.db $BC $FE $2D $FE $09 $2A $80 $BC
-.db $FF
+.INCBIN "02B6E2.bin"
 
 L02B7B9:
-.db $15 $17 $00 $00 $FE $0E $BC
-.db $FE $DA $FE $17 $BC $FE $DA $FE
-.db $17 $BC $FE $DA $FE $17 $BC $FE
-.db $DA $FE $09 $BC $0E $C1 $FE $DA
-.db $FE $09 $BC $0E $C7 $FE $99 $FE
-.db $09 $80 $0E $C0 $FE $8A $FE $09
-.db $81 $0E $04 $0A $2A $0E $04 $0A
-.db $2A $0A $C2 $0E $80 $0A $BC $0E
-.db $81 $0A $BC $FE $AC $AD $BC $AC
-.db $AD $BC $AC $AD $BC $AC $AD $BC
-.db $AC $AD $FE $0A $BC $FE $AC $AD
-.db $BC $AC $AD $BC $AC $AD $BC $AC
-.db $AD $BC $AC $AD $FE $0A $BC $FE
-.db $8A $8B $2D $8A $8B $2D $8A $8B
-.db $2D $8A $8B $2D $8A $8B $FE $0A
-.db $BC $FE $2D $FE $0D $2A $0A $BC
-.db $FE $2D $FE $02 $2A $FE $E9 $FE
-.db $03 $2A $FE $E9 $FE $06 $2A $0A
-.db $BC $FE $2D $FE $0D $2A $0A $BC
-.db $FE $2D $FE $0A $2A $0D $BC $FE
-.db $2D $FE $02 $2A $FE $E9 $FE $03
-.db $2A $FE $E9 $FE $03 $2A $0D $BC
-.db $FE $2D $FE $0A $2A $33 $BC $FF
+.INCBIN "02B7B9.bin"
 
 L02B870:
-.db $11 $17 $00 $00 $FE $4B $BC $FE
-.db $AF $9E $FB $FE $06 $9E $08 $BC
-.db $FE $AF $FE $02 $9E $04 $BC $FE
-.db $AE $81 $38 $FE $06 $81 $08 $BC
-.db $FE $AE $FE $02 $81 $04 $BC $FE
-.db $2D $FE $08 $2A $08 $BC $FE $2D
-.db $FE $02 $2A $04 $BC $FE $2D $FE
-.db $08 $2A $FE $BC $FE $07 $00 $FE
-.db $2D $EB $2C $FE $04 $BC $FE $2D
-.db $FE $08 $2A $FE $BC $00 $FE $06
-.db $BC $FE $2D $FE $02 $2A $04 $BC
-.db $FE $2D $FE $08 $2A $FE $BC $00
-.db $FE $06 $BC $FE $2D $FE $02 $2A
-.db $04 $BC $FE $2D $FE $08 $2A $FE
-.db $BC $00 $FE $06 $BC $FE $2D $FE
-.db $02 $2A $04 $BC $FE $2D $FE $03
-.db $2A $FE $F0 $FE $04 $2A $FE $BC
-.db $00 $FE $06 $BC $FE $2D $FE $02
-.db $2A $0E $BC $FE $00 $FE $14 $BC
-.db $04 $00 $0A $BC $FE $AD $BC $AC
-.db $AD $BC $AC $AD $BC $AC $AD $00
-.db $AC $AD $BC $AC $AD $FE $08 $BC
-.db $FE $AD $BC $AC $AD $BC $AC $AD
-.db $BC $AC $AD $00 $AC $AD $BC $AC
-.db $FE $09 $BC $FE $8B $2D $8A $8B
-.db $2D $8A $8B $2D $8A $8B $E8 $8A
-.db $8B $2D $8A $FE $09 $BC $0F $2A
-.db $09 $BC $0D $2A $FE $F0 $2A $FE
-.db $09 $BC $FF
+.INCBIN "02B870.bin"
 
 L02B953:
-.db $0E $0F $00 $00 $FE
-.db $31 $BC $FE $AF $FE $0A $9E $05
-.db $BC $FE $AE $FE $0A $81 $05 $BC
-.db $FE $2D $FE $0A $2A $04 $9E $FE
-.db $BC $2D $FE $02 $2A $FE $E9 $FE
-.db $03 $2A $FE $E9 $FE $03 $2A $04
-.db $81 $FE $BC $2D $FE $0E $2A $FE
-.db $BC $2D $FE $0E $2A $FE $BC $2D
-.db $FE $02 $2A $FE $E9 $FE $03 $2A
-.db $FE $E9 $FE $03 $2A $05 $BC $FE
-.db $2D $FE $0A $2A $44 $BC $FF
+.INCBIN "02B953.bin"
 
 L02B9A7:
-.db $15
-.db $17 $00 $00 $FE $3B $BC $FE $FB
-.db $FE $0F $BC $FE $AF $FE $03 $9E
-.db $FE $BC $AF $9E $AD $38 $AC $FE
-.db $03 $9E $FE $BC $AF $FE $03 $9E
-.db $06 $BC $FE $AE $FE $03 $81 $FE
-.db $BC $AE $81 $8B $2D $8A $FE $03
-.db $81 $FE $BC $AE $FE $03 $81 $03
-.db $BC $02 $9E $FE $AD $2D $FE $03
-.db $2A $FE $BC $2D $FE $07 $2A $FE
-.db $BC $2D $FE $03 $2A $FE $AC $FE
-.db $02 $9E $02 $81 $FE $8B $2D $FE
-.db $03 $2A $FE $BC $2D $FE $02 $2A
-.db $FE $F0 $FE $04 $2A $FE $BC $2D
-.db $FE $03 $2A $FE $8A $FE $02 $81
-.db $07 $2A $0A $BC $FE $2D $FE $0D
-.db $2A $FE $AC $FE $08 $9E $FE $AD
-.db $2D $FE $06 $2A $03 $BC $04 $2A
-.db $FE $8A $FE $08 $81 $FE $8B $2D
-.db $FE $03 $2A $06 $BC $12 $2A $06
-.db $BC $FE $2D $FE $11 $2A $06 $BC
-.db $FE $2D $FE $11 $2A $06 $BC $FE
-.db $2D $FE $11 $2A $06 $BC $FE $2D
-.db $FE $07 $2A $10 $BC $FE $2D $FE
-.db $07 $2A $FE $BC $AF $FE $05 $9E
-.db $FE $FB $FE $02 $9E $06 $BC $FE
-.db $2D $FE $07 $2A $FE $BC $AE $FE
-.db $05 $81 $FE $38 $FE $02 $81 $06
-.db $BC $FE $2D $FE $07 $2A $FE $BC
-.db $2D $FE $08 $2A $06 $BC $FE $2D
-.db $FE $07 $2A $FE $BC $2D $FE $08
-.db $2A $06 $BC $FE $2D $FE $07 $2A
-.db $FE $BC $2D $FE $05 $2A $FE $F0
-.db $FE $02 $2A $33 $BC $FF
+.INCBIN "02B9A7.bin"
 
 L02BAAE:
-.db $15 $0F
-.db $00 $00 $FE $23 $BC $FE $AF $FE
-.db $0A $9E $05 $BC $FE $AE $FE $0A
-.db $81 $05 $BC $FE $2D $FE $0A $2A
-.db $02 $BC $03 $9E $FE $2D $FE $0A
-.db $2A $02 $BC $03 $81 $FE $2D $FE
-.db $03 $2A $03 $E9 $04 $2A $02 $BC
-.db $06 $2A $05 $E9 $03 $2A $02 $BC
-.db $06 $2A $05 $E9 $03 $2A $05 $BC
-.db $03 $2A $05 $E9 $03 $2A $05 $BC
-.db $FE $2D $FE $03 $2A $03 $E9 $04
-.db $2A $05 $BC $FE $2D $FE $0A $2A
-.db $05 $BC $FE $2D $FE $0A $2A $15
-.db $BC $FE $AF $FE $04 $9E $FE $FB
-.db $FE $05 $9E $05 $BC $FE $AE $FE
-.db $04 $81 $FE $38 $FE $05 $81 $05
-.db $BC $FE $2D $FE $0A $2A $05 $BC
-.db $FE $2D $FE $0A $2A $05 $BC $FE
-.db $2D $FE $04 $2A $FE $F0 $FE $05
-.db $2A $32 $BC $FF
+.INCBIN "02BAAE.bin"
 
 L02BB44:
     JSR L02BB5E.w
     LDA $8A
     JSR L0FC34C.w
 
+L02BB4C:
 .dw L02BB73
 .dw L02BBB5
 .dw L02BC0E
@@ -746,6 +545,7 @@ L02BD29:
     LDA $059C
     JSR L0FC34C.w
 
+L02BD35:
 .dw L02BD39
 .dw L02BE9B
 
@@ -997,6 +797,7 @@ L02BEF0:
     LDA #10
     JMP L0FCA94.w
 
+L02BEF9:
 .dw L02BEFB
 
 L02BEFB:
@@ -1196,8 +997,7 @@ L02BFA6: ; pointers to data
 .db $44
 .db $0C
 .db $60
-.db $F9
-.db $BE
+.dw L02BEF9
 .db $08
 .db $00
 .db $00

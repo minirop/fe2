@@ -5,7 +5,7 @@
 
 L0FC000:
     LDA #5
-    JSR $CA40.w
+    JSR L0FCA40.w
     JSR $BFA0.w
     LDA #6
     JMP L0FCA40.w

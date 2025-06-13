@@ -4101,8 +4101,8 @@ L04A4F1:
     STA $7A8E
     LDA #37
     STA $7A8F
-    LDX #138
-    LDY #165
+    LDX #<L04A58A
+    LDY #>L04A58A
     JSR L0FC2D2.w
     LDX #15
     JSR L049F83.w

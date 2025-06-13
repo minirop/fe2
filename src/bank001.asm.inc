@@ -2561,22 +2561,22 @@ L01AF92:
 L01AFA3:
     LDA $0388
     BNE L01AFAE
-    LDX #176
-    LDY #176
+    LDX #<L01B0B0
+    LDY #>L01B0B0
     BNE L01AFE2
 L01AFAE:
-    LDX #135
-    LDY #176
+    LDX #<L01B087
+    LDY #>L01B087
     BNE L01AFE2
 L01AFB4:
     LDA $0388
     BNE L01AFBF
-    LDX #222
-    LDY #176
+    LDX #<L01B0DE
+    LDY #>L01B0DE
     BNE L01AFE2
 L01AFBF:
-    LDX #217
-    LDY #176
+    LDX #<L01B0D9
+    LDY #>L01B0D9
     BNE L01AFE2
 L01AFC5:
     LDA $05A0
@@ -2588,12 +2588,12 @@ L01AFC5:
 L01AFD3:
     LDA $0388
     BNE L01AFDE
-    LDX #82
-    LDY #176
+    LDX #<L01B052
+    LDY #>L01B052
     BNE L01AFE2
 L01AFDE:
-    LDX #29
-    LDY #176
+    LDX #<L01B01D
+    LDY #>L01B01D
 L01AFE2:
     STX $00
     STY $01
@@ -2625,10 +2625,12 @@ L01B011:
 L01B012:
     LDA $0388
     BEQ L01B00E
-    LDX #227
-    LDY #176
+    LDX #<L01B0E3
+    LDY #>L01B0E3
     BNE L01AFE2
 
+; first 2 bytes are PPU address ($2006)
+L01B01D:
 .db $22
 .db $01
 .db $0F
@@ -2682,6 +2684,8 @@ L01B012:
 .db $C5
 .db $EC
 .db $00
+
+L01B052:
 .db $22
 .db $10
 .db $0F
@@ -2735,6 +2739,8 @@ L01B012:
 .db $C5
 .db $EC
 .db $00
+
+L01B087:
 .db $22
 .db $A1
 .db $0F
@@ -2776,6 +2782,8 @@ L01B012:
 .db $D8
 .db $DB
 .db $00
+
+L01B0B0:
 .db $22
 .db $B0
 .db $0F
@@ -2817,16 +2825,22 @@ L01B012:
 .db $D8
 .db $DB
 .db $00
+
+L01B0D9:
 .db $22
 .db $E2
 .db $4D
 .db $C2
 .db $00
+
+L01B0DE:
 .db $22
 .db $F1
 .db $4D
 .db $C2
 .db $00
+
+L01B0E3:
 .db $23
 .db $05
 .db $4A
@@ -2854,8 +2868,8 @@ L01B0F0:
     STA $038C
     LDA $0308
     STA $038A
-    LDX #171
-    LDY #178
+    LDX #<L01B2AB
+    LDY #>L01B2AB
     BNE L01B133
 L01B115:
     LDY $0305
@@ -2868,8 +2882,8 @@ L01B115:
     STA $038C
     LDA $0309
     STA $038A
-    LDX #179
-    LDY #178
+    LDX #<L01B2B3
+    LDY #>L01B2B3
 L01B133:
     STX $0A
     STY $0B
@@ -3068,6 +3082,7 @@ L01B29F:
     BNE L01B29F
     RTS
 
+L01B2AB:
 .db $A9
 .db $DE
 .db $22
@@ -3076,6 +3091,8 @@ L01B29F:
 .db $5A
 .db $22
 .db $91
+
+L01B2B3:
 .db $BA
 .db $DF
 .db $22
