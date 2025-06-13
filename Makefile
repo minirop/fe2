@@ -6,8 +6,8 @@ COBJ=game.obj
 
 all: clean $(ROM).nes
 
-$(COBJ): src/main.s encoding
-	$(AS) -I src -I bin -x -v -o $@ $<
+$(COBJ): src/main.s encoding maps
+	$(AS) -I src -I bin -I maps -x -v -o $@ $<
 
 $(ROM).nes: $(COBJ)
 	$(LD) -d -v -S linkfile $(ROM).nes
@@ -31,6 +31,12 @@ encoding:
 	@python scripts/preprocess.py src/bank014.asm.inc src/bank014.asm
 	@python scripts/preprocess.py src/bank015.asm.inc src/bank015.asm
 
+maps:
+	@fe2-tiled maps/ram-woods.tmx
+	@fe2-tiled maps/first-battle-of-southern-zofia.tmx
+
 clean:
 	rm -f src/*.asm
 	rm -f $(ROM).nes $(COBJ)
+
+.PHONY: maps
