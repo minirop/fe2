@@ -63,1166 +63,142 @@ L0C8000: ; non-combat tilemaps and objects?
 
 ; tilemap of the villages (doesn't have houses)
 L0C8070:
-.db $0E $17 $00 $00 $D3 $B2 $9F $FE
-.db $16 $D2 $FE $BD $FE $14 $D1 $FE
-.db $B5 $FE $02 $D3 $FE $B2 $FE $09
-.db $01 $FE $40 $41 $FE $09 $01 $FE
-.db $9F $FE $02 $D2 $FE $BD $FE $08
-.db $01 $FE $40 $FE $02 $44 $FE $41
-.db $FE $05 $01 $FE $40 $41 $01 $B5
-.db $FE $02 $D3 $FE $B2 $FE $08 $01
-.db $FE $42 $FE $03 $44 $FE $41 $FE
-.db $04 $01 $FE $42 $45 $01 $9F $FE
-.db $02 $D2 $FE $BD $FE $09 $01 $FE
-.db $46 $44 $48 $43 $FE $04 $01 $FE
-.db $40 $45 $01 $B5 $FE $02 $D3 $FE
-.db $B2 $FE $04 $01 $FE $40 $41 $FE
-.db $03 $01 $FE $42 $43 $FE $05 $01
-.db $FE $40 $FE $02 $44 $FE $41 $9F
-.db $FE $02 $D2 $FE $BD $01 $40 $FE
-.db $02 $47 $02 $44 $FE $41 $FE $04
-.db $01 $FE $40 $47 $41 $40 $47 $FE
-.db $04 $44 $02 $D1 $FE $D3 $B2 $01
-.db $42 $FE $04 $44 $FE $45 $FE $04
-.db $01 $FE $46 $44 $43 $42 $FE $04
-.db $44 $FE $45 $FE $02 $01 $FE $D2
-.db $BD $01 $40 $FE $05 $44 $FE $41
-.db $FE $03 $01 $FE $42 $43 $FE $02
-.db $01 $FE $42 $43 $42 $44 $45 $FE
-.db $02 $D0 $FE $D3 $B2 $01 $42 $FE
-.db $05 $44 $FE $43 $FE $08 $01 $FE
-.db $40 $41 $42 $43 $B5 $D3 $D2 $BD
-.db $FE $02 $01 $FE $42 $FE $03 $48
-.db $FE $43 $FE $09 $01 $FE $46 $45
-.db $FE $02 $01 $FE $9F $D2 $D3 $B2
-.db $FE $10 $01 $FE $42 $43 $FE $02
-.db $01 $FE $B5 $D3 $D2 $BD $FE $14
-.db $D0 $FE $9F $D2 $FE $18 $D3 $FF
+.INCBIN "0C8070.bin"
 
 L0C8188: ; right house
-.db $06 $04 $77 $78 $66 $75 $79 $7A
-.db $74 $67 $76 $7B $72 $1A $1A $0B
-.db $73 $72 $28 $28 $19 $73 $6E $6F
-.db $F7 $6E $6F $6C $6D $F8 $6C $6D
-.db $4D $4E $3F $4D $4E
+.INCBIN "0C8188.bin"
 
 L0C81AD: ; left house
-.db $06 $04 $77 $78 $66 $75 $79 $7A
-.db $74 $67 $76 $7B $72 $1A $1A $0B
-.db $73 $72 $28 $28 $19 $73 $7C $7D
-.db $F7 $7C $7D $7E $7F $F8 $7E $7F
-.db $4D $4E $3F $4D $4E
+.INCBIN "0C81AD.bin"
 
 L0C81D2: ; house shadow
-.db $03 $00 $02 $02 $02 $02
+.INCBIN "0C81D2.bin"
 
 L0C81D8: ; tree
-.db $01 $00 $D0 $D1
+.INCBIN "0C81D8.bin"
 
 L0C81DC: ; column
-.db $01 $00 $CB $CC
+.INCBIN "0C81DC.bin"
 
 L0C81E0: ; double column
-.db $01 $00 $CD $CD
+.INCBIN "0C81E0.bin"
 
 L0C81E4: ; small pool
-.db $03 $03 $3F $3F $3F $3F $3F $A8
-.db $A9 $3F $3F $A6 $A5 $3F $3F $3F
-.db $3F $3F
+.INCBIN "0C81E4.bin"
 
 L0C81F6: ; mouth of truth
-.db $01 $02 $E4 $E5 $E6 $E2 $FD $E3
+.INCBIN "0C81F6.bin"
 
 L0C81FE: ; statue of Mila
-.db $02 $02 $59 $E1 $5A $59 $F9 $5B
-.db $5C $5D $5E
+.INCBIN "0C81FE.bin"
 
 L0C8209: ;  room with table and chest
-.db $09 $0B $95 $80 $80 $80 $80 $80
-.db $80 $80 $80 $80 $96 $81 $97 $91
-.db $81 $81 $81 $81 $81 $81 $81 $81
-.db $98 $57 $93 $0F $15 $13 $15 $13
-.db $15 $13 $0E $EB $9B $1F $93 $0F
-.db $65 $65 $65 $65 $65 $10 $0E $0E
-.db $94 $1F $93 $0F $65 $65 $65 $65
-.db $65 $0F $0E $0E $94 $1F $93 $0F
-.db $60 $60 $60 $60 $60 $0F $0E $0E
-.db $94 $1F $93 $0F $14 $12 $14 $12
-.db $14 $12 $0E $0E $94 $1F $93 $0F
-.db $0E $0E $0E $0E $0E $0E $0E $0E
-.db $94 $1F $99 $89 $F7 $88 $80 $80
-.db $80 $80 $80 $80 $9A $1F $8A $8B
-.db $F8 $8A $81 $81 $81 $81 $81 $81
-.db $8B $1F
+.INCBIN "0C8209.bin"
 
 L0C8283: ; small room/cell?
-.db $06 $04 $95 $80 $80 $80 $96 $97
-.db $91 $81 $81 $98 $93 $36 $35 $35
-.db $9D $93 $36 $35 $35 $9D $93 $36
-.db $35 $35 $9D $99 $89 $F1 $88 $9A
-.db $8A $8B $F2 $8A $8B
+.INCBIN "0C8283.bin"
 
 L0C82A8: ; white door
-.db $01 $00 $F1 $F2
+.INCBIN "0C82A8.bin"
 
 L0C82AC: ; Mila Shrine
-.db $0E $17 $00 $00 $FE $02 $BC $13
-.db $C1 $04 $BC $FE $C4 $FE $04 $C0
-.db $FE $E4 $E5 $E6 $FE $05 $C0 $FE
-.db $E4 $E5 $E6 $FE $04 $C0 $FE $C3
-.db $FE $03 $BC $FE $C4 $A8 $FE $03
-.db $A9 $FE $E2 $FD $E3 $A8 $FE $03
-.db $2A $FE $A8 $E2 $FD $E3 $A8 $FE
-.db $03 $A9 $FE $C3 $FE $03 $BC $FE
-.db $C4 $A6 $FE $03 $A5 $FE $AA $2A
-.db $AB $A6 $FE $03 $2A $FE $A6 $AA
-.db $2A $AB $A6 $FE $03 $A5 $FE $C3
-.db $FE $03 $BC $FE $C4 $A6 $FE $04
-.db $A5 $FE $2A $A6 $A5 $FE $03 $2A
-.db $FE $A6 $A5 $2A $A6 $FE $04 $A5
-.db $FE $C3 $FE $03 $BC $FE $C4 $A6
-.db $FE $02 $A5 $0D $2A $03 $A5 $FE
-.db $C3 $FE $03 $BC $FE $C4 $A6 $FE
-.db $02 $A5 $0D $2A $FE $A6 $FE $02
-.db $A5 $FE $C3 $FE $03 $BC $FE $C4
-.db $A6 $FE $02 $A5 $0D $2A $FE $A6
-.db $FE $02 $A5 $FE $C3 $FE $03 $BC
-.db $FE $C4 $A6 $FE $02 $A5 $0D $2A
-.db $FE $A6 $FE $02 $A5 $FE $C3 $FE
-.db $03 $BC $FE $C4 $A6 $FE $02 $A5
-.db $0D $2A $FE $A6 $FE $02 $A5 $FE
-.db $C3 $FE $03 $BC $FE $C4 $A6 $FE
-.db $02 $A5 $06 $A9 $FE $2A $A8 $FE
-.db $05 $A9 $FE $A6 $FE $02 $A5 $FE
-.db $C3 $FE $03 $BC $FE $C4 $A6 $FE
-.db $08 $A5 $FE $2A $A6 $FE $08 $A5
-.db $FE $C3 $FE $03 $BC $FE $C4 $A6
-.db $FE $07 $A5 $03 $04 $08 $A5 $FE
-.db $C3 $FE $04 $BC $08 $C2 $FE $BB
-.db $04 $C9 $FE $08 $C2 $0D $BC $FE
-.db $C4 $09 $C3 $FE $0B $BC $FF
+.INCBIN "0C82AC.bin"
 
 L0C83C3: ; stone wall shadow
-.db $05 $00 $57 $1F $1F $1F $1F $1F
+.INCBIN "0C83C3.bin"
 
 L0C83CB: ; throne room?
-.db $15 $17 $00 $00 $01 $8C $AC $FE
-.db $05 $9E $02 $A2 $03 $A1 $02 $A2
-.db $05 $9E $FE $AD $BE $2F $FE $02
-.db $01 $FE $8C $8A $FE $05 $81 $FE
-.db $A4 $A3 $FE $03 $A0 $FE $A3 $A4
-.db $FE $05 $81 $FE $8B $BE $2F $FE
-.db $02 $01 $FE $8C $1D $1C $3F $CB
-.db $3F $21 $53 $FE $05 $55 $FE $54
-.db $22 $3F $CB $3F $FE $02 $1C $FE
-.db $8D $2F $FE $02 $01 $FE $8C $1D
-.db $1C $3F $CC $4F $21 $30 $32 $1B
-.db $33 $1B $33 $31 $22 $3F $CC $4F
-.db $FE $02 $1C $FE $8D $2F $FE $02
-.db $01 $FE $8C $1D $1C $FE $03 $3F
-.db $FE $21 $51 $FE $05 $56 $FE $52
-.db $22 $FE $03 $3F $02 $1C $FE $8D
-.db $2F $FE $02 $01 $FE $8C $1D $1C
-.db $3F $CB $3F $24 $FE $07 $25 $FE
-.db $26 $3F $CB $3F $FE $02 $1C $FE
-.db $8D $2F $FE $02 $01 $FE $8C $1D
-.db $1C $3F $CC $4F $FE $0A $3F $FE
-.db $CC $4F $FE $02 $1C $FE $8D $2F
-.db $FE $02 $01 $FE $8C $1D $1C $FE
-.db $0F $3F $02 $1C $FE $8D $2F $FE
-.db $02 $01 $FE $8C $1D $FE $12 $1C
-.db $FE $8D $2F $FE $02 $01 $FE $8C
-.db $1D $FE $12 $1C $FE $8D $2F $FE
-.db $02 $01 $FE $8C $1D $FE $12 $1C
-.db $FE $8D $2F $FE $02 $01 $FE $8C
-.db $1D $FE $12 $1C $FE $8D $2F $FE
-.db $02 $01 $FE $8C $95 $80 $89 $F1
-.db $88 $80 $96 $FE $05 $1C $FE $95
-.db $80 $89 $F3 $88 $80 $96 $8D $2F
-.db $FE $02 $01 $FE $8C $97 $91 $8B
-.db $F2 $8A $81 $98 $1E $FE $04 $1C
-.db $FE $97 $91 $8B $F4 $8A $81 $98
-.db $BF $2F $FE $02 $01 $FE $8C $93
-.db $36 $FE $04 $35 $FE $9D $1D $FE
-.db $04 $1C $FE $93 $1D $FE $04 $1C
-.db $FE $94 $BE $2F $FE $02 $01 $FE
-.db $8C $93 $36 $FE $04 $35 $FE $9D
-.db $1D $FE $04 $1C $FE $93 $1D $FE
-.db $03 $1C $FE $F0 $94 $BE $2F $FE
-.db $02 $01 $FE $8C $93 $36 $FE $04
-.db $35 $FE $9D $1D $FE $04 $1C $FE
-.db $93 $1D $FE $04 $1C $FE $94 $BE
-.db $2F $FE $02 $01 $FE $8C $93 $36
-.db $FE $04 $35 $FE $9D $1D $FE $04
-.db $1C $FE $93 $1D $FE $04 $1C $FE
-.db $94 $BE $2F $01 $8E $87 $86 $8F
-.db $FE $04 $80 $FE $9A $1D $FE $04
-.db $1C $FE $99 $FE $04 $80 $FE $8E
-.db $87 $86 $8F $01 $90 $91 $81 $92
-.db $86 $87 $86 $87 $86 $87 $FE $03
-.db $1C $FE $86 $87 $86 $87 $86 $87
-.db $90 $91 $81 $92 $03 $86 $87 $86
-.db $87 $FE $06 $81 $FE $57 $FE $02
-.db $1C $06 $81 $FE $86 $87 $86 $87
-.db $02 $FE $04 $81 $FE $02 $FE $0E
-.db $01 $04 $81 $FE $02 $FF
+.INCBIN "0C83CB.bin"
 
 L0C85A9: ; big empty stone room
-.db $0E $17 $00 $00 $01 $8E $87 $86
-.db $87 $86 $87 $86 $87 $86 $FE $02
-.db $87 $FE $86 $87 $86 $87 $86 $87
-.db $86 $87 $86 $8F $2F $FE $02 $01
-.db $FE $90 $91 $FE $12 $81 $FE $92
-.db $2F $FE $02 $01 $FE $8C $1D $FE
-.db $12 $1C $FE $8D $2F $FE $02 $01
-.db $FE $8C $1D $FE $12 $1C $FE $8D
-.db $2F $FE $02 $01 $FE $8C $1D $FE
-.db $12 $1C $FE $8D $2F $FE $02 $01
-.db $FE $8C $1D $FE $12 $1C $FE $8D
-.db $2F $FE $02 $01 $FE $8C $1D $FE
-.db $12 $1C $FE $8D $2F $FE $02 $01
-.db $FE $8C $1D $FE $12 $1C $FE $8D
-.db $2F $FE $02 $01 $FE $8C $1D $FE
-.db $12 $1C $FE $8D $2F $FE $02 $01
-.db $FE $8C $1D $FE $12 $1C $FE $8D
-.db $2F $FE $02 $01 $FE $8C $1D $FE
-.db $12 $1C $FE $8D $2F $FE $02 $01
-.db $FE $8C $1D $FE $12 $1C $FE $8D
-.db $2F $FE $02 $01 $FE $8C $1D $FE
-.db $12 $1C $FE $8D $2F $FE $02 $01
-.db $FE $86 $87 $86 $87 $86 $87 $86
-.db $87 $86 $87 $1C $86 $87 $86 $87
-.db $86 $87 $86 $87 $86 $87 $2F $FE
-.db $02 $01 $0A $81 $FE $1E $FE $0A
-.db $81 $FE $2F $01 $FF
+.INCBIN "0C85A9.bin"
 
 L0C867E: ; bent Mila shrine corridor
-.db $0E $0F $00 $00 $FE $0A $BC $FE
-.db $C4 $09 $C3 $FE $0D $BC $FE $C4
-.db $09 $C3 $FE $07 $BC $06 $C1 $FE
-.db $B7 $09 $C3 $FE $06 $BC $FE $C4
-.db $FE $07 $C0 $FE $09 $C3 $FE $06
-.db $BC $FE $C4 $09 $FE $02 $04 $FE
-.db $32 $04 $32 $04 $32 $C3 $FE $06
-.db $BC $FE $C4 $09 $32 $FE $06 $04
-.db $FE $C3 $FE $06 $BC $FE $C4 $09
-.db $FE $03 $32 $02 $04 $02 $32 $FE
-.db $C3 $FE $06 $BC $FE $C4 $09 $32
-.db $FE $04 $04 $FE $32 $04 $C3 $FE
-.db $06 $BC $FE $C4 $09 $FE $03 $04
-.db $FE $32 $FE $03 $04 $FE $C3 $FE
-.db $07 $BC $02 $C2 $FE $BB $FE $02
-.db $04 $FE $C9 $FE $02 $C2 $0A $BC
-.db $FE $C4 $09 $04 $C3 $FE $0C $BC
-.db $FE $C4 $09 $04 $C3 $FE $0C $BC
-.db $FE $C4 $09 $04 $C3 $FE $0C $BC
-.db $FE $C4 $09 $04 $C3 $FE $0C $BC
-.db $FE $C4 $09 $04 $C3 $FE $06 $BC
-.db $FF
+.INCBIN "0C867E.bin"
 
 L0C8727: ; straight Mila shrine corridor
-.db $0E $0F $00 $00 $FE $06 $BC $FE
-.db $C4 $09 $04 $C3 $FE $0C $BC $FE
-.db $C4 $09 $04 $C3 $FE $0C $BC $FE
-.db $C4 $09 $04 $C3 $FE $0A $BC $02
-.db $C1 $FE $B7 $09 $32 $B8 $FE $02
-.db $C1 $07 $BC $FE $C4 $FE $03 $C0
-.db $FE $09 $04 $FE $03 $C0 $FE $C3
-.db $FE $06 $BC $FE $C4 $09 $FE $02
-.db $04 $FE $32 $04 $32 $04 $32 $C3
-.db $FE $06 $BC $FE $C4 $09 $32 $FE
-.db $06 $04 $FE $C3 $FE $06 $BC $FE
-.db $C4 $09 $FE $03 $32 $02 $04 $02
-.db $32 $FE $C3 $FE $06 $BC $FE $C4
-.db $09 $32 $FE $04 $04 $FE $32 $04
-.db $C3 $FE $06 $BC $FE $C4 $09 $FE
-.db $03 $04 $FE $32 $FE $03 $04 $FE
-.db $C3 $FE $07 $BC $02 $C2 $FE $BB
-.db $04 $32 $C9 $FE $02 $C2 $0A $BC
-.db $FE $C4 $09 $04 $C3 $FE $0C $BC
-.db $FE $C4 $09 $04 $C3 $FE $0C $BC
-.db $FE $C4 $09 $04 $C3 $FE $0C $BC
-.db $FE $C4 $09 $04 $C3 $FE $06 $BC
-.db $FF
+.INCBIN "0C8727.bin"
 
 L0C87D8: ; Duma tower
-.db $1D $1F $00 $00 $01 $D0 $01 $D0
-.db $FE $03 $01 $FE $8A $FE $05 $81
-.db $FE $98 $2D $97 $91 $FE $04 $81
-.db $FE $8B $FE $05 $01 $FE $D0 $FE
-.db $05 $01 $FE $D1 $D0 $D1 $FE $03
-.db $01 $FE $95 $80 $E4 $E5 $E6 $80
-.db $9A $2D $99 $FE $02 $80 $FE $E4
-.db $E5 $E6 $96 $FE $05 $01 $FE $D1
-.db $FE $06 $01 $FE $D1 $D0 $FE $03
-.db $01 $FE $97 $91 $E2 $FD $E3 $81
-.db $8B $2D $8A $FE $02 $81 $FE $E2
-.db $FD $E3 $98 $FE $0C $01 $FE $D0
-.db $D1 $FE $02 $01 $FE $95 $D8 $2B
-.db $FE $0C $2A $FE $D9 $80 $E4 $E5
-.db $E6 $96 $FE $07 $01 $FE $D1 $FE
-.db $03 $01 $FE $97 $D8 $2B $FE $0C
-.db $2A $FE $D9 $81 $E2 $FD $E3 $98
-.db $40 $41 $FE $09 $01 $02 $D8 $FE
-.db $2B $F0 $FE $0B $2A $FE $D9 $2D
-.db $FE $03 $2A $FE $D9 $FE $02 $44
-.db $FE $41 $FE $08 $01 $FE $D8 $99
-.db $FE $0D $80 $FE $9A $2D $FE $03
-.db $2A $FE $D9 $FE $03 $44 $FE $47
-.db $41 $FE $02 $01 $FE $95 $E4 $E5
-.db $E6 $D8 $AC $FE $0D $9E $FE $AD
-.db $2D $FE $03 $2A $FE $D9 $80 $96
-.db $FE $02 $44 $FE $43 $01 $8E $97
-.db $E2 $FD $E3 $D8 $AC $AD $00 $AC
-.db $FE $0A $9E $FE $AD $2D $FE $03
-.db $2A $FE $D9 $81 $98 $8F $43 $FE
-.db $02 $01 $FE $90 $D8 $2B $FE $02
-.db $2A $FE $D8 $8A $8B $FB $8A $FE
-.db $0A $81 $FE $8B $2D $FE $03 $2A
-.db $FE $D9 $2D $D9 $92 $2F $FE $02
-.db $01 $FE $8C $D8 $2B $FE $02 $2A
-.db $FE $D8 $FE $11 $2A $FE $F0 $2A
-.db $D9 $2D $D9 $BE $2F $FE $02 $01
-.db $FE $8C $D8 $2B $FE $02 $2A $FE
-.db $99 $FE $13 $80 $FE $9A $2D $D9
-.db $BE $2F $FE $02 $01 $FE $8C $D8
-.db $2B $FE $02 $2A $FE $AC $FE $13
-.db $9E $FE $AD $2D $D9 $BE $2F $FE
-.db $02 $01 $FE $8C $D8 $2B $FE $02
-.db $2A $FE $AC $FE $10 $9E $FE $AD
-.db $00 $AC $AD $2D $D9 $BE $2F $FE
-.db $02 $01 $FE $8C $D8 $2B $FE $02
-.db $2A $FE $8A $FE $10 $81 $FE $8B
-.db $FB $8A $8B $2D $D9 $BE $2F $FE
-.db $02 $01 $FE $8C $D8 $2B $FE $18
-.db $2A $FE $D9 $BE $2F $FE $02 $01
-.db $FE $8C $D8 $2B $FE $0B $2A $FE
-.db $F0 $FE $0C $2A $FE $D9 $BE $2F
-.db $FE $02 $01 $FE $8C $99 $FE $19
-.db $80 $FE $9A $BE $2F $FE $02 $01
-.db $FE $8C $AC $FE $19 $9E $FE $AD
-.db $BE $2F $FE $02 $01 $FE $8C $AC
-.db $95 $80 $E4 $E5 $E6 $80 $96 $FE
-.db $04 $9E $FE $AD $00 $AC $FE $04
-.db $9E $FE $95 $80 $E4 $E5 $E6 $80
-.db $96 $AD $BE $2F $FE $02 $01 $FE
-.db $8C $8A $97 $91 $E2 $FD $E3 $81
-.db $98 $FE $04 $81 $FE $8B $FB $8A
-.db $FE $04 $81 $FE $97 $91 $E2 $FD
-.db $E3 $81 $98 $8B $BE $2F $FE $02
-.db $01 $FE $8C $2A $D8 $A8 $AA $2A
-.db $AB $A9 $D9 $2D $FE $0A $2A $FE
-.db $D8 $A8 $AA $2A $AB $A9 $D9 $2D
-.db $8D $2F $FE $02 $01 $FE $8C $2A
-.db $D8 $A6 $A5 $2A $A6 $A5 $D9 $2D
-.db $FE $0A $2A $FE $D8 $A6 $A5 $2A
-.db $A6 $A5 $D9 $2D $8D $2F $FE $02
-.db $01 $FE $8C $2A $99 $80 $89 $2A
-.db $88 $80 $9A $2D $FE $0A $2A $FE
-.db $99 $80 $89 $2A $88 $80 $9A $2D
-.db $8D $2F $FE $02 $01 $FE $8C $2A
-.db $8A $81 $8B $2C $8A $81 $8B $2D
-.db $FE $0A $2A $FE $8A $81 $8B $2C
-.db $8A $81 $8B $2D $8D $2F $FE $02
-.db $01 $FE $8C $FE $1B $2A $FE $8D
-.db $2F $FE $02 $01 $FE $8C $FE $1B
-.db $2A $FE $8D $2F $FE $02 $01 $FE
-.db $86 $87 $86 $87 $86 $87 $86 $87
-.db $86 $87 $86 $87 $86 $87 $38 $86
-.db $87 $86 $87 $86 $87 $86 $87 $86
-.db $87 $86 $87 $86 $87 $2F $FE $02
-.db $01 $0E $81 $FE $38 $FE $0E $81
-.db $FE $2F $FE $21 $01 $FF
+.INCBIN "0C87D8.bin"
 
 L0C8A8E: ; stone room with red carpet
-.db $0E $1F $00 $00 $FE $47 $EF $FE
-.db $95 $FE $05 $80 $FE $83 $2A $82
-.db $FE $05 $80 $FE $96 $FE $11 $EF
-.db $FE $97 $91 $FE $04 $81 $FE $85
-.db $2C $84 $FE $05 $81 $FE $98 $FE
-.db $11 $EF $FE $D8 $2B $FE $0C $2A
-.db $FE $D9 $FE $11 $EF $FE $D8 $2B
-.db $FE $0C $2A $FE $D9 $FE $11 $EF
-.db $FE $D8 $2B $2A $53 $FE $07 $55
-.db $FE $54 $FE $02 $2A $FE $D9 $FE
-.db $11 $EF $FE $D8 $2B $2A $30 $FE
-.db $07 $32 $FE $31 $FE $02 $2A $FE
-.db $D9 $FE $11 $EF $FE $D8 $2B $2A
-.db $30 $FE $07 $32 $FE $31 $FE $02
-.db $2A $FE $D9 $FE $11 $EF $FE $D8
-.db $2B $2A $30 $FE $07 $32 $FE $31
-.db $FE $02 $2A $FE $D9 $FE $11 $EF
-.db $FE $D8 $2B $2A $30 $FE $07 $32
-.db $FE $31 $FE $02 $2A $FE $D9 $FE
-.db $11 $EF $FE $D8 $2B $2A $51 $FE
-.db $07 $56 $FE $52 $FE $02 $2A $FE
-.db $D9 $FE $11 $EF $FE $D8 $2B $FE
-.db $0C $2A $FE $D9 $FE $11 $EF $FE
-.db $D8 $2B $FE $0C $2A $FE $D9 $FE
-.db $11 $EF $FE $99 $FE $0D $80 $FE
-.db $9A $FE $0A $EF $FF
+.INCBIN "0C8A8E.bin"
 
 L0C8B5B: ; castle entrance?
-.db $15 $17 $00 $00 $FE $0B $A5 $FE
-.db $5F $FE $0D $A5 $0A $5F $FE $A5
-.db $FE $0B $5F $FE $A5 $FE $0A $80
-.db $FE $89 $38 $88 $FE $0B $80 $FE
-.db $CB $FE $15 $2A $FE $CB $2A $CD
-.db $39 $FE $13 $3A $FE $3B $CD $2C
-.db $CD $39 $FE $13 $3A $FE $3B $CD
-.db $2B $CD $2B $FE $14 $2A $FE $CD
-.db $2B $CD $2B $FE $14 $2A $FE $CD
-.db $2B $CD $FE $02 $CB $FE $2A $FE
-.db $02 $CB $FE $A8 $FE $02 $A9 $FE
-.db $2A $21 $58 $22 $2A $A8 $FE $02
-.db $A9 $05 $CB $FE $CD $2B $CD $FE
-.db $02 $CC $FE $2B $CC $CD $A6 $FE
-.db $02 $A5 $FE $2A $21 $58 $22 $2A
-.db $A6 $FE $02 $A5 $FE $CD $FE $04
-.db $CC $FE $CD $2B $CD $2B $FE $03
-.db $2A $FE $CD $A6 $FE $02 $A5 $FE
-.db $2A $21 $58 $22 $2A $A6 $FE $02
-.db $A5 $FE $CD $2B $F0 $FE $02 $2A
-.db $FE $CD $2B $CD $2B $F0 $FE $02
-.db $2A $FE $CD $A6 $FE $02 $A5 $FE
-.db $2A $24 $25 $26 $2A $A6 $FE $02
-.db $A5 $FE $CD $2B $2A $EB $2C $CD
-.db $2B $CD $FE $04 $CB $FE $CD $A6
-.db $FE $02 $A5 $05 $2A $FE $A6 $FE
-.db $02 $A5 $FE $CD $FE $04 $CB $FE
-.db $CD $2B $CD $FE $05 $CC $FE $A6
-.db $FE $02 $A5 $02 $A9 $FE $2A $A8
-.db $A9 $A6 $FE $02 $A5 $05 $CC $FE
-.db $CD $2B $CD $FE $05 $A9 $FE $A6
-.db $FE $04 $A5 $FE $2A $A6 $FE $04
-.db $A5 $05 $A9 $FE $CD $2B $CD $DE
-.db $FE $08 $80 $FE $83 $F5 $82 $FE
-.db $09 $80 $FE $CD $2B $CD $AE $FE
-.db $08 $81 $FE $85 $F6 $84 $FE $09
-.db $81 $FE $CD $2B $CD $2B $FE $14
-.db $2A $FE $CD $2B $CD $2B $FE $14
-.db $2A $FE $CD $2B $CD $39 $FE $13
-.db $3A $FE $3B $CD $2B $CC $39 $FE
-.db $13 $3A $FE $3B $CC $2B $FE $18
-.db $2A $FF
+.INCBIN "0C8B5B.bin"
 
 L0C8CA5: ; harbour town
-.db $0E $17 $00 $00 $FE $04 $A5 $FE
-.db $77 $78 $FE $04 $66 $FE $75 $79
-.db $FE $0D $A5 $03 $3F $FE $7A $74
-.db $FE $04 $67 $FE $76 $7B $3F $A7
-.db $FE $02 $A5 $FE $EE $FE $02 $2E
-.db $FE $A7 $FE $05 $A5 $03 $3F $FE
-.db $72 $64 $FE $04 $17 $FE $19 $73
-.db $4F $A6 $FE $02 $A5 $FE $ED $FE
-.db $02 $2E $FE $A6 $FE $05 $A5 $03
-.db $3F $FE $72 $FE $05 $61 $FE $62
-.db $6A $4F $A6 $FE $03 $A5 $02 $2E
-.db $FE $A6 $FE $05 $A5 $03 $3F $FE
-.db $72 $FE $02 $3D $02 $0A $02 $3D
-.db $FE $73 $4F $A6 $FE $03 $A5 $02
-.db $2E $FE $A6 $A5 $B1 $B0 $A7 $A5
-.db $FE $03 $3F $FE $72 $FE $02 $60
-.db $FE $0C $0A $FE $02 $60 $FE $6A
-.db $4F $FE $09 $3F $FE $B0 $02 $A5
-.db $FE $03 $3F $FE $72 $FE $02 $3C
-.db $02 $0A $02 $3C $FE $73 $4F $FE
-.db $09 $3F $FE $B0 $02 $A5 $FE $03
-.db $3F $FE $72 $FE $06 $0A $FE $73
-.db $4F $FE $09 $3F $FE $B0 $02 $A5
-.db $FE $03 $3F $FE $6E $6F $0A $6E
-.db $6F $69 $6E $6F $4F $FE $09 $3F
-.db $FE $B0 $02 $A5 $FE $03 $3F $FE
-.db $6C $6D $0C $6C $6D $68 $6C $6D
-.db $4F $FE $09 $3F $FE $B0 $02 $A5
-.db $FE $15 $3F $FE $B0 $02 $A5 $FE
-.db $15 $3F $FE $B0 $02 $A5 $FE $15
-.db $3F $FE $B0 $02 $A5 $FE $05 $B1
-.db $FE $50 $FE $10 $B1 $FE $02 $A5
-.db $FE $17 $01 $FF
+.INCBIN "0C8CA5.bin"
 
 L0C8DA9: ; harbour town 2
-.db $0E $17 $00 $00 $FE $09 $01 $FE
-.db $A6 $FE $0E $A5 $FE $B0 $FE $02
-.db $B1 $FE $50 $FE $13 $B1 $02 $B0
-.db $FE $4F $FE $15 $3F $02 $B0 $FE
-.db $4F $FE $15 $3F $02 $B0 $FE $4F
-.db $FE $15 $3F $02 $B0 $FE $4F $FE
-.db $15 $3F $02 $B0 $FE $4F $FE $15
-.db $3F $02 $B0 $FE $4F $FE $15 $3F
-.db $02 $B0 $FE $4F $FE $07 $3F $FE
-.db $A8 $A9 $FE $02 $2E $FE $A8 $A9
-.db $FE $08 $3F $02 $B0 $FE $4F $FE
-.db $07 $3F $FE $A6 $A5 $FE $02 $2E
-.db $FE $A6 $A5 $FE $09 $B1 $FE $B0
-.db $4F $FE $07 $3F $FE $A6 $A5 $FE
-.db $02 $2E $FE $A6 $A5 $FE $09 $A9
-.db $FE $B0 $4F $FE $07 $3F $FE $A6
-.db $EE $FE $02 $2E $FE $A6 $FE $0A
-.db $A5 $FE $B0 $4F $FE $07 $3F $FE
-.db $A6 $ED $FE $02 $2E $FE $A6 $FE
-.db $0A $A5 $03 $B1 $FE $50 $FE $05
-.db $B1 $FE $A6 $A5 $FE $02 $9C $FE
-.db $A6 $FE $0A $A5 $09 $01 $FE $A6
-.db $FE $0E $A5 $FF
+.INCBIN "0C8DA9.bin"
 
 L0C8E5D: ; throne room with north exits
-.db $15 $17 $00 $00 $D8 $AC $9E $BC
-.db $FE $04 $A2 $07 $A1 $04 $A2 $FE
-.db $AD $2D $3F $D9 $2F $D8 $8A $81
-.db $FB $FE $02 $A4 $02 $A3 $07 $A0
-.db $02 $A3 $02 $A4 $FE $8B $2D $3F
-.db $D9 $2F $D8 $2B $2A $38 $2B $21
-.db $53 $FE $09 $55 $FE $54 $22 $FE
-.db $03 $2A $FE $3F $D9 $2F $D8 $2B
-.db $2A $3F $2A $21 $30 $FE $03 $32
-.db $FE $1B $33 $1B $33 $FE $02 $32
-.db $FE $31 $22 $2A $FE $03 $3F $FE
-.db $D9 $2F $D8 $2B $2A $3F $2A $21
-.db $51 $FE $09 $56 $FE $52 $22 $2A
-.db $3F $FE $02 $2A $FE $D9 $2F $D8
-.db $2B $2A $3F $2A $24 $FE $0B $25
-.db $FE $26 $2A $3F $FE $02 $2A $FE
-.db $D9 $2F $D8 $2B $2A $3F $FE $07
-.db $2A $FE $3F $FE $07 $2A $FE $3F
-.db $FE $02 $2A $FE $D9 $2F $D8 $2B
-.db $CB $FE $11 $3F $FE $CB $2A $D9
-.db $2F $D8 $2B $CC $2B $FE $06 $2E
-.db $FE $2A $3F $2A $FE $06 $2E $FE
-.db $2A $CC $2B $D9 $2F $D8 $2B $CB
-.db $2A $FE $06 $2E $FE $2A $3F $2A
-.db $FE $06 $2E $FE $2A $CB $2A $D9
-.db $2F $D8 $2B $CC $2B $FE $07 $2A
-.db $FE $3F $FE $08 $2A $FE $CC $2B
-.db $D9 $2F $D8 $2B $FE $09 $2A $FE
-.db $3F $FE $0A $2A $FE $D9 $2F $8E
-.db $87 $86 $87 $1C $86 $87 $86 $8F
-.db $FE $02 $2A $FE $3F $FE $02 $2A
-.db $FE $8E $87 $86 $87 $1C $86 $87
-.db $86 $8F $2F $90 $91 $FE $02 $81
-.db $FE $1E $FE $03 $81 $FE $92 $FE
-.db $02 $2A $FE $3F $FE $02 $2A $FE
-.db $90 $91 $FE $02 $81 $FE $1E $FE
-.db $03 $81 $FE $92 $2F $8C $1D $FE
-.db $06 $1C $FE $8D $2F $FE $04 $01
-.db $FE $8C $1D $FE $06 $1C $FE $8D
-.db $2F $8C $1D $FE $06 $1C $FE $8D
-.db $2F $FE $04 $01 $FE $8C $1D $FE
-.db $06 $1C $FE $8D $2F $8C $1D $FE
-.db $06 $1C $FE $8D $2F $FE $04 $01
-.db $FE $8C $1D $FE $06 $1C $FE $8D
-.db $2F $8C $1D $FE $05 $1C $FE $EC
-.db $8D $2F $FE $04 $01 $FE $8C $EB
-.db $1E $FE $05 $1C $FE $8D $2F $86
-.db $87 $86 $87 $86 $87 $86 $FE $02
-.db $87 $FE $2F $FE $04 $01 $FE $86
-.db $87 $86 $87 $86 $87 $86 $FE $02
-.db $87 $FE $2F $8A $FE $07 $81 $FE
-.db $8B $B6 $FE $03 $2A $FE $CE $8A
-.db $FE $07 $81 $FE $8B $A8 $FE $09
-.db $A9 $FE $B6 $FE $03 $2A $FE $CE
-.db $A8 $FE $07 $A9 $FE $6B $A6 $FE
-.db $09 $A5 $FE $B3 $FE $03 $2A $FE
-.db $B4 $A6 $FE $09 $A5 $FF
+.INCBIN "0C8E5D.bin"
 
 L0C9023: ; north-left exit in throne room?
-.db $0E $0F $00 $00 $FE $52 $EF $FE
-.db $8E $87 $86 $87 $86 $87 $86 $87
-.db $86 $87 $86 $8F $FE $04 $EF $FE
-.db $8C $FE $0A $1C $FE $8D $FE $03
-.db $EF $FE $8E $86 $1E $FE $09 $1C
-.db $FE $87 $8F $FE $02 $EF $FE $8C
-.db $FE $0C $1C $FE $8D $FE $02 $EF
-.db $FE $8C $FE $0C $1C $FE $8D $FE
-.db $02 $EF $FE $8C $FE $0C $1C $FE
-.db $8D $FE $02 $EF $FE $8C $FE $0C
-.db $1C $FE $8D $FE $02 $EF $FE $8C
-.db $FE $0C $1C $FE $8D $FE $02 $EF
-.db $FE $8C $1C $F0 $FE $0A $1C $FE
-.db $8D $FE $02 $EF $FE $86 $87 $86
-.db $87 $86 $87 $86 $87 $86 $87 $86
-.db $87 $86 $87 $EF $FF
+.INCBIN "0C9023.bin"
 
 L0C90A0: ; water shrine border?
-.db $15 $0F $00 $00 $FE $17 $9E $03
-.db $4B $0D $9E $FE $B9 $E0 $BA $FE
-.db $06 $9E $07 $A9 $FE $AA $A9 $6B
-.db $FE $06 $A9 $08 $A5 $08 $5F $08
-.db $A5 $FE $5F $FE $0F $A5 $FE $5F
-.db $FE $07 $A5 $FE $95 $FE $03 $80
-.db $FE $89 $FE $06 $2A $FE $88 $FE
-.db $03 $80 $FE $96 $97 $91 $FE $02
-.db $81 $FE $8B $2C $FE $05 $2A $FE
-.db $8A $FE $03 $81 $FE $98 $D8 $2B
-.db $FE $0D $2A $FE $D9 $D8 $2B $FE
-.db $0D $2A $FE $D9 $D8 $2B $FE $0D
-.db $2A $FE $D9 $99 $80 $E4 $E5 $E6
-.db $FE $06 $2A $FE $E4 $E5 $E6 $80
-.db $9A $8A $81 $E2 $FD $E3 $2C $FE
-.db $05 $2A $FE $E2 $FD $E3 $81 $8B
-.db $FE $02 $A9 $FE $AA $2A $AB $FE
-.db $02 $A9 $02 $2A $FE $A8 $A9 $AA
-.db $2A $AB $FE $02 $A9 $03 $A5 $FE
-.db $2A $A6 $FE $02 $A5 $02 $2A $FE
-.db $A6 $FE $02 $A5 $FE $2A $A6 $FE
-.db $05 $A5 $FE $2A $A6 $FE $02 $A5
-.db $02 $2A $FE $A6 $FB $A7 $2A $A6
-.db $FE $03 $A5 $09 $2A $FE $38 $2B
-.db $FE $03 $2A $02 $A5 $0E $2A $FE
-.db $A6 $A5 $FE $0E $2A $FE $A6 $A5
-.db $FE $0E $A9 $FE $A6 $FE $10 $A5
-.db $FF
+.INCBIN "0C90A0.bin"
 
 L0C9179:
-.db $15 $0F $00 $00 $FE $06 $00 $FE
-.db $DB $2D $2A $DA $FE $07 $00 $FE
-.db $95 $FE $04 $80 $FE $9A $2D $2A
-.db $99 $FE $04 $80 $FE $96 $FE $02
-.db $00 $FE $97 $E4 $E5 $E6 $81 $8B
-.db $2D $2A $8A $81 $E4 $E5 $E6 $98
-.db $FE $02 $00 $FE $D8 $E2 $FD $E3
-.db $2C $FE $05 $2A $FE $E2 $FD $E3
-.db $DD $FE $02 $00 $FE $D8 $A8 $2A
-.db $AB $FE $06 $2A $FE $A8 $2A $AB
-.db $D9 $FE $02 $00 $FE $D8 $A6 $2A
-.db $A6 $FE $06 $2A $FE $A6 $2A $A6
-.db $D9 $FE $02 $00 $FE $D8 $2B $FE
-.db $0B $2A $FE $D9 $FE $02 $00 $FE
-.db $D8 $2B $FE $0B $2A $FE $D9 $FE
-.db $02 $00 $FE $D8 $2B $FE $0B $2A
-.db $FE $D9 $FE $02 $00 $FE $D4 $FE
-.db $04 $DC $FE $D7 $FE $02 $2A $FE
-.db $D6 $FE $04 $DC $FE $D5 $FE $07
-.db $00 $FE $DB $FE $02 $2A $FE $DA
-.db $FE $0C $00 $FE $DB $2D $2A $DA
-.db $FE $08 $00 $FE $95 $FE $03 $80
-.db $FE $9A $2D $2A $99 $FE $03 $80
-.db $FE $96 $FE $04 $00 $FE $97 $91
-.db $FE $02 $81 $FE $8B $2D $2A $8A
-.db $FE $03 $81 $FE $98 $FE $04 $00
-.db $FE $D8 $2B $FE $09 $2A $FE $D9
-.db $FE $04 $00 $FE $D8 $2B $FE $09
-.db $2A $FE $D9 $FE $04 $00 $FE $D8
-.db $2B $2A $53 $FE $04 $55 $FE $54
-.db $FE $02 $2A $FE $D9 $FE $04 $00
-.db $FE $D8 $2B $2A $30 $FE $04 $32
-.db $FE $31 $FE $02 $2A $FE $D9 $FE
-.db $04 $00 $FE $D8 $2B $2A $51 $FE
-.db $04 $56 $FE $52 $FE $02 $2A $FE
-.db $D9 $FE $04 $00 $FE $D4 $FE $0A
-.db $DC $FE $D5 $FE $22 $00 $FF
+.INCBIN "0C9179.bin"
 
 L0C92A0:
-.db $0E $0F $00 $00 $FE $17 $9E $03
-.db $4B $0D $9E $FE $B9 $E0 $BA $FE
-.db $06 $9E $07 $A9 $FE $AA $A9 $6B
-.db $FE $06 $A9 $23 $A5 $FE $D6 $D7
-.db $FE $06 $A5 $FE $D6 $D7 $FE $06
-.db $A5 $FE $DA $DB $2C $FE $05 $2A
-.db $FE $DA $DB $A7 $FE $05 $A5 $FE
-.db $DA $DB $2B $FE $05 $2A $FE $DA
-.db $DB $A6 $FE $05 $A5 $FE $DA $DB
-.db $2B $FE $05 $2A $FE $DA $DB $A6
-.db $FE $05 $A5 $FE $DA $DB $2B $FE
-.db $05 $2A $FE $DA $DB $A6 $FE $05
-.db $A5 $FE $DA $DB $2B $FE $05 $2A
-.db $FE $DA $DB $A6 $FE $05 $A5 $FE
-.db $DA $DB $2B $FE $05 $2A $FE $DA
-.db $DB $A6 $FE $05 $A5 $FE $99 $9A
-.db $2B $FE $05 $2A $FE $99 $9A $A6
-.db $FE $05 $A5 $FE $8A $8B $2B $FE
-.db $05 $2A $FE $8A $8B $A6 $FE $02
-.db $A5 $FF
+.INCBIN "0C92A0.bin"
 
 L0C933A:
-.db $07 $08 $95 $80 $80 $80 $80 $80
-.db $80 $96 $81 $97 $91 $81 $81 $81
-.db $81 $81 $98 $57 $93 $0F $0E $15
-.db $13 $15 $13 $94 $1F $93 $EB $10
-.db $65 $65 $65 $10 $94 $1F $93 $0F
-.db $0E $60 $60 $60 $0F $94 $1F $93
-.db $0F $0E $14 $12 $14 $12 $94 $1F
-.db $99 $80 $80 $89 $F7 $88 $80 $9A
-.db $1F $8A $81 $81 $8B $F8 $8A $81
-.db $8B $1F
+.INCBIN "0C933A.bin"
 
 L0C9384:
-.db $0E $0F $00 $00 $FE $12 $EF $FE
-.db $95 $FE $03 $80 $FE $89 $BC $88
-.db $FE $03 $80 $FE $96 $FE $05 $EF
-.db $FE $97 $91 $FE $02 $81 $FE $8B
-.db $FB $8A $FE $03 $81 $FE $98 $FE
-.db $05 $EF $FE $D8 $2B $FE $03 $2A
-.db $FE $38 $2B $FE $03 $2A $FE $D9
-.db $FE $05 $EF $FE $D8 $2B $FE $08
-.db $2A $FE $D9 $FE $05 $EF $FE $D8
-.db $2B $FE $08 $2A $FE $D9 $FE $05
-.db $EF $FE $D8 $2B $FE $08 $2A $FE
-.db $D9 $FE $05 $EF $FE $D8 $2B $FE
-.db $08 $2A $FE $D9 $FE $05 $EF $FE
-.db $D8 $2B $FE $08 $2A $FE $D9 $FE
-.db $05 $EF $FE $D8 $2B $FE $08 $2A
-.db $FE $D9 $FE $05 $EF $FE $D8 $2B
-.db $FE $08 $2A $FE $D9 $FE $05 $EF
-.db $FE $D8 $2B $FE $08 $2A $FE $D9
-.db $FE $05 $EF $FE $D8 $2B $FE $03
-.db $2A $FE $F0 $FE $04 $2A $FE $D9
-.db $FE $05 $EF $FE $99 $FE $09 $80
-.db $FE $9A $FE $05 $EF $FE $AC $FE
-.db $09 $9E $FE $AD $FE $03 $EF $FF
+.INCBIN "0C9384.bin"
 
 L0C943C:
-.db $0E $0F $00 $00 $FE $2A $BC $03
-.db $C1 $0C $BC $FE $C4 $FE $03 $C7
-.db $FE $C3 $FE $0B $BC $FE $C4 $FE
-.db $03 $C0 $FE $C3 $FE $0B $BC $FE
-.db $C4 $2D $F0 $2A $C3 $FE $0B $BC
-.db $FE $C4 $2D $FE $02 $2A $FE $C3
-.db $FE $0B $BC $FE $C4 $2D $FE $02
-.db $2A $FE $C3 $FE $0B $BC $FE $C4
-.db $2D $FE $02 $2A $FE $C3 $FE $0B
-.db $BC $FE $C4 $83 $2A $82 $C3 $FE
-.db $0B $BC $FE $C4 $85 $2C $84 $C3
-.db $FE $0B $BC $FE $C4 $2D $FE $02
-.db $2A $FE $C3 $FE $0B $BC $FE $C4
-.db $2D $FE $02 $2A $FE $C3 $FE $0B
-.db $BC $FE $C4 $2D $FE $02 $2A $FE
-.db $C3 $FE $0B $BC $FE $C4 $09 $FE
-.db $02 $04 $FE $C3 $FE $02 $BC $FF
+.INCBIN "0C943C.bin"
 
 L0C94C4:
-.db $15 $17 $00 $00 $FE $06 $A5 $FE
-.db $B6 $FE $02 $2A $FE $CE $A6 $FE
-.db $13 $A5 $FE $B6 $FE $02 $2A $FE
-.db $CE $A6 $FE $13 $A5 $FE $B6 $FE
-.db $02 $2A $FE $CE $A6 $FE $13 $A5
-.db $FE $B6 $FE $02 $2A $FE $CE $A6
-.db $FE $13 $A5 $FE $B6 $FE $02 $2A
-.db $FE $CE $A6 $FE $13 $A5 $FE $B6
-.db $FE $02 $2A $FE $CE $A6 $FE $13
-.db $A5 $FE $B6 $FE $02 $2A $FE $CE
-.db $A6 $FE $13 $A5 $FE $B3 $FE $02
-.db $2A $FE $B4 $A6 $FE $0D $A5 $FE
-.db $01 $B0 $50 $FE $13 $3F $FE $B0
-.db $03 $01 $B0 $4F $FE $09 $01 $FE
-.db $40 $FE $08 $01 $FE $3F $B0 $02
-.db $01 $B0 $4F $FE $07 $01 $FE $40
-.db $41 $42 $FE $08 $01 $FE $3F $B0
-.db $02 $01 $B0 $4F $FE $06 $01 $FE
-.db $40 $FE $02 $44 $FE $41 $FE $08
-.db $01 $FE $3F $B0 $02 $01 $B0 $4F
-.db $FE $06 $01 $FE $46 $FE $03 $44
-.db $08 $01 $FE $3F $B0 $02 $01 $B0
-.db $4F $FE $05 $01 $FE $40 $FE $04
-.db $44 $08 $01 $FE $3F $B0 $02 $01
-.db $B0 $4F $FE $05 $01 $04 $44 $FE
-.db $45 $FE $08 $01 $FE $3F $B0 $02
-.db $01 $B0 $4F $FE $05 $01 $FE $42
-.db $FE $04 $44 $FE $47 $41 $FE $06
-.db $01 $FE $3F $B0 $02 $01 $B0 $4F
-.db $FE $06 $01 $FE $42 $48 $FE $02
-.db $44 $FE $48 $43 $FE $05 $01 $FE
-.db $40 $3F $B0 $02 $01 $B0 $4F $FE
-.db $04 $01 $FE $40 $41 $FE $02 $01
-.db $FE $42 $43 $FE $02 $01 $FE $40
-.db $41 $01 $40 $47 $44 $3F $B0 $02
-.db $01 $B0 $4F $FE $03 $01 $FE $40
-.db $FE $02 $44 $02 $47 $FE $41 $FE
-.db $03 $01 $FE $42 $43 $01 $46 $FE
-.db $02 $44 $FE $3F $B0 $02 $01 $B0
-.db $4F $FE $13 $3F $FE $B0 $02 $01
-.db $FE $0F $B1 $FE $50 $3F $FE $05
-.db $B1 $FE $02 $FE $11 $01 $FE $42
-.db $FE $03 $48 $FE $43 $FE $02 $01
-.db $FF
+.INCBIN "0C94C4.bin"
 
 L0C961D:
-.db $0E $0F $00 $00 $FE $35 $BC $06
-.db $C1 $09 $BC $FE $C4 $FE $06 $C0
-.db $FE $B8 $FE $08 $BC $FE $C4 $09
-.db $FE $05 $04 $FE $C0 $B8 $FE $06
-.db $BC $FE $C1 $B7 $09 $C9 $BB $FE
-.db $04 $04 $FE $C0 $C3 $FE $04 $BC
-.db $FE $C4 $FE $02 $C0 $FE $09 $B8
-.db $C4 $09 $FE $04 $04 $FE $C3 $FE
-.db $04 $BC $FE $C4 $09 $FE $02 $04
-.db $FE $C0 $C3 $BB $FE $04 $04 $FE
-.db $C3 $FE $04 $BC $FE $C4 $09 $FE
-.db $03 $04 $FE $C3 $C4 $09 $FE $02
-.db $04 $FE $C9 $FE $05 $BC $FE $C4
-.db $09 $FE $03 $04 $FE $C3 $BC $C2
-.db $BB $04 $C3 $FE $05 $BC $FE $C4
-.db $09 $EB $33 $04 $C3 $FE $02 $BC
-.db $FE $B7 $09 $B8 $FE $06 $BC $04
-.db $C2 $02 $BC $FE $C4 $C0 $09 $C0
-.db $C3 $FE $0B $BC $FE $C4 $09 $FE
-.db $02 $04 $FE $C3 $FE $0B $BC $FE
-.db $C4 $09 $FE $02 $04 $FE $C3 $FE
-.db $02 $BC $FF
+.INCBIN "0C961D.bin"
 
 L0C96C8:
-.db $0E $17 $00 $00 $FE $02 $BC $04
-.db $C1 $FE $B7 $09 $04 $B8 $FE $04
-.db $C1 $0B $BC $FE $B7 $FE $05 $C7
-.db $FE $09 $04 $FE $05 $C7 $FE $B8
-.db $FE $02 $C1 $07 $BC $FE $C4 $C7
-.db $FE $05 $C0 $FE $09 $04 $FE $05
-.db $C0 $03 $C7 $FE $C3 $FE $03 $BC
-.db $FE $C1 $FE $02 $BC $FE $C4 $C0
-.db $09 $FE $0B $04 $03 $C0 $FE $C3
-.db $FE $02 $BC $FE $B7 $C7 $B8 $BC
-.db $C4 $09 $FE $07 $04 $FE $C9 $C2
-.db $BB $FE $05 $04 $FE $C3 $BC $B7
-.db $C7 $C0 $C7 $B8 $C4 $09 $04 $C9
-.db $BB $FE $04 $04 $FE $C3 $FE $02
-.db $BC $03 $C2 $FE $BB $04 $B8 $B7
-.db $C7 $C0 $09 $C0 $C7 $C4 $09 $04
-.db $C3 $BC $C2 $BB $04 $C9 $FE $06
-.db $BC $FE $C4 $04 $FE $02 $C7 $FE
-.db $C0 $09 $FE $02 $04 $FE $C0 $C4
-.db $09 $C9 $FE $04 $BC $FE $C2 $FE
-.db $02 $BC $02 $C1 $03 $BC $FE $C4
-.db $09 $FE $02 $C0 $FE $09 $FE $04
-.db $04 $FE $C4 $09 $B8 $FE $06 $BC
-.db $FE $B7 $FE $02 $C7 $FE $C3 $FE
-.db $02 $BC $FE $C4 $09 $FE $03 $04
-.db $FE $C9 $BB $FE $02 $04 $FE $C4
-.db $09 $C7 $C3 $FE $04 $BC $FE $B7
-.db $C7 $FE $02 $C0 $FE $B8 $C1 $BC
-.db $C4 $09 $FE $02 $04 $FE $C9 $FE
-.db $02 $BC $02 $C2 $FE $C4 $09 $C0
-.db $B8 $FE $02 $C1 $FE $B7 $FB $C7
-.db $C0 $09 $04 $FE $02 $C7 $FE $B8
-.db $BC $C2 $BB $C9 $FE $05 $BC $FE
-.db $C4 $09 $04 $FE $04 $C7 $FE $38
-.db $C0 $09 $FE $02 $04 $02 $C0 $FE
-.db $C7 $C3 $FE $08 $BC $FE $C4 $09
-.db $04 $FE $04 $C0 $FE $09 $FE $05
-.db $04 $FE $C9 $C2 $FE $0A $BC $FE
-.db $BB $FE $0A $04 $FE $C9 $FE $0D
-.db $BC $0A $C2 $0C $BC $FF
+.INCBIN "0C96C8.bin"
 
 L0C9806:
-.db $0E $0F $00 $00 $FE $24 $BC $08
-.db $C1 $07 $BC $FE $B7 $FE $08 $C7
-.db $FE $B8 $FE $03 $BC $02 $C1 $FE
-.db $B7 $C7 $FE $08 $C0 $FE $C7 $B8
-.db $FE $02 $C1 $03 $C7 $FE $C0 $09
-.db $FE $07 $04 $FE $C0 $FE $03 $C7
-.db $03 $C0 $FE $09 $FE $09 $04 $03
-.db $C0 $20 $04 $02 $C2 $FE $BB $FE
-.db $0A $04 $FE $C9 $FE $02 $C2 $03
-.db $BC $FE $BB $FE $08 $04 $FE $C9
-.db $FE $07 $BC $08 $C2 $34 $BC $FF
+.INCBIN "0C9806.bin"
 
 L0C985E:
-.db $0E $0F $00 $00 $FE $06 $BC $FE
-.db $C4 $09 $04 $B8 $FE $04 $C1 $08
-.db $BC $FE $B7 $09 $04 $FE $05 $C7
-.db $FE $B8 $FE $05 $BC $FE $C1 $B7
-.db $C7 $09 $04 $FE $05 $C0 $FE $C7
-.db $C3 $FE $03 $BC $FE $B7 $FE $02
-.db $C7 $FE $C0 $09 $FE $06 $04 $FE
-.db $C0 $C3 $FE $02 $C1 $FE $B7 $C7
-.db $FE $02 $C0 $FE $09 $FE $04 $04
-.db $FE $32 $FE $03 $04 $FE $C3 $FE
-.db $03 $C7 $FE $C0 $09 $FE $07 $04
-.db $FE $32 $FE $02 $04 $FE $C3 $FE
-.db $03 $C0 $FE $09 $04 $32 $FE $09
-.db $04 $FE $C3 $32 $FE $0E $04 $FE
-.db $C3 $04 $32 $FE $04 $04 $FE $32
-.db $FE $03 $04 $02 $32 $02 $04 $FE
-.db $32 $C3 $C2 $BB $32 $FE $05 $04
-.db $FE $32 $FE $06 $04 $FE $C3 $FE
-.db $02 $BC $FE $BB $FE $0C $04 $FE
-.db $C3 $FE $03 $BC $FE $BB $FE $05
-.db $04 $FE $32 $FE $02 $04 $FE $32
-.db $FE $02 $04 $FE $C3 $FE $03 $BC
-.db $FE $C4 $FE $0B $04 $FE $C3 $FE
-.db $04 $BC $FE $BB $FE $09 $04 $FE
-.db $C9 $FE $06 $BC $09 $C2 $02 $BC
-.db $FF
+.INCBIN "0C985E.bin"
 
 L0C9927:
-.db $0E $0F $00 $00 $FE $07 $BC $FE
-.db $B7 $09 $B8 $FE $0C $BC $FE $C4
-.db $C7 $09 $C7 $B8 $FE $0B $BC $FE
-.db $B7 $C0 $09 $C0 $C7 $C3 $FE $09
-.db $BC $FE $B7 $C7 $09 $FE $02 $04
-.db $FE $C0 $C3 $FE $08 $BC $FE $B7
-.db $C7 $C0 $09 $FE $03 $04 $FE $C3
-.db $FE $04 $BC $03 $C1 $FE $B7 $C7
-.db $C0 $09 $FE $04 $04 $FE $C3 $FE
-.db $04 $BC $04 $C7 $FE $C0 $09 $FE
-.db $05 $04 $FE $C3 $FE $04 $BC $04
-.db $C0 $FE $09 $FE $06 $04 $FE $C3
-.db $FE $04 $BC $0B $04 $FE $C3 $FE
-.db $04 $BC $02 $C2 $FE $BB $FE $02
-.db $04 $FE $C9 $BB $FE $04 $04 $FE
-.db $C3 $FE $07 $BC $FE $BB $C9 $BC
-.db $C4 $FE $04 $04 $FE $C3 $FE $0A
-.db $BC $FE $C4 $09 $FE $03 $04 $FE
-.db $C3 $FE $0A $BC $FE $C4 $09 $FE
-.db $02 $04 $FE $C9 $FE $0B $BC $FE
-.db $C4 $09 $04 $C9 $FE $0C $BC $FE
-.db $C4 $09 $04 $C3 $FE $06 $BC $FF
+.INCBIN "0C9927.bin"
 
 L0C99D7:
-.db $0E $0F $00 $00 $FE $02 $BC $0C
-.db $C1 $03 $BC $FE $B7 $FE $03 $C7
-.db $FE $95 $FE $03 $80 $FE $96 $FE
-.db $04 $C7 $FE $B8 $BC $C4 $C7 $FE
-.db $03 $C0 $FE $97 $91 $FE $02 $81
-.db $FE $98 $FE $04 $C0 $FE $C7 $C3
-.db $C4 $C0 $09 $FE $02 $04 $FE $93
-.db $59 $EB $5B $94 $09 $FE $03 $04
-.db $FE $C0 $C3 $C4 $09 $FE $03 $04
-.db $FE $93 $59 $EF $5A $94 $09 $FE
-.db $04 $04 $FE $C3 $C4 $09 $FE $03
-.db $04 $FE $93 $5C $5D $5E $94 $09
-.db $FE $04 $04 $FE $C3 $C4 $09 $FE
-.db $03 $04 $FE $99 $89 $F7 $88 $9A
-.db $09 $FE $04 $04 $FE $C3 $C4 $09
-.db $FE $03 $04 $FE $AC $AD $F8 $AC
-.db $AD $09 $FE $04 $04 $FE $C3 $C4
-.db $09 $FE $03 $04 $FE $8A $8B $38
-.db $8A $8B $09 $FE $04 $04 $FE $C3
-.db $C4 $09 $FE $0D $04 $FE $C3 $C4
-.db $09 $FE $0D $04 $FE $C3 $BC $BB
-.db $FE $0C $04 $FE $C9 $FE $03 $BC
-.db $04 $C2 $FE $BB $FE $03 $04 $FE
-.db $C9 $FE $03 $C2 $09 $BC $FE $BB
-.db $04 $C9 $FE $0D $BC $FE $C4 $04
-.db $C3 $FE $06 $BC $FF
+.INCBIN "0C99D7.bin"
 
 L0C9AA4:
-.db $0E $0F $00 $00 $FE $22 $BC $FE
-.db $AF $FE $0A $9E $05 $BC $FE $AE
-.db $FE $0A $81 $05 $BC $FE $2D $FE
-.db $0A $2A $05 $BC $FE $2D $2A $CB
-.db $FE $05 $2A $FE $CB $FE $02 $2A
-.db $05 $BC $FE $2D $2A $CC $2B $FE
-.db $04 $2A $FE $CC $2B $2A $AC $FE
-.db $02 $9E $02 $BC $FE $2D $FE $03
-.db $2A $FE $21 $38 $22 $FE $04 $2A
-.db $FE $8A $FE $02 $81 $02 $BC $FE
-.db $2D $FE $03 $2A $FE $21 $F0 $22
-.db $FE $07 $2A $02 $BC $FE $2D $2A
-.db $CB $2A $24 $25 $26 $2A $CB $FE
-.db $02 $2A $05 $BC $FE $2D $2A $CC
-.db $2B $FE $04 $2A $FE $CC $2B $2A
-.db $FE $05 $BC $FE $2D $FE $0A $2A
-.db $05 $BC $FE $2D $FE $0A $2A $23
-.db $BC $FF
+.INCBIN "0C9AA4.bin"
 
 L0C9B2E:
-.db $0E $0F $00 $00 $FE $1D $BC $FE
-.db $AF $FE $02 $9E $02 $BC $FE $AF
-.db $9E $FB $FE $06 $9E $02 $BC $FE
-.db $AE $FE $02 $81 $02 $BC $FE $AE
-.db $81 $38 $FE $06 $81 $02 $BC $FE
-.db $A8 $FE $02 $A9 $02 $BC $FE $2D
-.db $FE $08 $2A $02 $BC $03 $5F $02
-.db $BC $FE $2D $FE $08 $2A $02 $BC
-.db $FE $5F $FE $0C $BC $FE $2A $FE
-.db $02 $BC $FE $5F $FE $0C $BC $FE
-.db $2A $FE $02 $BC $FE $5F $FE $04
-.db $BC $FE $AF $FE $06 $9E $FE $AD
-.db $2D $AC $AD $5F $AC $9E $FE $02
-.db $BC $FE $AE $FE $06 $81 $FE $8B
-.db $2D $8A $8B $5F $8A $81 $FE $02
-.db $BC $FE $2D $FE $08 $2A $FE $A8
-.db $6B $5F $AA $A9 $FE $02 $BC $FE
-.db $2D $F0 $FE $07 $2A $FE $A6 $FE
-.db $04 $5F $02 $BC $FE $2D $FE $0A
-.db $2A $23 $BC $FF
+.INCBIN "0C9B2E.bin"
 
 L0C9BCA:
-.db $0E $17 $00 $00 $FE $18 $BC $05
-.db $9E $09 $BC $FE $AF $FE $06 $9E
-.db $03 $BC $05 $81 $09 $BC $FE $AE
-.db $FE $06 $81 $03 $BC $02 $A9 $FE
-.db $2A $EB $2C $FE $09 $BC $FE $2D
-.db $EB $2C $EB $2C $FE $02 $2A $03
-.db $BC $02 $5F $03 $2A $09 $BC $FE
-.db $2D $FE $06 $2A $15 $BC $03 $2A
-.db $15 $BC $03 $2A $15 $BC $FE $2D
-.db $FE $02 $2A $03 $BC $11 $9E $FE
-.db $AD $2D $FE $02 $2A $03 $BC $11
-.db $81 $FE $8B $2D $FE $02 $2A $03
-.db $BC $11 $A9 $FE $6B $FE $03 $2A
-.db $03 $BC $12 $5F $03 $2A $4B $BC
-.db $FF
+.INCBIN "0C9BCA.bin"
 
 L0C9C3B:
-.db $0E $0F $00 $00 $FE $11 $BC $FE
-.db $AF $FE $04 $9E $FE $AD $FB $AC
-.db $FE $06 $9E $02 $BC $FE $AE $FE
-.db $04 $81 $FE $8B $38 $8A $FE $06
-.db $81 $02 $BC $FE $A8 $FE $05 $A9
-.db $FE $2A $A8 $FE $06 $A9 $02 $BC
-.db $FE $A6 $FE $05 $A5 $FE $2A $A6
-.db $FE $06 $A5 $02 $BC $FE $A6 $A5
-.db $FE $09 $3F $03 $A5 $02 $BC $FE
-.db $A6 $A5 $3F $53 $FE $05 $55 $FE
-.db $54 $3F $A6 $FE $02 $A5 $02 $BC
-.db $FE $A6 $A5 $3F $30 $59 $FE $03
-.db $49 $FE $5A $31 $3F $A6 $FE $02
-.db $A5 $02 $BC $FE $A6 $A5 $3F $30
-.db $59 $49 $EB $4A $5A $31 $3F $A6
-.db $FE $02 $A5 $02 $BC $FE $A6 $A5
-.db $3F $30 $5C $FE $03 $5D $FE $5E
-.db $31 $3F $A6 $FE $02 $A5 $02 $BC
-.db $FE $A6 $A5 $3F $51 $FE $05 $56
-.db $FE $52 $3F $A6 $FE $02 $A5 $02
-.db $BC $FE $A6 $A5 $FE $09 $3F $FE
-.db $A6 $FE $02 $A5 $02 $BC $FE $A6
-.db $A5 $FE $09 $A9 $FE $A6 $FE $02
-.db $A5 $02 $BC $FE $A6 $FE $0D $A5
-.db $11 $BC $FF
+.INCBIN "0C9C3B.bin"
 
 L0C9CFE:
-.db $0E $17 $00 $00 $FE $16 $9E $02
-.db $BC $16 $9E $02 $BC $07 $81 $FE
-.db $9E $FE $09 $81 $FE $9E $FE $04
-.db $81 $02 $BC $0D $A9 $09 $2A $02
-.db $BC $0D $5F $09 $2A $02 $BC $0D
-.db $A5 $09 $2A $02 $BC $0D $A5 $09
-.db $2A $0F $BC $09 $2A $13 $BC $FE
-.db $00 $FE $07 $BC $11 $00 $07 $BC
-.db $FE $00 $FE $05 $BC $FE $00 $FE
-.db $09 $BC $FE $00 $FE $07 $BC $FE
-.db $00 $FE $05 $BC $FE $00 $FE $09
-.db $BC $FE $00 $FE $07 $BC $FE $00
-.db $FE $05 $BC $FE $00 $FE $09 $BC
-.db $FE $00 $FE $0D $BC $FE $00 $FE
-.db $09 $BC $FE $00 $FE $0D $BC $FE
-.db $00 $FE $10 $BC $FF
+.INCBIN "0C9CFE.bin"
 
 L0C9D7B:
-.db $1D $1F $00 $00 $FE $02 $DC $FE
-.db $D7 $FE $04 $BC $02 $C1 $0B $BC
-.db $09 $C1 $05 $BC $FE $DB $FE $03
-.db $BC $FE $B7 $FE $02 $C7 $FE $B8
-.db $FE $09 $BC $FE $B7 $FE $09 $C7
-.db $FE $B8 $FE $04 $BC $FE $DB $FE
-.db $02 $BC $FE $B7 $C7 $FE $02 $C0
-.db $FE $C7 $B8 $FE $07 $BC $FE $B7
-.db $C7 $FE $09 $C0 $FE $C7 $B8 $FE
-.db $03 $BC $FE $DB $BC $C4 $C7 $C0
-.db $09 $04 $C0 $C7 $B8 $FE $05 $BC
-.db $FE $B7 $C7 $C0 $09 $FE $08 $04
-.db $FE $C0 $C7 $C3 $FE $02 $BC $FE
-.db $DB $BC $C4 $C0 $09 $FE $03 $04
-.db $FE $C0 $C7 $C3 $FE $03 $BC $FE
-.db $C4 $C7 $C0 $09 $FE $0A $04 $FE
-.db $C0 $C3 $FE $02 $80 $FE $9A $BC
-.db $C4 $09 $FE $05 $04 $FE $C0 $C3
-.db $FE $03 $BC $FE $C4 $C0 $09 $FE
-.db $0C $04 $FE $C3 $FE $02 $81 $FE
-.db $8B $BC $C4 $09 $FE $06 $04 $FE
-.db $C3 $FE $04 $BC $FE $BB $FE $0D
-.db $04 $FE $C3 $FE $03 $2A $FE $BC
-.db $C4 $09 $FE $06 $04 $FE $C3 $FE
-.db $05 $BC $FE $BB $FE $04 $04 $05
-.db $EA $03 $04 $FE $C3 $FE $03 $2A
-.db $FE $BC $C4 $09 $FE $06 $04 $FE
-.db $C3 $FE $06 $BC $FE $BB $FE $03
-.db $04 $05 $EA $03 $04 $FE $C3 $89
-.db $FE $02 $2A $FE $BC $C4 $09 $FE
-.db $03 $04 $FE $EA $FE $02 $04 $FE
-.db $B8 $FE $07 $BC $FE $BB $FE $03
-.db $04 $04 $EA $03 $04 $FE $C3 $8B
-.db $2C $2A $BC $C4 $09 $FE $02 $04
-.db $02 $EA $02 $04 $FE $C7 $B8 $FE
-.db $07 $BC $02 $C2 $FE $BB $04 $FE
-.db $03 $EA $03 $04 $FE $C3 $BC $39
-.db $3B $BC $C4 $09 $FE $02 $04 $03
-.db $EA $FE $04 $C0 $C7 $B8 $FE $08
-.db $BC $FE $B7 $FE $02 $04 $03 $EA
-.db $02 $04 $FE $C3 $BC $39 $3B $BC
-.db $C4 $09 $FE $03 $04 $04 $EA $FE
-.db $C0 $C7 $B8 $FE $06 $C1 $FE $B7
-.db $C7 $09 $04 $FE $03 $EA $02 $04
-.db $FE $C3 $BC $39 $3B $BC $C4 $09
-.db $FE $03 $04 $05 $EA $FE $C0 $FE
-.db $08 $C7 $FE $C0 $09 $FE $02 $04
-.db $02 $EA $02 $04 $FE $C3 $BC $39
-.db $3B $BC $C4 $09 $FE $04 $04 $05
-.db $EA $08 $C0 $FE $09 $FE $02 $04
-.db $03 $EA $FE $04 $C9 $FE $02 $BC
-.db $FE $39 $3B $BC $C4 $09 $FE $03
-.db $04 $13 $EA $FE $04 $C9 $FE $03
-.db $BC $FE $2D $2A $BC $C4 $09 $FE
-.db $04 $04 $11 $EA $FE $04 $C9 $FE
-.db $04 $BC $FE $2D $2A $BC $C4 $09
-.db $FE $05 $04 $0F $EA $FE $04 $C9
-.db $FE $05 $BC $FE $2D $2A $FE $02
-.db $BC $FE $BB $FE $06 $04 $06 $EA
-.db $09 $04 $FE $C3 $FE $04 $BC $FE
-.db $AD $2D $2A $AC $FE $02 $9E $02
-.db $C5 $FE $C2 $BB $FE $11 $04 $FE
-.db $C3 $FE $04 $BC $FE $8B $2D $2A
-.db $8A $FE $02 $81 $02 $C6 $FE $BC
-.db $C4 $FE $09 $04 $FE $C9 $FE $03
-.db $C2 $FE $BB $FE $03 $04 $FE $B8
-.db $FE $04 $BC $08 $2A $FE $BC $C4
-.db $09 $FE $06 $04 $FE $C9 $C2 $FE
-.db $04 $BC $FE $C4 $FE $03 $04 $FE
-.db $C7 $B8 $FE $0D $BC $FE $BB $04
-.db $C9 $C2 $BB $04 $C9 $FE $06 $BC
-.db $FE $B7 $09 $FE $02 $04 $FE $C0
-.db $C7 $B8 $FE $03 $BC $FE $95 $FE
-.db $08 $80 $FE $83 $F3 $82 $96 $BC
-.db $C2 $FE $06 $BC $FE $B7 $C7 $09
-.db $FE $03 $04 $FE $C0 $C7 $C3 $FE
-.db $02 $BC $FE $97 $91 $FE $07 $81
-.db $FE $85 $F4 $84 $98 $BC $FE $02
-.db $C1 $04 $BC $FE $B7 $C7 $C0 $09
-.db $FE $03 $04 $FE $EA $C0 $C3 $FE
-.db $02 $BC $FE $D8 $2B $FE $0A $2A
-.db $FE $D9 $C4 $FE $02 $C7 $03 $C1
-.db $FE $B7 $C7 $C0 $09 $FE $02 $04
-.db $03 $EA $FE $04 $C3 $FE $02 $BC
-.db $FE $D8 $2B $FE $0A $2A $FE $D9
-.db $C4 $FE $02 $C0 $04 $C7 $FE $C0
-.db $09 $FE $02 $04 $02 $EA $03 $04
-.db $FE $C3 $FE $02 $BC $FE $D8 $2B
-.db $FE $03 $2A $FE $F0 $FE $06 $2A
-.db $FE $D9 $C4 $09 $04 $FE $04 $C0
-.db $FE $09 $FE $08 $04 $FE $C3 $FE
-.db $02 $BC $FE $D8 $2B $FE $0A $2A
-.db $FE $D9 $BC $BB $FE $0C $04 $FE
-.db $C9 $C2 $FE $03 $BC $FE $D4 $FE
-.db $0B $DC $FE $D5 $FE $02 $BC $0C
-.db $C2 $04 $BC $FF
+.INCBIN "0C9D7B.bin"
 
 L0CA077:
-.db $0E $0F $00 $00 $FE $06 $D3 $FE
-.db $B2 $FE $02 $01 $FE $B5 $FE $06
-.db $D3 $06 $D2 $FE $BD $FE $02 $01
-.db $FE $9F $FE $06 $D2 $FE $D3 $B2
-.db $FE $05 $D1 $02 $01 $05 $D1 $FE
-.db $B5 $D3 $D2 $BD $FE $0C $01 $FE
-.db $9F $D2 $D3 $B2 $FE $0C $01 $FE
-.db $B5 $D3 $D2 $BD $FE $02 $01 $FE
-.db $2A $CB $FE $04 $2A $FE $CB $2A
-.db $FE $02 $01 $FE $9F $D2 $FE $02
-.db $D1 $02 $01 $FE $2A $CC $2B $FE
-.db $03 $2A $FE $CC $2B $FE $02 $01
-.db $02 $D1 $04 $01 $02 $2A $FE $59
-.db $EF $49 $5A $FE $02 $2A $08 $01
-.db $FE $2A $CB $5C $FE $02 $5D $FE
-.db $5E $CB $2A $FE $04 $01 $02 $D0
-.db $02 $01 $FE $2A $CC $2B $FE $03
-.db $2A $FE $CC $2B $FE $02 $01 $02
-.db $D0 $FE $D3 $B2 $FE $02 $01 $08
-.db $2A $02 $01 $FE $B5 $D3 $D2 $BD
-.db $FE $0C $01 $FE $9F $D2 $D3 $B2
-.db $FE $0C $01 $FE $B5 $D3 $D2 $BD
-.db $FE $05 $D0 $02 $01 $05 $D0 $FE
-.db $9F $D2 $FE $06 $D3 $FE $B2 $FE
-.db $02 $01 $FE $B5 $FE $06 $D3 $FF
+.INCBIN "0CA077.bin"
 
 L0CA13F:
 .dw L0CA23D
