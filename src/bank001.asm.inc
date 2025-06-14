@@ -2296,9 +2296,9 @@ L01ADDE:
     CMP #20
     BCS L01AE15
 L01ADED:
-    LDA #153
+    LDA #<L0FE299
     STA $00
-    LDA #226
+    LDA #>L0FE299
     STA $01
     LDY #0
     LDX #0
@@ -2406,23 +2406,23 @@ L01AEA9:
 .db $01 $02 $04 $08 $10 $20 $40 $80
 
 L01AEB1:
-    LDA #175
+    LDA #>L01AF46
     STA $01
-    LDA #70
+    LDA #<L01AF46
     STA $00
     JMP L01AECF.w
 
 L01AEBC:
-    LDA #175
+    LDA #>L01AF52
     STA $01
-    LDA #82
+    LDA #<L01AF52
     STA $00
     JMP L01AECF.w
 
 L01AEC7:
-    LDA #175
+    LDA #>L01AF5E
     STA $01
-    LDA #94
+    LDA #<L01AF5E
     STA $00
 L01AECF:
     LDX $049D
@@ -2488,6 +2488,8 @@ L01AF43:
 .db $00
 .db $01
 .db $02
+
+L01AF46:
 .db $F5
 .db $F7
 .db $F7
@@ -2500,6 +2502,8 @@ L01AF43:
 .db $F8
 .db $F8
 .db $FA
+
+L01AF52:
 .db $E5
 .db $E7
 .db $E7
@@ -2512,6 +2516,8 @@ L01AF43:
 .db $E8
 .db $E8
 .db $EA
+
+L01AF5E:
 .db $F5
 .db $F7
 .db $F7
@@ -4455,6 +4461,7 @@ NEWLINE
 NEWLINE
 .db $E8
 
+L01BF7A:
 .db $00
 .db $D2
 .db $60

@@ -1090,6 +1090,7 @@ L0CAA23:
     LDA $059C
     JSR L0FC34C.w
 
+; TODO
 .dw L0FC73D
 .dw L0CAA5F
 .dw L0CAA97
@@ -1149,9 +1150,9 @@ L0CAAAD:
 L0CAACD:
     LDA #16
     STA $33
-    LDA #29
+    LDA #<L0CAB1D
     STA $0E
-    LDA #171
+    LDA #>L0CAB1D
     STA $0F
     INC $059C
 L0CAADC:
@@ -1196,6 +1197,7 @@ L0CAB0B:
     STA $6E00,X
     RTS
 
+L0CAB1D:
 .db $20
 .db $2C
 .db $1C
@@ -1206,6 +1208,8 @@ L0CAB0B:
 .db $10
 .db $00
 .db $EF
+
+L0CAB27:
 .db $29
 .db $AB
 .db $26
@@ -3243,6 +3247,7 @@ L0CB5DD:
 .db $13
 .db $0B
 
+L0CB5E3:
 .dw L0CB5F5
 .dw L0CB62A
 .dw L0CB65F
@@ -4407,10 +4412,11 @@ L0CBFA0:
 .db $B8
 .db $16
 .db $C0
-.db $E3
-.db $B5
-.db $27
-.db $AB
+
+L0CBFD0:
+.dw L0CB5E3
+.dw L0CAB27
+
 .db $00
 .db $08
 .db $00

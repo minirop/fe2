@@ -55,6 +55,7 @@ L048054:
     BPL L048036
     RTS
 
+L048058:
 .dw L04813C
 .dw L04814D
 .dw L04815E
@@ -811,6 +812,7 @@ L048CB0:
 L048CB5:
 .db $01 $08 $56 $02 $F7
 
+L048CBA:
 .dw L048DC0
 .dw L048D8C
 .dw L048D95
@@ -1590,9 +1592,9 @@ L0497B3:
     STA $42
     LDA $76B4
     STA $7442
-    LDA #180
+    LDA #>L04B476
     STA $00
-    LDA #118
+    LDA #<L04B476
     STA $01
     LDA #113
     STA $02
@@ -2041,9 +2043,9 @@ L049AA1:
     AND #15
     BNE L049AEA
     JSR L049C98.w
-    LDA #194
+    LDA #<L04A0C2
     STA $00
-    LDA #160
+    LDA #>L04A0C2
     STA $01
     LDA #128
     STA $02
@@ -2718,6 +2720,8 @@ L049EE4:
 .db $44
 .db $FA
 .db $00
+
+L049EF2:
 .db $0F
 .db $20
 .db $21
@@ -2863,6 +2867,7 @@ L049FA1:
     STA $03
     RTS
 
+L049FAA:
 .db $0F
 .db $E8
 .db $9B
@@ -2924,11 +2929,15 @@ L049FA1:
 .db $84
 .db $01
 .db $00
+
+L049FE7:
 .db $01
 .db $00
 .db $48
 .db $02
 .db $00
+
+L049FEC:
 .db $02
 .db $1B
 .db $FA
@@ -2938,6 +2947,8 @@ L049FA1:
 .db $FA
 .db $00
 .db $00
+
+L049FF5:
 .db $05
 .db $18
 .db $FA
@@ -2997,27 +3008,25 @@ L049FA1:
 .db $31
 .db $22
 .db $00
-.db $40
-.db $A0
-.db $AA
-.db $9F
-.db $E7
-.db $9F
-.db $2A
-.db $B6
-.db $76
-.db $A0
-.db $45
-.db $A0
-.db $EC
-.db $9F
-.db $F5
-.db $9F
+
+L04A030:
+.dw L04A040
+.dw L049FAA
+.dw L049FE7
+.dw L04B62A
+.dw L04A076
+.dw L04A045
+.dw L049FEC
+.dw L049FF5
+
+L04A040:
 .db $01
 .db $00
 .db $F3
 .db $03
 .db $00
+
+L04A045:
 .db $0C
 .db $00
 .db $BF
@@ -3067,6 +3076,8 @@ L049FA1:
 .db $F4
 .db $43
 .db $18
+
+L04A076:
 .db $0E
 
 L04A077:
@@ -3147,6 +3158,8 @@ L04A079:
 .db $0F
 .db $0F
 .db $0F
+
+L04A0C2:
 .db $0F
 .db $20
 .db $10
@@ -5662,9 +5675,9 @@ L04B04E:
 L04B04F:
     LDX #0
     STX $7AAD
-    LDA #207
+    LDA #<L04B0CF
     STA $00
-    LDA #176
+    LDA #>L04B0CF
     STA $01
     JSR L04B0BA.w
     LDA $7A80
@@ -6215,9 +6228,9 @@ L04B421:
     LDA $76B8
     AND #15
     BNE L04B43D
-    LDA #62
+    LDA #<L04B43E
     STA $00
-    LDA #180
+    LDA #>L04B43E
     STA $01
     LDA #140
     STA $02
@@ -6228,6 +6241,7 @@ L04B421:
 L04B43D:
     RTS
 
+L04B43E:
 .db $0F
 .db $30
 .db $20
@@ -6284,6 +6298,8 @@ L04B43D:
 .db $57
 .db $3A
 .db $8A
+
+L04B476:
 .db $BA
 .db $47
 .db $05
@@ -6715,6 +6731,8 @@ L04B619:
 .db $7B
 .db $33
 .db $7B
+
+L04B62A:
 .db $11
 .db $08
 .db $95
@@ -7276,6 +7294,9 @@ L04BDC0:
 .dw L04BE74
 .dw L04BE7B
 
+; if 0 followed by 1 byte
+; if 1 followed by 5 bytes
+; if 2 followed by 7 bytes
 L04BE06:
 .db $00 $2D
 
@@ -7678,6 +7699,7 @@ L04BFA0:
 .dw L0FC73D
 .dw L04A3A7
 
+L04BFB2: ; where?
 .db $01
 .db $00
 .db $00
@@ -7708,12 +7730,13 @@ L04BFA0:
 .db $B8
 .db $08
 .db $17
-.db $30
-.db $A0
-.db $58
-.db $80
-.db $BA
-.db $8C
+
+L04BFD0:
+.dw L04A030
+.dw L048058
+.dw L048CBA
+
+L04BFD6: ; where?
 .db $00
 .db $00
 .db $00

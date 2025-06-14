@@ -939,9 +939,9 @@ L0586A2:
     BCC L0586C5
     CMP #20
     BCS L0586C5
-    LDA #135
+    LDA #>L0587E8
     STA $01
-    LDA #232
+    LDA #<L0587E8
     STA $00
     JMP L0586CF.w
 

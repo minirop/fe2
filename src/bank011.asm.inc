@@ -5947,9 +5947,9 @@ L0BAC08:
 
 L0BAC0B:
     JSR L0FC23D.w
-    LDA #174
+    LDA #>L0BAE28
     STA $01
-    LDA #40
+    LDA #<L0BAE28
     STA $00
     JSR L0FC3E7.w
     LDA #1
@@ -6198,20 +6198,23 @@ L0BADF2:
 .db $44 $3C $31 $89 $41 $2E $04 $0B
 .db $15 $05 $0F $28 $ED $13 $0F $2F
 .db $08 $0F $2F $2E $06 $85 $13 $07
-.db $10 $0F $0A $01 $18 $E7 $21 $28
-.db $0F $7C $78 $7E $77 $6D $FF $7D
-.db $6E $7C $7D $FF $76 $78 $6D $6E
-.db $21 $6A $0C $7C $78 $7E $77 $6D
-.db $FF $77 $78 $FF $FF $FF $60 $21
-.db $AA $0D $72 $6F $77 $FF $60 $FF
-.db $FF $6D $60 $FF $6B $72 $7D $00
+.db $10 $0F $0A $01 $18 $E7
+
+L0BAE28:
+.db $21 $28 $0F $7C $78 $7E $77 $6D
+.db $FF $7D $6E $7C $7D $FF $76 $78
+.db $6D $6E $21 $6A $0C $7C $78 $7E
+.db $77 $6D $FF $77 $78 $FF $FF $FF
+.db $60 $21 $AA $0D $72 $6F $77 $FF
+.db $60 $FF $FF $6D $60 $FF $6B $72
+.db $7D $00
 
 L0BAE5A:
     JSR L0FC71F.w
     JSR L0FC23D.w
-    LDA #174
+    LDA #>L0BAE8C
     STA $01
-    LDA #140
+    LDA #<L0BAE8C
     STA $00
     JSR L0FC3E7.w
     LDA #1
@@ -6229,6 +6232,7 @@ L0BAE86:
     JSR L0FC70D.w
     JMP L0BAE86.w
 
+L0BAE8C:
 .db $21
 .db $A6
 .db $12
@@ -7073,18 +7077,18 @@ L0BB5FC:
     LDA L0BB72F.w,Y
     STA $41
 L0BB605:
-    LDA #105
+    LDA #<L0BB669
     STA $00
-    LDA #182
+    LDA #>L0BB669
     STA $01
     LDY #0
     LDA ($7A),Y
     ASL
     BCC L0BB61D
     INY
-    LDA #69
+    LDA #<L0BB745
     STA $00
-    LDA #183
+    LDA #>L0BB745
     STA $01
 L0BB61D:
     LDA L0BB667.w,Y
@@ -7134,6 +7138,8 @@ L0BB64C:
 L0BB667:
 .db $00
 .db $03
+
+L0BB669:
 .db $01
 .db $02
 .db $03
@@ -7310,6 +7316,7 @@ L0BB667:
 .db $88
 .db $85
 .db $86
+
 L0BB719:
 .db $13
 .db $13
@@ -7333,6 +7340,7 @@ L0BB719:
 .db $1C
 .db $1B
 .db $1B
+
 L0BB72F:
 .db $01
 .db $01
@@ -7356,6 +7364,8 @@ L0BB72F:
 .db $01
 .db $00
 .db $01
+
+L0BB745:
 .db $01
 .db $02
 .db $03

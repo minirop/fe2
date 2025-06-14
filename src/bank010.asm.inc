@@ -1956,6 +1956,7 @@ L0A9151:
 L0A915B:
 .db $EF
 
+L0A915C:
 .dw L0A91A2
 .dw L0A91BD
 .dw L0A91DC
@@ -2178,6 +2179,7 @@ L0A94B5:
 .db $16 $24 $FF $00 $0C $0F $05 $85
 .db $13 $01 $20 $0D $2F $EF
 
+L0A94CB:
 .dw L0A97E3
 .dw L0A9849
 .dw L0A98AF
@@ -2244,6 +2246,8 @@ L0A94B5:
 .dw L0AA619
 .dw L0AA63B
 .dw L0AA6A1
+
+L0A954F:
 .dw L0A97F4
 .dw L0A985A
 .dw L0A98C0
@@ -2310,6 +2314,8 @@ L0A94B5:
 .dw L0AA62A
 .dw L0AA64C
 .dw L0AA6B2
+
+L0A95D3:
 .dw L0A9805
 .dw L0A986B
 .dw L0A98D1
@@ -2376,6 +2382,8 @@ L0A94B5:
 .dw L0AA619
 .dw L0AA65D
 .dw L0AA6C3
+
+L0A9657:
 .dw L0A9816
 .dw L0A987C
 .dw L0A98E2
@@ -2442,6 +2450,8 @@ L0A94B5:
 .dw L0AA62A
 .dw L0AA66E
 .dw L0AA6D4
+
+L0A96DB:
 .dw L0A9827
 .dw L0A988D
 .dw L0A98F3
@@ -2508,6 +2518,8 @@ L0A94B5:
 .dw L0AA619
 .dw L0AA67F
 .dw L0AA6E5
+
+L0A975F:
 .dw L0A9838
 .dw L0A989E
 .dw L0A9904
@@ -3716,6 +3728,7 @@ L0AA6F6:
 .db $00 $00 $57 $02 $08 $00 $56 $02
 .db $00
 
+L0AA707:
 .dw L0ABA1D
 .dw L0AA751
 .dw L0AA9A5
@@ -5149,28 +5162,20 @@ L0ABFA0:
 .db $FC
 .db $EA
 .db $02
-.db $D3
-.db $95
-.db $57
-.db $96
-.db $DB
-.db $96
-.db $5F
-.db $97
-.db $CB
-.db $94
-.db $4F
-.db $95
-.db $DB
-.db $96
-.db $5F
-.db $97
-.db $5C
-.db $91
-.db $07
-.db $A7
-.db $40
-.db $8B
+
+L0ABFD0:
+.dw L0A95D3
+.dw L0A9657
+.dw L0A96DB
+.dw L0A975F
+.dw L0A94CB
+.dw L0A954F
+.dw L0A96DB
+.dw L0A975F
+.dw L0A915C
+.dw L0AA707
+.dw L0A8B40
+
 .db $00
 .db $00
 .db $F6

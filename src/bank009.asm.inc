@@ -2087,6 +2087,7 @@ L098F21:
 .db $05
 .db $01
 
+L098F37:
 .dw L098FED
 .dw L09905A
 .dw L0990CB
@@ -2113,6 +2114,8 @@ L098F21:
 .dw L099978
 .dw L0999E1
 .dw L09A401
+
+L098F6B:
 .dw L0999E6
 .dw L099A0F
 .dw L099A38
@@ -2121,6 +2124,8 @@ L098F21:
 .dw L099AAF
 .dw L099AD8
 .dw L099B21
+
+L098F7B:
 .dw L099B4A
 .dw L099B7B
 .dw L099BA8
@@ -2133,6 +2138,8 @@ L098F21:
 .dw L099CF7
 .dw L099D24
 .dw L099D59
+
+L098F93:
 .dw L099D8E
 .dw L099DDB
 .dw L099E28
@@ -2142,6 +2149,8 @@ L098F21:
 .dw L099F5C
 .dw L099FA5
 .dw L09A3EC
+
+L098FA5:
 .dw L09A00B
 .dw L09A05C
 .dw L09A0AD
@@ -2155,6 +2164,8 @@ L098F21:
 .dw L09A329
 .dw L09A37E
 .dw L09A3D3
+
+L098FBF:
 .dw L09A41A
 .dw L09A42F
 .dw L09A444
@@ -2162,6 +2173,8 @@ L098F21:
 .dw L09A46E
 .dw L09A483
 .dw L09A498
+
+L098FCD:
 .dw L09A4AD
 .dw L09A4D6
 .dw L09A4FB
@@ -2178,7 +2191,6 @@ L098F21:
 .dw L09A6A6
 .dw L09A6CF
 .dw L09A70C
-
 
 L098FED:
 .db $1B $18 $10 $00 $E0 $10 $00 $00
@@ -5530,20 +5542,16 @@ L09BFA0:
 .db $9C
 .db $20
 .db $8B
-.db $37
-.db $8F
-.db $6B
-.db $8F
-.db $7B
-.db $8F
-.db $93
-.db $8F
-.db $A5
-.db $8F
-.db $BF
-.db $8F
-.db $CD
-.db $8F
+
+L09BFD0:
+.dw L098F37
+.dw L098F6B
+.dw L098F7B
+.dw L098F93
+.dw L098FA5
+.dw L098FBF
+.dw L098FCD
+
 .db $21
 .db $AC
 .db $21

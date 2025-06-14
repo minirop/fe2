@@ -6541,7 +6541,7 @@ L08BFA0: ; functions
 .dw L08A14F
 .dw L08A96F
 
-; lists?
+L08BFD0:
 .dw L088000
 .dw L088F5A
 .dw L0881C2
