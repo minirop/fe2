@@ -7889,6 +7889,7 @@ L0FEDD3:
 .db $05
 .db $04
 .db $06
+
 L0FEDEA:
 .db $02
 .db $01
@@ -7914,6 +7915,7 @@ L0FEDF3:
 .db $06
 .db $14
 .db $07
+
 L0FEE00:
 .db $04
 .db $07
