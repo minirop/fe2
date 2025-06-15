@@ -107,6 +107,5 @@ def decode(code):
         output += "\")"
     print (''.join(output))
 
-
 # print: ENCODE("アルム")
 decode('30 5A 52')

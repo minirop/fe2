@@ -327,7 +327,6 @@ L_WORLD_MAP_PALETTES_ID:
 .db $00 $00 $00 $00
 .db $00 $00 $00 $00
 
-
 L078500:
     LDA $0499
     JSR L0FC34C.w
@@ -6401,7 +6400,6 @@ L07AE70:
 .dw L07B8F0
 .dw L07B951
 .dw L07B99A
-
 
 L07AE9A:
 .db $30 $80 $14 $04 $E8 $50 $30 $81

@@ -1198,16 +1198,8 @@ L0CAB0B:
     RTS
 
 L0CAB1D:
-.db $20
-.db $2C
-.db $1C
-.db $20
-.db $32
-.db $22
-.db $20
-.db $10
-.db $00
-.db $EF
+.db $20 $2C $1C $20 $32 $22 $20 $10
+.db $00 $EF
 
 L0CAB27:
 .db $29
@@ -1365,6 +1357,7 @@ L0CAB27:
 .db $42
 .db $03
 .db $00
+
 L0CABC2:
     LDA $744C
     SEC
@@ -1924,113 +1917,24 @@ L0CB012:
     STA $0451,Y
     INX
     INY
-    CMP #239
+    CMP #$EF
     BNE L0CB012
     JMP L0CB19F.w
 
 L0CB021:
-.db $ED
-.db $ED
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $5B
-.db $4D
-.db $0F
-.db $5A
-.db $8D
-.db $ED
-.db $FF
-.db $0A
-.db $01
-.db $10
-.db $0F
-.db $01
-.db $71
-.db $79
-.db $8D
-.db $ED
-.db $09
-.db $02
-.db $08
-.db $0F
-.db $06
-.db $29
-.db $87
-.db $07
-.db $8D
-.db $ED
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $2D
-.db $0A
-.db $0F
-.db $8D
-.db $ED
-.db $FF
-.db $FF
-.db $FF
-.db $0C
-.db $1A
-.db $0F
-.db $25
-.db $0A
-.db $8D
-.db $ED
-.db $FF
-.db $FF
-.db $02
-.db $2F
-.db $19
-.db $27
-.db $0A
-.db $8D
-.db $ED
-.db $FF
-.db $0B
-.db $86
-.db $1B
-.db $0F
-.db $29
-.db $87
-.db $07
-.db $8D
-.db $ED
-.db $20
-.db $1E
-.db $02
-.db $1E
-.db $0F
-.db $02
-.db $06
-.db $0F
-.db $87
-.db $8D
-.db $ED
-.db $FF
-.db $01
-.db $14
-.db $0F
-.db $02
-.db $29
-.db $87
-.db $07
-.db $8D
-.db $ED
-.db $FF
-.db $FF
-.db $08
-.db $01
-.db $08
-.db $2F
-.db $11
-.db $8D
-.db $ED
-.db $EF
+.db $ED $ED $FF $FF $FF $FF $5B $4D
+.db $0F $5A $8D $ED $FF $0A $01 $10
+.db $0F $01 $71 $79 $8D $ED $09 $02
+.db $08 $0F $06 $29 $87 $07 $8D $ED
+.db $FF $FF $FF $FF $FF $2D $0A $0F
+.db $8D $ED $FF $FF $FF $0C $1A $0F
+.db $25 $0A $8D $ED $FF $FF $02 $2F
+.db $19 $27 $0A $8D $ED $FF $0B $86
+.db $1B $0F $29 $87 $07 $8D $ED $20
+.db $1E $02 $1E $0F $02 $06 $0F $87
+.db $8D $ED $FF $01 $14 $0F $02 $29
+.db $87 $07 $8D $ED $FF $FF $08 $01
+.db $08 $2F $11 $8D $ED $EF
 
 L0CB087:
     LDA #20
@@ -2256,37 +2160,10 @@ L0CB202:
     RTS
 
 L0CB203:
-.db $00
-.db $92
-.db $93
-.db $94
-.db $95
-.db $97
-.db $85
-.db $87
-.db $82
-.db $B6
-.db $60
-.db $61
-.db $75
-.db $22
-.db $16
-.db $B0
-.db $B1
-.db $B2
-.db $75
-.db $A6
-.db $B0
-.db $B1
-.db $01
-.db $53
-.db $83
-.db $B3
-.db $B5
-.db $71
-.db $80
-.db $44
-.db $90
+.db $00 $92 $93 $94 $95 $97 $85 $87
+.db $82 $B6 $60 $61 $75 $22 $16 $B0
+.db $B1 $B2 $75 $A6 $B0 $B1 $01 $53
+.db $83 $B3 $B5 $71 $80 $44 $90
 
 L0CB222:
     LDA $7434
@@ -3205,47 +3082,20 @@ L0CB5B8:
 .dw L0CB5DD
 
 L0CB5C2:
-.db $07
-.db $12
-.db $0B
-.db $10
-.db $82
-.db $14
+.db $07 $12 $0B $10 $82 $14
 
 L0CB5C8:
-.db $08
-.db $0C
-.db $06
-.db $09
-.db $83
-.db $11
+.db $08 $0C $06 $09 $83 $11
 
 L0CB5CE:
-.db $07
-.db $0C
-.db $03
-.db $0F
-.db $0A
-.db $0B
-.db $13
-.db $83
+.db $07 $0C $03 $0F $0A $0B $13 $83
 .db $03
 
 L0CB5D7:
-.db $23
-.db $82
-.db $07
-.db $22
-.db $14
-.db $10
+.db $23 $82 $07 $22 $14 $10
 
 L0CB5DD:
-.db $2B
-.db $82
-.db $0B
-.db $1A
-.db $13
-.db $0B
+.db $2B $82 $0B $1A $13 $0B
 
 L0CB5E3:
 .dw L0CB5F5
@@ -3421,26 +3271,11 @@ L0CB80A:
 .dw L0CB816
 
 L0CB80E:
-.db $00
-.db $01
-.db $02
-.db $03
-.db $04
-.db $05
-.db $06
-.db $07
+.db $00 $01 $02 $03 $04 $05 $06 $07
 
 L0CB816:
-.db $09
-.db $09
-.db $09
-.db $09
-.db $09
-.db $09
-.db $09
-.db $09
-.db $09
-.db $08
+.db $09 $09 $09 $09 $09 $09 $09 $09
+.db $09 $08
 
 L0CB820:
 .dw L0CB84E
@@ -3527,6 +3362,7 @@ L0CB91E:
     STX $7AAD
     RTS
 
+L0CB92E:
 .db $30
 .db $B9
 .db $30
