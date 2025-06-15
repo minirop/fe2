@@ -3,6 +3,7 @@
 
 .SECTION "Bank0" FORCE
 
+L008000:
 .dw L008B45
 .dw L008B6A
 .dw L008B8F
@@ -53,6 +54,8 @@
 .dw L00934C
 .dw L009381
 .dw L0093A2
+
+L008064:
 .dw L0080DE
 .dw L008107
 .dw L00812C
@@ -113,6 +116,7 @@
 .dw L008A82
 .dw L008ABF
 .dw L008AE0
+L0080DC:
 .dw L008B27
 
 ; the first byte is the number of
@@ -1007,12 +1011,15 @@ L009381:
 L0093A2:
 .db $01 $00 $FF $00 $00
 
+L0093A7:
 .dw L00942A
 .dw L0093E1
 .dw L0093D5
 .dw L0093BF
 .dw L0093C2
 .dw L0093C5
+
+L0093B3:
 .dw L009479
 .dw L00946B
 .dw L0094AC
@@ -1081,6 +1088,7 @@ L0094AC:
 L0094B0:
 .db $09 $0A $0B
 
+L0094B3:
 .dw L00956D
 .dw L009592
 .dw L0095B7
@@ -4482,8 +4490,10 @@ L00BFA0:
 .db $51
 .db $43
 .db $54
-.db $A7
-.db $93
+
+L00BFC0:
+.dw L0093A7
+
 .db $00
 .db $00
 .db $00
@@ -4498,18 +4508,15 @@ L00BFA0:
 .db $99
 .db $E3
 .db $20
-.db $00
-.db $80
-.db $64
-.db $80
-.db $DC
-.db $80
-.db $DE
-.db $80
-.db $DE
-.db $80
-.db $DE
-.db $80
+
+L00BFD0:
+.dw L008000
+.dw L008064
+.dw L0080DC
+.dw L0080DE
+.dw L0080DE
+.dw L0080DE
+
 .db $21
 .db $55
 .db $00
@@ -4540,11 +4547,8 @@ L00BFA0:
 .db $00
 .db $C4
 .db $45
-.db $B3
-.db $94
-.db $A7
-.db $93
-.db $B3
-.db $93
+.dw L0094B3
+.dw L0093A7
+.dw L0093B3
 
 .ENDS

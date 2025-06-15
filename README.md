@@ -23,9 +23,10 @@ Just type `make`.
 - Extract the maps into some format (to allow easy modification)
 - Same with the portraits/battlers
 - Understand the data
-	- units placement
     - items
     - enemy AI/gather/auto-battle
+    - movements
+    - tiles "collision"
     - audio
     - where are, the unlabelled bytes, used
 - How graphics are used/built

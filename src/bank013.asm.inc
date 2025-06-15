@@ -7267,7 +7267,7 @@ L0DB983:
 .db $08 $15 $02 $06 $10 $18 $0E $04
 .db $00
 
-L0DB98C:
+L0DB98C: ; map ids?
 .db $01
 .db $02
 .db $21
@@ -7589,6 +7589,7 @@ L0DBA50:
 .dw L0DBB3A
 .dw L0DBB3A
 .dw L0DBB7D
+
 L0DBB3A:
 .db $EF
 

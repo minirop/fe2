@@ -801,42 +801,11 @@ L02BEF9:
 .dw L02BEFB
 
 L02BEFB:
-.db $3F
-.db $00
-.db $20
-.db $0F
-.db $20
-.db $20
-.db $20
-.db $0F
-.db $20
-.db $20
-.db $20
-.db $0F
-.db $20
-.db $20
-.db $20
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $20
-.db $20
-.db $20
-.db $0F
-.db $20
-.db $20
-.db $20
-.db $0F
-.db $20
-.db $20
-.db $20
-.db $0F
-.db $20
-.db $20
-.db $20
-.db $00
+.db $3F $00 $20 $0F $20 $20 $20 $0F
+.db $20 $20 $20 $0F $20 $20 $20 $0F
+.db $0F $0F $0F $0F $20 $20 $20 $0F
+.db $20 $20 $20 $0F $20 $20 $20 $0F
+.db $20 $20 $20 $00
 
 L02BF1F:
 .db $00
@@ -981,6 +950,7 @@ L02BFA6: ; pointers to data
 .dw L02BF1F
 .dw L02B4D8
 
+L02BFB0:
 .db $70
 .db $00
 .db $68
@@ -997,7 +967,10 @@ L02BFA6: ; pointers to data
 .db $44
 .db $0C
 .db $60
+
+L02BFC0:
 .dw L02BEF9
+
 .db $08
 .db $00
 .db $00

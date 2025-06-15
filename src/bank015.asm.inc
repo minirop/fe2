@@ -278,7 +278,7 @@ L0FC1FA:
 L0FC1FB:
     LDA #14
     STA $A000
-    JSR $8000
+    JSR L0E8000
     LDA $2F
     STA $A000
     RTS
@@ -1509,7 +1509,7 @@ L0FC98B:
     LDA ($02),Y
     TAY
     LDA #11
-    STA $A000.w
+    STA $A000
     PLA
     TAX
     TYA
@@ -2013,7 +2013,7 @@ L0FCC87:
 L0FCC94:
     RTS
 
-L0FCC95:
+L0FCC95: ; indexed by map id
 .db $01
 .db $15
 .db $15
@@ -4686,7 +4686,7 @@ L0FDD60: ; steel sword
 ENCODE("はがねのつるぎ")
 STOP
 
-L0FDD6A: ; silver lance
+L0FDD6A: ; silver sword
 ENCODE("ぎんのつるぎ")
 STOP
 
@@ -4738,11 +4738,11 @@ L0FDDC7: ; steel shield
 ENCODE("はがねのたて")
 STOP
 
-L0FDDCF:
+L0FDDCF: ; silver shield
 ENCODE("ぎんのたて")
 STOP
 
-L0FDDD6: ; silver shield
+L0FDDD6: ; blessed shield
 ENCODE("せいなるたて")
 STOP
 
@@ -8614,7 +8614,7 @@ L0FF12D:
 .db $D4
 .db $00
 
-L0FF150:
+L0FF150: ; levels id (compared to current map in L0689EC)
 .db $07
 .db $1D
 .db $11

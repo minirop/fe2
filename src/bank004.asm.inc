@@ -1625,64 +1625,16 @@ L0497F7:
     RTS
 
 L049819:
-.db $3F
-.db $00
-.db $20
-.db $0F
-.db $30
-.db $30
-.db $30
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $30
-.db $10
-.db $00
-.db $0F
-.db $39
-.db $38
-.db $17
-.db $0F
-.db $35
-.db $25
-.db $15
-.db $0F
-.db $30
-.db $30
-.db $30
-.db $00
+.db $3F $00 $20 $0F $30 $30 $30 $0F
+.db $0F $0F $0F $0F $0F $0F $0F $0F
+.db $0F $0F $0F $0F $30 $10 $00 $0F
+.db $39 $38 $17 $0F $35 $25 $15 $0F
+.db $30 $30 $30 $00
 
 L04983D:
-.db $3F
-.db $00
-.db $10
-.db $0F
-.db $30
-.db $30
-.db $30
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $00
+.db $3F $00 $10 $0F $30 $30 $30 $0F
+.db $0F $0F $0F $0F $0F $0F $0F $0F
+.db $0F $0F $0F $00
 
 L049851:
     LDA $33
@@ -1785,22 +1737,8 @@ L0498F8:
     RTS
 
 L0498F9:
-.db $F5
-.db $F0
-.db $50
-.db $00
-.db $0A
-.db $0F
-.db $AF
-.db $FF
-.db $FF
-.db $FF
-.db $F5
-.db $F0
-.db $00
-.db $00
-.db $0A
-.db $0F
+.db $F5 $F0 $50 $00 $0A $0F $AF $FF
+.db $FF $FF $F5 $F0 $00 $00 $0A $0F
 
 L049909:
     LDY #19
@@ -2126,38 +2064,10 @@ L049B47:
     RTS
 
 L049B49:
-.db $0F
-.db $16
-.db $05
-.db $05
-.db $0F
-.db $15
-.db $16
-.db $05
-.db $0F
-.db $25
-.db $15
-.db $16
-.db $0F
-.db $35
-.db $25
-.db $15
-.db $0F
-.db $35
-.db $25
-.db $25
-.db $0F
-.db $35
-.db $35
-.db $25
-.db $0F
-.db $20
-.db $35
-.db $35
-.db $0F
-.db $20
-.db $20
-.db $20
+.db $0F $16 $05 $05 $0F $15 $16 $05
+.db $0F $25 $15 $16 $0F $35 $25 $15
+.db $0F $35 $25 $25 $0F $35 $35 $25
+.db $0F $20 $35 $35 $0F $20 $20 $20
 
 L049B69:
     LDA $76B8
@@ -2215,69 +2125,24 @@ L049BCA:
 .dw L049BFE
 
 L049BD2:
-.db $1A
-.db $FF
-.db $FF
-.db $FF
-.db $61
-.db $69
-.db $69
-.db $61
-.db $FF
-.db $FF
-.db $FF
+.db $1A $FF $FF $FF $61 $69 $69 $61
+.db $FF $FF $FF
 
 L049BDD:
-.db $1A
-.db $FF
-.db $FF
-.db $A0
-.db $A1
-.db $A2
-.db $A3
-.db $A4
-.db $A5
-.db $FF
-.db $FF
+.db $1A $FF $FF $A0 $A1 $A2 $A3 $A4
+.db $A5 $FF $FF
 
 L049BE8:
-.db $1A
-.db $FF
-.db $79
-.db $7B
-.db $6E
-.db $7C
-.db $6E
-.db $77
-.db $7D
-.db $7C
-.db $FF
+.db $1A $FF $79 $7B $6E $7C $6E $77
+.db $7D $7C $FF
 
 L049BF3:
-.db $1A
-.db $6F
-.db $72
-.db $7B
-.db $6E
-.db $6E
-.db $76
-.db $6B
-.db $75
-.db $6E
-.db $76
+.db $1A $6F $72 $7B $6E $6E $76 $6B
+.db $75 $6E $76
 
 L049BFE:
-.db $1A
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
-.db $FF
+.db $1A $FF $FF $FF $FF $FF $FF $FF
+.db $FF $FF $FF
 
 L049C09:
     LDA $76B8
@@ -2650,144 +2515,34 @@ L049E9B:
     RTS
 
 L049EB0:
-.db $53
-.db $28
-.db $49
-.db $FF
-.db $9A
-.db $AB
-.db $B9
-.db $D8
-.db $D9
-.db $E6
-.db $E9
-.db $DC
-.db $DD
-.db $E6
-.db $FF
-.db $F1
-.db $F2
-.db $C3
-.db $BD
-.db $87
-.db $FF
-.db $57
-.db $94
-.db $AA
-.db $B8
-.db $C8
-.db $C9
-.db $DA
-.db $E7
-.db $E8
-.db $EC
-.db $EE
-.db $E7
-.db $F0
-.db $F3
-.db $F4
-.db $38
-.db $9F
-.db $FF
+.db $53 $28 $49 $FF $9A $AB $B9 $D8
+.db $D9 $E6 $E9 $DC $DD $E6 $FF $F1
+.db $F2 $C3 $BD $87 $FF $57 $94 $AA
+.db $B8 $C8 $C9 $DA $E7 $E8 $EC $EE
+.db $E7 $F0 $F3 $F4 $38 $9F $FF
 
 L049ED7:
-.db $1C
-.db $B9
-.db $61
-.db $69
-.db $69
-.db $61
-.db $FF
-.db $A0
-.db $A1
-.db $A2
-.db $A3
-.db $A4
-.db $A5
+.db $1C $B9 $61 $69 $69 $61 $FF $A0
+.db $A1 $A2 $A3 $A4 $A5
 
 L049EE4:
-.db $0C
-.db $23
-.db $D9
-.db $46
-.db $00
-.db $23
-.db $DD
-.db $01
-.db $55
-.db $23
-.db $EA
-.db $44
-.db $FA
-.db $00
+.db $0C $23 $D9 $46 $00 $23 $DD $01
+.db $55 $23 $EA $44 $FA $00
 
 L049EF2:
-.db $0F
-.db $20
-.db $21
-.db $11
-.db $0F
-.db $37
-.db $28
-.db $18
-.db $0F
-.db $22
-.db $00
-.db $00
-.db $0F
-.db $FF
-.db $FF
-.db $FF
-.db $0F
-.db $20
-.db $10
-.db $00
-.db $0F
-.db $37
-.db $28
-.db $18
-.db $0F
-.db $35
-.db $25
-.db $15
-.db $0F
-.db $37
-.db $28
-.db $18
+.db $0F $20 $21 $11 $0F $37 $28 $18
+.db $0F $22 $00 $00 $0F $FF $FF $FF
+.db $0F $20 $10 $00 $0F $37 $28 $18
+.db $0F $35 $25 $15 $0F $37 $28 $18
 
 L049F12:
-.db $21
-.db $C6
-.db $53
-.db $FF
-.db $21
-.db $E6
-.db $53
-.db $FF
-.db $20
-.db $00
-.db $01
-.db $FF
-.db $22
-.db $5F
-.db $01
-.db $FF
+.db $21 $C6 $53 $FF $21 $E6 $53 $FF
+.db $20 $00 $01 $FF $22 $5F $01 $FF
 .db $00
 
 L049F23:
-.db $22
-.db $A9
-.db $4C
-.db $FF
-.db $23
-.db $D9
-.db $46
-.db $00
-.db $23
-.db $EA
-.db $44
-.db $AF
-.db $00
+.db $22 $A9 $4C $FF $23 $D9 $46 $00
+.db $23 $EA $44 $AF $00
 
 L049F30:
     JSR L049B0D.w
@@ -2868,146 +2623,31 @@ L049FA1:
     RTS
 
 L049FAA:
-.db $0F
-.db $E8
-.db $9B
-.db $00
-.db $00
-.db $E0
-.db $F8
-.db $41
-.db $10
-.db $E0
-.db $F9
-.db $41
-.db $08
-.db $E0
-.db $F9
-.db $01
-.db $F8
-.db $E0
-.db $F8
-.db $01
-.db $F0
-.db $38
-.db $FB
-.db $00
-.db $00
-.db $30
-.db $FA
-.db $00
-.db $00
-.db $28
-.db $FA
-.db $00
-.db $00
-.db $20
-.db $FA
-.db $00
-.db $00
-.db $F0
-.db $FA
-.db $00
-.db $00
-.db $D0
-.db $80
-.db $01
-.db $00
-.db $E0
-.db $F6
-.db $01
-.db $00
-.db $D8
-.db $F5
-.db $01
-.db $00
-.db $C8
-.db $85
-.db $01
-.db $00
-.db $C0
-.db $84
-.db $01
-.db $00
+.db $0F $E8 $9B $00 $00 $E0 $F8 $41
+.db $10 $E0 $F9 $41 $08 $E0 $F9 $01
+.db $F8 $E0 $F8 $01 $F0 $38 $FB $00
+.db $00 $30 $FA $00 $00 $28 $FA $00
+.db $00 $20 $FA $00 $00 $F0 $FA $00
+.db $00 $D0 $80 $01 $00 $E0 $F6 $01
+.db $00 $D8 $F5 $01 $00 $C8 $85 $01
+.db $00 $C0 $84 $01 $00
 
 L049FE7:
-.db $01
-.db $00
-.db $48
-.db $02
-.db $00
+.db $01 $00 $48 $02 $00
 
 L049FEC:
-.db $02
-.db $1B
-.db $FA
-.db $00
-.db $00
-.db $F2
-.db $FA
-.db $00
+.db $02 $1B $FA $00 $00 $F2 $FA $00
 .db $00
 
 L049FF5:
-.db $05
-.db $18
-.db $FA
-.db $00
-.db $00
-.db $10
-.db $FA
-.db $00
-.db $00
-.db $08
-.db $FA
-.db $00
-.db $00
-.db $00
-.db $FA
-.db $00
-.db $00
-.db $F8
-.db $FA
-.db $00
-.db $00
-.db $0C
-.db $A0
-.db $3F
-.db $00
-.db $20
-.db $0F
-.db $30
-.db $30
-.db $30
-.db $0F
-.db $30
-.db $21
-.db $12
-.db $0F
-.db $37
-.db $18
-.db $28
-.db $0F
-.db $30
-.db $31
-.db $22
-.db $0F
-.db $30
-.db $30
-.db $30
-.db $0F
-.db $30
-.db $21
-.db $12
-.db $0F
-.db $16
-.db $37
-.db $0F
-.db $0F
-.db $30
-.db $31
-.db $22
-.db $00
+.db $05 $18 $FA $00 $00 $10 $FA $00
+.db $00 $08 $FA $00 $00 $00 $FA $00
+.db $00 $F8 $FA $00 $00 $0C $A0 $3F
+.db $00 $20 $0F $30 $30 $30 $0F $30
+.db $21 $12 $0F $37 $18 $28 $0F $30
+.db $31 $22 $0F $30 $30 $30 $0F $30
+.db $21 $12 $0F $16 $37 $0F $0F $30
+.db $31 $22 $00
 
 L04A030:
 .dw L04A040
@@ -3020,143 +2660,33 @@ L04A030:
 .dw L049FF5
 
 L04A040:
-.db $01
-.db $00
-.db $F3
-.db $03
-.db $00
+.db $01 $00 $F3 $03 $00
 
 L04A045:
-.db $0C
-.db $00
-.db $BF
-.db $03
-.db $00
-.db $00
-.db $FC
-.db $03
-.db $08
-.db $00
-.db $FC
-.db $43
-.db $10
-.db $00
-.db $BF
-.db $43
-.db $18
-.db $18
-.db $3E
-.db $03
-.db $00
-.db $18
-.db $DA
-.db $03
-.db $08
-.db $18
-.db $DA
-.db $43
-.db $10
-.db $18
-.db $3E
-.db $43
-.db $18
-.db $20
-.db $F4
-.db $03
-.db $00
-.db $20
-.db $66
-.db $03
-.db $08
-.db $20
-.db $66
-.db $43
-.db $10
-.db $20
-.db $F4
-.db $43
+.db $0C $00 $BF $03 $00 $00 $FC $03
+.db $08 $00 $FC $43 $10 $00 $BF $43
+.db $18 $18 $3E $03 $00 $18 $DA $03
+.db $08 $18 $DA $43 $10 $18 $3E $43
+.db $18 $20 $F4 $03 $00 $20 $66 $03
+.db $08 $20 $66 $43 $10 $20 $F4 $43
 .db $18
 
 L04A076:
 .db $0E
 
 L04A077:
-.db $68
-.db $0E
+.db $68 $0E
 
 L04A079:
-.db $00
-.db $60
-.db $68
-.db $0B
-.db $00
-.db $68
-.db $68
-.db $13
-.db $00
-.db $70
-.db $68
-.db $14
-.db $00
-.db $78
-.db $68
-.db $06
-.db $00
-.db $80
-.db $68
-.db $1A
-.db $00
-.db $88
-.db $78
-.db $15
-.db $00
-.db $70
-.db $78
-.db $05
-.db $00
-.db $78
-.db $70
-.db $0F
-.db $00
-.db $78
-.db $78
-.db $2B
-.db $00
-.db $80
-.db $78
-.db $13
-.db $00
-.db $88
-.db $78
-.db $9B
-.db $00
-.db $90
-.db $78
-.db $9B
-.db $00
-.db $98
-.db $78
-.db $9B
-.db $00
-.db $A0
-.db $3F
-.db $00
-.db $20
-.db $0F
-.db $30
-.db $30
-.db $30
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
+.db $00 $60 $68 $0B $00 $68 $68 $13
+.db $00 $70 $68 $14 $00 $78 $68 $06
+.db $00 $80 $68 $1A $00 $88 $78 $15
+.db $00 $70 $78 $05 $00 $78 $70 $0F
+.db $00 $78 $78 $2B $00 $80 $78 $13
+.db $00 $88 $78 $9B $00 $90 $78 $9B
+.db $00 $98 $78 $9B $00 $A0 $3F $00
+.db $20 $0F $30 $30 $30 $0F $0F $0F
+.db $0F $0F $0F $0F $0F $0F $0F $0F
 .db $0F
 
 L04A0C2:
@@ -4158,59 +3688,13 @@ L04A589:
     RTS
 
 L04A58A:
-.db $20
-.db $A3
-.db $D4
-.db $FB
-.db $20
-.db $BC
-.db $D4
-.db $FC
-.db $20
-.db $84
-.db $58
-.db $F7
-.db $23
-.db $24
-.db $58
-.db $F8
-.db $20
-.db $83
-.db $01
-.db $F5
-.db $20
-.db $9C
-.db $01
-.db $F6
-.db $23
-.db $23
-.db $01
-.db $F9
-.db $23
-.db $3C
-.db $01
-.db $FA
-.db $23
-.db $C8
-.db $49
-.db $00
-.db $23
-.db $D7
-.db $42
-.db $00
-.db $23
-.db $DF
-.db $42
-.db $00
-.db $23
-.db $E7
-.db $42
-.db $00
-.db $23
-.db $EF
-.db $49
-.db $00
-.db $00
+.db $20 $A3 $D4 $FB $20 $BC $D4 $FC
+.db $20 $84 $58 $F7 $23 $24 $58 $F8
+.db $20 $83 $01 $F5 $20 $9C $01 $F6
+.db $23 $23 $01 $F9 $23 $3C $01 $FA
+.db $23 $C8 $49 $00 $23 $D7 $42 $00
+.db $23 $DF $42 $00 $23 $E7 $42 $00
+.db $23 $EF $49 $00 $00
 
 L04A5BF:
     LDA #0
@@ -4338,16 +3822,12 @@ L04A6A2:
     LDA $76B5
     JSR L0FC34C.w
 
-.db $BA
-.db $A6
-.db $A1
-.db $9A
-.db $0D
-.db $9B
-.db $E0
-.db $9C
-.db $3D
-.db $C7
+L04A6B0:
+.dw L04A6BA
+.dw L049AA1
+.dw L049B0D
+.dw L049CE0
+.dw L0FC73D
 
 L04A6BA:
     LDA #0
@@ -4451,26 +3931,9 @@ L04A76F:
     RTS
 
 L04A77A:
-.db $3F
-.db $10
-.db $10
-.db $0F
-.db $30
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $0F
-.db $00
+.db $3F $10 $10 $0F $30 $0F $0F $0F
+.db $0F $0F $0F $0F $0F $0F $0F $0F
+.db $0F $0F $0F $00
 
 L04A78E:
     LDA $7A76
@@ -5301,30 +4764,14 @@ L04ADDE:
 L04ADDF:
 .db $01
 
-.db $08
-.db $20
-.db $04
-.db $10
-.db $20
-.db $07
-.db $09
-.db $70
-.db $05
-.db $10
-.db $40
-.db $03
-.db $0C
-.db $70
-.db $05
-.db $0C
-.db $20
-.db $08
-.db $0C
-.db $60
-.db $03
-.db $0C
-.db $70
-.db $01
+.db $08 $20 $04
+.db $10 $20 $07
+.db $09 $70 $05
+.db $10 $40 $03
+.db $0C $70 $05
+.db $0C $20 $08
+.db $0C $60 $03
+.db $0C $70 $01
 
 L04ADF8:
     DEC $7AB2
@@ -5526,12 +4973,7 @@ L04AF4D:
     ; fallthrough to invalid code???
 
 L04AF6A:
-.db $EF
-.db $4F
-.db $FF
-.db $93
-.db $9D
-.db $ED
+.db $EF $4F $FF $93 $9D $ED
 
 L04AF70:
     LDA #38
@@ -5603,35 +5045,10 @@ L04AFDF:
     RTS
 
 L04AFE9:
-.db $26
-.db $B9
-.db $C9
-.db $FD
-.db $24
-.db $19
-.db $C1
-.db $FD
-.db $20
-.db $00
-.db $C4
-.db $FF
-.db $23
-.db $E7
-.db $01
-.db $FF
-.db $23
-.db $EE
-.db $01
-.db $FF
-.db $23
-.db $D7
-.db $01
-.db $FF
-.db $23
-.db $FE
-.db $01
-.db $FF
-.db $00
+.db $26 $B9 $C9 $FD $24 $19 $C1 $FD
+.db $20 $00 $C4 $FF $23 $E7 $01 $FF
+.db $23 $EE $01 $FF $23 $D7 $01 $FF
+.db $23 $FE $01 $FF $00
 
 L04B006:
     LDA #0
@@ -5738,21 +5155,8 @@ L04B0BF:
     RTS
 
 L04B0CF:
-.db $30
-.db $80
-.db $14
-.db $05
-.db $E8
-.db $A0
-.db $30
-.db $00
-.db $E9
-.db $05
-.db $E2
-.db $E3
-.db $F1
-.db $F0
-.db $EF
+.db $30 $80 $14 $05 $E8 $A0 $30 $00
+.db $E9 $05 $E2 $E3 $F1 $F0 $EF
 
 L04B0DE:
     JSR L0FC288.w
@@ -5819,38 +5223,10 @@ L04B149:
     RTS
 
 L04B160:
-.db $03
-.db $04
-.db $05
-.db $06
-.db $07
-.db $08
-.db $09
-.db $0A
-.db $0C
-.db $0D
-.db $0E
-.db $0F
-.db $10
-.db $11
-.db $12
-.db $13
-.db $14
-.db $15
-.db $16
-.db $17
-.db $18
-.db $19
-.db $1A
-.db $1B
-.db $1C
-.db $1D
-.db $1E
-.db $1F
-.db $20
-.db $21
-.db $22
-.db $02
+.db $03 $04 $05 $06 $07 $08 $09 $0A
+.db $0C $0D $0E $0F $10 $11 $12 $13
+.db $14 $15 $16 $17 $18 $19 $1A $1B
+.db $1C $1D $1E $1F $20 $21 $22 $02
 .db $01
 
 L04B181:
@@ -5998,38 +5374,10 @@ L04B28C:
     RTS
 
 L04B295:
-.db $33
-.db $38
-.db $3B
-.db $31
-.db $42
-.db $31
-.db $50
-.db $46
-.db $48
-.db $31
-.db $4D
-.db $4D
-.db $4D
-.db $51
-.db $38
-.db $46
-.db $46
-.db $46
-.db $46
-.db $46
-.db $31
-.db $46
-.db $31
-.db $51
-.db $51
-.db $51
-.db $51
-.db $51
-.db $51
-.db $4B
-.db $4B
-.db $4B
+.db $33 $38 $3B $31 $42 $31 $50 $46
+.db $48 $31 $4D $4D $4D $51 $38 $46
+.db $46 $46 $46 $46 $31 $46 $31 $51
+.db $51 $51 $51 $51 $51 $4B $4B $4B
 
 L04B2B5:
     LDA $7A80
@@ -6714,22 +6062,8 @@ L04B60E:
 .db $09 $0A $0B
 
 L04B619:
-.db $06
-.db $04
-.db $02
-.db $03
-.db $02
-.db $01
-.db $05
-.db $05
-.db $02
-.db $01
-.db $01
-.db $2A
-.db $B6
-.db $33
-.db $7B
-.db $33
+.db $06 $04 $02 $03 $02 $01 $05 $05
+.db $02 $01 $01 $2A $B6 $33 $7B $33
 .db $7B
 
 L04B62A:

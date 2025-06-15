@@ -1480,135 +1480,36 @@ L08906A:
 .db $7D $90 $FD
 
 L08906D:
-.db $00
-.db $F9
-.db $F8
-.db $00
-.db $FF
-.db $00
-.db $F0
+.db $00 $F9 $F8 $00 $FF $00 $F0
 
 L089074:
-.db $00
-.db $F8
-.db $F8
-.db $C0
-.db $F8
-.db $00
-.db $00
-.db $00
-.db $F8
-.db $00
-.db $00
-.db $00
-.db $F0
+.db $00 $F8 $F8 $C0 $F8 $00 $00 $00
+.db $F8 $00 $00 $00 $F0
 
 L089081:
-.db $00
-.db $F8
-.db $F8
-.db $00
-.db $F8
-.db $00
-.db $00
-.db $00
-.db $F8
-.db $40
-.db $00
-.db $00
-.db $F0
+.db $00 $F8 $F8 $00 $F8 $00 $00 $00
+.db $F8 $40 $00 $00 $F0
 
 L08908E:
-.db $20
-.db $00
-.db $00
-.db $20
-.db $00
-.db $08
-.db $20
-.db $00
-.db $10
-.db $20
-.db $00
-.db $18
-.db $F0
+.db $20 $00 $00 $20 $00 $08 $20 $00
+.db $10 $20 $00 $18 $F0
 
 L08909B:
-.db $00
-.db $F9
-.db $F0
-.db $00
-.db $FF
-.db $F0
-.db $00
-.db $F9
-.db $F8
-.db $00
-.db $FF
-.db $00
-.db $00
-.db $F9
-.db $08
-.db $00
-.db $FF
-.db $08
-.db $F0
+.db $00 $F9 $F0 $00 $FF $F0 $00 $F9
+.db $F8 $00 $FF $00 $00 $F9 $08 $00
+.db $FF $08 $F0
 
 L0890AE:
-.db $00
-.db $F8
-.db $F0
-.db $00
-.db $00
-.db $F0
-.db $00
-.db $F8
-.db $F8
-.db $00
-.db $F8
-.db $00
-.db $00
-.db $00
-.db $F8
-.db $00
-.db $00
-.db $00
-.db $00
-.db $F8
-.db $08
-.db $00
-.db $00
-.db $08
+.db $00 $F8 $F0 $00 $00 $F0 $00 $F8
+.db $F8 $00 $F8 $00 $00 $00 $F8 $00
+.db $00 $00 $00 $F8 $08 $00 $00 $08
 .db $F0
 
 L0890C7:
-.db $00
-.db $F8
-.db $F0
-.db $00
-.db $00
-.db $F0
-.db $00
-.db $F8
-.db $F8
-.db $00
-.db $F8
-.db $00
-.db $00
-.db $00
-.db $F8
-.db $40
-.db $00
-.db $00
-.db $00
-.db $F8
-.db $08
-.db $00
-.db $00
-.db $08
-.db $F0
-.db $01
-.db $FF
+.db $00 $F8 $F0 $00 $00 $F0 $00 $F8
+.db $F8 $00 $F8 $00 $00 $00 $F8 $40
+.db $00 $00 $00 $F8 $08 $00 $00 $08
+.db $F0 $01 $FF
 
 CHARACTERS_STATS:
 ; id class level HP zero STR skill speed
@@ -1749,32 +1650,20 @@ L08926E:
 .db ZEKE GOLD_KNIGHT $03 $28 $00 $14 $0D $0E
 .db $04 $0E $00 $00
 
-.db $00
+.db $00 ; terminator?
 
 L08927B:
-.db $43
-L08927C:
-.db $20
-.db $28
-.db $32
-.db $32
-.db $32
-.db $32
-.db $32
-.db $32
-.db $32
-.db $32
-.db $32
-.db $64
-.db $64
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
+.db $43 $20
+.db $28 $32
+.db $32 $32
+.db $32 $32
+.db $32 $32
+.db $32 $32
+.db $64 $64
+.db $00 $00
+.db $00 $00
+.db $00 $00
+.db $00 $00
 
 L089291:
 .dw L0892A1
@@ -1789,149 +1678,55 @@ L089299:
 .dw L0892EA
 
 L0892A1:
-.db $01
-.db $02
-.db $03
-.db $04
-.db $05
-.db $06
-.db $31
-.db $07
+.db $01 $02 $03 $04 $05 $06 $31 $07
 .db $FF
 
 L0892AA:
-.db $01
-.db $02
-.db $03
-.db $04
-.db $05
-.db $06
-.db $07
-.db $07
+.db $01 $02 $03 $04 $05 $06 $07 $07
 
 L0892B2:
-.db $09
-.db $0A
-.db $0B
-.db $0C
-.db $0D
-.db $0E
-.db $0F
-.db $FF
+.db $09 $0A $0B $0C $0D $0E $0F $FF
 
 L0892BA:
-.db $09
-.db $0A
-.db $0B
-.db $0C
-.db $0D
-.db $0E
-.db $0F
+.db $09 $0A $0B $0C $0D $0E $0F
 
 L0892C1:
-.db $11
-.db $1A
-.db $12
-.db $15
-.db $16
-.db $17
-.db $18
-.db $19
-.db $1C
-.db $1B
-.db $1D
-.db $1E
-.db $1F
-.db $FF
+.db $11 $1A $12 $15 $16 $17 $18 $19
+.db $1C $1B $1D $1E $1F $FF
 
 L0892CF:
-.db $11
-.db $1A
-.db $13
-.db $15
-.db $16
-.db $17
-.db $18
-.db $19
-.db $1C
-.db $1B
-.db $1D
-.db $1E
-.db $1F
+.db $11 $1A $13 $15 $16 $17 $18 $19
+.db $1C $1B $1D $1E $1F
 
 L0892DC:
-.db $21
-.db $22
-.db $23
-.db $25
-.db $30
-.db $27
-.db $28
-.db $29
-.db $2A
-.db $2B
-.db $2D
-.db $2F
-.db $2E
-.db $FF
+.db $21 $22 $23 $25 $30 $27 $28 $29
+.db $2A $2B $2D $2F $2E $FF
 
 L0892EA:
-.db $21
-.db $22
-.db $22
-.db $25
-.db $30
-.db $27
-.db $28
-.db $29
-.db $2A
-.db $2B
-.db $2D
-.db $2F
-.db $26
+.db $21 $22 $22 $25 $30 $27 $28 $29
+.db $2A $2B $2D $2F $26
 
 L0892F7:
-.db $00
-L0892F8:
-.db $00
-.db $08
-.db $08
-.db $32
-.db $14
-.db $2C
-.db $2C
-.db $00
-.db $00
-.db $08
-.db $08
-.db $08
-.db $14
-.db $39
-.db $2C
-.db $00
-.db $00
-.db $08
-.db $08
-.db $2C
-.db $14
-.db $57
-.db $2C
-.db $00
-.db $00
-.db $08
-.db $08
-.db $39
-.db $14
-.db $34
-.db $2C
-.db $00
-.db $00
-.db $08
-.db $08
-.db $3B
-.db $14
-.db $33
-.db $2C
+.db $00 $00
+.db $08 $08
+.db $32 $14
+.db $2C $2C
+.db $00 $00
+.db $08 $08
+.db $08 $14
+.db $39 $2C
+.db $00 $00
+.db $08 $08
+.db $2C $14
+.db $57 $2C
+.db $00 $00
+.db $08 $08
+.db $39 $14
+.db $34 $2C
+.db $00 $00
+.db $08 $08
+.db $3B $14
+.db $33 $2C
 
 L08931F:
 .dw L089331
@@ -1945,174 +1740,75 @@ L08931F:
 .dw L089357
 
 L089331:
-.db $3E
-.db $0F
-.db $3D
-.db $14
+.db $3E $0F $3D $14
 
 L089335:
-.db $41
-.db $1E
+.db $41 $1E
 
 L089337:
-.db $3F
-.db $05
-.db $44
-.db $14
-.db $43
-.db $0F
+.db $3F $05 $44 $14 $43 $0F
 
 L08933D:
-.db $40
-.db $05
-.db $44
-.db $14
-.db $43
-.db $0F
-.db $20
-.db $00
+.db $40 $05 $44 $14 $43 $0F $20 $00
 
 L089345:
-.db $46
-.db $28
+.db $46 $28
 
 L089347:
-.db $0B
-.db $14
+.db $0B $14
 
 L089349:
-.db $49
-.db $64
-.db $4A
-.db $64
-.db $4B
-.db $64
-.db $4C
-.db $32
-.db $4D
-.db $1E
-.db $4E
-.db $0A
+.db $49 $64 $4A $64 $4B $64 $4C $32
+.db $4D $1E $4E $0A
 
 L089355:
-.db $45
-.db $1E
+.db $45 $1E
 
 L089357:
-.db $47
-.db $1E
-.db $48
-.db $46
+.db $47 $1E $48 $46
 
 L08935B:
-.db $14
-L08935C:
-.db $FF
-.db $14
-.db $FF
-.db $34
-.db $FF
-.db $36
-.db $FF
-.db $33
-.db $FF
-.db $14
-.db $FF
-.db $0F
-.db $3C
-.db $08
-.db $57
-.db $33
-.db $FF
-.db $01
-.db $FF
-.db $32
-.db $FF
-.db $46
-.db $FF
-.db $3F
-.db $FF
-.db $33
-.db $FF
-.db $3B
-.db $FF
-.db $39
-.db $FF
-.db $48
-.db $FF
-.db $3F
-.db $FF
-.db $46
-.db $FF
-.db $55
-.db $FF
-.db $58
-.db $FF
-.db $58
-.db $FF
-.db $56
-.db $FF
-.db $4F
-.db $FF
-.db $50
-.db $FF
-.db $51
-.db $FF
-.db $54
-.db $FF
-.db $52
-.db $FF
-.db $53
-.db $FF
-.db $57
-.db $FF
-.db $48
-.db $FF
-.db $40
-.db $FF
+.db $14 $FF
+.db $14 $FF
+.db $34 $FF
+.db $36 $FF
+.db $33 $FF
+.db $14 $FF
+.db $0F $3C
+.db $08 $57
+.db $33 $FF
+.db $01 $FF
+.db $32 $FF
+.db $46 $FF
+.db $3F $FF
+.db $33 $FF
+.db $3B $FF
+.db $39 $FF
+.db $48 $FF
+.db $3F $FF
+.db $46 $FF
+.db $55 $FF
+.db $58 $FF
+.db $58 $FF
+.db $56 $FF
+.db $4F $FF
+.db $50 $FF
+.db $51 $FF
+.db $54 $FF
+.db $52 $FF
+.db $53 $FF
+.db $57 $FF
+.db $48 $FF
+.db $40 $FF
 
 L08939B:
-.db $31
-.db $32
-.db $33
-.db $34
-.db $35
-.db $36
-.db $38
-.db $39
-.db $3A
-.db $37
-.db $3F
-.db $40
-.db $41
-.db $42
-.db $43
-.db $44
-.db $45
-.db $46
-.db $47
-.db $3B
-.db $3C
-.db $3D
-.db $3E
-.db $48
-.db $49
-.db $4A
-.db $4B
-.db $4C
-.db $4D
-.db $4E
-.db $4F
-.db $50
+.db $31 $32 $33 $34 $35 $36 $38 $39
+.db $3A $37 $3F $40 $41 $42 $43 $44
+.db $45 $46 $47 $3B $3C $3D $3E $48
+.db $49 $4A $4B $4C $4D $4E $4F $50
 
 L0893BB:
-.db $BD
-.db $93
-.db $04
-.db $08
-.db $14
-.db $30
-.db $2C
+.db $BD $93 $04 $08 $14 $30 $2C
 
 L0893C2:
 .dw L089474
@@ -2205,11 +1901,12 @@ L0893C2:
 .dw L0899F1
 .dw L0899EC
 
-; seems to be enemy count and types.
+; static enemies (i.e. doesn't handle enemies that turn NPC like in "Rigel Plains Battle" if you have Tatiana)
+
 ; the first byte is the number of enemies
 ; followed by an index into L089A5A
 ; but some are an entry instead of an index
-; starting with $Bx or $Cx (like in L089482)
+; starting with $9x or higher (like in L089482)
 
 L089474:
 .db $05 $0E $0E $0E $0E $0E
@@ -2237,7 +1934,7 @@ L0894B0:
 .db $06 $01 $01 $01 $01 $01 $01
 
 L0894B7:
-.db $0A $9B $16 $01 $35 $80 $00 $23
+.db $0A $9B BARON $01 DRACOSHIELD $80 $00 $23
 .db $16 $20 $20 $20 $20 $20 $1A $1A
 
 L0894C7:
@@ -2255,7 +1952,7 @@ L0894EA:
 .db $01 $C3 CANTOR $01 $00 $80 $21
 
 L0894F1:
-.db $01 $B5 NECRODRAGON $01 $36 $00 $00
+.db $01 $B5 NECRODRAGON $01 BLESSED_RING $00 $00
 
 L0894F8:
 .db $0A
@@ -2281,19 +1978,19 @@ L089535:
 
 L089540:
 .db $10
-.db $9A $0D $03 $14 $80 $00
+.db $9A SNIPER $03 STEEL_BOW $80 $00
 .db $20 $20 $20 $20 $20 $20 $20 $20
 .db $20 $1C $1C $1C $1C $23 $23
 
 L089556:
 .db $0A
-.db $88 MYRMIDON $05 $0D $C0 $00
+.db $88 MYRMIDON $05 BRAVE_SWORD $C0 $00
 .db $44 $44 $44 $44 $44 $44 $44 $44
 .db $44
 
 L089566:
 .db $0A
-.db $9D WITCH $05 $31 $C0 $04
+.db $9D WITCH $05 STEEL_SHIELD $C0 $04
 .db $10 $10 $10 $10 $10 $10 $10 $10
 .db $10
 
@@ -2309,7 +2006,7 @@ L089576:
 
 L08959F:
 .db $05
-.db $97 MYRMIDON $01 $0E $C0 $00
+.db $97 MYRMIDON $01 SHADOW_SWORD $C0 $00
 .db $44 $44 $44 $10
 
 L0895AA:
@@ -2317,7 +2014,7 @@ L0895AA:
 .db $23 $23 $23 $23 $21 $21 $23 $23
 
 L0895BA:
-.db $07 $BF $0F $03 $00 $80 $11 $0F
+.db $07 $BF ARCANIST $03 $00 $80 $11 $0F
 .db $0F $0F $0F $0F $0F
 
 L0895C7:
@@ -2325,83 +2022,83 @@ L0895C7:
 
 L0895CB:
 .db $0A $81 $16 $01 $00 $80 $00 $BF
-.db $0F $05 $00 $80 $22 $20 $20 $20
-.db $16 $16 $16 $16 $C3 $13 $01 $00
+.db ARCANIST $05 $00 $80 $22 $20 $20 $20
+.db $16 $16 $16 $16 $C3 CANTOR $01 $00
 .db $80 $21
 
 L0895E5:
-.db $14 $95 $04 $03 $00 $C0 $00 $3D
+.db $14 $95 PALADIN $03 $00 $C0 $00 $3D
 .db $3D $01 $01 $01 $01 $01 $01 $01
 .db $04 $3D $3D $01 $01 $01 $01 $01
 .db $01 $01
 
 L0895FF:
 .db $0A $8F $0F $0A $00 $80 $24 $91
-.db $10 $03 $00 $C0 $08 $0F $0F $0F
+.db WITCH $03 $00 $C0 $08 $0F $0F $0F
 .db $0F $0F $0F $0F $0F
 
 L089614:
-.db $14 $98 $07 $01 $00 $80 $00 $18
+.db $14 $98 GOLD_KNIGHT $01 $00 $80 $00 $18
 .db $18 $18 $18 $23 $23 $23 $23 $BF
-.db $0F $05 $00 $80 $22 $3E $3E $3E
+.db ARCANIST $05 $00 $80 $22 $3E $3E $3E
 .db $49 $3E $3E $3E $49 $18 $18
 
 L089633:
-.db $0A $8B $07 $03 $00 $C0 $00 $2C
+.db $0A $8B GOLD_KNIGHT $03 $00 $C0 $00 $2C
 .db $2C $2C $2C $2C $2C $13 $13 $13
 
 L089643:
-.db $0A $8A $07 $05 $00 $C0 $00 $13
-.db $13 $07 $07 $04 $04 $04 $BF $0F
-.db $05 $00 $80 $22 $BF $0F $05 $00
+.db $0A $8A GOLD_KNIGHT $05 $00 $C0 $00 $13
+.db $13 $07 $07 $04 $04 $04 $BF ARCANIST
+.db $05 $00 $80 $22 $BF ARCANIST $05 $00
 .db $80 $22
 
 L08965D:
 .db $14 $89 $16 $0A $00 $80 $00 $AA
-.db $10 $08 $00 $80 $08 $C3 $13 $05
-.db $00 $80 $42 $28 $BF $0F $05 $00
-.db $80 $24 $BF $0F $05 $00 $80 $24
-.db $BF $0F $05 $00 $80 $24 $28 $27
+.db $10 $08 $00 $80 $08 $C3 CANTOR $05
+.db $00 $80 $42 $28 $BF ARCANIST $05 $00
+.db $80 $24 $BF ARCANIST $05 $00 $80 $24
+.db $BF ARCANIST $05 $00 $80 $24 $28 $27
 .db $27 $07 $07 $07 $07 $13 $13 $13
-.db $BF $0F $05 $00 $C0 $24 $BF $0F
+.db $BF ARCANIST $05 $00 $C0 $24 $BF ARCANIST
 .db $05 $00 $C0 $24 $13
 
 L08969A:
-.db $0A $BF $0F $05 $00 $C0 $22 $0F
+.db $0A $BF ARCANIST $05 $00 $C0 $22 $0F
 .db $0F $0F $0F $0F $08 $08 $08 $08
 
 L0896AA:
-.db $0F $8E $10 $08 $00 $80 $08 $28
+.db $0F $8E WITCH $08 $00 $80 $08 $28
 .db $28 $3E $3E $21 $3E $3E $35 $2C
 .db $3E $35 $2C $3E $35
 
 L0896BF:
-.db $0A $84 $0F $0A $39 $80 $28 $C3
-.db $13 $05 $00 $80 $42 $BF $0F $05
-.db $00 $80 $24 $BF $0F $05 $00 $80
-.db $24 $BF $0F $05 $00 $80 $24 $BF
-.db $0F $05 $00 $80 $24 $27 $1E $1E
+.db $0A $84 ARCANIST $0A MAGE_RING $80 $28 $C3
+.db $13 $05 $00 $80 $42 $BF ARCANIST $05
+.db $00 $80 $24 $BF ARCANIST $05 $00 $80
+.db $24 $BF ARCANIST $05 $00 $80 $24 $BF
+.db ARCANIST $05 $00 $80 $24 $27 $1E $1E
 .db $1E
 
 L0896E8:
 .db $14 $A8 $14 $0A $00 $80 $00 $27
 .db $27 $27 $27 $27 $28 $28 $28 $28
-.db $BF $0F $05 $00 $80 $22 $BF $0F
-.db $05 $00 $80 $22 $BF $0F $05 $00
-.db $80 $22 $BF $0F $05 $00 $80 $22
-.db $BF $0F $05 $00 $80 $22 $27 $27
+.db $BF ARCANIST $05 $00 $80 $22 $BF ARCANIST
+.db $05 $00 $80 $22 $BF ARCANIST $05 $00
+.db $80 $22 $BF ARCANIST $05 $00 $80 $22
+.db $BF ARCANIST $05 $00 $80 $22 $27 $27
 .db $27 $27 $27
 
 L08971B:
-.db $14 $85 $07 $14 $37 $80 $00 $28
-.db $28 $28 $28 $28 $27 $27 $BF $0F
-.db $05 $00 $80 $24 $BF $0F $05 $00
+.db $14 $85 GOLD_KNIGHT $14 ANGEL_RING $80 $00 $28
+.db $28 $28 $28 $28 $27 $27 $BF ARCANIST
+.db $05 $00 $80 $24 $BF ARCANIST $05 $00
 .db $80 $24 $43 $43 $43 $43 $43 $4F
 .db $4F $4F $4F $4F
 
 L08973F:
-.db $0A $A9 $13 $05 $00 $80 $42 $C3
-.db $13 $03 $00 $80 $11 $C3 $13 $01
+.db $0A $A9 CANTOR $05 $00 $80 $42 $C3
+.db $13 $03 $00 $80 $11 $C3 CANTOR $01
 .db $00 $80 $21 $1E $21 $21 $23 $23
 .db $23 $23
 
@@ -2410,26 +2107,26 @@ L089759:
 .db $11 $11 $11
 
 L089764:
-.db $0A $83 $13 $0A $00 $80 $84 $1D
-.db $1D $21 $21 $21 $23 $23 $BF $0F
+.db $0A $83 CANTOR $0A $00 $80 $84 $1D
+.db $1D $21 $21 $21 $23 $23 $BF ARCANIST
 .db $05 $00 $80 $22 $23
 
 L089779:
-.db $0A $AB $0A $01 $00 $C0 $00 $4C
+.db $0A $AB DREAD_FIGHTER $01 $00 $C0 $00 $4C
 .db $09 $38 $38 $38 $38 $09 $38 $09
 
 L089789:
-.db $14 $90 $0F $0A $00 $80 $24 $C3
-.db $13 $05 $00 $80 $42 $1E $4C $4C
-.db $4C $C7 $16 $01 $00 $00 $00 $C7
-.db $16 $01 $00 $00 $00 $BF $0F $05
-.db $00 $80 $24 $BF $0F $05 $00 $80
+.db $14 $90 ARCANIST $0A $00 $80 $24 $C3
+.db CANTOR $05 $00 $80 $42 $1E $4C $4C
+.db $4C $C7 BARON $01 $00 $00 $00 $C7
+.db BARON $01 $00 $00 $00 $BF ARCANIST $05
+.db $00 $80 $24 $BF ARCANIST $05 $00 $80
 .db $24 $4C $4C $4C $4C $4C $4C $1E
 .db $1E $1E $1E
 
 L0897BC:
-.db $02 $86 $13 $14 $35 $80 $04 $D7
-.db $12 $05 $00 $40 $00
+.db $02 $86 CANTOR $14 DRACOSHIELD $80 $04 $D7
+.db MOGALL $05 $00 $40 $00
 
 L0897C9:
 .db $07 $93 $04 $01 $00 $00 $00 $15
@@ -2607,100 +2304,40 @@ L0899FA:
 .dw L089A54
 
 L089A12:
-.db $B5
-.db $05
-.db $01
-.db $00
-.db $48
-.db $00
+.db $B5 $05 $01 $00 $48 $00
 
 L089A18:
-.db $B3
-.db $03
-.db $01
-.db $00
-.db $48
-.db $00
+.db $B3 $03 $01 $00 $48 $00
 
 L089A1E:
-.db $BB
-.db $0B
-.db $01
-.db $00
-.db $48
-.db $00
+.db $BB $0B $01 $00 $48 $00
 
 L089A24:
-.db $C1
-.db $11
-.db $01
-.db $00
-.db $48
-.db $00
+.db $C1 $11 $01 $00 $48 $00
 
 L089A2A:
-.db $50
-.db $07
-.db $14
-.db $00
-.db $04
-.db $00
+.db $50 $07 $14 $00 $04 $00
 
 L089A30:
-.db $4F
-.db $04
-.db $14
-.db $00
-.db $04
-.db $00
+.db $4F $04 $14 $00 $04 $00
 
 L089A36:
-.db $23
-.db $06
-.db $01
-.db $00
-.db $44
-.db $00
+.db $23 $06 $01 $00 $44 $00
 
 L089A3C:
-.db $23
-.db $0A
-.db $01
-.db $00
-.db $44
-.db $00
+.db $23 $0A $01 $00 $44 $00
 
 L089A42:
-.db $23
-.db $03
-.db $01
-.db $00
-.db $44
-.db $00
+.db $23 $03 $01 $00 $44 $00
 
 L089A48:
-.db $C0
-.db $10
-.db $01
-.db $00
-.db $C8
-.db $01
+.db $C0 $10 $01 $00 $C8 $01
 
 L089A4E:
-.db $C2
-.db $12
-.db $01
-.db $00
-.db $48
-.db $00
+.db $C2 $12 $01 $00 $48 $00
 
 L089A54:
-.db $C2
-.db $12
-.db $05
-.db $00
-.db $08
-.db $00
+.db $C2 $12 $05 $00 $08 $00
 
 L089A5A:
 .dw L089B02
@@ -2789,11 +2426,16 @@ L089A5A:
 .dw L089CEE
 
 ; the field are:
-; unknown
+; unknown (but seem liked to class)
 ; class
 ; level
 ; dropped item when killed?
 ; unknown
+; - & 0x80 used as flag in L03859A
+; - & 0x40 used as flag in L03859A
+; --- seems to be if clear "Moves to attack units in range; moves to the nearest avoid-boosting terrain otherwise"
+; - & 0x7C unknown
+; - & 0x03 used to index L038591
 ; unknown
 
 L089B02:
@@ -3095,7 +2737,7 @@ L089D38:
     TAX
     LDA L0892F7.w,X
     STA $06
-    LDA L0892F8.w,X
+    LDA (L0892F7.w + 1),X
     BEQ L089D92
     STA $07
     LDX #0
@@ -3152,7 +2794,7 @@ L089DB8:
     LDA $0F
     ASL
     TAX
-    LDA L08935C.w,X
+    LDA (L08935B.w + 1),X
     STA $6D15
     CMP #255
     BEQ L089DCC
@@ -3425,7 +3067,7 @@ L089FB6:
 L089FBC:
     LDA L08927B.w,X
     STA $05BC
-    LDA L08927C.w,X
+    LDA (L08927B.w + 1),X
     TAX
 L089FC6:
     STX $16
@@ -4445,32 +4087,10 @@ L08A71A:
     RTS
 
 L08A71E:
-.db $E0
-.db $90
-.db $2C
-.db $A7
-.db $34
-.db $A7
-.db $46
-.db $47
-.db $48
-.db $49
-.db $4A
-.db $4B
-.db $4C
-.db $FF
-.db $0F
-.db $10
-.db $11
-.db $12
-.db $13
-.db $14
-.db $15
-.db $FF
-.db $16
-.db $17
-.db $18
-.db $FF
+.db $E0 $90 $2C $A7 $34 $A7 $46 $47
+.db $48 $49 $4A $4B $4C $FF $0F $10
+.db $11 $12 $13 $14 $15 $FF $16 $17
+.db $18 $FF
 
 L08A738:
     LDA $0E
@@ -4509,28 +4129,9 @@ L08A76D:
     RTS
 
 L08A779:
-.db $37
-.db $32
-.db $32
-.db $38
-.db $3F
-.db $31
-.db $39
-.db $3A
-.db $3B
-.db $3C
-.db $32
-.db $34
-.db $35
-.db $30
-.db $3E
-.db $40
-.db $32
-.db $32
-.db $3D
-.db $36
-.db $32
-.db $33
+.db $37 $32 $32 $38 $3F $31 $39 $3A
+.db $3B $3C $32 $34 $35 $30 $3E $40
+.db $32 $32 $3D $36 $32 $33
 
 L08A78F:
     LDA #0
@@ -5106,19 +4707,18 @@ L08AB11:
 .dw L08BCCF
 .dw L08BCCF
 
-
-L08ABB1:
+L08ABB1: ; ram woods
 .dw L08ABB9
 .dw L08ABB9
 .dw L08ABCE
 .dw L08ABCE
 
-L08ABB9:
+L08ABB9: ; party position
 .db $0A $05 $06 $05 $08 $04 $07 $03
 .db $07 $03 $08 $03 $06 $02 $07 $01
 .db $06 $01 $07 $01 $08
 
-L08ABCE:
+L08ABCE: ; enemies position
 .db $0A $0B $04
 .db $0A $0A $0D $08 $0A $06 $0E $04
 .db $0E $05 $06 $0C $0C $0C $0D $0A
@@ -7191,7 +6791,7 @@ L08BCEC:
 .db $5C
 .db $4D
 
-L08BFA0: ; functions
+L08BFA0:
 .dw L089E33
 .dw L089E7C
 .dw L089E98
