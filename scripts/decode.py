@@ -44,7 +44,10 @@ characters = {
     '24': 'WOMAN',
     '25': 'BOY',
     '26': 'GIRL',
-    '86': 'DUMA'
+    '27': 'ZEKE',
+    '2B': 'HALCYON',
+    '86': 'JEDAH',
+    '8D': 'MASSENA',
 }
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -68,7 +71,9 @@ def decode(code):
     c = code.split(' ')
     output = []
     in_string = False
-    for cc in c:
+    in_speak = False
+    it = iter(c)
+    for cc in it:
         match cc:
             case '0F':
                 output[-1] = tenten[output[-1]]
@@ -79,6 +84,26 @@ def decode(code):
                     in_string = True
                     output += "ENCODE(\""
                 output += ' '
+            case 'E6' if in_speak:
+                output += ".db $E6\n"
+            case 'EA' if not in_speak:
+                output += "SPEAK\n"
+            case 'E8' if not in_speak:
+                a = next(it)
+                b = next(it)
+                c = next(it)
+
+                if a == '50' and b == '40':
+                    output += "FACE "
+                    output += characters[c]
+                else:
+                    output += f".db $E8 ${a} ${b} ${c}"
+                output += "\n"
+            case 'F0' if not in_speak:
+                output += "NAME "
+                value = next(it)
+                output += characters[value]
+                output += "\n"
             case _:
                 if cc in mapping:
                     if not in_string:
@@ -90,10 +115,6 @@ def decode(code):
                         in_string = False
                         output += "\")\n"
                     match cc:
-                        case 'E6':
-                            output += ".db $E6\n"
-                        case 'EA':
-                            output += "SPEAK\n"
                         case 'ED':
                             output += "NEWLINE\n"
                         case 'EE':
@@ -101,7 +122,7 @@ def decode(code):
                         case 'EF':
                             output += "STOP\n"
                         case _:
-                            output += f" ${cc}"
+                            output += f".db ${cc}\n"
 
     if in_string:
         output += "\")"

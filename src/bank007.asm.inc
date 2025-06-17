@@ -2001,70 +2001,14 @@ L079026:
 .db $CB
 
 L0790F6:
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $D5
-.db $DA
-.db $DA
-.db $8B
-.db $ED
-.db $C2
-.db $C2
-.db $C2
-.db $C2
-.db $C2
-.db $C2
-.db $41
-.db $71
-.db $40
-.db $C2
-.db $C2
-.db $C2
-.db $8B
-.db $DA
-.db $DA
-.db $DA
-.db $DA
-.db $DA
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $CB
-.db $D3
-.db $C2
-.db $C2
-.db $C2
-.db $9B
-.db $88
-.db $89
-.db $76
-.db $78
-.db $78
-.db $79
-.db $C2
-.db $C2
-.db $C2
-.db $C2
-.db $C2
-.db $C2
-.db $8C
-.db $8D
-.db $E2
-.db $37
-.db $E4
-.db $37
-.db $E3
-.db $D2
-.db $D5
-.db $CB
-.db $CB
+.db $CB $CB $CB $CB $CB $D5 $DA $DA
+.db $8B $ED $C2 $C2 $C2 $C2 $C2 $C2
+.db $41 $71 $40 $C2 $C2 $C2 $8B $DA
+.db $DA $DA $DA $DA $CB $CB $CB $CB
+.db $CB $CB $CB $CB $D3 $C2 $C2 $C2
+.db $9B $88 $89 $76 $78 $78 $79 $C2
+.db $C2 $C2 $C2 $C2 $C2 $8C $8D $E2
+.db $37 $E4 $37 $E3 $D2 $D5 $CB $CB
 
 L079136:
     JSR L0FD39A.w

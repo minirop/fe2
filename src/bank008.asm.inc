@@ -1647,7 +1647,7 @@ L089262:
 .db $05 $04 $00 $00
 
 L08926E:
-.db ZEKE GOLD_KNIGHT $03 $28 $00 $14 $0D $0E
+.db ZEKE_UNIT GOLD_KNIGHT $03 $28 $00 $14 $0D $0E
 .db $04 $0E $00 $00
 
 .db $00 ; terminator?

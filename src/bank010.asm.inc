@@ -1413,8 +1413,9 @@ L0A8B20:
     RTS
 
 L0A8B40:
-.db $42
-.db $8B
+.dw L0A8B42
+
+L0A8B42:
 .db $45 ; L0A8B42
 .db $8B
 .db $F1
@@ -3766,804 +3767,1094 @@ L0AA707:
 .dw L0ABD66
 
 L0AA751:
-.db $E8 $50 $40 $00 $F0 $24 $EA $00
-.db $29 $05 $0F $14 $02 $ED $2D $10
-.db $0B $1A $FF $51 $58 $0B $2F $13
-.db $0F $2F $16 $ED $12 $05 $03 $2A
-.db $24 $19 $EE $EA $00 $15 $10 $10
-.db $11 $19 $FF $04 $05 $08 $0F $13
-.db $0F $ED $25 $85 $14 $FF $05 $03
-.db $2A $09 $14 $05 $0F $13 $0F $06
-.db $20 $0C $EE $EA $9B $9B $9B $9B
-.db $9B $9D $EE $EA $20 $85 $13 $9B
-.db $9B $9B $ED $20 $0A $05 $FF $00
-.db $15 $10 $1A $9D $9C $E6 $E8 $50
-.db $40 $02 $F0 $02 $EA $9C $9C $ED
-.db $14 $0F $02 $0B $10 $19 $13 $0F
-.db $0C $05 $ED $2D $10 $0B $05 $0F
-.db $FF $15 $16 $05 $9B $9B $E6 $F0
-.db $24 $EA $09 $0F $23 $2F $15 $0A
-.db $01 $EE $EA $00 $15 $10 $05 $0F
-.db $FF $00 $2F $20 $29 $ED $59 $4C
-.db $1F $59 $35 $0A $20 $16 $ED $16
-.db $13 $01 $10 $24 $19 $10 $0F $05
-.db $28 $E6 $F0 $02 $EA $59 $4C $1F
-.db $59 $35 $9D $9C $EE $EA $0E $2B
-.db $1A $FF $2D $10 $0B $19 $ED $04
-.db $05 $00 $0A $20 $19 $FF $15 $20
-.db $03 $13 $0F $0C $E6 $F0 $24 $EA
-.db $EA $13 $0F $8E $13 $0F $1A $25
-.db $1A $29 $FF $00 $15 $10 $1A $ED
-.db $30 $5F $43 $3F $3D $0F $04 $02
-.db $0B $0F $87 $0A $20 $9D $9D $EE
-.db $EA $00 $00 $FF $27 $05 $85 $10
-.db $9D $9D $ED $09 $0F $1C $0F $0B
-.db $0F $10 $0F $85 $10 $19 $13 $0F
-.db $0C $18 $E6 $F0 $02 $EA $00 $15
-.db $10 $1A $FF $2D $10 $0B $19 $1A
-.db $1A $2E $ED $09 $0F $0E $0F $2F
-.db $0B $0F $15 $19 $9D $9C $EE $EA
-.db $04 $18 $05 $0F $01 $13 $0F $0C
-.db $8F $1A $1A $19 $09 $14 $2E $ED
-.db $06 $05 $0D $13 $07 $10 $0F $0A
-.db $01 $E6 $F0 $24 $EA $1A $01 $9B
-.db $9B $9B $FF $59 $4C $1F $59 $35
-.db $0A $20 $1A $ED $24 $14 $1A $FF
-.db $2D $10 $0B $10 $11 $14 $04 $15
-.db $0B $0F $ED $51 $58 $0B $2F $13
-.db $0F $2F $19 $FF $3B $3C $40 $3F
-.db $13 $0F $0B $10 $EE $EA $14 $09
-.db $2C $05 $0F $FF $59 $4C $1F $59
-.db $35 $0A $20 $19 $ED $02 $12 $07
-.db $0B $0A $16 $1B $05 $2B $10 $FF
-.db $09 $07 $04 $02 $05 $0F $ED $22
-.db $29 $25 $29 $FF $06 $0A $06 $16
-.db $0B $13 $0B $20 $85 $10 $19 $EE
-.db $EA $04 $02 $06 $86 $02 $13 $0F
-.db $19 $07 $28 $0B $1A $ED $05 $19
-.db $0B $0F $87 $16 $14 $85 $13 $FF
-.db $12 $28 $01 $ED $24 $19 $10 $0F
-.db $85 $10 $19 $13 $0F $0B $87 $02
-.db $EE $EA $04 $24 $01 $25 $20 $01
-.db $16 $FF $05 $05 $28 $2B $13 $ED
-.db $00 $15 $10 $05 $0F $02 $20 $2B
-.db $2A $14 $FF $0C $07 $0F $16 $ED
-.db $15 $07 $15 $85 $13 $FF $0B $20
-.db $2D $2B $10 $EE $EA $13 $0F $24
-.db $FF $15 $07 $15 $2A $20 $06 $0F
-.db $2D $20 $13 $0F $ED $00 $15 $10
-.db $19 $09 $14 $2E $FF $06 $16 $0B
-.db $13 $ED $15 $21 $10 $0F $0A $2B
-.db $13 $01 $10 $19 $EE $EA $30 $5F
-.db $43 $3F $3D $0F $0A $20 $ED $0E
-.db $2F $15 $16 $FF $15 $05 $15 $01
-.db $13 $0F $9B $9B $9B $EE $EA $00
-.db $15 $10 $16 $FF $04 $2D $10 $0B
-.db $0C $2A $24 $19 $05 $0F $ED $00
-.db $29 $20 $0C $EF
+FACE NONE
+NAME WOMAN
+SPEAK
+ENCODE("ありがとう")
+NEWLINE
+ENCODE("わたしは ミラしんでんに")
+NEWLINE
+ENCODE("つかえるもの")
+WAIT_CLICK
+SPEAK
+ENCODE("あなたたちの おかげで")
+NEWLINE
+ENCODE("やっと かえることができます")
+WAIT_CLICK
+SPEAK
+ENCODE("·····!")
+WAIT_CLICK
+SPEAK
+ENCODE("まって···")
+NEWLINE
+ENCODE("まさか あなたは!?")
+PAGE
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("??")
+NEWLINE
+ENCODE("どうしたのですか")
+NEWLINE
+ENCODE("わたしが なにか··")
+PAGE
+NAME WOMAN
+SPEAK
+ENCODE("ごめんなさい")
+WAIT_CLICK
+SPEAK
+ENCODE("あなたが あんまり")
+NEWLINE
+ENCODE("リプリカさまに")
+NEWLINE
+ENCODE("にていたものだから")
+PAGE
+NAME CELICA
+SPEAK
+ENCODE("リプリカ!?")
+WAIT_CLICK
+SPEAK
+ENCODE("それは わたしの")
+NEWLINE
+ENCODE("おかあさまの なまえです")
+PAGE
+NAME WOMAN
+SPEAK
+SPEAK
+ENCODE("で,ではやはり あなたは")
+NEWLINE
+ENCODE("アンテーゼおうじょさま!!")
+WAIT_CLICK
+SPEAK
+ENCODE("ああ よかった!!")
+NEWLINE
+ENCODE("ごぶじだったのですね")
+PAGE
+NAME CELICA
+SPEAK
+ENCODE("あなたは わたしのははを")
+NEWLINE
+ENCODE("ごぞんじなの!?")
+WAIT_CLICK
+SPEAK
+ENCODE("おねがいです.ははのことを")
+NEWLINE
+ENCODE("きかせてください")
+PAGE
+NAME WOMAN
+SPEAK
+ENCODE("はい··· リプリカさまは")
+NEWLINE
+ENCODE("もとは わたしたちとおなじ")
+NEWLINE
+ENCODE("ミラしんでんの シスターでした")
+WAIT_CLICK
+SPEAK
+ENCODE("ところが リプリカさまの")
+NEWLINE
+ENCODE("うつくしさにひかれた こくおうが")
+NEWLINE
+ENCODE("むりやり きさきにしてしまったの")
+WAIT_CLICK
+SPEAK
+ENCODE("おうきゅうでのくらしは")
+NEWLINE
+ENCODE("かのじょにとって つらい")
+NEWLINE
+ENCODE("ものだったのでしょう")
+WAIT_CLICK
+SPEAK
+ENCODE("おもいやまいに かかられて")
+NEWLINE
+ENCODE("あなたがうまれると すぐに")
+NEWLINE
+ENCODE("なくなって しまわれた")
+WAIT_CLICK
+SPEAK
+ENCODE("でも なくなるまぎわまで")
+NEWLINE
+ENCODE("あなたのことを きにして")
+NEWLINE
+ENCODE("なみだされていたの")
+WAIT_CLICK
+SPEAK
+ENCODE("アンテーゼさま")
+NEWLINE
+ENCODE("そんなに なかないで···")
+WAIT_CLICK
+SPEAK
+ENCODE("あなたに おわたしするものが")
+NEWLINE
+ENCODE("あります")
+STOP
 
 L0AA9A5:
-.db $F0 $24 $EA $09 $19 $3A $3F $37
-.db $5B $89 $44 $1A $ED $59 $4C $1F
-.db $59 $35 $0A $20 $05 $0F $FF $00
-.db $15 $10 $19 $10 $23 $16 $ED $19
-.db $09 $0A $2B $10 $24 $19 $EE $EA
-.db $3E $4C $A7 $30 $04 $02 $08 $19
-.db $ED $04 $02 $0B $0F $87 $13 $0F
-.db $00 $2A $09 $14 $2E $FF $0B $23
-.db $0C $ED $1E $02 $05 $2F $13 $0F
-.db $0C $EE $EA $00 $15 $10 $05 $0F
-.db $FF $04 $14 $15 $16 $15 $2B $1A
-.db $0F $ED $2D $10 $0C $27 $02 $16
-.db $14 $ED $04 $00 $0C $0F $05 $29
-.db $0B $13 $01 $20 $0B $10 $EE $EA
-.db $14 $0F $02 $05 $FF $30 $5F $43
-.db $3F $3D $0F $0A $20 $EE $EA $09
-.db $19 $FF $04 $05 $00 $0A $20 $19
-.db $FF $05 $10 $21 $2E $ED $05 $21
-.db $16 $12 $08 $13 $EE $EA $00 $15
-.db $10 $1A $FF $3E $4C $A7 $30 $04
-.db $02 $08 $19 $ED $10 $10 $0F $1B
-.db $14 $29 $19 $ED $04 $02 $0B $0F
-.db $87 $15 $19 $13 $0F $0C $EE $EA
-.db $14 $0F $02 $05 $FF $00 $15 $10
-.db $19 $11 $05 $28 $13 $0F $ED $3E
-.db $4C $A7 $30 $19 $1B $14 $1B $0F
-.db $14 $2E $ED $0C $07 $85 $13 $00
-.db $08 $0F $13 $07 $10 $0F $0A $01
-.db $EF
+NAME WOMAN
+SPEAK
+ENCODE("このサークレットは")
+NEWLINE
+ENCODE("リプリカさまが あなたのために")
+NEWLINE
+ENCODE("のこされたもの")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアおうけの")
+NEWLINE
+ENCODE("おうじょであることを しめす")
+NEWLINE
+ENCODE("ほうかんです")
+WAIT_CLICK
+SPEAK
+ENCODE("あなたが おとなになれば")
+NEWLINE
+ENCODE("わたすようにと")
+NEWLINE
+ENCODE("おあずかりしていました")
+WAIT_CLICK
+SPEAK
+ENCODE("どうか アンテーゼさま")
+WAIT_CLICK
+SPEAK
+ENCODE("この おかあさまの かたみを")
+NEWLINE
+ENCODE("かみにつけて")
+WAIT_CLICK
+SPEAK
+ENCODE("あなたは ソフィアおうけの")
+NEWLINE
+ENCODE("ただひとりの")
+NEWLINE
+ENCODE("おうじょなのです")
+WAIT_CLICK
+SPEAK
+ENCODE("どうか あなたのちからで")
+NEWLINE
+ENCODE("ソフィアのひとびとを")
+NEWLINE
+ENCODE("すくってあげてください")
+STOP
 
 L0AAA86:
-.db $E8 $50 $40 $02 $E1 $05 $E2 $ED
-.db $FF $FF $FF $FF $FF $3D $59 $35
-.db $1A $ED $FF $FF $3A $3F $37 $5B
-.db $89 $44 $2E $12 $08 $10 $9D $9D
-.db $DF $B6 $E6 $E8 $50 $40 $25 $EF
+FACE CELICA
+.db $E1 $05 $E2
+NEWLINE
+ENCODE("     セリカは")
+NEWLINE
+ENCODE("  サークレットをつけた!!")
+.db $DF $B6 $E6
+FACE BOY
+STOP
 
 L0AAAAE:
-.db $EA $09 $19 $4A $0F $5B $5F $3B
-.db $30 $1A $FF $1C $05 $01 $ED $10
-.db $16 $16 $27 $85 $13 $FF $15 $2F
-.db $1E $0F $07 $16 $ED $1D $10 $0F
-.db $13 $28 $2B $13 $01 $20 $0C $EE
-.db $EA $0C $01 $24 $2F $1A $FF $10
-.db $16 $16 $ED $21 $0C $0F $2E $10
-.db $23 $13 $04 $07 $10 $23 $16 $ED
-.db $00 $2A $19 $13 $0F $0C $05 $0F
-.db $EE $EA $14 $06 $14 $0F $06 $FF
-.db $1B $28 $01 $13 $25 $28 $15 $01
-.db $14 $ED $21 $0C $0F $05 $0F $FF
-.db $15 $05 $0F $2B $10 $0F $0B $13
-.db $ED $14 $13 $24 $FF $06 $08 $2F
-.db $15 $19 $13 $0F $0C $EE $EA $14
-.db $09 $2C $05 $0F $FF $59 $38 $0F
-.db $5A $07 $0F $2F $05 $0F $ED $0D
-.db $2F $29 $87 $02 $0B $13 $05 $28
-.db $1A $ED $0C $0F $85 $14 $FF $14
-.db $0B $0F $10 $20 $20 $15 $19 $13
-.db $0F $0C $EE $EA $09 $19 $20 $20
-.db $13 $0F $1A $FF $09 $02 $0C $0F
-.db $01 $05 $0F $ED $04 $09 $85 $13
-.db $FF $3E $4C $A7 $30 $04 $02 $09
-.db $07 $1A $ED $02 $21 $16 $FF $0B
-.db $0C $0F $2F $13 $0F $0B $20 $01
-.db $20 $0C $EE $EA $EC $02 $0A $20
-.db $8F $04 $18 $05 $0F $01 $13 $0F
-.db $0C $EE $EA $14 $0F $02 $05 $FF
-.db $0C $01 $24 $2F $2E $ED $1B $28
-.db $01 $13 $07 $10 $0F $01 $EF
+SPEAK
+ENCODE("このバレンシアは ふかい")
+NEWLINE
+ENCODE("たにによって なんぼくに")
+NEWLINE
+ENCODE("へだてられています")
+WAIT_CLICK
+SPEAK
+ENCODE("すいもんは たにに")
+NEWLINE
+ENCODE("みずをためておくために")
+NEWLINE
+ENCODE("あるのですが")
+WAIT_CLICK
+SPEAK
+ENCODE("ときどき ひらいてやらないと")
+NEWLINE
+ENCODE("みずが ながれだして")
+NEWLINE
+ENCODE("とても きけんなのです")
+WAIT_CLICK
+SPEAK
+ENCODE("ところが リゲルぐんが")
+NEWLINE
+ENCODE("せんりょうしてからは")
+NEWLINE
+ENCODE("ずっと とじたままなのです")
+WAIT_CLICK
+SPEAK
+ENCODE("このままでは こうずいが")
+NEWLINE
+ENCODE("おこって ソフィアおうこくは")
+NEWLINE
+ENCODE("うみに しずんでしまいます")
+WAIT_CLICK
+SPEAK
+.db $EC
+ENCODE("うさま.おねがいです")
+WAIT_CLICK
+SPEAK
+ENCODE("どうか すいもんを")
+NEWLINE
+ENCODE("ひらいてくだい")
+STOP
 
 L0AABA5:
-.db $EA $15 $16 $FF $0C $01 $24 $2F
-.db $2E $FF $1B $28 $08 $10 $0F $14
-.db $9D $9C $EE $EA $0E $2B $1A $FF
-.db $10 $0F $23 $10 $0F $9D $EE $EA
-.db $09 $19 $0C $01 $24 $2F $2E $FF
-.db $1B $28 $01 $13 $0B $20 $02 $14
-.db $ED $01 $85 $1D $1F $2F $16 $FF
-.db $21 $0C $0F $05 $0F $15 $05 $0F
-.db $2B $10 $0F $0B $13 $ED $09 $02
-.db $0C $0F $01 $05 $0F $FF $04 $09
-.db $85 $13 $0B $20 $02 $EE $EA $0A
-.db $06 $16 $FF $FF $51 $58 $0B $2F
-.db $13 $0F $2F $16 $00 $2A $ED $27
-.db $1B $0F $19 $0C $01 $24 $2F $2E
-.db $FF $1B $28 $05 $15 $01 $14 $ED
-.db $06 $08 $2F $15 $2F $10 $0F $EE
-.db $EA $2D $2A $01 $05 $0F $FF $04
-.db $2B $16 $1A $FF $13 $0F $06 $15
-.db $01 $27 $EF
+SPEAK
+ENCODE("なに すいもんを ひらけだと!?")
+WAIT_CLICK
+SPEAK
+ENCODE("それは だめだ!")
+WAIT_CLICK
+SPEAK
+ENCODE("このすいもんを ひらいてしまうと")
+NEWLINE
+ENCODE("いっぺんに みずがながれだして")
+NEWLINE
+ENCODE("こうずいが おこってしまう")
+WAIT_CLICK
+SPEAK
+ENCODE("さきに  ミラしんでんにある")
+NEWLINE
+ENCODE("よびのすいもんを ひらかないと")
+NEWLINE
+ENCODE("きけんなんだ")
+WAIT_CLICK
+SPEAK
+ENCODE("わるいが おれには できないよ")
+STOP
 
 L0AAC38:
-.db $EA $04 $04 $FF $20 $85 $13 $10
-.db $0D $0F $EE $EA $51 $58 $19 $0C
-.db $01 $24 $2F $24 $ED $1B $28 $01
-.db $10 $27 $02 $10 $0F $0B $ED $24
-.db $02 $FF $10 $0F $01 $0B $0F $87
-.db $02 $1C $0F $10 $0F $EE $EA $21
-.db $13 $15 $27 $ED $01 $20 $FF $1B
-.db $28 $01 $13 $25 $2A $05 $28 $15
-.db $EF
+SPEAK
+ENCODE("おお まってたぜ")
+WAIT_CLICK
+SPEAK
+ENCODE("ミラのすいもんも")
+NEWLINE
+ENCODE("ひらいたようだし")
+NEWLINE
+ENCODE("もう だいじょうぶだ")
+WAIT_CLICK
+SPEAK
+ENCODE("みてなよ")
+NEWLINE
+ENCODE("いま ひらいてやるからな")
+STOP
 
 L0AAC79:
-.db $EA $27 $05 $85 $10 $15 $ED $09
-.db $2B $13 $0F $FF $3E $4C $A7 $30
-.db $04 $02 $09 $07 $1A $ED $0C $07
-.db $2D $2B $10 $27 $EE $EA $0C $01
-.db $24 $2F $05 $28 $06 $10 $1A $ED
-.db $59 $38 $0F $5A $04 $02 $09 $07
-.db $10 $0F $ED $11 $86 $02 $01 $0B
-.db $13 $FF $26 $06 $15 $27 $EF
+SPEAK
+ENCODE("よかったな")
+NEWLINE
+ENCODE("これで ソフィアおうこくは")
+NEWLINE
+ENCODE("すくわれたよ")
+WAIT_CLICK
+SPEAK
+ENCODE("すいもんからきたは")
+NEWLINE
+ENCODE("リゲルおうこくだ")
+NEWLINE
+ENCODE("ちゅういして ゆきなよ")
+STOP
 
 L0AACB8:
-.db $EA $06 $0A $20 $10 $11 $1A $FF
-.db $04 $16 $10 $0F $9D $EE $EA $3B
-.db $0F $3F $37 $0A $20 $1A $FF $09
-.db $01 $1B $0F $14 $2E $ED $1B $14
-.db $0B $0F $11 $16 $14 $28 $2B $13
-.db $FF $0B $05 $10 $15 $07 $ED $10
-.db $10 $05 $85 $13 $01 $10 $19 $16
-.db $9B $9B $9B $EF
+SPEAK
+ENCODE("きさまたちは おにだ!")
+WAIT_CLICK
+SPEAK
+ENCODE("ジークさまは こいびとを")
+NEWLINE
+ENCODE("ひとじちにとられて しかたなく")
+NEWLINE
+ENCODE("たたかっていたのに···")
+STOP
 
 L0AACF4:
-.db $EA $06 $10 $19 $25 $20 $13 $0F
-.db $FF $05 $0F $08 $07 $0C $0F $2B
-.db $05 $0F $ED $04 $09 $85 $13 $FF
-.db $51 $58 $0B $2F $13 $0F $2F $1D
-.db $19 $ED $21 $11 $1A $FF $14 $0A
-.db $0F $0A $2B $10 $0E $02 $10 $0F
-.db $EE $EA $0A $85 $06 $FF $13 $0F
-.db $05 $08 $13 $01 $85 $10 $ED $3B
-.db $3C $40 $3F $10 $11 $05 $0F $ED
-.db $1C $0F $0B $0F $10 $0F $14 $01
-.db $01 $2F $10 $0F $05 $0F $9B $9B
-.db $9B $EF
+SPEAK
+ENCODE("きたのやまで がけくずれが")
+NEWLINE
+ENCODE("おこって ミラしんでんへの")
+NEWLINE
+ENCODE("みちは とざされたそうだ")
+WAIT_CLICK
+SPEAK
+ENCODE("さっき でかけていった")
+NEWLINE
+ENCODE("シスターたちが")
+NEWLINE
+ENCODE("ぶじだといいんだが···")
+STOP
 
 L0AAD4E:
-.db $EA $3B $0F $3F $37 $0B $87 $02
-.db $07 $0F $2F $2E $ED $10 $0C $08
-.db $13 $07 $2B $10 $2F $10 $0F $85
-.db $13 $15 $EE $EA $3E $4C $A7 $30
-.db $1A $FF $06 $28 $01 $10 $0F $08
-.db $14 $0F $ED $00 $2F $10 $28 $16
-.db $1A $FF $2B $01 $2E $01 $02 $0D
-.db $0F $EF
+SPEAK
+ENCODE("ジークしょうぐんを")
+NEWLINE
+ENCODE("たすけてくれたんだってな")
+WAIT_CLICK
+SPEAK
+ENCODE("ソフィアは きらいだけど")
+NEWLINE
+ENCODE("あんたらには れいをいうぜ")
+STOP
 
 L0AAD88:
-.db $E8 $50 $40 $01 $F0 $01 $EA $09
-.db $2F $15 $14 $09 $2C $16 $FF $14
-.db $0B $0F $09 $23 $28 $2B $13 $ED
-.db $01 $85 $10 $01 $14 $0F $02 $0B
-.db $10 $19 $13 $0F $0C $05 $E6 $E8
-.db $50 $40 $1E $F0 $1E $EA $2D $10
-.db $0B $19 $09 $01 $1B $0F $14 $19
-.db $3B $0F $3F $37 $1A $ED $59 $38
-.db $0F $5A $06 $0B $10 $0F $2F $19
-.db $ED $0B $87 $02 $07 $0F $2F $15
-.db $19 $13 $0F $0C $EE $EA $10 $0F
-.db $08 $14 $0F $FF $3B $0F $3F $37
-.db $1A $FF $09 $19 $10 $10 $05 $01
-.db $16 $1A $ED $1A $2F $10 $01 $0B
-.db $13 $01 $20 $0B $10 $EE $EA $10
-.db $0F $05 $28 $FF $05 $2B $19 $02
-.db $28 $06 $0F $29 $2E $04 $0E $2B
-.db $10 $ED $47 $31 $4A $0F $4A $0F
-.db $16 $27 $85 $13 $ED $1B $14 $0B
-.db $0F $11 $16 $FF $0A $2B $13 $01
-.db $10 $19 $13 $0F $0C $EE $EA $2D
-.db $10 $0B $05 $0F $FF $10 $0C $05
-.db $85 $10 $09 $14 $2E $0B $2B $1A
-.db $0F $ED $06 $85 $14 $FF $27 $2C
-.db $09 $2F $13 $0F $07 $2B $2A $1A
-.db $0C $0F $EE $EA $00 $00 $FF $1A
-.db $25 $07 $3B $0F $3F $37 $16 $ED
-.db $00 $01 $10 $01 $9B $9B $9B $EF
+FACE ALM
+NAME ALM
+SPEAK
+ENCODE("こんなところに とじこめられて")
+NEWLINE
+ENCODE("いったいどうしたのですか")
+PAGE
+FACE TATIANA
+NAME TATIANA
+SPEAK
+ENCODE("わたしのこいびとのジークは")
+NEWLINE
+ENCODE("リゲルきしだんの")
+NEWLINE
+ENCODE("しょうぐんなのです")
+WAIT_CLICK
+SPEAK
+ENCODE("だけど ジークは このたたかいには")
+NEWLINE
+ENCODE("はんたいしていました")
+WAIT_CLICK
+SPEAK
+ENCODE("だから かれのうらぎりをおそれた")
+NEWLINE
+ENCODE("ヌイババによって")
+NEWLINE
+ENCODE("ひとじちに されていたのです")
+WAIT_CLICK
+SPEAK
+ENCODE("わたしが たすかったことをしれば")
+NEWLINE
+ENCODE("きっと よろこんでくれるはず")
+WAIT_CLICK
+SPEAK
+ENCODE("ああ はやくジークに")
+NEWLINE
+ENCODE("あいたい···")
+STOP
 
 L0AAE68:
-.db $E8 $50 $40 $27 $F0 $27 $EA $06
-.db $21 $05 $0F $FF $30 $5A $52 $07
-.db $2F $05 $EE $EA $43 $A7 $3F $40
-.db $2E $FF $10 $0C $08 $13 $07 $2B
-.db $10 $0E $02 $10 $0F $18 $ED $00
-.db $29 $05 $0F $14 $02 $FF $2B $01
-.db $2E $01 $02 $E6 $E8 $50 $40 $01
-.db $F0 $01 $EA $3B $0F $3F $37 $0B
-.db $87 $02 $07 $0F $2F $ED $00 $15
-.db $10 $1A $09 $19 $10 $10 $05 $01
-.db $16 $ED $1A $2F $10 $01 $15 $19
-.db $13 $0F $0B $87 $02 $EE $EA $14
-.db $0F $02 $05 $FF $2D $2B $2D $2B
-.db $16 $ED $11 $05 $28 $2E $05 $0B
-.db $13 $07 $10 $0F $0A $01 $E6 $F0
-.db $27 $EA $0E $2B $1A $FF $13 $0F
-.db $06 $17 $EE $EA $3B $0F $A9 $5C
-.db $3F $52 $2E $FF $10 $04 $0B $10
-.db $19 $1A $ED $25 $12 $05 $0F $FF
-.db $47 $31 $4A $0F $4A $0F $14 $37
-.db $0F $5A $16 $15 $85 $13 $ED $1B
-.db $14 $1B $0F $14 $2E $FF $07 $2A
-.db $0B $23 $13 $01 $10 $05 $28 $10
-.db $0F $EE $EA $0E $2B $16 $9B $9B
-.db $9B $FF $2D $10 $0B $1A $ED $0B
-.db $0F $1C $0F $2F $05 $0F $FF $15
-.db $16 $24 $19 $05 $FF $0B $28 $17
-.db $EE $EA $2D $05 $85 $13 $01 $2A
-.db $09 $14 $1A $ED $1B $14 $0F $01
-.db $06 $0C $0F $2E $FF $04 $85 $13
-.db $FF $09 $19 $07 $16 $16 $ED $15
-.db $05 $0F $2B $12 $01 $10 $14 $01
-.db $02 $09 $14 $10 $0F $08 $9B $9B
-.db $9B $EE $EA $1D $01 $05 $1A $FF
-.db $0E $2F $15 $2D $10 $0B $2E $ED
-.db $00 $10 $10 $05 $07 $FF $22 $05
-.db $03 $ED $15 $20 $03 $20 $13 $0F
-.db $FF $00 $10 $03 $13 $07 $10 $0F
-.db $0A $2B $10 $EE $EA $5A $44 $0F
-.db $5A $4C $1D $01 $05 $1A $FF $2D
-.db $10 $0B $16 $14 $85 $13 $ED $11
-.db $11 $04 $25 $16 $24 $FF $1B $14
-.db $0B $01 $05 $10 $15 $19 $10 $0F
-.db $EE $EA $1D $01 $05 $2E $FF $02
-.db $28 $06 $0F $2A $09 $14 $10 $0F
-.db $08 $1A $ED $13 $0F $06 $15 $01
-.db $E6 $F0 $01 $EA $2D $05 $29 $20
-.db $0B $10 $9B $9B $9B $EE $EA $0B
-.db $12 $2B $01 $15 $09 $14 $2E $01
-.db $85 $13 $ED $09 $0F $23 $2F $15
-.db $0A $01 $E6 $F0 $27 $EA $01 $25
-.db $9B $9B $9B $FF $2F $9D $9C $ED
-.db $30 $5A $52 $07 $2F $FF $0E $19
-.db $21 $06 $0F $02 $13 $0F $19 $ED
-.db $00 $0A $0F $1A $FF $14 $0F $02
-.db $0B $10 $2F $10 $0F $E6 $F0 $01
-.db $EA $00 $0A $0F $9C $9B $9B $9B
-.db $ED $00 $00 $FF $09 $2B $1A $FF
-.db $0C $0F $85 $14 $22 $05 $0B $05
-.db $28 $ED $00 $2A $2F $13 $0F $0C
-.db $EE $EA $0B $0F $01 $11 $84 $2F
-.db $1A $FF $00 $05 $2F $1E $0F $02
-.db $19 $14 $06 $16 $ED $12 $01 $10
-.db $00 $0A $0F $10 $0F $2C $02 $85
-.db $13 $FF $01 $85 $13 $10 $08 $14
-.db $0F $ED $09 $2B $05 $0F $15 $16
-.db $05 $9B $9B $9B $E6 $F0 $27 $EA
-.db $0E $02 $05 $9B $9B $9B $EE $EA
-.db $5A $44 $0F $5A $4C $1D $01 $05
-.db $1A $FF $05 $12 $13 $ED $2D $10
-.db $0B $16 $FF $01 $2D $2B $10 $09
-.db $14 $05 $0F $00 $2A $EE $FF $3B
-.db $0F $3F $37 $27 $FF $21 $06 $0F
-.db $19 $02 $13 $0F $16 $ED $FF $0B
-.db $0F $86 $02 $0B $0F $19 $00 $0A
-.db $0F $2E $FF $24 $12 $24 $19 $00
-.db $28 $1A $0F $ED $FF $0E $19 $24
-.db $19 $16 $FF $0C $1D $0F $13 $2E
-.db $0A $0A $08 $0F $27 $EE $FF $0E
-.db $19 $24 $19 $09 $0E $FF $59 $38
-.db $0F $5A $2E $9B $9B $9B $ED $FF
-.db $0E $0B $13 $FF $09 $19 $4A $0F
-.db $5B $5F $3B $30 $2E $0C $07 $02
-.db $ED $FF $03 $28 $1A $0F $2B $0B
-.db $24 $19 $15 $29 $9B $9B $9B $14
-.db $EE $EA $0E $2B $05 $0F $FF $15
-.db $16 $2E $01 $21 $0C $2A $24 $19
-.db $05 $1A $ED $0B $28 $17 $05 $0F
-.db $FF $1D $01 $05 $19 $09 $0F $01
-.db $0B $14 $00 $28 $1A $0F $ED $24
-.db $1A $25 $FF $20 $27 $02 $09 $14
-.db $1A $15 $01 $EE $EA $30 $5A $52
-.db $07 $2F $FF $06 $21 $19 $11 $05
-.db $28 $16 $15 $2C $02 $EE $EA $2D
-.db $10 $0B $24 $FF $06 $21 $14 $14
-.db $24 $16 $ED $10 $10 $05 $04 $02
-.db $9D $EF
+FACE ZEKE
+NAME ZEKE
+SPEAK
+ENCODE("きみが アルムくんか")
+WAIT_CLICK
+SPEAK
+ENCODE("ティータを たすけてくれたそうだね")
+NEWLINE
+ENCODE("ありがとう れいをいう")
+PAGE
+FACE ALM
+NAME ALM
+SPEAK
+ENCODE("ジークしょうぐん")
+NEWLINE
+ENCODE("あなたはこのたたかいに")
+NEWLINE
+ENCODE("はんたいなのでしょう")
+WAIT_CLICK
+SPEAK
+ENCODE("どうか われわれに")
+NEWLINE
+ENCODE("ちからをかしてください")
+PAGE
+NAME ZEKE
+SPEAK
+ENCODE("それは できぬ")
+WAIT_CLICK
+SPEAK
+ENCODE("ジェロームを たおしたのは")
+NEWLINE
+ENCODE("やつが ヌイババとグルになって")
+NEWLINE
+ENCODE("ひとびとを くるしめていたからだ")
+WAIT_CLICK
+SPEAK
+ENCODE("それに··· わたしは")
+NEWLINE
+ENCODE("じぶんが なにものか しらぬ")
+WAIT_CLICK
+SPEAK
+ENCODE("わかっていることは")
+NEWLINE
+ENCODE("ひどいきずを おって このくにに")
+NEWLINE
+ENCODE("ながれついたということだけ···")
+WAIT_CLICK
+SPEAK
+ENCODE("へいかは そんなわたしを")
+NEWLINE
+ENCODE("あたたかく むかえ")
+NEWLINE
+ENCODE("なまえまで あたえてくだされた")
+WAIT_CLICK
+SPEAK
+ENCODE("ルドルフへいかは わたしにとって")
+NEWLINE
+ENCODE("ちちおやにも ひとしいかたなのだ")
+WAIT_CLICK
+SPEAK
+ENCODE("へいかを うらぎることだけは")
+NEWLINE
+ENCODE("できない")
+PAGE
+NAME ALM
+SPEAK
+ENCODE("わかりました···")
+WAIT_CLICK
+SPEAK
+ENCODE("しつれいなことをいって")
+NEWLINE
+ENCODE("ごめんなさい")
+PAGE
+NAME ZEKE
+SPEAK
+ENCODE("いや··· ん!?")
+NEWLINE
+ENCODE("アルムくん そのみぎうでの")
+NEWLINE
+ENCODE("あざは どうしたんだ")
+PAGE
+NAME ALM
+SPEAK
+ENCODE("あざ?···")
+NEWLINE
+ENCODE("ああ これは ずっとむかしから")
+NEWLINE
+ENCODE("あるんです")
+WAIT_CLICK
+SPEAK
+ENCODE("じいちゃんは あかんぼうのときに")
+NEWLINE
+ENCODE("ついたあざだろうって いってたけど")
+NEWLINE
+ENCODE("これがなにか···")
+PAGE
+NAME ZEKE
+SPEAK
+ENCODE("そうか···")
+WAIT_CLICK
+SPEAK
+ENCODE("ルドルフへいかは かつて")
+NEWLINE
+ENCODE("わたしに いわれたことがある")
+WAIT_CLICK
+ENCODE(" ジークよ みぎのうでに")
+NEWLINE
+ENCODE(" じゅうじのあざを もつものあらば")
+NEWLINE
+ENCODE(" そのものに すべてをささげよ")
+WAIT_CLICK
+ENCODE(" そのものこそ リゲルを···")
+NEWLINE
+ENCODE(" そして このバレンシアをすくう")
+NEWLINE
+ENCODE(" えらばれしものなり···と")
+WAIT_CLICK
+SPEAK
+ENCODE("それが なにをいみするものかは")
+NEWLINE
+ENCODE("しらぬが へいかのごいしとあらば")
+NEWLINE
+ENCODE("もはや まようことはない")
+WAIT_CLICK
+SPEAK
+ENCODE("アルムくん きみのちからになろう")
+WAIT_CLICK
+SPEAK
+ENCODE("わたしも きみとともに")
+NEWLINE
+ENCODE("たたかおう!")
+STOP
 
 L0AB16A:
-.db $E8 $50 $40 $04 $F0 $04 $EA $04
-.db $04 $FF $3D $59 $35 $9D $ED $1C
-.db $0F $0B $0F $0B $0F $84 $85 $10
-.db $05 $E6 $E8 $50 $40 $02 $F0 $02
-.db $EA $49 $3F $50 $0B $0A $01 $0A
-.db $20 $9D $ED $01 $85 $10 $01 $FF
-.db $14 $0F $02 $0A $2B $10 $19 $13
-.db $0F $0C $05 $E6 $F0 $04 $EA $25
-.db $1A $29 $FF $04 $20 $03 $19 $09
-.db $14 $05 $0F $ED $0B $2F $1A $1F
-.db $01 $13 $0F $15 $EE $EA $0B $2F
-.db $13 $0F $2F $20 $13 $0F $FF $04
-.db $01 $05 $08 $13 $06 $10 $19 $10
-.db $0F $05 $0F $ED $02 $85 $05 $29
-.db $14 $FF $09 $2F $15 $14 $09 $2C
-.db $16 $ED $04 $11 $13 $0B $20 $85
-.db $10 $EE $EA $4A $4A $4A $ED $2D
-.db $0B $14 $0B $10 $09 $14 $05 $0F
-.db $FF $14 $2F $10 $0F $ED $4D $50
-.db $2E $0B $10 $24 $2F $0B $0F $84
-.db $EE $EA $20 $00 $FF $27 $01 $ED
-.db $09 $2B $05 $28 $1A $FF $2D $0B
-.db $24 $01 $85 $0B $87 $16 $ED $01
-.db $85 $13 $25 $2C $02 $EE $EA $00
-.db $2F $0B $2F $0C $2A $05 $0F $27
-.db $01 $0E $0F $EF
+FACE NOMA
+NAME NOMA
+SPEAK
+ENCODE("おお セリカ!")
+NEWLINE
+ENCODE("ぶじじゃったか")
+PAGE
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("ノーマしさいさま!")
+NEWLINE
+ENCODE("いったい どうされたのですか")
+PAGE
+NAME NOMA
+SPEAK
+ENCODE("やはり おまえのことが")
+NEWLINE
+ENCODE("しんぱいでな")
+WAIT_CLICK
+SPEAK
+ENCODE("しんでんまで おいかけてきたのだが")
+NEWLINE
+ENCODE("うっかりと こんなところに")
+NEWLINE
+ENCODE("おちてしまった")
+WAIT_CLICK
+SPEAK
+ENCODE("ハハハ")
+NEWLINE
+ENCODE("わしとしたことが とんだ")
+NEWLINE
+ENCODE("ヘマをしたもんじゃ")
+WAIT_CLICK
+SPEAK
+ENCODE("まあ よい")
+NEWLINE
+ENCODE("これからは わしもいっしょに")
+NEWLINE
+ENCODE("いってやろう")
+WAIT_CLICK
+SPEAK
+ENCODE("あんしんするがよいぞ")
+STOP
 
 L0AB236:
-.db $F0 $24 $EA $2D $10 $0B $1A $FF
-.db $51 $58 $0B $2F $13 $0F $2F $16
-.db $ED $05 $03 $29 $20 $0C $EE $EA
-.db $14 $0F $02 $05 $FF $04 $02 $0B
-.db $0F $87 $0A $20 $ED $04 $06 $2E
-.db $12 $08 $13 $EF
+NAME WOMAN
+SPEAK
+ENCODE("わたしは ミラしんでんに")
+NEWLINE
+ENCODE("かえります")
+WAIT_CLICK
+SPEAK
+ENCODE("どうか おうじょさま")
+NEWLINE
+ENCODE("おきをつけて")
+STOP
 
 L0AB262:
-.db $EA $00 $29 $05 $0F $14 $02 $FF
-.db $00 $15 $10 $10 $11 $19 $04 $05
-.db $08 $0F $13 $0F $ED $44 $0F $3D
-.db $0F $3F $19 $1A $2F $28 $2F $07
-.db $0F $2F $1A $ED $0B $2C $2E $FF
-.db $0C $13 $13 $01 $06 $20 $0B $10
-.db $EE $EA $10 $1C $0F $2F $FF $16
-.db $0B $19 $24 $29 $16 $00 $2A $ED
-.db $0B $0F $1C $0F $2F $19 $14 $29
-.db $13 $0F $16 $ED $16 $08 $0F $13
-.db $01 $85 $10 $19 $13 $0F $0B $87
-.db $02 $EF
+SPEAK
+ENCODE("ありがとう あなたたちのおかげで")
+NEWLINE
+ENCODE("ドゼーのはんらんぐんは")
+NEWLINE
+ENCODE("しろを すてていきました")
+WAIT_CLICK
+SPEAK
+ENCODE("たぶん にしのもりにある")
+NEWLINE
+ENCODE("じぶんのとりでに")
+NEWLINE
+ENCODE("にげていったのでしょう")
+STOP
 
 L0AB2BC:
-.db $EA $04 $02 $08 $19 $1B $14 $10
-.db $11 $1A $ED $44 $0F $3D $0F $3F
-.db $0B $87 $02 $07 $0F $2F $16 $27
-.db $85 $13 $ED $21 $2F $15 $FF $09
-.db $2C $0A $2B $20 $0B $10 $EE $EA
-.db $00 $14 $FF $01 $06 $13 $04 $28
-.db $2B $2A $14 $0C $2B $1A $0F $ED
-.db $02 $20 $2B $13 $0C $07 $0F $16
-.db $FF $50 $31 $3D $5F $0A $20 $05
-.db $0F $ED $12 $2B $10 $0F $0B $10
-.db $14 $01 $02 $FF $04 $02 $0B $0F
-.db $87 $10 $0F $08 $13 $0F $0C $EE
-.db $EA $0D $23 $13 $FF $00 $19 $05
-.db $10 $05 $0F $9B $9B $EE $EA $30
-.db $5F $43 $3F $3D $0F $04 $02 $0B
-.db $0F $87 $0A $20 $0A $03 $ED $01
-.db $06 $13 $01 $13 $07 $10 $0F $0A
-.db $2B $1A $0F $9B $9B $9B $EF
+SPEAK
+ENCODE("おうけのひとたちは")
+NEWLINE
+ENCODE("ドゼーしょうぐんによって")
+NEWLINE
+ENCODE("みんな ころされました")
+WAIT_CLICK
+SPEAK
+ENCODE("あと いきておられるとすれば")
+NEWLINE
+ENCODE("うまれてすぐに マイセンさまが")
+NEWLINE
+ENCODE("つれだしたという おうじょだけです")
+WAIT_CLICK
+SPEAK
+ENCODE("せめて あのかたが··")
+WAIT_CLICK
+SPEAK
+ENCODE("アンテーゼおうじょさまさえ")
+NEWLINE
+ENCODE("いきていてくだされば···")
+STOP
 
 L0AB34B:
-.db $EA $44 $0F $3D $0F $3F $1A $FF
-.db $1A $28 $07 $0F $2C $01 $04 $14
-.db $09 $13 $0F $ED $04 $02 $08 $16
-.db $02 $20 $2B $10 $FF $09 $14 $0F
-.db $24 $10 $11 $2E $ED $09 $85 $0E
-.db $29 $FF $09 $2C $0B $13 $01 $85
-.db $10 $19 $13 $0F $0C $EE $EA $0E
-.db $2B $2E $FF $14 $23 $27 $02 $14
-.db $0B $10 $50 $31 $3D $5F $14 $0F
-.db $19 $1A $ED $06 $0F $84 $07 $16
-.db $FF $12 $21 $2E $05 $1C $0F $0D
-.db $28 $2B $ED $0B $2C $05 $28 $FF
-.db $04 $01 $10 $0F $0A $2B $13 $0B
-.db $20 $01 $20 $0B $10 $EF
+SPEAK
+ENCODE("ドゼーは はらぐろいおとこで")
+NEWLINE
+ENCODE("おうけにうまれた こどもたちを")
+NEWLINE
+ENCODE("こっそり ころしていったのです")
+WAIT_CLICK
+SPEAK
+ENCODE("それを とめようとしたマイセンどのは")
+NEWLINE
+ENCODE("ぎゃくに つみをかぶせられ")
+NEWLINE
+ENCODE("しろから おいだされてしまいました")
+STOP
 
 L0AB3B9:
-.db $EA $06 $21 $1A $FF $50 $31 $3D
-.db $5F $0B $87 $02 $07 $0F $2F $19
-.db $ED $20 $09 $0F $10 $0F $85 $13
-.db $9C $EE $EA $0B $05 $0B $FF $0B
-.db $87 $02 $07 $0F $2F $16 $ED $21
-.db $27 $29 $15 $14 $0F $FF $15 $05
-.db $85 $10 $1A $0C $0F $10 $0F $9B
-.db $9B $9B $EE $EA $20 $8E $20 $0A
-.db $05 $FF $00 $19 $02 $2D $0A $05
-.db $0F $ED $1E $2F $14 $02 $10 $0F
-.db $14 $1A $9D $9C $EE $EA $01 $9B
-.db $9B $9B $01 $25 $8E $0C $20 $15
-.db $01 $ED $04 $2B $1A $15 $16 $24
-.db $FF $0B $28 $15 $01 $2F $10 $0F
-.db $9B $9B $9B $EF
+SPEAK
+ENCODE("きみは マイセンしょうぐんの")
+NEWLINE
+ENCODE("まごだって?")
+WAIT_CLICK
+SPEAK
+ENCODE("しかし しょうぐんに")
+NEWLINE
+ENCODE("みよりなど なかったはずだ···")
+WAIT_CLICK
+SPEAK
+ENCODE("ま,まさか あのうわさが")
+NEWLINE
+ENCODE("ほんとうだとは!?")
+WAIT_CLICK
+SPEAK
+ENCODE("い···いや,すまない")
+NEWLINE
+ENCODE("おれはなにも しらないんだ···")
+STOP
 
 L0AB42D:
-.db $EA $44 $0F $3D $0F $3F $1A $FF
-.db $59 $38 $0F $5A $13 $01 $09 $07
-.db $16 $ED $03 $2F $0B $0F $87 $2E
-.db $FF $10 $19 $2F $10 $0F $27 $02
-.db $13 $0F $0C $EE $EA $59 $38 $0F
-.db $5A $07 $0F $2F $05 $0F $FF $0D
-.db $23 $13 $07 $2A $20 $03 $16 $ED
-.db $25 $12 $19 $14 $29 $13 $0F $2E
-.db $FF $04 $14 $0A $15 $08 $2B $1A
-.db $0F $ED $10 $01 $1D $2F $15 $09
-.db $14 $16 $FF $15 $85 $13 $0B $20
-.db $01 $20 $0C $EF
+SPEAK
+ENCODE("ドゼーは リゲルていこくに")
+NEWLINE
+ENCODE("えんじょを たのんだようです")
+WAIT_CLICK
+SPEAK
+ENCODE("リゲルぐんが せめてくるまえに")
+NEWLINE
+ENCODE("やつのとりでを おとさなければ")
+NEWLINE
+ENCODE("たいへんなことに なってしまいます")
+STOP
 
 L0AB489:
-.db $EA $09 $19 $FF $45 $31 $44 $36
-.db $58 $3F $0A $03 $00 $2B $1A $0F
-.db $ED $13 $06 $19 $06 $0B $1A $FF
-.db $05 $2F $10 $2F $16 $ED $25 $85
-.db $12 $08 $28 $2B $20 $0C $EE $EA
-.db $10 $0F $08 $14 $0F $FF $25 $29
-.db $10 $0F $05 $28 $ED $06 $0B $16
-.db $0B $05 $FF $00 $12 $05 $03 $20
-.db $0D $2F $27 $EF
+SPEAK
+ENCODE("この ナイトキラーさえあれば")
+NEWLINE
+ENCODE("てきのきしは かんたんに")
+NEWLINE
+ENCODE("やっつけられます")
+WAIT_CLICK
+SPEAK
+ENCODE("だけど やりだから")
+NEWLINE
+ENCODE("きしにしか あつかえませんよ")
+STOP
 
 L0AB4CD:
-.db $EA $44 $0F $3D $0F $3F $1A $FF
-.db $10 $01 $0D $12 $15 $ED $FF $BB
-.db $04 $02 $08 $19 $12 $2A $06 $0F
-.db $BC $2E $ED $24 $85 $13 $16 $08
-.db $0F $20 $0B $10 $EE $EA $00 $2B
-.db $1A $FF $22 $05 $0B $59 $38 $0F
-.db $5A $04 $02 $08 $27 $29 $ED $26
-.db $02 $09 $02 $19 $0B $2A $0B $14
-.db $0B $13 $ED $04 $07 $28 $2B $10
-.db $24 $19 $EE $EA $1C $12 $02 $19
-.db $24 $19 $16 $1A $FF $12 $05 $03
-.db $15 $01 $ED $14 $07 $1D $0F $12
-.db $15 $FF $12 $2A $06 $0F $15 $19
-.db $13 $0F $0C $EF
+SPEAK
+ENCODE("ドゼーは たいせつな")
+NEWLINE
+ENCODE(" [おうけのつるぎ]を")
+NEWLINE
+ENCODE("もってにげました")
+WAIT_CLICK
+SPEAK
+ENCODE("あれは むかしリゲルおうけより")
+NEWLINE
+ENCODE("ゆうこうのしるしとして")
+NEWLINE
+ENCODE("おくられたもの")
+WAIT_CLICK
+SPEAK
+ENCODE("ふつうのものには つかえない")
+NEWLINE
+ENCODE("とくべつな つるぎなのです")
+STOP
 
 L0AB539:
-.db $E8 $50 $40 $86 $F0 $86 $EA $1C
-.db $1C $1C $9B $9B $9B $FF $3D $59
-.db $35 $27 $EE $EA $29 $86 $02 $19
-.db $25 $20 $16 $FF $14 $0B $0F $09
-.db $23 $28 $2B $10 $ED $30 $5A $52
-.db $2E $FF $10 $0C $08 $10 $05 $2C
-.db $02 $EE $EA $15 $28 $1A $0F $FF
-.db $2D $0B $19 $00 $14 $16 $12 $01
-.db $13 $09 $01 $EE $EA $04 $20 $03
-.db $10 $11 $05 $0F $FF $0E $19 $21
-.db $2E $ED $44 $0F $3F $50 $0A $20
-.db $16 $FF $0A $0A $08 $0F $2A $15
-.db $28 $ED $30 $5A $52 $19 $21 $11
-.db $24 $20 $10 $FF $1B $28 $08 $27
-.db $02 $0E $0F $EF
+FACE JEDAH
+NAME JEDAH
+SPEAK
+ENCODE("ふふふ··· セリカよ")
+WAIT_CLICK
+SPEAK
+ENCODE("りゅうのやまに とじこめられた")
+NEWLINE
+ENCODE("アルムを たすけたかろう")
+WAIT_CLICK
+SPEAK
+ENCODE("ならば わしのあとについてこい")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえたちが そのみを")
+NEWLINE
+ENCODE("ドーマさまに ささげるなら")
+NEWLINE
+ENCODE("アルムのみちもまた ひらけようぞ")
+STOP
 
 L0AB5AD:
-.db $E8 $50 $40 $01 $F0 $01 $EA $00
-.db $FF $0B $0F $01 $11 $84 $2F $ED
-.db $01 $85 $10 $01 $09 $2B $1A $FF
-.db $14 $0F $02 $01 $02 $09 $14 $9D
-.db $9C $EE $EA $00 $2F $15 $16 $FF
-.db $16 $07 $2F $13 $0F $01 $10 $ED
-.db $5A $44 $0F $5A $4C $09 $02 $13
-.db $01 $05 $0F $FF $1E $0F $07 $19
-.db $ED $11 $11 $04 $25 $10 $0F $15
-.db $2F $13 $9D $9D $9D $EE $EA $1B
-.db $14 $0F $01 $27 $ED $0B $0F $01
-.db $11 $84 $2F $1A $FF $15 $16 $24
-.db $05 $24 $ED $0B $85 $13 $01 $10
-.db $19 $05 $9D $E6 $E8 $50 $40 $03
-.db $F0 $03 $EA $30 $5A $52 $27 $ED
-.db $04 $14 $0F $2C $07 $19 $24 $FF
-.db $22 $29 $1A $15 $01 $9B $9B $9B
-.db $EE $EA $10 $0B $05 $16 $FF $04
-.db $20 $03 $1A $ED $5A $44 $0F $5A
-.db $4C $09 $02 $13 $01 $19 $FF $1B
-.db $14 $29 $22 $0C $09 $EE $EA $01
-.db $20 $14 $15 $85 $13 $1A $FF $10
-.db $10 $0F $1B $14 $29 $ED $59 $38
-.db $0F $5A $04 $02 $08 $19 $FF $11
-.db $2E $02 $08 $12 $07 $0F $24 $19
-.db $E6 $F0 $01 $EA $13 $0F $24 $FF
-.db $15 $0D $0F $FF $09 $2F $15 $09
-.db $14 $16 $9B $9B $9B $EE $EA $1E
-.db $0F $07 $05 $0F $FF $14 $0F $02
-.db $0B $13 $FF $11 $11 $04 $25 $14
-.db $ED $10 $10 $05 $2D $15 $08 $2B
-.db $1A $0F $FF $15 $28 $15 $01 $19
-.db $E6 $F0 $03 $EA $15 $07 $15 $FF
-.db $30 $5A $52 $9B $9B $9B $EE $EA
-.db $20 $03 $16 $24 $FF $1A $15 $0B
-.db $10 $27 $02 $16 $ED $09 $19 $FF
-.db $4A $0F $5B $5F $3B $30 $1A $FF
-.db $05 $21 $05 $0F $21 $16 $27 $85
-.db $13 $ED $06 $10 $14 $21 $15 $21
-.db $16 $FF $2D $08 $28 $2B $13 $0B
-.db $20 $85 $10 $EE $EA $0E $0B $13
-.db $FF $05 $2B $28 $1A $FF $1B $14
-.db $19 $07 $28 $0B $16 $ED $1C $05
-.db $07 $FF $05 $05 $2D $29 $0C $06
-.db $0F $10 $19 $10 $0F $EE $EA $0E
-.db $19 $08 $85 $05 $FF $3E $4C $A7
-.db $30 $19 $10 $21 $1A $ED $1A $10
-.db $28 $07 $09 $14 $2E $2D $0C $2B
-.db $ED $59 $38 $0F $5A $19 $10 $21
-.db $1A $FF $25 $0A $0B $0A $2E $2D
-.db $0C $2B $10 $EE $EA $09 $19 $20
-.db $20 $13 $0F $1A $FF $14 $24 $16
-.db $FF $1E $2C $1B $0F $13 $0B $20
-.db $02 $EE $EA $0E $02 $05 $2F $05
-.db $0F $03 $10 $FF $5A $44 $0F $5A
-.db $4C $1A $ED $21 $0C $0F $05 $28
-.db $05 $0F $FF $1A $05 $01 $0B $84
-.db $14 $15 $85 $13 $ED $26 $02 $0B
-.db $84 $10 $11 $19 $FF $0B $86 $12
-.db $08 $0F $2F $2E $02 $15 $05 $0F
-.db $0B $EE $EA $00 $10 $28 $0B $01
-.db $FF $0B $0F $10 $0F $01 $2E $06
-.db $0C $0F $07 $10 $23 $19 $ED $0C
-.db $13 $01 $0B $16 $15 $2C $02 $14
-.db $FF $08 $12 $01 $0B $10 $19 $10
-.db $0F $EE $EA $0E $0B $13 $FF $0B
-.db $0F $1C $0F $2F $2E $FF $10 $04
-.db $0C $13 $0F $00 $2C $02 $ED $26
-.db $02 $0B $84 $05 $0F $FF $00 $01
-.db $0C $2A $FF $2D $05 $0F $09 $13
-.db $0F $00 $2B $1A $0F $ED $09 $2B
-.db $01 $0B $0F $87 $02 $19 $FF $27
-.db $2C $09 $1B $0F $1A $15 $01 $9B
-.db $9B $9B $EE $EA $05 $2B $1A $FF
-.db $0E $02 $FF $12 $08 $0F $13 $FF
-.db $2D $0B $16 $ED $02 $20 $2B $13
-.db $20 $24 $15 $01 $09 $14 $0F $24
-.db $2E $ED $10 $07 $0E $02 $14 $0B
-.db $10 $EE $EA $0E $19 $14 $06 $19
-.db $FF $5A $44 $0F $5A $4C $19 $05
-.db $04 $1A $ED $01 $20 $24 $FF $2D
-.db $0C $2B $17 $9B $9B $9B $9B $EE
-.db $EA $09 $19 $04 $14 $09 $1A $FF
-.db $0B $0F $1C $0F $2F $19 $21 $2E
-.db $ED $0B $0F $09 $0F $07 $19 $1E
-.db $19 $04 $13 $0F $FF $25 $09 $02
-.db $14 $0B $13 $01 $2A $EE $EA $0E
-.db $02 $FF $06 $12 $0F $01 $10 $14
-.db $06 $FF $2D $0B $16 $1A $ED $24
-.db $1A $25 $FF $09 $1A $0F $22 $0C
-.db $1D $0F $1A $FF $15 $05 $85 $10
-.db $EE $EA $0C $1D $0F $13 $2E $FF
-.db $02 $2F $23 $01 $16 $ED $26 $10
-.db $0F $18 $2A $09 $14 $16 $0B $10
-.db $19 $10 $0F $EE $EA $30 $5A $52
-.db $27 $ED $01 $12 $20 $13 $0F $24
-.db $ED $05 $15 $0B $2F $13 $0F $01
-.db $13 $1A $FF $15 $28 $17 $EE $EA
-.db $5A $44 $0F $5A $4C $05 $0F $FF
-.db $15 $0B $03 $15 $05 $85 $10 $09
-.db $14 $2E $ED $04 $20 $03 $05 $0F
-.db $FF $1B $06 $12 $05 $0F $15 $08
-.db $2B $1A $0F $FF $15 $28 $17 $EE
-.db $EA $11 $05 $0B $2F $13 $0F $2F
-.db $16 $FF $26 $06 $ED $0B $0F $84
-.db $0B $2F $44 $0F $3F $50 $2E $FF
-.db $25 $21 $16 $24 $14 $0F $0C $19
-.db $10 $0F $EE $EA $01 $0E $05 $0F
-.db $15 $08 $2B $1A $0F $FF $3D $59
-.db $35 $10 $11 $19 $21 $16 $ED $06
-.db $08 $2F $05 $0F $04 $27 $1C $0F
-.db $05 $24 $FF $0B $2B $17 $0E $0F
-.db $9D $EF
+FACE ALM
+NAME ALM
+SPEAK
+ENCODE("あ じいちゃん")
+NEWLINE
+ENCODE("いったいこれは どういうこと!?")
+WAIT_CLICK
+SPEAK
+ENCODE("あんなに にくんでいた")
+NEWLINE
+ENCODE("ルドルフこうていが ぼくの")
+NEWLINE
+ENCODE("ちちおやだなんて!!!")
+WAIT_CLICK
+SPEAK
+ENCODE("ひどいよ")
+NEWLINE
+ENCODE("じいちゃんは なにもかも")
+NEWLINE
+ENCODE("しっていたのか!")
+PAGE
+FACE MYCEN
+NAME MYCEN
+SPEAK
+ENCODE("アルムよ")
+NEWLINE
+ENCODE("おどろくのも むりはない···")
+WAIT_CLICK
+SPEAK
+ENCODE("たしかに おまえは")
+NEWLINE
+ENCODE("ルドルフこうていの ひとりむすこ")
+WAIT_CLICK
+SPEAK
+ENCODE("いまとなっては ただひとり")
+NEWLINE
+ENCODE("リゲルおうけの ちをうけつぐもの")
+PAGE
+NAME ALM
+SPEAK
+ENCODE("でも なぜ こんなことに···")
+WAIT_CLICK
+SPEAK
+ENCODE("ぼくが どうして ちちおやと")
+NEWLINE
+ENCODE("たたかわなければ ならないの")
+PAGE
+NAME MYCEN
+SPEAK
+ENCODE("なくな アルム···")
+WAIT_CLICK
+SPEAK
+ENCODE("まえにも はなしたように")
+NEWLINE
+ENCODE("この バレンシアは かみがみによって")
+NEWLINE
+ENCODE("きたとみなみに わけられてしまった")
+WAIT_CLICK
+SPEAK
+ENCODE("そして かれらは ひとのくらしに")
+NEWLINE
+ENCODE("ふかく かかわりすぎたのだ")
+WAIT_CLICK
+SPEAK
+ENCODE("そのけっか ソフィアのたみは")
+NEWLINE
+ENCODE("はたらくことをわすれ")
+NEWLINE
+ENCODE("リゲルのたみは やさしさをわすれた")
+WAIT_CLICK
+SPEAK
+ENCODE("このままでは ともに ほろびてしまう")
+WAIT_CLICK
+SPEAK
+ENCODE("そうかんがえた ルドルフは")
+NEWLINE
+ENCODE("みずからが はかいしゃとなって")
+NEWLINE
+ENCODE("ゆうしゃたちの しゅつげんをうながし")
+WAIT_CLICK
+SPEAK
+ENCODE("あたらしい じだいをきずくための")
+NEWLINE
+ENCODE("すていしになろうと けついしたのだ")
+WAIT_CLICK
+SPEAK
+ENCODE("そして じぶんを たおすであろう")
+NEWLINE
+ENCODE("ゆうしゃが あいする わがこであれば")
+NEWLINE
+ENCODE("これいじょうの よろこびはない···")
+WAIT_CLICK
+SPEAK
+ENCODE("かれは そう つげて わしに")
+NEWLINE
+ENCODE("うまれてまもないこどもを")
+NEWLINE
+ENCODE("たくそうとした")
+WAIT_CLICK
+SPEAK
+ENCODE("そのときの ルドルフのかおは")
+NEWLINE
+ENCODE("いまも わすれぬ····")
+WAIT_CLICK
+SPEAK
+ENCODE("このおとこは じぶんのみを")
+NEWLINE
+ENCODE("じごくのほのおで やこうとしている")
+WAIT_CLICK
+SPEAK
+ENCODE("そう きづいたとき わしには")
+NEWLINE
+ENCODE("もはや こばむすべは なかった")
+WAIT_CLICK
+SPEAK
+ENCODE("すべてを うんめいに")
+NEWLINE
+ENCODE("ゆだねることにしたのだ")
+WAIT_CLICK
+SPEAK
+ENCODE("アルムよ")
+NEWLINE
+ENCODE("いつまでも")
+NEWLINE
+ENCODE("かなしんでいては ならぬ")
+WAIT_CLICK
+SPEAK
+ENCODE("ルドルフが なしえなかったことを")
+NEWLINE
+ENCODE("おまえが ひきつがなければ ならぬ")
+WAIT_CLICK
+SPEAK
+ENCODE("ちかしんでんに ゆき")
+NEWLINE
+ENCODE("じゃしんドーマを やみにもどすのだ")
+WAIT_CLICK
+SPEAK
+ENCODE("いそがなければ セリカたちのみに")
+NEWLINE
+ENCODE("きけんがおよぶかも しれぬぞ!")
+STOP
 
 L0AB92F:
-.db $E8 $50 $40 $8D $F0 $8D $EA $30
-.db $5A $4A $0F $31 $5F $04 $02 $0B
-.db $0F $EE $EA $2D $10 $0B $1A $FF
-.db $0B $2F $03 $01 $10 $01 $11 $87
-.db $02 $19 $ED $50 $89 $3D $45 $0B
-.db $87 $02 $07 $0F $2F $13 $0F $0C
-.db $EE $EA $1D $01 $05 $05 $28 $FF
-.db $0C $1D $0F $13 $2E $FF $04 $06
-.db $06 $0B $ED $1A $01 $0A $0F $2F
-.db $19 $1D $01 $2E $FF $20 $14 $23
-.db $13 $ED $20 $85 $13 $01 $20 $0B
-.db $10 $EE
+FACE MASSENA
+NAME MASSENA
+SPEAK
+ENCODE("アルバインおうじ")
+WAIT_CLICK
+SPEAK
+ENCODE("わたしは しんえいたいちょうの")
+NEWLINE
+ENCODE("マッセナしょうぐんです")
+WAIT_CLICK
+SPEAK
+ENCODE("へいかから すべてを おききし")
+NEWLINE
+ENCODE("はいざんのへいを まとめて")
+NEWLINE
+ENCODE("まっていました")
+WAIT_CLICK
 
 L0AB989:
-.db $EA $2D $2B $28 $1A $FF $01 $12
-.db $20 $13 $0F $24 $ED $04 $02 $0B
-.db $0F $19 $FF $04 $05 $03 $29 $2E
-.db $ED $04 $20 $11 $0B $13 $01 $20
-.db $0C $EF
+SPEAK
+ENCODE("われらは いつまでも")
+NEWLINE
+ENCODE("おうじの おかえりを")
+NEWLINE
+ENCODE("おまちしています")
+STOP
 
 L0AB9AB:
-.db $EA $5A $44 $0F $5A $4C $62 $0D
-.db $01 $1D $01 $05 $ED $4A $0F $5F
-.db $3A $0F $3F $31 $9D $EF
+SPEAK
+ENCODE("ルドルフ2せいへいか")
+NEWLINE
+ENCODE("バンザーイ!")
+STOP
 
 L0AB9C1:
-.db $E8 $50 $40 $01 $F0 $01 $EA $9D
-.db $ED $3D $59 $35 $3F $EF
+FACE ALM
+NAME ALM
+SPEAK
+ENCODE("!")
+NEWLINE
+ENCODE("セリカー")
+STOP
 
 L0AB9CF:
-.db $E8 $50 $40 $02 $F0 $02 $EA $00
-.db $85 $FF $30 $5A $52 $ED $10 $0C
-.db $08 $13 $9B $9B $9B $EE $EA $09
-.db $19 $20 $20 $13 $0F $1A $FF $21
-.db $2F $15 $05 $0F $9B $9B $9B $EE
-.db $EA $21 $2F $15 $0B $2F $13 $0F
-.db $0B $20 $02 $EE $EA $1A $8E $1A
-.db $25 $07 $9B $9B $9B $ED $04 $18
-.db $05 $0F $01 $9B $9B $9B $FF $FF
-.db $1A $25 $07 $06 $13 $EF
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("あっ アルム")
+NEWLINE
+ENCODE("たすけて···")
+WAIT_CLICK
+SPEAK
+ENCODE("このままでは みんなが···")
+WAIT_CLICK
+SPEAK
+ENCODE("みんなしんでしまう")
+WAIT_CLICK
+SPEAK
+ENCODE("は,はやく···")
+NEWLINE
+ENCODE("おねがい···  はやくきて")
+STOP
 
 L0ABA1D:
-.db $BB $1E $02 $24 $12 $09 $BC $ED
-.db $59 $38 $0F $5A $04 $02 $08 $19
-.db $24 $19 $01 $05 $0F $01 $ED $10
-.db $11 $01 $2A $1D $0F $05 $28 $0C
-.db $0F $9D $EF
+ENCODE("[ほうもつこ]")
+NEWLINE
+ENCODE("リゲルおうけのものいがい")
+NEWLINE
+ENCODE("たちいるべからず!")
+STOP
 
 L0ABA40:
-.db $EA $3B $0F $A9 $5C $3F $52 $0B
-.db $87 $02 $07 $0F $2F $1A $ED $1B
-.db $14 $0F $01 $FF $04 $14 $09 $0A
-.db $EE $EA $09 $19 $22 $28 $24 $FF
-.db $29 $84 $07 $10 $0F $12 $0A $2B
-.db $10 $29 $ED $28 $2F $1E $0F $02
-.db $0A $2B $10 $29 $FF $3B $0F $3F
-.db $37 $0A $20 $05 $0F $ED $07 $2A
-.db $20 $13 $0F $1A $FF $10 $01 $1D
-.db $2F $10 $0F $85 $10 $27 $EF
+SPEAK
+ENCODE("ジェロームしょうぐんは")
+NEWLINE
+ENCODE("ひどい おとこさ")
+WAIT_CLICK
+SPEAK
+ENCODE("このむらも りゃくだつされたり")
+NEWLINE
+ENCODE("らんぼうされたり ジークさまが")
+NEWLINE
+ENCODE("くるまでは たいへんだったよ")
+STOP
 
 L0ABA8F:
-.db $EA $09 $09 $1A $ED $08 $2F $0B
-.db $0F $84 $19 $FF $05 $07 $2B $0A
-.db $0F $14 $EE $EA $44 $0F $3F $50
-.db $19 $10 $0F $01 $08 $2F $0B $0F
-.db $84 $ED $4A $5A $37 $0A $20 $16
-.db $27 $85 $13 $ED $20 $24 $28 $2B
-.db $13 $01 $20 $0C $EE $EA $4A $5A
-.db $37 $0A $20 $16 $FF $00 $01 $10
-.db $01 $19 $15 $28 $ED $22 $28 $19
-.db $FF $06 $87 $02 $05 $01 $16 $ED
-.db $26 $06 $15 $0A $01 $EF
+SPEAK
+ENCODE("ここは")
+NEWLINE
+ENCODE("けんじゃの かくれざと")
+WAIT_CLICK
+SPEAK
+ENCODE("ドーマのだいけんじゃ")
+NEWLINE
+ENCODE("ハルクさまによって")
+NEWLINE
+ENCODE("まもられています")
+WAIT_CLICK
+SPEAK
+ENCODE("ハルクさまに あいたいのなら")
+NEWLINE
+ENCODE("むらの きょうかいに")
+NEWLINE
+ENCODE("ゆきなさい")
+STOP
 
 L0ABAE5:
-.db $EA $4A $5A $37 $0A $20 $1A $FF
-.db $44 $0F $3F $50 $06 $87 $02 $19
-.db $ED $10 $0F $01 $0B $0A $01 $10
-.db $0F $85 $10 $05 $10 $EE $EA $0B
-.db $05 $0B $FF $06 $14 $02 $0B $3B
-.db $0F $8A $40 $0F $14 $ED $00 $28
-.db $0E $85 $13 $FF $25 $1C $0F $2B
-.db $ED $16 $08 $0F $13 $09 $28 $2B
-.db $10 $19 $13 $0F $0C $EE $EA $3B
-.db $0F $8A $40 $0F $1A $FF $04 $0E
-.db $2C $0B $01 $04 $14 $09 $EE $EA
-.db $24 $0B $FF $10 $10 $05 $02 $19
-.db $15 $28 $ED $1E $02 $1E $02 $1A
-.db $FF $1B $14 $12 $0B $05 $15 $01
-.db $EE $EA $64 $8E $68 $8E $61 $62
-.db $8E $9B $9B $9B $EE $EA $02 $02
-.db $FF $07 $8E $07 $2A $0B $01 $EE
-.db $EA $3B $0F $8A $9B $9B $3B $0F
-.db $8A $40 $0F $19 $FF $19 $2C $01
-.db $05 $0F $9B $9B $EF
+SPEAK
+ENCODE("ハルクさまは ドーマきょうの")
+NEWLINE
+ENCODE("だいしさいだったかた")
+WAIT_CLICK
+SPEAK
+ENCODE("しかし きとうしジュダと")
+NEWLINE
+ENCODE("あらそって やぶれ")
+NEWLINE
+ENCODE("にげてこられたのです")
+WAIT_CLICK
+SPEAK
+ENCODE("ジュダは おそろしいおとこ")
+WAIT_CLICK
+SPEAK
+ENCODE("もし たたかうのなら")
+NEWLINE
+ENCODE("ほうほうは ひとつしかない")
+WAIT_CLICK
+SPEAK
+ENCODE("4,8,12,···")
+WAIT_CLICK
+SPEAK
+ENCODE("うう く,くるしい")
+WAIT_CLICK
+SPEAK
+ENCODE("ジュ··ジュダの のろいが··")
+STOP
 
 L0ABB82:
-.db $E8 $50 $40 $2B $F0 $2B $EA $2D
-.db $0B $05 $0F $FF $4A $5A $37 $0B
-.db $0F $84 $EE $EA $04 $20 $03 $10
-.db $11 $1A $FF $02 $0B $15 $2D $2B
-.db $10 $51 $58 $2E $ED $24 $14 $23
-.db $13 $FF $10 $1B $0F $2E $0B $13
-.db $01 $2A $19 $05 $EE $EA $02 $22
-.db $9B $9B $FF $10 $0B $05 $16 $9B
-.db $9B $EE $EA $51 $58 $2E $1C $02
-.db $0B $0F $10 $12 $2A $06 $0F $1A
-.db $ED $44 $0F $3F $50 $19 $14 $02
-.db $19 $FF $11 $05 $16 $ED $04 $0A
-.db $23 $28 $2B $13 $00 $2A $EE $EA
-.db $10 $0F $05 $0F $FF $22 $29 $0B
-.db $0F $84 $15 $9B $9B $9B $ED $3B
-.db $0F $8A $40 $0F $05 $0F $FF $04
-.db $20 $03 $10 $11 $2E $ED $11 $05
-.db $12 $0F $08 $1A $0B $20 $01 $EE
-.db $EA $2D $0B $16 $15 $16 $05 $FF
-.db $13 $0F $06 $2A $09 $14 $05 $0F
-.db $00 $2B $1A $0F $ED $11 $05 $28
-.db $16 $FF $15 $85 $13 $25 $2C $02
-.db $EE $EA $3D $59 $35 $27 $FF $04
-.db $20 $03 $19 $19 $0E $0F $21 $1A
-.db $ED $15 $16 $05 $15 $E6 $E8 $50
-.db $40 $02 $F0 $02 $EA $2D $10 $0B
-.db $1A $FF $09 $2B $01 $0B $0F $87
-.db $02 $ED $15 $16 $24 $FF $19 $0E
-.db $0F $21 $20 $0D $2F $EE $EA $10
-.db $0F $08 $14 $0F $FF $30 $5A $52
-.db $1A $9B $9B $9B $EE $EA $15 $2F
-.db $14 $05 $FF $30 $5A $52 $2E $ED
-.db $10 $0C $08 $13 $00 $08 $0F $10
-.db $01 $9B $9B $9B $E6 $F0 $2B $EA
-.db $0E $02 $05 $ED $08 $15 $08 $0F
-.db $15 $FF $24 $19 $0B $0F $84 $15
-.db $EE $EA $27 $0B $FF $2D $05 $85
-.db $10 $ED $30 $5A $52 $16 $FF $00
-.db $28 $10 $15 $2A $11 $05 $28 $2E
-.db $ED $0A $0C $0F $08 $13 $25 $2C
-.db $02 $EF
+FACE HALCYON
+NAME HALCYON
+SPEAK
+ENCODE("わしが ハルクじゃ")
+WAIT_CLICK
+SPEAK
+ENCODE("おまえたちは うしなわれたミラを")
+NEWLINE
+ENCODE("もとめて たびをしているのか")
+WAIT_CLICK
+SPEAK
+ENCODE("うむ·· たしかに··")
+WAIT_CLICK
+SPEAK
+ENCODE("ミラをふうじたつるぎは")
+NEWLINE
+ENCODE("ドーマのとうの ちかに")
+NEWLINE
+ENCODE("おさめられてある")
+WAIT_CLICK
+SPEAK
+ENCODE("だが むりじゃな···")
+NEWLINE
+ENCODE("ジュダが おまえたちを")
+NEWLINE
+ENCODE("ちかづけはしまい")
+WAIT_CLICK
+SPEAK
+ENCODE("わしになにか できることがあれば")
+NEWLINE
+ENCODE("ちからに なってやろう")
+WAIT_CLICK
+SPEAK
+ENCODE("セリカよ おまえののぞみは")
+NEWLINE
+ENCODE("なにかな")
+PAGE
+FACE CELICA
+NAME CELICA
+SPEAK
+ENCODE("わたしは これいじょう")
+NEWLINE
+ENCODE("なにも のぞみません")
+WAIT_CLICK
+SPEAK
+ENCODE("だけど アルムは···")
+WAIT_CLICK
+SPEAK
+ENCODE("なんとか アルムを")
+NEWLINE
+ENCODE("たすけてあげたい···")
+PAGE
+NAME HALCYON
+SPEAK
+ENCODE("そうか")
+NEWLINE
+ENCODE("けなげな ものじゃな")
+WAIT_CLICK
+SPEAK
+ENCODE("よし わかった")
+NEWLINE
+ENCODE("アルムに あらたなるちからを")
+NEWLINE
+ENCODE("さずけてやろう")
+STOP
 
 L0ABCC4:
-.db $EA $44 $0F $3F $50 $19 $14 $02
-.db $1A $FF $24 $02 $0C $07 $0F $0B
-.db $0F $84 $ED $09 $09 $2C $0B $13
-.db $FF $26 $07 $05 $0F $27 $01 $EF
+SPEAK
+ENCODE("ドーマのとうは もうすぐじゃ")
+NEWLINE
+ENCODE("こころして ゆくがよい")
+STOP
 
 L0ABCE4:
-.db $EA $09 $19 $FF $05 $01 $10 $0F
-.db $2F $2E $FF $04 $29 $2B $1A $0F
-.db $ED $44 $0F $3F $50 $19 $0A $01
-.db $10 $0F $2F $1D $ED $01 $08 $2A
-.db $1A $0C $0F $13 $0F $0C $EE $EA
-.db $0B $05 $0B $FF $01 $11 $14 $0F
-.db $1A $01 $2B $1A $0F $ED $24 $02
-.db $FF $16 $14 $0F $14 $FF $24 $14
-.db $0F $2B $15 $01 $14 $ED $01 $2D
-.db $2B $13 $01 $20 $0C $EE $EA $04
-.db $02 $0B $0F $FF $14 $0F $02 $05
-.db $FF $04 $06 $2E $12 $08 $13 $9D
-.db $EF
+SPEAK
+ENCODE("この かいだんを おりれば")
+NEWLINE
+ENCODE("ドーマのさいだんへ")
+NEWLINE
+ENCODE("いけるはずです")
+WAIT_CLICK
+SPEAK
+ENCODE("しかし いちどはいれば")
+NEWLINE
+ENCODE("もう にどと もどれないと")
+NEWLINE
+ENCODE("いわれています")
+WAIT_CLICK
+SPEAK
+ENCODE("おうじ どうか おきをつけて!")
+STOP
 
 L0ABD45:
-.db $EA $04 $02 $0B $0F $FF $20 $0C
-.db $0F $1A $50 $31 $3D $5F $0A $20
-.db $19 $ED $04 $1A $15 $0B $2E $FF
-.db $04 $06 $06 $07 $10 $0F $0A $01
-.db $EF
+SPEAK
+ENCODE("おうじ まずはマイセンさまの")
+NEWLINE
+ENCODE("おはなしを おききください")
+STOP
 
 L0ABD66:
-.db $BB $20 $27 $01 $19 $24 $29 $BC
-.db $EF
+ENCODE("[まよいのもり]")
+STOP
 
 L0ABD6F:
     LDX $0A
