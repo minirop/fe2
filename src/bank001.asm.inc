@@ -3228,38 +3228,38 @@ L01B4F3:
 L01B518:
     LDY $7DB8
     LDA ($7E),Y
-    CMP #15
+    CMP #15 ; tenten
     BEQ L01B564
-    CMP #31
+    CMP #31 ; maru
     BEQ L01B564
-    CMP #239
+    CMP #$EF
     BEQ L01B595
-    CMP #238
+    CMP #$EE
     BEQ L01B580
-    CMP #237
+    CMP #$ED
     BEQ L01B576
     CMP #171
     BEQ L01B55A
     CMP #172
     BEQ L01B55E
-    CMP #232
+    CMP #$E8
     BNE L01B545
     LDA $03AE
     BNE L01B595
     JMP L01B616.w
 
 L01B545:
-    CMP #235
+    CMP #$EB
     BNE L01B54C
     JMP L01B62C.w
 
 L01B54C:
-    CMP #234
+    CMP #$EA
     BNE L01B553
     JMP L01B637.w
 
 L01B553:
-    CMP #236
+    CMP #$EC
     BNE L01B563
     JMP L01B647.w
 
@@ -3359,10 +3359,10 @@ L01B609:
     RTS
 
 L01B616:
-    LDA #185
+    LDA #>L01B951
     STA $7F
     STA $7D
-    LDA #81
+    LDA #<L01B951
     STA $7E
     STA $7C
     LDA #0
@@ -3370,16 +3370,16 @@ L01B616:
     STA $7DAA
     BEQ L01B63F
 L01B62C:
-    LDA #186
+    LDA #>L01BA55
     STA $7F
-    LDA #85
+    LDA #<L01BA55
     STA $7E
     JMP L01B63F.w
 
 L01B637:
-    LDA #186
+    LDA #>L01BA61
     STA $7F
-    LDA #97
+    LDA #<L01BA61
     STA $7E
 L01B63F:
     LDA #0
@@ -3870,7 +3870,7 @@ ENCODE("%2は たおれた!!")
 WAIT_CLICK
 STOP
 
-; unused?
+L01BA61:
 ENCODE("%2は いきたえた!!")
 WAIT_CLICK
 STOP

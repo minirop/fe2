@@ -2125,24 +2125,26 @@ L049BCA:
 .dw L049BFE
 
 L049BD2:
-.db $1A $FF $FF $FF $61 $69 $69 $61
-.db $FF $FF $FF
+.db $1A
+ENCODE("   1991   ")
 
 L049BDD:
-.db $1A $FF $FF $A0 $A1 $A2 $A3 $A4
-.db $A5 $FF $FF
+.db $1A
+ENCODE("  ")
+NINTENDO
+ENCODE("  ")
 
 L049BE8:
-.db $1A $FF $79 $7B $6E $7C $6E $77
-.db $7D $7C $FF
+.db $1A
+ENCODE(" PRESENTS ")
 
 L049BF3:
-.db $1A $6F $72 $7B $6E $6E $76 $6B
-.db $75 $6E $76
+.db $1A
+ENCODE("FIREEMBLEM")
 
 L049BFE:
-.db $1A $FF $FF $FF $FF $FF $FF $FF
-.db $FF $FF $FF
+.db $1A
+ENCODE("          ")
 
 L049C09:
     LDA $76B8
@@ -2514,7 +2516,7 @@ L049E9B:
     INC $76B5
     RTS
 
-L049EB0:
+L049EB0: ; fire emblem logo
 .db $53 $28 $49 $FF $9A $AB $B9 $D8
 .db $D9 $E6 $E9 $DC $DD $E6 $FF $F1
 .db $F2 $C3 $BD $87 $FF $57 $94 $AA
@@ -2522,8 +2524,9 @@ L049EB0:
 .db $E7 $F0 $F3 $F4 $38 $9F $FF
 
 L049ED7:
-.db $1C $B9 $61 $69 $69 $61 $FF $A0
-.db $A1 $A2 $A3 $A4 $A5
+.db $1C
+ENCODE("©1991 ")
+NINTENDO
 
 L049EE4:
 .db $0C $23 $D9 $46 $00 $23 $DD $01
@@ -2727,710 +2730,133 @@ L04A0C2:
 .db $28
 .db $18
 .db $00
-.db $05
-.db $12
-.db $13
-.db $FF
-.db $09
-.db $19
-.db $11
-.db $0B
-.db $0F
-.db $87
-.db $02
-.db $16
-.db $ED
-.db $05
-.db $21
-.db $14
-.db $27
-.db $1A
-.db $0F
-.db $2B
-.db $2A
-.db $FF
-.db $0E
-.db $2F
-.db $0A
-.db $0F
-.db $01
-.db $05
-.db $0F
-.db $00
-.db $85
-.db $10
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $4A
-.db $0F
-.db $5B
-.db $5F
-.db $3B
-.db $30
-.db $14
-.db $27
-.db $1A
-.db $0F
-.db $2B
-.db $2A
-.db $ED
-.db $09
-.db $19
-.db $1D
-.db $2F
-.db $06
-.db $87
-.db $02
-.db $19
-.db $0B
-.db $20
-.db $16
-.db $24
-.db $ED
-.db $44
-.db $0F
-.db $3F
-.db $50
-.db $14
-.db $FF
-.db $51
-.db $58
-.db $14
-.db $01
-.db $02
-.db $ED
-.db $1C
-.db $10
-.db $29
-.db $19
-.db $06
-.db $87
-.db $02
-.db $10
-.db $0F
-.db $01
-.db $0B
-.db $2F
-.db $05
-.db $0F
-.db $01
-.db $10
-.db $ED
-.db $ED
-.db $0B
-.db $05
-.db $0B
-.db $ED
-.db $ED
-.db $11
-.db $05
-.db $28
-.db $09
-.db $0E
-.db $0C
-.db $1D
-.db $0F
-.db $13
-.db $14
-.db $FF
-.db $0B
-.db $2F
-.db $0B
-.db $0F
-.db $2A
-.db $FF
-.db $44
-.db $0F
-.db $3F
-.db $50
-.db $1A
-.db $ED
-.db $1B
-.db $14
-.db $1B
-.db $0F
-.db $14
-.db $05
-.db $0F
-.db $FF
-.db $10
-.db $0F
-.db $28
-.db $07
-.db $0C
-.db $2A
-.db $09
-.db $14
-.db $2E
-.db $FF
-.db $26
-.db $2A
-.db $0A
-.db $0C
-.db $0F
-.db $ED
-.db $ED
-.db $01
-.db $06
-.db $24
-.db $19
-.db $10
-.db $11
-.db $05
-.db $0F
-.db $FF
-.db $0B
-.db $0F
-.db $26
-.db $02
-.db $16
-.db $ED
-.db $00
-.db $0E
-.db $1B
-.db $0F
-.db $10
-.db $2D
-.db $22
-.db $2B
-.db $2A
-.db $28
-.db $07
-.db $03
-.db $2F
-.db $2E
-.db $FF
-.db $26
-.db $23
-.db $21
-.db $2A
-.db $ED
-.db $01
-.db $24
-.db $02
-.db $14
-.db $19
-.db $51
-.db $58
-.db $14
-.db $FF
-.db $1A
-.db $08
-.db $0F
-.db $0B
-.db $07
-.db $00
-.db $28
-.db $0E
-.db $85
-.db $13
-.db $01
-.db $10
-.db $ED
-.db $ED
-.db $ED
-.db $15
-.db $05
-.db $0F
-.db $01
-.db $15
-.db $05
-.db $0F
-.db $01
-.db $FF
-.db $00
-.db $2F
-.db $09
-.db $07
-.db $19
-.db $14
-.db $06
-.db $2E
-.db $1D
-.db $13
-.db $9B
-.db $9B
-.db $9B
-.db $ED
-.db $ED
-.db $ED
-.db $27
-.db $02
-.db $25
-.db $07
-.db $FF
-.db $05
-.db $2B
-.db $28
-.db $19
-.db $00
-.db $01
-.db $10
-.db $0F
-.db $16
-.db $ED
-.db $1B
-.db $14
-.db $12
-.db $19
-.db $23
-.db $01
-.db $25
-.db $07
-.db $05
-.db $0F
-.db $FF
-.db $22
-.db $0C
-.db $1A
-.db $0F
-.db $2B
-.db $2A
-.db $ED
-.db $ED
-.db $4A
-.db $0F
-.db $5B
-.db $5F
-.db $3B
-.db $30
-.db $19
-.db $10
-.db $0F
-.db $01
-.db $11
-.db $2E
-.db $FF
-.db $1C
-.db $10
-.db $12
-.db $16
-.db $2D
-.db $05
-.db $11
-.db $ED
-.db $06
-.db $10
-.db $2E
-.db $44
-.db $0F
-.db $3F
-.db $50
-.db $19
-.db $0B
-.db $1A
-.db $01
-.db $16
-.db $ED
-.db $FF
-.db $FF
-.db $21
-.db $15
-.db $21
-.db $2E
-.db $FF
-.db $51
-.db $58
-.db $19
-.db $0B
-.db $1A
-.db $01
-.db $16
-.db $14
-.db $9B
-.db $9B
-.db $9B
-.db $9B
-.db $ED
-.db $ED
-.db $ED
-.db $0E
-.db $0B
-.db $13
-.db $FF
-.db $01
-.db $07
-.db $0D
-.db $2F
-.db $18
-.db $2F
-.db $19
-.db $14
-.db $06
-.db $05
-.db $0F
-.db $15
-.db $05
-.db $0F
-.db $2B
-.db $ED
-.db $ED
-.db $0E
-.db $2B
-.db $0E
-.db $0F
-.db $2B
-.db $19
-.db $05
-.db $21
-.db $19
-.db $FF
-.db $0B
-.db $1A
-.db $01
-.db $19
-.db $24
-.db $14
-.db $16
-.db $ED
-.db $1C
-.db $10
-.db $12
-.db $19
-.db $FF
-.db $04
-.db $02
-.db $09
-.db $07
-.db $05
-.db $0F
-.db $02
-.db $20
-.db $2B
-.db $2A
-.db $ED
-.db $ED
-.db $ED
-.db $26
-.db $10
-.db $05
-.db $15
-.db $2A
-.db $05
-.db $0F
-.db $26
-.db $03
-.db $16
-.db $FF
-.db $10
-.db $0F
-.db $28
-.db $07
-.db $0B
-.db $10
-.db $ED
-.db $21
-.db $15
-.db $21
-.db $19
-.db $3E
-.db $4C
-.db $A7
-.db $30
-.db $04
-.db $02
-.db $09
-.db $07
-.db $14
-.db $ED
-.db $ED
-.db $10
-.db $07
-.db $20
-.db $0B
-.db $06
-.db $05
-.db $0F
-.db $26
-.db $03
-.db $16
-.db $FF
-.db $25
-.db $0A
-.db $0B
-.db $0A
-.db $2E
-.db $ED
-.db $2D
-.db $0C
-.db $2B
-.db $10
-.db $FF
-.db $06
-.db $10
-.db $19
-.db $59
-.db $38
-.db $0F
-.db $5A
-.db $13
-.db $01
-.db $09
-.db $07
-.db $ED
-.db $ED
-.db $ED
-.db $0E
-.db $2B
-.db $0E
-.db $0F
-.db $2B
-.db $16
-.db $FF
-.db $22
-.db $0B
-.db $0F
-.db $86
-.db $2F
-.db $2E
-.db $FF
-.db $1A
-.db $28
-.db $2F
-.db $13
-.db $0F
-.db $ED
-.db $14
-.db $06
-.db $1A
-.db $15
-.db $05
-.db $0F
-.db $2B
-.db $ED
-.db $ED
-.db $0E
-.db $0B
-.db $13
-.db $FF
-.db $12
-.db $01
-.db $16
-.db $ED
-.db $ED
-.db $ED
-.db $59
-.db $38
-.db $0F
-.db $5A
-.db $14
-.db $3E
-.db $4C
-.db $A7
-.db $30
-.db $19
-.db $FF
-.db $29
-.db $87
-.db $02
-.db $04
-.db $02
-.db $08
-.db $16
-.db $ED
-.db $4A
-.db $0F
-.db $5B
-.db $5F
-.db $3B
-.db $30
-.db $19
-.db $02
-.db $2F
-.db $23
-.db $01
-.db $2E
-.db $05
-.db $03
-.db $2A
-.db $ED
-.db $1C
-.db $10
-.db $12
-.db $19
-.db $01
-.db $19
-.db $11
-.db $05
-.db $0F
-.db $FF
-.db $10
-.db $2F
-.db $0B
-.db $0F
-.db $87
-.db $02
-.db $0C
-.db $2A
-.db $ED
-.db $ED
-.db $ED
-.db $0E
-.db $19
-.db $1B
-.db $2E
-.db $FF
-.db $0A
-.db $05
-.db $01
-.db $16
-.db $FF
-.db $4A
-.db $0F
-.db $5B
-.db $5F
-.db $3B
-.db $30
-.db $19
-.db $2B
-.db $06
-.db $0B
-.db $1A
-.db $ED
-.db $1C
-.db $10
-.db $10
-.db $1B
-.db $0F
-.db $FF
-.db $02
-.db $09
-.db $0F
-.db $06
-.db $1A
-.db $0B
-.db $0F
-.db $23
-.db $ED
-.db $1A
-.db $08
-.db $0F
-.db $0B
-.db $01
-.db $FF
-.db $0D
-.db $2F
-.db $28
-.db $2F
-.db $19
-.db $0B
-.db $0F
-.db $10
-.db $0F
-.db $01
-.db $2E
-.db $FF
-.db $22
-.db $05
-.db $03
-.db $13
-.db $26
-.db $07
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $EF
-.db $19
-.db $11
-.db $19
-.db $27
-.db $16
-.db $FF
-.db $1B
-.db $14
-.db $1A
-.db $FF
-.db $01
-.db $02
-.db $ED
-.db $ED
-.db $05
-.db $21
-.db $05
-.db $0F
-.db $21
-.db $19
-.db $FF
-.db $00
-.db $0B
-.db $06
-.db $07
-.db $0A
-.db $29
-.db $2E
-.db $10
-.db $11
-.db $06
-.db $29
-.db $ED
-.db $2D
-.db $05
-.db $0F
-.db $FF
-.db $0D
-.db $2F
-.db $18
-.db $2F
-.db $04
-.db $02
-.db $11
-.db $87
-.db $02
-.db $2E
-.db $FF
-.db $06
-.db $0C
-.db $0F
-.db $06
-.db $0B
-.db $24
-.db $19
-.db $ED
-.db $ED
-.db $2D
-.db $0C
-.db $2B
-.db $2A
-.db $15
-.db $05
-.db $2B
-.db $ED
-.db $2D
-.db $05
-.db $0F
-.db $FF
-.db $0D
-.db $01
-.db $04
-.db $02
-.db $19
-.db $FF
-.db $24
-.db $19
-.db $05
-.db $0F
-.db $10
-.db $29
-.db $2E
-.db $9D
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $ED
-.db $EF
+
+
+ENCODE("かつて このちじょうに")
+NEWLINE
+ENCODE("かみとよばれる そんざいがあった")
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+ENCODE("バレンシアとよばれる")
+NEWLINE
+ENCODE("このへんきょうのしまにも")
+NEWLINE
+ENCODE("ドーマと ミラという")
+NEWLINE
+ENCODE("ふたりのきょうだいしんがいた")
+NEWLINE
+NEWLINE
+ENCODE("しかし")
+NEWLINE
+NEWLINE
+ENCODE("ちからこそすべてと しんじる ドーマは")
+NEWLINE
+ENCODE("ひとびとが だらくすることを ゆるさず")
+NEWLINE
+NEWLINE
+ENCODE("いきものたちが じゆうに")
+NEWLINE
+ENCODE("あそびたわむれるらくえんを ゆめみる")
+NEWLINE
+ENCODE("いもうとのミラと はげしくあらそっていた")
+NEWLINE
+NEWLINE
+NEWLINE
+ENCODE("ながいながい あんこくのときをへて···")
+NEWLINE
+NEWLINE
+NEWLINE
+ENCODE("ようやく かれらのあいだに")
+NEWLINE
+ENCODE("ひとつのめいやくが むすばれる")
+NEWLINE
+NEWLINE
+ENCODE("バレンシアのだいちを ふたつにわかち")
+NEWLINE
+ENCODE("きたをドーマのしはいに")
+NEWLINE
+ENCODE("  みなみを ミラのしはいにと····")
+NEWLINE
+NEWLINE
+NEWLINE
+ENCODE("そして いくせんねんのときがながれ")
+NEWLINE
+NEWLINE
+ENCODE("それぞれのかみの しはいのもとに")
+NEWLINE
+ENCODE("ふたつの おうこくがうまれる")
+NEWLINE
+NEWLINE
+NEWLINE
+ENCODE("ゆたかなるがゆえに だらくした")
+NEWLINE
+ENCODE("みなみのソフィアおうこくと")
+NEWLINE
+NEWLINE
+ENCODE("たくましきがゆえに やさしさを")
+NEWLINE
+ENCODE("わすれた きたのリゲルていこく")
+NEWLINE
+NEWLINE
+NEWLINE
+ENCODE("それぞれに むじゅんを はらんで")
+NEWLINE
+ENCODE("ときはながれ")
+NEWLINE
+NEWLINE
+ENCODE("そして ついに")
+NEWLINE
+NEWLINE
+NEWLINE
+ENCODE("リゲルとソフィアの りょうおうけに")
+NEWLINE
+ENCODE("バレンシアのうんめいをかえる")
+NEWLINE
+ENCODE("ふたつのいのちが たんじょうする")
+NEWLINE
+NEWLINE
+NEWLINE
+ENCODE("そのひを さかいに バレンシアのれきしは")
+NEWLINE
+ENCODE("ふたたび うごきはじめ")
+NEWLINE
+ENCODE("はげしい せんらんのじだいを むかえてゆく")
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+STOP
+
+; unknown where it is shown
+; some characters (like "わが"?) might be control codes
+ENCODE("のちのよに ひとは いう")
+NEWLINE
+NEWLINE
+ENCODE("かみがみの あしきくさりをたちきり")
+NEWLINE
+ENCODE("わが せんねんおうちょうを きずきしもの")
+NEWLINE
+NEWLINE
+ENCODE("わすれるなかれ")
+NEWLINE
+ENCODE("わが せいおうの ものがたりを!")
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+NEWLINE
+STOP
 
 L04A3A7:
     JSR L0FF807.w
