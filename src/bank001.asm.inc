@@ -3780,141 +3780,98 @@ L01B8A0:
 .dw L01BF5E
 
 L01B920:
-PLACEHOLDER(0)
-ENCODE("は しょうめつした!")
+ENCODE("%0は しょうめつした!")
 NEWLINE
 WAIT_CLICK
 STOP
 
 L01B92F:
-PLACEHOLDER(0)
-ENCODE("は しょうめつした!")
+ENCODE("%0は しょうめつした!")
 NEWLINE
-PLACEHOLDER(2)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("のけいけんちをえた!!")
+ENCODE("%2は %1のけいけんちをえた!!")
 NEWLINE
 ENCODE(" ")
 WAIT_CLICK
 STOP
 
 L01B951:
-PLACEHOLDER(0)
-ENCODE("を たおした!!")
+ENCODE("%0を たおした!!")
 NEWLINE
-PLACEHOLDER(2)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("のけいけんちをえた!!")
+ENCODE("%2は %1のけいけんちをえた!!")
 NEWLINE
 ENCODE(" ")
 WAIT_CLICK
 STOP
 
 L01B971:
-PLACEHOLDER(3)
-ENCODE("かいヒット!!")
+ENCODE("%3かいヒット!!")
 NEWLINE
-PLACEHOLDER(2)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("のけいけんちをえた")
+ENCODE("%2は %1のけいけんちをえた")
 NEWLINE
 ENCODE(" ")
 WAIT_CLICK
 STOP
 
 L01B98E:
-PLACEHOLDER(0)
-ENCODE("を たおした!!")
+ENCODE("%0を たおした!!")
 NEWLINE
 STOP
 
 L01B99A:
-PLACEHOLDER(2)
-ENCODE("は")
+ENCODE("%2は")
 NEWLINE
-ENCODE("レベルが")
-PLACEHOLDER(1)
-ENCODE("になった!")
+ENCODE("レベルが%1になった!")
 STOP
 
 L01B9AC:
-PLACEHOLDER(0)
-ENCODE("が ")
-PLACEHOLDER(1)
-ENCODE("あがった!")
+ENCODE("%0が %1あがった!")
 STOP
 
 ; unused?
-PLACEHOLDER(2)
-ENCODE("は たおれた!!")
+ENCODE("%2は たおれた!!")
 WAIT_CLICK
 STOP
 
 L01B9C6:
-PLACEHOLDER(0)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("をもっていた!!")
+ENCODE("%0は %1をもっていた!!")
 NEWLINE
-PLACEHOLDER(2)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("をてにいれた!")
+ENCODE("%2は %1をてにいれた!")
 STOP
 
 L01B9E3:
-PLACEHOLDER(0)
-ENCODE("のじゅもんをおぼえた!")
+ENCODE("%0のじゅもんをおぼえた!")
 STOP
 
 L01B9F3:
-PLACEHOLDER(2)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("のけいけんちをえた")
+ENCODE("%2は %1のけいけんちをえた")
 NEWLINE
 WAIT_CLICK
 STOP
 
 L01BA05:
-PLACEHOLDER(2)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("にクラスチェンジできます")
+ENCODE("%2は %1にクラスチェンジできます")
 NEWLINE
 STOP
 
 L01BA1B:
-PLACEHOLDER(2)
-ENCODE("は クラスチェンジできます")
+ENCODE("%2は クラスチェンジできます")
 NEWLINE
 STOP
 
 L01BA2E:
-PLACEHOLDER(0)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("をもっていた!!")
+ENCODE("%0は %1をもっていた!!")
 NEWLINE
-PLACEHOLDER(2)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("をあずかりじょにあずけた!")
+ENCODE("%2は %1をあずかりじょにあずけた!")
 WAIT_CLICK
 STOP
 
 L01BA55:
-PLACEHOLDER(2)
-ENCODE("は たおれた!!")
+ENCODE("%2は たおれた!!")
 WAIT_CLICK
 STOP
 
 ; unused?
-PLACEHOLDER(2)
-ENCODE("は いきたえた!!")
+ENCODE("%2は いきたえた!!")
 WAIT_CLICK
 STOP
 

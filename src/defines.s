@@ -6,10 +6,6 @@
 .db $EA
 .ENDM
 
-.MACRO PLACEHOLDER
-.db $EC \1
-.ENDM
-
 .MACRO NEWLINE
 .db $ED
 .ENDM

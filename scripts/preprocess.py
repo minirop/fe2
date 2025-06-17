@@ -14,9 +14,22 @@ with open(f'{dir_path}/kana.tbl', 'r') as f:
 def mapper(match):
     jp = match.group(1)
     output = [".db"]
+    percent = False
     for c in jp:
-        if c == ' ':
+        if percent:
+            match c:
+                case '0' | '1' | '2' | '3':
+                    output.append("$EC")
+                    output.append(f"$0{c}")
+                case '%':
+                    output.append(mapping[c])
+                case _:
+                    raise ValueError(f"Only numbers 0 to 3 and '%' are possible after a '%'. got '{c}'.")
+            percent = False
+        elif c == ' ':
             output.append("$FF")
+        elif c == '%':
+            percent = True
         else:
             for code in mapping[c]:
                 output.append(f"${code}")

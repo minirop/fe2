@@ -6713,21 +6713,16 @@ L0BB211:
 .db $30 $90 $12 $04
 .db $E9 $01
 .db $E0
-PLACEHOLDER(0)
-ENCODE(" は")
+ENCODE("%0 は")
 NEWLINE
-PLACEHOLDER(1)
-ENCODE(" をとなえた")
+ENCODE("%1 をとなえた")
 STOP
 
 L0BB226:
 .db $40 $90 $14 $04
 .db $E9 $01
 .db $E0
-PLACEHOLDER(0)
-ENCODE("は ")
-PLACEHOLDER(1)
-ENCODE("に")
+ENCODE("%0は %1に")
 NEWLINE
 ENCODE("なることをのぞみますか?")
 NEWLINE
@@ -6739,19 +6734,13 @@ ENCODE("マタい")
 .db $E2
 
 L0BB249:
-PLACEHOLDER(0)
-ENCODE("は")
-PLACEHOLDER(1)
-ENCODE("に")
+ENCODE("%0は%1に")
 NEWLINE
 ENCODE("クラスチェンジした!!!")
 .db $E7
 
 L0BB25E:
-PLACEHOLDER(0)
-ENCODE("は")
-PLACEHOLDER(1)
-ENCODE("に")
+ENCODE("%0は%1に")
 NEWLINE
 ENCODE("クラスチェンジするのを")
 NEWLINE
@@ -6788,10 +6777,7 @@ ENCODE(" ")
 STOP
 
 L0BB2EA:
-PLACEHOLDER(0)
-ENCODE("は")
-PLACEHOLDER(1)
-ENCODE("に")
+ENCODE("%0は%1に")
 NEWLINE
 ENCODE("クラスチェンジした!!!")
 NEWLINE
@@ -6802,113 +6788,78 @@ L0BB312:
 .db $30 $90 $12 $04
 .db $E9 $01
 .db $E0
-PLACEHOLDER(0)
-ENCODE(" は")
-PLACEHOLDER(1)
-ENCODE("に")
+ENCODE("%0 は%1に")
 NEWLINE
-PLACEHOLDER(2)
-ENCODE(" をわたした")
+ENCODE("%2 をわたした")
 STOP
 
 L0BB32A:
 .db $40 $90 $12 $04
 .db $E9 $01
 .db $E0
-PLACEHOLDER(0)
-ENCODE(" は")
-PLACEHOLDER(1)
-ENCODE("から")
+ENCODE("%0 は%1から")
 NEWLINE
-PLACEHOLDER(3)
-ENCODE(" をうけとった")
+ENCODE("%3 をうけとった")
 STOP
 
 L0BB344:
 .db $40 $90 $12 $04
 .db $E9 $01
 .db $E0
-PLACEHOLDER(0)
-ENCODE("と ")
-PLACEHOLDER(1)
-ENCODE("は")
+ENCODE("%0と %1は")
 NEWLINE
-PLACEHOLDER(2)
-ENCODE("と")
+ENCODE("%2と")
 NEWLINE
-PLACEHOLDER(3)
-ENCODE("を こうかんした")
+ENCODE("%3を こうかんした")
 STOP
 
 L0BB362:
 .db $40 $90 $12 $04
 .db $E9 $01
 .db $E0
-PLACEHOLDER(0)
-ENCODE(" は")
+ENCODE("%0 は")
 NEWLINE
-PLACEHOLDER(1)
-ENCODE(" をすてた")
+ENCODE("%1 をすてた")
 STOP
 
 L0BB376:
-ENCODE("たいりょくが")
-PLACEHOLDER(2)
-ENCODE("かいふくした")
+ENCODE("たいりょくが%2かいふくした")
 STOP
 
 L0BB386:
-ENCODE("しゅびりょくが")
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("しゅびりょくが%2あがった")
 .db $E7
 
 L0BB397:
-ENCODE("まほうぼうぎょが")
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("まほうぼうぎょが%2あがった")
 STOP
 
 L0BB3AA:
-ENCODE("いどうりょくが")
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("いどうりょくが%2あがった")
 STOP
 
 L0BB3BB:
-ENCODE("ぶきレベルが")
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("ぶきレベルが%2あがった")
 STOP
 
 L0BB3CC:
-ENCODE("わざが")
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("わざが%2あがった")
 .db $E7
 
 L0BB3D9:
-ENCODE("ちからが")
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("ちからが%2あがった")
 .db $E7
 
 L0BB3E6:
-ENCODE("さくてきが")
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("さくてきが%2あがった")
 .db $E7
 
 L0BB3F4:
-ENCODE("すばやさが")
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("すばやさが%2あがった")
 .db $E7
 
 L0BB403:
-ENCODE("うんが")
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("うんが%2あがった")
 .db $E7
 
 L0BB40F:
@@ -6917,8 +6868,7 @@ ENCODE("さいだいヒットポイントが")
 ENCODE("ら")
 
 L0BB421:
-PLACEHOLDER(2)
-ENCODE("あがった")
+ENCODE("%2あがった")
 .db $E7
 
 L0BB429:
@@ -6953,8 +6903,7 @@ WAIT_CLICK
 ENCODE("ト")
 
 L0BB498:
-PLACEHOLDER(0)
-ENCODE(" を")
+ENCODE("%0 を")
 NEWLINE
 ENCODE("しょじひんにいれました")
 STOP
@@ -6962,14 +6911,13 @@ STOP
 L0BB4AA:
 ENCODE("なにかすててください")
 .db $E7
+
 L0BB4B6:
-PLACEHOLDER(1)
-ENCODE(" をすてた")
+ENCODE("%1 をすてた")
 STOP
 
 L0BB4BE:
-PLACEHOLDER(0)
-ENCODE(" をすてた")
+ENCODE("%0 をすてた")
 STOP
 
 L0BB4C6:
