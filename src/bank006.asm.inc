@@ -1751,6 +1751,7 @@ L0690F6:
     LDA $059C
     JSR L0FC34C.w
 
+L0690FC: ; where?
 .dw L06910A
 .dw L06917F
 .dw L069197
@@ -1914,6 +1915,7 @@ L06920A:
     LDA $059C
     JSR L0FC34C.w
 
+L069213: ; where?
 .dw L069219
 .dw L06922D
 .dw L069235
@@ -2971,6 +2973,7 @@ L0699E0:
     TXA
     JSR L0FC34C.w
 
+L0699EE: ; where?
 .dw L069A0C
 .dw L069A0C
 .dw L069A09
@@ -3839,7 +3842,7 @@ L06A05D:
     LDA $059C
     JSR L0FC34C.w
 
-L06A063:
+L06A063: ; where?
 .dw L06A3B9
 .dw L06A3D5
 .dw L06A06F
@@ -4389,6 +4392,7 @@ L06A42B:
     LDA $059C
     JSR L0FC34C.w
 
+L06A431: ; where?
 .dw L06A439
 .dw L06A44D
 .dw L06A4B8
@@ -5107,6 +5111,7 @@ L06A970:
     LDA $059C
     JSR L0FC34C.w
 
+L06A979: ; where?
 .dw L06A98F
 .dw L06A981
 .dw L06A2DB
@@ -5850,6 +5855,7 @@ L06AECD:
     LDA $059C
     JSR L0FC34C.w
 
+L06AED3: ; where?
 .dw L06AF36
 .dw L06AFDE
 .dw L06AF22
@@ -6045,6 +6051,7 @@ L06B03D:
     LDA $059C
     JSR L0FC34C.w
 
+L06B046: ; where?
 .dw L06B058
 .dw L06A3D5
 .dw L06B0C6
@@ -6320,6 +6327,7 @@ L06B23C:
     LDA $059C
     JSR L0FC34C.w
 
+L06B242: ; where?
 .dw L06B246
 .dw L06B25C
 
@@ -6363,6 +6371,7 @@ L06B27F:
     LDA $059C
     JSR L0FC34C.w
 
+L06B288: ; where?
 .dw L06B28E
 .dw L06B296
 .dw L06B2F5
@@ -6454,6 +6463,7 @@ L06B32D:
     LDA $059C
     JSR L0FC34C.w
 
+L06B336: ; where?
 .dw L06B33E
 .dw L06B346
 .dw L06B354
@@ -6896,6 +6906,7 @@ L06B62F:
     LDA $8A
     JSR L0FC34C.w
 
+L06B637:
 .dw L06B64B
 .dw L06B672
 .dw L06B67E
@@ -7016,6 +7027,7 @@ L06B6EB:
     LDA $05AD
     JSR L0FC34C.w
 
+L06B6FE: ; where?
 .dw L0FC73D
 .dw L06B706
 .dw L06B7A5
@@ -7324,6 +7336,7 @@ L06B91A:
     LDA $059C
     JSR L0FC34C.w
 
+L06B926: ; where?
 .dw L06B92C
 .dw L06A3D5
 .dw L06B98A
@@ -7701,6 +7714,7 @@ L06BBAD:
     TXA
     JSR L0FC34C.w
 
+L06BBB2:
 .dw L06BC58
 .dw L06BC90
 .dw L06BCC9
@@ -8000,6 +8014,7 @@ L06BDD3:
     JSR L06BE1A.w
     JSR L0FC34C.w
 
+L06BDE5: ; where?
 .dw L06BC58
 .dw L06BD01
 .dw L06BC90
@@ -8198,6 +8213,7 @@ L06BF52:
 L06BF53:
     RTS
 
+L06BF54: ; where?
 .db $FF
 .db $FF
 .db $0F

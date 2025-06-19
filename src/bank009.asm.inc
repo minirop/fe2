@@ -1918,7 +1918,7 @@ L_GROWTH_RATES:
 .dw L098EED
 .dw L098EF3
 
-; STR SKL SPD LCK DEF HP
+;   STR SKL SPD LCK DEF HP
 L098E2D:
 .db $23 $28 $1E $14 $1E $32
 
@@ -3541,15 +3541,15 @@ L09ACF1:
     STA $7DE1,X
     LDA #36
     STA $0400
-    LDA #174
+    LDA #>L09AE4F
     STA $45
-    LDA #79
+    LDA #<L09AE4F
     STA $44
     LDX #0
     JSR L09AD75.w
-    LDA #174
+    LDA #>L09AE73
     STA $45
-    LDA #115
+    LDA #<L09AE73
     STA $44
     LDX #3
     JSR L09AD75.w
@@ -3734,78 +3734,19 @@ L09AE46:
     STA $7DD4
     RTS
 
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
-.db $08
-.db $08
-.db $08
-.db $08
-.db $08
-.db $08
-.db $10
-.db $10
-.db $10
-.db $10
-.db $10
-.db $10
-.db $18
-.db $18
-.db $18
-.db $18
-.db $18
-.db $18
-.db $20
-.db $20
-.db $20
-.db $20
-.db $20
-.db $20
-.db $28
-.db $28
-.db $28
-.db $28
-.db $28
-.db $28
-.db $F0
-.db $F8
-.db $00
-.db $08
-.db $10
-.db $18
-.db $F0
-.db $F8
-.db $00
-.db $08
-.db $10
-.db $18
-.db $F0
-.db $F8
-.db $00
-.db $08
-.db $10
-.db $18
-.db $F0
-.db $F8
-.db $00
-.db $08
-.db $10
-.db $18
-.db $F0
-.db $F8
-.db $00
-.db $08
-.db $10
-.db $18
-.db $F0
-.db $F8
-.db $00
-.db $08
-.db $10
-.db $18
+L09AE4F:
+.db $00 $00 $00 $00 $00 $00 $08 $08
+.db $08 $08 $08 $08 $10 $10 $10 $10
+.db $10 $10 $18 $18 $18 $18 $18 $18
+.db $20 $20 $20 $20 $20 $20 $28 $28
+.db $28 $28 $28 $28
+
+L09AE73:
+.db $F0 $F8 $00 $08 $10 $18 $F0 $F8
+.db $00 $08 $10 $18 $F0 $F8 $00 $08
+.db $10 $18 $F0 $F8 $00 $08 $10 $18
+.db $F0 $F8 $00 $08 $10 $18 $F0 $F8
+.db $00 $08 $10 $18
 
 L09AE97: ; portraits
 .dw L09B091

@@ -29,9 +29,9 @@ Just type `make`.
     - tiles "collision"
     - audio
     - where are, the unlabelled bytes, used
-- How graphics are used/built
+- How graphics are used/built/located
+    - portraits (L09AE97)
     - battle sprites
-    - backgrounds (during battles)
     - UI
     - the cursor
 - And everything else

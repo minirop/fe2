@@ -2825,9 +2825,9 @@ L01B224:
     RTS
 
 L01B247:
-    LDA #173
+    LDA #<L0FDCAD
     STA $0A
-    LDA #220
+    LDA #>L0FDCAD
     STA $0B
     CLC
     LDA $0394

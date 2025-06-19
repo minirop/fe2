@@ -1874,9 +1874,9 @@ L0D8FD1:
     JMP L0D8ED4.w
 
 L0D8FD4:
-    LDA #249
+    LDA #<L0D8FF9
     STA $04
-    LDA #143
+    LDA #>L0D8FF9
     STA $05
     LDY #0
 L0D8FDE:
@@ -1898,11 +1898,7 @@ L0D8FF6:
     JMP L0D8ED4.w
 
 L0D8FF9:
-.db $06
-.db $09
-.db $09
-.db $0F
-.db $EF
+.db $06 $09 $09 $0F $EF
 
 L0D8FFE:
     LDA $8A

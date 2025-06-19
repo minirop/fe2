@@ -3229,7 +3229,7 @@ L0799B7:
     TAX
     LDA L07AB26.w,X
     BEQ L0799E8
-    CMP #255
+    CMP #$FF
     BEQ L0799E6
     CMP $00
     BNE L0799CF
@@ -5734,173 +5734,54 @@ L07AB24:
 L07AB25:
 .db $04
 
-L07AB26: ; dunno how long is the array
+L07AB26:
+; index 0 = ???
+; index 1 = ???
+; index 2 = index into L07ABD3
+; index 3 = half-length of entry array
 .db $02 $03 $00 $01
 .db $03 $04 $01 $03
-.db $04
-.db $05
-.db $02
-.db $03
-.db $05
-.db $06
-.db $03
-.db $02
-.db $06
-.db $07
-.db $04
-.db $02
-.db $09
-.db $0A
-.db $05
-.db $02
-.db $0A
-.db $0B
-.db $06
-.db $01
-.db $0C
-.db $0D
-.db $07
-.db $01
-.db $0C
-.db $0E
-.db $08
-.db $02
-.db $10
-.db $11
-.db $09
-.db $02
-.db $11
-.db $12
-.db $0A
-.db $02
-.db $11
-.db $1B
-.db $0B
-.db $02
-.db $13
-.db $14
-.db $0C
-.db $04
-.db $14
-.db $19
-.db $0D
-.db $04
-.db $19
-.db $1A
-.db $0E
-.db $03
-.db $15
-.db $16
-.db $0F
-.db $03
-.db $15
-.db $17
-.db $10
-.db $03
-.db $17
-.db $18
-.db $11
-.db $03
-.db $16
-.db $18
-.db $12
-.db $02
-.db $1C
-.db $1D
-.db $13
-.db $02
-.db $1D
-.db $1E
-.db $14
-.db $02
-.db $1E
-.db $1F
-.db $15
-.db $03
-.db $1F
-.db $20
-.db $16
-.db $03
-.db $20
-.db $21
-.db $29
-.db $04
-.db $21
-.db $22
-.db $17
-.db $04
-.db $21
-.db $26
-.db $18
-.db $03
-.db $26
-.db $27
-.db $19
-.db $03
-.db $27
-.db $28
-.db $1A
-.db $02
-.db $23
-.db $24
-.db $1C
-.db $02
-.db $24
-.db $25
-.db $1D
-.db $02
-.db $25
-.db $29
-.db $1E
-.db $04
-.db $29
-.db $2A
-.db $1F
-.db $04
-.db $2B
-.db $2C
-.db $20
-.db $04
-.db $2C
-.db $2D
-.db $21
-.db $04
-.db $2E
-.db $2F
-.db $23
-.db $02
-.db $07
-.db $39
-.db $24
-.db $02
-.db $3F
-.db $2B
-.db $25
-.db $05
-.db $1A
-.db $3E
-.db $26
-.db $04
-.db $45
-.db $23
-.db $27
-.db $02
-.db $30
-.db $4D
-.db $28
-.db $03
-.db $16
-.db $3D
-.db $12
-.db $02
-.db $17
-.db $3D
-.db $11
-.db $03
-.db $00
-.db $00
-.db $00
-.db $00
+.db $04 $05 $02 $03
+.db $05 $06 $03 $02
+.db $06 $07 $04 $02
+.db $09 $0A $05 $02
+.db $0A $0B $06 $01
+.db $0C $0D $07 $01
+.db $0C $0E $08 $02
+.db $10 $11 $09 $02
+.db $11 $12 $0A $02
+.db $11 $1B $0B $02
+.db $13 $14 $0C $04
+.db $14 $19 $0D $04
+.db $19 $1A $0E $03
+.db $15 $16 $0F $03
+.db $15 $17 $10 $03
+.db $17 $18 $11 $03
+.db $16 $18 $12 $02
+.db $1C $1D $13 $02
+.db $1D $1E $14 $02
+.db $1E $1F $15 $03
+.db $1F $20 $16 $03
+.db $20 $21 $29 $04
+.db $21 $22 $17 $04
+.db $21 $26 $18 $03
+.db $26 $27 $19 $03
+.db $27 $28 $1A $02
+.db $23 $24 $1C $02
+.db $24 $25 $1D $02
+.db $25 $29 $1E $04
+.db $29 $2A $1F $04
+.db $2B $2C $20 $04
+.db $2C $2D $21 $04
+.db $2E $2F $23 $02
+.db $07 $39 $24 $02
+.db $3F $2B $25 $05
+.db $1A $3E $26 $04
+.db $45 $23 $27 $02
+.db $30 $4D $28 $03
+.db $16 $3D $12 $02
+.db $17 $3D $11 $03
+.db $00 $00 $00 $00
 .db $FF
 
 L07ABD3:
@@ -6030,7 +5911,7 @@ L07ACA9:
 L07ACAF:
 .db $0E $0D $0E $0A
 
-L07ACB3:
+L07ACB3: ; unused?
 .db $04 $0C $04 $09
 
 L07ACB7:
@@ -6073,8 +5954,8 @@ L07ACFD:
 L07AD03:
 .db $09 $10 $09 $0E $08 $0E $08 $0D
 
-L07AD0B:
-.db $85 ; unknown where it stops
+L07AD0B: ; unused, unknown where it stops (if it even has a size)
+.db $85
 .db $04
 .db $A9
 .db $00
