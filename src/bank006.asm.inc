@@ -7286,7 +7286,7 @@ L06B8A1:
     STA $6CC0
     LDA L0FEF8E.w
     STA $6C9C
-    LDA L0FEF8F.w
+    LDA (L0FEF8E.w + 1)
     STA $6CAE
     LDA #16
     STA $2A

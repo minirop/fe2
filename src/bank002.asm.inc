@@ -86,8 +86,15 @@ L_TILEMAPS:
 .dw L02B490
 .dw L02B490
 
-L0280A2: ; world map
+L0280A2:
+; "0280A2.bin" has a "bug". contains "02 CB 06 CB" when it
+; should be "08 CB", the map compiler generates "08 CB"
+; hence why we need this
+.IFDEF NONMATCHING
+.INCBIN "worldmap.bin"
+.ELSE
 .INCBIN "0280A2.bin"
+.ENDIF
 
 L0284EE:
 .INCBIN "first-battle-of-southern-zofia.bin"
