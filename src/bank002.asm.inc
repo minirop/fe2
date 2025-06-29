@@ -87,8 +87,8 @@ L_TILEMAPS:
 .dw L02B490
 
 L0280A2:
-; "0280A2.bin" has a "bug". contains "02 CB 06 CB" when it
-; should be "08 CB", the map compiler generates "08 CB"
+; Contains "02 CB 06 CB" when it should be "08 CB"
+; the map compiler generates "08 CB"
 ; hence why we need this
 .IFDEF NONMATCHING
 .INCBIN "worldmap.bin"
@@ -106,133 +106,148 @@ L02860B:
 .INCBIN "ram-woods.bin"
 
 L028671:
+; Has a useless "01"
+.IFDEF NONMATCHING
+.INCBIN "forest-crossroads.bin"
+.ELSE
 .INCBIN "028671.bin"
+.ENDIF
 
 L028760:
-.INCBIN "028760.bin"
+.INCBIN "zofia-forest.bin"
 
 L028830:
-.INCBIN "028830.bin"
+.INCBIN "fleecers-forest.bin"
 
 L0289AC:
-.INCBIN "0289AC.bin"
+.INCBIN "rigel-forest.bin"
 
 L028C36:
-.INCBIN "028C36.bin"
+.INCBIN "storming-of-the-valley-approach.bin"
 
 L028D75:
+; Has a useless "01"
+.IFDEF NONMATCHING
+.INCBIN "fear-mountain-battle.bin"
+.ELSE
 .INCBIN "028D75.bin"
+.ENDIF
 
 L028F1C:
-.INCBIN "028F1C.bin"
+.INCBIN "desert-battle.bin"
 
 L028FC2:
-.INCBIN "028FC2.bin"
+.INCBIN "pirate-raid.bin"
 
 L029090:
-.INCBIN "029090.bin"
+.INCBIN "pirate-raid-2.bin"
 
 L02917B:
-.INCBIN "02917B.bin"
+.INCBIN "dead-mans-mire.bin"
 
 L02927D:
-.INCBIN "02927D.bin"
+.INCBIN "rigel-castle.bin"
 
 L029393:
-.INCBIN "029393.bin"
+.INCBIN "zofia-castle.bin"
 
 L0294E9:
-.INCBIN "0294E9.bin"
+.INCBIN "beast-hunt.bin"
 
 L02959C:
-.INCBIN "02959C.bin"
+.INCBIN "southern-outpost.bin"
 
 L02964F:
-.INCBIN "02964F.bin"
+.INCBIN "forest-skirmish.bin"
 
 L0296CE:
-.INCBIN "0296CE.bin"
+.INCBIN "pirate-throne.bin"
 
 L0297C1:
-.INCBIN "0297C1.bin"
+.INCBIN "northern-gate-of-castle-sofia.bin"
 
 L0298E4:
-.INCBIN "0298E4.bin"
+.INCBIN "desert-stronghold.bin"
 
 L0299FD:
-.INCBIN "0299FD.bin"
+.INCBIN "grieths-citadel.bin"
 
 L029C2B:
-.INCBIN "029C2B.bin"
+.INCBIN "temple-of-mila.bin"
 
 L029D95:
+; Contains "02 D0 07 D0 D0 D0" when it should be "0B D0"
+.IFDEF NONMATCHING
+.INCBIN "desaixs-fortress.bin"
+.ELSE
 .INCBIN "029D95.bin"
+.ENDIF
 
 L029EE0:
-.INCBIN "029EE0.bin"
+.INCBIN "sluice-gate.bin"
 
 L029FFE:
-.INCBIN "029FFE.bin"
+.INCBIN "nuibabas-abode.bin"
 
 L02A24B:
-.INCBIN "02A24B.bin"
+.INCBIN "attack-on-the-last-bastion.bin"
 
 L02A43F:
-.INCBIN "02A43F.bin"
+.INCBIN "fire-skirmish.bin"
 
 L02A650:
-.INCBIN "02A650.bin"
+.INCBIN "dolth-keep.bin"
 
 L02A72C:
-.INCBIN "02A72C.bin"
+.INCBIN "dragons-maw.bin"
 
 L02A8E0:
-.INCBIN "02A8E0.bin"
+.INCBIN "rigel-falls-battle.bin"
 
 L02AA6A:
-.INCBIN "02AA6A.bin"
+.INCBIN "duma-gate.bin"
 
 L02ABC2:
-.INCBIN "02ABC2.bin"
+.INCBIN "zofian-coast.bin"
 
 L02ACD0:
-.INCBIN "02ACD0.bin"
+.INCBIN "fear-mountain-shrine.bin"
 
 L02AE2B:
-.INCBIN "02AE2B.bin"
+.INCBIN "cave-room.bin"
 
 L02AECF:
-.INCBIN "02AECF.bin"
+.INCBIN "duma-tower-1.bin"
 
 L02AF3E:
-.INCBIN "02AF3E.bin"
+.INCBIN "duma-tower-2.bin"
 
 L02B01F:
-.INCBIN "02B01F.bin"
+.INCBIN "duma-tower-3.bin"
 
 L02B066:
-.INCBIN "02B066.bin"
+.INCBIN "final-battle.bin"
 
 L02B26D:
-.INCBIN "02B26D.bin"
+.INCBIN "duma-temple-4.bin"
 
 L02B2CC:
-.INCBIN "02B2CC.bin"
+.INCBIN "duma-temple-5.bin"
 
 L02B322:
-.INCBIN "02B322.bin"
+.INCBIN "duma-temple-6.bin"
 
 L02B378:
-.INCBIN "02B378.bin"
+.INCBIN "duma-temple-1.bin"
 
 L02B401:
-.INCBIN "02B401.bin"
+.INCBIN "duma-temple-2.bin"
 
 L02B45A:
-.INCBIN "02B45A.bin"
+.INCBIN "duma-temple-3.bin"
 
 L02B490:
-.INCBIN "02B490.bin"
+.INCBIN "lost-treescape-battleground.bin"
 
 L02B4D8: ; duma tower
 .dw L02B4EA

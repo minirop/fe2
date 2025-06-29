@@ -22,6 +22,7 @@ Just type `make`.
 ## What to do?
 
 - Converts remaining maps into .tmx
+- Find better names for maps (especially those used more than once)
 - Same with portraits/battlers? or png + metadata?
 - Understand the data
     - items (how are their effect applied?)

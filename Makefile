@@ -32,10 +32,53 @@ encoding:
 	@python scripts/preprocess.py src/bank015.asm.inc src/bank015.asm
 
 maps:
-	@fe2-tiled maps/worldmap.tmx
-	@fe2-tiled maps/ram-woods.tmx
-	@fe2-tiled maps/first-battle-of-southern-zofia.tmx
-	@fe2-tiled maps/second-battle-of-southern-zofia.tmx
+	@fe2-tiled -e maps/worldmap.tmx
+	@fe2-tiled -e maps/ram-woods.tmx
+	@fe2-tiled -e maps/first-battle-of-southern-zofia.tmx
+	@fe2-tiled -e maps/second-battle-of-southern-zofia.tmx
+	@fe2-tiled -e maps/storming-of-the-valley-approach.tmx
+	@fe2-tiled -e maps/fear-mountain-battle.tmx
+	@fe2-tiled -e maps/desert-battle.tmx
+	@fe2-tiled -e maps/pirate-raid.tmx
+	@fe2-tiled -e maps/pirate-raid-2.tmx
+	@fe2-tiled -e maps/rigel-falls-battle.tmx
+	@fe2-tiled -e maps/attack-on-the-last-bastion.tmx
+	@fe2-tiled -e maps/fire-skirmish.tmx
+	@fe2-tiled -e maps/dragons-maw.tmx
+	@fe2-tiled -e maps/dolth-keep.tmx
+	@fe2-tiled -e maps/duma-gate.tmx
+	@fe2-tiled -e maps/southern-outpost.tmx
+	@fe2-tiled -e maps/forest-skirmish.tmx
+	@fe2-tiled -e maps/zofian-coast.tmx
+	@fe2-tiled -e maps/temple-of-mila.tmx
+	@fe2-tiled -e maps/grieths-citadel.tmx
+	@fe2-tiled -e maps/dead-mans-mire.tmx
+	@fe2-tiled -e maps/forest-crossroads.tmx
+	@fe2-tiled -e maps/desaixs-fortress.tmx
+	@fe2-tiled -e maps/sluice-gate.tmx
+	@fe2-tiled -e maps/pirate-throne.tmx
+	@fe2-tiled -e maps/beast-hunt.tmx
+	@fe2-tiled -e maps/cave-room.tmx
+	@fe2-tiled -e maps/zofia-castle.tmx
+	@fe2-tiled -e maps/duma-temple-1.tmx
+	@fe2-tiled -e maps/duma-temple-2.tmx
+	@fe2-tiled -e maps/duma-temple-3.tmx
+	@fe2-tiled -e maps/duma-temple-4.tmx
+	@fe2-tiled -e maps/duma-temple-5.tmx
+	@fe2-tiled -e maps/duma-temple-6.tmx
+	@fe2-tiled -e maps/final-battle.tmx
+	@fe2-tiled -e maps/lost-treescape-battleground.tmx
+	@fe2-tiled -e maps/zofia-forest.tmx
+	@fe2-tiled -e maps/desert-stronghold.tmx
+	@fe2-tiled -e maps/rigel-forest.tmx
+	@fe2-tiled -e maps/fear-mountain-shrine.tmx
+	@fe2-tiled -e maps/nuibabas-abode.tmx
+	@fe2-tiled -e maps/rigel-castle.tmx
+	@fe2-tiled -e maps/duma-tower-1.tmx
+	@fe2-tiled -e maps/duma-tower-2.tmx
+	@fe2-tiled -e maps/duma-tower-3.tmx
+	@fe2-tiled -e maps/fleecers-forest.tmx
+	@fe2-tiled -e maps/northern-gate-of-castle-sofia.tmx
 
 clean:
 	rm -f src/*.asm
