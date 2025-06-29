@@ -79,6 +79,15 @@ maps:
 	@fe2-tiled -e maps/duma-tower-3.tmx
 	@fe2-tiled -e maps/fleecers-forest.tmx
 	@fe2-tiled -e maps/northern-gate-of-castle-sofia.tmx
+	@fe2-tiled -e -f 1 maps/02B4EA.tmx
+	@fe2-tiled -e -f 1 maps/02B55F.tmx
+	@fe2-tiled -e -f 1 maps/02B6CE.tmx
+	@fe2-tiled -e -f 1 maps/02B6E2.tmx
+	@fe2-tiled -e -f 1 maps/02B7B9.tmx
+	@fe2-tiled -e -f 1 maps/02B870.tmx
+	@fe2-tiled -e -f 1 maps/02B953.tmx
+	@fe2-tiled -e -f 1 maps/02B9A7.tmx
+	@fe2-tiled -e -f 1 maps/02BAAE.tmx
 
 clean:
 	rm -f src/*.asm

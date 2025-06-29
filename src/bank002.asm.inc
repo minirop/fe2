@@ -249,7 +249,7 @@ L02B45A:
 L02B490:
 .INCBIN "lost-treescape-battleground.bin"
 
-L02B4D8: ; duma tower
+L02B4D8: ; duma tower basement
 .dw L02B4EA
 .dw L02B55F
 .dw L02B6CE
