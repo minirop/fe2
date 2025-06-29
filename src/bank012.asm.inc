@@ -68,38 +68,38 @@ L0C8070:
 L0C8188: ; right house
 .INCBIN "0C8188.bin"
 
-L0C81AD: ; left house
-.INCBIN "0C81AD.bin"
+L0C81AD:
+.INCBIN "house-left.bin"
 
-L0C81D2: ; house shadow
-.INCBIN "0C81D2.bin"
+L0C81D2:
+.INCBIN "house-shadow.bin"
 
-L0C81D8: ; tree
-.INCBIN "0C81D8.bin"
+L0C81D8:
+.INCBIN "tree.bin"
 
-L0C81DC: ; column
-.INCBIN "0C81DC.bin"
+L0C81DC:
+.INCBIN "column.bin"
 
-L0C81E0: ; double column
-.INCBIN "0C81E0.bin"
+L0C81E0:
+.INCBIN "columns-top.bin"
 
-L0C81E4: ; small pool
-.INCBIN "0C81E4.bin"
+L0C81E4:
+.INCBIN "small-pool.bin"
 
-L0C81F6: ; mouth of truth
-.INCBIN "0C81F6.bin"
+L0C81F6:
+.INCBIN "mouth-of-truth.bin"
 
-L0C81FE: ; statue of Mila
-.INCBIN "0C81FE.bin"
+L0C81FE:
+.INCBIN "statue-of-mila.bin"
 
-L0C8209: ;  room with table and chest
+L0C8209: ; room with table and chest
 .INCBIN "0C8209.bin"
 
 L0C8283: ; small room/cell?
 .INCBIN "0C8283.bin"
 
-L0C82A8: ; white door
-.INCBIN "0C82A8.bin"
+L0C82A8:
+.INCBIN "white-door.bin"
 
 L0C82AC: ; Mila Shrine
 .INCBIN "0C82AC.bin"

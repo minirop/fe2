@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="9" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="buildings.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="9" height="8">
+  <data encoding="csv">
+    150,129,129,129,129,129,129,151,130,152,146,130,130,130,130,130,153,88,148,16,15,22,20,22,20,149,32,148,236,17,102,102,102,17,149,32,148,16,15,97,97,97,16,149,32,148,16,15,21,19,21,19,149,32,154,129,129,138,248,137,129,155,32,139,130,130,140,249,139,130,140,32
+  </data>
+ </layer>
+</map>
+

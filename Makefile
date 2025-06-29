@@ -88,6 +88,52 @@ maps:
 	@fe2-tiled -e -f 1 maps/02B953.tmx
 	@fe2-tiled -e -f 1 maps/02B9A7.tmx
 	@fe2-tiled -e -f 1 maps/02BAAE.tmx
+	@fe2-tiled -e -f 1 maps/0C8070.tmx
+	@fe2-tiled -e -f 1 maps/0C82AC.tmx
+	@fe2-tiled -e -f 1 maps/0C83CB.tmx
+	@fe2-tiled -e -f 1 maps/0C85A9.tmx
+	@fe2-tiled -e -f 1 maps/0C867E.tmx
+	@fe2-tiled -e -f 1 maps/0C8727.tmx
+	@fe2-tiled -e -f 1 maps/0C87D8.tmx
+	@fe2-tiled -e -f 1 maps/0C8A8E.tmx
+	@fe2-tiled -e -f 1 maps/0C8B5B.tmx
+	@fe2-tiled -e -f 1 maps/0C8CA5.tmx
+	@fe2-tiled -e -f 1 maps/0C8DA9.tmx
+	@fe2-tiled -e -f 1 maps/0C8E5D.tmx
+	@fe2-tiled -e -f 1 maps/0C9023.tmx
+	@fe2-tiled -e -f 1 maps/0C90A0.tmx
+	@fe2-tiled -e -f 1 maps/0C9179.tmx
+	@fe2-tiled -e -f 1 maps/0C92A0.tmx
+	@fe2-tiled -e -f 1 maps/0C9384.tmx
+	@fe2-tiled -e -f 1 maps/0C943C.tmx
+	@fe2-tiled -e -f 1 maps/0C94C4.tmx
+	@fe2-tiled -e -f 1 maps/0C961D.tmx
+	@fe2-tiled -e -f 1 maps/0C96C8.tmx
+	@fe2-tiled -e -f 1 maps/0C9806.tmx
+	@fe2-tiled -e -f 1 maps/0C985E.tmx
+	@fe2-tiled -e -f 1 maps/0C9927.tmx
+	@fe2-tiled -e -f 1 maps/0C99D7.tmx
+	@fe2-tiled -e -f 1 maps/0C9AA4.tmx
+	@fe2-tiled -e -f 1 maps/0C9B2E.tmx
+	@fe2-tiled -e -f 1 maps/0C9BCA.tmx
+	@fe2-tiled -e -f 1 maps/0C9C3B.tmx
+	@fe2-tiled -e -f 1 maps/0C9CFE.tmx
+	@fe2-tiled -e -f 1 maps/0C9D7B.tmx
+	@fe2-tiled -e -f 1 maps/0CA077.tmx
+	@fe2-tiled -e -f 2 maps/house-left.tmx
+	@fe2-tiled -e -f 2 maps/house-shadow.tmx
+	@fe2-tiled -e -f 2 maps/tree.tmx
+	@fe2-tiled -e -f 2 maps/column.tmx
+	@fe2-tiled -e -f 2 maps/columns-top.tmx
+	@fe2-tiled -e -f 2 maps/small-pool.tmx
+	@fe2-tiled -e -f 2 maps/mouth-of-truth.tmx
+	@fe2-tiled -e -f 2 maps/statue-of-mila.tmx
+	@fe2-tiled -e -f 2 maps/white-door.tmx
+	@fe2-tiled -e -f 2 maps/0C933A.tmx
+	@fe2-tiled -e -f 2 maps/0C8188.tmx
+	@fe2-tiled -e -f 2 maps/0C8209.tmx
+	@fe2-tiled -e -f 2 maps/0C8283.tmx
+	@fe2-tiled -e -f 2 maps/0C83C3.tmx
 
 clean:
 	rm -f src/*.asm
