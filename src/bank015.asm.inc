@@ -386,7 +386,7 @@ L0FC296:
     TAY
     LDA $BFC0.w
     STA $00
-    LDA $BFC1.w
+    LDA ($BFC0.w + 1)
     STA $01
     LDA ($00),Y
     TAX
@@ -1489,7 +1489,7 @@ L0FC96D:
     TAX
     LDA $8000.w,X
     STA $02
-    LDA $8001.w,X
+    LDA ($8000.w + 1),X
     STA $03
     CLC
     LDA #4
@@ -1545,7 +1545,7 @@ L0FC9BD:
     TAY
     LDA $BFC0.w
     STA $02
-    LDA $BFC1.w
+    LDA ($BFC0.w + 1)
     STA $03
     LDA ($02),Y
     STA $00
@@ -1694,7 +1694,7 @@ L0FCA94:
     TAX
     LDA $BFA0.w,X
     STA $4B
-    LDA $BFA1.w,X
+    LDA ($BFA0.w + 1),X
     STA $4C
     JMP ($004B)
 
@@ -1713,7 +1713,7 @@ L0FCAB7:
     TAY
     LDA $BFD0.w,Y
     STA $46
-    LDA $BFD1.w,Y
+    LDA ($BFD0.w + 1),Y
     STA $47
     LDA $3C
     ASL
@@ -2101,7 +2101,7 @@ L0FCD6E:
     STA $0A
     LDA $BFAE.w
     STA $10
-    LDA $BFAF.w
+    LDA ($BFAE.w + 1)
     STA $11
     LDA $0A
     ASL
@@ -2120,7 +2120,7 @@ L0FCD9D:
     TAY
     LDA $8000,Y
     STA $6E
-    LDA $8001,Y
+    LDA ($8000.w + 1),Y
     STA $6F
 L0FCDB0:
     JSR L0FCD44.w
@@ -3648,7 +3648,7 @@ L0FD7CB:
     TAY
     LDA $8000,Y
     STA $6E
-    LDA $8001,Y
+    LDA ($8000.w + 1),Y
     STA $6F
     LDA $04
     JSR L0FCEBF.w
@@ -5706,14 +5706,14 @@ L0FE4E3:
     JSR L0FC795.w
     LDA $BFFA.w
     STA $08
-    LDA $BFFB.w
+    LDA ($BFFA.w + 1)
     STA $09
     TXA
     ASL
     TAY
-    LDA $BFFC.w,Y
+    LDA ($BFFA.w + 2),Y
     STA $0A
-    LDA $BFFD.w,Y
+    LDA ($BFFA.w + 3),Y
     STA $0B
     LDA $DB
     ASL
@@ -6019,7 +6019,7 @@ L0FE6E5:
     TAY
     LDA $BFE0.w,Y
     STA $04
-    LDA $BFE1.w,Y
+    LDA ($BFE0.w + 1),Y
     STA $05
     LDA $7DA6
     ASL
@@ -6194,7 +6194,7 @@ L0FE821:
     LDA $0589
     ASL
     TAY
-    LDA $BFD1.w,Y
+    LDA ($BFD0.w + 1),Y
     STA $49
     LDA $BFD0.w,Y
     STA $48
@@ -9736,7 +9736,7 @@ L0FFACC:
     TAY
     LDA $8000,Y
     STA $00
-    LDA $8001,Y
+    LDA ($8000.w + 1),Y
     STA $01
     LDY #0
     LDA ($00),Y

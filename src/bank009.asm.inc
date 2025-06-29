@@ -3118,6 +3118,7 @@ L09A70C:
 .db $FF $08 $29 $00 $07 $08 $28 $00
 .db $FF
 
+L09A72D:
 .dw L09A75A
 .dw L09A774
 .dw L09A77D
@@ -3125,6 +3126,8 @@ L09A70C:
 .dw L09A793
 .dw L09A7A1
 .dw L09A749
+
+L09A73B:
 .dw L09A7B5
 .dw L09A7CF
 .dw L09A7D8
@@ -3193,6 +3196,7 @@ L09A7F1:
 L09A7FF:
 .db $1E $1E $1E $1E $1E $1E $1E $1D
 
+L09A807:
 .dw L09A8D5
 .dw L09A906
 .dw L09A937
@@ -5428,11 +5432,10 @@ L09BFD0:
 .db $01
 .db $04
 .db $FF
-.db $07
-.db $A8
-.db $2D
-.db $A7
-.db $3B
-.db $A7
+
+L09BFFA:
+.dw L09A807
+.dw L09A72D
+.dw L09A73B
 
 .ENDS

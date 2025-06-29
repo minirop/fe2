@@ -4471,6 +4471,7 @@ L00BFA0:
 .dw L0FF2D8
 .dw L00A99C
 
+L00BFB0:
 .db $06
 .db $08
 .db $00
@@ -4544,6 +4545,8 @@ L00BFD0:
 .db $00
 .db $C4
 .db $45
+
+L00BFFA:
 .dw L0094B3
 .dw L0093A7
 .dw L0093B3

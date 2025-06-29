@@ -3268,6 +3268,8 @@ L0CB7CD:
 
 L0CB80A:
 .dw L0CB80E
+
+L0CB80C:
 .dw L0CB816
 
 L0CB80E:
@@ -4291,11 +4293,10 @@ L0CBFD0:
 .db $00
 .db $95
 .db $DC
-.db $20
-.db $B8
-.db $0A
-.db $B8
-.db $0C
-.db $B8
+
+L0CBFFA:
+.dw L0CB820
+.dw L0CB80A
+.dw L0CB80C
 
 .ENDS

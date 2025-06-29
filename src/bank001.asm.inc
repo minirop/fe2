@@ -4211,13 +4211,12 @@ L01BFA0:
 .dw L01AEBC
 .dw L01AF6A
 .dw L01B424
-
-L01BFB0:
 .dw L01B2F6
 .dw L01B45A
 .dw L01B471
 .dw L01AEC7
 
+L01BFB8:
 .db $15
 .db $20
 .db $D0
@@ -4281,6 +4280,7 @@ L01BFE0:
 .db $04
 .db $00
 
+L01BFFA:
 .dw L01A1CF
 .dw L01A0A6
 .dw L01A0B8

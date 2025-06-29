@@ -10,6 +10,7 @@ It builds the following ROM:
 
 You need to have those tools available in your `PATH`:
 - `wla-6502` and `wlalink` from [wla-dx](https://github.com/vhelin/wla-dx)
+- `fe2-tiled` from [here](https://github.com/minirop/fe2-tiled)
 - `python`
 - `make`
 - `sha1sum` if you want to check the generated ROM is correct
@@ -20,10 +21,10 @@ Just type `make`.
 
 ## What to do?
 
-- Extract the maps into some format (to allow easy modification)
-- Same with the portraits/battlers
+- Converts remaining maps into .tmx
+- Same with portraits/battlers? or png + metadata?
 - Understand the data
-    - items
+    - items (how are their effect applied?)
     - enemy AI/gather/auto-battle
     - movements
     - tiles "collision"
