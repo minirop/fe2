@@ -3862,7 +3862,7 @@ L09AF01:
 .dw L09B7BE
 .dw L09B7A4
 
-L09AF6B:
+L09AF6B: ; palette id of portraits?
 .dw L09B7E5
 .dw L09B7F7
 .dw L09B809

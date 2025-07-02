@@ -558,10 +558,10 @@ L0E8403:
     STA $061E
     LDA $0638
     STA $061F
-    LDA #>L0EBF08
+    LDA #$BF
     STA $4008
     LDA $0629
-    ORA #<L0EBF08
+    ORA #$08
     STA $400B
     RTS
 
@@ -5210,8 +5210,6 @@ L0EBE62:
 .db $81
 .db $1D
 .db $82
-
-L0EBF08:
 .db $20
 .db $25
 .db $81

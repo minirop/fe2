@@ -21,9 +21,8 @@ Just type `make`.
 
 ## What to do?
 
-- Converts remaining maps into .tmx
 - Find better names for maps (especially those used more than once)
-- Same with portraits/battlers? or png + metadata?
+- Convert portraits/battlers into .tmx files? png + metadata? Something else?
 - Understand the data
     - items (how are their effect applied?)
     - enemy AI/gather/auto-battle
@@ -33,7 +32,7 @@ Just type `make`.
     - where are, the unlabelled bytes, used
 - How graphics are used/built/located
     - portraits (L09AE97)
-    - battle sprites
+    - battle sprites/animations
     - UI
     - the cursor
 - And everything else

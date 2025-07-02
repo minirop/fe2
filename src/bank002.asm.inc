@@ -92,6 +92,8 @@ L0280A2:
 ; hence why we need this
 .IFDEF NONMATCHING
 .INCBIN "worldmap.bin"
+.dw $0000 ; padding, so the following bytes stay at the same offset
+; until the entire bank has been "labelled"
 .ELSE
 .INCBIN "0280A2.bin"
 .ENDIF
@@ -109,6 +111,7 @@ L028671:
 ; Has a useless "01"
 .IFDEF NONMATCHING
 .INCBIN "forest-crossroads.bin"
+.db $00 ; padding
 .ELSE
 .INCBIN "028671.bin"
 .ENDIF
@@ -129,6 +132,7 @@ L028D75:
 ; Has a useless "01"
 .IFDEF NONMATCHING
 .INCBIN "fear-mountain-battle.bin"
+.db $00 ; padding
 .ELSE
 .INCBIN "028D75.bin"
 .ENDIF
@@ -179,6 +183,7 @@ L029D95:
 ; Contains "02 D0 07 D0 D0 D0" when it should be "0B D0"
 .IFDEF NONMATCHING
 .INCBIN "desaixs-fortress.bin"
+.dw $0000 $0000 ; padding
 .ELSE
 .INCBIN "029D95.bin"
 .ENDIF
@@ -397,9 +402,7 @@ L02BC00:
     JMP L0FE6B8.w
 
 L02BC09: ; ???
-.dw $7613
-.dw $796A
-.db $00
+.db $13 $76 $6A $79 $00
 
 L02BC0E:
     JSR L02BE81.w
