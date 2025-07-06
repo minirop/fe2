@@ -3,6 +3,7 @@
 
 .SECTION "Bank10" FORCE
 
+L0A8000:
 .dw L0A80B8
 .dw L0A80BF
 .dw L0A80C6
@@ -2179,6 +2180,12 @@ L0A94B5:
 .db $16 $24 $FF $00 $0C $0F $05 $85
 .db $13 $01 $20 $0D $2F $EF
 
+; each animation is 2 frames (2 entries in a row)
+; so 6 entries per "character"
+; based on Mycen it's "down, up, left/right"
+
+; unknown why there are 6 lists of 66 lines (or 11 "characters")
+
 L0A94CB:
 .dw L0A97E3
 .dw L0A9849
@@ -2587,6 +2594,10 @@ L0A975F:
 .dw L0AA690
 .dw L0AA6F6
 
+; byte counting how many elements ($04)
+; then n groups of 4 bytes
+; each group is for a tile
+; seems to be PPU OAM format (except x and y are offsets)
 L0A97E3:
 .db $04 $00 $11 $01 $08 $00 $10 $01
 .db $00 $F8 $01 $01 $08 $F8 $00 $01
@@ -2647,6 +2658,7 @@ L0A989E:
 .db $00 $00 $F7 $02 $08 $00 $F6 $02
 .db $00
 
+; Mycen down
 L0A98AF:
 .db $04 $00 $51 $00 $08 $00 $50 $00
 .db $00 $F8 $E1 $00 $08 $F8 $E0 $00
@@ -2657,6 +2669,7 @@ L0A98C0:
 .db $01 $F8 $E0 $40 $09 $F8 $E1 $40
 .db $01
 
+; Mycen up
 L0A98D1:
 .db $04 $F8 $E3 $00 $08 $F8 $E2 $00
 .db $00 $00 $53 $00 $08 $00 $52 $00
@@ -2667,6 +2680,7 @@ L0A98E2:
 .db $01 $F8 $E2 $40 $09 $00 $52 $40
 .db $09
 
+; Mycen left/right
 L0A98F3:
 .db $04 $F8 $E5 $00 $08 $F8 $E4 $00
 .db $00 $00 $55 $00 $08 $00 $54 $00
@@ -5461,9 +5475,9 @@ L0ABFD0:
 .dw L0A954F
 .dw L0A96DB
 .dw L0A975F
-.dw L0A915C
-.dw L0AA707
-.dw L0A8B40
+.dw L0A915C ; different data
+.dw L0AA707 ; dialogues
+.dw L0A8B40 ; unknown
 
 .db $00
 .db $00

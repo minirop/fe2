@@ -3763,8 +3763,8 @@ L059A5B:
     RTS
 
 L059A5F:
-.dw $E222
-.dw $F122
+.db $22 $E2
+.db $22 $F1
 
 L059A63:
     LDA $03E8
@@ -4336,13 +4336,13 @@ L059E74:
     RTS
 
 L059E78:
-.dw $F40C
-.dw $F60A
-.dw $F808
-.dw $FA06
-.dw $FC04
-.dw $FE02
-.dw $0000
+.db $0C $F4
+.db $0A $F6
+.db $08 $F8
+.db $06 $FA
+.db $04 $FC
+.db $02 $FE
+.db $00 $00
 
 L059E86:
     LDA #1
@@ -7826,9 +7826,10 @@ L05BF83:
 .db $2F
 .db $54
 .db $50
-.db $4C
-.db $9C
-.db $81
+
+L05BFA0:
+    JMP L05819C
+
 .db $00
 .db $9C
 .db $81

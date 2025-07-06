@@ -3102,7 +3102,7 @@ L089FE7:
     BEQ L08A027
     LDA $05BC
     STA $05BB
-    JSR $A07F
+    JSR L08A07F
     LDY $18
     LDA $04
     STA $6CB0,Y

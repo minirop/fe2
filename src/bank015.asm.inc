@@ -6,41 +6,44 @@
 L0FC000:
     LDA #5
     JSR L0FCA40.w
-    JSR $BFA0.w
+    JSR L05BFA0
     LDA #6
     JMP L0FCA40.w
 
 L0FC00D:
     LDA #3
     JSR L0FCA40.w
-    JSR $8000
+    JSR L038000
     LDA #6
     JMP L0FCA40.w
 
 L0FC01A:
     LDA #3
     JSR L0FCA40.w
-    JSR $8003
+    JSR L038003
     LDA #6
     JMP L0FCA40.w
 
 L0FC027:
     LDA #3
     JSR L0FCA40.w
-    JSR $8006
+    JSR L038006
     LDA #6
     JMP L0FCA40.w
 
+; L0D8000 is metatiles data, not a subroutine
+; but it seems unused
 L0FC034:
     LDA #13
     JSR L0FCA40.w
     JSR $8000
     LDA #6
     JMP L0FCA40.w
+
 L0FC041:
     LDA #3
     JSR L0FCA40.w
-    JSR $8009
+    JSR L038009
     LDA #6
     JMP L0FCA40.w
 
@@ -1702,6 +1705,7 @@ L0FCAB3:
     PLA
     JMP L0FCA40.w
 
+; update sprites?
 L0FCAB7:
     PHA
     TYA
@@ -2099,9 +2103,9 @@ L0FCD6E:
     SEC
     SBC #56
     STA $0A
-    LDA $BFAE.w
+    LDA (L02BFB0.w - 2)
     STA $10
-    LDA ($BFAE.w + 1)
+    LDA (L02BFB0.w - 1)
     STA $11
     LDA $0A
     ASL
@@ -2118,9 +2122,9 @@ L0FCD9D:
     LDA $0A
     ASL
     TAY
-    LDA $8000,Y
+    LDA L0C8000.w,Y
     STA $6E
-    LDA ($8000.w + 1),Y
+    LDA (L0C8000.w + 1),Y
     STA $6F
 L0FCDB0:
     JSR L0FCD44.w
@@ -4972,14 +4976,7 @@ ENCODE("マミー")
 STOP
 
 L0FE199:
-.db $17
-.db $18
-.db $19
-.db $1A
-.db $1B
-.db $1C
-.db $1D
-.db $28
+.db $17 $18 $19 $1A $1B $1C $1D $28
 
 L0FE1A1:
 .db $17
@@ -5032,14 +5029,7 @@ L0FE1A1:
 .db $FF
 
 L0FE1D1:
-.db $1F
-.db $20
-.db $21
-.db $22
-.db $23
-.db $24
-.db $FF
-.db $FF
+.db $1F $20 $21 $22 $23 $24 $FF $FF
 
 L0FE1D9:
 .db $17
@@ -5483,41 +5473,15 @@ L0FE3A7:
 .db $12 $03 $0D $09 $0A $FF
 
 L0FE3B5:
-.db $04
-.db $07
-.db $02
-.db $16
-.db $0B
-.db $0D
-.db $09
-.db $13
-.db $11
-.db $05
-.db $14
-.db $0A
-.db $0E
+.db $04 $07 $02 $16 $0B $0D $09 $13
+.db $11 $05 $14 $0A $0E
 
 L0FE3C2:
-.db $07
-.db $0A
-.db $07
-.db $0A
-.db $14
-.db $07
-.db $07
-.db $0C
-.db $0C
-.db $0C
-.db $0A
-.db $0A
-.db $0A
+.db $07 $0A $07 $0A $14 $07 $07 $0C
+.db $0C $0C $0A $0A $0A
 
 L0FE3CF:
-.db $01
-.db $08
-.db $0C
-.db $0F
-.db $06
+.db $01 $08 $0C $0F $06
 
 L0FE3D4:
     LDA $04C4
@@ -6559,6 +6523,7 @@ L0FE8DE:
 .db $02
 .db $0C
 .db $0C
+
 L0FE9DE:
 .db $00
 .db $00
@@ -8171,34 +8136,12 @@ L0FF150: ; levels id (compared to current map in L0689EC)
 .db $3E $2A $28 $2D $22 $FF
 
 L0FF15E:
-.db $00
-.db $03
-.db $04
-.db $05
-.db $06
-.db $07
-.db $08
-.db $09
-.db $0D
-.db $0F
-.db $10
-.db $11
-.db $13
+.db $00 $03 $04 $05 $06 $07 $08 $09
+.db $0D $0F $10 $11 $13
 
 L0FF16B:
-.db $00
-.db $01
-.db $00
-.db $02
-.db $03
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
-.db $00
+.db $00 $01 $00 $02 $03 $00 $00 $00
+.db $00 $00 $00 $00 $00
 
 L0FF178:
 .dw L0FF17E
@@ -8400,38 +8343,18 @@ L0FF222:
 .db $FF
 
 L0FF23E:
-.db $02
-.db $04
-.db $07
-.db $0A
-.db $0A
+.db $02 $04 $07 $0A $0A
 
 L0FF243:
-.db $93
-.db $96
-.db $84
-.db $8B
-.db $88
-.db $9D
-.db $82
-.db $91
-.db $81
-.db $FF
+.db $93 $96 $84 $8B $88 $9D $82 $91
+.db $81 $FF
 
 L0FF24D:
-.db $01
-.db $02
-.db $03
-.db $04
-.db $05
-.db $06
-.db $07
-.db $08
+.db $01 $02 $03 $04 $05 $06 $07 $08
 .db $09
 
 L0FF256:
-.db $D8
-.db $FF
+.db $D8 $FF
 
 L0FF258:
     STA $02
@@ -8884,12 +8807,7 @@ L0FF507:
     RTS
 
 L0FF50C:
-.db $02
-.db $0B
-.db $14
-.db $17
-.db $28
-.db $30
+.db $02 $0B $14 $17 $28 $30
 
 L0FF512:
 .dw L0FF51C
@@ -8899,54 +8817,23 @@ L0FF512:
 .dw L0FF531
 
 L0FF51C:
-.db $01
-.db $02
-.db $03
-.db $04
-.db $05
-.db $06
-.db $07
-.db $16
+.db $01 $02 $03 $04 $05 $06 $07 $16
 .db $EF
 
 L0FF525:
-.db $08
-.db $09
-.db $0A
-.db $0B
-.db $15
-.db $0E
-.db $EF
+.db $08 $09 $0A $0B $15 $0E $EF
 
 L0FF52C:
-.db $0D
-.db $0C
-.db $14
-.db $15
-.db $EF
+.db $0D $0C $14 $15 $EF
 
 L0FF531:
-.db $0F
-.db $10
-.db $11
-.db $12
-.db $13
-.db $0B
-.db $EF
+.db $0F $10 $11 $12 $13 $0B $EF
 
 L0FF538:
-.db $30
-.db $31
-.db $32
-.db $33
-.db $35
+.db $30 $31 $32 $33 $35
 
 L0FF53D:
-.db $03
-.db $05
-.db $07
-.db $0D
-.db $0D
+.db $03 $05 $07 $0D $0D
 
 L0FF542:
     STA $0A
@@ -8971,10 +8858,7 @@ L0FF556:
     RTS
 
 L0FF55E:
-.db $0B
-.db $14
-.db $30
-.db $36
+.db $0B $14 $30 $36
 
 L0FF562:
     LDA $00
@@ -9734,9 +9618,9 @@ L0FFACC:
     LDA $0570
     ASL
     TAY
-    LDA $8000,Y
+    LDA L0A8000.w,Y
     STA $00
-    LDA ($8000.w + 1),Y
+    LDA (L0A8000.w + 1),Y
     STA $01
     LDY #0
     LDA ($00),Y
@@ -9834,62 +9718,16 @@ L0FFB8E:
     RTS
 
 L0FFB8F:
-.db $00
-.db $10
-.db $01
-.db $01
-.db $02
-.db $03
-.db $04
-.db $08
-.db $06
-.db $07
-.db $05
-.db $01
-.db $09
-.db $03
-.db $0C
-.db $0F
-.db $0F
-.db $03
-.db $10
-.db $03
-.db $11
-.db $01
-.db $12
-.db $04
-.db $13
-.db $1F
-.db $16
-.db $0F
-.db $1D
-.db $01
-.db $1F
-.db $01
-.db $24
-.db $05
-.db $28
-.db $03
-.db $2A
-.db $01
-.db $2B
-.db $01
-.db $2D
-.db $01
-.db $FF
+.db $00 $10 $01 $01 $02 $03 $04 $08
+.db $06 $07 $05 $01 $09 $03 $0C $0F
+.db $0F $03 $10 $03 $11 $01 $12 $04
+.db $13 $1F $16 $0F $1D $01 $1F $01
+.db $24 $05 $28 $03 $2A $01 $2B $01
+.db $2D $01 $FF
 
 L0FFBBA:
-.db $33
-.db $33
-.db $33
-.db $33
-.db $55
-.db $33
-.db $33
-.db $33
-.db $33
-.db $33
-.db $FF
+.db $33 $33 $33 $33 $55 $33 $33 $33
+.db $33 $33 $FF
 
 L0FFBC5:
     LDA #0
@@ -9922,7 +9760,7 @@ L0FFBE3:
 L0FFBED:
     LDA #2
     JSR L0FCA40.w
-    JSR $BFFA.w
+    JSR L02BFFA
     LDA #6
     JMP L0FCA40.w
 

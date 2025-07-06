@@ -1052,9 +1052,10 @@ L02BFC0:
 .db $00
 .db $50
 .db $31
-.db $4C
-.db $44
-.db $BB
+
+L02BFFA:
+    JMP L02BB44
+
 .db $8F
 .db $19
 .db $0B
