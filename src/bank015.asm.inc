@@ -7360,7 +7360,7 @@ L0FED04: ; enemy stats
 .dw L0FEDC5
 .dw L0FEDCC
 
-; STR SKL SPD LCK DEF HP unk
+;   STR SKL SPD LCK DEF HP  unk
 
 L0FED32:
 .db $09 $03 $05 $00 $05 $18 $28
