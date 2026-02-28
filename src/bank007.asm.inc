@@ -1066,7 +1066,7 @@ L078AE3:
 
 .dw L078AEF
 .dw L078B0C
-.dw RESET
+.dw RESET ;?? otherwise L07C075 is $00
 
 L078AEF:
     JSR L0793B7.w
@@ -5336,7 +5336,7 @@ L07A956:
     LDX #0
 L07A95D:
     LDA L07A985.w,X
-    CMP #255
+    CMP #$FF
     BEQ L07A96C
     CMP $7434
     BEQ L07A96D
