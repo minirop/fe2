@@ -5092,6 +5092,7 @@ L00BFA0:
 .dw L00A9B0
 .dw L00ADFA
 .dw L00BD7A
+; only L0FF2D8 is a "function"
 .dw L00BB0E
 .dw L00A035
 .dw L0FF2D8

@@ -3978,7 +3978,7 @@ L09B0FD: ; portrait Mycen
 .db $14 $45 $46 $47 $48 $19 $24 $55
 .db $56 $57 $58 $29
 
-L09B121:
+L09B121: ; Luka
 .db $FE $C0 $C1 $C2 $C3 $FE $FE $D0
 .db $D1 $D2 $D3 $FE $FE $E0 $E1 $E2
 .db $E3 $E4 $FE $FE $F0 $4F $F3 $F4

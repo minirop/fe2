@@ -243,6 +243,7 @@ L0FC1BD:
     PLA
     PLP
     RTI
+
 L0FC1C4:
     LDA $9D
     BNE L0FC1E3

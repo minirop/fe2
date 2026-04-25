@@ -6640,6 +6640,7 @@ L06B440:
     LDA ($7A),Y
     BMI L06B47A
     BPL L06B484
+    ; fallthrough to invalid code???
 
 L06B458:
 .db $01 $10 $10 $0B $0B $0C $0C $0F

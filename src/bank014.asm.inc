@@ -1208,7 +1208,7 @@ L0E881B:
     STA $0639
     STA $063A
     BEQ L0E8801
-; again? it can fallthrough to the data?
+; since LDA #0, always jump
 
 L0E8828:
 .dw $0000
