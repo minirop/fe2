@@ -315,6 +315,7 @@ L05823A:
     LDA $04C6
     JSR L0FC34C.w
 
+L058240:
 .dw L0582BE
 .dw L059B40
 .dw L0588F9
@@ -2412,6 +2413,7 @@ L0590D0:
     LDA $03E5
     JSR L0FC34C.w
 
+L0590D6:
 .dw L05939E
 .dw L059100
 .dw L05912C
@@ -3121,6 +3123,7 @@ L05955B:
     LDA ($00),Y
     JSR L0FC34C.w
 
+L05957D:
 .dw L0595BB
 .dw L0596A8
 .dw L05970B
@@ -3494,6 +3497,7 @@ L05983A:
     LDA ($00),Y
     JSR L0FC34C.w
 
+L059843:
 .dw L059854
 .dw L059847
 
@@ -4382,6 +4386,7 @@ L059EF1:
     LDA $04AA
     JSR L0FC34C.w
 
+L059EF7:
 .dw L0FC73D
 .dw L059F0F
 .dw L059F1A
@@ -4608,6 +4613,7 @@ L05A05D:
     LDA ($00),Y
     JSR L0FC34C.w
 
+L05A07C:
 .dw L0FC73D
 .dw L05A104
 .dw L05A111
@@ -6077,9 +6083,17 @@ L05ABF6:
 .db $CC $FE
 
 L05ABF8:
-.db $BD $86 $04 $8D $7E $04 $BD $80
-.db $04 $8D $7D $04 $8A $8D $7F $04
-.db $8A $48 $20 $F2 $81 $68 $60
+    LDA $0486,X
+    STA $047E
+    LDA $0480,X
+    STA $047D
+    TXA
+    STA $047F
+    TXA
+    PHA
+    JSR L0581F2.w
+    PLA
+    RTS
 
 L05AC0F:
     LDA #1
@@ -7830,6 +7844,7 @@ L05BF83:
 L05BFA0:
     JMP L05819C
 
+L05BFA3:
 .db $00
 .db $9C
 .db $81

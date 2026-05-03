@@ -4440,7 +4440,7 @@ L0FDE6E: ; ???
 ENCODE("ボーマ")
 STOP
 
-L0FDE72: ; ???
+L0FDE73: ; ???
 ENCODE("ボース")
 STOP
 
@@ -8449,7 +8449,7 @@ L0FF2D8:
     STA $01
     RTS
 
- L0FF2DD:
+L0FF2DD:
     LDA #21
     CLC
     ADC $7A

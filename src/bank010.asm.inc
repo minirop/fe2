@@ -371,6 +371,7 @@ L0A832E:
     LDA $7DAC
     JSR L0FC34C.w
 
+L0A8334:
 .dw L0FC73D
 .dw L0A835C
 .dw L0A83E9
@@ -4889,6 +4890,7 @@ L0ABD6F:
     STA $0A
     RTS
 
+L0ABD8F:
 .db $01
 .db $01
 .db $01

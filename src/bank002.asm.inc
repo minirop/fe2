@@ -1056,6 +1056,7 @@ L02BFC0:
 L02BFFA:
     JMP L02BB44
 
+L02BFFD:
 .db $8F
 .db $19
 .db $0B
