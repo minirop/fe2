@@ -3439,7 +3439,7 @@ SPEAK
 ENCODE("さいきんは このへんにも")
 NEWLINE
 ENCODE("さんぞくが うろついてるからな")
-STOP
+.db STOP
 
 L0397D9:
 SPEAK
@@ -3449,7 +3449,7 @@ ENCODE("いいところにきたな")
 WAIT_CLICK
 SPEAK
 ENCODE("おまえも このひとのはなしをきけよ")
-STOP
+.db STOP
 
 L0397FE:
 FACE LUKAS
@@ -3486,14 +3486,14 @@ SPEAK
 ENCODE("それで マイセンしょうぐんの")
 NEWLINE
 ENCODE("おちからを かりに きたのです")
-STOP
+.db STOP
 
 L0398F4:
 SPEAK
 ENCODE("へぇー おまえのじいちゃんって")
 NEWLINE
 ENCODE("むかしは しょうぐんだったのか")
-STOP
+.db STOP
 
 L039918:
 SPEAK
@@ -3502,14 +3502,14 @@ NEWLINE
 ENCODE("くにの みんなが こまってるんだ")
 NEWLINE
 ENCODE("みんなで たすけにいこうぜ")
-STOP
+.db STOP
 
 L039943:
 SPEAK
 ENCODE("おれたちは ここでまってるから")
 NEWLINE
 ENCODE("じいちゃんに たのんでみろよ")
-STOP
+.db STOP
 
 L039966:
 FACE MYCEN
@@ -3526,7 +3526,7 @@ SPEAK
 ENCODE("おまえは たたかってはならぬ")
 NEWLINE
 ENCODE("かなしいおもいを するだけだ")
-STOP
+.db STOP
 
 L0399AF:
 FACE LUKAS
@@ -3572,7 +3572,7 @@ SPEAK
 ENCODE("じゃあ ぼくといっしょに")
 NEWLINE
 ENCODE("かいほうぐんのアジトまでいこう")
-STOP
+.db STOP
 
 L039AA6:
 FACE GRAY
@@ -3591,7 +3591,7 @@ NEWLINE
 ENCODE("そのドゼーとかいうやつを")
 NEWLINE
 ENCODE("やっつけちまおうぜ")
-STOP
+.db STOP
 
 L039AFB:
 FACE TOBIN
@@ -3605,7 +3605,7 @@ SPEAK
 ENCODE("いっしょに ソフィアのしろを")
 NEWLINE
 ENCODE("とりもどそう")
-STOP
+.db STOP
 
 L039B3F:
 FACE KLIFF
@@ -3625,7 +3625,7 @@ SPEAK
 ENCODE("おれたちは おまえとはちがって")
 NEWLINE
 ENCODE("まだ うまくたたかえないからな")
-STOP
+.db STOP
 
 L039BA4:
 FACE CLAIR
@@ -3649,7 +3649,7 @@ SPEAK
 ENCODE("わたしも アジトにかえりますから")
 NEWLINE
 ENCODE("いっしょに ゆきましょう")
-STOP
+.db STOP
 
 L039C2D:
 FACE PYTHON
@@ -3668,7 +3668,7 @@ SPEAK
 ENCODE("だけど どうくつには まものが")
 NEWLINE
 ENCODE("でるから きをつけろよ")
-STOP
+.db STOP
 
 L039C9A:
 FACE JEDAH
@@ -3728,7 +3728,7 @@ SPEAK
 ENCODE("やつのもがきくるしむすがたを")
 NEWLINE
 ENCODE("しばらく ながめているのじゃな")
-STOP
+.db STOP
 
 L039DC5:
 FACE FORSYTH
@@ -3789,7 +3789,7 @@ SPEAK
 ENCODE("まあ このうわさが ほんとかどうか")
 NEWLINE
 ENCODE("ミラのしんでんにいけば わかるさ")
-STOP
+.db STOP
 
 L039F56:
 FACE CLIVE_B
@@ -3851,7 +3851,7 @@ SPEAK
 ENCODE("なっアルム.たのむよ")
 NEWLINE
 ENCODE("どうかソフィアを すくってくれ")
-STOP
+.db STOP
 
 L03A0E5:
 FACE MYCEN
@@ -3896,7 +3896,7 @@ SPEAK
 ENCODE("おまえたちふたりに あたえられた")
 NEWLINE
 ENCODE("うんめいなのかも しれぬな···")
-STOP
+.db STOP
 
 L03A1DF:
 FACE CELICA
@@ -3983,7 +3983,7 @@ ENCODE("たみにとって さいごの きぼう")
 WAIT_CLICK
 SPEAK
 ENCODE("けっして むりはするなよ")
-STOP
+.db STOP
 
 L03A3D1:
 FACE NOMA
@@ -3995,7 +3995,7 @@ SPEAK
 ENCODE("そなたに ミラの ごかごの")
 NEWLINE
 ENCODE("あらんことを···")
-STOP
+.db STOP
 
 L03A401:
 FACE GENNY
@@ -4011,7 +4011,7 @@ NEWLINE
 ENCODE("わたしのリカバーのじゅもんで")
 NEWLINE
 ENCODE("なおしてあげましょう")
-STOP
+.db STOP
 
 L03A451:
 FACE BOEY
@@ -4025,7 +4025,7 @@ SPEAK
 ENCODE("ぼくも いっしょにいきますから")
 NEWLINE
 ENCODE("あんしんしてください")
-STOP
+.db STOP
 
 L03A491:
 FACE MAE
@@ -4043,7 +4043,7 @@ NEWLINE
 ENCODE("いかづちの まほうがつかえます")
 NEWLINE
 ENCODE("たよりにしてくださいね")
-STOP
+.db STOP
 
 L03A4EF:
 FACE SILQUE
@@ -4064,7 +4064,7 @@ SPEAK
 ENCODE("どうかわたしを ここから")
 NEWLINE
 ENCODE("つれだしてください")
-STOP
+.db STOP
 
 L03A54F:
 SPEAK
@@ -4093,7 +4093,7 @@ SPEAK
 ENCODE("まぁ かわいそうだが いきては")
 NEWLINE
 ENCODE("かえってこれないだろうなぁ")
-STOP
+.db STOP
 
 L03A601:
 SPEAK
@@ -4107,7 +4107,7 @@ SPEAK
 ENCODE("だけど あのしまには")
 NEWLINE
 ENCODE("おそろしい まものが·····")
-STOP
+.db STOP
 
 L03A64E:
 FACE KAMUI
@@ -4128,7 +4128,7 @@ SPEAK
 ENCODE("あれは エンジェルのまほうでも")
 NEWLINE
 ENCODE("なければ ぜったい たおせないぜ")
-STOP
+.db STOP
 
 L03A6CF:
 FACE LEO
@@ -4142,7 +4142,7 @@ SPEAK
 ENCODE("ゆみのうでなら")
 NEWLINE
 ENCODE("すこしは じしんがあるぜ")
-STOP
+.db STOP
 
 L03A709:
 SPEAK
@@ -4163,7 +4163,7 @@ NEWLINE
 ENCODE("たちまち テイータさま···")
 NEWLINE
 ENCODE("おっと おしゃべりがすぎるわね")
-STOP
+.db STOP
 
 L03A797:
 FACE VALBAR
@@ -4180,7 +4180,7 @@ SPEAK
 ENCODE("どこでも いっしょにいってやるよ")
 NEWLINE
 ENCODE("よろしくな")
-STOP
+.db STOP
 
 L03A7DB:
 FACE PALLA
@@ -4189,7 +4189,7 @@ SPEAK
 ENCODE("わたしたちは はるかひがしの")
 NEWLINE
 ENCODE("アカネイアたいりくから きました")
-STOP
+.db STOP
 
 L03A803:
 FACE CATRIA
@@ -4210,7 +4210,7 @@ SPEAK
 ENCODE("ああ はやくたすけだして")
 NEWLINE
 ENCODE("いっしょに くににかえりたい")
-STOP
+.db STOP
 
 L03A874:
 FACE MYCEN
@@ -4286,7 +4286,7 @@ L03A9DC:
 NAME MYCEN
 SPEAK
 ENCODE("まあ いってみるがよい")
-STOP
+.db STOP
 
 L03A9EC:
 FACE ALM
@@ -4480,7 +4480,7 @@ SPEAK
 ENCODE("わたしは なかまたちと")
 NEWLINE
 ENCODE("ミラしんでんに ゆきます")
-STOP
+.db STOP
 
 L03AE56:
 FACE ALM
@@ -4492,7 +4492,7 @@ FACE CELICA
 NAME CELICA
 SPEAK
 ENCODE("さよなら,アルム····")
-STOP
+.db STOP
 
 L03AE77:
 SPEAK
@@ -4511,7 +4511,7 @@ SPEAK
 ENCODE("ちかづくものを")
 NEWLINE
 ENCODE("ひとのみに してしまうからね")
-STOP
+.db STOP
 
 L03AED4:
 FACE SABER
@@ -4562,7 +4562,7 @@ SPEAK
 ENCODE("よし いいだろう")
 NEWLINE
 ENCODE("いっしょに いってやろう")
-STOP
+.db STOP
 
 L03AFAC:
 FACE PYTHON
@@ -4598,7 +4598,7 @@ NEWLINE
 ENCODE("スレイダーには きをつけないと")
 NEWLINE
 ENCODE("きけんだよ")
-STOP
+.db STOP
 
 L03B053:
 SPEAK
@@ -4627,7 +4627,7 @@ SPEAK
 ENCODE("ああ,わたしたちは いったい")
 NEWLINE
 ENCODE("どうすれば いいのでしょう")
-STOP
+.db STOP
 
 L03B10F:
 SPEAK
@@ -4643,7 +4643,7 @@ NEWLINE
 ENCODE("ちかづくものを くいころすとも")
 NEWLINE
 ENCODE("いわれています")
-STOP
+.db STOP
 
 L03B16F:
 FACE ATLAS
@@ -4671,7 +4671,7 @@ NEWLINE
 ENCODE("おれのこのてで")
 NEWLINE
 ENCODE("たたきころしてやる!!")
-STOP
+.db STOP
 
 L03B1F2:
 FACE JESSE
@@ -4761,7 +4761,7 @@ ENCODE("しれないぜ")
 WAIT_CLICK
 SPEAK
 ENCODE("ああ,もちろんおれも てをかすぜ")
-STOP
+.db STOP
 
 L03B3DA:
 FACE DEEN
@@ -4783,7 +4783,7 @@ ENCODE("かりができたからな")
 WAIT_CLICK
 SPEAK
 ENCODE("よかろう,ちからをかしてやろう")
-STOP
+.db STOP
 
 L03B446:
 FACE SONYA
@@ -4807,7 +4807,7 @@ SPEAK
 ENCODE("わかった")
 NEWLINE
 ENCODE("ちからをかしてやるよ")
-STOP
+.db STOP
 
 L03B4B0:
 FACE EST
@@ -4826,7 +4826,7 @@ NEWLINE
 ENCODE("それならわたしも あなたたちと")
 NEWLINE
 ENCODE("いっしょに ゆきます")
-STOP
+.db STOP
 
 L03B4FC:
 FACE PALLA
@@ -4854,7 +4854,7 @@ SPEAK
 ENCODE("ね セリカ")
 NEWLINE
 ENCODE("いっしょに ゆきましょう")
-STOP
+.db STOP
 
 L03B580:
 FACE CATRIA
@@ -4875,7 +4875,7 @@ ENCODE("すごいわざが つかえるのよ")
 WAIT_CLICK
 SPEAK
 ENCODE("あれ? なんでしってるの?")
-STOP
+.db STOP
 
 L03B5E3:
 SPEAK
@@ -4901,7 +4901,7 @@ NEWLINE
 ENCODE("このままでは ソフィアのたみは")
 NEWLINE
 ENCODE("みんなうえて しんでしまう···")
-STOP
+.db STOP
 
 L03B678:
 SPEAK
@@ -4917,7 +4917,7 @@ NEWLINE
 ENCODE("やみからよびよせる しりゅうに")
 NEWLINE
 ENCODE("くいころされてしまいます")
-STOP
+.db STOP
 
 L03B6CF:
 SPEAK
@@ -4942,7 +4942,7 @@ SPEAK
 ENCODE("おまえなどの いうことは")
 NEWLINE
 ENCODE("きけぬぞ!!")
-STOP
+.db STOP
 
 L03B73E:
 SPEAK
@@ -4972,7 +4972,7 @@ SPEAK
 ENCODE("ただいま すいもんを")
 NEWLINE
 ENCODE("あけまする")
-STOP
+.db STOP
 
 L03B7C8:
 SPEAK
@@ -4989,12 +4989,12 @@ NEWLINE
 ENCODE("にしの すいもんも どうじに")
 NEWLINE
 ENCODE("ひらかなければ なりません")
-STOP
+.db STOP
 
 L03B81F:
 SPEAK
 ENCODE("おお ジークさま···")
-STOP
+.db STOP
 
 L03B82D:
 ENCODE("みぎ せいなるたて")
@@ -5003,19 +5003,19 @@ ENCODE("ひだり ぎんのたて")
 NEWLINE
 NEWLINE
 ENCODE("どちらを のぞむか?")
-STOP
+.db STOP
 
 L03B852:
 SPEAK
 ENCODE("どうも ありがとうございました")
-STOP
+.db STOP
 
 L03B867:
 SPEAK
 ENCODE("えへ たすけてくれて")
 NEWLINE
 ENCODE("ありがとう")
-STOP
+.db STOP
 
 L03B87A:
 SPEAK
@@ -5045,7 +5045,7 @@ NEWLINE
 ENCODE("まちがってはいると かくじつに")
 NEWLINE
 ENCODE("ちからが うばわれてゆきます")
-STOP
+.db STOP
 
 L03B930:
 SPEAK
@@ -5068,7 +5068,7 @@ NEWLINE
 ENCODE("このしんでんのちかに")
 NEWLINE
 ENCODE("あるのですが···")
-STOP
+.db STOP
 
 L03B9AD:
 SPEAK
@@ -5091,7 +5091,7 @@ NEWLINE
 ENCODE("どうか とらわれたひとたちを")
 NEWLINE
 ENCODE("たすけてください")
-STOP
+.db STOP
 
 L03BA31:
 SPEAK
@@ -5114,7 +5114,7 @@ NEWLINE
 ENCODE("なにか ちからになって")
 NEWLINE
 ENCODE("くださるはずです")
-STOP
+.db STOP
 
 L03BAAB:
 SPEAK
@@ -5126,7 +5126,7 @@ SPEAK
 ENCODE("おまえたちに あの のろわれた")
 NEWLINE
 ENCODE("りゅうのやまが こせるものか")
-STOP
+.db STOP
 
 L03BAE7:
 SPEAK
@@ -5136,7 +5136,7 @@ SPEAK
 ENCODE("ソフィアの ブタどもに")
 NEWLINE
 ENCODE("こうていのよさが わかってたまるか")
-STOP
+.db STOP
 
 L03BB1B:
 SPEAK
@@ -5150,7 +5150,7 @@ SPEAK
 ENCODE("たすけてくれれば")
 NEWLINE
 ENCODE("わしのたからものを あげます")
-STOP
+.db STOP
 
 L03BB5F:
 FACE LUTHIER
@@ -5178,7 +5178,7 @@ SPEAK
 ENCODE("たのむ いっしょに")
 NEWLINE
 ENCODE("たすけにいってくれ!!!")
-STOP
+.db STOP
 
 L03BBF6:
 SPEAK
@@ -5195,7 +5195,7 @@ NEWLINE
 ENCODE("ようすをみたほうが")
 NEWLINE
 ENCODE("いいんじゃないかな···")
-STOP
+.db STOP
 
 L03BC41:
 SPEAK
@@ -5216,7 +5216,7 @@ SPEAK
 ENCODE("はやくたすけてやらないと")
 NEWLINE
 ENCODE("あぶないぜ")
-STOP
+.db STOP
 
 L03BC9D:
 FACE MATHILDA
@@ -5227,7 +5227,7 @@ NEWLINE
 ENCODE("きっと たすけにきてくれると")
 NEWLINE
 ENCODE("しんじていました")
-STOP
+.db STOP
 
 L03BCC4:
 SPEAK
@@ -5246,7 +5246,7 @@ NEWLINE
 ENCODE("みちが ふさがれるって")
 NEWLINE
 ENCODE("うわさも あるからね")
-STOP
+.db STOP
 
 L03BD31:
 SPEAK
@@ -5260,7 +5260,7 @@ SPEAK
 ENCODE("だいちぼしんミラは いったい")
 NEWLINE
 ENCODE("どうなってしまったんでしょう")
-STOP
+.db STOP
 
 L03BD85:
 FACE DELTHEA
@@ -5284,12 +5284,12 @@ NEWLINE
 ENCODE("めいわくを かけたのですね")
 NEWLINE
 ENCODE("ごめんなさい")
-STOP
+.db STOP
 
 L03BDF5:
 SPEAK
 ENCODE("わーん.こわかったよー")
-STOP
+.db STOP
 
 L03BE02:
 SPEAK
@@ -5305,7 +5305,7 @@ NEWLINE
 ENCODE("じぶんの りょうちに")
 NEWLINE
 ENCODE("にげていったぞー")
-STOP
+.db STOP
 
 L03BE47:
 SPEAK
@@ -5320,7 +5320,7 @@ NEWLINE
 ENCODE("せめこんできたら おれたちきっと")
 NEWLINE
 ENCODE("みなごろしにされちまうぜ")
-STOP
+.db STOP
 
 L03BE8F:
 SPEAK
@@ -5332,7 +5332,7 @@ SPEAK
 ENCODE("これで このくにも")
 NEWLINE
 ENCODE("やっと すくわれるわ")
-STOP
+.db STOP
 
 .db $8D
 .db $11

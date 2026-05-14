@@ -7969,6 +7969,7 @@ L06BD89:
     INC $8A
     JMP L06BE14.w
 
+; direction?
 L06BD92:
 .db $00 $01
 .db $FF $00

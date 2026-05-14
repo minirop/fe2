@@ -4803,7 +4803,7 @@ L01B920:
 ENCODE("%0は しょうめつした!")
 NEWLINE
 WAIT_CLICK
-STOP
+.db STOP
 
 L01B92F:
 ENCODE("%0は しょうめつした!")
@@ -4812,7 +4812,7 @@ ENCODE("%2は %1のけいけんちをえた!!")
 NEWLINE
 ENCODE(" ")
 WAIT_CLICK
-STOP
+.db STOP
 
 L01B951:
 ENCODE("%0を たおした!!")
@@ -4821,7 +4821,7 @@ ENCODE("%2は %1のけいけんちをえた!!")
 NEWLINE
 ENCODE(" ")
 WAIT_CLICK
-STOP
+.db STOP
 
 L01B971:
 ENCODE("%3かいヒット!!")
@@ -4830,70 +4830,70 @@ ENCODE("%2は %1のけいけんちをえた")
 NEWLINE
 ENCODE(" ")
 WAIT_CLICK
-STOP
+.db STOP
 
 L01B98E:
 ENCODE("%0を たおした!!")
 NEWLINE
-STOP
+.db STOP
 
 L01B99A:
 ENCODE("%2は")
 NEWLINE
 ENCODE("レベルが%1になった!")
-STOP
+.db STOP
 
 L01B9AC:
 ENCODE("%0が %1あがった!")
-STOP
+.db STOP
 
 ; unused?
 ENCODE("%2は たおれた!!")
 WAIT_CLICK
-STOP
+.db STOP
 
 L01B9C6:
 ENCODE("%0は %1をもっていた!!")
 NEWLINE
 ENCODE("%2は %1をてにいれた!")
-STOP
+.db STOP
 
 L01B9E3:
 ENCODE("%0のじゅもんをおぼえた!")
-STOP
+.db STOP
 
 L01B9F3:
 ENCODE("%2は %1のけいけんちをえた")
 NEWLINE
 WAIT_CLICK
-STOP
+.db STOP
 
 L01BA05:
 ENCODE("%2は %1にクラスチェンジできます")
 NEWLINE
-STOP
+.db STOP
 
 L01BA1B:
 ENCODE("%2は クラスチェンジできます")
 NEWLINE
-STOP
+.db STOP
 
 L01BA2E:
 ENCODE("%0は %1をもっていた!!")
 NEWLINE
 ENCODE("%2は %1をあずかりじょにあずけた!")
 WAIT_CLICK
-STOP
+.db STOP
 
 L01BA55:
 ENCODE("%2は たおれた!!")
 WAIT_CLICK
-STOP
+.db STOP
 
 L01BA61:
 ENCODE("%2は いきたえた!!")
 WAIT_CLICK
-STOP
+.db STOP
 
 L01BA6E:
 ENCODE("「ちくしょう!!")

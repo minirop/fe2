@@ -776,107 +776,107 @@ L07884B:
 
 L07887F:
 ENCODE("の こうげき")
-STOP
+.db STOP
 
 L078887:
 ENCODE("の はんげき")
-STOP
+.db STOP
 
 L07888F:
 ENCODE("の さいこうげき")
-STOP
+.db STOP
 
 L078899:
 ENCODE("はしんだ")
-STOP
+.db STOP
 
 L07889F:
 ENCODE("ひっさつのいちげき")
-STOP
+.db STOP
 
 L0788AA:
 ENCODE("のダメージをあたえた")
-STOP
+.db STOP
 
 L0788B7:
 ENCODE("ダメージをあたえられない")
-STOP
+.db STOP
 
 L0788C6:
 ENCODE("は すばやくみをかわした")
-STOP
+.db STOP
 
 L0788D4:
 ENCODE("をとなえた")
-STOP
+.db STOP
 
 L0788DA:
 ENCODE("かいふくした")
-STOP
+.db STOP
 
 L0788E1:
 ENCODE("は HPが ")
-STOP
+.db STOP
 
 L0788E9:
 ENCODE("は こうげきをふうじられた")
-STOP
+.db STOP
 
 L0788F9:
 ENCODE("は のろいをはなった!")
-STOP
+.db STOP
 
 L078905:
 ENCODE("は ワープした")
-STOP
+.db STOP
 
 L07890E:
 ENCODE("は HPを")
-STOP
+.db STOP
 
 L078914:
 ENCODE("は こわれてしまった!!")
-STOP
+.db STOP
 
 L078921:
 ENCODE("は きょうどがあがった")
-STOP
+.db STOP
 
 L078930:
 ENCODE("の すがたがうかびあがった")
-STOP
+.db STOP
 
 L078942:
 ENCODE("みかたぜんぶのHPが")
-STOP
+.db STOP
 
 L078950:
 ENCODE("トライアングルアターック!!")
-STOP
+.db STOP
 
 L078960:
 ENCODE("しかしこうかがなかった")
-STOP
+.db STOP
 
 L07896D:
 ENCODE("はぶきがない!!")
-STOP
+.db STOP
 
 L078978:
 ENCODE("うばった")
-STOP
+.db STOP
 
 L07897E:
 ENCODE("まふうじのたては まほうをはねかえした")
-STOP
+.db STOP
 
 L078993:
 ENCODE("うばえなかった")
-STOP
+.db STOP
 
 L07899C:
 ENCODE("ルドルフは なぜかこうげきしてこない!!")
-STOP
+.db STOP
 
 L0789B4:
     STX $0380

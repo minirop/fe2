@@ -4012,103 +4012,103 @@ L0FDB73:
 
 L0FDBA3: ; cavalier
 ENCODE("ナイト")
-STOP
+.db STOP
 
 L0FDBA7: ; knight
 ENCODE("アーマー")
-STOP
+.db STOP
 
 L0FDBAC: ; pegasus knight
 ENCODE("Pナイト")
-STOP
+.db STOP
 
 L0FDBB1: ; paladin
 ENCODE("パラディン")
-STOP
+.db STOP
 
 L0FDBB9: ; falcon knight
 ENCODE("Fナイト")
-STOP
+.db STOP
 
 L0FDBBE: ; soldier
 ENCODE("ソルジャー")
-STOP
+.db STOP
 
 L0FDBC5: ; gold knight
 ENCODE("Gナイト")
-STOP
+.db STOP
 
 L0FDBCA: ; mercenary
 ENCODE("ようへい")
-STOP
+.db STOP
 
 L0FDBCF: ; myrmidon
 ENCODE("けんし")
-STOP
+.db STOP
 
 L0FDBD3: ; dread fighter
 ENCODE("ませんし")
-STOP
+.db STOP
 
 L0FDBD8: ; priestess
 ENCODE("しんかん")
-STOP
+.db STOP
 
 L0FDBDD: ; archer
 ENCODE("アーチャー")
-STOP
+.db STOP
 
 L0FDBE3: ; sniper
 ENCODE("スナイパー")
-STOP
+.db STOP
 
 L0FDBEA: ; villager
 ENCODE("むらびと")
-STOP
+.db STOP
 
 L0FDBF0: ; mage (male?)
 ENCODE("まどうし")
-STOP
+.db STOP
 
 L0FDBF6: ; mage (female?)
 ENCODE("まどうし")
-STOP
+.db STOP
 
 L0FDBFC: ; saint
 ENCODE("せいじょ")
-STOP
+.db STOP
 
 L0FDC02: ; cleric
 ENCODE("シスター")
-STOP
+.db STOP
 
 L0FDC07: ; sage
 ENCODE("けんじゃ")
-STOP
+.db STOP
 
 L0FDC0D: ; bow knight
 ENCODE("ボウナイト")
-STOP
+.db STOP
 
 L0FDC14: ; fighter
 ENCODE("せんし")
-STOP
+.db STOP
 
 L0FDC18: ; hero
 ENCODE("ゆうしゃ")
-STOP
+.db STOP
 
 L0FDC1D: ; baron
 ENCODE("バロン")
-STOP
+.db STOP
 
 L0FDC22: ; hero
 ENCODE("ゆうしゃ")
-STOP
+.db STOP
 
 L0FDC27: ; princess
 ENCODE("プリンセス")
-STOP
+.db STOP
 
 L0FDC2E: ; enemy names
 .dw L0FDBA3
@@ -4136,55 +4136,55 @@ L0FDC2E: ; enemy names
 
 L0FDC5A: ; gargoyle
 ENCODE("ガーゴイル")
-STOP
+.db STOP
 
 L0FDC62: ; high knight
 ENCODE("ハイナイト")
-STOP
+.db STOP
 
 L0FDC68: ; necrodragon
 ENCODE("Dゾンビ")
-STOP
+.db STOP
 
 L0FDC6F: ; general
 ENCODE("ジェネラル")
-STOP
+.db STOP
 
 L0FDC76: ; berserker
 ENCODE("きょうせんし")
-STOP
+.db STOP
 
 L0FDC7D: ; revenant
 ENCODE("ゾンビ")
-STOP
+.db STOP
 
 L0FDC83: ; brigand
 ENCODE("とうぞく")
-STOP
+.db STOP
 
 L0FDC89: ; bonewalker
 ENCODE("スケルトン")
-STOP
+.db STOP
 
 L0FDC8F: ; arcanist
 ENCODE("ようじゅつし")
-STOP
+.db STOP
 
 L0FDC97: ; witch
 ENCODE("まじょ")
-STOP
+.db STOP
 
 L0FDC9C: ; mogall
 ENCODE("ビグル")
-STOP
+.db STOP
 
 L0FDCA2: ; cantor
 ENCODE("きとうし")
-STOP
+.db STOP
 
 L0FDCA7: ; fell god
 ENCODE("じゃしん")
-STOP
+.db STOP
 
 ; items names
 L0FDCAD:
@@ -4250,231 +4250,231 @@ L0FDCAD:
 
 L0FDD23:
 ENCODE(" ")
-STOP
+.db STOP
 
 L0FDD25: ; steel lance
 ENCODE("はがねのやり")
-STOP
+.db STOP
 
 L0FDD2D: ; silver lance
 ENCODE("ぎんのやり")
-STOP
+.db STOP
 
 L0FDD34: ; javelin
 ENCODE("てやり")
-STOP
+.db STOP
 
 L0FDD38: ; blessed lance
 ENCODE("せいなるやり")
-STOP
+.db STOP
 
 L0FDD3F: ; knight killer/Ribersbane
 ENCODE("ナイトキラー")
-STOP
+.db STOP
 
 L0FDD46: ; Gradivus
 ENCODE("グラディウス")
-STOP
+.db STOP
 
 L0FDD4F: ; Astra
 ENCODE("りゅうせい")
-STOP
+.db STOP
 
 L0FDD55: ; Sol
 ENCODE("たいよう")
-STOP
+.db STOP
 
 L0FDD5A: ; Luna
 ENCODE("げっこう")
-STOP
+.db STOP
 
 L0FDD60: ; steel sword
 ENCODE("はがねのつるぎ")
-STOP
+.db STOP
 
 L0FDD6A: ; silver sword
 ENCODE("ぎんのつるぎ")
-STOP
+.db STOP
 
 L0FDD73: ; brave sword
 ENCODE("ゆうしゃのけん")
-STOP
+.db STOP
 
 L0FDD7B: ; shadow sword
 ENCODE("あんこくのけん")
-STOP
+.db STOP
 
 L0FDD83: ; levin sword
 ENCODE("いかづちのけん")
-STOP
+.db STOP
 
 L0FDD8C: ; blessed sword
 ENCODE("せいなるつるぎ")
-STOP
+.db STOP
 
 L0FDD95: ; Falchion
 ENCODE("ファルシオン")
-STOP
+.db STOP
 
 L0FDD9C: ; royal sword
 ENCODE("おうけのつるぎ")
-STOP
+.db STOP
 
 L0FDDA5: ; tentacle
 ENCODE("しょくしゅ")
-STOP
+.db STOP
 
 L0FDDAB: ; steel bow
 ENCODE("はがねのゆみ")
-STOP
+.db STOP
 
 L0FDDB3: ; blessed bow
 ENCODE("せいなるゆみ")
-STOP
+.db STOP
 
 L0FDDBA: ; silver bow
 ENCODE("ぎんのゆみ")
-STOP
+.db STOP
 
 L0FDDC1: ; leather shield
 ENCODE("かわのたて")
-STOP
+.db STOP
 
 L0FDDC7: ; steel shield
 ENCODE("はがねのたて")
-STOP
+.db STOP
 
 L0FDDCF: ; silver shield
 ENCODE("ぎんのたて")
-STOP
+.db STOP
 
 L0FDDD6: ; blessed shield
 ENCODE("せいなるたて")
-STOP
+.db STOP
 
 L0FDDDD: ; hexlock shield
 ENCODE("まふうじのたて")
-STOP
+.db STOP
 
 L0FDDE6: ; dracoshield
 ENCODE("りゅうのたて")
-STOP
+.db STOP
 
 L0FDDED: ; blessed ring
 ENCODE("せいなるゆびわ")
-STOP
+.db STOP
 
 L0FDDF6: ; angel ring
 ENCODE("てんしのゆびわ")
-STOP
+.db STOP
 
 L0FDDFF: ; speed ring
 ENCODE("はやさのゆびわ")
-STOP
+.db STOP
 
 L0FDE08: ; mage ring
 ENCODE("まどうのゆびわ")
-STOP
+.db STOP
 
 L0FDE12: ; player ring
 ENCODE("いのりのゆびわ")
-STOP
+.db STOP
 
 L0FDE1B: ; fire (tome)
 ENCODE("ファイアー")
-STOP
+.db STOP
 
 L0FDE21: ; thunder (tome)
 ENCODE("サンダー")
-STOP
+.db STOP
 
 L0FDE27: ; ragnarok
 ENCODE("ライナロック")
-STOP
+.db STOP
 
 L0FDE2E: ; seraphim
 ENCODE("エンジェル")
-STOP
+.db STOP
 
 L0FDE35: ; excalibur
 ENCODE("エクスカリバー")
-STOP
+.db STOP
 
 L0FDE3E: ; sagittae
 ENCODE("アロー")
-STOP
+.db STOP
 
 L0FDE42: ; aura
 ENCODE("オーラ")
-STOP
+.db STOP
 
 L0FDE46: ; gaia
 ENCODE("ガイア")
-STOP
+.db STOP
 
 L0FDE4B: ; miasma
 ENCODE("ドーラ")
-STOP
+.db STOP
 
 L0FDE50: ; mire
 ENCODE("スライム")
-STOP
+.db STOP
 
 L0FDE55: ; death
 ENCODE("デス")
-STOP
+.db STOP
 
 L0FDE59: ; medusa
 ENCODE("メデューサ")
-STOP
+.db STOP
 
 L0FDE60: ; ocular beam
 ENCODE("アイビーム")
-STOP
+.db STOP
 
 L0FDE67: ; oculus
 ENCODE("アイボール")
-STOP
+.db STOP
 
 L0FDE6E: ; ???
 ENCODE("ボーマ")
-STOP
+.db STOP
 
 L0FDE73: ; ???
 ENCODE("ボース")
-STOP
+.db STOP
 
 L0FDE78: ; conjure
 ENCODE("メサイア")
-STOP
+.db STOP
 
 L0FDE7D: ; recover
 ENCODE("リカバー")
-STOP
+.db STOP
 
 L0FDE83: ; physic
 ENCODE("リブロー")
-STOP
+.db STOP
 
 L0FDE89: ; nosferatu
 ENCODE("リザイア")
-STOP
+.db STOP
 
 L0FDE8F: ; warp
 ENCODE("ワープ")
-STOP
+.db STOP
 
 L0FDE94: ; fortify
 ENCODE("リザーブ")
-STOP
+.db STOP
 
 L0FDE9B: ; invoke
 ENCODE("イリュージョン")
-STOP
+.db STOP
 
 L0FDEA4: ; expel
 ENCODE("ディル")
-STOP
+.db STOP
 
 ; pointers to names
 L0FDEA9:
@@ -4524,159 +4524,159 @@ L0FDEA9:
 
 L0FDEFF:
 ENCODE("アルム")
-STOP
+.db STOP
 
 L0FDF03:
 ENCODE("セリカ")
-STOP
+.db STOP
 
 L0FDF07:
 ENCODE("マイセン")
-STOP
+.db STOP
 
 L0FDF0C:
 ENCODE("ノーマ")
-STOP
+.db STOP
 
 L0FDF10:
 ENCODE("ルカ")
-STOP
+.db STOP
 
 L0FDF13:
 ENCODE("クリフ")
-STOP
+.db STOP
 
 L0FDF17:
 ENCODE("ロビン")
-STOP
+.db STOP
 
 L0FDF1C:
 ENCODE("グレイ")
-STOP
+.db STOP
 
 L0FDF21:
 ENCODE("クレア")
-STOP
+.db STOP
 
 L0FDF25:
 ENCODE("クレーベ")
-STOP
+.db STOP
 
 L0FDF2B:
 ENCODE("フォルス")
-STOP
+.db STOP
 
 L0FDF30:
 ENCODE("ジュノー")
-STOP
+.db STOP
 
 L0FDF36:
 ENCODE("メイ")
-STOP
+.db STOP
 
 L0FDF39:
 ENCODE("シルク")
-STOP
+.db STOP
 
 L0FDF3D:
 ENCODE("ジェニー")
-STOP
+.db STOP
 
 L0FDF43:
 ENCODE("ボーイ")
-STOP
+.db STOP
 
 L0FDF48:
 ENCODE("カムイ")
-STOP
+.db STOP
 
 L0FDF4C:
 ENCODE("レオ")
-STOP
+.db STOP
 
 L0FDF4F:
 ENCODE("バルボ")
-STOP
+.db STOP
 
 L0FDF55:
 ENCODE("マチルダ")
-STOP
+.db STOP
 
 L0FDF5B:
 ENCODE("パイソン")
-STOP
+.db STOP
 
 L0FDF61:
 ENCODE("アトラス")
-STOP
+.db STOP
 
 L0FDF66:
 ENCODE("ジェシー")
-STOP
+.db STOP
 
 L0FDF6C:
 ENCODE("フォルス")
-STOP
+.db STOP
 
 L0FDF71:
 ENCODE("ソニア")
-STOP
+.db STOP
 
 L0FDF75:
 ENCODE("ディーン")
-STOP
+.db STOP
 
 L0FDF7B:
 ENCODE("セーバー")
-STOP
+.db STOP
 
 L0FDF81:
 ENCODE("リュート")
-STOP
+.db STOP
 
 L0FDF86:
 ENCODE("デューテ")
-STOP
+.db STOP
 
 L0FDF8C:
 ENCODE("ティータ")
-STOP
+.db STOP
 
 L0FDF91:
 ENCODE("カチュア")
-STOP
+.db STOP
 
 L0FDF96:
 ENCODE("パオラ")
-STOP
+.db STOP
 
 L0FDF9B:
 ENCODE("エスト")
-STOP
+.db STOP
 
 L0FDF9F:
 ENCODE("ジーク")
-STOP
+.db STOP
 
 L0FDFA4:
 ENCODE("シャドー")
-STOP
+.db STOP
 
 L0FDFAA:
 ENCODE("おんな")
-STOP
+.db STOP
 
 L0FDFAE:
 ENCODE("おとこ")
-STOP
+.db STOP
 
 L0FDFB2:
 ENCODE("むすめ")
-STOP
+.db STOP
 
 L0FDFB6:
 ENCODE("ハルク")
-STOP
+.db STOP
 
 L0FDFBA:
 .dw L0FE06A
@@ -4770,211 +4770,211 @@ L0FDFBA:
 
 L0FE06A:
 ENCODE("ドゼー")
-STOP
+.db STOP
 
 L0FE070:
 ENCODE("ギース")
-STOP
+.db STOP
 
 L0FE075:
 ENCODE("ドルク")
-STOP
+.db STOP
 
 L0FE07A:
 ENCODE("ヌイババ")
-STOP
+.db STOP
 
 L0FE081:
 ENCODE("ルドルフ")
-STOP
+.db STOP
 
 L0FE087:
 ENCODE("ジュダ")
-STOP
+.db STOP
 
 L0FE08D:
 ENCODE("ソニア")
-STOP
+.db STOP
 
 L0FE091:
 ENCODE("ディーン")
-STOP
+.db STOP
 
 L0FE097:
 ENCODE("マグナム")
-STOP
+.db STOP
 
 L0FE09D:
 ENCODE("ジェローム")
-STOP
+.db STOP
 
 L0FE0A4:
 ENCODE("ミューラー")
-STOP
+.db STOP
 
 L0FE0AA:
 ENCODE("ハンニバル")
-STOP
+.db STOP
 
 L0FE0B1:
 ENCODE("マッセナ")
-STOP
+.db STOP
 
 L0FE0B6:
 ENCODE("マーラ")
-STOP
+.db STOP
 
 L0FE0BA:
 ENCODE("タタラ")
-STOP
+.db STOP
 
 L0FE0BE:
 ENCODE("ジャミル")
-STOP
+.db STOP
 
 L0FE0C4:
 ENCODE("デューテ")
-STOP
+.db STOP
 
 L0FE0CA:
 ENCODE("ガゼル")
-STOP
+.db STOP
 
 L0FE0D0:
 ENCODE("ザクソン")
-STOP
+.db STOP
 
 L0FE0D6:
 ENCODE("スレイダー")
-STOP
+.db STOP
 
 L0FE0DD:
 ENCODE("ミカエラ")
-STOP
+.db STOP
 
 L0FE0E2:
 ENCODE("ローソン")
-STOP
+.db STOP
 
 L0FE0E7:
 ENCODE("ダッハ")
-STOP
+.db STOP
 
 L0FE0EC:
 ENCODE("ガッハ")
-STOP
+.db STOP
 
 L0FE0F1:
 ENCODE("ブライ")
-STOP
+.db STOP
 
 L0FE0F6:
 ENCODE("シーザス")
-STOP
+.db STOP
 
 L0FE0FC:
 ENCODE("リゲルぐん")
-STOP
+.db STOP
 
 L0FE104:
 ENCODE("ウォルフ")
-STOP
+.db STOP
 
 L0FE109:
 ENCODE("ギースぐん")
-STOP
+.db STOP
 
 L0FE111:
 ENCODE("ドゼーぐん")
-STOP
+.db STOP
 
 L0FE11A:
 ENCODE("ドルクくん")
-STOP
+.db STOP
 
 L0FE121:
 ENCODE("まどうぐん")
-STOP
+.db STOP
 
 L0FE129:
 ENCODE("かいぞく")
-STOP
+.db STOP
 
 L0FE12F:
 ENCODE("さんぞく")
-STOP
+.db STOP
 
 L0FE135:
 ENCODE("まもの")
-STOP
+.db STOP
 
 L0FE139:
 ENCODE("ドーマ")
-STOP
+.db STOP
 
 L0FE13E:
 ENCODE("ガルシア")
-STOP
+.db STOP
 
 L0FE144:
 ENCODE("ヘステ")
-STOP
+.db STOP
 
 L0FE148:
 ENCODE("サイゾー")
-STOP
+.db STOP
 
 L0FE14E:
 ENCODE("ガネフ")
-STOP
+.db STOP
 
 L0FE153:
 ENCODE("まじん")
-STOP
+.db STOP
 
 L0FE158:
 ENCODE("デビル")
-STOP
+.db STOP
 
 L0FE15E:
 ENCODE("ゴールド")
-STOP
+.db STOP
 
 L0FE165:
 ENCODE("はくりゅう")
-STOP
+.db STOP
 
 L0FE16B:
 ENCODE("サーペント")
-STOP
+.db STOP
 
 L0FE172:
 ENCODE("ナーガ")
-STOP
+.db STOP
 
 L0FE177:
 ENCODE("リッチー")
-STOP
+.db STOP
 
 L0FE17C:
 ENCODE("バルログ")
-STOP
+.db STOP
 
 L0FE183:
 ENCODE("バデス")
-STOP
+.db STOP
 
 L0FE189:
 ENCODE("ケルベス")
-STOP
+.db STOP
 
 L0FE18F:
 ENCODE("ベルレス")
-STOP
+.db STOP
 
 L0FE195:
 ENCODE("マミー")
-STOP
+.db STOP
 
 L0FE199:
 .db $17 $18 $19 $1A $1B $1C $1D $28
@@ -5850,67 +5850,67 @@ L0FE609:
 
 L0FE629:
 ENCODE("そうげん")
-STOP
+.db STOP
 
 L0FE62F:
 ENCODE("はしら")
-STOP
+.db STOP
 
 L0FE633:
 ENCODE("はやし")
-STOP
+.db STOP
 
 L0FE637:
 ENCODE("さばく")
-STOP
+.db STOP
 
 L0FE63C:
 ENCODE("や ま")
-STOP
+.db STOP
 
 L0FE640:
 ENCODE("は し")
-STOP
+.db STOP
 
 L0FE644:
 ENCODE("ま ち")
-STOP
+.db STOP
 
 L0FE648:
 ENCODE("とりで")
-STOP
+.db STOP
 
 L0FE64D:
 ENCODE("し ろ")
-STOP
+.db STOP
 
 L0FE651:
 ENCODE("か わ")
-STOP
+.db STOP
 
 L0FE655:
 ENCODE("そ ら")
-STOP
+.db STOP
 
 L0FE659:
 ENCODE("う み")
-STOP
+.db STOP
 
 L0FE65D:
 ENCODE("ゆ か")
-STOP
+.db STOP
 
 L0FE661:
 ENCODE("かいだん")
-STOP
+.db STOP
 
 L0FE667:
 ENCODE("スタジアム")
-STOP
+.db STOP
 
 L0FE66E:
 ENCODE("いしがき")
-STOP
+.db STOP
 
 L0FE674:
     LDA #0
@@ -6265,7 +6265,7 @@ L0FE8CD:
 
 L0FE8D9:
 ENCODE("さけこえ")
-STOP
+.db STOP
 
 L0FE8DE:
 .db $00
@@ -8699,7 +8699,7 @@ L0FF454:
 
 L0FF459:
 ENCODE("じたちつて")
-STOP
+.db STOP
 
 L0FF460:
     STA $0B

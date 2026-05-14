@@ -1077,31 +1077,31 @@ L0587BB:
 
 L0587C7:
 ENCODE("ちから")
-STOP
+.db STOP
 
 L0587CB:
 ENCODE("わざ")
-STOP
+.db STOP
 
 L0587CF:
 ENCODE("すばやさ")
-STOP
+.db STOP
 
 L0587D5:
 ENCODE("うん")
-STOP
+.db STOP
 
 L0587D8:
 ENCODE("しゅびりょく")
-STOP
+.db STOP
 
 L0587E0:
 ENCODE("さいだいHP")
-STOP
+.db STOP
 
 L0587E8:
 ENCODE("まりょく")
-STOP
+.db STOP
 
 L0587ED:
 .dw $0312

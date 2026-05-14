@@ -3496,7 +3496,7 @@ NEWLINE
 NEWLINE
 NEWLINE
 NEWLINE
-STOP
+.db STOP
 
 ; unknown where it is shown
 ; some characters (like "わが"?) might be control codes
@@ -3519,7 +3519,7 @@ NEWLINE
 NEWLINE
 NEWLINE
 NEWLINE
-STOP
+.db STOP
 
 L04A3A7:
     JSR L0FF807.w
@@ -6172,14 +6172,14 @@ L04B62A:
 .db $F8 $91 $00 $00
 ENCODE("©1991 ")
 NINTENDO
-STOP
+.db STOP
 
 L04B67C:
 ENCODE("かくして")
 NEWLINE
 ENCODE("おおいなる たたかいのまくは おりた")
 NEWLINE
-STOP
+.db STOP
 
 L04B695:
 ENCODE("おおくのぎせいを はらい")
@@ -6188,66 +6188,66 @@ ENCODE("いまようやく")
 NEWLINE
 ENCODE("バレンシアに へいわがおとずれる")
 NEWLINE
-STOP
+.db STOP
 
 L04B6BF:
 ENCODE("このたたかいが")
 NEWLINE
 ENCODE("いったい なんであったのか")
 NEWLINE
-STOP
+.db STOP
 
 L04B6D8:
 NEWLINE
 ENCODE("そのといに こたえるものはいない")
 NEWLINE
-STOP
+.db STOP
 
 L04B6EB:
 NEWLINE
 ENCODE("ただひとつ いえること")
 NEWLINE
-STOP
+.db STOP
 
 L04B6FA:
 ENCODE("それは ひとが")
 NEWLINE
 ENCODE("ふたたび おごりたかぶるとき")
 NEWLINE
-STOP
+.db STOP
 
 L04B716:
 ENCODE("あらたなる せんらんのほのおが")
 NEWLINE
 ENCODE("ちじょうを やきつくし")
 NEWLINE
-STOP
+.db STOP
 
 L04B735:
 ENCODE("すべてが うしなわれてしまうで")
 NEWLINE
 ENCODE("あろうということ")
 NEWLINE
-STOP
+.db STOP
 
 L04B752:
 NEWLINE
 ENCODE("もっとも おそろしく みにくいもの")
 NEWLINE
 NEWLINE
-STOP
+.db STOP
 
 L04B767:
 ENCODE("それは ひとのこころのなかにこそ")
 NEWLINE
 ENCODE("そんざいするのかも しれない")
 NEWLINE
-STOP
+.db STOP
 
 L04B789:
 NEWLINE
 NEWLINE
-STOP
+.db STOP
 
 L04B78C:
 .dw L04B67C
@@ -6300,7 +6300,7 @@ L04B7E2:
 ENCODE("でやすらかに")
 NEWLINE
 ENCODE("ねむっている···")
-STOP
+.db STOP
 
 L04B7F4:
 ENCODE("しんせいバレンシアの")
@@ -6313,7 +6313,7 @@ NEWLINE
 ENCODE("かたうでとして おうこくの")
 NEWLINE
 ENCODE("さいけんに どりょくした")
-STOP
+.db STOP
 
 L04B837:
 ENCODE("ミラとドーマの ふたつの")
@@ -6321,7 +6321,7 @@ NEWLINE
 ENCODE("きょうだんを とうごうして")
 NEWLINE
 ENCODE("さいこうしさいとなる")
-STOP
+.db STOP
 
 L04B860:
 ENCODE("おうこくきしだんに さんか")
@@ -6329,7 +6329,7 @@ NEWLINE
 ENCODE("バレンシアのふっこうに")
 NEWLINE
 ENCODE("どりょくする")
-STOP
+.db STOP
 
 L04B884:
 ENCODE("たたかいののち アルムに")
@@ -6338,7 +6338,7 @@ ENCODE("わかれをつげる")
 NEWLINE
 NEWLINE
 ENCODE("そのご かれをみたものはいない")
-STOP
+.db STOP
 
 L04B8AC:
 ENCODE("ロビンと クレアをあらそい")
@@ -6349,7 +6349,7 @@ NEWLINE
 ENCODE("おとこは かおじゃない")
 NEWLINE
 ENCODE("こころさと うそぶいている")
-STOP
+.db STOP
 
 L04B8E6:
 ENCODE("ロビンのせんしを かなしみ")
@@ -6360,7 +6360,7 @@ NEWLINE
 ENCODE("かれに えがおがもどるのは")
 NEWLINE
 ENCODE("いつのことか···")
-STOP
+.db STOP
 
 L04B91F:
 ENCODE("あいするものを うしない")
@@ -6368,7 +6368,7 @@ NEWLINE
 ENCODE("にあわないとは しりつつ")
 NEWLINE
 ENCODE("ひとり たびにでる")
-STOP
+.db STOP
 
 L04B945:
 ENCODE("グレイのしつこさに まけ")
@@ -6379,7 +6379,7 @@ NEWLINE
 ENCODE("「あーあ アルム")
 NEWLINE
 ENCODE(" すきだったのになぁ···")
-STOP
+.db STOP
 
 L04B979:
 ENCODE("「グレイってば       ")
@@ -6390,7 +6390,7 @@ NEWLINE
 ENCODE("ひとりさきにしんだグレイを")
 NEWLINE
 ENCODE("うらんでいる")
-STOP
+.db STOP
 
 L04B9B3:
 ENCODE("しんせいバレンシアの")
@@ -6401,7 +6401,7 @@ NEWLINE
 ENCODE("さいきん うつくしい")
 NEWLINE
 ENCODE("つまを むかえたときく")
-STOP
+.db STOP
 
 L04B9E4:
 ENCODE("しんせいバレンシアの")
@@ -6414,7 +6414,7 @@ NEWLINE
 ENCODE("かいぞくとのたたかいで")
 NEWLINE
 ENCODE("いのちを おとす")
-STOP
+.db STOP
 
 L04BA1E:
 ENCODE("ボーイとともに ")
@@ -6422,7 +6422,7 @@ NEWLINE
 ENCODE("ソフィアのきょうかいで")
 NEWLINE
 ENCODE("はたらいている")
-STOP
+.db STOP
 
 L04BA3D:
 ENCODE("けんかともだちの")
@@ -6430,7 +6430,7 @@ NEWLINE
 ENCODE("ボーイをなくし すこし")
 NEWLINE
 ENCODE("ショックをうけている")
-STOP
+.db STOP
 
 L04BA5F:
 ENCODE("きずついた ひとびとを")
@@ -6438,7 +6438,7 @@ NEWLINE
 ENCODE("たすけるために")
 NEWLINE
 ENCODE("リゲルにむかう")
-STOP
+.db STOP
 
 L04BA7E:
 ENCODE("だれもがまさかと おもう")
@@ -6451,7 +6451,7 @@ NEWLINE
 ENCODE("かのじょは わらって")
 NEWLINE
 ENCODE("こたえようとしない")
-STOP
+.db STOP
 
 L04BAC3:
 ENCODE("あいかわらず")
@@ -6461,7 +6461,7 @@ NEWLINE
 ENCODE("かれらにとっては")
 NEWLINE
 ENCODE("それが しあわせなのか")
-STOP
+.db STOP
 
 L04BAED:
 ENCODE("メイに さきだたれ")
@@ -6471,7 +6471,7 @@ NEWLINE
 ENCODE("じぶんのこころに きづく")
 NEWLINE
 ENCODE("しかし ときはもどらない")
-STOP
+.db STOP
 
 L04BB1D:
 ENCODE("ジェシーたちとともに")
@@ -6479,7 +6479,7 @@ NEWLINE
 ENCODE("あたらしいくにをつくろうと")
 NEWLINE
 ENCODE("がんばっている")
-STOP
+.db STOP
 
 L04BB41:
 ENCODE("かつての ギースのりょうちに")
@@ -6492,7 +6492,7 @@ NEWLINE
 ENCODE("さばくのようへいおうと")
 NEWLINE
 ENCODE("よばれるようになる")
-STOP
+.db STOP
 
 L04BB81:
 ENCODE("アルムにたのまれて")
@@ -6500,7 +6500,7 @@ NEWLINE
 ENCODE("わかいへいしたちに")
 NEWLINE
 ENCODE("たたかいかたを おしえている")
-STOP
+.db STOP
 
 L04BBA4:
 ENCODE("よろいをぬぎすてて")
@@ -6518,7 +6518,7 @@ NEWLINE
 ENCODE("れきしに とわに")
 NEWLINE
 ENCODE("きざまれるであろう")
-STOP
+.db STOP
 
 L04BBF2:
 ENCODE("クレーベをうしない")
@@ -6538,7 +6538,7 @@ NEWLINE
 ENCODE("れきしに とわに ")
 NEWLINE
 ENCODE("きざまれるであろう")
-STOP
+.db STOP
 
 L04BC46:
 ENCODE("むらをとうぞくから まもるため")
@@ -6546,7 +6546,7 @@ NEWLINE
 ENCODE("じけいだんの たいちょうを")
 NEWLINE
 ENCODE("つとめている")
-STOP
+.db STOP
 
 L04BC6E:
 ENCODE("おとうとたちを さがしだし")
@@ -6556,7 +6556,7 @@ NEWLINE
 ENCODE("いまは むかしのように")
 NEWLINE
 ENCODE("きこりをしているという")
-STOP
+.db STOP
 
 L04BCA2:
 ENCODE("かつての ギースのりょうちに")
@@ -6569,7 +6569,7 @@ NEWLINE
 ENCODE("さばくのようへいおうと")
 NEWLINE
 ENCODE("よばれるようになる")
-STOP
+.db STOP
 
 L04BCE2:
 ENCODE("ドーマの いけにえにされて")
@@ -6584,7 +6584,7 @@ NEWLINE
 ENCODE("ちちおやのジュダを ソニアは")
 NEWLINE
 ENCODE("けっして ゆるそうとはしない")
-STOP
+.db STOP
 
 L04BD3D:
 ENCODE("たたかいののち かれのすがたは")
@@ -6599,7 +6599,7 @@ NEWLINE
 ENCODE("もとめて みなみのたいりくに")
 NEWLINE
 ENCODE("わたったという")
-STOP
+.db STOP
 
 L04BD8D:
 ENCODE("ジェシーの ")
@@ -6614,7 +6614,7 @@ NEWLINE
 ENCODE("うつくしい つまが")
 NEWLINE
 ENCODE("よりそっている")
-STOP
+.db STOP
 
 L04BDC2:
 .dw L04BE06

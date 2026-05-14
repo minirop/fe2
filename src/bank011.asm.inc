@@ -1513,7 +1513,7 @@ ENCODE("たいき")
 NEWLINE
 ENCODE("きろく")
 NEWLINE
-STOP
+.db STOP
 
 L0B8BF2:
     LDA #10
@@ -1544,7 +1544,7 @@ ENCODE("スイッチ")
 NEWLINE
 ENCODE("きろく")
 NEWLINE
-STOP
+.db STOP
 
 L0B8C33:
     LDA #6
@@ -1575,7 +1575,7 @@ ENCODE("NORMAL")
 NEWLINE
 ENCODE("EASY")
 NEWLINE
-STOP
+.db STOP
 
 L0B8C72:
     LDA #12
@@ -1696,7 +1696,7 @@ ENCODE("のこりが 0のときにスタートを")
 NEWLINE
 ENCODE("おすと ゲームが はじまります")
 NEWLINE
-STOP
+.db STOP
 
 L0B8DA1:
     LDA #12
@@ -1863,31 +1863,31 @@ L0B8EB2:
 .dw L0B8ED3
 
 L0B8EC0:
-STOP
+.db STOP
 
 L0B8EC1: ; sword
 ENCODE("つるぎ")
-STOP
+.db STOP
 
 L0B8EC6: ; spear
 ENCODE("やり")
-STOP
+.db STOP
 
 L0B8EC9: ; bow
 ENCODE("ゆみ")
-STOP
+.db STOP
 
 L0B8ECC: ; magic
 ENCODE("まほう")
-STOP
+.db STOP
 
 L0B8ED0: ; axe
 ENCODE("おの")
-STOP
+.db STOP
 
 L0B8ED3: ; sword and bow
 ENCODE("つるぎ·ゆみ")
-STOP
+.db STOP
 
 L0B8EDB:
     LDY #1
@@ -3192,7 +3192,7 @@ ENCODE("アニメーション")
 NEWLINE
 ENCODE("ウエイトタイマー")
 NEWLINE
-STOP
+.db STOP
 
 L0B986E:
     LDA #12
@@ -4167,47 +4167,47 @@ NEWLINE
 
 L0B9F63:
 ENCODE("こうげきりょく:")
-STOP
+.db STOP
 
 L0B9F6D:
 ENCODE("     わざ:")
-STOP
+.db STOP
 
 L0B9F77:
 ENCODE("   すばやさ:")
-STOP
+.db STOP
 
 L0B9F81:
 ENCODE("  うんのよさ:")
-STOP
+.db STOP
 
 L0B9F8A:
 ENCODE(" しゅびりょく:")
-STOP
+.db STOP
 
 L0B9F94:
 ENCODE(" いどうりょく:")
-STOP
+.db STOP
 
 L0B9F9E:
 ENCODE("   さくてき:")
-STOP
+.db STOP
 
 L0B9FA7:
 ENCODE("まほうぼうぎょ:")
-STOP
+.db STOP
 
 L0B9FB2:
 ENCODE("レベル:")
-STOP
+.db STOP
 
 L0B9FB8:
 ENCODE("HP:")
-STOP
+.db STOP
 
 L0B9FBC:
 ENCODE("ターン:")
-STOP
+.db STOP
 
 L0B9FC1:
 ENCODE(" PLAYER")
@@ -4243,7 +4243,7 @@ NEWLINE
 
 L0B9FEE:
 ENCODE("   まりょく:")
-STOP
+.db STOP
 
 L0B9FF7:
 ENCODE("あける")
@@ -4319,13 +4319,13 @@ NEWLINE
 
 L0BA071:
 ENCODE("まほうぼうぎょ:")
-STOP
+.db STOP
 
 L0BA07C:
 ENCODE("  ")
 L0BA07E:
 ENCODE("けいけんち:")
-STOP
+.db STOP
 
 L0BA085:
 ENCODE("ぶきや")
@@ -4345,7 +4345,7 @@ NEWLINE
 
 L0BA0AB:
 ENCODE("マップ:")
-STOP
+.db STOP
 
 L0BA0B1:
 ENCODE("ON")
@@ -4357,11 +4357,11 @@ NEWLINE
 
 L0BA0B8:
 ENCODE("はやい")
-STOP
+.db STOP
 
 L0BA0BC:
 ENCODE("おそい")
-STOP
+.db STOP
 
 L0BA0C0:
 ENCODE("セーブしますか ?")
@@ -4421,11 +4421,11 @@ NEWLINE
 
 L0BA132:
 ENCODE("きろく1:ターン")
-STOP
+.db STOP
 
 L0BA13B:
 ENCODE("きろく2:ターン")
-STOP
+.db STOP
 
 L0BA144:
 ENCODE("きろくをうつす")
@@ -4445,19 +4445,19 @@ NEWLINE
 
 L0BA163:
 ENCODE("しきかん:")
-STOP
+.db STOP
 
 L0BA169:
 ENCODE("にんずう:")
-STOP
+.db STOP
 
 L0BA170:
 ENCODE("つよさ ")
-STOP
+.db STOP
 
 L0BA175:
 ENCODE("なまえ")
-STOP
+.db STOP
 
 L0BA179:
 ENCODE("LV EXP  HP ")
@@ -4561,15 +4561,15 @@ NEWLINE
 
 L0BA27E:
 ENCODE("てきぶたい: ")
-STOP
+.db STOP
 
 L0BA287:
 ENCODE("  ターン:")
-STOP
+.db STOP
 
 L0BA28E:
 ENCODE("かわりに")
-STOP
+.db STOP
 
 L0BA293:
 ENCODE("ぶたいを ひきついだ!!")
@@ -4609,7 +4609,7 @@ NEWLINE
 
 L0BA304:
 ENCODE("ぶき:")
-STOP
+.db STOP
 
 L0BA309:
 ENCODE("と")
@@ -6610,7 +6610,7 @@ NEWLINE
 ENCODE("もういちど さいしょから")
 NEWLINE
 ENCODE("やりなおして ください")
-STOP
+.db STOP
 
 L0BB111:
 .db $40 $90 $14 $04 $E8 $40 $40 MYCEN
@@ -6724,7 +6724,7 @@ L0BB211:
 ENCODE("%0 は")
 NEWLINE
 ENCODE("%1 をとなえた")
-STOP
+.db STOP
 
 L0BB226:
 .db $40 $90 $14 $04
@@ -6753,7 +6753,7 @@ NEWLINE
 ENCODE("クラスチェンジするのを")
 NEWLINE
 ENCODE("あきらめた")
-STOP
+.db STOP
 
 L0BB278:
 .db $30 $90 $14 $04
@@ -6764,7 +6764,7 @@ NEWLINE
 ENCODE("もうすこし レベルをあげて")
 NEWLINE
 ENCODE("また おいでなさい")
-STOP
+.db STOP
 
 L0BB2AD:
 .db $30 $80 $12 $05
@@ -6778,11 +6778,11 @@ ENCODE("てきは メガクェイク")
 NEWLINE
 ENCODE("をとなえた!!")
 .db $E1 $03
-STOP
+.db STOP
 
 L0BB2E8:
 ENCODE(" ")
-STOP
+.db STOP
 
 L0BB2EA:
 ENCODE("%0は%1に")
@@ -6799,7 +6799,7 @@ L0BB312:
 ENCODE("%0 は%1に")
 NEWLINE
 ENCODE("%2 をわたした")
-STOP
+.db STOP
 
 L0BB32A:
 .db $40 $90 $12 $04
@@ -6808,7 +6808,7 @@ L0BB32A:
 ENCODE("%0 は%1から")
 NEWLINE
 ENCODE("%3 をうけとった")
-STOP
+.db STOP
 
 L0BB344:
 .db $40 $90 $12 $04
@@ -6819,7 +6819,7 @@ NEWLINE
 ENCODE("%2と")
 NEWLINE
 ENCODE("%3を こうかんした")
-STOP
+.db STOP
 
 L0BB362:
 .db $40 $90 $12 $04
@@ -6828,11 +6828,11 @@ L0BB362:
 ENCODE("%0 は")
 NEWLINE
 ENCODE("%1 をすてた")
-STOP
+.db STOP
 
 L0BB376:
 ENCODE("たいりょくが%2かいふくした")
-STOP
+.db STOP
 
 L0BB386:
 ENCODE("しゅびりょくが%2あがった")
@@ -6840,15 +6840,15 @@ ENCODE("しゅびりょくが%2あがった")
 
 L0BB397:
 ENCODE("まほうぼうぎょが%2あがった")
-STOP
+.db STOP
 
 L0BB3AA:
 ENCODE("いどうりょくが%2あがった")
-STOP
+.db STOP
 
 L0BB3BB:
 ENCODE("ぶきレベルが%2あがった")
-STOP
+.db STOP
 
 L0BB3CC:
 ENCODE("わざが%2あがった")
@@ -6888,7 +6888,7 @@ NEWLINE
 ENCODE("リザーブをとなえた")
 .db $E1
 ENCODE("う")
-STOP
+.db STOP
 
 L0BB447:
 .db $40 $90 $12 $04
@@ -6914,7 +6914,7 @@ L0BB498:
 ENCODE("%0 を")
 NEWLINE
 ENCODE("しょじひんにいれました")
-STOP
+.db STOP
 
 L0BB4AA:
 ENCODE("なにかすててください")
@@ -6922,11 +6922,11 @@ ENCODE("なにかすててください")
 
 L0BB4B6:
 ENCODE("%1 をすてた")
-STOP
+.db STOP
 
 L0BB4BE:
 ENCODE("%0 をすてた")
-STOP
+.db STOP
 
 L0BB4C6:
 .db $40 $90 $12 $04
@@ -6936,13 +6936,13 @@ ENCODE("このセーブ·データをけします")
 
 L0BB4DD:
 ENCODE("データをけしました")
-STOP
+.db STOP
 
 L0BB4E8:
 .db $40 $90 $12 $04
 .db $E9 $01
 ENCODE("データをうつしました")
-STOP
+.db STOP
 
 L0BB4FA:
 .db $40 $90 $12 $04
@@ -6952,7 +6952,7 @@ NEWLINE
 ENCODE("ざんねんながら")
 NEWLINE
 ENCODE("このきろくは しようできません")
-STOP
+.db STOP
 
 L0BB52B:
 .db $30 $50 $12 $04
@@ -7632,267 +7632,267 @@ L0BB821:
 
 L0BB8C3:
 ENCODE("ラムのはやし")
-STOP
+.db STOP
 
 L0BB8CA:
 ENCODE("とうぞくのもり")
-STOP
+.db STOP
 
 L0BB8D3:
 ENCODE("ラムのたに")
-STOP
+.db STOP
 
 L0BB8D9:
 ENCODE("みなみのとりで")
-STOP
+.db STOP
 
 L0BB8E2:
 ENCODE("ソフィアのみなみ1")
-STOP
+.db STOP
 
 L0BB8EC:
 ENCODE("ソフィアのみなみ2")
-STOP
+.db STOP
 
 L0BB8F6:
 ENCODE("ソフィアのもん")
-STOP
+.db STOP
 
 L0BB8FE:
 ENCODE("ノーヴァのぼち")
-STOP
+.db STOP
 
 L0BB908:
 ENCODE("うみ1")
-STOP
+.db STOP
 
 L0BB90C:
 ENCODE("うみ2")
-STOP
+.db STOP
 
 L0BB910:
 ENCODE("かいぞくのとりで")
-STOP
+.db STOP
 
 L0BB91B:
 ENCODE("うみ3")
-STOP
+.db STOP
 
 L0BB91F:
 ENCODE("うみのほこら")
-STOP
+.db STOP
 
 L0BB926:
 ENCODE("うみ4")
-STOP
+.db STOP
 
 L0BB92A:
 ENCODE("うみ5")
-STOP
+.db STOP
 
 L0BB92E:
 ENCODE("きたのもん")
-STOP
+.db STOP
 
 L0BB934:
 ENCODE("ソフィアのきた")
-STOP
+.db STOP
 
 L0BB93C:
 ENCODE("ソフィアのにし")
-STOP
+.db STOP
 
 L0BB944:
 ENCODE("ソフィアのかいがん")
-STOP
+.db STOP
 
 L0BB94F:
 ENCODE("やまのはかば")
-STOP
+.db STOP
 
 L0BB957:
 ENCODE("さばくのとりで")
-STOP
+.db STOP
 
 L0BB961:
 ENCODE("さばくのきた")
-STOP
+.db STOP
 
 L0BB969:
 ENCODE("さばくのみなみ")
-STOP
+.db STOP
 
 L0BB972:
 ENCODE("ギースのとりで")
-STOP
+.db STOP
 
 L0BB97C:
 ENCODE("ミラへのたに")
-STOP
+.db STOP
 
 L0BB983:
 ENCODE("ミラしんでん")
-STOP
+.db STOP
 
 L0BB98B:
 ENCODE("ソフィアのもり")
-STOP
+.db STOP
 
 L0BB993:
 ENCODE("もりのむら")
-STOP
+.db STOP
 
 L0BB999:
 ENCODE("ドゼーのとりで")
-STOP
+.db STOP
 
 L0BB9A4:
 ENCODE("ソフィアもり2")
-STOP
+.db STOP
 
 L0BB9AC:
 ENCODE("もりのきた")
-STOP
+.db STOP
 
 L0BB9B2:
 ENCODE("すいもん")
-STOP
+.db STOP
 
 L0BB9B7:
 ENCODE("けんじゃのさと")
-STOP
+.db STOP
 
 L0BB9C0:
 ENCODE("こっきょう")
-STOP
+.db STOP
 
 L0BB9C6:
 ENCODE("リゲルへいや")
-STOP
+.db STOP
 
 L0BB9CE:
 ENCODE("リゲルのたに")
-STOP
+.db STOP
 
 L0BB9D6:
 ENCODE("りゅうのかこう")
-STOP
+.db STOP
 
 L0BB9DE:
 ENCODE("リゲルのたき")
-STOP
+.db STOP
 
 L0BB9E6:
 ENCODE("リゲルのもり")
-STOP
+.db STOP
 
 L0BB9EE:
 ENCODE("おそれざん")
-STOP
+.db STOP
 
 L0BB9F5:
 ENCODE("ヌイババやかた")
-STOP
+.db STOP
 
 L0BB9FF:
 ENCODE("ようさい")
-STOP
+.db STOP
 
 L0BBA04:
 ENCODE("リゲルじょう")
-STOP
+.db STOP
 
 L0BBA0D:
 ENCODE("しびとのぬま")
-STOP
+.db STOP
 
 L0BBA15:
 ENCODE("ぬまのぼち")
-STOP
+.db STOP
 
 L0BBA1C:
 ENCODE("ドルクのとりで")
-STOP
+.db STOP
 
 L0BBA26:
 ENCODE("まよいのもり")
-STOP
+.db STOP
 
 L0BBA2D:
 ENCODE("ドーマのもん")
-STOP
+.db STOP
 
 L0BBA35:
 ENCODE("ドーマのぬま")
-STOP
+.db STOP
 
 L0BBA3D:
 ENCODE("ラムのむら")
-STOP
+.db STOP
 
 L0BBA43:
 ENCODE("とうぞくのほこら")
-STOP
+.db STOP
 
 L0BBA4D:
 ENCODE("かいほうぐんのアジト")
-STOP
+.db STOP
 
 L0BBA5A:
 ENCODE("ソフィアじょう")
-STOP
+.db STOP
 
 L0BBA63:
 ENCODE("しゅうどういん")
-STOP
+.db STOP
 
 L0BBA6C:
 ENCODE("ノーヴァのみなと")
-STOP
+.db STOP
 
 L0BBA76:
 ENCODE("ソフィアのみなと")
-STOP
+.db STOP
 
 L0BBA7F:
 ENCODE("やまのむら")
-STOP
+.db STOP
 
 L0BBA85:
 ENCODE("りゅうのほこら")
-STOP
+.db STOP
 
 L0BBA8D:
 ENCODE("さばくのほこら")
-STOP
+.db STOP
 
 L0BBA96:
 ENCODE("もりのほこら")
-STOP
+.db STOP
 
 L0BBA9D:
 ENCODE("リゲルのむら")
-STOP
+.db STOP
 
 L0BBAA5:
 ENCODE("おそれざんのほこら")
-STOP
+.db STOP
 
 L0BBAB0:
 ENCODE("ひみつのほこら")
-STOP
+.db STOP
 
 L0BBAB8:
 ENCODE("ドーマのとう")
-STOP
+.db STOP
 
 L0BBAC0:
 ENCODE("りゅうのかこう")
-STOP
+.db STOP
 
 L0BBAC8:
 ENCODE("ドーマのさいだん")
-STOP
+.db STOP
 
 .db $05
 .db $16

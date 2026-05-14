@@ -3901,7 +3901,7 @@ SPEAK
 ENCODE("あなたに おわたしするものが")
 NEWLINE
 ENCODE("あります")
-STOP
+.db STOP
 
 L0AA9A5:
 NAME WOMAN
@@ -3947,7 +3947,7 @@ NEWLINE
 ENCODE("ソフィアのひとびとを")
 NEWLINE
 ENCODE("すくってあげてください")
-STOP
+.db STOP
 
 L0AAA86:
 FACE CELICA
@@ -3958,7 +3958,7 @@ NEWLINE
 ENCODE("  サークレットをつけた!!")
 .db $DF $B6 $E6
 FACE BOY
-STOP
+.db STOP
 
 L0AAAAE:
 SPEAK
@@ -4004,7 +4004,7 @@ SPEAK
 ENCODE("どうか すいもんを")
 NEWLINE
 ENCODE("ひらいてくだい")
-STOP
+.db STOP
 
 L0AABA5:
 SPEAK
@@ -4029,7 +4029,7 @@ ENCODE("きけんなんだ")
 WAIT_CLICK
 SPEAK
 ENCODE("わるいが おれには できないよ")
-STOP
+.db STOP
 
 L0AAC38:
 SPEAK
@@ -4046,7 +4046,7 @@ SPEAK
 ENCODE("みてなよ")
 NEWLINE
 ENCODE("いま ひらいてやるからな")
-STOP
+.db STOP
 
 L0AAC79:
 SPEAK
@@ -4062,7 +4062,7 @@ NEWLINE
 ENCODE("リゲルおうこくだ")
 NEWLINE
 ENCODE("ちゅういして ゆきなよ")
-STOP
+.db STOP
 
 L0AACB8:
 SPEAK
@@ -4074,7 +4074,7 @@ NEWLINE
 ENCODE("ひとじちにとられて しかたなく")
 NEWLINE
 ENCODE("たたかっていたのに···")
-STOP
+.db STOP
 
 L0AACF4:
 SPEAK
@@ -4090,7 +4090,7 @@ NEWLINE
 ENCODE("シスターたちが")
 NEWLINE
 ENCODE("ぶじだといいんだが···")
-STOP
+.db STOP
 
 L0AAD4E:
 SPEAK
@@ -4102,7 +4102,7 @@ SPEAK
 ENCODE("ソフィアは きらいだけど")
 NEWLINE
 ENCODE("あんたらには れいをいうぜ")
-STOP
+.db STOP
 
 L0AAD88:
 FACE ALM
@@ -4142,7 +4142,7 @@ SPEAK
 ENCODE("ああ はやくジークに")
 NEWLINE
 ENCODE("あいたい···")
-STOP
+.db STOP
 
 L0AAE68:
 FACE ZEKE
@@ -4276,7 +4276,7 @@ SPEAK
 ENCODE("わたしも きみとともに")
 NEWLINE
 ENCODE("たたかおう!")
-STOP
+.db STOP
 
 L0AB16A:
 FACE NOMA
@@ -4322,7 +4322,7 @@ ENCODE("いってやろう")
 WAIT_CLICK
 SPEAK
 ENCODE("あんしんするがよいぞ")
-STOP
+.db STOP
 
 L0AB236:
 NAME WOMAN
@@ -4335,7 +4335,7 @@ SPEAK
 ENCODE("どうか おうじょさま")
 NEWLINE
 ENCODE("おきをつけて")
-STOP
+.db STOP
 
 L0AB262:
 SPEAK
@@ -4351,7 +4351,7 @@ NEWLINE
 ENCODE("じぶんのとりでに")
 NEWLINE
 ENCODE("にげていったのでしょう")
-STOP
+.db STOP
 
 L0AB2BC:
 SPEAK
@@ -4375,7 +4375,7 @@ SPEAK
 ENCODE("アンテーゼおうじょさまさえ")
 NEWLINE
 ENCODE("いきていてくだされば···")
-STOP
+.db STOP
 
 L0AB34B:
 SPEAK
@@ -4391,7 +4391,7 @@ NEWLINE
 ENCODE("ぎゃくに つみをかぶせられ")
 NEWLINE
 ENCODE("しろから おいだされてしまいました")
-STOP
+.db STOP
 
 L0AB3B9:
 SPEAK
@@ -4413,7 +4413,7 @@ SPEAK
 ENCODE("い···いや,すまない")
 NEWLINE
 ENCODE("おれはなにも しらないんだ···")
-STOP
+.db STOP
 
 L0AB42D:
 SPEAK
@@ -4427,7 +4427,7 @@ NEWLINE
 ENCODE("やつのとりでを おとさなければ")
 NEWLINE
 ENCODE("たいへんなことに なってしまいます")
-STOP
+.db STOP
 
 L0AB489:
 SPEAK
@@ -4441,7 +4441,7 @@ SPEAK
 ENCODE("だけど やりだから")
 NEWLINE
 ENCODE("きしにしか あつかえませんよ")
-STOP
+.db STOP
 
 L0AB4CD:
 SPEAK
@@ -4462,7 +4462,7 @@ SPEAK
 ENCODE("ふつうのものには つかえない")
 NEWLINE
 ENCODE("とくべつな つるぎなのです")
-STOP
+.db STOP
 
 L0AB539:
 FACE JEDAH
@@ -4484,7 +4484,7 @@ NEWLINE
 ENCODE("ドーマさまに ささげるなら")
 NEWLINE
 ENCODE("アルムのみちもまた ひらけようぞ")
-STOP
+.db STOP
 
 L0AB5AD:
 FACE ALM
@@ -4627,7 +4627,7 @@ SPEAK
 ENCODE("いそがなければ セリカたちのみに")
 NEWLINE
 ENCODE("きけんがおよぶかも しれぬぞ!")
-STOP
+.db STOP
 
 L0AB92F:
 FACE MASSENA
@@ -4655,14 +4655,14 @@ NEWLINE
 ENCODE("おうじの おかえりを")
 NEWLINE
 ENCODE("おまちしています")
-STOP
+.db STOP
 
 L0AB9AB:
 SPEAK
 ENCODE("ルドルフ2せいへいか")
 NEWLINE
 ENCODE("バンザーイ!")
-STOP
+.db STOP
 
 L0AB9C1:
 FACE ALM
@@ -4671,7 +4671,7 @@ SPEAK
 ENCODE("!")
 NEWLINE
 ENCODE("セリカー")
-STOP
+.db STOP
 
 L0AB9CF:
 FACE CELICA
@@ -4691,7 +4691,7 @@ SPEAK
 ENCODE("は,はやく···")
 NEWLINE
 ENCODE("おねがい···  はやくきて")
-STOP
+.db STOP
 
 L0ABA1D:
 ENCODE("[ほうもつこ]")
@@ -4699,7 +4699,7 @@ NEWLINE
 ENCODE("リゲルおうけのものいがい")
 NEWLINE
 ENCODE("たちいるべからず!")
-STOP
+.db STOP
 
 L0ABA40:
 SPEAK
@@ -4713,7 +4713,7 @@ NEWLINE
 ENCODE("らんぼうされたり ジークさまが")
 NEWLINE
 ENCODE("くるまでは たいへんだったよ")
-STOP
+.db STOP
 
 L0ABA8F:
 SPEAK
@@ -4734,7 +4734,7 @@ NEWLINE
 ENCODE("むらの きょうかいに")
 NEWLINE
 ENCODE("ゆきなさい")
-STOP
+.db STOP
 
 L0ABAE5:
 SPEAK
@@ -4765,7 +4765,7 @@ ENCODE("うう く,くるしい")
 WAIT_CLICK
 SPEAK
 ENCODE("ジュ··ジュダの のろいが··")
-STOP
+.db STOP
 
 L0ABB82:
 FACE HALCYON
@@ -4832,14 +4832,14 @@ NEWLINE
 ENCODE("アルムに あらたなるちからを")
 NEWLINE
 ENCODE("さずけてやろう")
-STOP
+.db STOP
 
 L0ABCC4:
 SPEAK
 ENCODE("ドーマのとうは もうすぐじゃ")
 NEWLINE
 ENCODE("こころして ゆくがよい")
-STOP
+.db STOP
 
 L0ABCE4:
 SPEAK
@@ -4858,18 +4858,18 @@ ENCODE("いわれています")
 WAIT_CLICK
 SPEAK
 ENCODE("おうじ どうか おきをつけて!")
-STOP
+.db STOP
 
 L0ABD45:
 SPEAK
 ENCODE("おうじ まずはマイセンさまの")
 NEWLINE
 ENCODE("おはなしを おききください")
-STOP
+.db STOP
 
 L0ABD66:
 ENCODE("[まよいのもり]")
-STOP
+.db STOP
 
 L0ABD6F:
     LDX $0A

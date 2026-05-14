@@ -14,10 +14,6 @@
 .db $EE
 .ENDM
 
-.MACRO STOP
-.db $EF
-.ENDM
-
 .MACRO FACE
 .db $E8 $50 $40 \1
 .ENDM
@@ -29,6 +25,8 @@
 .MACRO NINTENDO
 .db $A0 $A1 $A2 $A3 $A4 $A5
 .ENDM
+
+.DEFINE STOP $EF
 
 .DEFINE NONE $00
 .DEFINE ALM $01
