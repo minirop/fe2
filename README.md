@@ -11,7 +11,6 @@ It builds the following ROM:
 You need to have those tools available in your `PATH`:
 - `wla-6502` and `wlalink` from [wla-dx](https://github.com/vhelin/wla-dx)
 - `fe2-tiled` from [here](https://github.com/minirop/fe2-tiled)
-- `python`
 - `make`
 - `sha1sum` if you want to check the generated ROM is correct
 
