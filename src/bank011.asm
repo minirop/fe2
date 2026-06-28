@@ -1194,31 +1194,31 @@ L0B8963:
 .dw L0B89C6
 
 L0B8971:
-ENCODE("なまえ    LV EXP")
+.STRINGMAP script_jp, "なまえ    LV EXP"
 NEWLINE
 
 L0B897F:
-ENCODE("なまえ    HP/MAX")
+.STRINGMAP script_jp, "なまえ    HP/MAX"
 NEWLINE
 
 L0B898D:
-ENCODE("なまえ     力 守備 ")
+.STRINGMAP script_jp, "なまえ     力 守備 "
 NEWLINE
 
 L0B899B:
-ENCODE("なまえ    連さ わざ ")
+.STRINGMAP script_jp, "なまえ    連さ わざ "
 NEWLINE
 
 L0B89AA:
-ENCODE("なまえ    うん 魔守 ")
+.STRINGMAP script_jp, "なまえ    うん 魔守 "
 NEWLINE
 
 L0B89B8:
-ENCODE("なまえ    もちもの  ")
+.STRINGMAP script_jp, "なまえ    もちもの  "
 NEWLINE
 
 L0B89C6:
-ENCODE("なまえ    へいしゅ  ")
+.STRINGMAP script_jp, "なまえ    へいしゅ  "
 NEWLINE
 
 L0B89D4:
@@ -1501,17 +1501,17 @@ L0B8BC5:
     JMP L0B9D99.w
 
 L0B8BD3:
-ENCODE("いどう")
+.STRINGMAP script_jp, "いどう"
 NEWLINE
-ENCODE("ならびかえ")
+.STRINGMAP script_jp, "ならびかえ"
 NEWLINE
-ENCODE("もちもの")
+.STRINGMAP script_jp, "もちもの"
 NEWLINE
-ENCODE("データ")
+.STRINGMAP script_jp, "データ"
 NEWLINE
-ENCODE("たいき")
+.STRINGMAP script_jp, "たいき"
 NEWLINE
-ENCODE("きろく")
+.STRINGMAP script_jp, "きろく"
 NEWLINE
 .db STOP
 
@@ -1536,13 +1536,13 @@ L0B8C0F:
     JMP L0B9D99.w
 
 L0B8C1D:
-ENCODE("じょうきょう")
+.STRINGMAP script_jp, "じょうきょう"
 NEWLINE
-ENCODE("たいき")
+.STRINGMAP script_jp, "たいき"
 NEWLINE
-ENCODE("スイッチ")
+.STRINGMAP script_jp, "スイッチ"
 NEWLINE
-ENCODE("きろく")
+.STRINGMAP script_jp, "きろく"
 NEWLINE
 .db STOP
 
@@ -1571,9 +1571,9 @@ L0B8C4A:
     JMP L0B9D99.w
 
 L0B8C65:
-ENCODE("NORMAL")
+.STRINGMAP script_jp, "NORMAL"
 NEWLINE
-ENCODE("EASY")
+.STRINGMAP script_jp, "EASY"
 NEWLINE
 .db STOP
 
@@ -1684,17 +1684,17 @@ L0B8D25:
     JMP L0B9D99.w
 
 L0B8D33:
-ENCODE("Aボタン  : ユニット·セレクト")
+.STRINGMAP script_jp, "Aボタン  : ユニット·セレクト"
 NEWLINE
-ENCODE("Bボタン  : マップにもどる")
+.STRINGMAP script_jp, "Bボタン  : マップにもどる"
 NEWLINE
-ENCODE("うえ·した : カーソルいどう")
+.STRINGMAP script_jp, "うえ·した : カーソルいどう"
 NEWLINE
-ENCODE("ひだり·みぎ: もちものをみる")
+.STRINGMAP script_jp, "ひだり·みぎ: もちものをみる"
 NEWLINE
-ENCODE("のこりが 0のときにスタートを")
+.STRINGMAP script_jp, "のこりが 0のときにスタートを"
 NEWLINE
-ENCODE("おすと ゲームが はじまります")
+.STRINGMAP script_jp, "おすと ゲームが はじまります"
 NEWLINE
 .db STOP
 
@@ -1866,27 +1866,27 @@ L0B8EC0:
 .db STOP
 
 L0B8EC1: ; sword
-ENCODE("つるぎ")
+.STRINGMAP script_jp, "つるぎ"
 .db STOP
 
 L0B8EC6: ; spear
-ENCODE("やり")
+.STRINGMAP script_jp, "やり"
 .db STOP
 
 L0B8EC9: ; bow
-ENCODE("ゆみ")
+.STRINGMAP script_jp, "ゆみ"
 .db STOP
 
 L0B8ECC: ; magic
-ENCODE("まほう")
+.STRINGMAP script_jp, "まほう"
 .db STOP
 
 L0B8ED0: ; axe
-ENCODE("おの")
+.STRINGMAP script_jp, "おの"
 .db STOP
 
 L0B8ED3: ; sword and bow
-ENCODE("つるぎ·ゆみ")
+.STRINGMAP script_jp, "つるぎ·ゆみ"
 .db STOP
 
 L0B8EDB:
@@ -3186,11 +3186,11 @@ L0B9848:
     JMP L0B9D99.w
 
 L0B9856:
-ENCODE("サウンド")
+.STRINGMAP script_jp, "サウンド"
 NEWLINE
-ENCODE("アニメーション")
+.STRINGMAP script_jp, "アニメーション"
 NEWLINE
-ENCODE("ウエイトタイマー")
+.STRINGMAP script_jp, "ウエイトタイマー"
 NEWLINE
 .db STOP
 
@@ -4122,501 +4122,501 @@ L0B9E22:
 .dw L0BA07E
 
 L0B9F22:
-ENCODE("ーーー")
+.STRINGMAP script_jp, "ーーー"
 NEWLINE
 
 L0B9F26:
-ENCODE("いちらん")
+.STRINGMAP script_jp, "いちらん"
 NEWLINE
 
 L0B9F2B:
-ENCODE("とつげき")
+.STRINGMAP script_jp, "とつげき"
 NEWLINE
 
 L0B9F31:
-ENCODE("みんなあつまれ")
+.STRINGMAP script_jp, "みんなあつまれ"
 NEWLINE
 
 L0B9F39:
-ENCODE("じょうきょう")
+.STRINGMAP script_jp, "じょうきょう"
 NEWLINE
 
 L0B9F41:
-ENCODE("ちゅうだん")
+.STRINGMAP script_jp, "ちゅうだん"
 NEWLINE
 
 L0B9F48:
-ENCODE("たいきゃく")
+.STRINGMAP script_jp, "たいきゃく"
 NEWLINE
 
 L0B9F4E:
-ENCODE("スイッチ")
+.STRINGMAP script_jp, "スイッチ"
 NEWLINE
 
 L0B9F53:
-ENCODE("ターンおわる")
+.STRINGMAP script_jp, "ターンおわる"
 NEWLINE
 
 L0B9F5A:
-ENCODE("つるぎ")
+.STRINGMAP script_jp, "つるぎ"
 NEWLINE
 
 L0B9F5F:
-ENCODE("ゆみや")
+.STRINGMAP script_jp, "ゆみや"
 NEWLINE
 
 L0B9F63:
-ENCODE("こうげきりょく:")
+.STRINGMAP script_jp, "こうげきりょく:"
 .db STOP
 
 L0B9F6D:
-ENCODE("     わざ:")
+.STRINGMAP script_jp, "     わざ:"
 .db STOP
 
 L0B9F77:
-ENCODE("   すばやさ:")
+.STRINGMAP script_jp, "   すばやさ:"
 .db STOP
 
 L0B9F81:
-ENCODE("  うんのよさ:")
+.STRINGMAP script_jp, "  うんのよさ:"
 .db STOP
 
 L0B9F8A:
-ENCODE(" しゅびりょく:")
+.STRINGMAP script_jp, " しゅびりょく:"
 .db STOP
 
 L0B9F94:
-ENCODE(" いどうりょく:")
+.STRINGMAP script_jp, " いどうりょく:"
 .db STOP
 
 L0B9F9E:
-ENCODE("   さくてき:")
+.STRINGMAP script_jp, "   さくてき:"
 .db STOP
 
 L0B9FA7:
-ENCODE("まほうぼうぎょ:")
+.STRINGMAP script_jp, "まほうぼうぎょ:"
 .db STOP
 
 L0B9FB2:
-ENCODE("レベル:")
+.STRINGMAP script_jp, "レベル:"
 .db STOP
 
 L0B9FB8:
-ENCODE("HP:")
+.STRINGMAP script_jp, "HP:"
 .db STOP
 
 L0B9FBC:
-ENCODE("ターン:")
+.STRINGMAP script_jp, "ターン:"
 .db STOP
 
 L0B9FC1:
-ENCODE(" PLAYER")
+.STRINGMAP script_jp, " PLAYER"
 NEWLINE
 
 L0B9FC9:
-ENCODE("END")
+.STRINGMAP script_jp, "END"
 NEWLINE
 
 L0B9FCD:
-ENCODE("   ")
+.STRINGMAP script_jp, "   "
 NEWLINE
 
 L0B9FD1:
-ENCODE("こうげき")
+.STRINGMAP script_jp, "こうげき"
 NEWLINE
 
 L0B9FD7:
-ENCODE("くろまほう")
+.STRINGMAP script_jp, "くろまほう"
 NEWLINE
 
 L0B9FDD:
-ENCODE("しろまほう")
+.STRINGMAP script_jp, "しろまほう"
 NEWLINE
 
 L0B9FE3:
-ENCODE("たいき")
+.STRINGMAP script_jp, "たいき"
 NEWLINE
 
 L0B9FE7:
-ENCODE(" ENEMY")
+.STRINGMAP script_jp, " ENEMY"
 NEWLINE
 
 L0B9FEE:
-ENCODE("   まりょく:")
+.STRINGMAP script_jp, "   まりょく:"
 .db STOP
 
 L0B9FF7:
-ENCODE("あける")
+.STRINGMAP script_jp, "あける"
 NEWLINE
 
 L0B9FFB:
-ENCODE("もちもの")
+.STRINGMAP script_jp, "もちもの"
 NEWLINE
 
 L0BA000:
-ENCODE("NO ITEM")
+.STRINGMAP script_jp, "NO ITEM"
 NEWLINE
 
 L0BA008:
-ENCODE("すてた")
+.STRINGMAP script_jp, "すてた"
 NEWLINE
 
 L0BA00C:
-ENCODE("わたした")
+.STRINGMAP script_jp, "わたした"
 NEWLINE
 
 L0BA011:
-ENCODE("つかった")
+.STRINGMAP script_jp, "つかった"
 NEWLINE
 
 L0BA016:
-ENCODE("そうびした")
+.STRINGMAP script_jp, "そうびした"
 NEWLINE
 
 L0BA01D:
-ENCODE(" マルスのしょうり")
+.STRINGMAP script_jp, " マルスのしょうり"
 NEWLINE
 
 L0BA027:
-ENCODE("GAME OVER")
+.STRINGMAP script_jp, "GAME OVER"
 NEWLINE
 
 L0BA031:
-ENCODE("たいりょくが")
+.STRINGMAP script_jp, "たいりょくが"
 NEWLINE
 
 L0BA039:
-ENCODE("かいふくしました")
+.STRINGMAP script_jp, "かいふくしました"
 NEWLINE
 
 L0BA042:
-ENCODE(" もちものがいっぱいです")
+.STRINGMAP script_jp, " もちものがいっぱいです"
 NEWLINE
 
 L0BA052:
-ENCODE("なにかすてますか")
+.STRINGMAP script_jp, "なにかすてますか"
 NEWLINE
 
 L0BA05B:
-ENCODE("はい")
+.STRINGMAP script_jp, "はい"
 NEWLINE
 
 L0BA05E:
-ENCODE("いいえ")
+.STRINGMAP script_jp, "いいえ"
 NEWLINE
 
 L0BA062:
-ENCODE("をすてて")
+.STRINGMAP script_jp, "をすてて"
 NEWLINE
 
 L0BA067:
-ENCODE("をえた")
+.STRINGMAP script_jp, "をえた"
 NEWLINE
 
 L0BA06B:
-ENCODE("あきらめた")
+.STRINGMAP script_jp, "あきらめた"
 NEWLINE
 
 L0BA071:
-ENCODE("まほうぼうぎょ:")
+.STRINGMAP script_jp, "まほうぼうぎょ:"
 .db STOP
 
 L0BA07C:
-ENCODE("  ")
+.STRINGMAP script_jp, "  "
 L0BA07E:
-ENCODE("けいけんち:")
+.STRINGMAP script_jp, "けいけんち:"
 .db STOP
 
 L0BA085:
-ENCODE("ぶきや")
+.STRINGMAP script_jp, "ぶきや"
 NEWLINE
 
 L0BA08A:
-ENCODE("たずねる")
+.STRINGMAP script_jp, "たずねる"
 NEWLINE
 
 L0BA090:
-ENCODE("       LV EXP")
+.STRINGMAP script_jp, "       LV EXP"
 NEWLINE
 
 L0BA09E:
-ENCODE("ユニットセレクト のこり")
+.STRINGMAP script_jp, "ユニットセレクト のこり"
 NEWLINE
 
 L0BA0AB:
-ENCODE("マップ:")
+.STRINGMAP script_jp, "マップ:"
 .db STOP
 
 L0BA0B1:
-ENCODE("ON")
+.STRINGMAP script_jp, "ON"
 NEWLINE
 
 L0BA0B4:
-ENCODE("OFF")
+.STRINGMAP script_jp, "OFF"
 NEWLINE
 
 L0BA0B8:
-ENCODE("はやい")
+.STRINGMAP script_jp, "はやい"
 .db STOP
 
 L0BA0BC:
-ENCODE("おそい")
+.STRINGMAP script_jp, "おそい"
 .db STOP
 
 L0BA0C0:
-ENCODE("セーブしますか ?")
+.STRINGMAP script_jp, "セーブしますか ?"
 NEWLINE
 
 L0BA0CB:
-ENCODE("どうぐや")
+.STRINGMAP script_jp, "どうぐや"
 NEWLINE
 
 L0BA0D2:
-ENCODE("とうぎじょう")
+.STRINGMAP script_jp, "とうぎじょう"
 NEWLINE
 
 L0BA0DB:
-ENCODE("あずける")
+.STRINGMAP script_jp, "あずける"
 NEWLINE
 
 L0BA0E1:
-ENCODE("ひきだす")
+.STRINGMAP script_jp, "ひきだす"
 NEWLINE
-ENCODE("たからばこ")
+.STRINGMAP script_jp, "たからばこ"
 NEWLINE
-ENCODE("しろ")
+.STRINGMAP script_jp, "しろ"
 NEWLINE
-ENCODE("ぎょくざ")
+.STRINGMAP script_jp, "ぎょくざ"
 NEWLINE
-ENCODE("あずかりじょ")
+.STRINGMAP script_jp, "あずかりじょ"
 NEWLINE
 
 L0BA101:
-ENCODE("はなす")
+.STRINGMAP script_jp, "はなす"
 NEWLINE
 
 L0BA105:
-ENCODE("へんしん")
+.STRINGMAP script_jp, "へんしん"
 NEWLINE
 
 L0BA10A:
-ENCODE("ひみつのみせ")
+.STRINGMAP script_jp, "ひみつのみせ"
 NEWLINE
 
 L0BA111:
-ENCODE("NEXT STORY")
+.STRINGMAP script_jp, "NEXT STORY"
 NEWLINE
 
 L0BA11C:
-ENCODE("さいしょから")
+.STRINGMAP script_jp, "さいしょから"
 NEWLINE
 
 L0BA123:
-ENCODE("つづきをする")
+.STRINGMAP script_jp, "つづきをする"
 NEWLINE
 
 L0BA12B:
-ENCODE("ロードする")
+.STRINGMAP script_jp, "ロードする"
 NEWLINE
 
 L0BA132:
-ENCODE("きろく1:ターン")
+.STRINGMAP script_jp, "きろく1:ターン"
 .db STOP
 
 L0BA13B:
-ENCODE("きろく2:ターン")
+.STRINGMAP script_jp, "きろく2:ターン"
 .db STOP
 
 L0BA144:
-ENCODE("きろくをうつす")
+.STRINGMAP script_jp, "きろくをうつす"
 NEWLINE
 
 L0BA14C:
-ENCODE("きろくをけす")
+.STRINGMAP script_jp, "きろくをけす"
 NEWLINE
 
 L0BA153:
-ENCODE("もちかえる")
+.STRINGMAP script_jp, "もちかえる"
 NEWLINE
 
 L0BA159:
-ENCODE("  あずかりひん")
+.STRINGMAP script_jp, "  あずかりひん"
 NEWLINE
 
 L0BA163:
-ENCODE("しきかん:")
+.STRINGMAP script_jp, "しきかん:"
 .db STOP
 
 L0BA169:
-ENCODE("にんずう:")
+.STRINGMAP script_jp, "にんずう:"
 .db STOP
 
 L0BA170:
-ENCODE("つよさ ")
+.STRINGMAP script_jp, "つよさ "
 .db STOP
 
 L0BA175:
-ENCODE("なまえ")
+.STRINGMAP script_jp, "なまえ"
 .db STOP
 
 L0BA179:
-ENCODE("LV EXP  HP ")
+.STRINGMAP script_jp, "LV EXP  HP "
 NEWLINE
 
 L0BA185:
-ENCODE(" 力 守備  技 連さ")
+.STRINGMAP script_jp, " 力 守備  技 連さ"
 NEWLINE
 
 L0BA191:
-ENCODE("うん 魔守 へいしゅ ")
+.STRINGMAP script_jp, "うん 魔守 へいしゅ "
 NEWLINE
 
 L0BA19D:
-ENCODE("   アイテム    ")
+.STRINGMAP script_jp, "   アイテム    "
 NEWLINE
 
 L0BA1A9:
-ENCODE("てきのぶたいがいます")
+.STRINGMAP script_jp, "てきのぶたいがいます"
 NEWLINE
 
 L0BA1B6:
-ENCODE("よろしいですか")
+.STRINGMAP script_jp, "よろしいですか"
 NEWLINE
 
 L0BA1BF:
-ENCODE("まほうは")
+.STRINGMAP script_jp, "まほうは"
 NEWLINE
 
 L0BA1C4:
-ENCODE("つかえません")
+.STRINGMAP script_jp, "つかえません"
 NEWLINE
 
 L0BA1CB:
-ENCODE("アリティアぐんしょうり")
+.STRINGMAP script_jp, "アリティアぐんしょうり"
 NEWLINE
 
 L0BA1D8:
-ENCODE("  みかた ぜんめつ")
+.STRINGMAP script_jp, "  みかた ぜんめつ"
 NEWLINE
 
 L0BA1E4:
-ENCODE("    ひきわけ")
+.STRINGMAP script_jp, "    ひきわけ"
 NEWLINE
 
 L0BA1ED:
-ENCODE("たいきゃく")
+.STRINGMAP script_jp, "たいきゃく"
 NEWLINE
 
 L0BA1F3:
-ENCODE("はいりますか?")
+.STRINGMAP script_jp, "はいりますか?"
 NEWLINE
 
 L0BA1FB:
-ENCODE("たいきゃくします")
+.STRINGMAP script_jp, "たいきゃくします"
 NEWLINE
 
 L0BA204:
-ENCODE("ぜんいん とつげきせよ!")
+.STRINGMAP script_jp, "ぜんいん とつげきせよ!"
 NEWLINE
 
 L0BA213:
-ENCODE("げきは しました")
+.STRINGMAP script_jp, "げきは しました"
 NEWLINE
 
 L0BA21D:
-ENCODE("とうそつちがあがった!")
+.STRINGMAP script_jp, "とうそつちがあがった!"
 NEWLINE
 
 L0BA22B:
-ENCODE("ぜんいんてったいせよ!!")
+.STRINGMAP script_jp, "ぜんいんてったいせよ!!"
 NEWLINE
 
 L0BA239:
-ENCODE("は たおれた")
+.STRINGMAP script_jp, "は たおれた"
 NEWLINE
 
 L0BA240:
-ENCODE("へいしは にげだした")
+.STRINGMAP script_jp, "へいしは にげだした"
 NEWLINE
 
 L0BA24D:
-ENCODE("ぐんが あらわれた!")
+.STRINGMAP script_jp, "ぐんが あらわれた!"
 NEWLINE
 
 L0BA25A:
-ENCODE("あらわれた!!")
+.STRINGMAP script_jp, "あらわれた!!"
 NEWLINE
 
 L0BA262:
-ENCODE("せめこんできた!!")
+.STRINGMAP script_jp, "せめこんできた!!"
 NEWLINE
 
 L0BA26D:
-ENCODE("どのぶたいを")
+.STRINGMAP script_jp, "どのぶたいを"
 NEWLINE
 
 L0BA276:
-ENCODE("だしますか?")
+.STRINGMAP script_jp, "だしますか?"
 NEWLINE
 
 L0BA27E:
-ENCODE("てきぶたい: ")
+.STRINGMAP script_jp, "てきぶたい: "
 .db STOP
 
 L0BA287:
-ENCODE("  ターン:")
+.STRINGMAP script_jp, "  ターン:"
 .db STOP
 
 L0BA28E:
-ENCODE("かわりに")
+.STRINGMAP script_jp, "かわりに"
 .db STOP
 
 L0BA293:
-ENCODE("ぶたいを ひきついだ!!")
+.STRINGMAP script_jp, "ぶたいを ひきついだ!!"
 NEWLINE
 
 L0BA2A2:
-ENCODE("まちぶせしていた!!")
+.STRINGMAP script_jp, "まちぶせしていた!!"
 NEWLINE
 
 L0BA2AE:
-ENCODE("たいきゃく できない!!")
+.STRINGMAP script_jp, "たいきゃく できない!!"
 NEWLINE
 
 L0BA2BC:
-ENCODE("アリティアにせめこまれた!")
+.STRINGMAP script_jp, "アリティアにせめこまれた!"
 NEWLINE
 
 L0BA2CA:
-ENCODE(" GAME OVER")
+.STRINGMAP script_jp, " GAME OVER"
 NEWLINE
 
 L0BA2D5:
-ENCODE("ぶたい ぜんいんの")
+.STRINGMAP script_jp, "ぶたい ぜんいんの"
 NEWLINE
 
 L0BA2E1:
-ENCODE("けいけんちが あがった!!")
+.STRINGMAP script_jp, "けいけんちが あがった!!"
 NEWLINE
 
 L0BA2F1:
-ENCODE("きろくする")
+.STRINGMAP script_jp, "きろくする"
 NEWLINE
 
 L0BA2F7:
-ENCODE("いどうできない!!!")
+.STRINGMAP script_jp, "いどうできない!!!"
 NEWLINE
 
 L0BA304:
-ENCODE("ぶき:")
+.STRINGMAP script_jp, "ぶき:"
 .db STOP
 
 L0BA309:
-ENCODE("と")
+.STRINGMAP script_jp, "と"
 NEWLINE
 
 L0BA30B:
-ENCODE("を")
+.STRINGMAP script_jp, "を"
 NEWLINE
 
 L0BA30D:
@@ -6590,42 +6590,42 @@ L0BB079:
 L0BB091:
 .db $40 $90 $14 $04 $E8 $40 $40 CELICA
 .db $E9 $05
-ENCODE("アルム····")
+.STRINGMAP script_jp, "アルム····"
 NEWLINE
-ENCODE("こころざし なかばに")
+.STRINGMAP script_jp, "こころざし なかばに"
 NEWLINE
-ENCODE("いってしまうなんて····")
+.STRINGMAP script_jp, "いってしまうなんて····"
 NEWLINE
 WAIT_CLICK
-ENCODE("セーブしたところから")
+.STRINGMAP script_jp, "セーブしたところから"
 NEWLINE
-ENCODE("もういちどはじめますか?")
+.STRINGMAP script_jp, "もういちどはじめますか?"
 NEWLINE
 .db $E7
 
 L0BB0DB:
 .db $40 $80 $14 $05 $E8 $40 $40 MYCEN
 .db $E9 $05
-ENCODE("セーブデータがありません!")
+.STRINGMAP script_jp, "セーブデータがありません!"
 NEWLINE
-ENCODE("もういちど さいしょから")
+.STRINGMAP script_jp, "もういちど さいしょから"
 NEWLINE
-ENCODE("やりなおして ください")
+.STRINGMAP script_jp, "やりなおして ください"
 .db STOP
 
 L0BB111:
 .db $40 $90 $14 $04 $E8 $40 $40 MYCEN
 .db $E9 $05
-ENCODE("セリカよ あきらめてはならん")
+.STRINGMAP script_jp, "セリカよ あきらめてはならん"
 NEWLINE
-ENCODE("おまえには まだ やらねばならぬ")
+.STRINGMAP script_jp, "おまえには まだ やらねばならぬ"
 NEWLINE
-ENCODE("ことがある")
+.STRINGMAP script_jp, "ことがある"
 NEWLINE
 WAIT_CLICK
-ENCODE("セーブしたところから")
+.STRINGMAP script_jp, "セーブしたところから"
 NEWLINE
-ENCODE("もういちどはじめますか?")
+.STRINGMAP script_jp, "もういちどはじめますか?"
 NEWLINE
 .db $E7
 
@@ -6722,258 +6722,258 @@ L0BB211:
 .db $30 $90 $12 $04
 .db $E9 $01
 .db $E0
-ENCODE("%0 は")
+.STRINGMAP script_jp, "%0 は"
 NEWLINE
-ENCODE("%1 をとなえた")
+.STRINGMAP script_jp, "%1 をとなえた"
 .db STOP
 
 L0BB226:
 .db $40 $90 $14 $04
 .db $E9 $01
 .db $E0
-ENCODE("%0は %1に")
+.STRINGMAP script_jp, "%0は %1に"
 NEWLINE
-ENCODE("なることをのぞみますか?")
+.STRINGMAP script_jp, "なることをのぞみますか?"
 NEWLINE
 .db $E7
 
 L0BB244:
 .db $E8
-ENCODE("マタい")
+.STRINGMAP script_jp, "マタい"
 .db $E2
 
 L0BB249:
-ENCODE("%0は%1に")
+.STRINGMAP script_jp, "%0は%1に"
 NEWLINE
-ENCODE("クラスチェンジした!!!")
+.STRINGMAP script_jp, "クラスチェンジした!!!"
 .db $E7
 
 L0BB25E:
-ENCODE("%0は%1に")
+.STRINGMAP script_jp, "%0は%1に"
 NEWLINE
-ENCODE("クラスチェンジするのを")
+.STRINGMAP script_jp, "クラスチェンジするのを"
 NEWLINE
-ENCODE("あきらめた")
+.STRINGMAP script_jp, "あきらめた"
 .db STOP
 
 L0BB278:
 .db $30 $90 $14 $04
 .db $E9 $01
 .db $E0
-ENCODE("しかくをもつものはいないようですね")
+.STRINGMAP script_jp, "しかくをもつものはいないようですね"
 NEWLINE
-ENCODE("もうすこし レベルをあげて")
+.STRINGMAP script_jp, "もうすこし レベルをあげて"
 NEWLINE
-ENCODE("また おいでなさい")
+.STRINGMAP script_jp, "また おいでなさい"
 .db STOP
 
 L0BB2AD:
 .db $30 $80 $12 $05
 .db $E9 $02
 .db $E0
-ENCODE("だいちのせいれいよ!")
+.STRINGMAP script_jp, "だいちのせいれいよ!"
 NEWLINE
-ENCODE("わがよびかけに おうじよ!!")
+.STRINGMAP script_jp, "わがよびかけに おうじよ!!"
 NEWLINE
-ENCODE("てきは メガクェイク")
+.STRINGMAP script_jp, "てきは メガクェイク"
 NEWLINE
-ENCODE("をとなえた!!")
+.STRINGMAP script_jp, "をとなえた!!"
 .db $E1 $03
 .db STOP
 
 L0BB2E8:
-ENCODE(" ")
+.STRINGMAP script_jp, " "
 .db STOP
 
 L0BB2EA:
-ENCODE("%0は%1に")
+.STRINGMAP script_jp, "%0は%1に"
 NEWLINE
-ENCODE("クラスチェンジした!!!")
+.STRINGMAP script_jp, "クラスチェンジした!!!"
 NEWLINE
-ENCODE("まほうぼうぎょが15あがった")
+.STRINGMAP script_jp, "まほうぼうぎょが15あがった"
 .db $E7
 
 L0BB312:
 .db $30 $90 $12 $04
 .db $E9 $01
 .db $E0
-ENCODE("%0 は%1に")
+.STRINGMAP script_jp, "%0 は%1に"
 NEWLINE
-ENCODE("%2 をわたした")
+.STRINGMAP script_jp, "%2 をわたした"
 .db STOP
 
 L0BB32A:
 .db $40 $90 $12 $04
 .db $E9 $01
 .db $E0
-ENCODE("%0 は%1から")
+.STRINGMAP script_jp, "%0 は%1から"
 NEWLINE
-ENCODE("%3 をうけとった")
+.STRINGMAP script_jp, "%3 をうけとった"
 .db STOP
 
 L0BB344:
 .db $40 $90 $12 $04
 .db $E9 $01
 .db $E0
-ENCODE("%0と %1は")
+.STRINGMAP script_jp, "%0と %1は"
 NEWLINE
-ENCODE("%2と")
+.STRINGMAP script_jp, "%2と"
 NEWLINE
-ENCODE("%3を こうかんした")
+.STRINGMAP script_jp, "%3を こうかんした"
 .db STOP
 
 L0BB362:
 .db $40 $90 $12 $04
 .db $E9 $01
 .db $E0
-ENCODE("%0 は")
+.STRINGMAP script_jp, "%0 は"
 NEWLINE
-ENCODE("%1 をすてた")
+.STRINGMAP script_jp, "%1 をすてた"
 .db STOP
 
 L0BB376:
-ENCODE("たいりょくが%2かいふくした")
+.STRINGMAP script_jp, "たいりょくが%2かいふくした"
 .db STOP
 
 L0BB386:
-ENCODE("しゅびりょくが%2あがった")
+.STRINGMAP script_jp, "しゅびりょくが%2あがった"
 .db $E7
 
 L0BB397:
-ENCODE("まほうぼうぎょが%2あがった")
+.STRINGMAP script_jp, "まほうぼうぎょが%2あがった"
 .db STOP
 
 L0BB3AA:
-ENCODE("いどうりょくが%2あがった")
+.STRINGMAP script_jp, "いどうりょくが%2あがった"
 .db STOP
 
 L0BB3BB:
-ENCODE("ぶきレベルが%2あがった")
+.STRINGMAP script_jp, "ぶきレベルが%2あがった"
 .db STOP
 
 L0BB3CC:
-ENCODE("わざが%2あがった")
+.STRINGMAP script_jp, "わざが%2あがった"
 .db $E7
 
 L0BB3D9:
-ENCODE("ちからが%2あがった")
+.STRINGMAP script_jp, "ちからが%2あがった"
 .db $E7
 
 L0BB3E6:
-ENCODE("さくてきが%2あがった")
+.STRINGMAP script_jp, "さくてきが%2あがった"
 .db $E7
 
 L0BB3F4:
-ENCODE("すばやさが%2あがった")
+.STRINGMAP script_jp, "すばやさが%2あがった"
 .db $E7
 
 L0BB403:
-ENCODE("うんが%2あがった")
+.STRINGMAP script_jp, "うんが%2あがった"
 .db $E7
 
 L0BB40F:
-ENCODE("さいだいヒットポイントが")
+.STRINGMAP script_jp, "さいだいヒットポイントが"
 .db $E4 $B1
-ENCODE("ら")
+.STRINGMAP script_jp, "ら"
 
 L0BB421:
-ENCODE("%2あがった")
+.STRINGMAP script_jp, "%2あがった"
 .db $E7
 
 L0BB429:
 .db $30 $80 $12 $03
 .db $E9 $02
 .db $E0
-ENCODE("ようじゅつしは")
+.STRINGMAP script_jp, "ようじゅつしは"
 NEWLINE
-ENCODE("リザーブをとなえた")
+.STRINGMAP script_jp, "リザーブをとなえた"
 .db $E1
-ENCODE("う")
+.STRINGMAP script_jp, "う"
 .db STOP
 
 L0BB447:
 .db $40 $90 $12 $04
 .db $E0
 .db $E9 $02
-ENCODE("もちものがいっぱいです")
+.STRINGMAP script_jp, "もちものがいっぱいです"
 NEWLINE
-ENCODE("どうしますか ?")
+.STRINGMAP script_jp, "どうしますか ?"
 .db $E7
 
 L0BB467:
 .db $E1 $02
-ENCODE("あずかりじょのそうこが")
+.STRINGMAP script_jp, "あずかりじょのそうこが"
 NEWLINE
-ENCODE("いっぱいで これいじょうものを")
+.STRINGMAP script_jp, "いっぱいで これいじょうものを"
 NEWLINE
-ENCODE("あずけられません")
+.STRINGMAP script_jp, "あずけられません"
 WAIT_CLICK
 .db $E4 $B1
-ENCODE("ト")
+.STRINGMAP script_jp, "ト"
 
 L0BB498:
-ENCODE("%0 を")
+.STRINGMAP script_jp, "%0 を"
 NEWLINE
-ENCODE("しょじひんにいれました")
+.STRINGMAP script_jp, "しょじひんにいれました"
 .db STOP
 
 L0BB4AA:
-ENCODE("なにかすててください")
+.STRINGMAP script_jp, "なにかすててください"
 .db $E7
 
 L0BB4B6:
-ENCODE("%1 をすてた")
+.STRINGMAP script_jp, "%1 をすてた"
 .db STOP
 
 L0BB4BE:
-ENCODE("%0 をすてた")
+.STRINGMAP script_jp, "%0 をすてた"
 .db STOP
 
 L0BB4C6:
 .db $40 $90 $12 $04
 .db $E9 $01
-ENCODE("このセーブ·データをけします")
+.STRINGMAP script_jp, "このセーブ·データをけします"
 .db $E7
 
 L0BB4DD:
-ENCODE("データをけしました")
+.STRINGMAP script_jp, "データをけしました"
 .db STOP
 
 L0BB4E8:
 .db $40 $90 $12 $04
 .db $E9 $01
-ENCODE("データをうつしました")
+.STRINGMAP script_jp, "データをうつしました"
 .db STOP
 
 L0BB4FA:
 .db $40 $90 $12 $04
 .db $E9 $03
-ENCODE("データエラーがありました!")
+.STRINGMAP script_jp, "データエラーがありました!"
 NEWLINE
-ENCODE("ざんねんながら")
+.STRINGMAP script_jp, "ざんねんながら"
 NEWLINE
-ENCODE("このきろくは しようできません")
+.STRINGMAP script_jp, "このきろくは しようできません"
 .db STOP
 
 L0BB52B:
 .db $30 $50 $12 $04
 .db $E9 $01
 SPEAK
-ENCODE("ゲームをちゅうだんしました")
+.STRINGMAP script_jp, "ゲームをちゅうだんしました"
 NEWLINE
-ENCODE("でんげんをきるときには")
-NEWLINE
-WAIT_CLICK
-ENCODE("リセットボタンをおしながら")
-NEWLINE
-ENCODE("スイッチをきってください")
+.STRINGMAP script_jp, "でんげんをきるときには"
 NEWLINE
 WAIT_CLICK
-ENCODE("ふたたびゲームをはじめるときは")
+.STRINGMAP script_jp, "リセットボタンをおしながら"
 NEWLINE
-ENCODE("さいしょに,つづきをする")
+.STRINGMAP script_jp, "スイッチをきってください"
 NEWLINE
-ENCODE("をえらんでください")
+WAIT_CLICK
+.STRINGMAP script_jp, "ふたたびゲームをはじめるときは"
+NEWLINE
+.STRINGMAP script_jp, "さいしょに,つづきをする"
+NEWLINE
+.STRINGMAP script_jp, "をえらんでください"
 .db $E7
 
 L0BB59D:
@@ -7632,267 +7632,267 @@ L0BB821:
 .dw L0BBAC8
 
 L0BB8C3:
-ENCODE("ラムのはやし")
+.STRINGMAP script_jp, "ラムのはやし"
 .db STOP
 
 L0BB8CA:
-ENCODE("とうぞくのもり")
+.STRINGMAP script_jp, "とうぞくのもり"
 .db STOP
 
 L0BB8D3:
-ENCODE("ラムのたに")
+.STRINGMAP script_jp, "ラムのたに"
 .db STOP
 
 L0BB8D9:
-ENCODE("みなみのとりで")
+.STRINGMAP script_jp, "みなみのとりで"
 .db STOP
 
 L0BB8E2:
-ENCODE("ソフィアのみなみ1")
+.STRINGMAP script_jp, "ソフィアのみなみ1"
 .db STOP
 
 L0BB8EC:
-ENCODE("ソフィアのみなみ2")
+.STRINGMAP script_jp, "ソフィアのみなみ2"
 .db STOP
 
 L0BB8F6:
-ENCODE("ソフィアのもん")
+.STRINGMAP script_jp, "ソフィアのもん"
 .db STOP
 
 L0BB8FE:
-ENCODE("ノーヴァのぼち")
+.STRINGMAP script_jp, "ノーヴァのぼち"
 .db STOP
 
 L0BB908:
-ENCODE("うみ1")
+.STRINGMAP script_jp, "うみ1"
 .db STOP
 
 L0BB90C:
-ENCODE("うみ2")
+.STRINGMAP script_jp, "うみ2"
 .db STOP
 
 L0BB910:
-ENCODE("かいぞくのとりで")
+.STRINGMAP script_jp, "かいぞくのとりで"
 .db STOP
 
 L0BB91B:
-ENCODE("うみ3")
+.STRINGMAP script_jp, "うみ3"
 .db STOP
 
 L0BB91F:
-ENCODE("うみのほこら")
+.STRINGMAP script_jp, "うみのほこら"
 .db STOP
 
 L0BB926:
-ENCODE("うみ4")
+.STRINGMAP script_jp, "うみ4"
 .db STOP
 
 L0BB92A:
-ENCODE("うみ5")
+.STRINGMAP script_jp, "うみ5"
 .db STOP
 
 L0BB92E:
-ENCODE("きたのもん")
+.STRINGMAP script_jp, "きたのもん"
 .db STOP
 
 L0BB934:
-ENCODE("ソフィアのきた")
+.STRINGMAP script_jp, "ソフィアのきた"
 .db STOP
 
 L0BB93C:
-ENCODE("ソフィアのにし")
+.STRINGMAP script_jp, "ソフィアのにし"
 .db STOP
 
 L0BB944:
-ENCODE("ソフィアのかいがん")
+.STRINGMAP script_jp, "ソフィアのかいがん"
 .db STOP
 
 L0BB94F:
-ENCODE("やまのはかば")
+.STRINGMAP script_jp, "やまのはかば"
 .db STOP
 
 L0BB957:
-ENCODE("さばくのとりで")
+.STRINGMAP script_jp, "さばくのとりで"
 .db STOP
 
 L0BB961:
-ENCODE("さばくのきた")
+.STRINGMAP script_jp, "さばくのきた"
 .db STOP
 
 L0BB969:
-ENCODE("さばくのみなみ")
+.STRINGMAP script_jp, "さばくのみなみ"
 .db STOP
 
 L0BB972:
-ENCODE("ギースのとりで")
+.STRINGMAP script_jp, "ギースのとりで"
 .db STOP
 
 L0BB97C:
-ENCODE("ミラへのたに")
+.STRINGMAP script_jp, "ミラへのたに"
 .db STOP
 
 L0BB983:
-ENCODE("ミラしんでん")
+.STRINGMAP script_jp, "ミラしんでん"
 .db STOP
 
 L0BB98B:
-ENCODE("ソフィアのもり")
+.STRINGMAP script_jp, "ソフィアのもり"
 .db STOP
 
 L0BB993:
-ENCODE("もりのむら")
+.STRINGMAP script_jp, "もりのむら"
 .db STOP
 
 L0BB999:
-ENCODE("ドゼーのとりで")
+.STRINGMAP script_jp, "ドゼーのとりで"
 .db STOP
 
 L0BB9A4:
-ENCODE("ソフィアもり2")
+.STRINGMAP script_jp, "ソフィアもり2"
 .db STOP
 
 L0BB9AC:
-ENCODE("もりのきた")
+.STRINGMAP script_jp, "もりのきた"
 .db STOP
 
 L0BB9B2:
-ENCODE("すいもん")
+.STRINGMAP script_jp, "すいもん"
 .db STOP
 
 L0BB9B7:
-ENCODE("けんじゃのさと")
+.STRINGMAP script_jp, "けんじゃのさと"
 .db STOP
 
 L0BB9C0:
-ENCODE("こっきょう")
+.STRINGMAP script_jp, "こっきょう"
 .db STOP
 
 L0BB9C6:
-ENCODE("リゲルへいや")
+.STRINGMAP script_jp, "リゲルへいや"
 .db STOP
 
 L0BB9CE:
-ENCODE("リゲルのたに")
+.STRINGMAP script_jp, "リゲルのたに"
 .db STOP
 
 L0BB9D6:
-ENCODE("りゅうのかこう")
+.STRINGMAP script_jp, "りゅうのかこう"
 .db STOP
 
 L0BB9DE:
-ENCODE("リゲルのたき")
+.STRINGMAP script_jp, "リゲルのたき"
 .db STOP
 
 L0BB9E6:
-ENCODE("リゲルのもり")
+.STRINGMAP script_jp, "リゲルのもり"
 .db STOP
 
 L0BB9EE:
-ENCODE("おそれざん")
+.STRINGMAP script_jp, "おそれざん"
 .db STOP
 
 L0BB9F5:
-ENCODE("ヌイババやかた")
+.STRINGMAP script_jp, "ヌイババやかた"
 .db STOP
 
 L0BB9FF:
-ENCODE("ようさい")
+.STRINGMAP script_jp, "ようさい"
 .db STOP
 
 L0BBA04:
-ENCODE("リゲルじょう")
+.STRINGMAP script_jp, "リゲルじょう"
 .db STOP
 
 L0BBA0D:
-ENCODE("しびとのぬま")
+.STRINGMAP script_jp, "しびとのぬま"
 .db STOP
 
 L0BBA15:
-ENCODE("ぬまのぼち")
+.STRINGMAP script_jp, "ぬまのぼち"
 .db STOP
 
 L0BBA1C:
-ENCODE("ドルクのとりで")
+.STRINGMAP script_jp, "ドルクのとりで"
 .db STOP
 
 L0BBA26:
-ENCODE("まよいのもり")
+.STRINGMAP script_jp, "まよいのもり"
 .db STOP
 
 L0BBA2D:
-ENCODE("ドーマのもん")
+.STRINGMAP script_jp, "ドーマのもん"
 .db STOP
 
 L0BBA35:
-ENCODE("ドーマのぬま")
+.STRINGMAP script_jp, "ドーマのぬま"
 .db STOP
 
 L0BBA3D:
-ENCODE("ラムのむら")
+.STRINGMAP script_jp, "ラムのむら"
 .db STOP
 
 L0BBA43:
-ENCODE("とうぞくのほこら")
+.STRINGMAP script_jp, "とうぞくのほこら"
 .db STOP
 
 L0BBA4D:
-ENCODE("かいほうぐんのアジト")
+.STRINGMAP script_jp, "かいほうぐんのアジト"
 .db STOP
 
 L0BBA5A:
-ENCODE("ソフィアじょう")
+.STRINGMAP script_jp, "ソフィアじょう"
 .db STOP
 
 L0BBA63:
-ENCODE("しゅうどういん")
+.STRINGMAP script_jp, "しゅうどういん"
 .db STOP
 
 L0BBA6C:
-ENCODE("ノーヴァのみなと")
+.STRINGMAP script_jp, "ノーヴァのみなと"
 .db STOP
 
 L0BBA76:
-ENCODE("ソフィアのみなと")
+.STRINGMAP script_jp, "ソフィアのみなと"
 .db STOP
 
 L0BBA7F:
-ENCODE("やまのむら")
+.STRINGMAP script_jp, "やまのむら"
 .db STOP
 
 L0BBA85:
-ENCODE("りゅうのほこら")
+.STRINGMAP script_jp, "りゅうのほこら"
 .db STOP
 
 L0BBA8D:
-ENCODE("さばくのほこら")
+.STRINGMAP script_jp, "さばくのほこら"
 .db STOP
 
 L0BBA96:
-ENCODE("もりのほこら")
+.STRINGMAP script_jp, "もりのほこら"
 .db STOP
 
 L0BBA9D:
-ENCODE("リゲルのむら")
+.STRINGMAP script_jp, "リゲルのむら"
 .db STOP
 
 L0BBAA5:
-ENCODE("おそれざんのほこら")
+.STRINGMAP script_jp, "おそれざんのほこら"
 .db STOP
 
 L0BBAB0:
-ENCODE("ひみつのほこら")
+.STRINGMAP script_jp, "ひみつのほこら"
 .db STOP
 
 L0BBAB8:
-ENCODE("ドーマのとう")
+.STRINGMAP script_jp, "ドーマのとう"
 .db STOP
 
 L0BBAC0:
-ENCODE("りゅうのかこう")
+.STRINGMAP script_jp, "りゅうのかこう"
 .db STOP
 
 L0BBAC8:
-ENCODE("ドーマのさいだん")
+.STRINGMAP script_jp, "ドーマのさいだん"
 .db STOP
 
 .db $05

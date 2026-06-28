@@ -3785,1090 +3785,1090 @@ L0AA751:
 FACE NONE
 NAME WOMAN
 SPEAK
-ENCODE("ありがとう")
+.STRINGMAP script_jp, "ありがとう"
 NEWLINE
-ENCODE("わたしは ミラしんでんに")
+.STRINGMAP script_jp, "わたしは ミラしんでんに"
 NEWLINE
-ENCODE("つかえるもの")
+.STRINGMAP script_jp, "つかえるもの"
 WAIT_CLICK
 SPEAK
-ENCODE("あなたたちの おかげで")
+.STRINGMAP script_jp, "あなたたちの おかげで"
 NEWLINE
-ENCODE("やっと かえることができます")
+.STRINGMAP script_jp, "やっと かえることができます"
 WAIT_CLICK
 SPEAK
-ENCODE("·····!")
+.STRINGMAP script_jp, "·····!"
 WAIT_CLICK
 SPEAK
-ENCODE("まって···")
+.STRINGMAP script_jp, "まって···"
 NEWLINE
-ENCODE("まさか あなたは!?")
+.STRINGMAP script_jp, "まさか あなたは!?"
 PAGE
 FACE CELICA
 NAME CELICA
 SPEAK
-ENCODE("??")
+.STRINGMAP script_jp, "??"
 NEWLINE
-ENCODE("どうしたのですか")
+.STRINGMAP script_jp, "どうしたのですか"
 NEWLINE
-ENCODE("わたしが なにか··")
+.STRINGMAP script_jp, "わたしが なにか··"
 PAGE
 NAME WOMAN
 SPEAK
-ENCODE("ごめんなさい")
+.STRINGMAP script_jp, "ごめんなさい"
 WAIT_CLICK
 SPEAK
-ENCODE("あなたが あんまり")
+.STRINGMAP script_jp, "あなたが あんまり"
 NEWLINE
-ENCODE("リプリカさまに")
+.STRINGMAP script_jp, "リプリカさまに"
 NEWLINE
-ENCODE("にていたものだから")
+.STRINGMAP script_jp, "にていたものだから"
 PAGE
 NAME CELICA
 SPEAK
-ENCODE("リプリカ!?")
+.STRINGMAP script_jp, "リプリカ!?"
 WAIT_CLICK
 SPEAK
-ENCODE("それは わたしの")
+.STRINGMAP script_jp, "それは わたしの"
 NEWLINE
-ENCODE("おかあさまの なまえです")
+.STRINGMAP script_jp, "おかあさまの なまえです"
 PAGE
 NAME WOMAN
 SPEAK
 SPEAK
-ENCODE("で,ではやはり あなたは")
+.STRINGMAP script_jp, "で,ではやはり あなたは"
 NEWLINE
-ENCODE("アンテーゼおうじょさま!!")
+.STRINGMAP script_jp, "アンテーゼおうじょさま!!"
 WAIT_CLICK
 SPEAK
-ENCODE("ああ よかった!!")
+.STRINGMAP script_jp, "ああ よかった!!"
 NEWLINE
-ENCODE("ごぶじだったのですね")
+.STRINGMAP script_jp, "ごぶじだったのですね"
 PAGE
 NAME CELICA
 SPEAK
-ENCODE("あなたは わたしのははを")
+.STRINGMAP script_jp, "あなたは わたしのははを"
 NEWLINE
-ENCODE("ごぞんじなの!?")
+.STRINGMAP script_jp, "ごぞんじなの!?"
 WAIT_CLICK
 SPEAK
-ENCODE("おねがいです.ははのことを")
+.STRINGMAP script_jp, "おねがいです.ははのことを"
 NEWLINE
-ENCODE("きかせてください")
+.STRINGMAP script_jp, "きかせてください"
 PAGE
 NAME WOMAN
 SPEAK
-ENCODE("はい··· リプリカさまは")
+.STRINGMAP script_jp, "はい··· リプリカさまは"
 NEWLINE
-ENCODE("もとは わたしたちとおなじ")
+.STRINGMAP script_jp, "もとは わたしたちとおなじ"
 NEWLINE
-ENCODE("ミラしんでんの シスターでした")
+.STRINGMAP script_jp, "ミラしんでんの シスターでした"
 WAIT_CLICK
 SPEAK
-ENCODE("ところが リプリカさまの")
+.STRINGMAP script_jp, "ところが リプリカさまの"
 NEWLINE
-ENCODE("うつくしさにひかれた こくおうが")
+.STRINGMAP script_jp, "うつくしさにひかれた こくおうが"
 NEWLINE
-ENCODE("むりやり きさきにしてしまったの")
+.STRINGMAP script_jp, "むりやり きさきにしてしまったの"
 WAIT_CLICK
 SPEAK
-ENCODE("おうきゅうでのくらしは")
+.STRINGMAP script_jp, "おうきゅうでのくらしは"
 NEWLINE
-ENCODE("かのじょにとって つらい")
+.STRINGMAP script_jp, "かのじょにとって つらい"
 NEWLINE
-ENCODE("ものだったのでしょう")
+.STRINGMAP script_jp, "ものだったのでしょう"
 WAIT_CLICK
 SPEAK
-ENCODE("おもいやまいに かかられて")
+.STRINGMAP script_jp, "おもいやまいに かかられて"
 NEWLINE
-ENCODE("あなたがうまれると すぐに")
+.STRINGMAP script_jp, "あなたがうまれると すぐに"
 NEWLINE
-ENCODE("なくなって しまわれた")
+.STRINGMAP script_jp, "なくなって しまわれた"
 WAIT_CLICK
 SPEAK
-ENCODE("でも なくなるまぎわまで")
+.STRINGMAP script_jp, "でも なくなるまぎわまで"
 NEWLINE
-ENCODE("あなたのことを きにして")
+.STRINGMAP script_jp, "あなたのことを きにして"
 NEWLINE
-ENCODE("なみだされていたの")
+.STRINGMAP script_jp, "なみだされていたの"
 WAIT_CLICK
 SPEAK
-ENCODE("アンテーゼさま")
+.STRINGMAP script_jp, "アンテーゼさま"
 NEWLINE
-ENCODE("そんなに なかないで···")
+.STRINGMAP script_jp, "そんなに なかないで···"
 WAIT_CLICK
 SPEAK
-ENCODE("あなたに おわたしするものが")
+.STRINGMAP script_jp, "あなたに おわたしするものが"
 NEWLINE
-ENCODE("あります")
+.STRINGMAP script_jp, "あります"
 .db STOP
 
 L0AA9A5:
 NAME WOMAN
 SPEAK
-ENCODE("このサークレットは")
+.STRINGMAP script_jp, "このサークレットは"
 NEWLINE
-ENCODE("リプリカさまが あなたのために")
+.STRINGMAP script_jp, "リプリカさまが あなたのために"
 NEWLINE
-ENCODE("のこされたもの")
+.STRINGMAP script_jp, "のこされたもの"
 WAIT_CLICK
 SPEAK
-ENCODE("ソフィアおうけの")
+.STRINGMAP script_jp, "ソフィアおうけの"
 NEWLINE
-ENCODE("おうじょであることを しめす")
+.STRINGMAP script_jp, "おうじょであることを しめす"
 NEWLINE
-ENCODE("ほうかんです")
+.STRINGMAP script_jp, "ほうかんです"
 WAIT_CLICK
 SPEAK
-ENCODE("あなたが おとなになれば")
+.STRINGMAP script_jp, "あなたが おとなになれば"
 NEWLINE
-ENCODE("わたすようにと")
+.STRINGMAP script_jp, "わたすようにと"
 NEWLINE
-ENCODE("おあずかりしていました")
+.STRINGMAP script_jp, "おあずかりしていました"
 WAIT_CLICK
 SPEAK
-ENCODE("どうか アンテーゼさま")
+.STRINGMAP script_jp, "どうか アンテーゼさま"
 WAIT_CLICK
 SPEAK
-ENCODE("この おかあさまの かたみを")
+.STRINGMAP script_jp, "この おかあさまの かたみを"
 NEWLINE
-ENCODE("かみにつけて")
+.STRINGMAP script_jp, "かみにつけて"
 WAIT_CLICK
 SPEAK
-ENCODE("あなたは ソフィアおうけの")
+.STRINGMAP script_jp, "あなたは ソフィアおうけの"
 NEWLINE
-ENCODE("ただひとりの")
+.STRINGMAP script_jp, "ただひとりの"
 NEWLINE
-ENCODE("おうじょなのです")
+.STRINGMAP script_jp, "おうじょなのです"
 WAIT_CLICK
 SPEAK
-ENCODE("どうか あなたのちからで")
+.STRINGMAP script_jp, "どうか あなたのちからで"
 NEWLINE
-ENCODE("ソフィアのひとびとを")
+.STRINGMAP script_jp, "ソフィアのひとびとを"
 NEWLINE
-ENCODE("すくってあげてください")
+.STRINGMAP script_jp, "すくってあげてください"
 .db STOP
 
 L0AAA86:
 FACE CELICA
 .db $E1 $05 $E2
 NEWLINE
-ENCODE("     セリカは")
+.STRINGMAP script_jp, "     セリカは"
 NEWLINE
-ENCODE("  サークレットをつけた!!")
+.STRINGMAP script_jp, "  サークレットをつけた!!"
 .db $DF $B6 $E6
 FACE BOY
 .db STOP
 
 L0AAAAE:
 SPEAK
-ENCODE("このバレンシアは ふかい")
+.STRINGMAP script_jp, "このバレンシアは ふかい"
 NEWLINE
-ENCODE("たにによって なんぼくに")
+.STRINGMAP script_jp, "たにによって なんぼくに"
 NEWLINE
-ENCODE("へだてられています")
+.STRINGMAP script_jp, "へだてられています"
 WAIT_CLICK
 SPEAK
-ENCODE("すいもんは たにに")
+.STRINGMAP script_jp, "すいもんは たにに"
 NEWLINE
-ENCODE("みずをためておくために")
+.STRINGMAP script_jp, "みずをためておくために"
 NEWLINE
-ENCODE("あるのですが")
+.STRINGMAP script_jp, "あるのですが"
 WAIT_CLICK
 SPEAK
-ENCODE("ときどき ひらいてやらないと")
+.STRINGMAP script_jp, "ときどき ひらいてやらないと"
 NEWLINE
-ENCODE("みずが ながれだして")
+.STRINGMAP script_jp, "みずが ながれだして"
 NEWLINE
-ENCODE("とても きけんなのです")
+.STRINGMAP script_jp, "とても きけんなのです"
 WAIT_CLICK
 SPEAK
-ENCODE("ところが リゲルぐんが")
+.STRINGMAP script_jp, "ところが リゲルぐんが"
 NEWLINE
-ENCODE("せんりょうしてからは")
+.STRINGMAP script_jp, "せんりょうしてからは"
 NEWLINE
-ENCODE("ずっと とじたままなのです")
+.STRINGMAP script_jp, "ずっと とじたままなのです"
 WAIT_CLICK
 SPEAK
-ENCODE("このままでは こうずいが")
+.STRINGMAP script_jp, "このままでは こうずいが"
 NEWLINE
-ENCODE("おこって ソフィアおうこくは")
+.STRINGMAP script_jp, "おこって ソフィアおうこくは"
 NEWLINE
-ENCODE("うみに しずんでしまいます")
+.STRINGMAP script_jp, "うみに しずんでしまいます"
 WAIT_CLICK
 SPEAK
 .db $EC
-ENCODE("うさま.おねがいです")
+.STRINGMAP script_jp, "うさま.おねがいです"
 WAIT_CLICK
 SPEAK
-ENCODE("どうか すいもんを")
+.STRINGMAP script_jp, "どうか すいもんを"
 NEWLINE
-ENCODE("ひらいてくだい")
+.STRINGMAP script_jp, "ひらいてくだい"
 .db STOP
 
 L0AABA5:
 SPEAK
-ENCODE("なに すいもんを ひらけだと!?")
+.STRINGMAP script_jp, "なに すいもんを ひらけだと!?"
 WAIT_CLICK
 SPEAK
-ENCODE("それは だめだ!")
+.STRINGMAP script_jp, "それは だめだ!"
 WAIT_CLICK
 SPEAK
-ENCODE("このすいもんを ひらいてしまうと")
+.STRINGMAP script_jp, "このすいもんを ひらいてしまうと"
 NEWLINE
-ENCODE("いっぺんに みずがながれだして")
+.STRINGMAP script_jp, "いっぺんに みずがながれだして"
 NEWLINE
-ENCODE("こうずいが おこってしまう")
+.STRINGMAP script_jp, "こうずいが おこってしまう"
 WAIT_CLICK
 SPEAK
-ENCODE("さきに  ミラしんでんにある")
+.STRINGMAP script_jp, "さきに  ミラしんでんにある"
 NEWLINE
-ENCODE("よびのすいもんを ひらかないと")
+.STRINGMAP script_jp, "よびのすいもんを ひらかないと"
 NEWLINE
-ENCODE("きけんなんだ")
+.STRINGMAP script_jp, "きけんなんだ"
 WAIT_CLICK
 SPEAK
-ENCODE("わるいが おれには できないよ")
+.STRINGMAP script_jp, "わるいが おれには できないよ"
 .db STOP
 
 L0AAC38:
 SPEAK
-ENCODE("おお まってたぜ")
+.STRINGMAP script_jp, "おお まってたぜ"
 WAIT_CLICK
 SPEAK
-ENCODE("ミラのすいもんも")
+.STRINGMAP script_jp, "ミラのすいもんも"
 NEWLINE
-ENCODE("ひらいたようだし")
+.STRINGMAP script_jp, "ひらいたようだし"
 NEWLINE
-ENCODE("もう だいじょうぶだ")
+.STRINGMAP script_jp, "もう だいじょうぶだ"
 WAIT_CLICK
 SPEAK
-ENCODE("みてなよ")
+.STRINGMAP script_jp, "みてなよ"
 NEWLINE
-ENCODE("いま ひらいてやるからな")
+.STRINGMAP script_jp, "いま ひらいてやるからな"
 .db STOP
 
 L0AAC79:
 SPEAK
-ENCODE("よかったな")
+.STRINGMAP script_jp, "よかったな"
 NEWLINE
-ENCODE("これで ソフィアおうこくは")
+.STRINGMAP script_jp, "これで ソフィアおうこくは"
 NEWLINE
-ENCODE("すくわれたよ")
+.STRINGMAP script_jp, "すくわれたよ"
 WAIT_CLICK
 SPEAK
-ENCODE("すいもんからきたは")
+.STRINGMAP script_jp, "すいもんからきたは"
 NEWLINE
-ENCODE("リゲルおうこくだ")
+.STRINGMAP script_jp, "リゲルおうこくだ"
 NEWLINE
-ENCODE("ちゅういして ゆきなよ")
+.STRINGMAP script_jp, "ちゅういして ゆきなよ"
 .db STOP
 
 L0AACB8:
 SPEAK
-ENCODE("きさまたちは おにだ!")
+.STRINGMAP script_jp, "きさまたちは おにだ!"
 WAIT_CLICK
 SPEAK
-ENCODE("ジークさまは こいびとを")
+.STRINGMAP script_jp, "ジークさまは こいびとを"
 NEWLINE
-ENCODE("ひとじちにとられて しかたなく")
+.STRINGMAP script_jp, "ひとじちにとられて しかたなく"
 NEWLINE
-ENCODE("たたかっていたのに···")
+.STRINGMAP script_jp, "たたかっていたのに···"
 .db STOP
 
 L0AACF4:
 SPEAK
-ENCODE("きたのやまで がけくずれが")
+.STRINGMAP script_jp, "きたのやまで がけくずれが"
 NEWLINE
-ENCODE("おこって ミラしんでんへの")
+.STRINGMAP script_jp, "おこって ミラしんでんへの"
 NEWLINE
-ENCODE("みちは とざされたそうだ")
+.STRINGMAP script_jp, "みちは とざされたそうだ"
 WAIT_CLICK
 SPEAK
-ENCODE("さっき でかけていった")
+.STRINGMAP script_jp, "さっき でかけていった"
 NEWLINE
-ENCODE("シスターたちが")
+.STRINGMAP script_jp, "シスターたちが"
 NEWLINE
-ENCODE("ぶじだといいんだが···")
+.STRINGMAP script_jp, "ぶじだといいんだが···"
 .db STOP
 
 L0AAD4E:
 SPEAK
-ENCODE("ジークしょうぐんを")
+.STRINGMAP script_jp, "ジークしょうぐんを"
 NEWLINE
-ENCODE("たすけてくれたんだってな")
+.STRINGMAP script_jp, "たすけてくれたんだってな"
 WAIT_CLICK
 SPEAK
-ENCODE("ソフィアは きらいだけど")
+.STRINGMAP script_jp, "ソフィアは きらいだけど"
 NEWLINE
-ENCODE("あんたらには れいをいうぜ")
+.STRINGMAP script_jp, "あんたらには れいをいうぜ"
 .db STOP
 
 L0AAD88:
 FACE ALM
 NAME ALM
 SPEAK
-ENCODE("こんなところに とじこめられて")
+.STRINGMAP script_jp, "こんなところに とじこめられて"
 NEWLINE
-ENCODE("いったいどうしたのですか")
+.STRINGMAP script_jp, "いったいどうしたのですか"
 PAGE
 FACE TATIANA
 NAME TATIANA
 SPEAK
-ENCODE("わたしのこいびとのジークは")
+.STRINGMAP script_jp, "わたしのこいびとのジークは"
 NEWLINE
-ENCODE("リゲルきしだんの")
+.STRINGMAP script_jp, "リゲルきしだんの"
 NEWLINE
-ENCODE("しょうぐんなのです")
+.STRINGMAP script_jp, "しょうぐんなのです"
 WAIT_CLICK
 SPEAK
-ENCODE("だけど ジークは このたたかいには")
+.STRINGMAP script_jp, "だけど ジークは このたたかいには"
 NEWLINE
-ENCODE("はんたいしていました")
+.STRINGMAP script_jp, "はんたいしていました"
 WAIT_CLICK
 SPEAK
-ENCODE("だから かれのうらぎりをおそれた")
+.STRINGMAP script_jp, "だから かれのうらぎりをおそれた"
 NEWLINE
-ENCODE("ヌイババによって")
+.STRINGMAP script_jp, "ヌイババによって"
 NEWLINE
-ENCODE("ひとじちに されていたのです")
+.STRINGMAP script_jp, "ひとじちに されていたのです"
 WAIT_CLICK
 SPEAK
-ENCODE("わたしが たすかったことをしれば")
+.STRINGMAP script_jp, "わたしが たすかったことをしれば"
 NEWLINE
-ENCODE("きっと よろこんでくれるはず")
+.STRINGMAP script_jp, "きっと よろこんでくれるはず"
 WAIT_CLICK
 SPEAK
-ENCODE("ああ はやくジークに")
+.STRINGMAP script_jp, "ああ はやくジークに"
 NEWLINE
-ENCODE("あいたい···")
+.STRINGMAP script_jp, "あいたい···"
 .db STOP
 
 L0AAE68:
 FACE ZEKE
 NAME ZEKE
 SPEAK
-ENCODE("きみが アルムくんか")
+.STRINGMAP script_jp, "きみが アルムくんか"
 WAIT_CLICK
 SPEAK
-ENCODE("ティータを たすけてくれたそうだね")
+.STRINGMAP script_jp, "ティータを たすけてくれたそうだね"
 NEWLINE
-ENCODE("ありがとう れいをいう")
+.STRINGMAP script_jp, "ありがとう れいをいう"
 PAGE
 FACE ALM
 NAME ALM
 SPEAK
-ENCODE("ジークしょうぐん")
+.STRINGMAP script_jp, "ジークしょうぐん"
 NEWLINE
-ENCODE("あなたはこのたたかいに")
+.STRINGMAP script_jp, "あなたはこのたたかいに"
 NEWLINE
-ENCODE("はんたいなのでしょう")
+.STRINGMAP script_jp, "はんたいなのでしょう"
 WAIT_CLICK
 SPEAK
-ENCODE("どうか われわれに")
+.STRINGMAP script_jp, "どうか われわれに"
 NEWLINE
-ENCODE("ちからをかしてください")
+.STRINGMAP script_jp, "ちからをかしてください"
 PAGE
 NAME ZEKE
 SPEAK
-ENCODE("それは できぬ")
+.STRINGMAP script_jp, "それは できぬ"
 WAIT_CLICK
 SPEAK
-ENCODE("ジェロームを たおしたのは")
+.STRINGMAP script_jp, "ジェロームを たおしたのは"
 NEWLINE
-ENCODE("やつが ヌイババとグルになって")
+.STRINGMAP script_jp, "やつが ヌイババとグルになって"
 NEWLINE
-ENCODE("ひとびとを くるしめていたからだ")
+.STRINGMAP script_jp, "ひとびとを くるしめていたからだ"
 WAIT_CLICK
 SPEAK
-ENCODE("それに··· わたしは")
+.STRINGMAP script_jp, "それに··· わたしは"
 NEWLINE
-ENCODE("じぶんが なにものか しらぬ")
+.STRINGMAP script_jp, "じぶんが なにものか しらぬ"
 WAIT_CLICK
 SPEAK
-ENCODE("わかっていることは")
+.STRINGMAP script_jp, "わかっていることは"
 NEWLINE
-ENCODE("ひどいきずを おって このくにに")
+.STRINGMAP script_jp, "ひどいきずを おって このくにに"
 NEWLINE
-ENCODE("ながれついたということだけ···")
+.STRINGMAP script_jp, "ながれついたということだけ···"
 WAIT_CLICK
 SPEAK
-ENCODE("へいかは そんなわたしを")
+.STRINGMAP script_jp, "へいかは そんなわたしを"
 NEWLINE
-ENCODE("あたたかく むかえ")
+.STRINGMAP script_jp, "あたたかく むかえ"
 NEWLINE
-ENCODE("なまえまで あたえてくだされた")
+.STRINGMAP script_jp, "なまえまで あたえてくだされた"
 WAIT_CLICK
 SPEAK
-ENCODE("ルドルフへいかは わたしにとって")
+.STRINGMAP script_jp, "ルドルフへいかは わたしにとって"
 NEWLINE
-ENCODE("ちちおやにも ひとしいかたなのだ")
+.STRINGMAP script_jp, "ちちおやにも ひとしいかたなのだ"
 WAIT_CLICK
 SPEAK
-ENCODE("へいかを うらぎることだけは")
+.STRINGMAP script_jp, "へいかを うらぎることだけは"
 NEWLINE
-ENCODE("できない")
+.STRINGMAP script_jp, "できない"
 PAGE
 NAME ALM
 SPEAK
-ENCODE("わかりました···")
+.STRINGMAP script_jp, "わかりました···"
 WAIT_CLICK
 SPEAK
-ENCODE("しつれいなことをいって")
+.STRINGMAP script_jp, "しつれいなことをいって"
 NEWLINE
-ENCODE("ごめんなさい")
+.STRINGMAP script_jp, "ごめんなさい"
 PAGE
 NAME ZEKE
 SPEAK
-ENCODE("いや··· ん!?")
+.STRINGMAP script_jp, "いや··· ん!?"
 NEWLINE
-ENCODE("アルムくん そのみぎうでの")
+.STRINGMAP script_jp, "アルムくん そのみぎうでの"
 NEWLINE
-ENCODE("あざは どうしたんだ")
+.STRINGMAP script_jp, "あざは どうしたんだ"
 PAGE
 NAME ALM
 SPEAK
-ENCODE("あざ?···")
+.STRINGMAP script_jp, "あざ?···"
 NEWLINE
-ENCODE("ああ これは ずっとむかしから")
+.STRINGMAP script_jp, "ああ これは ずっとむかしから"
 NEWLINE
-ENCODE("あるんです")
+.STRINGMAP script_jp, "あるんです"
 WAIT_CLICK
 SPEAK
-ENCODE("じいちゃんは あかんぼうのときに")
+.STRINGMAP script_jp, "じいちゃんは あかんぼうのときに"
 NEWLINE
-ENCODE("ついたあざだろうって いってたけど")
+.STRINGMAP script_jp, "ついたあざだろうって いってたけど"
 NEWLINE
-ENCODE("これがなにか···")
+.STRINGMAP script_jp, "これがなにか···"
 PAGE
 NAME ZEKE
 SPEAK
-ENCODE("そうか···")
+.STRINGMAP script_jp, "そうか···"
 WAIT_CLICK
 SPEAK
-ENCODE("ルドルフへいかは かつて")
+.STRINGMAP script_jp, "ルドルフへいかは かつて"
 NEWLINE
-ENCODE("わたしに いわれたことがある")
+.STRINGMAP script_jp, "わたしに いわれたことがある"
 WAIT_CLICK
-ENCODE(" ジークよ みぎのうでに")
+.STRINGMAP script_jp, " ジークよ みぎのうでに"
 NEWLINE
-ENCODE(" じゅうじのあざを もつものあらば")
+.STRINGMAP script_jp, " じゅうじのあざを もつものあらば"
 NEWLINE
-ENCODE(" そのものに すべてをささげよ")
+.STRINGMAP script_jp, " そのものに すべてをささげよ"
 WAIT_CLICK
-ENCODE(" そのものこそ リゲルを···")
+.STRINGMAP script_jp, " そのものこそ リゲルを···"
 NEWLINE
-ENCODE(" そして このバレンシアをすくう")
+.STRINGMAP script_jp, " そして このバレンシアをすくう"
 NEWLINE
-ENCODE(" えらばれしものなり···と")
-WAIT_CLICK
-SPEAK
-ENCODE("それが なにをいみするものかは")
-NEWLINE
-ENCODE("しらぬが へいかのごいしとあらば")
-NEWLINE
-ENCODE("もはや まようことはない")
+.STRINGMAP script_jp, " えらばれしものなり···と"
 WAIT_CLICK
 SPEAK
-ENCODE("アルムくん きみのちからになろう")
+.STRINGMAP script_jp, "それが なにをいみするものかは"
+NEWLINE
+.STRINGMAP script_jp, "しらぬが へいかのごいしとあらば"
+NEWLINE
+.STRINGMAP script_jp, "もはや まようことはない"
 WAIT_CLICK
 SPEAK
-ENCODE("わたしも きみとともに")
+.STRINGMAP script_jp, "アルムくん きみのちからになろう"
+WAIT_CLICK
+SPEAK
+.STRINGMAP script_jp, "わたしも きみとともに"
 NEWLINE
-ENCODE("たたかおう!")
+.STRINGMAP script_jp, "たたかおう!"
 .db STOP
 
 L0AB16A:
 FACE NOMA
 NAME NOMA
 SPEAK
-ENCODE("おお セリカ!")
+.STRINGMAP script_jp, "おお セリカ!"
 NEWLINE
-ENCODE("ぶじじゃったか")
+.STRINGMAP script_jp, "ぶじじゃったか"
 PAGE
 FACE CELICA
 NAME CELICA
 SPEAK
-ENCODE("ノーマしさいさま!")
+.STRINGMAP script_jp, "ノーマしさいさま!"
 NEWLINE
-ENCODE("いったい どうされたのですか")
+.STRINGMAP script_jp, "いったい どうされたのですか"
 PAGE
 NAME NOMA
 SPEAK
-ENCODE("やはり おまえのことが")
+.STRINGMAP script_jp, "やはり おまえのことが"
 NEWLINE
-ENCODE("しんぱいでな")
+.STRINGMAP script_jp, "しんぱいでな"
 WAIT_CLICK
 SPEAK
-ENCODE("しんでんまで おいかけてきたのだが")
+.STRINGMAP script_jp, "しんでんまで おいかけてきたのだが"
 NEWLINE
-ENCODE("うっかりと こんなところに")
+.STRINGMAP script_jp, "うっかりと こんなところに"
 NEWLINE
-ENCODE("おちてしまった")
+.STRINGMAP script_jp, "おちてしまった"
 WAIT_CLICK
 SPEAK
-ENCODE("ハハハ")
+.STRINGMAP script_jp, "ハハハ"
 NEWLINE
-ENCODE("わしとしたことが とんだ")
+.STRINGMAP script_jp, "わしとしたことが とんだ"
 NEWLINE
-ENCODE("ヘマをしたもんじゃ")
+.STRINGMAP script_jp, "ヘマをしたもんじゃ"
 WAIT_CLICK
 SPEAK
-ENCODE("まあ よい")
+.STRINGMAP script_jp, "まあ よい"
 NEWLINE
-ENCODE("これからは わしもいっしょに")
+.STRINGMAP script_jp, "これからは わしもいっしょに"
 NEWLINE
-ENCODE("いってやろう")
+.STRINGMAP script_jp, "いってやろう"
 WAIT_CLICK
 SPEAK
-ENCODE("あんしんするがよいぞ")
+.STRINGMAP script_jp, "あんしんするがよいぞ"
 .db STOP
 
 L0AB236:
 NAME WOMAN
 SPEAK
-ENCODE("わたしは ミラしんでんに")
+.STRINGMAP script_jp, "わたしは ミラしんでんに"
 NEWLINE
-ENCODE("かえります")
+.STRINGMAP script_jp, "かえります"
 WAIT_CLICK
 SPEAK
-ENCODE("どうか おうじょさま")
+.STRINGMAP script_jp, "どうか おうじょさま"
 NEWLINE
-ENCODE("おきをつけて")
+.STRINGMAP script_jp, "おきをつけて"
 .db STOP
 
 L0AB262:
 SPEAK
-ENCODE("ありがとう あなたたちのおかげで")
+.STRINGMAP script_jp, "ありがとう あなたたちのおかげで"
 NEWLINE
-ENCODE("ドゼーのはんらんぐんは")
+.STRINGMAP script_jp, "ドゼーのはんらんぐんは"
 NEWLINE
-ENCODE("しろを すてていきました")
+.STRINGMAP script_jp, "しろを すてていきました"
 WAIT_CLICK
 SPEAK
-ENCODE("たぶん にしのもりにある")
+.STRINGMAP script_jp, "たぶん にしのもりにある"
 NEWLINE
-ENCODE("じぶんのとりでに")
+.STRINGMAP script_jp, "じぶんのとりでに"
 NEWLINE
-ENCODE("にげていったのでしょう")
+.STRINGMAP script_jp, "にげていったのでしょう"
 .db STOP
 
 L0AB2BC:
 SPEAK
-ENCODE("おうけのひとたちは")
+.STRINGMAP script_jp, "おうけのひとたちは"
 NEWLINE
-ENCODE("ドゼーしょうぐんによって")
+.STRINGMAP script_jp, "ドゼーしょうぐんによって"
 NEWLINE
-ENCODE("みんな ころされました")
+.STRINGMAP script_jp, "みんな ころされました"
 WAIT_CLICK
 SPEAK
-ENCODE("あと いきておられるとすれば")
+.STRINGMAP script_jp, "あと いきておられるとすれば"
 NEWLINE
-ENCODE("うまれてすぐに マイセンさまが")
+.STRINGMAP script_jp, "うまれてすぐに マイセンさまが"
 NEWLINE
-ENCODE("つれだしたという おうじょだけです")
+.STRINGMAP script_jp, "つれだしたという おうじょだけです"
 WAIT_CLICK
 SPEAK
-ENCODE("せめて あのかたが··")
+.STRINGMAP script_jp, "せめて あのかたが··"
 WAIT_CLICK
 SPEAK
-ENCODE("アンテーゼおうじょさまさえ")
+.STRINGMAP script_jp, "アンテーゼおうじょさまさえ"
 NEWLINE
-ENCODE("いきていてくだされば···")
+.STRINGMAP script_jp, "いきていてくだされば···"
 .db STOP
 
 L0AB34B:
 SPEAK
-ENCODE("ドゼーは はらぐろいおとこで")
+.STRINGMAP script_jp, "ドゼーは はらぐろいおとこで"
 NEWLINE
-ENCODE("おうけにうまれた こどもたちを")
+.STRINGMAP script_jp, "おうけにうまれた こどもたちを"
 NEWLINE
-ENCODE("こっそり ころしていったのです")
+.STRINGMAP script_jp, "こっそり ころしていったのです"
 WAIT_CLICK
 SPEAK
-ENCODE("それを とめようとしたマイセンどのは")
+.STRINGMAP script_jp, "それを とめようとしたマイセンどのは"
 NEWLINE
-ENCODE("ぎゃくに つみをかぶせられ")
+.STRINGMAP script_jp, "ぎゃくに つみをかぶせられ"
 NEWLINE
-ENCODE("しろから おいだされてしまいました")
+.STRINGMAP script_jp, "しろから おいだされてしまいました"
 .db STOP
 
 L0AB3B9:
 SPEAK
-ENCODE("きみは マイセンしょうぐんの")
+.STRINGMAP script_jp, "きみは マイセンしょうぐんの"
 NEWLINE
-ENCODE("まごだって?")
+.STRINGMAP script_jp, "まごだって?"
 WAIT_CLICK
 SPEAK
-ENCODE("しかし しょうぐんに")
+.STRINGMAP script_jp, "しかし しょうぐんに"
 NEWLINE
-ENCODE("みよりなど なかったはずだ···")
+.STRINGMAP script_jp, "みよりなど なかったはずだ···"
 WAIT_CLICK
 SPEAK
-ENCODE("ま,まさか あのうわさが")
+.STRINGMAP script_jp, "ま,まさか あのうわさが"
 NEWLINE
-ENCODE("ほんとうだとは!?")
+.STRINGMAP script_jp, "ほんとうだとは!?"
 WAIT_CLICK
 SPEAK
-ENCODE("い···いや,すまない")
+.STRINGMAP script_jp, "い···いや,すまない"
 NEWLINE
-ENCODE("おれはなにも しらないんだ···")
+.STRINGMAP script_jp, "おれはなにも しらないんだ···"
 .db STOP
 
 L0AB42D:
 SPEAK
-ENCODE("ドゼーは リゲルていこくに")
+.STRINGMAP script_jp, "ドゼーは リゲルていこくに"
 NEWLINE
-ENCODE("えんじょを たのんだようです")
+.STRINGMAP script_jp, "えんじょを たのんだようです"
 WAIT_CLICK
 SPEAK
-ENCODE("リゲルぐんが せめてくるまえに")
+.STRINGMAP script_jp, "リゲルぐんが せめてくるまえに"
 NEWLINE
-ENCODE("やつのとりでを おとさなければ")
+.STRINGMAP script_jp, "やつのとりでを おとさなければ"
 NEWLINE
-ENCODE("たいへんなことに なってしまいます")
+.STRINGMAP script_jp, "たいへんなことに なってしまいます"
 .db STOP
 
 L0AB489:
 SPEAK
-ENCODE("この ナイトキラーさえあれば")
+.STRINGMAP script_jp, "この ナイトキラーさえあれば"
 NEWLINE
-ENCODE("てきのきしは かんたんに")
+.STRINGMAP script_jp, "てきのきしは かんたんに"
 NEWLINE
-ENCODE("やっつけられます")
+.STRINGMAP script_jp, "やっつけられます"
 WAIT_CLICK
 SPEAK
-ENCODE("だけど やりだから")
+.STRINGMAP script_jp, "だけど やりだから"
 NEWLINE
-ENCODE("きしにしか あつかえませんよ")
+.STRINGMAP script_jp, "きしにしか あつかえませんよ"
 .db STOP
 
 L0AB4CD:
 SPEAK
-ENCODE("ドゼーは たいせつな")
+.STRINGMAP script_jp, "ドゼーは たいせつな"
 NEWLINE
-ENCODE(" [おうけのつるぎ]を")
+.STRINGMAP script_jp, " [おうけのつるぎ]を"
 NEWLINE
-ENCODE("もってにげました")
+.STRINGMAP script_jp, "もってにげました"
 WAIT_CLICK
 SPEAK
-ENCODE("あれは むかしリゲルおうけより")
+.STRINGMAP script_jp, "あれは むかしリゲルおうけより"
 NEWLINE
-ENCODE("ゆうこうのしるしとして")
+.STRINGMAP script_jp, "ゆうこうのしるしとして"
 NEWLINE
-ENCODE("おくられたもの")
+.STRINGMAP script_jp, "おくられたもの"
 WAIT_CLICK
 SPEAK
-ENCODE("ふつうのものには つかえない")
+.STRINGMAP script_jp, "ふつうのものには つかえない"
 NEWLINE
-ENCODE("とくべつな つるぎなのです")
+.STRINGMAP script_jp, "とくべつな つるぎなのです"
 .db STOP
 
 L0AB539:
 FACE JEDAH
 NAME JEDAH
 SPEAK
-ENCODE("ふふふ··· セリカよ")
+.STRINGMAP script_jp, "ふふふ··· セリカよ"
 WAIT_CLICK
 SPEAK
-ENCODE("りゅうのやまに とじこめられた")
+.STRINGMAP script_jp, "りゅうのやまに とじこめられた"
 NEWLINE
-ENCODE("アルムを たすけたかろう")
+.STRINGMAP script_jp, "アルムを たすけたかろう"
 WAIT_CLICK
 SPEAK
-ENCODE("ならば わしのあとについてこい")
+.STRINGMAP script_jp, "ならば わしのあとについてこい"
 WAIT_CLICK
 SPEAK
-ENCODE("おまえたちが そのみを")
+.STRINGMAP script_jp, "おまえたちが そのみを"
 NEWLINE
-ENCODE("ドーマさまに ささげるなら")
+.STRINGMAP script_jp, "ドーマさまに ささげるなら"
 NEWLINE
-ENCODE("アルムのみちもまた ひらけようぞ")
+.STRINGMAP script_jp, "アルムのみちもまた ひらけようぞ"
 .db STOP
 
 L0AB5AD:
 FACE ALM
 NAME ALM
 SPEAK
-ENCODE("あ じいちゃん")
+.STRINGMAP script_jp, "あ じいちゃん"
 NEWLINE
-ENCODE("いったいこれは どういうこと!?")
+.STRINGMAP script_jp, "いったいこれは どういうこと!?"
 WAIT_CLICK
 SPEAK
-ENCODE("あんなに にくんでいた")
+.STRINGMAP script_jp, "あんなに にくんでいた"
 NEWLINE
-ENCODE("ルドルフこうていが ぼくの")
+.STRINGMAP script_jp, "ルドルフこうていが ぼくの"
 NEWLINE
-ENCODE("ちちおやだなんて!!!")
+.STRINGMAP script_jp, "ちちおやだなんて!!!"
 WAIT_CLICK
 SPEAK
-ENCODE("ひどいよ")
+.STRINGMAP script_jp, "ひどいよ"
 NEWLINE
-ENCODE("じいちゃんは なにもかも")
+.STRINGMAP script_jp, "じいちゃんは なにもかも"
 NEWLINE
-ENCODE("しっていたのか!")
+.STRINGMAP script_jp, "しっていたのか!"
 PAGE
 FACE MYCEN
 NAME MYCEN
 SPEAK
-ENCODE("アルムよ")
+.STRINGMAP script_jp, "アルムよ"
 NEWLINE
-ENCODE("おどろくのも むりはない···")
+.STRINGMAP script_jp, "おどろくのも むりはない···"
 WAIT_CLICK
 SPEAK
-ENCODE("たしかに おまえは")
+.STRINGMAP script_jp, "たしかに おまえは"
 NEWLINE
-ENCODE("ルドルフこうていの ひとりむすこ")
+.STRINGMAP script_jp, "ルドルフこうていの ひとりむすこ"
 WAIT_CLICK
 SPEAK
-ENCODE("いまとなっては ただひとり")
+.STRINGMAP script_jp, "いまとなっては ただひとり"
 NEWLINE
-ENCODE("リゲルおうけの ちをうけつぐもの")
+.STRINGMAP script_jp, "リゲルおうけの ちをうけつぐもの"
 PAGE
 NAME ALM
 SPEAK
-ENCODE("でも なぜ こんなことに···")
+.STRINGMAP script_jp, "でも なぜ こんなことに···"
 WAIT_CLICK
 SPEAK
-ENCODE("ぼくが どうして ちちおやと")
+.STRINGMAP script_jp, "ぼくが どうして ちちおやと"
 NEWLINE
-ENCODE("たたかわなければ ならないの")
+.STRINGMAP script_jp, "たたかわなければ ならないの"
 PAGE
 NAME MYCEN
 SPEAK
-ENCODE("なくな アルム···")
+.STRINGMAP script_jp, "なくな アルム···"
 WAIT_CLICK
 SPEAK
-ENCODE("まえにも はなしたように")
+.STRINGMAP script_jp, "まえにも はなしたように"
 NEWLINE
-ENCODE("この バレンシアは かみがみによって")
+.STRINGMAP script_jp, "この バレンシアは かみがみによって"
 NEWLINE
-ENCODE("きたとみなみに わけられてしまった")
+.STRINGMAP script_jp, "きたとみなみに わけられてしまった"
 WAIT_CLICK
 SPEAK
-ENCODE("そして かれらは ひとのくらしに")
+.STRINGMAP script_jp, "そして かれらは ひとのくらしに"
 NEWLINE
-ENCODE("ふかく かかわりすぎたのだ")
+.STRINGMAP script_jp, "ふかく かかわりすぎたのだ"
 WAIT_CLICK
 SPEAK
-ENCODE("そのけっか ソフィアのたみは")
+.STRINGMAP script_jp, "そのけっか ソフィアのたみは"
 NEWLINE
-ENCODE("はたらくことをわすれ")
+.STRINGMAP script_jp, "はたらくことをわすれ"
 NEWLINE
-ENCODE("リゲルのたみは やさしさをわすれた")
+.STRINGMAP script_jp, "リゲルのたみは やさしさをわすれた"
 WAIT_CLICK
 SPEAK
-ENCODE("このままでは ともに ほろびてしまう")
+.STRINGMAP script_jp, "このままでは ともに ほろびてしまう"
 WAIT_CLICK
 SPEAK
-ENCODE("そうかんがえた ルドルフは")
+.STRINGMAP script_jp, "そうかんがえた ルドルフは"
 NEWLINE
-ENCODE("みずからが はかいしゃとなって")
+.STRINGMAP script_jp, "みずからが はかいしゃとなって"
 NEWLINE
-ENCODE("ゆうしゃたちの しゅつげんをうながし")
+.STRINGMAP script_jp, "ゆうしゃたちの しゅつげんをうながし"
 WAIT_CLICK
 SPEAK
-ENCODE("あたらしい じだいをきずくための")
+.STRINGMAP script_jp, "あたらしい じだいをきずくための"
 NEWLINE
-ENCODE("すていしになろうと けついしたのだ")
+.STRINGMAP script_jp, "すていしになろうと けついしたのだ"
 WAIT_CLICK
 SPEAK
-ENCODE("そして じぶんを たおすであろう")
+.STRINGMAP script_jp, "そして じぶんを たおすであろう"
 NEWLINE
-ENCODE("ゆうしゃが あいする わがこであれば")
+.STRINGMAP script_jp, "ゆうしゃが あいする わがこであれば"
 NEWLINE
-ENCODE("これいじょうの よろこびはない···")
+.STRINGMAP script_jp, "これいじょうの よろこびはない···"
 WAIT_CLICK
 SPEAK
-ENCODE("かれは そう つげて わしに")
+.STRINGMAP script_jp, "かれは そう つげて わしに"
 NEWLINE
-ENCODE("うまれてまもないこどもを")
+.STRINGMAP script_jp, "うまれてまもないこどもを"
 NEWLINE
-ENCODE("たくそうとした")
+.STRINGMAP script_jp, "たくそうとした"
 WAIT_CLICK
 SPEAK
-ENCODE("そのときの ルドルフのかおは")
+.STRINGMAP script_jp, "そのときの ルドルフのかおは"
 NEWLINE
-ENCODE("いまも わすれぬ····")
+.STRINGMAP script_jp, "いまも わすれぬ····"
 WAIT_CLICK
 SPEAK
-ENCODE("このおとこは じぶんのみを")
+.STRINGMAP script_jp, "このおとこは じぶんのみを"
 NEWLINE
-ENCODE("じごくのほのおで やこうとしている")
+.STRINGMAP script_jp, "じごくのほのおで やこうとしている"
 WAIT_CLICK
 SPEAK
-ENCODE("そう きづいたとき わしには")
+.STRINGMAP script_jp, "そう きづいたとき わしには"
 NEWLINE
-ENCODE("もはや こばむすべは なかった")
+.STRINGMAP script_jp, "もはや こばむすべは なかった"
 WAIT_CLICK
 SPEAK
-ENCODE("すべてを うんめいに")
+.STRINGMAP script_jp, "すべてを うんめいに"
 NEWLINE
-ENCODE("ゆだねることにしたのだ")
+.STRINGMAP script_jp, "ゆだねることにしたのだ"
 WAIT_CLICK
 SPEAK
-ENCODE("アルムよ")
+.STRINGMAP script_jp, "アルムよ"
 NEWLINE
-ENCODE("いつまでも")
+.STRINGMAP script_jp, "いつまでも"
 NEWLINE
-ENCODE("かなしんでいては ならぬ")
+.STRINGMAP script_jp, "かなしんでいては ならぬ"
 WAIT_CLICK
 SPEAK
-ENCODE("ルドルフが なしえなかったことを")
+.STRINGMAP script_jp, "ルドルフが なしえなかったことを"
 NEWLINE
-ENCODE("おまえが ひきつがなければ ならぬ")
+.STRINGMAP script_jp, "おまえが ひきつがなければ ならぬ"
 WAIT_CLICK
 SPEAK
-ENCODE("ちかしんでんに ゆき")
+.STRINGMAP script_jp, "ちかしんでんに ゆき"
 NEWLINE
-ENCODE("じゃしんドーマを やみにもどすのだ")
+.STRINGMAP script_jp, "じゃしんドーマを やみにもどすのだ"
 WAIT_CLICK
 SPEAK
-ENCODE("いそがなければ セリカたちのみに")
+.STRINGMAP script_jp, "いそがなければ セリカたちのみに"
 NEWLINE
-ENCODE("きけんがおよぶかも しれぬぞ!")
+.STRINGMAP script_jp, "きけんがおよぶかも しれぬぞ!"
 .db STOP
 
 L0AB92F:
 FACE MASSENA
 NAME MASSENA
 SPEAK
-ENCODE("アルバインおうじ")
+.STRINGMAP script_jp, "アルバインおうじ"
 WAIT_CLICK
 SPEAK
-ENCODE("わたしは しんえいたいちょうの")
+.STRINGMAP script_jp, "わたしは しんえいたいちょうの"
 NEWLINE
-ENCODE("マッセナしょうぐんです")
+.STRINGMAP script_jp, "マッセナしょうぐんです"
 WAIT_CLICK
 SPEAK
-ENCODE("へいかから すべてを おききし")
+.STRINGMAP script_jp, "へいかから すべてを おききし"
 NEWLINE
-ENCODE("はいざんのへいを まとめて")
+.STRINGMAP script_jp, "はいざんのへいを まとめて"
 NEWLINE
-ENCODE("まっていました")
+.STRINGMAP script_jp, "まっていました"
 WAIT_CLICK
 
 L0AB989:
 SPEAK
-ENCODE("われらは いつまでも")
+.STRINGMAP script_jp, "われらは いつまでも"
 NEWLINE
-ENCODE("おうじの おかえりを")
+.STRINGMAP script_jp, "おうじの おかえりを"
 NEWLINE
-ENCODE("おまちしています")
+.STRINGMAP script_jp, "おまちしています"
 .db STOP
 
 L0AB9AB:
 SPEAK
-ENCODE("ルドルフ2せいへいか")
+.STRINGMAP script_jp, "ルドルフ2せいへいか"
 NEWLINE
-ENCODE("バンザーイ!")
+.STRINGMAP script_jp, "バンザーイ!"
 .db STOP
 
 L0AB9C1:
 FACE ALM
 NAME ALM
 SPEAK
-ENCODE("!")
+.STRINGMAP script_jp, "!"
 NEWLINE
-ENCODE("セリカー")
+.STRINGMAP script_jp, "セリカー"
 .db STOP
 
 L0AB9CF:
 FACE CELICA
 NAME CELICA
 SPEAK
-ENCODE("あっ アルム")
+.STRINGMAP script_jp, "あっ アルム"
 NEWLINE
-ENCODE("たすけて···")
+.STRINGMAP script_jp, "たすけて···"
 WAIT_CLICK
 SPEAK
-ENCODE("このままでは みんなが···")
+.STRINGMAP script_jp, "このままでは みんなが···"
 WAIT_CLICK
 SPEAK
-ENCODE("みんなしんでしまう")
+.STRINGMAP script_jp, "みんなしんでしまう"
 WAIT_CLICK
 SPEAK
-ENCODE("は,はやく···")
+.STRINGMAP script_jp, "は,はやく···"
 NEWLINE
-ENCODE("おねがい···  はやくきて")
+.STRINGMAP script_jp, "おねがい···  はやくきて"
 .db STOP
 
 L0ABA1D:
-ENCODE("[ほうもつこ]")
+.STRINGMAP script_jp, "[ほうもつこ]"
 NEWLINE
-ENCODE("リゲルおうけのものいがい")
+.STRINGMAP script_jp, "リゲルおうけのものいがい"
 NEWLINE
-ENCODE("たちいるべからず!")
+.STRINGMAP script_jp, "たちいるべからず!"
 .db STOP
 
 L0ABA40:
 SPEAK
-ENCODE("ジェロームしょうぐんは")
+.STRINGMAP script_jp, "ジェロームしょうぐんは"
 NEWLINE
-ENCODE("ひどい おとこさ")
+.STRINGMAP script_jp, "ひどい おとこさ"
 WAIT_CLICK
 SPEAK
-ENCODE("このむらも りゃくだつされたり")
+.STRINGMAP script_jp, "このむらも りゃくだつされたり"
 NEWLINE
-ENCODE("らんぼうされたり ジークさまが")
+.STRINGMAP script_jp, "らんぼうされたり ジークさまが"
 NEWLINE
-ENCODE("くるまでは たいへんだったよ")
+.STRINGMAP script_jp, "くるまでは たいへんだったよ"
 .db STOP
 
 L0ABA8F:
 SPEAK
-ENCODE("ここは")
+.STRINGMAP script_jp, "ここは"
 NEWLINE
-ENCODE("けんじゃの かくれざと")
+.STRINGMAP script_jp, "けんじゃの かくれざと"
 WAIT_CLICK
 SPEAK
-ENCODE("ドーマのだいけんじゃ")
+.STRINGMAP script_jp, "ドーマのだいけんじゃ"
 NEWLINE
-ENCODE("ハルクさまによって")
+.STRINGMAP script_jp, "ハルクさまによって"
 NEWLINE
-ENCODE("まもられています")
+.STRINGMAP script_jp, "まもられています"
 WAIT_CLICK
 SPEAK
-ENCODE("ハルクさまに あいたいのなら")
+.STRINGMAP script_jp, "ハルクさまに あいたいのなら"
 NEWLINE
-ENCODE("むらの きょうかいに")
+.STRINGMAP script_jp, "むらの きょうかいに"
 NEWLINE
-ENCODE("ゆきなさい")
+.STRINGMAP script_jp, "ゆきなさい"
 .db STOP
 
 L0ABAE5:
 SPEAK
-ENCODE("ハルクさまは ドーマきょうの")
+.STRINGMAP script_jp, "ハルクさまは ドーマきょうの"
 NEWLINE
-ENCODE("だいしさいだったかた")
+.STRINGMAP script_jp, "だいしさいだったかた"
 WAIT_CLICK
 SPEAK
-ENCODE("しかし きとうしジュダと")
+.STRINGMAP script_jp, "しかし きとうしジュダと"
 NEWLINE
-ENCODE("あらそって やぶれ")
+.STRINGMAP script_jp, "あらそって やぶれ"
 NEWLINE
-ENCODE("にげてこられたのです")
+.STRINGMAP script_jp, "にげてこられたのです"
 WAIT_CLICK
 SPEAK
-ENCODE("ジュダは おそろしいおとこ")
+.STRINGMAP script_jp, "ジュダは おそろしいおとこ"
 WAIT_CLICK
 SPEAK
-ENCODE("もし たたかうのなら")
+.STRINGMAP script_jp, "もし たたかうのなら"
 NEWLINE
-ENCODE("ほうほうは ひとつしかない")
+.STRINGMAP script_jp, "ほうほうは ひとつしかない"
 WAIT_CLICK
 SPEAK
-ENCODE("4,8,12,···")
+.STRINGMAP script_jp, "4,8,12,···"
 WAIT_CLICK
 SPEAK
-ENCODE("うう く,くるしい")
+.STRINGMAP script_jp, "うう く,くるしい"
 WAIT_CLICK
 SPEAK
-ENCODE("ジュ··ジュダの のろいが··")
+.STRINGMAP script_jp, "ジュ··ジュダの のろいが··"
 .db STOP
 
 L0ABB82:
 FACE HALCYON
 NAME HALCYON
 SPEAK
-ENCODE("わしが ハルクじゃ")
+.STRINGMAP script_jp, "わしが ハルクじゃ"
 WAIT_CLICK
 SPEAK
-ENCODE("おまえたちは うしなわれたミラを")
+.STRINGMAP script_jp, "おまえたちは うしなわれたミラを"
 NEWLINE
-ENCODE("もとめて たびをしているのか")
+.STRINGMAP script_jp, "もとめて たびをしているのか"
 WAIT_CLICK
 SPEAK
-ENCODE("うむ·· たしかに··")
+.STRINGMAP script_jp, "うむ·· たしかに··"
 WAIT_CLICK
 SPEAK
-ENCODE("ミラをふうじたつるぎは")
+.STRINGMAP script_jp, "ミラをふうじたつるぎは"
 NEWLINE
-ENCODE("ドーマのとうの ちかに")
+.STRINGMAP script_jp, "ドーマのとうの ちかに"
 NEWLINE
-ENCODE("おさめられてある")
+.STRINGMAP script_jp, "おさめられてある"
 WAIT_CLICK
 SPEAK
-ENCODE("だが むりじゃな···")
+.STRINGMAP script_jp, "だが むりじゃな···"
 NEWLINE
-ENCODE("ジュダが おまえたちを")
+.STRINGMAP script_jp, "ジュダが おまえたちを"
 NEWLINE
-ENCODE("ちかづけはしまい")
+.STRINGMAP script_jp, "ちかづけはしまい"
 WAIT_CLICK
 SPEAK
-ENCODE("わしになにか できることがあれば")
+.STRINGMAP script_jp, "わしになにか できることがあれば"
 NEWLINE
-ENCODE("ちからに なってやろう")
+.STRINGMAP script_jp, "ちからに なってやろう"
 WAIT_CLICK
 SPEAK
-ENCODE("セリカよ おまえののぞみは")
+.STRINGMAP script_jp, "セリカよ おまえののぞみは"
 NEWLINE
-ENCODE("なにかな")
+.STRINGMAP script_jp, "なにかな"
 PAGE
 FACE CELICA
 NAME CELICA
 SPEAK
-ENCODE("わたしは これいじょう")
+.STRINGMAP script_jp, "わたしは これいじょう"
 NEWLINE
-ENCODE("なにも のぞみません")
+.STRINGMAP script_jp, "なにも のぞみません"
 WAIT_CLICK
 SPEAK
-ENCODE("だけど アルムは···")
+.STRINGMAP script_jp, "だけど アルムは···"
 WAIT_CLICK
 SPEAK
-ENCODE("なんとか アルムを")
+.STRINGMAP script_jp, "なんとか アルムを"
 NEWLINE
-ENCODE("たすけてあげたい···")
+.STRINGMAP script_jp, "たすけてあげたい···"
 PAGE
 NAME HALCYON
 SPEAK
-ENCODE("そうか")
+.STRINGMAP script_jp, "そうか"
 NEWLINE
-ENCODE("けなげな ものじゃな")
+.STRINGMAP script_jp, "けなげな ものじゃな"
 WAIT_CLICK
 SPEAK
-ENCODE("よし わかった")
+.STRINGMAP script_jp, "よし わかった"
 NEWLINE
-ENCODE("アルムに あらたなるちからを")
+.STRINGMAP script_jp, "アルムに あらたなるちからを"
 NEWLINE
-ENCODE("さずけてやろう")
+.STRINGMAP script_jp, "さずけてやろう"
 .db STOP
 
 L0ABCC4:
 SPEAK
-ENCODE("ドーマのとうは もうすぐじゃ")
+.STRINGMAP script_jp, "ドーマのとうは もうすぐじゃ"
 NEWLINE
-ENCODE("こころして ゆくがよい")
+.STRINGMAP script_jp, "こころして ゆくがよい"
 .db STOP
 
 L0ABCE4:
 SPEAK
-ENCODE("この かいだんを おりれば")
+.STRINGMAP script_jp, "この かいだんを おりれば"
 NEWLINE
-ENCODE("ドーマのさいだんへ")
+.STRINGMAP script_jp, "ドーマのさいだんへ"
 NEWLINE
-ENCODE("いけるはずです")
+.STRINGMAP script_jp, "いけるはずです"
 WAIT_CLICK
 SPEAK
-ENCODE("しかし いちどはいれば")
+.STRINGMAP script_jp, "しかし いちどはいれば"
 NEWLINE
-ENCODE("もう にどと もどれないと")
+.STRINGMAP script_jp, "もう にどと もどれないと"
 NEWLINE
-ENCODE("いわれています")
+.STRINGMAP script_jp, "いわれています"
 WAIT_CLICK
 SPEAK
-ENCODE("おうじ どうか おきをつけて!")
+.STRINGMAP script_jp, "おうじ どうか おきをつけて!"
 .db STOP
 
 L0ABD45:
 SPEAK
-ENCODE("おうじ まずはマイセンさまの")
+.STRINGMAP script_jp, "おうじ まずはマイセンさまの"
 NEWLINE
-ENCODE("おはなしを おききください")
+.STRINGMAP script_jp, "おはなしを おききください"
 .db STOP
 
 L0ABD66:
-ENCODE("[まよいのもり]")
+.STRINGMAP script_jp, "[まよいのもり]"
 .db STOP
 
 L0ABD6F:

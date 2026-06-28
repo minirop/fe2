@@ -2201,102 +2201,102 @@ L0CB0AE:
 .dw L0CB17B
 
 L0CB0DE:
-ENCODE("はい")
+.STRINGMAP script_jp, "はい"
 NEWLINE
 
 L0CB0E1:
-ENCODE("いいえ")
+.STRINGMAP script_jp, "いいえ"
 NEWLINE
 
 L0CB0E5:
-ENCODE("データ")
+.STRINGMAP script_jp, "データ"
 NEWLINE
 
 L0CB0EA:
-ENCODE("へんせい")
+.STRINGMAP script_jp, "へんせい"
 NEWLINE
 
 L0CB0EF:
-ENCODE("もちもの")
+.STRINGMAP script_jp, "もちもの"
 NEWLINE
 
 L0CB0F4:
-ENCODE("ならびかえ")
+.STRINGMAP script_jp, "ならびかえ"
 NEWLINE
 
 L0CB0FB:
-ENCODE("メンバーいどう")
+.STRINGMAP script_jp, "メンバーいどう"
 NEWLINE
 
 L0CB105:
-ENCODE("うけとる")
+.STRINGMAP script_jp, "うけとる"
 NEWLINE
 
 L0CB10A:
-ENCODE("あずける")
+.STRINGMAP script_jp, "あずける"
 NEWLINE
 
 L0CB110:
-ENCODE("こうかん")
+.STRINGMAP script_jp, "こうかん"
 NEWLINE
 
 L0CB115:
-ENCODE(" ▼")
+.STRINGMAP script_jp, " ▼"
 NEWLINE
 
 L0CB118:
-ENCODE("きろく")
+.STRINGMAP script_jp, "きろく"
 NEWLINE
 
 L0CB11C:
-ENCODE("なまえ     アイテム")
+.STRINGMAP script_jp, "なまえ     アイテム"
 NEWLINE
 
 L0CB129:
-ENCODE("  しょじひん")
+.STRINGMAP script_jp, "  しょじひん"
 NEWLINE
 
 L0CB132:
-ENCODE(" だい ")
+.STRINGMAP script_jp, " だい "
 NEWLINE
 
 L0CB138:
-ENCODE(" しょう")
+.STRINGMAP script_jp, " しょう"
 NEWLINE
 
 L0CB13D:
-ENCODE("  ソフィアへ!")
+.STRINGMAP script_jp, "  ソフィアへ!"
 NEWLINE
 
 L0CB146:
-ENCODE(" セリカのたびだち")
+.STRINGMAP script_jp, " セリカのたびだち"
 NEWLINE
 
 L0CB152:
-ENCODE(" かいほうせんそう")
+.STRINGMAP script_jp, " かいほうせんそう"
 NEWLINE
 
 L0CB15C:
-ENCODE(" かなしみのだいち")
+.STRINGMAP script_jp, " かなしみのだいち"
 NEWLINE
 
 L0CB167:
-ENCODE("さいかい そして···")
+.STRINGMAP script_jp, "さいかい そして···"
 NEWLINE
 
 L0CB173:
-ENCODE("いちらん")
+.STRINGMAP script_jp, "いちらん"
 NEWLINE
 
 L0CB178:
-ENCODE(" ")
+.STRINGMAP script_jp, " "
 NEWLINE
 
 L0CB17A:
 NEWLINE
 
 L0CB17B:
-ENCODE("セリカ")
+.STRINGMAP script_jp, "セリカ"
 NEWLINE
 
 L0CB17F:

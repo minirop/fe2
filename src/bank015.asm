@@ -4011,103 +4011,103 @@ L0FDB73:
 .dw L0FDC27
 
 L0FDBA3: ; cavalier
-ENCODE("ナイト")
+.STRINGMAP script_jp, "ナイト"
 .db STOP
 
 L0FDBA7: ; knight
-ENCODE("アーマー")
+.STRINGMAP script_jp, "アーマー"
 .db STOP
 
 L0FDBAC: ; pegasus knight
-ENCODE("Pナイト")
+.STRINGMAP script_jp, "Pナイト"
 .db STOP
 
 L0FDBB1: ; paladin
-ENCODE("パラディン")
+.STRINGMAP script_jp, "パラディン"
 .db STOP
 
 L0FDBB9: ; falcon knight
-ENCODE("Fナイト")
+.STRINGMAP script_jp, "Fナイト"
 .db STOP
 
 L0FDBBE: ; soldier
-ENCODE("ソルジャー")
+.STRINGMAP script_jp, "ソルジャー"
 .db STOP
 
 L0FDBC5: ; gold knight
-ENCODE("Gナイト")
+.STRINGMAP script_jp, "Gナイト"
 .db STOP
 
 L0FDBCA: ; mercenary
-ENCODE("ようへい")
+.STRINGMAP script_jp, "ようへい"
 .db STOP
 
 L0FDBCF: ; myrmidon
-ENCODE("けんし")
+.STRINGMAP script_jp, "けんし"
 .db STOP
 
 L0FDBD3: ; dread fighter
-ENCODE("ませんし")
+.STRINGMAP script_jp, "ませんし"
 .db STOP
 
 L0FDBD8: ; priestess
-ENCODE("しんかん")
+.STRINGMAP script_jp, "しんかん"
 .db STOP
 
 L0FDBDD: ; archer
-ENCODE("アーチャー")
+.STRINGMAP script_jp, "アーチャー"
 .db STOP
 
 L0FDBE3: ; sniper
-ENCODE("スナイパー")
+.STRINGMAP script_jp, "スナイパー"
 .db STOP
 
 L0FDBEA: ; villager
-ENCODE("むらびと")
+.STRINGMAP script_jp, "むらびと"
 .db STOP
 
 L0FDBF0: ; mage (male?)
-ENCODE("まどうし")
+.STRINGMAP script_jp, "まどうし"
 .db STOP
 
 L0FDBF6: ; mage (female?)
-ENCODE("まどうし")
+.STRINGMAP script_jp, "まどうし"
 .db STOP
 
 L0FDBFC: ; saint
-ENCODE("せいじょ")
+.STRINGMAP script_jp, "せいじょ"
 .db STOP
 
 L0FDC02: ; cleric
-ENCODE("シスター")
+.STRINGMAP script_jp, "シスター"
 .db STOP
 
 L0FDC07: ; sage
-ENCODE("けんじゃ")
+.STRINGMAP script_jp, "けんじゃ"
 .db STOP
 
 L0FDC0D: ; bow knight
-ENCODE("ボウナイト")
+.STRINGMAP script_jp, "ボウナイト"
 .db STOP
 
 L0FDC14: ; fighter
-ENCODE("せんし")
+.STRINGMAP script_jp, "せんし"
 .db STOP
 
 L0FDC18: ; hero
-ENCODE("ゆうしゃ")
+.STRINGMAP script_jp, "ゆうしゃ"
 .db STOP
 
 L0FDC1D: ; baron
-ENCODE("バロン")
+.STRINGMAP script_jp, "バロン"
 .db STOP
 
 L0FDC22: ; hero
-ENCODE("ゆうしゃ")
+.STRINGMAP script_jp, "ゆうしゃ"
 .db STOP
 
 L0FDC27: ; princess
-ENCODE("プリンセス")
+.STRINGMAP script_jp, "プリンセス"
 .db STOP
 
 L0FDC2E: ; enemy names
@@ -4135,55 +4135,55 @@ L0FDC2E: ; enemy names
 .dw L0FDC1D
 
 L0FDC5A: ; gargoyle
-ENCODE("ガーゴイル")
+.STRINGMAP script_jp, "ガーゴイル"
 .db STOP
 
 L0FDC62: ; high knight
-ENCODE("ハイナイト")
+.STRINGMAP script_jp, "ハイナイト"
 .db STOP
 
 L0FDC68: ; necrodragon
-ENCODE("Dゾンビ")
+.STRINGMAP script_jp, "Dゾンビ"
 .db STOP
 
 L0FDC6F: ; general
-ENCODE("ジェネラル")
+.STRINGMAP script_jp, "ジェネラル"
 .db STOP
 
 L0FDC76: ; berserker
-ENCODE("きょうせんし")
+.STRINGMAP script_jp, "きょうせんし"
 .db STOP
 
 L0FDC7D: ; revenant
-ENCODE("ゾンビ")
+.STRINGMAP script_jp, "ゾンビ"
 .db STOP
 
 L0FDC83: ; brigand
-ENCODE("とうぞく")
+.STRINGMAP script_jp, "とうぞく"
 .db STOP
 
 L0FDC89: ; bonewalker
-ENCODE("スケルトン")
+.STRINGMAP script_jp, "スケルトン"
 .db STOP
 
 L0FDC8F: ; arcanist
-ENCODE("ようじゅつし")
+.STRINGMAP script_jp, "ようじゅつし"
 .db STOP
 
 L0FDC97: ; witch
-ENCODE("まじょ")
+.STRINGMAP script_jp, "まじょ"
 .db STOP
 
 L0FDC9C: ; mogall
-ENCODE("ビグル")
+.STRINGMAP script_jp, "ビグル"
 .db STOP
 
 L0FDCA2: ; cantor
-ENCODE("きとうし")
+.STRINGMAP script_jp, "きとうし"
 .db STOP
 
 L0FDCA7: ; fell god
-ENCODE("じゃしん")
+.STRINGMAP script_jp, "じゃしん"
 .db STOP
 
 ; items names
@@ -4249,231 +4249,231 @@ L0FDCAD:
 .dw L0FDE12
 
 L0FDD23:
-ENCODE(" ")
+.STRINGMAP script_jp, " "
 .db STOP
 
 L0FDD25: ; steel lance
-ENCODE("はがねのやり")
+.STRINGMAP script_jp, "はがねのやり"
 .db STOP
 
 L0FDD2D: ; silver lance
-ENCODE("ぎんのやり")
+.STRINGMAP script_jp, "ぎんのやり"
 .db STOP
 
 L0FDD34: ; javelin
-ENCODE("てやり")
+.STRINGMAP script_jp, "てやり"
 .db STOP
 
 L0FDD38: ; blessed lance
-ENCODE("せいなるやり")
+.STRINGMAP script_jp, "せいなるやり"
 .db STOP
 
 L0FDD3F: ; knight killer/Ribersbane
-ENCODE("ナイトキラー")
+.STRINGMAP script_jp, "ナイトキラー"
 .db STOP
 
 L0FDD46: ; Gradivus
-ENCODE("グラディウス")
+.STRINGMAP script_jp, "グラディウス"
 .db STOP
 
 L0FDD4F: ; Astra
-ENCODE("りゅうせい")
+.STRINGMAP script_jp, "りゅうせい"
 .db STOP
 
 L0FDD55: ; Sol
-ENCODE("たいよう")
+.STRINGMAP script_jp, "たいよう"
 .db STOP
 
 L0FDD5A: ; Luna
-ENCODE("げっこう")
+.STRINGMAP script_jp, "げっこう"
 .db STOP
 
 L0FDD60: ; steel sword
-ENCODE("はがねのつるぎ")
+.STRINGMAP script_jp, "はがねのつるぎ"
 .db STOP
 
 L0FDD6A: ; silver sword
-ENCODE("ぎんのつるぎ")
+.STRINGMAP script_jp, "ぎんのつるぎ"
 .db STOP
 
 L0FDD73: ; brave sword
-ENCODE("ゆうしゃのけん")
+.STRINGMAP script_jp, "ゆうしゃのけん"
 .db STOP
 
 L0FDD7B: ; shadow sword
-ENCODE("あんこくのけん")
+.STRINGMAP script_jp, "あんこくのけん"
 .db STOP
 
 L0FDD83: ; levin sword
-ENCODE("いかづちのけん")
+.STRINGMAP script_jp, "いかづちのけん"
 .db STOP
 
 L0FDD8C: ; blessed sword
-ENCODE("せいなるつるぎ")
+.STRINGMAP script_jp, "せいなるつるぎ"
 .db STOP
 
 L0FDD95: ; Falchion
-ENCODE("ファルシオン")
+.STRINGMAP script_jp, "ファルシオン"
 .db STOP
 
 L0FDD9C: ; royal sword
-ENCODE("おうけのつるぎ")
+.STRINGMAP script_jp, "おうけのつるぎ"
 .db STOP
 
 L0FDDA5: ; tentacle
-ENCODE("しょくしゅ")
+.STRINGMAP script_jp, "しょくしゅ"
 .db STOP
 
 L0FDDAB: ; steel bow
-ENCODE("はがねのゆみ")
+.STRINGMAP script_jp, "はがねのゆみ"
 .db STOP
 
 L0FDDB3: ; blessed bow
-ENCODE("せいなるゆみ")
+.STRINGMAP script_jp, "せいなるゆみ"
 .db STOP
 
 L0FDDBA: ; silver bow
-ENCODE("ぎんのゆみ")
+.STRINGMAP script_jp, "ぎんのゆみ"
 .db STOP
 
 L0FDDC1: ; leather shield
-ENCODE("かわのたて")
+.STRINGMAP script_jp, "かわのたて"
 .db STOP
 
 L0FDDC7: ; steel shield
-ENCODE("はがねのたて")
+.STRINGMAP script_jp, "はがねのたて"
 .db STOP
 
 L0FDDCF: ; silver shield
-ENCODE("ぎんのたて")
+.STRINGMAP script_jp, "ぎんのたて"
 .db STOP
 
 L0FDDD6: ; blessed shield
-ENCODE("せいなるたて")
+.STRINGMAP script_jp, "せいなるたて"
 .db STOP
 
 L0FDDDD: ; hexlock shield
-ENCODE("まふうじのたて")
+.STRINGMAP script_jp, "まふうじのたて"
 .db STOP
 
 L0FDDE6: ; dracoshield
-ENCODE("りゅうのたて")
+.STRINGMAP script_jp, "りゅうのたて"
 .db STOP
 
 L0FDDED: ; blessed ring
-ENCODE("せいなるゆびわ")
+.STRINGMAP script_jp, "せいなるゆびわ"
 .db STOP
 
 L0FDDF6: ; angel ring
-ENCODE("てんしのゆびわ")
+.STRINGMAP script_jp, "てんしのゆびわ"
 .db STOP
 
 L0FDDFF: ; speed ring
-ENCODE("はやさのゆびわ")
+.STRINGMAP script_jp, "はやさのゆびわ"
 .db STOP
 
 L0FDE08: ; mage ring
-ENCODE("まどうのゆびわ")
+.STRINGMAP script_jp, "まどうのゆびわ"
 .db STOP
 
 L0FDE12: ; player ring
-ENCODE("いのりのゆびわ")
+.STRINGMAP script_jp, "いのりのゆびわ"
 .db STOP
 
 L0FDE1B: ; fire (tome)
-ENCODE("ファイアー")
+.STRINGMAP script_jp, "ファイアー"
 .db STOP
 
 L0FDE21: ; thunder (tome)
-ENCODE("サンダー")
+.STRINGMAP script_jp, "サンダー"
 .db STOP
 
 L0FDE27: ; ragnarok
-ENCODE("ライナロック")
+.STRINGMAP script_jp, "ライナロック"
 .db STOP
 
 L0FDE2E: ; seraphim
-ENCODE("エンジェル")
+.STRINGMAP script_jp, "エンジェル"
 .db STOP
 
 L0FDE35: ; excalibur
-ENCODE("エクスカリバー")
+.STRINGMAP script_jp, "エクスカリバー"
 .db STOP
 
 L0FDE3E: ; sagittae
-ENCODE("アロー")
+.STRINGMAP script_jp, "アロー"
 .db STOP
 
 L0FDE42: ; aura
-ENCODE("オーラ")
+.STRINGMAP script_jp, "オーラ"
 .db STOP
 
 L0FDE46: ; gaia
-ENCODE("ガイア")
+.STRINGMAP script_jp, "ガイア"
 .db STOP
 
 L0FDE4B: ; miasma
-ENCODE("ドーラ")
+.STRINGMAP script_jp, "ドーラ"
 .db STOP
 
 L0FDE50: ; mire
-ENCODE("スライム")
+.STRINGMAP script_jp, "スライム"
 .db STOP
 
 L0FDE55: ; death
-ENCODE("デス")
+.STRINGMAP script_jp, "デス"
 .db STOP
 
 L0FDE59: ; medusa
-ENCODE("メデューサ")
+.STRINGMAP script_jp, "メデューサ"
 .db STOP
 
 L0FDE60: ; ocular beam
-ENCODE("アイビーム")
+.STRINGMAP script_jp, "アイビーム"
 .db STOP
 
 L0FDE67: ; oculus
-ENCODE("アイボール")
+.STRINGMAP script_jp, "アイボール"
 .db STOP
 
 L0FDE6E: ; ???
-ENCODE("ボーマ")
+.STRINGMAP script_jp, "ボーマ"
 .db STOP
 
 L0FDE73: ; ???
-ENCODE("ボース")
+.STRINGMAP script_jp, "ボース"
 .db STOP
 
 L0FDE78: ; conjure
-ENCODE("メサイア")
+.STRINGMAP script_jp, "メサイア"
 .db STOP
 
 L0FDE7D: ; recover
-ENCODE("リカバー")
+.STRINGMAP script_jp, "リカバー"
 .db STOP
 
 L0FDE83: ; physic
-ENCODE("リブロー")
+.STRINGMAP script_jp, "リブロー"
 .db STOP
 
 L0FDE89: ; nosferatu
-ENCODE("リザイア")
+.STRINGMAP script_jp, "リザイア"
 .db STOP
 
 L0FDE8F: ; warp
-ENCODE("ワープ")
+.STRINGMAP script_jp, "ワープ"
 .db STOP
 
 L0FDE94: ; fortify
-ENCODE("リザーブ")
+.STRINGMAP script_jp, "リザーブ"
 .db STOP
 
 L0FDE9B: ; invoke
-ENCODE("イリュージョン")
+.STRINGMAP script_jp, "イリュージョン"
 .db STOP
 
 L0FDEA4: ; expel
-ENCODE("ディル")
+.STRINGMAP script_jp, "ディル"
 .db STOP
 
 ; pointers to names
@@ -4523,159 +4523,159 @@ L0FDEA9:
 .dw L0FDFB6
 
 L0FDEFF:
-ENCODE("アルム")
+.STRINGMAP script_jp, "アルム"
 .db STOP
 
 L0FDF03:
-ENCODE("セリカ")
+.STRINGMAP script_jp, "セリカ"
 .db STOP
 
 L0FDF07:
-ENCODE("マイセン")
+.STRINGMAP script_jp, "マイセン"
 .db STOP
 
 L0FDF0C:
-ENCODE("ノーマ")
+.STRINGMAP script_jp, "ノーマ"
 .db STOP
 
 L0FDF10:
-ENCODE("ルカ")
+.STRINGMAP script_jp, "ルカ"
 .db STOP
 
 L0FDF13:
-ENCODE("クリフ")
+.STRINGMAP script_jp, "クリフ"
 .db STOP
 
 L0FDF17:
-ENCODE("ロビン")
+.STRINGMAP script_jp, "ロビン"
 .db STOP
 
 L0FDF1C:
-ENCODE("グレイ")
+.STRINGMAP script_jp, "グレイ"
 .db STOP
 
 L0FDF21:
-ENCODE("クレア")
+.STRINGMAP script_jp, "クレア"
 .db STOP
 
 L0FDF25:
-ENCODE("クレーベ")
+.STRINGMAP script_jp, "クレーベ"
 .db STOP
 
 L0FDF2B:
-ENCODE("フォルス")
+.STRINGMAP script_jp, "フォルス"
 .db STOP
 
 L0FDF30:
-ENCODE("ジュノー")
+.STRINGMAP script_jp, "ジュノー"
 .db STOP
 
 L0FDF36:
-ENCODE("メイ")
+.STRINGMAP script_jp, "メイ"
 .db STOP
 
 L0FDF39:
-ENCODE("シルク")
+.STRINGMAP script_jp, "シルク"
 .db STOP
 
 L0FDF3D:
-ENCODE("ジェニー")
+.STRINGMAP script_jp, "ジェニー"
 .db STOP
 
 L0FDF43:
-ENCODE("ボーイ")
+.STRINGMAP script_jp, "ボーイ"
 .db STOP
 
 L0FDF48:
-ENCODE("カムイ")
+.STRINGMAP script_jp, "カムイ"
 .db STOP
 
 L0FDF4C:
-ENCODE("レオ")
+.STRINGMAP script_jp, "レオ"
 .db STOP
 
 L0FDF4F:
-ENCODE("バルボ")
+.STRINGMAP script_jp, "バルボ"
 .db STOP
 
 L0FDF55:
-ENCODE("マチルダ")
+.STRINGMAP script_jp, "マチルダ"
 .db STOP
 
 L0FDF5B:
-ENCODE("パイソン")
+.STRINGMAP script_jp, "パイソン"
 .db STOP
 
 L0FDF61:
-ENCODE("アトラス")
+.STRINGMAP script_jp, "アトラス"
 .db STOP
 
 L0FDF66:
-ENCODE("ジェシー")
+.STRINGMAP script_jp, "ジェシー"
 .db STOP
 
 L0FDF6C:
-ENCODE("フォルス")
+.STRINGMAP script_jp, "フォルス"
 .db STOP
 
 L0FDF71:
-ENCODE("ソニア")
+.STRINGMAP script_jp, "ソニア"
 .db STOP
 
 L0FDF75:
-ENCODE("ディーン")
+.STRINGMAP script_jp, "ディーン"
 .db STOP
 
 L0FDF7B:
-ENCODE("セーバー")
+.STRINGMAP script_jp, "セーバー"
 .db STOP
 
 L0FDF81:
-ENCODE("リュート")
+.STRINGMAP script_jp, "リュート"
 .db STOP
 
 L0FDF86:
-ENCODE("デューテ")
+.STRINGMAP script_jp, "デューテ"
 .db STOP
 
 L0FDF8C:
-ENCODE("ティータ")
+.STRINGMAP script_jp, "ティータ"
 .db STOP
 
 L0FDF91:
-ENCODE("カチュア")
+.STRINGMAP script_jp, "カチュア"
 .db STOP
 
 L0FDF96:
-ENCODE("パオラ")
+.STRINGMAP script_jp, "パオラ"
 .db STOP
 
 L0FDF9B:
-ENCODE("エスト")
+.STRINGMAP script_jp, "エスト"
 .db STOP
 
 L0FDF9F:
-ENCODE("ジーク")
+.STRINGMAP script_jp, "ジーク"
 .db STOP
 
 L0FDFA4:
-ENCODE("シャドー")
+.STRINGMAP script_jp, "シャドー"
 .db STOP
 
 L0FDFAA:
-ENCODE("おんな")
+.STRINGMAP script_jp, "おんな"
 .db STOP
 
 L0FDFAE:
-ENCODE("おとこ")
+.STRINGMAP script_jp, "おとこ"
 .db STOP
 
 L0FDFB2:
-ENCODE("むすめ")
+.STRINGMAP script_jp, "むすめ"
 .db STOP
 
 L0FDFB6:
-ENCODE("ハルク")
+.STRINGMAP script_jp, "ハルク"
 .db STOP
 
 L0FDFBA:
@@ -4769,211 +4769,211 @@ L0FDFBA:
 .dw L0FE195
 
 L0FE06A:
-ENCODE("ドゼー")
+.STRINGMAP script_jp, "ドゼー"
 .db STOP
 
 L0FE070:
-ENCODE("ギース")
+.STRINGMAP script_jp, "ギース"
 .db STOP
 
 L0FE075:
-ENCODE("ドルク")
+.STRINGMAP script_jp, "ドルク"
 .db STOP
 
 L0FE07A:
-ENCODE("ヌイババ")
+.STRINGMAP script_jp, "ヌイババ"
 .db STOP
 
 L0FE081:
-ENCODE("ルドルフ")
+.STRINGMAP script_jp, "ルドルフ"
 .db STOP
 
 L0FE087:
-ENCODE("ジュダ")
+.STRINGMAP script_jp, "ジュダ"
 .db STOP
 
 L0FE08D:
-ENCODE("ソニア")
+.STRINGMAP script_jp, "ソニア"
 .db STOP
 
 L0FE091:
-ENCODE("ディーン")
+.STRINGMAP script_jp, "ディーン"
 .db STOP
 
 L0FE097:
-ENCODE("マグナム")
+.STRINGMAP script_jp, "マグナム"
 .db STOP
 
 L0FE09D:
-ENCODE("ジェローム")
+.STRINGMAP script_jp, "ジェローム"
 .db STOP
 
 L0FE0A4:
-ENCODE("ミューラー")
+.STRINGMAP script_jp, "ミューラー"
 .db STOP
 
 L0FE0AA:
-ENCODE("ハンニバル")
+.STRINGMAP script_jp, "ハンニバル"
 .db STOP
 
 L0FE0B1:
-ENCODE("マッセナ")
+.STRINGMAP script_jp, "マッセナ"
 .db STOP
 
 L0FE0B6:
-ENCODE("マーラ")
+.STRINGMAP script_jp, "マーラ"
 .db STOP
 
 L0FE0BA:
-ENCODE("タタラ")
+.STRINGMAP script_jp, "タタラ"
 .db STOP
 
 L0FE0BE:
-ENCODE("ジャミル")
+.STRINGMAP script_jp, "ジャミル"
 .db STOP
 
 L0FE0C4:
-ENCODE("デューテ")
+.STRINGMAP script_jp, "デューテ"
 .db STOP
 
 L0FE0CA:
-ENCODE("ガゼル")
+.STRINGMAP script_jp, "ガゼル"
 .db STOP
 
 L0FE0D0:
-ENCODE("ザクソン")
+.STRINGMAP script_jp, "ザクソン"
 .db STOP
 
 L0FE0D6:
-ENCODE("スレイダー")
+.STRINGMAP script_jp, "スレイダー"
 .db STOP
 
 L0FE0DD:
-ENCODE("ミカエラ")
+.STRINGMAP script_jp, "ミカエラ"
 .db STOP
 
 L0FE0E2:
-ENCODE("ローソン")
+.STRINGMAP script_jp, "ローソン"
 .db STOP
 
 L0FE0E7:
-ENCODE("ダッハ")
+.STRINGMAP script_jp, "ダッハ"
 .db STOP
 
 L0FE0EC:
-ENCODE("ガッハ")
+.STRINGMAP script_jp, "ガッハ"
 .db STOP
 
 L0FE0F1:
-ENCODE("ブライ")
+.STRINGMAP script_jp, "ブライ"
 .db STOP
 
 L0FE0F6:
-ENCODE("シーザス")
+.STRINGMAP script_jp, "シーザス"
 .db STOP
 
 L0FE0FC:
-ENCODE("リゲルぐん")
+.STRINGMAP script_jp, "リゲルぐん"
 .db STOP
 
 L0FE104:
-ENCODE("ウォルフ")
+.STRINGMAP script_jp, "ウォルフ"
 .db STOP
 
 L0FE109:
-ENCODE("ギースぐん")
+.STRINGMAP script_jp, "ギースぐん"
 .db STOP
 
 L0FE111:
-ENCODE("ドゼーぐん")
+.STRINGMAP script_jp, "ドゼーぐん"
 .db STOP
 
 L0FE11A:
-ENCODE("ドルクくん")
+.STRINGMAP script_jp, "ドルクくん"
 .db STOP
 
 L0FE121:
-ENCODE("まどうぐん")
+.STRINGMAP script_jp, "まどうぐん"
 .db STOP
 
 L0FE129:
-ENCODE("かいぞく")
+.STRINGMAP script_jp, "かいぞく"
 .db STOP
 
 L0FE12F:
-ENCODE("さんぞく")
+.STRINGMAP script_jp, "さんぞく"
 .db STOP
 
 L0FE135:
-ENCODE("まもの")
+.STRINGMAP script_jp, "まもの"
 .db STOP
 
 L0FE139:
-ENCODE("ドーマ")
+.STRINGMAP script_jp, "ドーマ"
 .db STOP
 
 L0FE13E:
-ENCODE("ガルシア")
+.STRINGMAP script_jp, "ガルシア"
 .db STOP
 
 L0FE144:
-ENCODE("ヘステ")
+.STRINGMAP script_jp, "ヘステ"
 .db STOP
 
 L0FE148:
-ENCODE("サイゾー")
+.STRINGMAP script_jp, "サイゾー"
 .db STOP
 
 L0FE14E:
-ENCODE("ガネフ")
+.STRINGMAP script_jp, "ガネフ"
 .db STOP
 
 L0FE153:
-ENCODE("まじん")
+.STRINGMAP script_jp, "まじん"
 .db STOP
 
 L0FE158:
-ENCODE("デビル")
+.STRINGMAP script_jp, "デビル"
 .db STOP
 
 L0FE15E:
-ENCODE("ゴールド")
+.STRINGMAP script_jp, "ゴールド"
 .db STOP
 
 L0FE165:
-ENCODE("はくりゅう")
+.STRINGMAP script_jp, "はくりゅう"
 .db STOP
 
 L0FE16B:
-ENCODE("サーペント")
+.STRINGMAP script_jp, "サーペント"
 .db STOP
 
 L0FE172:
-ENCODE("ナーガ")
+.STRINGMAP script_jp, "ナーガ"
 .db STOP
 
 L0FE177:
-ENCODE("リッチー")
+.STRINGMAP script_jp, "リッチー"
 .db STOP
 
 L0FE17C:
-ENCODE("バルログ")
+.STRINGMAP script_jp, "バルログ"
 .db STOP
 
 L0FE183:
-ENCODE("バデス")
+.STRINGMAP script_jp, "バデス"
 .db STOP
 
 L0FE189:
-ENCODE("ケルベス")
+.STRINGMAP script_jp, "ケルベス"
 .db STOP
 
 L0FE18F:
-ENCODE("ベルレス")
+.STRINGMAP script_jp, "ベルレス"
 .db STOP
 
 L0FE195:
-ENCODE("マミー")
+.STRINGMAP script_jp, "マミー"
 .db STOP
 
 L0FE199:
@@ -5849,67 +5849,67 @@ L0FE609:
 .dw L0FE66E
 
 L0FE629:
-ENCODE("そうげん")
+.STRINGMAP script_jp, "そうげん"
 .db STOP
 
 L0FE62F:
-ENCODE("はしら")
+.STRINGMAP script_jp, "はしら"
 .db STOP
 
 L0FE633:
-ENCODE("はやし")
+.STRINGMAP script_jp, "はやし"
 .db STOP
 
 L0FE637:
-ENCODE("さばく")
+.STRINGMAP script_jp, "さばく"
 .db STOP
 
 L0FE63C:
-ENCODE("や ま")
+.STRINGMAP script_jp, "や ま"
 .db STOP
 
 L0FE640:
-ENCODE("は し")
+.STRINGMAP script_jp, "は し"
 .db STOP
 
 L0FE644:
-ENCODE("ま ち")
+.STRINGMAP script_jp, "ま ち"
 .db STOP
 
 L0FE648:
-ENCODE("とりで")
+.STRINGMAP script_jp, "とりで"
 .db STOP
 
 L0FE64D:
-ENCODE("し ろ")
+.STRINGMAP script_jp, "し ろ"
 .db STOP
 
 L0FE651:
-ENCODE("か わ")
+.STRINGMAP script_jp, "か わ"
 .db STOP
 
 L0FE655:
-ENCODE("そ ら")
+.STRINGMAP script_jp, "そ ら"
 .db STOP
 
 L0FE659:
-ENCODE("う み")
+.STRINGMAP script_jp, "う み"
 .db STOP
 
 L0FE65D:
-ENCODE("ゆ か")
+.STRINGMAP script_jp, "ゆ か"
 .db STOP
 
 L0FE661:
-ENCODE("かいだん")
+.STRINGMAP script_jp, "かいだん"
 .db STOP
 
 L0FE667:
-ENCODE("スタジアム")
+.STRINGMAP script_jp, "スタジアム"
 .db STOP
 
 L0FE66E:
-ENCODE("いしがき")
+.STRINGMAP script_jp, "いしがき"
 .db STOP
 
 L0FE674:
@@ -6264,7 +6264,7 @@ L0FE8CD:
     RTS
 
 L0FE8D9:
-ENCODE("さけこえ")
+.STRINGMAP script_jp, "さけこえ"
 .db STOP
 
 L0FE8DE:
@@ -8698,7 +8698,7 @@ L0FF454:
     RTS
 
 L0FF459:
-ENCODE("じたちつて")
+.STRINGMAP script_jp, "じたちつて"
 .db STOP
 
 L0FF460:

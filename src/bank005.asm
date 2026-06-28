@@ -1076,31 +1076,31 @@ L0587BB:
 .dw L0587E0
 
 L0587C7:
-ENCODE("ちから")
+.STRINGMAP script_jp, "ちから"
 .db STOP
 
 L0587CB:
-ENCODE("わざ")
+.STRINGMAP script_jp, "わざ"
 .db STOP
 
 L0587CF:
-ENCODE("すばやさ")
+.STRINGMAP script_jp, "すばやさ"
 .db STOP
 
 L0587D5:
-ENCODE("うん")
+.STRINGMAP script_jp, "うん"
 .db STOP
 
 L0587D8:
-ENCODE("しゅびりょく")
+.STRINGMAP script_jp, "しゅびりょく"
 .db STOP
 
 L0587E0:
-ENCODE("さいだいHP")
+.STRINGMAP script_jp, "さいだいHP"
 .db STOP
 
 L0587E8:
-ENCODE("まりょく")
+.STRINGMAP script_jp, "まりょく"
 .db STOP
 
 L0587ED:

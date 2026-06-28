@@ -775,107 +775,107 @@ L07884B:
 .dw L07899C
 
 L07887F:
-ENCODE("の こうげき")
+.STRINGMAP script_jp, "の こうげき"
 .db STOP
 
 L078887:
-ENCODE("の はんげき")
+.STRINGMAP script_jp, "の はんげき"
 .db STOP
 
 L07888F:
-ENCODE("の さいこうげき")
+.STRINGMAP script_jp, "の さいこうげき"
 .db STOP
 
 L078899:
-ENCODE("はしんだ")
+.STRINGMAP script_jp, "はしんだ"
 .db STOP
 
 L07889F:
-ENCODE("ひっさつのいちげき")
+.STRINGMAP script_jp, "ひっさつのいちげき"
 .db STOP
 
 L0788AA:
-ENCODE("のダメージをあたえた")
+.STRINGMAP script_jp, "のダメージをあたえた"
 .db STOP
 
 L0788B7:
-ENCODE("ダメージをあたえられない")
+.STRINGMAP script_jp, "ダメージをあたえられない"
 .db STOP
 
 L0788C6:
-ENCODE("は すばやくみをかわした")
+.STRINGMAP script_jp, "は すばやくみをかわした"
 .db STOP
 
 L0788D4:
-ENCODE("をとなえた")
+.STRINGMAP script_jp, "をとなえた"
 .db STOP
 
 L0788DA:
-ENCODE("かいふくした")
+.STRINGMAP script_jp, "かいふくした"
 .db STOP
 
 L0788E1:
-ENCODE("は HPが ")
+.STRINGMAP script_jp, "は HPが "
 .db STOP
 
 L0788E9:
-ENCODE("は こうげきをふうじられた")
+.STRINGMAP script_jp, "は こうげきをふうじられた"
 .db STOP
 
 L0788F9:
-ENCODE("は のろいをはなった!")
+.STRINGMAP script_jp, "は のろいをはなった!"
 .db STOP
 
 L078905:
-ENCODE("は ワープした")
+.STRINGMAP script_jp, "は ワープした"
 .db STOP
 
 L07890E:
-ENCODE("は HPを")
+.STRINGMAP script_jp, "は HPを"
 .db STOP
 
 L078914:
-ENCODE("は こわれてしまった!!")
+.STRINGMAP script_jp, "は こわれてしまった!!"
 .db STOP
 
 L078921:
-ENCODE("は きょうどがあがった")
+.STRINGMAP script_jp, "は きょうどがあがった"
 .db STOP
 
 L078930:
-ENCODE("の すがたがうかびあがった")
+.STRINGMAP script_jp, "の すがたがうかびあがった"
 .db STOP
 
 L078942:
-ENCODE("みかたぜんぶのHPが")
+.STRINGMAP script_jp, "みかたぜんぶのHPが"
 .db STOP
 
 L078950:
-ENCODE("トライアングルアターック!!")
+.STRINGMAP script_jp, "トライアングルアターック!!"
 .db STOP
 
 L078960:
-ENCODE("しかしこうかがなかった")
+.STRINGMAP script_jp, "しかしこうかがなかった"
 .db STOP
 
 L07896D:
-ENCODE("はぶきがない!!")
+.STRINGMAP script_jp, "はぶきがない!!"
 .db STOP
 
 L078978:
-ENCODE("うばった")
+.STRINGMAP script_jp, "うばった"
 .db STOP
 
 L07897E:
-ENCODE("まふうじのたては まほうをはねかえした")
+.STRINGMAP script_jp, "まふうじのたては まほうをはねかえした"
 .db STOP
 
 L078993:
-ENCODE("うばえなかった")
+.STRINGMAP script_jp, "うばえなかった"
 .db STOP
 
 L07899C:
-ENCODE("ルドルフは なぜかこうげきしてこない!!")
+.STRINGMAP script_jp, "ルドルフは なぜかこうげきしてこない!!"
 .db STOP
 
 L0789B4:

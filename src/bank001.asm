@@ -4800,430 +4800,430 @@ L01B8A0:
 .dw L01BF5E
 
 L01B920:
-ENCODE("%0は しょうめつした!")
+.STRINGMAP script_jp, "%0は しょうめつした!"
 NEWLINE
 WAIT_CLICK
 .db STOP
 
 L01B92F:
-ENCODE("%0は しょうめつした!")
+.STRINGMAP script_jp, "%0は しょうめつした!"
 NEWLINE
-ENCODE("%2は %1のけいけんちをえた!!")
+.STRINGMAP script_jp, "%2は %1のけいけんちをえた!!"
 NEWLINE
-ENCODE(" ")
+.STRINGMAP script_jp, " "
 WAIT_CLICK
 .db STOP
 
 L01B951:
-ENCODE("%0を たおした!!")
+.STRINGMAP script_jp, "%0を たおした!!"
 NEWLINE
-ENCODE("%2は %1のけいけんちをえた!!")
+.STRINGMAP script_jp, "%2は %1のけいけんちをえた!!"
 NEWLINE
-ENCODE(" ")
+.STRINGMAP script_jp, " "
 WAIT_CLICK
 .db STOP
 
 L01B971:
-ENCODE("%3かいヒット!!")
+.STRINGMAP script_jp, "%3かいヒット!!"
 NEWLINE
-ENCODE("%2は %1のけいけんちをえた")
+.STRINGMAP script_jp, "%2は %1のけいけんちをえた"
 NEWLINE
-ENCODE(" ")
+.STRINGMAP script_jp, " "
 WAIT_CLICK
 .db STOP
 
 L01B98E:
-ENCODE("%0を たおした!!")
+.STRINGMAP script_jp, "%0を たおした!!"
 NEWLINE
 .db STOP
 
 L01B99A:
-ENCODE("%2は")
+.STRINGMAP script_jp, "%2は"
 NEWLINE
-ENCODE("レベルが%1になった!")
+.STRINGMAP script_jp, "レベルが%1になった!"
 .db STOP
 
 L01B9AC:
-ENCODE("%0が %1あがった!")
+.STRINGMAP script_jp, "%0が %1あがった!"
 .db STOP
 
 ; unused?
-ENCODE("%2は たおれた!!")
+.STRINGMAP script_jp, "%2は たおれた!!"
 WAIT_CLICK
 .db STOP
 
 L01B9C6:
-ENCODE("%0は %1をもっていた!!")
+.STRINGMAP script_jp, "%0は %1をもっていた!!"
 NEWLINE
-ENCODE("%2は %1をてにいれた!")
+.STRINGMAP script_jp, "%2は %1をてにいれた!"
 .db STOP
 
 L01B9E3:
-ENCODE("%0のじゅもんをおぼえた!")
+.STRINGMAP script_jp, "%0のじゅもんをおぼえた!"
 .db STOP
 
 L01B9F3:
-ENCODE("%2は %1のけいけんちをえた")
+.STRINGMAP script_jp, "%2は %1のけいけんちをえた"
 NEWLINE
 WAIT_CLICK
 .db STOP
 
 L01BA05:
-ENCODE("%2は %1にクラスチェンジできます")
+.STRINGMAP script_jp, "%2は %1にクラスチェンジできます"
 NEWLINE
 .db STOP
 
 L01BA1B:
-ENCODE("%2は クラスチェンジできます")
+.STRINGMAP script_jp, "%2は クラスチェンジできます"
 NEWLINE
 .db STOP
 
 L01BA2E:
-ENCODE("%0は %1をもっていた!!")
+.STRINGMAP script_jp, "%0は %1をもっていた!!"
 NEWLINE
-ENCODE("%2は %1をあずかりじょにあずけた!")
+.STRINGMAP script_jp, "%2は %1をあずかりじょにあずけた!"
 WAIT_CLICK
 .db STOP
 
 L01BA55:
-ENCODE("%2は たおれた!!")
+.STRINGMAP script_jp, "%2は たおれた!!"
 WAIT_CLICK
 .db STOP
 
 L01BA61:
-ENCODE("%2は いきたえた!!")
+.STRINGMAP script_jp, "%2は いきたえた!!"
 WAIT_CLICK
 .db STOP
 
 L01BA6E:
-ENCODE("「ちくしょう!!")
+.STRINGMAP script_jp, "「ちくしょう!!"
 NEWLINE
-ENCODE("もうすこしだったのに···")
+.STRINGMAP script_jp, "もうすこしだったのに···"
 NEWLINE
 .db $EB
 
 L01BA87:
-ENCODE("「やっぱり だめだった")
+.STRINGMAP script_jp, "「やっぱり だめだった"
 NEWLINE
-ENCODE("ごめんなさい みんな···")
+.STRINGMAP script_jp, "ごめんなさい みんな···"
 NEWLINE
 .db $EB
 
 L01BAA6:
-ENCODE("「アルムよ セリカよ")
+.STRINGMAP script_jp, "「アルムよ セリカよ"
 NEWLINE
-ENCODE("わたしをのりこえ バレンシアをたのむ···")
+.STRINGMAP script_jp, "わたしをのりこえ バレンシアをたのむ···"
 NEWLINE
 .db $EB
 
 L01BAC9:
-ENCODE("「みなのものに ミラのかごが")
+.STRINGMAP script_jp, "「みなのものに ミラのかごが"
 NEWLINE
-ENCODE("あらんことを···")
+.STRINGMAP script_jp, "あらんことを···"
 NEWLINE
 SPEAK
 
 L01BAE5:
-ENCODE("「すまん アルム···")
+.STRINGMAP script_jp, "「すまん アルム···"
 NEWLINE
 SPEAK
 
 L01BAF2:
-ENCODE("「アルム ごめんよ···")
+.STRINGMAP script_jp, "「アルム ごめんよ···"
 NEWLINE
 SPEAK
 
 L01BB01:
-ENCODE("「アルム おれはおまえを")
+.STRINGMAP script_jp, "「アルム おれはおまえを"
 NEWLINE
-ENCODE("しんじてるぜ····")
+.STRINGMAP script_jp, "しんじてるぜ····"
 NEWLINE
 SPEAK
 
 L01BB1C:
-ENCODE("「あーあ")
+.STRINGMAP script_jp, "「あーあ"
 NEWLINE
-ENCODE("やっぱり いいおとこは")
+.STRINGMAP script_jp, "やっぱり いいおとこは"
 NEWLINE
-ENCODE("ながいきできねぇや")
+.STRINGMAP script_jp, "ながいきできねぇや"
 NEWLINE
 .db $EB
 
 L01BB3B:
-ENCODE("「みんな···")
+.STRINGMAP script_jp, "「みんな···"
 NEWLINE
-ENCODE("アルムを まもってあげて···")
+.STRINGMAP script_jp, "アルムを まもってあげて···"
 NEWLINE
 SPEAK
 
 L01BB55:
-ENCODE("「こころざし なかばに")
+.STRINGMAP script_jp, "「こころざし なかばに"
 NEWLINE
-ENCODE("たおれるわけには···")
+.STRINGMAP script_jp, "たおれるわけには···"
 NEWLINE
 SPEAK
 
 L01BB70:
-ENCODE("「まったく!")
+.STRINGMAP script_jp, "「まったく!"
 NEWLINE
-ENCODE("ドジなんだから····")
+.STRINGMAP script_jp, "ドジなんだから····"
 NEWLINE
 .db $EB
 
 L01BB87:
-ENCODE("「ごめんね みんな····")
+.STRINGMAP script_jp, "「ごめんね みんな····"
 NEWLINE
 SPEAK
 
 L01BB97:
-ENCODE("「セリカさま")
+.STRINGMAP script_jp, "「セリカさま"
 NEWLINE
-ENCODE("やくに たてなくて")
+.STRINGMAP script_jp, "やくに たてなくて"
 NEWLINE
-ENCODE("ごめんなさい····")
+.STRINGMAP script_jp, "ごめんなさい····"
 NEWLINE
 SPEAK
 
 L01BBB5:
-ENCODE("「だぁー")
+.STRINGMAP script_jp, "「だぁー"
 NEWLINE
-ENCODE("まったく マヌケだぜぇー")
+.STRINGMAP script_jp, "まったく マヌケだぜぇー"
 NEWLINE
 .db $EB
 
 L01BBCB:
-ENCODE("「ちっ,ふかくだった···")
+.STRINGMAP script_jp, "「ちっ,ふかくだった···"
 NEWLINE
 SPEAK
 
 L01BBDB:
-ENCODE("「セリカさま")
+.STRINGMAP script_jp, "「セリカさま"
 NEWLINE
-ENCODE("くじけちゃ ダメだよ!")
+.STRINGMAP script_jp, "くじけちゃ ダメだよ!"
 NEWLINE
 SPEAK
 
 L01BBF2:
-ENCODE("「わがしょうがいに いっぺんの")
+.STRINGMAP script_jp, "「わがしょうがいに いっぺんの"
 NEWLINE
-ENCODE("くいなし···")
+.STRINGMAP script_jp, "くいなし···"
 NEWLINE
 SPEAK
 
 L01BC0E:
-ENCODE("「あぁ,クレーベ")
+.STRINGMAP script_jp, "「あぁ,クレーベ"
 NEWLINE
-ENCODE("あなたと いっしょに")
+.STRINGMAP script_jp, "あなたと いっしょに"
 NEWLINE
-ENCODE("へいわなときを すごしたかった")
+.STRINGMAP script_jp, "へいわなときを すごしたかった"
 NEWLINE
 SPEAK
 
 L01BC35:
-ENCODE("「む,むねん···")
+.STRINGMAP script_jp, "「む,むねん···"
 NEWLINE
 SPEAK
 
 L01BC40:
-ENCODE("「フッ,おれとしたことが")
+.STRINGMAP script_jp, "「フッ,おれとしたことが"
 NEWLINE
-ENCODE("レベルが ひくかったようだぜ")
+.STRINGMAP script_jp, "レベルが ひくかったようだぜ"
 NEWLINE
-ENCODE("·····")
+.STRINGMAP script_jp, "·····"
 NEWLINE
 SPEAK
 
 L01BC68:
-ENCODE("「いくさのなかで しねるなら")
+.STRINGMAP script_jp, "「いくさのなかで しねるなら"
 NEWLINE
-ENCODE("ほんもう···")
+.STRINGMAP script_jp, "ほんもう···"
 NEWLINE
 SPEAK
 
 L01BC81:
-ENCODE("「わたしの うんめいもつきたな")
+.STRINGMAP script_jp, "「わたしの うんめいもつきたな"
 NEWLINE
-ENCODE("····")
+.STRINGMAP script_jp, "····"
 NEWLINE
 SPEAK
 
 L01BC97:
-ENCODE("「オメェら···")
+.STRINGMAP script_jp, "「オメェら···"
 NEWLINE
-ENCODE("あとは うまくやれよ···")
+.STRINGMAP script_jp, "あとは うまくやれよ···"
 NEWLINE
 SPEAK
 
 L01BCAF:
-ENCODE("「けっ,なんてこったい···")
+.STRINGMAP script_jp, "「けっ,なんてこったい···"
 NEWLINE
 SPEAK
 
 L01BCBF:
-ENCODE("「わが まりょくおよばず")
+.STRINGMAP script_jp, "「わが まりょくおよばず"
 NEWLINE
-ENCODE("これもまた さだめ···か")
+.STRINGMAP script_jp, "これもまた さだめ···か"
 NEWLINE
 SPEAK
 
 L01BCDF:
-ENCODE("「ヤダー")
+.STRINGMAP script_jp, "「ヤダー"
 NEWLINE
-ENCODE("まだ しにたくないよー")
+.STRINGMAP script_jp, "まだ しにたくないよー"
 NEWLINE
 SPEAK
 
 L01BCF3:
-ENCODE("「ああ ジークさま···")
+.STRINGMAP script_jp, "「ああ ジークさま···"
 NEWLINE
 SPEAK
 
 L01BD02:
-ENCODE("「あぁ,かえりたかった")
+.STRINGMAP script_jp, "「あぁ,かえりたかった"
 NEWLINE
-ENCODE("ふるさと アカネイアへ···")
+.STRINGMAP script_jp, "ふるさと アカネイアへ···"
 NEWLINE
 SPEAK
 
 L01BD1E:
-ENCODE("「アベル ")
+.STRINGMAP script_jp, "「アベル "
 NEWLINE
-ENCODE("かえれなくて ごめんね")
+.STRINGMAP script_jp, "かえれなくて ごめんね"
 NEWLINE
 SPEAK
 
 L01BD33:
-ENCODE("「おねえさま ごめんなさい··")
+.STRINGMAP script_jp, "「おねえさま ごめんなさい··"
 NEWLINE
 SPEAK
 
 L01BD45:
-ENCODE("「すまない ティータ···")
+.STRINGMAP script_jp, "「すまない ティータ···"
 NEWLINE
 SPEAK
 
 L01BD54:
-ENCODE("「くっ··· マイセンめ!")
+.STRINGMAP script_jp, "「くっ··· マイセンめ!"
 NEWLINE
-ENCODE("ルドルフのこせがれに")
+.STRINGMAP script_jp, "ルドルフのこせがれに"
 NEWLINE
-ENCODE("ソフィアを うるつもりか")
+.STRINGMAP script_jp, "ソフィアを うるつもりか"
 NEWLINE
 NEWLINE
-ENCODE("あの うらぎりものめ!!")
+.STRINGMAP script_jp, "あの うらぎりものめ!!"
 NEWLINE
 NEWLINE
 .db $E8
 
 L01BD8D:
-ENCODE("「てめぇら いいきになるなよ")
+.STRINGMAP script_jp, "「てめぇら いいきになるなよ"
 NEWLINE
-ENCODE("おれさまなんて まだまだ")
+.STRINGMAP script_jp, "おれさまなんて まだまだ"
 NEWLINE
-ENCODE("····ぐふっ")
+.STRINGMAP script_jp, "····ぐふっ"
 NEWLINE
 NEWLINE
 .db $E8
 
 L01BDB6:
-ENCODE("「ぬ,ぬかったわ···")
+.STRINGMAP script_jp, "「ぬ,ぬかったわ···"
 NEWLINE
 NEWLINE
 .db $E8
 
 L01BDC4:
-ENCODE("「アルム·····")
+.STRINGMAP script_jp, "「アルム·····"
 NEWLINE
-ENCODE("りっぱに なったな···")
-NEWLINE
-NEWLINE
-ENCODE("マイセンどのに あずけたのは")
-NEWLINE
-ENCODE("やはりまちがいでは なかったか···")
+.STRINGMAP script_jp, "りっぱに なったな···"
 NEWLINE
 NEWLINE
-ENCODE("もはや きづいておろう")
+.STRINGMAP script_jp, "マイセンどのに あずけたのは"
 NEWLINE
-ENCODE("おまえの ほんとうのなは")
-NEWLINE
-ENCODE(" アルバイン·アルム·ルドルフ")
+.STRINGMAP script_jp, "やはりまちがいでは なかったか···"
 NEWLINE
 NEWLINE
-ENCODE("わたしの ···")
+.STRINGMAP script_jp, "もはや きづいておろう"
 NEWLINE
-ENCODE("ただひとりの···むすこなのだ···")
+.STRINGMAP script_jp, "おまえの ほんとうのなは"
 NEWLINE
-NEWLINE
-ENCODE("ぐふっ··")
-NEWLINE
-NEWLINE
-ENCODE("いまはもう おおくはかたれぬ···")
+.STRINGMAP script_jp, " アルバイン·アルム·ルドルフ"
 NEWLINE
 NEWLINE
-ENCODE("だが アルムよ")
+.STRINGMAP script_jp, "わたしの ···"
 NEWLINE
-ENCODE("さいごに ひとつだけ たのみがある")
-NEWLINE
-NEWLINE
-ENCODE("ミラをふうじた あのせいけん")
-NEWLINE
-ENCODE("[ファルシオン]で")
-NEWLINE
-ENCODE("ドーマを···")
+.STRINGMAP script_jp, "ただひとりの···むすこなのだ···"
 NEWLINE
 NEWLINE
-ENCODE("じゃしんドーマを")
+.STRINGMAP script_jp, "ぐふっ··"
 NEWLINE
-ENCODE("た·お·す·の·だ····")
+NEWLINE
+.STRINGMAP script_jp, "いまはもう おおくはかたれぬ···"
+NEWLINE
+NEWLINE
+.STRINGMAP script_jp, "だが アルムよ"
+NEWLINE
+.STRINGMAP script_jp, "さいごに ひとつだけ たのみがある"
+NEWLINE
+NEWLINE
+.STRINGMAP script_jp, "ミラをふうじた あのせいけん"
+NEWLINE
+.STRINGMAP script_jp, "[ファルシオン]で"
+NEWLINE
+.STRINGMAP script_jp, "ドーマを···"
+NEWLINE
+NEWLINE
+.STRINGMAP script_jp, "じゃしんドーマを"
+NEWLINE
+.STRINGMAP script_jp, "た·お·す·の·だ····"
 NEWLINE
 NEWLINE
 NEWLINE
 .db $E8
 
 L01BECD:
-ENCODE("「ドーマさまの ちからをしらぬ")
+.STRINGMAP script_jp, "「ドーマさまの ちからをしらぬ"
 NEWLINE
-ENCODE("おろかものよ···")
+.STRINGMAP script_jp, "おろかものよ···"
 NEWLINE
-ENCODE("こうかいするが よいわ···")
+.STRINGMAP script_jp, "こうかいするが よいわ···"
 NEWLINE
 NEWLINE
 .db $E8
 
 L01BEFA:
-ENCODE("「このわたしを たおすとは")
+.STRINGMAP script_jp, "「このわたしを たおすとは"
 NEWLINE
-ENCODE("さすがだな·····")
+.STRINGMAP script_jp, "さすがだな·····"
 NEWLINE
-ENCODE("ほめてやろう···")
+.STRINGMAP script_jp, "ほめてやろう···"
 NEWLINE
 NEWLINE
 .db $E8
 
 L01BF21:
-ENCODE("「きさまら いいきになるなよ")
+.STRINGMAP script_jp, "「きさまら いいきになるなよ"
 NEWLINE
-ENCODE("······")
+.STRINGMAP script_jp, "······"
 NEWLINE
 NEWLINE
 .db $E8
 
 L01BF39:
-ENCODE("「すまない ティータ···")
+.STRINGMAP script_jp, "「すまない ティータ···"
 NEWLINE
 NEWLINE
 .db $E8
 
 L01BF49:
-ENCODE("「ドーマのかごが あらんことを")
+.STRINGMAP script_jp, "「ドーマのかごが あらんことを"
 NEWLINE
 NEWLINE
 .db $E8
 
 L01BF5E:
-ENCODE("「あぁ わたしはいったい···")
+.STRINGMAP script_jp, "「あぁ わたしはいったい···"
 NEWLINE
-ENCODE("に,にいさん···")
+.STRINGMAP script_jp, "に,にいさん···"
 NEWLINE
 NEWLINE
 .db $E8
