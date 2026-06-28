@@ -14,8 +14,9 @@ import glob, os
 banksize = 0x4000
 
 counter = 0
+sole_counter = 0
 files = []
-for file in glob.glob("../src/bank*.asm.inc"):
+for file in glob.glob("../src/bank*.asm"):
 	with open(file) as f:
 		local_counter = 0
 		local_sole_counter = 0
@@ -26,6 +27,7 @@ for file in glob.glob("../src/bank*.asm.inc"):
 					local_sole_counter += 1
 
 		counter += local_counter
+		sole_counter += local_sole_counter
 		files.append((file[7:-4], local_counter, local_sole_counter))
 
 files = sorted(files, key=lambda tup: tup[0])
@@ -39,4 +41,4 @@ print("-" * 57)
 codesize = banksize * 16
 progress = 100 * (codesize - counter) / codesize
 sole_progress = 100 * (codesize - sole_counter) / codesize
-print(f"Total:      {codesize - counter:>5}/{codesize}: {progress:.2f}% | {codesize - sole_counter:>5}/{codesize}: {sole_progress:.2f}%")
+print(f"Total:  {codesize - counter:>5}/{codesize}: {progress:.2f}% | {codesize - sole_counter:>5}/{codesize}: {sole_progress:.2f}%")
